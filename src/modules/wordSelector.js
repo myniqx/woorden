@@ -2,6 +2,13 @@ import { words, wordsWithArticles } from '../data/words.js';
 import { getWordStats, getAllWordStats } from './storage.js';
 
 // Calculate priority score for a word (higher = should show more)
+// Score system:
+// - New words: 100 (highest priority)
+// - Correct answer: -10 (push back significantly)
+// - Wrong answer: -3 (push back slightly, will come again soon)
+// - Minimum score: 10 if any wrong, 0 if all correct
+// - Time adds points (logarithmic, ~22 points per week)
+// - Maximum score: 100 (never exceeds new word priority)
 function calculatePriority(wordId) {
   const stats = getWordStats(wordId);
 
@@ -10,27 +17,26 @@ function calculatePriority(wordId) {
     return 100;
   }
 
-  // Time factor: words not seen for a while get higher priority
-  const timeSinceLastSeen = stats.lastSeen ? (Date.now() - stats.lastSeen) / (1000 * 60 * 60) : 24; // hours
-  const hoursSinceLastSeen = Math.min(timeSinceLastSeen, 168); // cap at 1 week
+  // Base score starts at 100, decreases with answers
+  // Correct: -10 (go far back)
+  // Wrong: -3 (go slightly back, come again soon)
+  const correctPenalty = stats.correct * 10;
+  const wrongPenalty = stats.wrong * 3;
+  let score = 100 - correctPenalty - wrongPenalty;
 
-  // Calculate mastery level (0 to 1, where 1 is fully mastered)
-  const totalAnswers = stats.correct + stats.wrong;
-  const correctRatio = totalAnswers > 0 ? stats.correct / totalAnswers : 0;
-  const masteryLevel = Math.min(stats.correct / 5, 1) * correctRatio; // need 5 correct with good ratio
+  // Minimum score: 10 if any wrong answer, 0 if all correct
+  const minScore = stats.wrong > 0 ? 10 : 0;
+  score = Math.max(minScore, score);
 
-  // Priority formula:
-  // - Wrong answers increase priority significantly
-  // - Correct answers decrease priority
-  // - Time since last seen increases priority
-  // - Lower mastery = higher priority
-  const wrongBonus = stats.wrong * 15;
-  const correctPenalty = stats.correct * 3;
-  const timeFactor = hoursSinceLastSeen / 6; // more weight to time
-  const masteryPenalty = masteryLevel * 20;
+  // Time factor: logarithmic increase (~22 points per week)
+  // Words not seen for a while slowly rise back up
+  const timeSinceLastSeen = stats.lastSeen ? (Date.now() - stats.lastSeen) / (1000 * 60 * 60) : 0; // hours
+  const timeFactor = Math.log2(timeSinceLastSeen + 1) * 3;
 
-  // Final priority (minimum 1 to always have some chance)
-  return Math.max(1, wrongBonus - correctPenalty + timeFactor - masteryPenalty + 20);
+  score += timeFactor;
+
+  // Cap at 100 (never higher than new words)
+  return Math.min(100, Math.max(minScore, score));
 }
 
 // Get word pool based on quiz type
