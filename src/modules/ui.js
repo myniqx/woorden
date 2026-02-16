@@ -1,10 +1,14 @@
-import { languages } from '../data/words.js';
-import { getLanguage, setLanguage, getDailyStats, getStreak } from './storage.js';
+import { languages, words } from '../data/words.js';
+import { t } from '../data/translations.js';
+import { getLanguage, setLanguage, getDailyStats, getStreak, getWordStats, getAllWordStats } from './storage.js';
 import { QUIZ_TYPES, createQuiz, submitAnswer, getQuizTypeInfo } from './quiz.js';
 import { getStatsSummary } from './wordSelector.js';
 
 // DOM Elements cache
 const elements = {};
+
+// Helper to get current language translation
+const tr = (key, replacements) => t(key, getLanguage(), replacements);
 
 // Initialize UI
 export function initUI() {
@@ -29,11 +33,14 @@ function renderHeader() {
   const currentLang = getLanguage();
   const currentLangData = languages.find(l => l.code === currentLang);
 
+  // Update HTML lang attribute for RTL and font support
+  document.documentElement.lang = currentLang;
+
   elements.header.innerHTML = `
     <div class="header-content">
       <h1 class="logo">🇳🇱 Woorden</h1>
       <div class="header-right">
-        <div class="streak-badge" title="Günlük seri">
+        <div class="streak-badge" title="${tr('streak')}">
           🔥 ${getStreak()}
         </div>
         <div class="language-dropdown">
@@ -74,6 +81,7 @@ function renderHeader() {
       setLanguage(lang);
       renderHeader();
       renderQuizTypeSelector();
+      renderStats();
     });
   });
 }
@@ -123,7 +131,7 @@ function renderQuiz(quiz) {
   elements.quizContainer.innerHTML = `
     <div class="quiz-card">
       <div class="quiz-header">
-        <button class="back-btn" id="back-to-menu">← Geri</button>
+        <button class="back-btn" id="back-to-menu">${tr('back')}</button>
         <span class="quiz-type-badge">${info.icon} ${info.name}</span>
       </div>
 
@@ -143,7 +151,7 @@ function renderQuiz(quiz) {
 
       <div class="quiz-footer">
         <div class="daily-progress">
-          Bugün: ${getDailyStats().practiced} kelime çalışıldı
+          ${tr('todayPracticed', { count: getDailyStats().practiced })}
         </div>
       </div>
     </div>
@@ -219,7 +227,7 @@ function handleAnswer(answerId, quizType) {
   const questionSection = elements.quizContainer.querySelector('.question-section');
   const resultBadge = document.createElement('div');
   resultBadge.className = `result-badge ${result.isCorrect ? 'correct' : 'wrong'}`;
-  resultBadge.innerHTML = result.isCorrect ? '✓ Doğru!' : '✗ Yanlış';
+  resultBadge.innerHTML = result.isCorrect ? tr('correct') : tr('wrong');
   questionSection.appendChild(resultBadge);
 
   // Show word details if wrong
@@ -253,40 +261,163 @@ function renderStats() {
 
   elements.statsContainer.innerHTML = `
     <div class="stats-grid">
-      <div class="stat-card">
+      <div class="stat-card clickable" data-category="unseen">
         <span class="stat-icon">📚</span>
-        <span class="stat-value">${summary.totalWords}</span>
-        <span class="stat-label">Toplam Kelime</span>
+        <span class="stat-value">${summary.unseen}</span>
+        <span class="stat-label">${tr('unseen')}</span>
       </div>
-      <div class="stat-card">
-        <span class="stat-icon">👁️</span>
-        <span class="stat-value">${summary.seen}</span>
-        <span class="stat-label">Görülen</span>
+      <div class="stat-card clickable" data-category="learning">
+        <span class="stat-icon">📈</span>
+        <span class="stat-value">${summary.learning + summary.difficult}</span>
+        <span class="stat-label">${tr('learning')}</span>
       </div>
-      <div class="stat-card">
+      <div class="stat-card clickable" data-category="mastered">
         <span class="stat-icon">⭐</span>
         <span class="stat-value">${summary.mastered}</span>
-        <span class="stat-label">Öğrenilen</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-icon">📈</span>
-        <span class="stat-value">${summary.learning}</span>
-        <span class="stat-label">Öğreniliyor</span>
+        <span class="stat-label">${tr('mastered')}</span>
       </div>
     </div>
 
     <div class="today-stats">
-      <h3>Bugünkü İlerleme</h3>
+      <h3>${tr('todayProgress')}</h3>
       <div class="progress-bar">
         <div class="progress-fill" style="width: ${Math.min(daily.practiced / 20 * 100, 100)}%"></div>
       </div>
       <div class="today-details">
-        <span>${daily.practiced} / 20 kelime</span>
-        <span>%${accuracy} doğruluk</span>
-        <span>🔥 ${streak} gün seri</span>
+        <span>${daily.practiced} / 20 ${tr('words')}</span>
+        <span>%${accuracy} ${tr('accuracy')}</span>
+        <span>🔥 ${streak} ${tr('daySeries')}</span>
       </div>
     </div>
   `;
+
+  // Add click handlers for stat cards
+  elements.statsContainer.querySelectorAll('.stat-card.clickable').forEach(card => {
+    card.addEventListener('click', () => {
+      const category = card.dataset.category;
+      showWordListModal(category);
+    });
+  });
+}
+
+// Get categorized words
+function getCategorizedWords() {
+  const allStats = getAllWordStats();
+  const lang = getLanguage();
+
+  const unseen = [];
+  const learning = [];
+  const mastered = [];
+
+  words.forEach(word => {
+    const stats = allStats[word.id] || { seen: 0, correct: 0, wrong: 0 };
+
+    const wordData = {
+      ...word,
+      stats,
+      translation: word[lang]
+    };
+
+    if (stats.seen === 0) {
+      unseen.push(wordData);
+    } else if (stats.correct >= 3 && stats.wrong === 0) {
+      mastered.push(wordData);
+    } else {
+      learning.push(wordData);
+    }
+  });
+
+  // Sort unseen alphabetically by Dutch word
+  unseen.sort((a, b) => a.word.localeCompare(b.word, 'nl'));
+
+  // Sort learning by most errors first
+  learning.sort((a, b) => {
+    const aErrorRate = a.stats.wrong - a.stats.correct;
+    const bErrorRate = b.stats.wrong - b.stats.correct;
+    return bErrorRate - aErrorRate;
+  });
+
+  // Sort mastered by most correct first
+  mastered.sort((a, b) => b.stats.correct - a.stats.correct);
+
+  return { unseen, learning, mastered };
+}
+
+// Show word list modal
+function showWordListModal(category) {
+  const categories = getCategorizedWords();
+  const wordList = categories[category];
+
+  const titles = {
+    unseen: tr('unseenWords'),
+    learning: tr('learningWords'),
+    mastered: tr('masteredWords')
+  };
+
+  const descriptions = {
+    unseen: tr('unseenDesc'),
+    learning: tr('learningDesc'),
+    mastered: tr('masteredDesc')
+  };
+
+  // Create modal
+  const modal = document.createElement('div');
+  modal.className = 'modal-overlay';
+  modal.innerHTML = `
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h2>${titles[category]}</h2>
+          <p class="modal-description">${descriptions[category]}</p>
+        </div>
+        <button class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+        ${wordList.length === 0 ? `<p class="empty-message">${tr('emptyCategory')}</p>` : ''}
+        <div class="word-list">
+          ${wordList.map(word => `
+            <div class="word-list-item">
+              <div class="word-info">
+                <span class="word-dutch">${word.nl}</span>
+                <span class="word-translation">${word.translation}</span>
+              </div>
+              ${category !== 'unseen' ? `
+                <div class="word-stats">
+                  <span class="stat-correct">✓ ${word.stats.correct}</span>
+                  <span class="stat-wrong">✗ ${word.stats.wrong}</span>
+                </div>
+              ` : ''}
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+  // Close handlers
+  const closeModal = () => {
+    modal.classList.add('closing');
+    setTimeout(() => modal.remove(), 200);
+  };
+
+  modal.querySelector('.modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // ESC key to close
+  const escHandler = (e) => {
+    if (e.key === 'Escape') {
+      closeModal();
+      document.removeEventListener('keydown', escHandler);
+    }
+  };
+  document.addEventListener('keydown', escHandler);
+
+  // Animate in
+  requestAnimationFrame(() => modal.classList.add('show'));
 }
 
 // Setup global event listeners

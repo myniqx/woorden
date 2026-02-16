@@ -10,15 +10,27 @@ function calculatePriority(wordId) {
     return 100;
   }
 
-  // Formula: wrong * 3 - correct + time factor
-  const wrongWeight = stats.wrong * 3;
-  const correctWeight = stats.correct;
-
   // Time factor: words not seen for a while get higher priority
   const timeSinceLastSeen = stats.lastSeen ? (Date.now() - stats.lastSeen) / (1000 * 60 * 60) : 24; // hours
-  const timeFactor = Math.min(timeSinceLastSeen / 24, 5); // max 5 points for time
+  const hoursSinceLastSeen = Math.min(timeSinceLastSeen, 168); // cap at 1 week
 
-  return wrongWeight - correctWeight + timeFactor + 10; // base 10 so even mastered words can appear
+  // Calculate mastery level (0 to 1, where 1 is fully mastered)
+  const totalAnswers = stats.correct + stats.wrong;
+  const correctRatio = totalAnswers > 0 ? stats.correct / totalAnswers : 0;
+  const masteryLevel = Math.min(stats.correct / 5, 1) * correctRatio; // need 5 correct with good ratio
+
+  // Priority formula:
+  // - Wrong answers increase priority significantly
+  // - Correct answers decrease priority
+  // - Time since last seen increases priority
+  // - Lower mastery = higher priority
+  const wrongBonus = stats.wrong * 15;
+  const correctPenalty = stats.correct * 3;
+  const timeFactor = hoursSinceLastSeen / 6; // more weight to time
+  const masteryPenalty = masteryLevel * 20;
+
+  // Final priority (minimum 1 to always have some chance)
+  return Math.max(1, wrongBonus - correctPenalty + timeFactor - masteryPenalty + 20);
 }
 
 // Get word pool based on quiz type
@@ -29,8 +41,7 @@ function getWordPool(quizType) {
   return words;
 }
 
-// Select a word using weighted random selection
-// 20% from well-known words, 80% from others
+// Select a word using weighted random selection based on priority
 export function selectWord(quizType = 'translation') {
   const pool = getWordPool(quizType);
 
@@ -40,40 +51,19 @@ export function selectWord(quizType = 'translation') {
     priority: calculatePriority(word.id)
   }));
 
-  // Separate into well-known and others
-  const wellKnown = wordPriorities.filter(wp => {
-    const stats = getWordStats(wp.word.id);
-    return stats.correct >= 3 && stats.wrong === 0;
-  });
-
-  const others = wordPriorities.filter(wp => {
-    const stats = getWordStats(wp.word.id);
-    return !(stats.correct >= 3 && stats.wrong === 0);
-  });
-
-  // Decide which pool to pick from (20% well-known, 80% others)
-  let targetPool;
-  if (others.length === 0) {
-    targetPool = wellKnown;
-  } else if (wellKnown.length === 0 || Math.random() > 0.2) {
-    targetPool = others;
-  } else {
-    targetPool = wellKnown;
-  }
-
-  // Weighted random selection based on priority
-  const totalPriority = targetPool.reduce((sum, wp) => sum + Math.max(wp.priority, 1), 0);
+  // Weighted random selection - higher priority = higher chance
+  const totalPriority = wordPriorities.reduce((sum, wp) => sum + wp.priority, 0);
   let random = Math.random() * totalPriority;
 
-  for (const wp of targetPool) {
-    random -= Math.max(wp.priority, 1);
+  for (const wp of wordPriorities) {
+    random -= wp.priority;
     if (random <= 0) {
       return wp.word;
     }
   }
 
   // Fallback to random selection
-  return targetPool[Math.floor(Math.random() * targetPool.length)].word;
+  return pool[Math.floor(Math.random() * pool.length)];
 }
 
 // Select wrong options for multiple choice (excluding correct answer)

@@ -1,5 +1,6 @@
 import { selectWord, generateOptions } from './wordSelector.js';
 import { getLanguage, updateWordStats } from './storage.js';
+import { t } from '../data/translations.js';
 
 // Quiz types
 export const QUIZ_TYPES = {
@@ -10,6 +11,9 @@ export const QUIZ_TYPES = {
 
 // Current quiz state
 let currentQuiz = null;
+
+// Helper for translations
+const tr = (key) => t(key, getLanguage());
 
 // Create a new quiz question
 export function createQuiz(quizType) {
@@ -24,7 +28,7 @@ export function createQuiz(quizType) {
       // Options: Dutch words
       question = {
         text: word[language],
-        subtext: `"${word[language]}" Hollandaca'da ne demek?`
+        subtext: tr('whatIsDutch')
       };
       options = generateOptions(word, 'translation', language).map(w => ({
         id: w.id,
@@ -55,7 +59,7 @@ export function createQuiz(quizType) {
       // Options: de / het
       question = {
         text: word.word,
-        subtext: 'Bu kelimenin artikel\'i nedir?'
+        subtext: tr('whatIsArticle')
       };
       options = [
         { id: 'de', text: 'de', isCorrect: word.article === 'de' },
@@ -116,30 +120,25 @@ export function getCurrentQuiz() {
 // Get quiz type display info
 export function getQuizTypeInfo(quizType) {
   const language = getLanguage();
-  const languageNames = {
-    tr: 'Türkçe',
-    en: 'English',
-    ar: 'العربية'
-  };
 
   switch (quizType) {
     case QUIZ_TYPES.NATIVE_TO_DUTCH:
       return {
-        name: `${languageNames[language]} → Hollandaca`,
+        name: tr('quizNativeToDutch'),
         icon: '🎯',
-        description: 'Kelimenin Hollandaca karşılığını seç'
+        description: tr('quizNativeToDutchDesc')
       };
     case QUIZ_TYPES.DUTCH_TO_NATIVE:
       return {
-        name: `Hollandaca → ${languageNames[language]}`,
+        name: tr('quizDutchToNative'),
         icon: '📖',
-        description: 'Hollandaca kelimenin anlamını seç'
+        description: tr('quizDutchToNativeDesc')
       };
     case QUIZ_TYPES.ARTICLE:
       return {
-        name: 'Artikel Testi',
+        name: tr('quizArticle'),
         icon: '📝',
-        description: 'Kelimenin artikel\'ini seç (de/het)'
+        description: tr('quizArticleDesc')
       };
     default:
       return { name: 'Quiz', icon: '❓', description: '' };
