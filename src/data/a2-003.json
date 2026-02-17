@@ -1,0 +1,1795 @@
+[
+  {
+    "nl": "batterij",
+    "article": "de",
+    "type": "noun",
+    "tr": "pil",
+    "en": "battery",
+    "ar": "بطارية",
+    "fr": "batterie"
+  },
+  {
+    "nl": "beker",
+    "article": "de",
+    "type": "noun",
+    "tr": "bardak",
+    "en": "cup",
+    "ar": "كوب",
+    "fr": "gobelet"
+  },
+  {
+    "nl": "blik",
+    "article": "het",
+    "type": "noun",
+    "tr": "teneke kutu",
+    "en": "can",
+    "ar": "علبة",
+    "fr": "boîte de conserve"
+  },
+  {
+    "nl": "chemisch",
+    "type": "adj",
+    "tr": "kimyasal",
+    "en": "chemical",
+    "ar": "كيميائي",
+    "fr": "chimique"
+  },
+  {
+    "nl": "container",
+    "article": "de",
+    "type": "noun",
+    "tr": "konteyner",
+    "en": "container",
+    "ar": "حاوية",
+    "fr": "conteneur"
+  },
+  {
+    "nl": "deel",
+    "article": "het",
+    "type": "noun",
+    "tr": "parça, bölüm",
+    "en": "part",
+    "ar": "جزء",
+    "fr": "partie"
+  },
+  {
+    "nl": "gooien",
+    "type": "verb",
+    "perfectum": "gegooid",
+    "imperfectum": "gooide",
+    "tr": "atmak",
+    "en": "to throw",
+    "ar": "يرمي",
+    "fr": "jeter"
+  },
+  {
+    "nl": "grofvuil",
+    "article": "het",
+    "type": "noun",
+    "tr": "iri çöp",
+    "en": "bulky waste",
+    "ar": "نفايات كبيرة",
+    "fr": "encombrants"
+  },
+  {
+    "nl": "helft",
+    "article": "de",
+    "type": "noun",
+    "tr": "yarısı",
+    "en": "half",
+    "ar": "نصف",
+    "fr": "moitié"
+  },
+  {
+    "nl": "karton",
+    "article": "het",
+    "type": "noun",
+    "tr": "karton",
+    "en": "cardboard",
+    "ar": "كرتون",
+    "fr": "carton"
+  },
+  {
+    "nl": "krat",
+    "article": "het",
+    "type": "noun",
+    "tr": "kasa",
+    "en": "crate",
+    "ar": "صندوق",
+    "fr": "caisse"
+  },
+  {
+    "nl": "matras",
+    "article": "de/het",
+    "type": "noun",
+    "tr": "yatak",
+    "en": "mattress",
+    "ar": "مرتبة",
+    "fr": "matelas"
+  },
+  {
+    "nl": "olie",
+    "article": "de",
+    "type": "noun",
+    "tr": "yağ",
+    "en": "oil",
+    "ar": "زيت",
+    "fr": "huile"
+  },
+  {
+    "nl": "plastic",
+    "article": "het",
+    "type": "noun",
+    "tr": "plastik",
+    "en": "plastic",
+    "ar": "بلاستيك",
+    "fr": "plastique"
+  },
+  {
+    "nl": "pot",
+    "article": "de",
+    "type": "noun",
+    "tr": "kavanoz",
+    "en": "jar",
+    "ar": "جرة",
+    "fr": "pot"
+  },
+  {
+    "nl": "restje",
+    "article": "het",
+    "type": "noun",
+    "tr": "artık, kalan",
+    "en": "leftover",
+    "ar": "بقايا",
+    "fr": "reste"
+  },
+  {
+    "nl": "schadelijk",
+    "type": "adj",
+    "tr": "zararlı",
+    "en": "harmful",
+    "ar": "ضار",
+    "fr": "nocif"
+  },
+  {
+    "nl": "schil",
+    "article": "de",
+    "type": "noun",
+    "tr": "kabuk",
+    "en": "peel",
+    "ar": "قشرة",
+    "fr": "pelure"
+  },
+  {
+    "nl": "statiegeld",
+    "article": "het",
+    "type": "noun",
+    "tr": "depozito",
+    "en": "deposit",
+    "ar": "تأمين",
+    "fr": "consigne"
+  },
+  {
+    "nl": "stof",
+    "article": "de",
+    "type": "noun",
+    "tr": "toz",
+    "en": "dust",
+    "ar": "غبار",
+    "fr": "poussière"
+  },
+  {
+    "nl": "terechtkomen",
+    "type": "verb",
+    "perfectum": "terechtgekomen",
+    "imperfectum": "kwam terecht",
+    "tr": "sonunda gitmek",
+    "en": "to end up",
+    "ar": "ينتهي به المطاف",
+    "fr": "aboutir"
+  },
+  {
+    "nl": "terugbrengen",
+    "type": "verb",
+    "perfectum": "teruggebracht",
+    "imperfectum": "bracht terug",
+    "tr": "geri götürmek",
+    "en": "to bring back",
+    "ar": "يعيد",
+    "fr": "rapporter"
+  },
+  {
+    "nl": "verzamelen",
+    "type": "verb",
+    "perfectum": "verzameld",
+    "imperfectum": "verzamelde",
+    "tr": "toplamak",
+    "en": "to collect",
+    "ar": "يجمع",
+    "fr": "collecter"
+  },
+  {
+    "nl": "vuilnis",
+    "article": "het",
+    "type": "noun",
+    "tr": "çöp",
+    "en": "garbage",
+    "ar": "قمامة",
+    "fr": "ordures"
+  },
+  {
+    "nl": "weggooien",
+    "type": "verb",
+    "perfectum": "weggegooid",
+    "imperfectum": "gooide weg",
+    "tr": "atmak",
+    "en": "to throw away",
+    "ar": "يرمي",
+    "fr": "jeter"
+  },
+  {
+    "nl": "aangifte",
+    "article": "de",
+    "type": "noun",
+    "tr": "beyan, ihbar",
+    "en": "declaration, report",
+    "ar": "إقرار، بلاغ",
+    "fr": "déclaration"
+  },
+  {
+    "nl": "aanvragen",
+    "type": "verb",
+    "perfectum": "aangevraagd",
+    "imperfectum": "vroeg aan",
+    "tr": "başvurmak",
+    "en": "to apply for",
+    "ar": "يتقدم بطلب",
+    "fr": "demander"
+  },
+  {
+    "nl": "aanwezig",
+    "type": "adj",
+    "tr": "mevcut, hazır",
+    "en": "present",
+    "ar": "حاضر",
+    "fr": "présent"
+  },
+  {
+    "nl": "arts",
+    "article": "de",
+    "type": "noun",
+    "tr": "doktor",
+    "en": "doctor",
+    "ar": "طبيب",
+    "fr": "médecin"
+  },
+  {
+    "nl": "automatisch",
+    "type": "adj",
+    "tr": "otomatik",
+    "en": "automatic",
+    "ar": "أوتوماتيكي",
+    "fr": "automatique"
+  },
+  {
+    "nl": "beide",
+    "type": "pron",
+    "tr": "her ikisi",
+    "en": "both",
+    "ar": "كلاهما",
+    "fr": "les deux"
+  },
+  {
+    "nl": "betaling",
+    "article": "de",
+    "type": "noun",
+    "tr": "ödeme",
+    "en": "payment",
+    "ar": "دفع",
+    "fr": "paiement"
+  },
+  {
+    "nl": "bevalling",
+    "article": "de",
+    "type": "noun",
+    "tr": "doğum",
+    "en": "delivery, birth",
+    "ar": "ولادة",
+    "fr": "accouchement"
+  },
+  {
+    "nl": "bewijs",
+    "article": "het",
+    "type": "noun",
+    "tr": "kanıt, belge",
+    "en": "proof",
+    "ar": "دليل",
+    "fr": "preuve"
+  },
+  {
+    "nl": "daarnaast",
+    "type": "adv",
+    "tr": "bunun yanı sıra",
+    "en": "besides",
+    "ar": "بالإضافة إلى ذلك",
+    "fr": "en outre"
+  },
+  {
+    "nl": "document",
+    "article": "het",
+    "type": "noun",
+    "tr": "belge",
+    "en": "document",
+    "ar": "وثيقة",
+    "fr": "document"
+  },
+  {
+    "nl": "doorgeven",
+    "type": "verb",
+    "perfectum": "doorgegeven",
+    "imperfectum": "gaf door",
+    "tr": "iletmek",
+    "en": "to pass on",
+    "ar": "يمرر",
+    "fr": "transmettre"
+  },
+  {
+    "nl": "familielid",
+    "article": "het",
+    "type": "noun",
+    "tr": "aile üyesi",
+    "en": "family member",
+    "ar": "فرد من العائلة",
+    "fr": "membre de la famille"
+  },
+  {
+    "nl": "geboorte",
+    "article": "de",
+    "type": "noun",
+    "tr": "doğum",
+    "en": "birth",
+    "ar": "ولادة",
+    "fr": "naissance"
+  },
+  {
+    "nl": "geldig",
+    "type": "adj",
+    "tr": "geçerli",
+    "en": "valid",
+    "ar": "صالح",
+    "fr": "valide"
+  },
+  {
+    "nl": "identiteitskaart",
+    "article": "de",
+    "type": "noun",
+    "tr": "kimlik kartı",
+    "en": "identity card",
+    "ar": "بطاقة هوية",
+    "fr": "carte d'identité"
+  },
+  {
+    "nl": "kwijtraken",
+    "type": "verb",
+    "perfectum": "kwijtgeraakt",
+    "imperfectum": "raakte kwijt",
+    "tr": "kaybetmek",
+    "en": "to lose",
+    "ar": "يفقد",
+    "fr": "perdre"
+  },
+  {
+    "nl": "legitimatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "kimlik",
+    "en": "identification",
+    "ar": "هوية",
+    "fr": "identification"
+  },
+  {
+    "nl": "legitimatiebewijs",
+    "article": "het",
+    "type": "noun",
+    "tr": "kimlik belgesi",
+    "en": "ID document",
+    "ar": "وثيقة هوية",
+    "fr": "pièce d'identité"
+  },
+  {
+    "nl": "mailen",
+    "type": "verb",
+    "perfectum": "gemaild",
+    "imperfectum": "mailde",
+    "tr": "e-posta göndermek",
+    "en": "to email",
+    "ar": "يرسل بريداً",
+    "fr": "envoyer un e-mail"
+  },
+  {
+    "nl": "ondertekenen",
+    "type": "verb",
+    "perfectum": "ondertekend",
+    "imperfectum": "ondertekende",
+    "tr": "imzalamak",
+    "en": "to sign",
+    "ar": "يوقع",
+    "fr": "signer"
+  },
+  {
+    "nl": "opschrijven",
+    "type": "verb",
+    "perfectum": "opgeschreven",
+    "imperfectum": "schreef op",
+    "tr": "yazmak",
+    "en": "to write down",
+    "ar": "يكتب",
+    "fr": "noter"
+  },
+  {
+    "nl": "opsturen",
+    "type": "verb",
+    "perfectum": "opgestuurd",
+    "imperfectum": "stuurde op",
+    "tr": "göndermek",
+    "en": "to send",
+    "ar": "يرسل",
+    "fr": "envoyer"
+  },
+  {
+    "nl": "pasfoto",
+    "article": "de",
+    "type": "noun",
+    "tr": "vesikalık fotoğraf",
+    "en": "passport photo",
+    "ar": "صورة جواز",
+    "fr": "photo d'identité"
+  },
+  {
+    "nl": "paspoort",
+    "article": "het",
+    "type": "noun",
+    "tr": "pasaport",
+    "en": "passport",
+    "ar": "جواز سفر",
+    "fr": "passeport"
+  },
+  {
+    "nl": "persoon",
+    "article": "de",
+    "type": "noun",
+    "tr": "kişi",
+    "en": "person",
+    "ar": "شخص",
+    "fr": "personne"
+  },
+  {
+    "nl": "verklaring",
+    "article": "de",
+    "type": "noun",
+    "tr": "açıklama, beyan",
+    "en": "statement",
+    "ar": "بيان",
+    "fr": "déclaration"
+  },
+  {
+    "nl": "belasting",
+    "article": "de",
+    "type": "noun",
+    "tr": "vergi",
+    "en": "tax",
+    "ar": "ضريبة",
+    "fr": "impôt"
+  },
+  {
+    "nl": "brief",
+    "article": "de",
+    "type": "noun",
+    "tr": "mektup",
+    "en": "letter",
+    "ar": "رسالة",
+    "fr": "lettre"
+  },
+  {
+    "nl": "Burgerservicenummer",
+    "article": "het",
+    "type": "noun",
+    "tr": "vatandaşlık numarası",
+    "en": "citizen service number",
+    "ar": "رقم الخدمة المدنية",
+    "fr": "numéro de service citoyen"
+  },
+  {
+    "nl": "code",
+    "article": "de",
+    "type": "noun",
+    "tr": "kod",
+    "en": "code",
+    "ar": "رمز",
+    "fr": "code"
+  },
+  {
+    "nl": "dame",
+    "article": "de",
+    "type": "noun",
+    "tr": "bayan",
+    "en": "lady",
+    "ar": "سيدة",
+    "fr": "dame"
+  },
+  {
+    "nl": "DigiD",
+    "article": "de",
+    "type": "noun",
+    "tr": "dijital kimlik",
+    "en": "digital ID",
+    "ar": "هوية رقمية",
+    "fr": "identité numérique"
+  },
+  {
+    "nl": "dom",
+    "type": "adj",
+    "tr": "aptal",
+    "en": "stupid",
+    "ar": "غبي",
+    "fr": "stupide"
+  },
+  {
+    "nl": "gebruikersnaam",
+    "article": "de",
+    "type": "noun",
+    "tr": "kullanıcı adı",
+    "en": "username",
+    "ar": "اسم المستخدم",
+    "fr": "nom d'utilisateur"
+  },
+  {
+    "nl": "hoofdletter",
+    "article": "de",
+    "type": "noun",
+    "tr": "büyük harf",
+    "en": "capital letter",
+    "ar": "حرف كبير",
+    "fr": "majuscule"
+  },
+  {
+    "nl": "leesteken",
+    "article": "het",
+    "type": "noun",
+    "tr": "noktalama işareti",
+    "en": "punctuation mark",
+    "ar": "علامة ترقيم",
+    "fr": "signe de ponctuation"
+  },
+  {
+    "nl": "noteren",
+    "type": "verb",
+    "perfectum": "genoteerd",
+    "imperfectum": "noteerde",
+    "tr": "not almak",
+    "en": "to note",
+    "ar": "يدون",
+    "fr": "noter"
+  },
+  {
+    "nl": "onthouden",
+    "type": "verb",
+    "perfectum": "onthouden",
+    "imperfectum": "onthield",
+    "tr": "hatırlamak",
+    "en": "to remember",
+    "ar": "يتذكر",
+    "fr": "retenir"
+  },
+  {
+    "nl": "overheid",
+    "article": "de",
+    "type": "noun",
+    "tr": "hükümet",
+    "en": "government",
+    "ar": "حكومة",
+    "fr": "gouvernement"
+  },
+  {
+    "nl": "pensioen",
+    "article": "het",
+    "type": "noun",
+    "tr": "emeklilik",
+    "en": "pension",
+    "ar": "معاش",
+    "fr": "pension"
+  },
+  {
+    "nl": "persoonlijk",
+    "type": "adj",
+    "tr": "kişisel",
+    "en": "personal",
+    "ar": "شخصي",
+    "fr": "personnel"
+  },
+  {
+    "nl": "post",
+    "article": "de",
+    "type": "noun",
+    "tr": "posta",
+    "en": "mail",
+    "ar": "بريد",
+    "fr": "courrier"
+  },
+  {
+    "nl": "tandarts",
+    "article": "de",
+    "type": "noun",
+    "tr": "diş hekimi",
+    "en": "dentist",
+    "ar": "طبيب أسنان",
+    "fr": "dentiste"
+  },
+  {
+    "nl": "uitstekend",
+    "type": "adj",
+    "tr": "mükemmel",
+    "en": "excellent",
+    "ar": "ممتاز",
+    "fr": "excellent"
+  },
+  {
+    "nl": "verbaasd",
+    "type": "adj",
+    "tr": "şaşırmış",
+    "en": "surprised",
+    "ar": "متفاجئ",
+    "fr": "étonné"
+  },
+  {
+    "nl": "verzekerd",
+    "type": "adj",
+    "tr": "sigortalı",
+    "en": "insured",
+    "ar": "مؤمن عليه",
+    "fr": "assuré"
+  },
+  {
+    "nl": "verzekering",
+    "article": "de",
+    "type": "noun",
+    "tr": "sigorta",
+    "en": "insurance",
+    "ar": "تأمين",
+    "fr": "assurance"
+  },
+  {
+    "nl": "werkdag",
+    "article": "de",
+    "type": "noun",
+    "tr": "iş günü",
+    "en": "working day",
+    "ar": "يوم عمل",
+    "fr": "jour ouvrable"
+  },
+  {
+    "nl": "zorgverzekering",
+    "article": "de",
+    "type": "noun",
+    "tr": "sağlık sigortası",
+    "en": "health insurance",
+    "ar": "تأمين صحي",
+    "fr": "assurance maladie"
+  },
+  {
+    "nl": "aanvullend",
+    "type": "adj",
+    "tr": "ek, tamamlayıcı",
+    "en": "additional",
+    "ar": "إضافي",
+    "fr": "complémentaire"
+  },
+  {
+    "nl": "basis",
+    "article": "de",
+    "type": "noun",
+    "tr": "temel",
+    "en": "basis",
+    "ar": "أساس",
+    "fr": "base"
+  },
+  {
+    "nl": "behandeling",
+    "article": "de",
+    "type": "noun",
+    "tr": "tedavi",
+    "en": "treatment",
+    "ar": "علاج",
+    "fr": "traitement"
+  },
+  {
+    "nl": "bepalen",
+    "type": "verb",
+    "perfectum": "bepaald",
+    "imperfectum": "bepaalde",
+    "tr": "belirlemek",
+    "en": "to determine",
+    "ar": "يحدد",
+    "fr": "déterminer"
+  },
+  {
+    "nl": "bezoek",
+    "article": "het",
+    "type": "noun",
+    "tr": "ziyaret",
+    "en": "visit",
+    "ar": "زيارة",
+    "fr": "visite"
+  },
+  {
+    "nl": "bloed",
+    "article": "het",
+    "type": "noun",
+    "tr": "kan",
+    "en": "blood",
+    "ar": "دم",
+    "fr": "sang"
+  },
+  {
+    "nl": "halverwege",
+    "type": "adv",
+    "tr": "yarı yolda",
+    "en": "halfway",
+    "ar": "في منتصف الطريق",
+    "fr": "à mi-chemin"
+  },
+  {
+    "nl": "hoogte",
+    "article": "de",
+    "type": "noun",
+    "tr": "yükseklik",
+    "en": "height",
+    "ar": "ارتفاع",
+    "fr": "hauteur"
+  },
+  {
+    "nl": "kraamzorg",
+    "article": "de",
+    "type": "noun",
+    "tr": "doğum sonrası bakım",
+    "en": "maternity care",
+    "ar": "رعاية ما بعد الولادة",
+    "fr": "soins postnatals"
+  },
+  {
+    "nl": "medisch",
+    "type": "adj",
+    "tr": "tıbbi",
+    "en": "medical",
+    "ar": "طبي",
+    "fr": "médical"
+  },
+  {
+    "nl": "noodzakelijk",
+    "type": "adj",
+    "tr": "gerekli",
+    "en": "necessary",
+    "ar": "ضروري",
+    "fr": "nécessaire"
+  },
+  {
+    "nl": "opname",
+    "article": "de",
+    "type": "noun",
+    "tr": "yatış, kayıt",
+    "en": "admission",
+    "ar": "دخول المستشفى",
+    "fr": "admission"
+  },
+  {
+    "nl": "opzeggen",
+    "type": "verb",
+    "perfectum": "opgezegd",
+    "imperfectum": "zegde op",
+    "tr": "iptal etmek",
+    "en": "to cancel",
+    "ar": "يلغي",
+    "fr": "résilier"
+  },
+  {
+    "nl": "overzicht",
+    "article": "het",
+    "type": "noun",
+    "tr": "genel bakış",
+    "en": "overview",
+    "ar": "نظرة عامة",
+    "fr": "aperçu"
+  },
+  {
+    "nl": "polis",
+    "article": "de",
+    "type": "noun",
+    "tr": "poliçe",
+    "en": "policy",
+    "ar": "بوليصة",
+    "fr": "police"
+  },
+  {
+    "nl": "premie",
+    "article": "de",
+    "type": "noun",
+    "tr": "prim",
+    "en": "premium",
+    "ar": "قسط",
+    "fr": "prime"
+  },
+  {
+    "nl": "psychisch",
+    "type": "adj",
+    "tr": "psikolojik",
+    "en": "psychological",
+    "ar": "نفسي",
+    "fr": "psychologique"
+  },
+  {
+    "nl": "variëren",
+    "type": "verb",
+    "perfectum": "gevarieerd",
+    "imperfectum": "varieerde",
+    "tr": "değişmek",
+    "en": "to vary",
+    "ar": "يتنوع",
+    "fr": "varier"
+  },
+  {
+    "nl": "vergelijken",
+    "type": "verb",
+    "perfectum": "vergeleken",
+    "imperfectum": "vergeleek",
+    "tr": "karşılaştırmak",
+    "en": "to compare",
+    "ar": "يقارن",
+    "fr": "comparer"
+  },
+  {
+    "nl": "vergoeden",
+    "type": "verb",
+    "perfectum": "vergoed",
+    "imperfectum": "vergoedde",
+    "tr": "geri ödemek",
+    "en": "to reimburse",
+    "ar": "يعوض",
+    "fr": "rembourser"
+  },
+  {
+    "nl": "verzekeren",
+    "type": "verb",
+    "perfectum": "verzekerd",
+    "imperfectum": "verzekerde",
+    "tr": "sigortalamak",
+    "en": "to insure",
+    "ar": "يؤمن",
+    "fr": "assurer"
+  },
+  {
+    "nl": "zorgkosten",
+    "article": "de",
+    "type": "noun",
+    "tr": "sağlık masrafları",
+    "en": "healthcare costs",
+    "ar": "تكاليف الرعاية الصحية",
+    "fr": "frais de santé"
+  },
+  {
+    "nl": "bloedheet",
+    "type": "adj",
+    "tr": "çok sıcak",
+    "en": "boiling hot",
+    "ar": "حار جداً",
+    "fr": "brûlant"
+  },
+  {
+    "nl": "cadeau",
+    "article": "het",
+    "type": "noun",
+    "tr": "hediye",
+    "en": "gift",
+    "ar": "هدية",
+    "fr": "cadeau"
+  },
+  {
+    "nl": "extra",
+    "type": "adj",
+    "tr": "ekstra",
+    "en": "extra",
+    "ar": "إضافي",
+    "fr": "supplémentaire"
+  },
+  {
+    "nl": "hotel",
+    "article": "het",
+    "type": "noun",
+    "tr": "otel",
+    "en": "hotel",
+    "ar": "فندق",
+    "fr": "hôtel"
+  },
+  {
+    "nl": "jaloers",
+    "type": "adj",
+    "tr": "kıskanç",
+    "en": "jealous",
+    "ar": "غيور",
+    "fr": "jaloux"
+  },
+  {
+    "nl": "jazeker",
+    "type": "adv",
+    "tr": "elbette",
+    "en": "certainly",
+    "ar": "بالتأكيد",
+    "fr": "certainement"
+  },
+  {
+    "nl": "klimaat",
+    "article": "het",
+    "type": "noun",
+    "tr": "iklim",
+    "en": "climate",
+    "ar": "مناخ",
+    "fr": "climat"
+  },
+  {
+    "nl": "laten zien",
+    "type": "verb",
+    "perfectum": "laten zien",
+    "imperfectum": "liet zien",
+    "tr": "göstermek",
+    "en": "to show",
+    "ar": "يُري",
+    "fr": "montrer"
+  },
+  {
+    "nl": "meemaken",
+    "type": "verb",
+    "perfectum": "meegemaakt",
+    "imperfectum": "maakte mee",
+    "tr": "deneyimlemek",
+    "en": "to experience",
+    "ar": "يختبر",
+    "fr": "vivre"
+  },
+  {
+    "nl": "natuur",
+    "article": "de",
+    "type": "noun",
+    "tr": "doğa",
+    "en": "nature",
+    "ar": "طبيعة",
+    "fr": "nature"
+  },
+  {
+    "nl": "nul",
+    "type": "num",
+    "tr": "sıfır",
+    "en": "zero",
+    "ar": "صفر",
+    "fr": "zéro"
+  },
+  {
+    "nl": "oma",
+    "article": "de",
+    "type": "noun",
+    "tr": "büyükanne",
+    "en": "grandmother",
+    "ar": "جدة",
+    "fr": "grand-mère"
+  },
+  {
+    "nl": "perfect",
+    "type": "adj",
+    "tr": "mükemmel",
+    "en": "perfect",
+    "ar": "مثالي",
+    "fr": "parfait"
+  },
+  {
+    "nl": "schijnen",
+    "type": "verb",
+    "perfectum": "geschenen",
+    "imperfectum": "scheen",
+    "tr": "parlamak, görünmek",
+    "en": "to shine, to seem",
+    "ar": "يلمع، يبدو",
+    "fr": "briller, sembler"
+  },
+  {
+    "nl": "tijdelijk",
+    "type": "adj",
+    "tr": "geçici",
+    "en": "temporary",
+    "ar": "مؤقت",
+    "fr": "temporaire"
+  },
+  {
+    "nl": "uiteraard",
+    "type": "adv",
+    "tr": "tabii ki",
+    "en": "of course",
+    "ar": "بالطبع",
+    "fr": "bien sûr"
+  },
+  {
+    "nl": "uitgebreid",
+    "type": "adj",
+    "tr": "geniş, kapsamlı",
+    "en": "extensive",
+    "ar": "واسع",
+    "fr": "étendu"
+  },
+  {
+    "nl": "uitrusten",
+    "type": "verb",
+    "perfectum": "uitgerust",
+    "imperfectum": "rustte uit",
+    "tr": "dinlenmek",
+    "en": "to rest",
+    "ar": "يستريح",
+    "fr": "se reposer"
+  },
+  {
+    "nl": "vliegen",
+    "type": "verb",
+    "perfectum": "gevlogen",
+    "imperfectum": "vloog",
+    "tr": "uçmak",
+    "en": "to fly",
+    "ar": "يطير",
+    "fr": "voler"
+  },
+  {
+    "nl": "vliegticket",
+    "article": "het",
+    "type": "noun",
+    "tr": "uçak bileti",
+    "en": "plane ticket",
+    "ar": "تذكرة طيران",
+    "fr": "billet d'avion"
+  },
+  {
+    "nl": "voet",
+    "article": "de",
+    "type": "noun",
+    "tr": "ayak",
+    "en": "foot",
+    "ar": "قدم",
+    "fr": "pied"
+  },
+  {
+    "nl": "vriezen",
+    "type": "verb",
+    "perfectum": "gevroren",
+    "imperfectum": "vroor",
+    "tr": "donmak",
+    "en": "to freeze",
+    "ar": "يتجمد",
+    "fr": "geler"
+  },
+  {
+    "nl": "wereld",
+    "article": "de",
+    "type": "noun",
+    "tr": "dünya",
+    "en": "world",
+    "ar": "عالم",
+    "fr": "monde"
+  },
+  {
+    "nl": "zee",
+    "article": "de",
+    "type": "noun",
+    "tr": "deniz",
+    "en": "sea",
+    "ar": "بحر",
+    "fr": "mer"
+  },
+  {
+    "nl": "afspreken",
+    "type": "verb",
+    "perfectum": "afgesproken",
+    "imperfectum": "sprak af",
+    "tr": "buluşmak, anlaşmak",
+    "en": "to meet, to agree",
+    "ar": "يتفق، يلتقي",
+    "fr": "convenir"
+  },
+  {
+    "nl": "alleenstaand",
+    "type": "adj",
+    "tr": "bekar",
+    "en": "single",
+    "ar": "أعزب",
+    "fr": "célibataire"
+  },
+  {
+    "nl": "cultuur",
+    "article": "de",
+    "type": "noun",
+    "tr": "kültür",
+    "en": "culture",
+    "ar": "ثقافة",
+    "fr": "culture"
+  },
+  {
+    "nl": "dalen",
+    "type": "verb",
+    "perfectum": "gedaald",
+    "imperfectum": "daalde",
+    "tr": "düşmek",
+    "en": "to decrease",
+    "ar": "ينخفض",
+    "fr": "baisser"
+  },
+  {
+    "nl": "eindigen",
+    "type": "verb",
+    "perfectum": "geëindigd",
+    "imperfectum": "eindigde",
+    "tr": "bitmek",
+    "en": "to end",
+    "ar": "ينتهي",
+    "fr": "terminer"
+  },
+  {
+    "nl": "gemiddeld",
+    "type": "adj",
+    "tr": "ortalama",
+    "en": "average",
+    "ar": "متوسط",
+    "fr": "moyen"
+  },
+  {
+    "nl": "gescheiden",
+    "type": "adj",
+    "tr": "boşanmış",
+    "en": "divorced",
+    "ar": "مطلق",
+    "fr": "divorcé"
+  },
+  {
+    "nl": "huwelijk",
+    "article": "het",
+    "type": "noun",
+    "tr": "evlilik",
+    "en": "marriage",
+    "ar": "زواج",
+    "fr": "mariage"
+  },
+  {
+    "nl": "ongetrouwd",
+    "type": "adj",
+    "tr": "evlenmemiş",
+    "en": "unmarried",
+    "ar": "غير متزوج",
+    "fr": "non marié"
+  },
+  {
+    "nl": "ontmoeting",
+    "article": "de",
+    "type": "noun",
+    "tr": "buluşma",
+    "en": "meeting",
+    "ar": "لقاء",
+    "fr": "rencontre"
+  },
+  {
+    "nl": "opvoeding",
+    "article": "de",
+    "type": "noun",
+    "tr": "yetiştirme, eğitim",
+    "en": "upbringing",
+    "ar": "تربية",
+    "fr": "éducation"
+  },
+  {
+    "nl": "partner",
+    "article": "de",
+    "type": "noun",
+    "tr": "partner, eş",
+    "en": "partner",
+    "ar": "شريك",
+    "fr": "partenaire"
+  },
+  {
+    "nl": "populair",
+    "type": "adj",
+    "tr": "popüler",
+    "en": "popular",
+    "ar": "شعبي",
+    "fr": "populaire"
+  },
+  {
+    "nl": "relatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "ilişki",
+    "en": "relationship",
+    "ar": "علاقة",
+    "fr": "relation"
+  },
+  {
+    "nl": "samenwonen",
+    "type": "verb",
+    "perfectum": "samengewoond",
+    "imperfectum": "woonde samen",
+    "tr": "birlikte yaşamak",
+    "en": "to live together",
+    "ar": "يعيش معاً",
+    "fr": "cohabiter"
+  },
+  {
+    "nl": "scheiden",
+    "type": "verb",
+    "perfectum": "gescheiden",
+    "imperfectum": "scheidde",
+    "tr": "boşanmak",
+    "en": "to divorce",
+    "ar": "يطلق",
+    "fr": "divorcer"
+  },
+  {
+    "nl": "scheiding",
+    "article": "de",
+    "type": "noun",
+    "tr": "boşanma",
+    "en": "divorce",
+    "ar": "طلاق",
+    "fr": "divorce"
+  },
+  {
+    "nl": "toenemen",
+    "type": "verb",
+    "perfectum": "toegenomen",
+    "imperfectum": "nam toe",
+    "tr": "artmak",
+    "en": "to increase",
+    "ar": "يزداد",
+    "fr": "augmenter"
+  },
+  {
+    "nl": "traditioneel",
+    "type": "adj",
+    "tr": "geleneksel",
+    "en": "traditional",
+    "ar": "تقليدي",
+    "fr": "traditionnel"
+  },
+  {
+    "nl": "uitstellen",
+    "type": "verb",
+    "perfectum": "uitgesteld",
+    "imperfectum": "stelde uit",
+    "tr": "ertelemek",
+    "en": "to postpone",
+    "ar": "يؤجل",
+    "fr": "reporter"
+  },
+  {
+    "nl": "vanzelfsprekend",
+    "type": "adj",
+    "tr": "doğal olarak",
+    "en": "obvious",
+    "ar": "بديهي",
+    "fr": "évident"
+  },
+  {
+    "nl": "verliefd",
+    "type": "adj",
+    "tr": "aşık",
+    "en": "in love",
+    "ar": "واقع في الحب",
+    "fr": "amoureux"
+  },
+  {
+    "nl": "verwachting",
+    "article": "de",
+    "type": "noun",
+    "tr": "beklenti",
+    "en": "expectation",
+    "ar": "توقع",
+    "fr": "attente"
+  },
+  {
+    "nl": "zorg",
+    "article": "de",
+    "type": "noun",
+    "tr": "bakım, endişe",
+    "en": "care, concern",
+    "ar": "رعاية، قلق",
+    "fr": "soin"
+  },
+  {
+    "nl": "Azië",
+    "type": "noun",
+    "tr": "Asya",
+    "en": "Asia",
+    "ar": "آسيا",
+    "fr": "Asie"
+  },
+  {
+    "nl": "bloem",
+    "article": "de",
+    "type": "noun",
+    "tr": "çiçek",
+    "en": "flower",
+    "ar": "زهرة",
+    "fr": "fleur"
+  },
+  {
+    "nl": "bruidsboeket",
+    "article": "het",
+    "type": "noun",
+    "tr": "gelin buketi",
+    "en": "bridal bouquet",
+    "ar": "باقة العروس",
+    "fr": "bouquet de mariée"
+  },
+  {
+    "nl": "foto",
+    "article": "de",
+    "type": "noun",
+    "tr": "fotoğraf",
+    "en": "photo",
+    "ar": "صورة",
+    "fr": "photo"
+  },
+  {
+    "nl": "fotograaf",
+    "article": "de",
+    "type": "noun",
+    "tr": "fotoğrafçı",
+    "en": "photographer",
+    "ar": "مصور",
+    "fr": "photographe"
+  },
+  {
+    "nl": "gast",
+    "article": "de",
+    "type": "noun",
+    "tr": "misafir",
+    "en": "guest",
+    "ar": "ضيف",
+    "fr": "invité"
+  },
+  {
+    "nl": "hartstikke",
+    "type": "adv",
+    "tr": "çok, son derece",
+    "en": "very",
+    "ar": "جداً",
+    "fr": "très"
+  },
+  {
+    "nl": "hopelijk",
+    "type": "adv",
+    "tr": "umarım",
+    "en": "hopefully",
+    "ar": "نأمل",
+    "fr": "espérons"
+  },
+  {
+    "nl": "huwelijksreis",
+    "article": "de",
+    "type": "noun",
+    "tr": "balayı",
+    "en": "honeymoon",
+    "ar": "شهر العسل",
+    "fr": "lune de miel"
+  },
+  {
+    "nl": "nerveus",
+    "type": "adj",
+    "tr": "sinirli, gergin",
+    "en": "nervous",
+    "ar": "متوتر",
+    "fr": "nerveux"
+  },
+  {
+    "nl": "niemand",
+    "type": "pron",
+    "tr": "hiç kimse",
+    "en": "nobody",
+    "ar": "لا أحد",
+    "fr": "personne"
+  },
+  {
+    "nl": "opa",
+    "article": "de",
+    "type": "noun",
+    "tr": "büyükbaba",
+    "en": "grandfather",
+    "ar": "جد",
+    "fr": "grand-père"
+  },
+  {
+    "nl": "papa",
+    "type": "noun",
+    "tr": "baba",
+    "en": "dad",
+    "ar": "أبي",
+    "fr": "papa"
+  },
+  {
+    "nl": "pech",
+    "article": "de",
+    "type": "noun",
+    "tr": "şanssızlık",
+    "en": "bad luck",
+    "ar": "سوء حظ",
+    "fr": "malchance"
+  },
+  {
+    "nl": "regelen",
+    "type": "verb",
+    "perfectum": "geregeld",
+    "imperfectum": "regelde",
+    "tr": "düzenlemek",
+    "en": "to arrange",
+    "ar": "ينظم",
+    "fr": "organiser"
+  },
+  {
+    "nl": "regenen",
+    "type": "verb",
+    "perfectum": "geregend",
+    "imperfectum": "regende",
+    "tr": "yağmur yağmak",
+    "en": "to rain",
+    "ar": "تمطر",
+    "fr": "pleuvoir"
+  },
+  {
+    "nl": "ring",
+    "article": "de",
+    "type": "noun",
+    "tr": "yüzük",
+    "en": "ring",
+    "ar": "خاتم",
+    "fr": "bague"
+  },
+  {
+    "nl": "stadhuis",
+    "article": "het",
+    "type": "noun",
+    "tr": "belediye binası",
+    "en": "city hall",
+    "ar": "مبنى البلدية",
+    "fr": "hôtel de ville"
+  },
+  {
+    "nl": "taart",
+    "article": "de",
+    "type": "noun",
+    "tr": "pasta",
+    "en": "cake",
+    "ar": "كعكة",
+    "fr": "gâteau"
+  },
+  {
+    "nl": "trouwjurk",
+    "article": "de",
+    "type": "noun",
+    "tr": "gelinlik",
+    "en": "wedding dress",
+    "ar": "فستان زفاف",
+    "fr": "robe de mariée"
+  },
+  {
+    "nl": "uitzoeken",
+    "type": "verb",
+    "perfectum": "uitgezocht",
+    "imperfectum": "zocht uit",
+    "tr": "seçmek",
+    "en": "to choose",
+    "ar": "يختار",
+    "fr": "choisir"
+  },
+  {
+    "nl": "vergeten",
+    "type": "verb",
+    "perfectum": "vergeten",
+    "imperfectum": "vergat",
+    "tr": "unutmak",
+    "en": "to forget",
+    "ar": "ينسى",
+    "fr": "oublier"
+  },
+  {
+    "nl": "versturen",
+    "type": "verb",
+    "perfectum": "verstuurd",
+    "imperfectum": "verstuurde",
+    "tr": "göndermek",
+    "en": "to send",
+    "ar": "يرسل",
+    "fr": "envoyer"
+  },
+  {
+    "nl": "verwachten",
+    "type": "verb",
+    "perfectum": "verwacht",
+    "imperfectum": "verwachtte",
+    "tr": "beklemek",
+    "en": "to expect",
+    "ar": "يتوقع",
+    "fr": "attendre"
+  },
+  {
+    "nl": "aardig",
+    "type": "adj",
+    "tr": "nazik, kibar",
+    "en": "nice, kind",
+    "ar": "لطيف",
+    "fr": "gentil"
+  },
+  {
+    "nl": "baard",
+    "article": "de",
+    "type": "noun",
+    "tr": "sakal",
+    "en": "beard",
+    "ar": "لحية",
+    "fr": "barbe"
+  },
+  {
+    "nl": "blond",
+    "type": "adj",
+    "tr": "sarışın",
+    "en": "blonde",
+    "ar": "أشقر",
+    "fr": "blond"
+  },
+  {
+    "nl": "bruin",
+    "type": "adj",
+    "tr": "kahverengi",
+    "en": "brown",
+    "ar": "بني",
+    "fr": "brun"
+  },
+  {
+    "nl": "eigenwijs",
+    "type": "adj",
+    "tr": "inatçı",
+    "en": "stubborn",
+    "ar": "عنيد",
+    "fr": "têtu"
+  },
+  {
+    "nl": "gecondoleerd",
+    "type": "phrase",
+    "tr": "başınız sağ olsun",
+    "en": "my condolences",
+    "ar": "تعازي",
+    "fr": "mes condoléances"
+  },
+  {
+    "nl": "grap",
+    "article": "de",
+    "type": "noun",
+    "tr": "şaka",
+    "en": "joke",
+    "ar": "نكتة",
+    "fr": "blague"
+  },
+  {
+    "nl": "grappig",
+    "type": "adj",
+    "tr": "komik",
+    "en": "funny",
+    "ar": "مضحك",
+    "fr": "drôle"
+  },
+  {
+    "nl": "herinnering",
+    "article": "de",
+    "type": "noun",
+    "tr": "anı, hatıra",
+    "en": "memory",
+    "ar": "ذكرى",
+    "fr": "souvenir"
+  },
+  {
+    "nl": "herkennen",
+    "type": "verb",
+    "perfectum": "herkend",
+    "imperfectum": "herkende",
+    "tr": "tanımak",
+    "en": "to recognize",
+    "ar": "يتعرف على",
+    "fr": "reconnaître"
+  },
+  {
+    "nl": "huid",
+    "article": "de",
+    "type": "noun",
+    "tr": "cilt, deri",
+    "en": "skin",
+    "ar": "جلد",
+    "fr": "peau"
+  },
+  {
+    "nl": "karakter",
+    "article": "het",
+    "type": "noun",
+    "tr": "karakter",
+    "en": "character",
+    "ar": "شخصية",
+    "fr": "caractère"
+  },
+  {
+    "nl": "krul",
+    "article": "de",
+    "type": "noun",
+    "tr": "bukle",
+    "en": "curl",
+    "ar": "تجعيدة",
+    "fr": "boucle"
+  },
+  {
+    "nl": "lengte",
+    "article": "de",
+    "type": "noun",
+    "tr": "boy, uzunluk",
+    "en": "length, height",
+    "ar": "طول",
+    "fr": "longueur"
+  },
+  {
+    "nl": "lijken op",
+    "type": "verb",
+    "perfectum": "geleken op",
+    "imperfectum": "leek op",
+    "tr": "benzemek",
+    "en": "to look like",
+    "ar": "يشبه",
+    "fr": "ressembler à"
+  },
+  {
+    "nl": "ongeduldig",
+    "type": "adj",
+    "tr": "sabırsız",
+    "en": "impatient",
+    "ar": "غير صبور",
+    "fr": "impatient"
+  },
+  {
+    "nl": "oog",
+    "article": "het",
+    "type": "noun",
+    "tr": "göz",
+    "en": "eye",
+    "ar": "عين",
+    "fr": "œil"
+  },
+  {
+    "nl": "oor",
+    "article": "het",
+    "type": "noun",
+    "tr": "kulak",
+    "en": "ear",
+    "ar": "أذن",
+    "fr": "oreille"
+  },
+  {
+    "nl": "steil",
+    "type": "adj",
+    "tr": "düz (saç)",
+    "en": "straight (hair)",
+    "ar": "أملس",
+    "fr": "raide"
+  },
+  {
+    "nl": "tegenkomen",
+    "type": "verb",
+    "perfectum": "tegengekomen",
+    "imperfectum": "kwam tegen",
+    "tr": "rastlamak",
+    "en": "to run into",
+    "ar": "يصادف",
+    "fr": "rencontrer"
+  },
+  {
+    "nl": "toevallig",
+    "type": "adv",
+    "tr": "tesadüfen",
+    "en": "by chance",
+    "ar": "بالصدفة",
+    "fr": "par hasard"
+  },
+  {
+    "nl": "uiterlijk",
+    "article": "het",
+    "type": "noun",
+    "tr": "dış görünüş",
+    "en": "appearance",
+    "ar": "مظهر",
+    "fr": "apparence"
+  },
+  {
+    "nl": "verdrietig",
+    "type": "adj",
+    "tr": "üzgün",
+    "en": "sad",
+    "ar": "حزين",
+    "fr": "triste"
+  },
+  {
+    "nl": "vrolijk",
+    "type": "adj",
+    "tr": "neşeli",
+    "en": "cheerful",
+    "ar": "مرح",
+    "fr": "joyeux"
+  },
+  {
+    "nl": "zich voelen",
+    "type": "verb",
+    "perfectum": "zich gevoeld",
+    "imperfectum": "voelde zich",
+    "tr": "hissetmek",
+    "en": "to feel",
+    "ar": "يشعر",
+    "fr": "se sentir"
+  },
+  {
+    "nl": "zich herinneren",
+    "type": "verb",
+    "perfectum": "zich herinnerd",
+    "imperfectum": "herinnerde zich",
+    "tr": "hatırlamak",
+    "en": "to remember",
+    "ar": "يتذكر",
+    "fr": "se souvenir"
+  },
+  {
+    "nl": "zich schamen",
+    "type": "verb",
+    "perfectum": "zich geschaamd",
+    "imperfectum": "schaamde zich",
+    "tr": "utanmak",
+    "en": "to be ashamed",
+    "ar": "يخجل",
+    "fr": "avoir honte"
+  },
+  {
+    "nl": "zulk(e)",
+    "type": "pron",
+    "tr": "böyle, öyle",
+    "en": "such",
+    "ar": "مثل هذا",
+    "fr": "tel"
+  },
+  {
+    "nl": "behulpzaam",
+    "type": "adj",
+    "tr": "yardımsever",
+    "en": "helpful",
+    "ar": "مساعد",
+    "fr": "serviable"
+  },
+  {
+    "nl": "beschrijven",
+    "type": "verb",
+    "perfectum": "beschreven",
+    "imperfectum": "beschreef",
+    "tr": "tanımlamak",
+    "en": "to describe",
+    "ar": "يصف",
+    "fr": "décrire"
+  },
+  {
+    "nl": "bezorger",
+    "article": "de",
+    "type": "noun",
+    "tr": "kurye",
+    "en": "delivery person",
+    "ar": "عامل توصيل",
+    "fr": "livreur"
+  }
+]

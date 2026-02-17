@@ -1,0 +1,1795 @@
+[
+  {
+    "nl": "creatief",
+    "type": "adj",
+    "tr": "yaratıcı",
+    "en": "creative",
+    "ar": "مبدع",
+    "fr": "créatif"
+  },
+  {
+    "nl": "depressie",
+    "article": "de",
+    "type": "noun",
+    "tr": "depresyon",
+    "en": "depression",
+    "ar": "اكتئاب",
+    "fr": "dépression"
+  },
+  {
+    "nl": "enthousiast",
+    "type": "adj",
+    "tr": "hevesli",
+    "en": "enthusiastic",
+    "ar": "متحمس",
+    "fr": "enthousiaste"
+  },
+  {
+    "nl": "ervaren",
+    "type": "adj",
+    "tr": "deneyimli",
+    "en": "experienced",
+    "ar": "ذو خبرة",
+    "fr": "expérimenté"
+  },
+  {
+    "nl": "flexibel",
+    "type": "adj",
+    "tr": "esnek",
+    "en": "flexible",
+    "ar": "مرن",
+    "fr": "flexible"
+  },
+  {
+    "nl": "functie",
+    "article": "de",
+    "type": "noun",
+    "tr": "görev, işlev",
+    "en": "function, position",
+    "ar": "وظيفة",
+    "fr": "fonction"
+  },
+  {
+    "nl": "geduldig",
+    "type": "adj",
+    "tr": "sabırlı",
+    "en": "patient",
+    "ar": "صبور",
+    "fr": "patient"
+  },
+  {
+    "nl": "gevoel",
+    "article": "het",
+    "type": "noun",
+    "tr": "his, duygu",
+    "en": "feeling",
+    "ar": "شعور",
+    "fr": "sentiment"
+  },
+  {
+    "nl": "handig",
+    "type": "adj",
+    "tr": "kullanışlı, becerikli",
+    "en": "handy",
+    "ar": "ماهر",
+    "fr": "pratique"
+  },
+  {
+    "nl": "kennis",
+    "article": "de",
+    "type": "noun",
+    "tr": "bilgi / tanıdık",
+    "en": "knowledge / acquaintance",
+    "ar": "معرفة",
+    "fr": "connaissance"
+  },
+  {
+    "nl": "klant",
+    "article": "de",
+    "type": "noun",
+    "tr": "müşteri",
+    "en": "customer",
+    "ar": "زبون",
+    "fr": "client"
+  },
+  {
+    "nl": "kritisch",
+    "type": "adj",
+    "tr": "eleştirel",
+    "en": "critical",
+    "ar": "انتقادي",
+    "fr": "critique"
+  },
+  {
+    "nl": "kwaliteit",
+    "article": "de",
+    "type": "noun",
+    "tr": "kalite",
+    "en": "quality",
+    "ar": "جودة",
+    "fr": "qualité"
+  },
+  {
+    "nl": "leiding",
+    "article": "de",
+    "type": "noun",
+    "tr": "yönetim",
+    "en": "management",
+    "ar": "إدارة",
+    "fr": "direction"
+  },
+  {
+    "nl": "mode",
+    "article": "de",
+    "type": "noun",
+    "tr": "moda",
+    "en": "fashion",
+    "ar": "موضة",
+    "fr": "mode"
+  },
+  {
+    "nl": "passen bij",
+    "type": "verb",
+    "perfectum": "gepast bij",
+    "imperfectum": "paste bij",
+    "tr": "uymak",
+    "en": "to suit",
+    "ar": "يناسب",
+    "fr": "convenir à"
+  },
+  {
+    "nl": "sfeer",
+    "article": "de",
+    "type": "noun",
+    "tr": "atmosfer",
+    "en": "atmosphere",
+    "ar": "جو",
+    "fr": "ambiance"
+  },
+  {
+    "nl": "sociaal",
+    "type": "adj",
+    "tr": "sosyal",
+    "en": "social",
+    "ar": "اجتماعي",
+    "fr": "social"
+  },
+  {
+    "nl": "stage",
+    "article": "de",
+    "type": "noun",
+    "tr": "staj",
+    "en": "internship",
+    "ar": "تدريب",
+    "fr": "stage"
+  },
+  {
+    "nl": "therapie",
+    "article": "de",
+    "type": "noun",
+    "tr": "terapi",
+    "en": "therapy",
+    "ar": "علاج",
+    "fr": "thérapie"
+  },
+  {
+    "nl": "wiskunde",
+    "article": "de",
+    "type": "noun",
+    "tr": "matematik",
+    "en": "mathematics",
+    "ar": "رياضيات",
+    "fr": "mathématiques"
+  },
+  {
+    "nl": "aanpakken",
+    "type": "verb",
+    "perfectum": "aangepakt",
+    "imperfectum": "pakte aan",
+    "tr": "ele almak",
+    "en": "to tackle",
+    "ar": "يتعامل مع",
+    "fr": "aborder"
+  },
+  {
+    "nl": "adviseren",
+    "type": "verb",
+    "perfectum": "geadviseerd",
+    "imperfectum": "adviseerde",
+    "tr": "tavsiye etmek",
+    "en": "to advise",
+    "ar": "ينصح",
+    "fr": "conseiller"
+  },
+  {
+    "nl": "begin",
+    "article": "het",
+    "type": "noun",
+    "tr": "başlangıç",
+    "en": "beginning",
+    "ar": "بداية",
+    "fr": "début"
+  },
+  {
+    "nl": "belang",
+    "article": "het",
+    "type": "noun",
+    "tr": "önem, çıkar",
+    "en": "importance, interest",
+    "ar": "أهمية",
+    "fr": "importance"
+  },
+  {
+    "nl": "beseffen",
+    "type": "verb",
+    "perfectum": "beseft",
+    "imperfectum": "besefte",
+    "tr": "farkına varmak",
+    "en": "to realize",
+    "ar": "يدرك",
+    "fr": "réaliser"
+  },
+  {
+    "nl": "bestaan uit",
+    "type": "verb",
+    "perfectum": "bestaan uit",
+    "imperfectum": "bestond uit",
+    "tr": "oluşmak",
+    "en": "to consist of",
+    "ar": "يتكون من",
+    "fr": "consister en"
+  },
+  {
+    "nl": "bijeenkomst",
+    "article": "de",
+    "type": "noun",
+    "tr": "toplantı",
+    "en": "meeting",
+    "ar": "اجتماع",
+    "fr": "réunion"
+  },
+  {
+    "nl": "borrel",
+    "article": "de",
+    "type": "noun",
+    "tr": "içki partisi",
+    "en": "drinks party",
+    "ar": "حفلة مشروبات",
+    "fr": "apéro"
+  },
+  {
+    "nl": "carrière",
+    "article": "de",
+    "type": "noun",
+    "tr": "kariyer",
+    "en": "career",
+    "ar": "مهنة",
+    "fr": "carrière"
+  },
+  {
+    "nl": "ex-",
+    "type": "adj",
+    "tr": "eski",
+    "en": "ex-",
+    "ar": "سابق",
+    "fr": "ex-"
+  },
+  {
+    "nl": "interviewen",
+    "type": "verb",
+    "perfectum": "geïnterviewd",
+    "imperfectum": "interviewde",
+    "tr": "mülakat yapmak",
+    "en": "to interview",
+    "ar": "يجري مقابلة",
+    "fr": "interviewer"
+  },
+  {
+    "nl": "leidinggevende",
+    "article": "de",
+    "type": "noun",
+    "tr": "yönetici",
+    "en": "manager",
+    "ar": "مدير",
+    "fr": "responsable"
+  },
+  {
+    "nl": "netwerk",
+    "article": "het",
+    "type": "noun",
+    "tr": "ağ",
+    "en": "network",
+    "ar": "شبكة",
+    "fr": "réseau"
+  },
+  {
+    "nl": "netwerken",
+    "type": "verb",
+    "perfectum": "genetwerkt",
+    "imperfectum": "netwerkte",
+    "tr": "ağ kurmak",
+    "en": "to network",
+    "ar": "يبني شبكة علاقات",
+    "fr": "réseauter"
+  },
+  {
+    "nl": "neutraal",
+    "type": "adj",
+    "tr": "tarafsız",
+    "en": "neutral",
+    "ar": "محايد",
+    "fr": "neutre"
+  },
+  {
+    "nl": "nuttig",
+    "type": "adj",
+    "tr": "faydalı",
+    "en": "useful",
+    "ar": "مفيد",
+    "fr": "utile"
+  },
+  {
+    "nl": "resultaat",
+    "article": "het",
+    "type": "noun",
+    "tr": "sonuç",
+    "en": "result",
+    "ar": "نتيجة",
+    "fr": "résultat"
+  },
+  {
+    "nl": "uitbreiden",
+    "type": "verb",
+    "perfectum": "uitgebreid",
+    "imperfectum": "breidde uit",
+    "tr": "genişletmek",
+    "en": "to expand",
+    "ar": "يوسع",
+    "fr": "étendre"
+  },
+  {
+    "nl": "uitkering",
+    "article": "de",
+    "type": "noun",
+    "tr": "ödenek, sosyal yardım",
+    "en": "benefit, allowance",
+    "ar": "إعانة",
+    "fr": "allocation"
+  },
+  {
+    "nl": "uitzendbureau",
+    "article": "het",
+    "type": "noun",
+    "tr": "iş bulma ajansı",
+    "en": "employment agency",
+    "ar": "وكالة توظيف",
+    "fr": "agence d'intérim"
+  },
+  {
+    "nl": "vacature",
+    "article": "de",
+    "type": "noun",
+    "tr": "açık pozisyon",
+    "en": "vacancy",
+    "ar": "وظيفة شاغرة",
+    "fr": "poste vacant"
+  },
+  {
+    "nl": "werkervaring",
+    "article": "de",
+    "type": "noun",
+    "tr": "iş deneyimi",
+    "en": "work experience",
+    "ar": "خبرة عمل",
+    "fr": "expérience professionnelle"
+  },
+  {
+    "nl": "werkgever",
+    "article": "de",
+    "type": "noun",
+    "tr": "işveren",
+    "en": "employer",
+    "ar": "صاحب عمل",
+    "fr": "employeur"
+  },
+  {
+    "nl": "werkloos",
+    "type": "adj",
+    "tr": "işsiz",
+    "en": "unemployed",
+    "ar": "عاطل",
+    "fr": "au chômage"
+  },
+  {
+    "nl": "werknemer",
+    "article": "de",
+    "type": "noun",
+    "tr": "çalışan",
+    "en": "employee",
+    "ar": "موظف",
+    "fr": "employé"
+  },
+  {
+    "nl": "werkzaamheden",
+    "article": "de",
+    "type": "noun",
+    "tr": "işler, görevler",
+    "en": "activities",
+    "ar": "أنشطة",
+    "fr": "activités"
+  },
+  {
+    "nl": "werkzoekende",
+    "article": "de",
+    "type": "noun",
+    "tr": "iş arayan",
+    "en": "job seeker",
+    "ar": "باحث عن عمل",
+    "fr": "demandeur d'emploi"
+  },
+  {
+    "nl": "afdeling",
+    "article": "de",
+    "type": "noun",
+    "tr": "bölüm",
+    "en": "department",
+    "ar": "قسم",
+    "fr": "département"
+  },
+  {
+    "nl": "beantwoorden",
+    "type": "verb",
+    "perfectum": "beantwoord",
+    "imperfectum": "beantwoordde",
+    "tr": "cevaplamak",
+    "en": "to answer",
+    "ar": "يجيب",
+    "fr": "répondre"
+  },
+  {
+    "nl": "bereid",
+    "type": "adj",
+    "tr": "hazır, istekli",
+    "en": "willing",
+    "ar": "مستعد",
+    "fr": "prêt"
+  },
+  {
+    "nl": "bereikbaar",
+    "type": "adj",
+    "tr": "ulaşılabilir",
+    "en": "reachable",
+    "ar": "يمكن الوصول إليه",
+    "fr": "joignable"
+  },
+  {
+    "nl": "beschikbaar",
+    "type": "adj",
+    "tr": "mevcut, müsait",
+    "en": "available",
+    "ar": "متاح",
+    "fr": "disponible"
+  },
+  {
+    "nl": "bieden",
+    "type": "verb",
+    "perfectum": "geboden",
+    "imperfectum": "bood",
+    "tr": "sunmak",
+    "en": "to offer",
+    "ar": "يقدم",
+    "fr": "offrir"
+  },
+  {
+    "nl": "bruto",
+    "type": "adj",
+    "tr": "brüt",
+    "en": "gross",
+    "ar": "إجمالي",
+    "fr": "brut"
+  },
+  {
+    "nl": "cv",
+    "article": "het",
+    "type": "noun",
+    "tr": "özgeçmiş",
+    "en": "CV, resume",
+    "ar": "سيرة ذاتية",
+    "fr": "CV"
+  },
+  {
+    "nl": "doorzettingsvermogen",
+    "article": "het",
+    "type": "noun",
+    "tr": "azim",
+    "en": "perseverance",
+    "ar": "مثابرة",
+    "fr": "persévérance"
+  },
+  {
+    "nl": "eis",
+    "article": "de",
+    "type": "noun",
+    "tr": "şart, talep",
+    "en": "requirement",
+    "ar": "شرط",
+    "fr": "exigence"
+  },
+  {
+    "nl": "fulltime",
+    "type": "adj",
+    "tr": "tam zamanlı",
+    "en": "full-time",
+    "ar": "دوام كامل",
+    "fr": "à temps plein"
+  },
+  {
+    "nl": "omschrijving",
+    "article": "de",
+    "type": "noun",
+    "tr": "tanım",
+    "en": "description",
+    "ar": "وصف",
+    "fr": "description"
+  },
+  {
+    "nl": "opnemen",
+    "type": "verb",
+    "perfectum": "opgenomen",
+    "imperfectum": "nam op",
+    "tr": "almak, kaydetmek",
+    "en": "to record, to pick up",
+    "ar": "يسجل، يرد",
+    "fr": "enregistrer"
+  },
+  {
+    "nl": "personeelszaken",
+    "article": "de",
+    "type": "noun",
+    "tr": "insan kaynakları",
+    "en": "human resources",
+    "ar": "شؤون الموظفين",
+    "fr": "ressources humaines"
+  },
+  {
+    "nl": "receptie",
+    "article": "de",
+    "type": "noun",
+    "tr": "resepsiyon",
+    "en": "reception",
+    "ar": "استقبال",
+    "fr": "réception"
+  },
+  {
+    "nl": "receptionist",
+    "article": "de",
+    "type": "noun",
+    "tr": "resepsiyonist",
+    "en": "receptionist",
+    "ar": "موظف استقبال",
+    "fr": "réceptionniste"
+  },
+  {
+    "nl": "salaris",
+    "article": "het",
+    "type": "noun",
+    "tr": "maaş",
+    "en": "salary",
+    "ar": "راتب",
+    "fr": "salaire"
+  },
+  {
+    "nl": "snelweg",
+    "article": "de",
+    "type": "noun",
+    "tr": "otoyol",
+    "en": "highway",
+    "ar": "طريق سريع",
+    "fr": "autoroute"
+  },
+  {
+    "nl": "sollicitatiebrief",
+    "article": "de",
+    "type": "noun",
+    "tr": "başvuru mektubu",
+    "en": "cover letter",
+    "ar": "خطاب تقديم",
+    "fr": "lettre de motivation"
+  },
+  {
+    "nl": "solliciteren",
+    "type": "verb",
+    "perfectum": "gesolliciteerd",
+    "imperfectum": "solliciteerde",
+    "tr": "başvurmak",
+    "en": "to apply",
+    "ar": "يتقدم لوظيفة",
+    "fr": "postuler"
+  },
+  {
+    "nl": "vaardigheid",
+    "article": "de",
+    "type": "noun",
+    "tr": "beceri",
+    "en": "skill",
+    "ar": "مهارة",
+    "fr": "compétence"
+  },
+  {
+    "nl": "verantwoordelijk",
+    "type": "adj",
+    "tr": "sorumlu",
+    "en": "responsible",
+    "ar": "مسؤول",
+    "fr": "responsable"
+  },
+  {
+    "nl": "vloeiend",
+    "type": "adj",
+    "tr": "akıcı",
+    "en": "fluent",
+    "ar": "طليق",
+    "fr": "courant"
+  },
+  {
+    "nl": "voldoende",
+    "type": "adj",
+    "tr": "yeterli",
+    "en": "sufficient",
+    "ar": "كافي",
+    "fr": "suffisant"
+  },
+  {
+    "nl": "zeer",
+    "type": "adv",
+    "tr": "çok",
+    "en": "very",
+    "ar": "جداً",
+    "fr": "très"
+  },
+  {
+    "nl": "aannemen",
+    "type": "verb",
+    "perfectum": "aangenomen",
+    "imperfectum": "nam aan",
+    "tr": "işe almak, kabul etmek",
+    "en": "to hire, to assume",
+    "ar": "يوظف، يفترض",
+    "fr": "embaucher"
+  },
+  {
+    "nl": "afwisselend",
+    "type": "adj",
+    "tr": "çeşitli, değişken",
+    "en": "varied",
+    "ar": "متنوع",
+    "fr": "varié"
+  },
+  {
+    "nl": "beleefd",
+    "type": "adj",
+    "tr": "kibar",
+    "en": "polite",
+    "ar": "مهذب",
+    "fr": "poli"
+  },
+  {
+    "nl": "besluiten",
+    "type": "verb",
+    "perfectum": "besloten",
+    "imperfectum": "besloot",
+    "tr": "karar vermek",
+    "en": "to decide",
+    "ar": "يقرر",
+    "fr": "décider"
+  },
+  {
+    "nl": "bijbaan",
+    "article": "de",
+    "type": "noun",
+    "tr": "yarı zamanlı iş",
+    "en": "side job",
+    "ar": "عمل جانبي",
+    "fr": "petit boulot"
+  },
+  {
+    "nl": "boekwinkel",
+    "article": "de",
+    "type": "noun",
+    "tr": "kitapçı",
+    "en": "bookstore",
+    "ar": "مكتبة",
+    "fr": "librairie"
+  },
+  {
+    "nl": "bureau",
+    "article": "het",
+    "type": "noun",
+    "tr": "masa, ofis",
+    "en": "desk, office",
+    "ar": "مكتب",
+    "fr": "bureau"
+  },
+  {
+    "nl": "directeur",
+    "article": "de",
+    "type": "noun",
+    "tr": "müdür",
+    "en": "director",
+    "ar": "مدير",
+    "fr": "directeur"
+  },
+  {
+    "nl": "geweldig",
+    "type": "adj",
+    "tr": "harika",
+    "en": "great",
+    "ar": "رائع",
+    "fr": "formidable"
+  },
+  {
+    "nl": "ijverig",
+    "type": "adj",
+    "tr": "çalışkan",
+    "en": "diligent",
+    "ar": "مجتهد",
+    "fr": "assidu"
+  },
+  {
+    "nl": "kassa",
+    "article": "de",
+    "type": "noun",
+    "tr": "kasa",
+    "en": "cash register",
+    "ar": "صندوق",
+    "fr": "caisse"
+  },
+  {
+    "nl": "magazijn",
+    "article": "het",
+    "type": "noun",
+    "tr": "depo",
+    "en": "warehouse",
+    "ar": "مستودع",
+    "fr": "entrepôt"
+  },
+  {
+    "nl": "nauwkeurig",
+    "type": "adj",
+    "tr": "titiz, dikkatli",
+    "en": "accurate",
+    "ar": "دقيق",
+    "fr": "précis"
+  },
+  {
+    "nl": "netjes",
+    "type": "adj",
+    "tr": "düzgün, temiz",
+    "en": "neat",
+    "ar": "مرتب",
+    "fr": "soigné"
+  },
+  {
+    "nl": "openen",
+    "type": "verb",
+    "perfectum": "geopend",
+    "imperfectum": "opende",
+    "tr": "açmak",
+    "en": "to open",
+    "ar": "يفتح",
+    "fr": "ouvrir"
+  },
+  {
+    "nl": "overleg",
+    "article": "het",
+    "type": "noun",
+    "tr": "istişare",
+    "en": "consultation",
+    "ar": "تشاور",
+    "fr": "concertation"
+  },
+  {
+    "nl": "serveren",
+    "type": "verb",
+    "perfectum": "geserveerd",
+    "imperfectum": "serveerde",
+    "tr": "servis yapmak",
+    "en": "to serve",
+    "ar": "يقدم",
+    "fr": "servir"
+  },
+  {
+    "nl": "sollicitant",
+    "article": "de",
+    "type": "noun",
+    "tr": "başvuran",
+    "en": "applicant",
+    "ar": "متقدم",
+    "fr": "candidat"
+  },
+  {
+    "nl": "sollicitatiegesprek",
+    "article": "het",
+    "type": "noun",
+    "tr": "iş görüşmesi",
+    "en": "job interview",
+    "ar": "مقابلة عمل",
+    "fr": "entretien d'embauche"
+  },
+  {
+    "nl": "soort",
+    "article": "het",
+    "type": "noun",
+    "tr": "tür, çeşit",
+    "en": "type, kind",
+    "ar": "نوع",
+    "fr": "sorte"
+  },
+  {
+    "nl": "taak",
+    "article": "de",
+    "type": "noun",
+    "tr": "görev",
+    "en": "task",
+    "ar": "مهمة",
+    "fr": "tâche"
+  },
+  {
+    "nl": "verleden",
+    "article": "het",
+    "type": "noun",
+    "tr": "geçmiş",
+    "en": "past",
+    "ar": "ماضي",
+    "fr": "passé"
+  },
+  {
+    "nl": "verzorgingshuis",
+    "article": "het",
+    "type": "noun",
+    "tr": "bakımevi",
+    "en": "nursing home",
+    "ar": "دار رعاية",
+    "fr": "maison de retraite"
+  },
+  {
+    "nl": "voorbeeld",
+    "article": "het",
+    "type": "noun",
+    "tr": "örnek",
+    "en": "example",
+    "ar": "مثال",
+    "fr": "exemple"
+  },
+  {
+    "nl": "bewolkt",
+    "type": "adj",
+    "tr": "bulutlu",
+    "en": "cloudy",
+    "ar": "غائم",
+    "fr": "nuageux"
+  },
+  {
+    "nl": "binnenblijven",
+    "type": "verb",
+    "perfectum": "binnengebleven",
+    "imperfectum": "bleef binnen",
+    "tr": "içeride kalmak",
+    "en": "to stay inside",
+    "ar": "يبقى في الداخل",
+    "fr": "rester à l'intérieur"
+  },
+  {
+    "nl": "bui",
+    "article": "de",
+    "type": "noun",
+    "tr": "sağanak",
+    "en": "shower",
+    "ar": "زخة مطر",
+    "fr": "averse"
+  },
+  {
+    "nl": "doodgaan",
+    "type": "verb",
+    "perfectum": "doodgegaan",
+    "imperfectum": "ging dood",
+    "tr": "ölmek",
+    "en": "to die",
+    "ar": "يموت",
+    "fr": "mourir"
+  },
+  {
+    "nl": "eng",
+    "type": "adj",
+    "tr": "korkunç",
+    "en": "scary",
+    "ar": "مخيف",
+    "fr": "effrayant"
+  },
+  {
+    "nl": "hagel",
+    "article": "de",
+    "type": "noun",
+    "tr": "dolu",
+    "en": "hail",
+    "ar": "برد",
+    "fr": "grêle"
+  },
+  {
+    "nl": "handschoen",
+    "article": "de",
+    "type": "noun",
+    "tr": "eldiven",
+    "en": "glove",
+    "ar": "قفاز",
+    "fr": "gant"
+  },
+  {
+    "nl": "hitte",
+    "article": "de",
+    "type": "noun",
+    "tr": "sıcaklık",
+    "en": "heat",
+    "ar": "حرارة",
+    "fr": "chaleur"
+  },
+  {
+    "nl": "hoofd",
+    "article": "het",
+    "type": "noun",
+    "tr": "kafa, baş",
+    "en": "head",
+    "ar": "رأس",
+    "fr": "tête"
+  },
+  {
+    "nl": "ijs",
+    "article": "het",
+    "type": "noun",
+    "tr": "buz, dondurma",
+    "en": "ice, ice cream",
+    "ar": "ثلج، آيس كريم",
+    "fr": "glace"
+  },
+  {
+    "nl": "ijskoud",
+    "type": "adj",
+    "tr": "buz gibi",
+    "en": "ice cold",
+    "ar": "بارد جداً",
+    "fr": "glacial"
+  },
+  {
+    "nl": "muts",
+    "article": "de",
+    "type": "noun",
+    "tr": "bere",
+    "en": "hat",
+    "ar": "قبعة",
+    "fr": "bonnet"
+  },
+  {
+    "nl": "onweren",
+    "type": "verb",
+    "perfectum": "onweerd",
+    "imperfectum": "onweerde",
+    "tr": "fırtına çıkmak",
+    "en": "to thunder",
+    "ar": "ترعد",
+    "fr": "faire de l'orage"
+  },
+  {
+    "nl": "opschieten",
+    "type": "verb",
+    "perfectum": "opgeschoten",
+    "imperfectum": "schoot op",
+    "tr": "acele etmek",
+    "en": "to hurry",
+    "ar": "يسرع",
+    "fr": "se dépêcher"
+  },
+  {
+    "nl": "paraplu",
+    "article": "de",
+    "type": "noun",
+    "tr": "şemsiye",
+    "en": "umbrella",
+    "ar": "مظلة",
+    "fr": "parapluie"
+  },
+  {
+    "nl": "regenjas",
+    "article": "de",
+    "type": "noun",
+    "tr": "yağmurluk",
+    "en": "raincoat",
+    "ar": "معطف مطر",
+    "fr": "imperméable"
+  },
+  {
+    "nl": "sneeuwen",
+    "type": "verb",
+    "perfectum": "gesneeuwd",
+    "imperfectum": "sneeuwde",
+    "tr": "kar yağmak",
+    "en": "to snow",
+    "ar": "تثلج",
+    "fr": "neiger"
+  },
+  {
+    "nl": "storm",
+    "article": "de",
+    "type": "noun",
+    "tr": "fırtına",
+    "en": "storm",
+    "ar": "عاصفة",
+    "fr": "tempête"
+  },
+  {
+    "nl": "vannacht",
+    "type": "adv",
+    "tr": "bu gece",
+    "en": "tonight",
+    "ar": "الليلة",
+    "fr": "cette nuit"
+  },
+  {
+    "nl": "voorspellen",
+    "type": "verb",
+    "perfectum": "voorspeld",
+    "imperfectum": "voorspelde",
+    "tr": "tahmin etmek",
+    "en": "to predict",
+    "ar": "يتنبأ",
+    "fr": "prédire"
+  },
+  {
+    "nl": "waaien",
+    "type": "verb",
+    "perfectum": "gewaaid",
+    "imperfectum": "waaide",
+    "tr": "esmek",
+    "en": "to blow",
+    "ar": "تهب",
+    "fr": "souffler"
+  },
+  {
+    "nl": "wolk",
+    "article": "de",
+    "type": "noun",
+    "tr": "bulut",
+    "en": "cloud",
+    "ar": "سحابة",
+    "fr": "nuage"
+  },
+  {
+    "nl": "zeuren",
+    "type": "verb",
+    "perfectum": "gezeurd",
+    "imperfectum": "zeurde",
+    "tr": "sızlanmak",
+    "en": "to whine",
+    "ar": "يتذمر",
+    "fr": "se plaindre"
+  },
+  {
+    "nl": "aarde",
+    "article": "de",
+    "type": "noun",
+    "tr": "dünya, toprak",
+    "en": "earth",
+    "ar": "أرض",
+    "fr": "terre"
+  },
+  {
+    "nl": "beschermen",
+    "type": "verb",
+    "perfectum": "beschermd",
+    "imperfectum": "beschermde",
+    "tr": "korumak",
+    "en": "to protect",
+    "ar": "يحمي",
+    "fr": "protéger"
+  },
+  {
+    "nl": "daardoor",
+    "type": "adv",
+    "tr": "bu yüzden",
+    "en": "therefore",
+    "ar": "لذلك",
+    "fr": "par conséquent"
+  },
+  {
+    "nl": "dam",
+    "article": "de",
+    "type": "noun",
+    "tr": "baraj",
+    "en": "dam",
+    "ar": "سد",
+    "fr": "barrage"
+  },
+  {
+    "nl": "dijk",
+    "article": "de",
+    "type": "noun",
+    "tr": "set, bent",
+    "en": "dike",
+    "ar": "سد",
+    "fr": "digue"
+  },
+  {
+    "nl": "door",
+    "type": "prep",
+    "tr": "ile, tarafından",
+    "en": "through, by",
+    "ar": "من خلال",
+    "fr": "par"
+  },
+  {
+    "nl": "gevolg",
+    "article": "het",
+    "type": "noun",
+    "tr": "sonuç",
+    "en": "consequence",
+    "ar": "نتيجة",
+    "fr": "conséquence"
+  },
+  {
+    "nl": "kans",
+    "article": "de",
+    "type": "noun",
+    "tr": "şans, olasılık",
+    "en": "chance",
+    "ar": "فرصة",
+    "fr": "chance"
+  },
+  {
+    "nl": "kust",
+    "article": "de",
+    "type": "noun",
+    "tr": "kıyı",
+    "en": "coast",
+    "ar": "ساحل",
+    "fr": "côte"
+  },
+  {
+    "nl": "lente",
+    "article": "de",
+    "type": "noun",
+    "tr": "ilkbahar",
+    "en": "spring",
+    "ar": "ربيع",
+    "fr": "printemps"
+  },
+  {
+    "nl": "lucht",
+    "article": "de",
+    "type": "noun",
+    "tr": "hava, gökyüzü",
+    "en": "air, sky",
+    "ar": "هواء، سماء",
+    "fr": "air, ciel"
+  },
+  {
+    "nl": "misverstand",
+    "article": "het",
+    "type": "noun",
+    "tr": "yanlış anlama",
+    "en": "misunderstanding",
+    "ar": "سوء فهم",
+    "fr": "malentendu"
+  },
+  {
+    "nl": "neerslag",
+    "article": "de",
+    "type": "noun",
+    "tr": "yağış",
+    "en": "precipitation",
+    "ar": "هطول",
+    "fr": "précipitations"
+  },
+  {
+    "nl": "onweer",
+    "article": "het",
+    "type": "noun",
+    "tr": "fırtına",
+    "en": "thunderstorm",
+    "ar": "عاصفة رعدية",
+    "fr": "orage"
+  },
+  {
+    "nl": "oosten",
+    "article": "het",
+    "type": "noun",
+    "tr": "doğu",
+    "en": "east",
+    "ar": "شرق",
+    "fr": "est"
+  },
+  {
+    "nl": "overstroming",
+    "article": "de",
+    "type": "noun",
+    "tr": "sel",
+    "en": "flood",
+    "ar": "فيضان",
+    "fr": "inondation"
+  },
+  {
+    "nl": "periode",
+    "article": "de",
+    "type": "noun",
+    "tr": "dönem",
+    "en": "period",
+    "ar": "فترة",
+    "fr": "période"
+  },
+  {
+    "nl": "rivier",
+    "article": "de",
+    "type": "noun",
+    "tr": "nehir",
+    "en": "river",
+    "ar": "نهر",
+    "fr": "rivière"
+  },
+  {
+    "nl": "schaatsen",
+    "type": "verb",
+    "perfectum": "geschaatst",
+    "imperfectum": "schaatste",
+    "tr": "buz pateni yapmak",
+    "en": "to skate",
+    "ar": "يتزلج",
+    "fr": "patiner"
+  },
+  {
+    "nl": "seizoen",
+    "article": "het",
+    "type": "noun",
+    "tr": "mevsim",
+    "en": "season",
+    "ar": "موسم",
+    "fr": "saison"
+  },
+  {
+    "nl": "sneeuw",
+    "article": "de",
+    "type": "noun",
+    "tr": "kar",
+    "en": "snow",
+    "ar": "ثلج",
+    "fr": "neige"
+  },
+  {
+    "nl": "stijgen",
+    "type": "verb",
+    "perfectum": "gestegen",
+    "imperfectum": "steeg",
+    "tr": "yükselmek",
+    "en": "to rise",
+    "ar": "يرتفع",
+    "fr": "monter"
+  },
+  {
+    "nl": "stormen",
+    "type": "verb",
+    "perfectum": "gestormd",
+    "imperfectum": "stormde",
+    "tr": "fırtına çıkmak",
+    "en": "to storm",
+    "ar": "تعصف",
+    "fr": "faire une tempête"
+  },
+  {
+    "nl": "vliegtuig",
+    "article": "het",
+    "type": "noun",
+    "tr": "uçak",
+    "en": "airplane",
+    "ar": "طائرة",
+    "fr": "avion"
+  },
+  {
+    "nl": "waddeneiland",
+    "article": "het",
+    "type": "noun",
+    "tr": "Wadden adası",
+    "en": "Wadden island",
+    "ar": "جزيرة وادن",
+    "fr": "île des Wadden"
+  },
+  {
+    "nl": "westen",
+    "article": "het",
+    "type": "noun",
+    "tr": "batı",
+    "en": "west",
+    "ar": "غرب",
+    "fr": "ouest"
+  },
+  {
+    "nl": "wisselvallig",
+    "type": "adj",
+    "tr": "değişken",
+    "en": "changeable",
+    "ar": "متقلب",
+    "fr": "changeant"
+  },
+  {
+    "nl": "zacht",
+    "type": "adj",
+    "tr": "yumuşak, ılık",
+    "en": "soft, mild",
+    "ar": "ناعم، معتدل",
+    "fr": "doux"
+  },
+  {
+    "nl": "aaien",
+    "type": "verb",
+    "perfectum": "geaaid",
+    "imperfectum": "aaide",
+    "tr": "okşamak",
+    "en": "to pet",
+    "ar": "يربت",
+    "fr": "caresser"
+  },
+  {
+    "nl": "allergisch",
+    "type": "adj",
+    "tr": "alerjik",
+    "en": "allergic",
+    "ar": "حساس",
+    "fr": "allergique"
+  },
+  {
+    "nl": "beest",
+    "article": "het",
+    "type": "noun",
+    "tr": "hayvan",
+    "en": "animal",
+    "ar": "حيوان",
+    "fr": "bête"
+  },
+  {
+    "nl": "dier",
+    "article": "het",
+    "type": "noun",
+    "tr": "hayvan",
+    "en": "animal",
+    "ar": "حيوان",
+    "fr": "animal"
+  },
+  {
+    "nl": "eenzaam",
+    "type": "adj",
+    "tr": "yalnız",
+    "en": "lonely",
+    "ar": "وحيد",
+    "fr": "solitaire"
+  },
+  {
+    "nl": "kat",
+    "article": "de",
+    "type": "noun",
+    "tr": "kedi",
+    "en": "cat",
+    "ar": "قطة",
+    "fr": "chat"
+  },
+  {
+    "nl": "knuffelen",
+    "type": "verb",
+    "perfectum": "geknuffeld",
+    "imperfectum": "knuffelde",
+    "tr": "sarılmak",
+    "en": "to cuddle",
+    "ar": "يحتضن",
+    "fr": "câliner"
+  },
+  {
+    "nl": "konijn",
+    "article": "het",
+    "type": "noun",
+    "tr": "tavşan",
+    "en": "rabbit",
+    "ar": "أرنب",
+    "fr": "lapin"
+  },
+  {
+    "nl": "nadeel",
+    "article": "het",
+    "type": "noun",
+    "tr": "dezavantaj",
+    "en": "disadvantage",
+    "ar": "عيب",
+    "fr": "inconvénient"
+  },
+  {
+    "nl": "ongezellig",
+    "type": "adj",
+    "tr": "kasvetli",
+    "en": "unpleasant",
+    "ar": "غير مريح",
+    "fr": "désagréable"
+  },
+  {
+    "nl": "opgroeien",
+    "type": "verb",
+    "perfectum": "opgegroeid",
+    "imperfectum": "groeide op",
+    "tr": "büyümek",
+    "en": "to grow up",
+    "ar": "ينشأ",
+    "fr": "grandir"
+  },
+  {
+    "nl": "praatje",
+    "article": "het",
+    "type": "noun",
+    "tr": "sohbet",
+    "en": "chat",
+    "ar": "دردشة",
+    "fr": "bavardage"
+  },
+  {
+    "nl": "rommel",
+    "article": "de",
+    "type": "noun",
+    "tr": "karmaşa, dağınıklık",
+    "en": "mess",
+    "ar": "فوضى",
+    "fr": "désordre"
+  },
+  {
+    "nl": "ruiken",
+    "type": "verb",
+    "perfectum": "geroken",
+    "imperfectum": "rook",
+    "tr": "koklamak",
+    "en": "to smell",
+    "ar": "يشم",
+    "fr": "sentir"
+  },
+  {
+    "nl": "schattig",
+    "type": "adj",
+    "tr": "şirin",
+    "en": "cute",
+    "ar": "لطيف",
+    "fr": "mignon"
+  },
+  {
+    "nl": "slang",
+    "article": "de",
+    "type": "noun",
+    "tr": "yılan",
+    "en": "snake",
+    "ar": "ثعبان",
+    "fr": "serpent"
+  },
+  {
+    "nl": "spin",
+    "article": "de",
+    "type": "noun",
+    "tr": "örümcek",
+    "en": "spider",
+    "ar": "عنكبوت",
+    "fr": "araignée"
+  },
+  {
+    "nl": "thuiskomen",
+    "type": "verb",
+    "perfectum": "thuisgekomen",
+    "imperfectum": "kwam thuis",
+    "tr": "eve gelmek",
+    "en": "to come home",
+    "ar": "يعود للبيت",
+    "fr": "rentrer à la maison"
+  },
+  {
+    "nl": "toestaan",
+    "type": "verb",
+    "perfectum": "toegestaan",
+    "imperfectum": "stond toe",
+    "tr": "izin vermek",
+    "en": "to allow",
+    "ar": "يسمح",
+    "fr": "permettre"
+  },
+  {
+    "nl": "verbieden",
+    "type": "verb",
+    "perfectum": "verboden",
+    "imperfectum": "verbood",
+    "tr": "yasaklamak",
+    "en": "to forbid",
+    "ar": "يمنع",
+    "fr": "interdire"
+  },
+  {
+    "nl": "verzorgen",
+    "type": "verb",
+    "perfectum": "verzorgd",
+    "imperfectum": "verzorgde",
+    "tr": "bakmak",
+    "en": "to take care of",
+    "ar": "يعتني",
+    "fr": "soigner"
+  },
+  {
+    "nl": "vogel",
+    "article": "de",
+    "type": "noun",
+    "tr": "kuş",
+    "en": "bird",
+    "ar": "طائر",
+    "fr": "oiseau"
+  },
+  {
+    "nl": "wild",
+    "type": "adj",
+    "tr": "vahşi",
+    "en": "wild",
+    "ar": "بري",
+    "fr": "sauvage"
+  },
+  {
+    "nl": "berg",
+    "article": "de",
+    "type": "noun",
+    "tr": "dağ",
+    "en": "mountain",
+    "ar": "جبل",
+    "fr": "montagne"
+  },
+  {
+    "nl": "boerderij",
+    "article": "de",
+    "type": "noun",
+    "tr": "çiftlik",
+    "en": "farm",
+    "ar": "مزرعة",
+    "fr": "ferme"
+  },
+  {
+    "nl": "duin",
+    "article": "het",
+    "type": "noun",
+    "tr": "kumul",
+    "en": "dune",
+    "ar": "كثيب",
+    "fr": "dune"
+  },
+  {
+    "nl": "enige",
+    "type": "adj",
+    "tr": "tek, biricik",
+    "en": "only",
+    "ar": "الوحيد",
+    "fr": "seul"
+  },
+  {
+    "nl": "hek",
+    "article": "het",
+    "type": "noun",
+    "tr": "çit",
+    "en": "fence",
+    "ar": "سياج",
+    "fr": "clôture"
+  },
+  {
+    "nl": "inwoner",
+    "article": "de",
+    "type": "noun",
+    "tr": "sakin",
+    "en": "inhabitant",
+    "ar": "ساكن",
+    "fr": "habitant"
+  },
+  {
+    "nl": "kamperen",
+    "type": "verb",
+    "perfectum": "gekampeerd",
+    "imperfectum": "kampeerde",
+    "tr": "kamp yapmak",
+    "en": "to camp",
+    "ar": "يخيم",
+    "fr": "camper"
+  },
+  {
+    "nl": "koe",
+    "article": "de",
+    "type": "noun",
+    "tr": "inek",
+    "en": "cow",
+    "ar": "بقرة",
+    "fr": "vache"
+  },
+  {
+    "nl": "landschap",
+    "article": "het",
+    "type": "noun",
+    "tr": "manzara",
+    "en": "landscape",
+    "ar": "منظر طبيعي",
+    "fr": "paysage"
+  },
+  {
+    "nl": "meer",
+    "article": "het",
+    "type": "noun",
+    "tr": "göl",
+    "en": "lake",
+    "ar": "بحيرة",
+    "fr": "lac"
+  },
+  {
+    "nl": "miljoen",
+    "article": "het",
+    "type": "noun",
+    "tr": "milyon",
+    "en": "million",
+    "ar": "مليون",
+    "fr": "million"
+  },
+  {
+    "nl": "natuurgebied",
+    "article": "het",
+    "type": "noun",
+    "tr": "doğal alan",
+    "en": "nature reserve",
+    "ar": "محمية طبيعية",
+    "fr": "réserve naturelle"
+  },
+  {
+    "nl": "omhoog",
+    "type": "adv",
+    "tr": "yukarı",
+    "en": "up",
+    "ar": "للأعلى",
+    "fr": "en haut"
+  },
+  {
+    "nl": "pad",
+    "article": "het",
+    "type": "noun",
+    "tr": "patika",
+    "en": "path",
+    "ar": "ممر",
+    "fr": "chemin"
+  },
+  {
+    "nl": "plat",
+    "type": "adj",
+    "tr": "düz",
+    "en": "flat",
+    "ar": "مسطح",
+    "fr": "plat"
+  },
+  {
+    "nl": "rijk",
+    "type": "adj",
+    "tr": "zengin",
+    "en": "rich",
+    "ar": "غني",
+    "fr": "riche"
+  },
+  {
+    "nl": "schaap",
+    "article": "het",
+    "type": "noun",
+    "tr": "koyun",
+    "en": "sheep",
+    "ar": "خروف",
+    "fr": "mouton"
+  },
+  {
+    "nl": "skiën",
+    "type": "verb",
+    "perfectum": "geskied",
+    "imperfectum": "skiede",
+    "tr": "kayak yapmak",
+    "en": "to ski",
+    "ar": "يتزلج",
+    "fr": "skier"
+  },
+  {
+    "nl": "teleurgesteld",
+    "type": "adj",
+    "tr": "hayal kırıklığına uğramış",
+    "en": "disappointed",
+    "ar": "خائب الأمل",
+    "fr": "déçu"
+  },
+  {
+    "nl": "top",
+    "article": "de",
+    "type": "noun",
+    "tr": "zirve",
+    "en": "top",
+    "ar": "قمة",
+    "fr": "sommet"
+  },
+  {
+    "nl": "uitzicht",
+    "article": "het",
+    "type": "noun",
+    "tr": "manzara",
+    "en": "view",
+    "ar": "منظر",
+    "fr": "vue"
+  },
+  {
+    "nl": "verdwijnen",
+    "type": "verb",
+    "perfectum": "verdwenen",
+    "imperfectum": "verdween",
+    "tr": "kaybolmak",
+    "en": "to disappear",
+    "ar": "يختفي",
+    "fr": "disparaître"
+  },
+  {
+    "nl": "vuur",
+    "article": "het",
+    "type": "noun",
+    "tr": "ateş",
+    "en": "fire",
+    "ar": "نار",
+    "fr": "feu"
+  },
+  {
+    "nl": "weiland",
+    "article": "het",
+    "type": "noun",
+    "tr": "otlak",
+    "en": "meadow",
+    "ar": "مرج",
+    "fr": "prairie"
+  },
+  {
+    "nl": "zand",
+    "article": "het",
+    "type": "noun",
+    "tr": "kum",
+    "en": "sand",
+    "ar": "رمل",
+    "fr": "sable"
+  },
+  {
+    "nl": "abonnement",
+    "article": "het",
+    "type": "noun",
+    "tr": "abonelik",
+    "en": "subscription",
+    "ar": "اشتراك",
+    "fr": "abonnement"
+  },
+  {
+    "nl": "acteur",
+    "article": "de",
+    "type": "noun",
+    "tr": "aktör",
+    "en": "actor",
+    "ar": "ممثل",
+    "fr": "acteur"
+  },
+  {
+    "nl": "behoefte",
+    "article": "de",
+    "type": "noun",
+    "tr": "ihtiyaç",
+    "en": "need",
+    "ar": "حاجة",
+    "fr": "besoin"
+  },
+  {
+    "nl": "beroemd",
+    "type": "adj",
+    "tr": "ünlü",
+    "en": "famous",
+    "ar": "مشهور",
+    "fr": "célèbre"
+  }
+]

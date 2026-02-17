@@ -2,21 +2,18 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇳🇱</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="Hollandaca kelime öğrenme uygulaması - Dutch vocabulary learning app" />
-    <meta name="theme-color" content="#1a1a2e" />
-    <title>Woorden - Hollandaca Kelime Öğren</title>
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Woorden - Dutch Vocabulary</title>
   </head>
   <body>
-    <div id="app">
-      <header id="header"></header>
-      <main>
-        <section id="quiz-type-container"></section>
-        <section id="quiz-container"></section>
-        <section id="stats-container"></section>
-      </main>
-    </div>
-    <script type="module" src="/src/main.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

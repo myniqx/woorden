@@ -1,0 +1,1758 @@
+[
+  {
+    "nl": "controle",
+    "article": "de",
+    "type": "noun",
+    "tr": "kontrol",
+    "en": "control",
+    "ar": "سيطرة",
+    "fr": "contrôle"
+  },
+  {
+    "nl": "gat",
+    "article": "het",
+    "type": "noun",
+    "tr": "delik",
+    "en": "hole",
+    "ar": "ثقب",
+    "fr": "trou"
+  },
+  {
+    "nl": "honger",
+    "article": "de",
+    "type": "noun",
+    "tr": "açlık",
+    "en": "hunger",
+    "ar": "جوع",
+    "fr": "faim"
+  },
+  {
+    "nl": "indruk",
+    "article": "de",
+    "type": "noun",
+    "tr": "izlenim",
+    "en": "impression",
+    "ar": "انطباع",
+    "fr": "impression"
+  },
+  {
+    "nl": "inkomen",
+    "article": "het",
+    "type": "noun",
+    "tr": "gelir",
+    "en": "income",
+    "ar": "دخل",
+    "fr": "revenu"
+  },
+  {
+    "nl": "interviewster",
+    "article": "de",
+    "type": "noun",
+    "tr": "röportajcı",
+    "en": "interviewer (female)",
+    "ar": "محاورة",
+    "fr": "intervieweuse"
+  },
+  {
+    "nl": "jawel",
+    "type": "adv",
+    "tr": "evet",
+    "en": "yes indeed",
+    "ar": "نعم بالفعل",
+    "fr": "si"
+  },
+  {
+    "nl": "last",
+    "article": "de",
+    "type": "noun",
+    "tr": "gider",
+    "en": "burden, expense",
+    "ar": "عبء",
+    "fr": "charge"
+  },
+  {
+    "nl": "lijden",
+    "type": "verb",
+    "perfectum": "geleden",
+    "imperfectum": "leed",
+    "tr": "(acı) çekmek",
+    "en": "to suffer",
+    "ar": "يعاني",
+    "fr": "souffrir"
+  },
+  {
+    "nl": "luxe",
+    "type": "noun",
+    "tr": "lüks",
+    "en": "luxury",
+    "ar": "رفاهية",
+    "fr": "luxe"
+  },
+  {
+    "nl": "meevallen",
+    "type": "verb",
+    "perfectum": "meegevallen",
+    "imperfectum": "viel mee",
+    "tr": "beklenenden iyi olmak",
+    "en": "to turn out better than expected",
+    "ar": "يكون أفضل من المتوقع",
+    "fr": "s'avérer mieux que prévu"
+  },
+  {
+    "nl": "ooit",
+    "type": "adv",
+    "tr": "(herhangi) bir zaman",
+    "en": "ever",
+    "ar": "أبداً",
+    "fr": "jamais"
+  },
+  {
+    "nl": "overhouden",
+    "type": "verb",
+    "perfectum": "overgehouden",
+    "imperfectum": "hield over",
+    "tr": "ödedikten sonra bulundurmak",
+    "en": "to have left over",
+    "ar": "يتبقى لديه",
+    "fr": "avoir en reste"
+  },
+  {
+    "nl": "redelijk",
+    "type": "adj",
+    "tr": "makul",
+    "en": "reasonable",
+    "ar": "معقول",
+    "fr": "raisonnable"
+  },
+  {
+    "nl": "reiskosten",
+    "article": "de",
+    "type": "noun",
+    "tr": "yol masrafları",
+    "en": "travel expenses",
+    "ar": "نفقات السفر",
+    "fr": "frais de voyage"
+  },
+  {
+    "nl": "simpel",
+    "type": "adj",
+    "tr": "basit",
+    "en": "simple",
+    "ar": "بسيط",
+    "fr": "simple"
+  },
+  {
+    "nl": "tekortkomen",
+    "type": "verb",
+    "perfectum": "tekortgekomen",
+    "imperfectum": "kwam tekort",
+    "tr": "yokluğunu çekmek",
+    "en": "to lack",
+    "ar": "يفتقر",
+    "fr": "manquer"
+  },
+  {
+    "nl": "uitgave",
+    "article": "de",
+    "type": "noun",
+    "tr": "harcama",
+    "en": "expense",
+    "ar": "نفقة",
+    "fr": "dépense"
+  },
+  {
+    "nl": "uitkijken",
+    "type": "verb",
+    "perfectum": "uitgekeken",
+    "imperfectum": "keek uit",
+    "tr": "dikkat etmek",
+    "en": "to watch out",
+    "ar": "يحذر",
+    "fr": "faire attention"
+  },
+  {
+    "nl": "voordelig",
+    "type": "adj",
+    "tr": "uygun fiyatlı",
+    "en": "affordable",
+    "ar": "ميسور التكلفة",
+    "fr": "avantageux"
+  },
+  {
+    "nl": "waaraan",
+    "type": "pron",
+    "tr": "neye",
+    "en": "to what",
+    "ar": "إلى ماذا",
+    "fr": "à quoi"
+  },
+  {
+    "nl": "woonlasten",
+    "article": "de",
+    "type": "noun",
+    "tr": "ev masrafları",
+    "en": "housing costs",
+    "ar": "تكاليف السكن",
+    "fr": "charges de logement"
+  },
+  {
+    "nl": "aantrekkelijk",
+    "type": "adj",
+    "tr": "çekici",
+    "en": "attractive",
+    "ar": "جذاب",
+    "fr": "attrayant"
+  },
+  {
+    "nl": "belofte",
+    "article": "de",
+    "type": "noun",
+    "tr": "taahhüt, vaat",
+    "en": "promise",
+    "ar": "وعد",
+    "fr": "promesse"
+  },
+  {
+    "nl": "bewust",
+    "type": "adj",
+    "tr": "bilinçli",
+    "en": "conscious",
+    "ar": "واعي",
+    "fr": "conscient"
+  },
+  {
+    "nl": "bukken",
+    "type": "verb",
+    "perfectum": "gebukt",
+    "imperfectum": "bukte",
+    "tr": "eğilmek",
+    "en": "to bend down",
+    "ar": "ينحني",
+    "fr": "se baisser"
+  },
+  {
+    "nl": "consument",
+    "article": "de",
+    "type": "noun",
+    "tr": "tüketici",
+    "en": "consumer",
+    "ar": "مستهلك",
+    "fr": "consommateur"
+  },
+  {
+    "nl": "contactloos",
+    "type": "adj",
+    "tr": "temassız (ödeme)",
+    "en": "contactless (payment)",
+    "ar": "بدون تلامس",
+    "fr": "sans contact"
+  },
+  {
+    "nl": "creditcard",
+    "article": "de",
+    "type": "noun",
+    "tr": "kredi kartı",
+    "en": "credit card",
+    "ar": "بطاقة ائتمان",
+    "fr": "carte de crédit"
+  },
+  {
+    "nl": "folder",
+    "article": "de",
+    "type": "noun",
+    "tr": "broşür",
+    "en": "brochure",
+    "ar": "كتيب",
+    "fr": "brochure"
+  },
+  {
+    "nl": "fotomodel",
+    "article": "het",
+    "type": "noun",
+    "tr": "model, manken",
+    "en": "photo model",
+    "ar": "عارضة أزياء",
+    "fr": "mannequin"
+  },
+  {
+    "nl": "gangpad",
+    "article": "het",
+    "type": "noun",
+    "tr": "koridor",
+    "en": "aisle",
+    "ar": "ممر",
+    "fr": "allée"
+  },
+  {
+    "nl": "geur",
+    "article": "de",
+    "type": "noun",
+    "tr": "koku",
+    "en": "smell",
+    "ar": "رائحة",
+    "fr": "odeur"
+  },
+  {
+    "nl": "gevoelig",
+    "type": "adj",
+    "tr": "hassas",
+    "en": "sensitive",
+    "ar": "حساس",
+    "fr": "sensible"
+  },
+  {
+    "nl": "korting",
+    "article": "de",
+    "type": "noun",
+    "tr": "indirim",
+    "en": "discount",
+    "ar": "خصم",
+    "fr": "réduction"
+  },
+  {
+    "nl": "media",
+    "article": "de",
+    "type": "noun",
+    "tr": "medya",
+    "en": "media",
+    "ar": "وسائل إعلام",
+    "fr": "médias"
+  },
+  {
+    "nl": "onderaan",
+    "type": "adv",
+    "tr": "aşağı durumda",
+    "en": "at the bottom",
+    "ar": "في الأسفل",
+    "fr": "en bas"
+  },
+  {
+    "nl": "reclame",
+    "article": "de",
+    "type": "noun",
+    "tr": "reklam",
+    "en": "advertisement",
+    "ar": "إعلان",
+    "fr": "publicité"
+  },
+  {
+    "nl": "schuldig",
+    "type": "adj",
+    "tr": "suçlu",
+    "en": "guilty",
+    "ar": "مذنب",
+    "fr": "coupable"
+  },
+  {
+    "nl": "soort",
+    "article": "het",
+    "type": "noun",
+    "tr": "tür",
+    "en": "type, kind",
+    "ar": "نوع",
+    "fr": "sorte"
+  },
+  {
+    "nl": "toeval",
+    "article": "het",
+    "type": "noun",
+    "tr": "tesadüf",
+    "en": "coincidence",
+    "ar": "صدفة",
+    "fr": "hasard"
+  },
+  {
+    "nl": "truc",
+    "article": "de",
+    "type": "noun",
+    "tr": "numara",
+    "en": "trick",
+    "ar": "خدعة",
+    "fr": "truc"
+  },
+  {
+    "nl": "uitverkoop",
+    "article": "de",
+    "type": "noun",
+    "tr": "(mevsim sonu) indirim",
+    "en": "sale",
+    "ar": "تخفيضات",
+    "fr": "soldes"
+  },
+  {
+    "nl": "verleiden",
+    "type": "verb",
+    "perfectum": "verleid",
+    "imperfectum": "verleidde",
+    "tr": "kandırmak",
+    "en": "to seduce",
+    "ar": "يغري",
+    "fr": "séduire"
+  },
+  {
+    "nl": "verleiding",
+    "article": "de",
+    "type": "noun",
+    "tr": "kandırma",
+    "en": "temptation",
+    "ar": "إغراء",
+    "fr": "tentation"
+  },
+  {
+    "nl": "verschrikkelijk",
+    "type": "adj",
+    "tr": "inanılmaz, müthiş",
+    "en": "terrible",
+    "ar": "فظيع",
+    "fr": "terrible"
+  },
+  {
+    "nl": "werkelijk",
+    "type": "adv",
+    "tr": "gerçekten",
+    "en": "really",
+    "ar": "حقاً",
+    "fr": "vraiment"
+  },
+  {
+    "nl": "zichtbaar",
+    "type": "adj",
+    "tr": "görünür",
+    "en": "visible",
+    "ar": "مرئي",
+    "fr": "visible"
+  },
+  {
+    "nl": "accijns",
+    "article": "de",
+    "type": "noun",
+    "tr": "özel tüketim vergisi",
+    "en": "excise tax",
+    "ar": "ضريبة انتقائية",
+    "fr": "accise"
+  },
+  {
+    "nl": "afvoeren",
+    "type": "verb",
+    "perfectum": "afgevoerd",
+    "imperfectum": "voerde af",
+    "tr": "uzaklaştırmak",
+    "en": "to drain, remove",
+    "ar": "يزيل",
+    "fr": "évacuer"
+  },
+  {
+    "nl": "belasting",
+    "article": "de",
+    "type": "noun",
+    "tr": "vergi",
+    "en": "tax",
+    "ar": "ضريبة",
+    "fr": "impôt"
+  },
+  {
+    "nl": "belastingaanslag",
+    "article": "de",
+    "type": "noun",
+    "tr": "vergi tahakkuku",
+    "en": "tax assessment",
+    "ar": "تقدير ضريبي",
+    "fr": "avis d'imposition"
+  },
+  {
+    "nl": "Belastingdienst",
+    "article": "de",
+    "type": "noun",
+    "tr": "Vergi Dairesi",
+    "en": "Tax Authority",
+    "ar": "مصلحة الضرائب",
+    "fr": "administration fiscale"
+  },
+  {
+    "nl": "bestuur",
+    "article": "het",
+    "type": "noun",
+    "tr": "yönetim",
+    "en": "administration",
+    "ar": "إدارة",
+    "fr": "administration"
+  },
+  {
+    "nl": "bijdrage",
+    "article": "de",
+    "type": "noun",
+    "tr": "katkı payı",
+    "en": "contribution",
+    "ar": "مساهمة",
+    "fr": "contribution"
+  },
+  {
+    "nl": "brommer",
+    "article": "de",
+    "type": "noun",
+    "tr": "motorlu bisiklet",
+    "en": "moped",
+    "ar": "دراجة نارية",
+    "fr": "cyclomoteur"
+  },
+  {
+    "nl": "btw",
+    "article": "de",
+    "type": "noun",
+    "tr": "KDV",
+    "en": "VAT",
+    "ar": "ضريبة القيمة المضافة",
+    "fr": "TVA"
+  },
+  {
+    "nl": "erfenis",
+    "article": "de",
+    "type": "noun",
+    "tr": "miras",
+    "en": "inheritance",
+    "ar": "ميراث",
+    "fr": "héritage"
+  },
+  {
+    "nl": "etc.",
+    "type": "adv",
+    "tr": "vs.",
+    "en": "etc.",
+    "ar": "إلخ",
+    "fr": "etc."
+  },
+  {
+    "nl": "fietsenmaker",
+    "article": "de",
+    "type": "noun",
+    "tr": "bisiklet tamircisi",
+    "en": "bicycle mechanic",
+    "ar": "ميكانيكي دراجات",
+    "fr": "réparateur de vélos"
+  },
+  {
+    "nl": "financieel",
+    "type": "adj",
+    "tr": "mali",
+    "en": "financial",
+    "ar": "مالي",
+    "fr": "financier"
+  },
+  {
+    "nl": "loon",
+    "article": "het",
+    "type": "noun",
+    "tr": "maaş",
+    "en": "wage",
+    "ar": "أجر",
+    "fr": "salaire"
+  },
+  {
+    "nl": "provincie",
+    "article": "de",
+    "type": "noun",
+    "tr": "il",
+    "en": "province",
+    "ar": "مقاطعة",
+    "fr": "province"
+  },
+  {
+    "nl": "rekeningnummer",
+    "article": "het",
+    "type": "noun",
+    "tr": "hesap numarası",
+    "en": "account number",
+    "ar": "رقم الحساب",
+    "fr": "numéro de compte"
+  },
+  {
+    "nl": "schoenmaker",
+    "article": "de",
+    "type": "noun",
+    "tr": "ayakkabıcı",
+    "en": "shoemaker",
+    "ar": "إسكافي",
+    "fr": "cordonnier"
+  },
+  {
+    "nl": "sigaret",
+    "article": "de",
+    "type": "noun",
+    "tr": "sigara",
+    "en": "cigarette",
+    "ar": "سيجارة",
+    "fr": "cigarette"
+  },
+  {
+    "nl": "systeem",
+    "article": "het",
+    "type": "noun",
+    "tr": "sistem",
+    "en": "system",
+    "ar": "نظام",
+    "fr": "système"
+  },
+  {
+    "nl": "toeslag",
+    "article": "de",
+    "type": "noun",
+    "tr": "ek ödeneği",
+    "en": "surcharge, allowance",
+    "ar": "بدل",
+    "fr": "supplément"
+  },
+  {
+    "nl": "toevoegen",
+    "type": "verb",
+    "perfectum": "toegevoegd",
+    "imperfectum": "voegde toe",
+    "tr": "eklemek",
+    "en": "to add",
+    "ar": "يضيف",
+    "fr": "ajouter"
+  },
+  {
+    "nl": "uitstel",
+    "article": "het",
+    "type": "noun",
+    "tr": "erteleme",
+    "en": "postponement",
+    "ar": "تأجيل",
+    "fr": "report"
+  },
+  {
+    "nl": "vergissing",
+    "article": "de",
+    "type": "noun",
+    "tr": "yanılgı",
+    "en": "mistake",
+    "ar": "خطأ",
+    "fr": "erreur"
+  },
+  {
+    "nl": "vorm",
+    "article": "de",
+    "type": "noun",
+    "tr": "şekil",
+    "en": "form, shape",
+    "ar": "شكل",
+    "fr": "forme"
+  },
+  {
+    "nl": "vraag",
+    "article": "de",
+    "type": "noun",
+    "tr": "soru",
+    "en": "question",
+    "ar": "سؤال",
+    "fr": "question"
+  },
+  {
+    "nl": "afnemen",
+    "type": "verb",
+    "perfectum": "afgenomen",
+    "imperfectum": "nam af",
+    "tr": "azalmak",
+    "en": "to decrease",
+    "ar": "ينقص",
+    "fr": "diminuer"
+  },
+  {
+    "nl": "Amerikaans",
+    "type": "adj",
+    "tr": "Amerikan",
+    "en": "American",
+    "ar": "أمريكي",
+    "fr": "américain"
+  },
+  {
+    "nl": "angst",
+    "article": "de",
+    "type": "noun",
+    "tr": "korku",
+    "en": "fear",
+    "ar": "خوف",
+    "fr": "peur"
+  },
+  {
+    "nl": "blijken",
+    "type": "verb",
+    "perfectum": "gebleken",
+    "imperfectum": "bleek",
+    "tr": "anlaşılmak",
+    "en": "to appear, turn out",
+    "ar": "يتبين",
+    "fr": "s'avérer"
+  },
+  {
+    "nl": "dankbaar",
+    "type": "adj",
+    "tr": "minnettar",
+    "en": "grateful",
+    "ar": "ممتن",
+    "fr": "reconnaissant"
+  },
+  {
+    "nl": "droom",
+    "article": "de",
+    "type": "noun",
+    "tr": "hayal, rüya",
+    "en": "dream",
+    "ar": "حلم",
+    "fr": "rêve"
+  },
+  {
+    "nl": "effect",
+    "article": "het",
+    "type": "noun",
+    "tr": "etki",
+    "en": "effect",
+    "ar": "تأثير",
+    "fr": "effet"
+  },
+  {
+    "nl": "gesprek",
+    "article": "het",
+    "type": "noun",
+    "tr": "konuşma",
+    "en": "conversation",
+    "ar": "محادثة",
+    "fr": "conversation"
+  },
+  {
+    "nl": "hypotheek",
+    "article": "de",
+    "type": "noun",
+    "tr": "ipotek",
+    "en": "mortgage",
+    "ar": "رهن عقاري",
+    "fr": "hypothèque"
+  },
+  {
+    "nl": "idioot",
+    "type": "adj",
+    "tr": "saçma, aptal",
+    "en": "idiotic",
+    "ar": "غبي",
+    "fr": "idiot"
+  },
+  {
+    "nl": "loterij",
+    "article": "de",
+    "type": "noun",
+    "tr": "piyango",
+    "en": "lottery",
+    "ar": "يانصيب",
+    "fr": "loterie"
+  },
+  {
+    "nl": "onderzoeker",
+    "article": "de",
+    "type": "noun",
+    "tr": "araştırmacı",
+    "en": "researcher",
+    "ar": "باحث",
+    "fr": "chercheur"
+  },
+  {
+    "nl": "parttime",
+    "type": "adj",
+    "tr": "yarı zamanlı",
+    "en": "part-time",
+    "ar": "دوام جزئي",
+    "fr": "à temps partiel"
+  },
+  {
+    "nl": "plotseling",
+    "type": "adv",
+    "tr": "birdenbire",
+    "en": "suddenly",
+    "ar": "فجأة",
+    "fr": "soudainement"
+  },
+  {
+    "nl": "relatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "ilişki",
+    "en": "relationship",
+    "ar": "علاقة",
+    "fr": "relation"
+  },
+  {
+    "nl": "samenvatting",
+    "article": "de",
+    "type": "noun",
+    "tr": "özet",
+    "en": "summary",
+    "ar": "ملخص",
+    "fr": "résumé"
+  },
+  {
+    "nl": "verband",
+    "article": "het",
+    "type": "noun",
+    "tr": "bağlantı",
+    "en": "connection",
+    "ar": "صلة",
+    "fr": "lien"
+  },
+  {
+    "nl": "Verenigde Staten",
+    "article": "de",
+    "type": "noun",
+    "tr": "Amerika Birleşik Devletleri",
+    "en": "United States",
+    "ar": "الولايات المتحدة",
+    "fr": "États-Unis"
+  },
+  {
+    "nl": "weggeven",
+    "type": "verb",
+    "perfectum": "weggegeven",
+    "imperfectum": "gaf weg",
+    "tr": "hediye etmek",
+    "en": "to give away",
+    "ar": "يهدي",
+    "fr": "donner"
+  },
+  {
+    "nl": "wens",
+    "article": "de",
+    "type": "noun",
+    "tr": "arzu",
+    "en": "wish",
+    "ar": "أمنية",
+    "fr": "souhait"
+  },
+  {
+    "nl": "winnaar",
+    "article": "de",
+    "type": "noun",
+    "tr": "galip",
+    "en": "winner",
+    "ar": "فائز",
+    "fr": "gagnant"
+  },
+  {
+    "nl": "winnen",
+    "type": "verb",
+    "perfectum": "gewonnen",
+    "imperfectum": "won",
+    "tr": "kazanmak",
+    "en": "to win",
+    "ar": "يفوز",
+    "fr": "gagner"
+  },
+  {
+    "nl": "zich voorstellen",
+    "type": "verb",
+    "perfectum": "zich voorgesteld",
+    "imperfectum": "stelde zich voor",
+    "tr": "hayal etmek, kendini tanıtmak",
+    "en": "to imagine, to introduce oneself",
+    "ar": "يتخيل، يقدم نفسه",
+    "fr": "imaginer, se présenter"
+  },
+  {
+    "nl": "zorgen",
+    "article": "de",
+    "type": "noun",
+    "tr": "endişeler",
+    "en": "worries",
+    "ar": "مخاوف",
+    "fr": "soucis"
+  },
+  {
+    "nl": "Zweeds",
+    "type": "adj",
+    "tr": "İsveç(li), İsveççe",
+    "en": "Swedish",
+    "ar": "سويدي",
+    "fr": "suédois"
+  },
+  {
+    "nl": "absoluut",
+    "type": "adv",
+    "tr": "kesinlikle",
+    "en": "absolutely",
+    "ar": "بالتأكيد",
+    "fr": "absolument"
+  },
+  {
+    "nl": "aflevering",
+    "article": "de",
+    "type": "noun",
+    "tr": "dizi bölümü",
+    "en": "episode",
+    "ar": "حلقة",
+    "fr": "épisode"
+  },
+  {
+    "nl": "dood",
+    "type": "adj",
+    "tr": "ölü",
+    "en": "dead",
+    "ar": "ميت",
+    "fr": "mort"
+  },
+  {
+    "nl": "drama",
+    "article": "het",
+    "type": "noun",
+    "tr": "dram",
+    "en": "drama",
+    "ar": "دراما",
+    "fr": "drame"
+  },
+  {
+    "nl": "hangen",
+    "type": "verb",
+    "perfectum": "gehangen",
+    "imperfectum": "hing",
+    "tr": "asmak",
+    "en": "to hang",
+    "ar": "يعلق",
+    "fr": "pendre"
+  },
+  {
+    "nl": "journaal",
+    "article": "het",
+    "type": "noun",
+    "tr": "haberler",
+    "en": "news",
+    "ar": "نشرة الأخبار",
+    "fr": "journal télévisé"
+  },
+  {
+    "nl": "misdaad",
+    "article": "de",
+    "type": "noun",
+    "tr": "suç",
+    "en": "crime",
+    "ar": "جريمة",
+    "fr": "crime"
+  },
+  {
+    "nl": "missen",
+    "type": "verb",
+    "perfectum": "gemist",
+    "imperfectum": "miste",
+    "tr": "özlemek",
+    "en": "to miss",
+    "ar": "يفتقد",
+    "fr": "manquer"
+  },
+  {
+    "nl": "ontspannen",
+    "type": "verb",
+    "perfectum": "ontspannen",
+    "imperfectum": "ontspande",
+    "tr": "dinlenmek",
+    "en": "to relax",
+    "ar": "يسترخي",
+    "fr": "se détendre"
+  },
+  {
+    "nl": "politiek",
+    "article": "de",
+    "type": "noun",
+    "tr": "siyaset",
+    "en": "politics",
+    "ar": "سياسة",
+    "fr": "politique"
+  },
+  {
+    "nl": "programma",
+    "article": "het",
+    "type": "noun",
+    "tr": "program",
+    "en": "program",
+    "ar": "برنامج",
+    "fr": "programme"
+  },
+  {
+    "nl": "quiz",
+    "article": "de",
+    "type": "noun",
+    "tr": "bilgi yarışması",
+    "en": "quiz",
+    "ar": "مسابقة",
+    "fr": "quiz"
+  },
+  {
+    "nl": "romantisch",
+    "type": "adj",
+    "tr": "romantik",
+    "en": "romantic",
+    "ar": "رومانسي",
+    "fr": "romantique"
+  },
+  {
+    "nl": "rust",
+    "article": "de",
+    "type": "noun",
+    "tr": "huzur",
+    "en": "peace, rest",
+    "ar": "هدوء",
+    "fr": "repos"
+  },
+  {
+    "nl": "soapserie",
+    "article": "de",
+    "type": "noun",
+    "tr": "pembe dizi",
+    "en": "soap opera",
+    "ar": "مسلسل",
+    "fr": "feuilleton"
+  },
+  {
+    "nl": "talkshow",
+    "article": "de",
+    "type": "noun",
+    "tr": "talk show",
+    "en": "talk show",
+    "ar": "برنامج حواري",
+    "fr": "talk-show"
+  },
+  {
+    "nl": "terugkijken",
+    "type": "verb",
+    "perfectum": "teruggekeken",
+    "imperfectum": "keek terug",
+    "tr": "eski program izlemek",
+    "en": "to watch back",
+    "ar": "يعيد المشاهدة",
+    "fr": "revoir"
+  },
+  {
+    "nl": "thriller",
+    "article": "de",
+    "type": "noun",
+    "tr": "gerilim filmi",
+    "en": "thriller",
+    "ar": "فيلم إثارة",
+    "fr": "thriller"
+  },
+  {
+    "nl": "titel",
+    "article": "de",
+    "type": "noun",
+    "tr": "başlık",
+    "en": "title",
+    "ar": "عنوان",
+    "fr": "titre"
+  },
+  {
+    "nl": "tof",
+    "type": "adj",
+    "tr": "harika",
+    "en": "cool",
+    "ar": "رائع",
+    "fr": "cool"
+  },
+  {
+    "nl": "vegetarisch",
+    "type": "adj",
+    "tr": "vejetaryen",
+    "en": "vegetarian",
+    "ar": "نباتي",
+    "fr": "végétarien"
+  },
+  {
+    "nl": "verslavend",
+    "type": "adj",
+    "tr": "bağımlılık yaratan",
+    "en": "addictive",
+    "ar": "مسبب للإدمان",
+    "fr": "addictif"
+  },
+  {
+    "nl": "waarover",
+    "type": "pron",
+    "tr": "ne hakkında",
+    "en": "about what",
+    "ar": "عن ماذا",
+    "fr": "de quoi"
+  },
+  {
+    "nl": "waarvan",
+    "type": "pron",
+    "tr": "neyi",
+    "en": "of which",
+    "ar": "الذي منه",
+    "fr": "dont"
+  },
+  {
+    "nl": "zender",
+    "article": "de",
+    "type": "noun",
+    "tr": "yayıncı",
+    "en": "broadcaster",
+    "ar": "قناة",
+    "fr": "chaîne"
+  },
+  {
+    "nl": "advertentie",
+    "article": "de",
+    "type": "noun",
+    "tr": "reklam, ilan",
+    "en": "advertisement",
+    "ar": "إعلان",
+    "fr": "annonce"
+  },
+  {
+    "nl": "bevolking",
+    "article": "de",
+    "type": "noun",
+    "tr": "nüfus",
+    "en": "population",
+    "ar": "سكان",
+    "fr": "population"
+  },
+  {
+    "nl": "bezorgd",
+    "type": "adj",
+    "tr": "endişeli",
+    "en": "worried",
+    "ar": "قلق",
+    "fr": "inquiet"
+  },
+  {
+    "nl": "communiceren",
+    "type": "verb",
+    "perfectum": "gecommuniceerd",
+    "imperfectum": "communiceerde",
+    "tr": "haberleşmek",
+    "en": "to communicate",
+    "ar": "يتواصل",
+    "fr": "communiquer"
+  },
+  {
+    "nl": "constant",
+    "type": "adj",
+    "tr": "devamlı",
+    "en": "constant",
+    "ar": "مستمر",
+    "fr": "constant"
+  },
+  {
+    "nl": "dankzij",
+    "type": "prep",
+    "tr": "sayesinde",
+    "en": "thanks to",
+    "ar": "بفضل",
+    "fr": "grâce à"
+  },
+  {
+    "nl": "diploma-uitreiking",
+    "article": "de",
+    "type": "noun",
+    "tr": "diploma töreni",
+    "en": "graduation ceremony",
+    "ar": "حفل تخرج",
+    "fr": "remise des diplômes"
+  },
+  {
+    "nl": "echter",
+    "type": "adv",
+    "tr": "ancak",
+    "en": "however",
+    "ar": "لكن",
+    "fr": "cependant"
+  },
+  {
+    "nl": "evenement",
+    "article": "het",
+    "type": "noun",
+    "tr": "etkinlik",
+    "en": "event",
+    "ar": "حدث",
+    "fr": "événement"
+  },
+  {
+    "nl": "feestdag",
+    "article": "de",
+    "type": "noun",
+    "tr": "bayram günü",
+    "en": "holiday",
+    "ar": "عطلة",
+    "fr": "jour férié"
+  },
+  {
+    "nl": "festival",
+    "article": "het",
+    "type": "noun",
+    "tr": "festival",
+    "en": "festival",
+    "ar": "مهرجان",
+    "fr": "festival"
+  },
+  {
+    "nl": "gebeurtenis",
+    "article": "de",
+    "type": "noun",
+    "tr": "olay",
+    "en": "event",
+    "ar": "حدث",
+    "fr": "événement"
+  },
+  {
+    "nl": "gebruiker",
+    "article": "de",
+    "type": "noun",
+    "tr": "kullanıcı",
+    "en": "user",
+    "ar": "مستخدم",
+    "fr": "utilisateur"
+  },
+  {
+    "nl": "kennis",
+    "article": "de",
+    "type": "noun",
+    "tr": "bilgi / tanıdık",
+    "en": "knowledge / acquaintance",
+    "ar": "معرفة",
+    "fr": "connaissance"
+  },
+  {
+    "nl": "kleinkind",
+    "article": "het",
+    "type": "noun",
+    "tr": "torun",
+    "en": "grandchild",
+    "ar": "حفيد",
+    "fr": "petit-enfant"
+  },
+  {
+    "nl": "koopje",
+    "article": "het",
+    "type": "noun",
+    "tr": "kelepir",
+    "en": "bargain",
+    "ar": "صفقة",
+    "fr": "bonne affaire"
+  },
+  {
+    "nl": "kwart",
+    "article": "het",
+    "type": "noun",
+    "tr": "çeyrek",
+    "en": "quarter",
+    "ar": "ربع",
+    "fr": "quart"
+  },
+  {
+    "nl": "oudere",
+    "article": "de",
+    "type": "noun",
+    "tr": "yaşlı",
+    "en": "elderly person",
+    "ar": "كبير السن",
+    "fr": "personne âgée"
+  },
+  {
+    "nl": "privacy",
+    "article": "de",
+    "type": "noun",
+    "tr": "özel hayat, mahremiyet",
+    "en": "privacy",
+    "ar": "خصوصية",
+    "fr": "vie privée"
+  },
+  {
+    "nl": "profiel",
+    "article": "het",
+    "type": "noun",
+    "tr": "profil",
+    "en": "profile",
+    "ar": "ملف شخصي",
+    "fr": "profil"
+  },
+  {
+    "nl": "slechts",
+    "type": "adv",
+    "tr": "sadece",
+    "en": "only",
+    "ar": "فقط",
+    "fr": "seulement"
+  },
+  {
+    "nl": "sociale medium",
+    "article": "het",
+    "type": "noun",
+    "tr": "sosyal medya",
+    "en": "social media",
+    "ar": "وسائل التواصل الاجتماعي",
+    "fr": "réseau social"
+  },
+  {
+    "nl": "toename",
+    "article": "de",
+    "type": "noun",
+    "tr": "artış",
+    "en": "increase",
+    "ar": "زيادة",
+    "fr": "augmentation"
+  },
+  {
+    "nl": "verslaafd",
+    "type": "adj",
+    "tr": "bağımlı",
+    "en": "addicted",
+    "ar": "مدمن",
+    "fr": "dépendant"
+  },
+  {
+    "nl": "afstand",
+    "article": "de",
+    "type": "noun",
+    "tr": "mesafe",
+    "en": "distance",
+    "ar": "مسافة",
+    "fr": "distance"
+  },
+  {
+    "nl": "arbeidsmarkt",
+    "article": "de",
+    "type": "noun",
+    "tr": "iş piyasası",
+    "en": "labor market",
+    "ar": "سوق العمل",
+    "fr": "marché du travail"
+  },
+  {
+    "nl": "Aziatisch",
+    "type": "adj",
+    "tr": "Asya(lı)",
+    "en": "Asian",
+    "ar": "آسيوي",
+    "fr": "asiatique"
+  },
+  {
+    "nl": "bevallen",
+    "type": "verb",
+    "perfectum": "bevallen",
+    "imperfectum": "beviel",
+    "tr": "doğum yapmak",
+    "en": "to give birth",
+    "ar": "تلد",
+    "fr": "accoucher"
+  },
+  {
+    "nl": "brandstof",
+    "article": "de",
+    "type": "noun",
+    "tr": "yakıt",
+    "en": "fuel",
+    "ar": "وقود",
+    "fr": "carburant"
+  },
+  {
+    "nl": "buitenlands",
+    "type": "adj",
+    "tr": "yabancı, yurtdışı",
+    "en": "foreign",
+    "ar": "أجنبي",
+    "fr": "étranger"
+  },
+  {
+    "nl": "daarvoor",
+    "type": "adv",
+    "tr": "bundan önce",
+    "en": "before that",
+    "ar": "قبل ذلك",
+    "fr": "avant cela"
+  },
+  {
+    "nl": "economie",
+    "article": "de",
+    "type": "noun",
+    "tr": "ekonomi",
+    "en": "economy",
+    "ar": "اقتصاد",
+    "fr": "économie"
+  },
+  {
+    "nl": "Europese Unie",
+    "article": "de",
+    "type": "noun",
+    "tr": "Avrupa Birliği",
+    "en": "European Union",
+    "ar": "الاتحاد الأوروبي",
+    "fr": "Union européenne"
+  },
+  {
+    "nl": "feit",
+    "article": "het",
+    "type": "noun",
+    "tr": "gerçek",
+    "en": "fact",
+    "ar": "حقيقة",
+    "fr": "fait"
+  },
+  {
+    "nl": "hoofdstad",
+    "article": "de",
+    "type": "noun",
+    "tr": "başkent",
+    "en": "capital city",
+    "ar": "عاصمة",
+    "fr": "capitale"
+  },
+  {
+    "nl": "migrant",
+    "article": "de",
+    "type": "noun",
+    "tr": "göçmen",
+    "en": "migrant",
+    "ar": "مهاجر",
+    "fr": "migrant"
+  },
+  {
+    "nl": "nieuwssite",
+    "article": "de",
+    "type": "noun",
+    "tr": "haber sitesi",
+    "en": "news site",
+    "ar": "موقع إخباري",
+    "fr": "site d'actualités"
+  },
+  {
+    "nl": "ondanks",
+    "type": "prep",
+    "tr": "-(ye) rağmen",
+    "en": "despite",
+    "ar": "رغم",
+    "fr": "malgré"
+  },
+  {
+    "nl": "onderzoeken",
+    "type": "verb",
+    "perfectum": "onderzocht",
+    "imperfectum": "onderzocht",
+    "tr": "araştırmak",
+    "en": "to investigate",
+    "ar": "يبحث",
+    "fr": "examiner"
+  },
+  {
+    "nl": "organisatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "kuruluş",
+    "en": "organization",
+    "ar": "منظمة",
+    "fr": "organisation"
+  },
+  {
+    "nl": "overdreven",
+    "type": "adj",
+    "tr": "abartılmış",
+    "en": "exaggerated",
+    "ar": "مبالغ فيه",
+    "fr": "exagéré"
+  },
+  {
+    "nl": "ruim",
+    "type": "adj",
+    "tr": "geniş, aşkın",
+    "en": "spacious, more than",
+    "ar": "أكثر من",
+    "fr": "large"
+  },
+  {
+    "nl": "sloot",
+    "article": "de",
+    "type": "noun",
+    "tr": "bent",
+    "en": "ditch",
+    "ar": "خندق",
+    "fr": "fossé"
+  },
+  {
+    "nl": "stom",
+    "type": "adj",
+    "tr": "aptal",
+    "en": "stupid",
+    "ar": "غبي",
+    "fr": "bête"
+  },
+  {
+    "nl": "tarief",
+    "article": "het",
+    "type": "noun",
+    "tr": "tarife",
+    "en": "rate, tariff",
+    "ar": "تعريفة",
+    "fr": "tarif"
+  },
+  {
+    "nl": "toch",
+    "type": "adv",
+    "tr": "değil mi?, yine de",
+    "en": "still, yet",
+    "ar": "مع ذلك",
+    "fr": "quand même"
+  },
+  {
+    "nl": "verhogen",
+    "type": "verb",
+    "perfectum": "verhoogd",
+    "imperfectum": "verhoogde",
+    "tr": "yükseltmek",
+    "en": "to raise",
+    "ar": "يرفع",
+    "fr": "augmenter"
+  },
+  {
+    "nl": "voortaan",
+    "type": "adv",
+    "tr": "artık",
+    "en": "from now on",
+    "ar": "من الآن فصاعداً",
+    "fr": "désormais"
+  },
+  {
+    "nl": "vrezen",
+    "type": "verb",
+    "perfectum": "gevreesd",
+    "imperfectum": "vreesde",
+    "tr": "korkmak",
+    "en": "to fear",
+    "ar": "يخشى",
+    "fr": "craindre"
+  },
+  {
+    "nl": "werkloosheid",
+    "article": "de",
+    "type": "noun",
+    "tr": "işsizlik",
+    "en": "unemployment",
+    "ar": "بطالة",
+    "fr": "chômage"
+  },
+  {
+    "nl": "aankomen",
+    "type": "verb",
+    "perfectum": "aangekomen",
+    "imperfectum": "kwam aan",
+    "tr": "varmak",
+    "en": "to arrive",
+    "ar": "يصل",
+    "fr": "arriver"
+  },
+  {
+    "nl": "aanraden",
+    "type": "verb",
+    "perfectum": "aangeraden",
+    "imperfectum": "raadde aan",
+    "tr": "tavsiye etmek",
+    "en": "to recommend",
+    "ar": "ينصح",
+    "fr": "conseiller"
+  },
+  {
+    "nl": "beeld",
+    "article": "het",
+    "type": "noun",
+    "tr": "görüntü",
+    "en": "image",
+    "ar": "صورة",
+    "fr": "image"
+  },
+  {
+    "nl": "bespreken",
+    "type": "verb",
+    "perfectum": "besproken",
+    "imperfectum": "besprak",
+    "tr": "görüşmek",
+    "en": "to discuss",
+    "ar": "يناقش",
+    "fr": "discuter"
+  },
+  {
+    "nl": "boeddhist",
+    "article": "de",
+    "type": "noun",
+    "tr": "Budist",
+    "en": "Buddhist",
+    "ar": "بوذي",
+    "fr": "bouddhiste"
+  },
+  {
+    "nl": "christen",
+    "article": "de",
+    "type": "noun",
+    "tr": "Hristiyan",
+    "en": "Christian",
+    "ar": "مسيحي",
+    "fr": "chrétien"
+  },
+  {
+    "nl": "drug",
+    "article": "de",
+    "type": "noun",
+    "tr": "uyuşturucu",
+    "en": "drug",
+    "ar": "مخدرات",
+    "fr": "drogue"
+  },
+  {
+    "nl": "eiland",
+    "article": "het",
+    "type": "noun",
+    "tr": "ada",
+    "en": "island",
+    "ar": "جزيرة",
+    "fr": "île"
+  },
+  {
+    "nl": "geloof",
+    "article": "het",
+    "type": "noun",
+    "tr": "din",
+    "en": "faith, religion",
+    "ar": "دين",
+    "fr": "foi"
+  },
+  {
+    "nl": "kerk",
+    "article": "de",
+    "type": "noun",
+    "tr": "kilise",
+    "en": "church",
+    "ar": "كنيسة",
+    "fr": "église"
+  },
+  {
+    "nl": "kerstvakantie",
+    "article": "de",
+    "type": "noun",
+    "tr": "Noel tatili",
+    "en": "Christmas holiday",
+    "ar": "عطلة الكريسماس",
+    "fr": "vacances de Noël"
+  },
+  {
+    "nl": "liefde",
+    "article": "de",
+    "type": "noun",
+    "tr": "aşk, sevgi",
+    "en": "love",
+    "ar": "حب",
+    "fr": "amour"
+  },
+  {
+    "nl": "moskee",
+    "article": "de",
+    "type": "noun",
+    "tr": "cami",
+    "en": "mosque",
+    "ar": "مسجد",
+    "fr": "mosquée"
+  },
+  {
+    "nl": "moslim",
+    "article": "de",
+    "type": "noun",
+    "tr": "Müslüman",
+    "en": "Muslim",
+    "ar": "مسلم",
+    "fr": "musulman"
+  },
+  {
+    "nl": "onbeleefd",
+    "type": "adj",
+    "tr": "kaba",
+    "en": "rude",
+    "ar": "وقح",
+    "fr": "impoli"
+  },
+  {
+    "nl": "openbaar",
+    "type": "adj",
+    "tr": "umumi",
+    "en": "public",
+    "ar": "عام",
+    "fr": "public"
+  },
+  {
+    "nl": "president",
+    "article": "de",
+    "type": "noun",
+    "tr": "cumhurbaşkanı",
+    "en": "president",
+    "ar": "رئيس",
+    "fr": "président"
+  },
+  {
+    "nl": "privé",
+    "type": "adj",
+    "tr": "özel",
+    "en": "private",
+    "ar": "خاص",
+    "fr": "privé"
+  },
+  {
+    "nl": "taboe",
+    "article": "het",
+    "type": "noun",
+    "tr": "tabu",
+    "en": "taboo",
+    "ar": "تابو",
+    "fr": "tabou"
+  },
+  {
+    "nl": "taxi",
+    "article": "de",
+    "type": "noun",
+    "tr": "taksi",
+    "en": "taxi",
+    "ar": "تاكسي",
+    "fr": "taxi"
+  },
+  {
+    "nl": "tempel",
+    "article": "de",
+    "type": "noun",
+    "tr": "tapınak",
+    "en": "temple",
+    "ar": "معبد",
+    "fr": "temple"
+  },
+  {
+    "nl": "terwijl",
+    "type": "conj",
+    "tr": "-(ı)ken",
+    "en": "while",
+    "ar": "بينما",
+    "fr": "tandis que"
+  },
+  {
+    "nl": "vluchteling",
+    "article": "de",
+    "type": "noun",
+    "tr": "mülteci",
+    "en": "refugee",
+    "ar": "لاجئ",
+    "fr": "réfugié"
+  },
+  {
+    "nl": "ziekte",
+    "article": "de",
+    "type": "noun",
+    "tr": "hastalık",
+    "en": "disease",
+    "ar": "مرض",
+    "fr": "maladie"
+  },
+  {
+    "nl": "zoiets",
+    "type": "pron",
+    "tr": "böyle bir şey",
+    "en": "something like that",
+    "ar": "شيء كهذا",
+    "fr": "quelque chose comme ça"
+  }
+]

@@ -1,0 +1,230 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left,
+.header-right,
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.header-center {
+  gap: var(--spacing-md);
+}
+
+/* Streak Badge */
+.streak-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: var(--text-sm);
+}
+
+.streak-badge svg {
+  color: #ff6b35;
+}
+
+/* Daily Progress */
+.daily-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.daily-progress-bar {
+  width: 60px;
+  height: 6px;
+  background-color: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.daily-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-hover));
+  border-radius: var(--radius-full);
+  transition: width var(--transition-normal);
+}
+
+.daily-progress-text {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  min-width: 45px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-weight: 600;
+  font-size: var(--text-xl);
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  color: white;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+}
+
+.logo-text {
+  color: var(--color-text-primary);
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.header-btn:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.back-btn {
+  margin-left: calc(var(--spacing-sm) * -1);
+}
+
+.language-btn {
+  gap: var(--spacing-xs);
+}
+
+.lang-flag {
+  font-size: var(--text-lg);
+}
+
+/* Language Dropdown */
+.language-selector {
+  position: relative;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: var(--spacing-xs);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all var(--transition-fast);
+  z-index: 200;
+  min-width: 150px;
+  overflow: hidden;
+}
+
+.language-selector:hover .language-dropdown,
+.language-selector:focus-within .language-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  text-align: left;
+}
+
+.language-option:hover {
+  background-color: var(--color-primary-light);
+}
+
+.language-option.active {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+/* Settings Dropdown */
+.settings-selector {
+  position: relative;
+}
+
+.settings-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: var(--spacing-xs);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all var(--transition-fast);
+  z-index: 200;
+  min-width: 160px;
+  overflow: hidden;
+}
+
+.settings-selector:hover .settings-dropdown,
+.settings-selector:focus-within .settings-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.settings-option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  text-align: left;
+  font-size: var(--text-sm);
+}
+
+.settings-option:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.settings-option svg {
+  flex-shrink: 0;
+}

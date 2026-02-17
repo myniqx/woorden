@@ -1,0 +1,136 @@
+.stats-footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+}
+
+.stats-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-primary);
+}
+
+.stats-toggle:hover {
+  background-color: var(--color-primary-light);
+}
+
+.stats-summary {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.stats-progress {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.toggle-icon {
+  color: var(--color-text-secondary);
+  transition: transform var(--transition-fast);
+}
+
+.toggle-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.stats-details {
+  padding: 0 var(--spacing-lg) var(--spacing-lg);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  background-color: var(--color-bg);
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.stat-item.clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-item.clickable:active {
+  transform: translateY(0);
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-md);
+}
+
+.stat-icon.unseen {
+  background-color: rgba(158, 158, 158, 0.1);
+  color: #9e9e9e;
+}
+
+.stat-icon.learning {
+  background-color: rgba(255, 107, 53, 0.1);
+  color: #ff6b35;
+}
+
+.stat-icon.mastered {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.stat-icon.difficult {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-hover));
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+}

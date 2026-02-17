@@ -1,0 +1,72 @@
+.option-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+}
+
+.option-button:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.option-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.option-button.selected {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.option-button.correct {
+  border-color: var(--color-success);
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.option-button.incorrect {
+  border-color: var(--color-error);
+  background-color: var(--color-error-light);
+  color: var(--color-error);
+  animation: shake 0.4s ease-out;
+}
+
+.option-button.dimmed {
+  opacity: 0.5;
+}
+
+.option-button:disabled {
+  cursor: default;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.option-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+}
+
+.correct-icon {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.incorrect-icon {
+  background-color: var(--color-error);
+  color: white;
+}
