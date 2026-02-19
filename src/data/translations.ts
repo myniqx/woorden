@@ -27,7 +27,20 @@ type TranslationKey =
   | 'learningWords'
   | 'masteredWords'
   | 'difficultWords'
-  | 'emptyCategory';
+  | 'emptyCategory'
+  | 'wordPool'
+  | 'wordPoolDesc'
+  | 'wordsSelected'
+  | 'pack'
+  | 'type_noun'
+  | 'type_verb'
+  | 'type_adj'
+  | 'type_adv'
+  | 'type_prep'
+  | 'type_conj'
+  | 'type_phrase'
+  | 'type_num'
+  | 'type_pron';
 
 type Translations = Record<Language, Record<TranslationKey, string>>;
 
@@ -60,6 +73,19 @@ export const translations: Translations = {
     masteredWords: 'Bilinen Kelimeler',
     difficultWords: 'Zor Kelimeler',
     emptyCategory: 'Bu kategoride kelime yok',
+    wordPool: 'Kelime Havuzu',
+    wordPoolDesc: '{count} kelime secili',
+    wordsSelected: '{count} kelime',
+    pack: 'Paket {num}',
+    type_noun: 'isim',
+    type_verb: 'fiil',
+    type_adj: 'sıfat',
+    type_adv: 'zarf',
+    type_prep: 'edat',
+    type_conj: 'bağlaç',
+    type_phrase: 'deyim',
+    type_num: 'sayı',
+    type_pron: 'zamir',
   },
 
   en: {
@@ -90,6 +116,19 @@ export const translations: Translations = {
     masteredWords: 'Mastered Words',
     difficultWords: 'Difficult Words',
     emptyCategory: 'No words in this category',
+    wordPool: 'Word Pool',
+    wordPoolDesc: '{count} words selected',
+    wordsSelected: '{count} words',
+    pack: 'Pack {num}',
+    type_noun: 'noun',
+    type_verb: 'verb',
+    type_adj: 'adjective',
+    type_adv: 'adverb',
+    type_prep: 'preposition',
+    type_conj: 'conjunction',
+    type_phrase: 'phrase',
+    type_num: 'number',
+    type_pron: 'pronoun',
   },
 
   ar: {
@@ -120,6 +159,19 @@ export const translations: Translations = {
     masteredWords: 'كلمات متقنة',
     difficultWords: 'كلمات صعبة',
     emptyCategory: 'لا توجد كلمات في هذه الفئة',
+    wordPool: 'مجموعة الكلمات',
+    wordPoolDesc: '{count} كلمة مختارة',
+    wordsSelected: '{count} كلمة',
+    pack: 'حزمة {num}',
+    type_noun: 'اسم',
+    type_verb: 'فعل',
+    type_adj: 'صفة',
+    type_adv: 'ظرف',
+    type_prep: 'حرف جر',
+    type_conj: 'حرف عطف',
+    type_phrase: 'عبارة',
+    type_num: 'رقم',
+    type_pron: 'ضمير',
   },
 
   fr: {
@@ -150,6 +202,19 @@ export const translations: Translations = {
     masteredWords: 'Mots maîtrisés',
     difficultWords: 'Mots difficiles',
     emptyCategory: 'Aucun mot dans cette catégorie',
+    wordPool: 'Groupe de mots',
+    wordPoolDesc: '{count} mots selectionnes',
+    wordsSelected: '{count} mots',
+    pack: 'Pack {num}',
+    type_noun: 'nom',
+    type_verb: 'verbe',
+    type_adj: 'adjectif',
+    type_adv: 'adverbe',
+    type_prep: 'préposition',
+    type_conj: 'conjonction',
+    type_phrase: 'expression',
+    type_num: 'nombre',
+    type_pron: 'pronom',
   },
 };
 

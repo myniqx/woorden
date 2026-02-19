@@ -52,6 +52,7 @@ export function QuizScreen({ quizType, language, onExit, onAnswer }: QuizScreenP
     <div class="quiz-screen fade-in">
       <div class="quiz-card">
         <div class="question-section">
+          <span class="question-type">{t(`type_${quiz.word.type}`, language)}</span>
           <p class="question-text">{quiz.question.text}</p>
           {quiz.question.subtext && (
             <p class="question-subtext">{quiz.question.subtext}</p>
