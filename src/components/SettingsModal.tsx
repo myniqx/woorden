@@ -1,7 +1,6 @@
 import { useRef } from 'preact/hooks';
-import { X, Download, Upload, Package } from 'lucide-preact';
-import { getAvailablePacks, wordPacks, refreshWords } from '../services/words';
-import { isPackEnabled, togglePack, exportData, importData } from '../services/storage';
+import { X, Download, Upload } from 'lucide-preact';
+import { exportData, importData } from '../services/storage';
 import './SettingsModal.css';
 
 interface SettingsModalProps {
@@ -11,9 +10,8 @@ interface SettingsModalProps {
   onPacksChanged?: () => void;
 }
 
-export function SettingsModal({ isOpen, onClose, onDataImported, onPacksChanged }: SettingsModalProps) {
+export function SettingsModal({ isOpen, onClose, onDataImported }: SettingsModalProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const packs = getAvailablePacks();
 
   if (!isOpen) return null;
 
@@ -55,12 +53,6 @@ export function SettingsModal({ isOpen, onClose, onDataImported, onPacksChanged 
     target.value = '';
   };
 
-  const handlePackToggle = (packName: string) => {
-    togglePack(packName);
-    refreshWords();
-    onPacksChanged?.();
-  };
-
   const handleOverlayClick = (e: MouseEvent) => {
     if ((e.target as HTMLElement).classList.contains('settings-modal-overlay')) {
       onClose();
@@ -78,35 +70,6 @@ export function SettingsModal({ isOpen, onClose, onDataImported, onPacksChanged 
         </div>
 
         <div class="settings-modal-content">
-          <section class="settings-section">
-            <h3>
-              <Package size={18} />
-              Word Packs
-            </h3>
-            <div class="pack-list">
-              {packs.map(packName => {
-                const enabled = isPackEnabled(packName);
-                const wordCount = wordPacks[packName]?.length || 0;
-                return (
-                  <label key={packName} class="pack-item">
-                    <div class="pack-info">
-                      <span class="pack-name">{packName}</span>
-                      <span class="pack-count">{wordCount} words</span>
-                    </div>
-                    <div class={`pack-toggle ${enabled ? 'enabled' : ''}`}>
-                      <input
-                        type="checkbox"
-                        checked={enabled}
-                        onChange={() => handlePackToggle(packName)}
-                      />
-                      <span class="toggle-slider"></span>
-                    </div>
-                  </label>
-                );
-              })}
-            </div>
-          </section>
-
           <section class="settings-section">
             <h3>
               <Download size={18} />

@@ -1,5 +1,5 @@
-import type { Word, WordWithArticle, Language, SkillType } from '../types';
-import { words, wordsWithArticles } from './words';
+import type { Word, WordWithArticle, WordEntry, Language, SkillType } from '../types';
+import { words, wordsWithArticles, getLevelWords, getWordLevel } from './words';
 import { getSkillProgress, getOverallStats, getSkillStats, getSkillForQuizType } from './storage';
 
 function calculatePriority(word: Word, skill: SkillType): number {
@@ -64,19 +64,77 @@ export function selectWrongOptions(
   quizType: string,
   language: Language
 ): Word[] {
-  const pool = getWordPool(quizType);
   const options: Word[] = [];
-  const usedIds = new Set<number>([correctWord.id]);
-
+  const usedNls = new Set<string>([correctWord.nl]);
   const correctTranslation = correctWord[language];
+  const correctType = correctWord.type;
 
-  while (options.length < count && usedIds.size < pool.length) {
-    const randomIndex = Math.floor(Math.random() * pool.length);
-    const candidate = pool[randomIndex];
+  // Get the level this word belongs to
+  const wordLevel = getWordLevel(correctWord.nl);
 
-    if (!usedIds.has(candidate.id) && candidate[language] !== correctTranslation) {
-      options.push(candidate);
-      usedIds.add(candidate.id);
+  // Get all words from the same level for filtering
+  const levelWords = wordLevel ? getLevelWords(wordLevel) : [];
+
+  // First try: same type from same level
+  const sameTypeSameLevel = levelWords.filter(
+    w => w.type === correctType && w.nl !== correctWord.nl && w[language] !== correctTranslation
+  );
+
+  // Shuffle and pick from same type same level
+  const shuffledSameType = [...sameTypeSameLevel].sort(() => Math.random() - 0.5);
+
+  for (const candidate of shuffledSameType) {
+    if (options.length >= count) break;
+    if (!usedNls.has(candidate.nl)) {
+      options.push({ ...candidate, id: options.length + 1000, word: candidate.nl } as Word);
+      usedNls.add(candidate.nl);
+    }
+  }
+
+  // If not enough, get same type from all enabled words
+  if (options.length < count) {
+    const pool = getWordPool(quizType);
+    const sameTypeAll = pool.filter(
+      w => w.type === correctType && !usedNls.has(w.nl) && w[language] !== correctTranslation
+    );
+    const shuffledAll = [...sameTypeAll].sort(() => Math.random() - 0.5);
+
+    for (const candidate of shuffledAll) {
+      if (options.length >= count) break;
+      if (!usedNls.has(candidate.nl)) {
+        options.push(candidate);
+        usedNls.add(candidate.nl);
+      }
+    }
+  }
+
+  // If still not enough, fall back to any word from level
+  if (options.length < count) {
+    const anyFromLevel = levelWords.filter(
+      w => !usedNls.has(w.nl) && w[language] !== correctTranslation
+    );
+    const shuffledAny = [...anyFromLevel].sort(() => Math.random() - 0.5);
+
+    for (const candidate of shuffledAny) {
+      if (options.length >= count) break;
+      if (!usedNls.has(candidate.nl)) {
+        options.push({ ...candidate, id: options.length + 2000, word: candidate.nl } as Word);
+        usedNls.add(candidate.nl);
+      }
+    }
+  }
+
+  // Last resort: any enabled word
+  if (options.length < count) {
+    const pool = getWordPool(quizType);
+    const shuffledPool = [...pool].sort(() => Math.random() - 0.5);
+
+    for (const candidate of shuffledPool) {
+      if (options.length >= count) break;
+      if (!usedNls.has(candidate.nl) && candidate[language] !== correctTranslation) {
+        options.push(candidate);
+        usedNls.add(candidate.nl);
+      }
     }
   }
 

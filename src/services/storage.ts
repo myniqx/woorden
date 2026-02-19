@@ -10,7 +10,9 @@ interface DailyStats {
   correct: number;
 }
 
-export type EnabledPacks = Record<string, boolean>;
+// Hierarchical pack config: level -> chunk index -> enabled
+// Example: { "A1": { "0": true, "1": false }, "A2": true }
+export type EnabledPacks = Record<string, Record<string, boolean> | boolean>;
 
 interface AppData {
   language: Language;
@@ -20,7 +22,7 @@ interface AppData {
   streak: number;
   lastPracticeDate: string | null;
   bestDaily: number;
-  enabledPacks: EnabledPacks; // Which word packs are enabled
+  enabledPacks: EnabledPacks; // Hierarchical word pack config
 }
 
 const defaultData: AppData = {
@@ -495,23 +497,111 @@ export function importData(jsonString: string): { success: boolean; message: str
   }
 }
 
-// Word pack management
+// Word pack management - hierarchical structure
 export function getEnabledPacks(): EnabledPacks {
   return appData.enabledPacks;
 }
 
-export function isPackEnabled(packName: string): boolean {
-  // undefined = enabled by default
-  return appData.enabledPacks[packName] !== false;
+// Check if a level is enabled (any chunk enabled = level enabled)
+export function isLevelEnabled(level: string): boolean {
+  const levelConfig = appData.enabledPacks[level];
+
+  // undefined or true = all chunks enabled
+  if (levelConfig === undefined || levelConfig === true) {
+    return true;
+  }
+
+  // false = all chunks disabled
+  if (levelConfig === false) {
+    return false;
+  }
+
+  // Object = check if any chunk is enabled
+  if (typeof levelConfig === 'object') {
+    return Object.values(levelConfig).some(v => v !== false);
+  }
+
+  return true;
 }
 
-export function setPackEnabled(packName: string, enabled: boolean): void {
-  appData.enabledPacks[packName] = enabled;
+// Check if a specific chunk is enabled
+export function isChunkEnabled(level: string, chunkIndex: number): boolean {
+  const levelConfig = appData.enabledPacks[level];
+
+  // undefined or true = all chunks enabled
+  if (levelConfig === undefined || levelConfig === true) {
+    return true;
+  }
+
+  // false = all chunks disabled
+  if (levelConfig === false) {
+    return false;
+  }
+
+  // Object = check specific chunk
+  if (typeof levelConfig === 'object') {
+    return levelConfig[chunkIndex] !== false;
+  }
+
+  return true;
+}
+
+// Set a specific chunk's enabled state
+export function setChunkEnabled(level: string, chunkIndex: number, enabled: boolean): void {
+  let levelConfig = appData.enabledPacks[level];
+
+  // Convert to object if needed
+  if (typeof levelConfig !== 'object') {
+    levelConfig = {};
+    appData.enabledPacks[level] = levelConfig;
+  }
+
+  levelConfig[chunkIndex] = enabled;
   saveData(appData);
 }
 
-export function togglePack(packName: string): boolean {
-  const newState = !isPackEnabled(packName);
-  setPackEnabled(packName, newState);
+// Toggle a specific chunk
+export function toggleChunk(level: string, chunkIndex: number): boolean {
+  const newState = !isChunkEnabled(level, chunkIndex);
+  setChunkEnabled(level, chunkIndex, newState);
   return newState;
+}
+
+// Set entire level enabled/disabled
+export function setLevelEnabled(level: string, enabled: boolean): void {
+  if (enabled) {
+    // Enable all = remove config (default is enabled)
+    delete appData.enabledPacks[level];
+  } else {
+    // Disable all = set to false
+    appData.enabledPacks[level] = false;
+  }
+  saveData(appData);
+}
+
+// Toggle entire level
+export function toggleLevel(level: string): boolean {
+  const newState = !isLevelEnabled(level);
+  setLevelEnabled(level, newState);
+  return newState;
+}
+
+// Check if all chunks in a level are enabled
+export function areAllChunksEnabled(level: string, chunkCount: number): boolean {
+  for (let i = 0; i < chunkCount; i++) {
+    if (!isChunkEnabled(level, i)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// Check if no chunks in a level are enabled
+export function areNoChunksEnabled(level: string, chunkCount: number): boolean {
+  for (let i = 0; i < chunkCount; i++) {
+    if (isChunkEnabled(level, i)) {
+      return false;
+    }
+  }
+  return true;
 }

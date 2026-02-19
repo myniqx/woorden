@@ -1,6 +1,9 @@
-import { Target, BookOpen, FileText } from 'lucide-preact';
+import { useState } from 'preact/hooks';
+import { Target, BookOpen, FileText, Layers } from 'lucide-preact';
 import type { QuizType, Language } from '../types';
 import { t } from '../data/translations';
+import { getSelectedWordCount } from '../services/words';
+import { WordPoolModal } from './WordPoolModal';
 import './MainMenu.css';
 
 interface MainMenuProps {
@@ -21,10 +24,29 @@ const quizTypes: QuizTypeCard[] = [
 ];
 
 export function MainMenu({ onStartQuiz, language }: MainMenuProps) {
+  const [showWordPool, setShowWordPool] = useState(false);
+  const [, forceUpdate] = useState(0);
+
   const tr = (key: string) => t(key, language);
+  const selectedCount = getSelectedWordCount();
+
+  const handleWordPoolClose = () => {
+    setShowWordPool(false);
+    forceUpdate(n => n + 1);
+  };
 
   return (
     <div class="main-menu fade-in">
+      <button class="word-pool-button" onClick={() => setShowWordPool(true)}>
+        <Layers size={20} />
+        <div class="word-pool-button-content">
+          <span class="word-pool-button-title">{tr('wordPool')}</span>
+          <span class="word-pool-button-count">
+            {t('wordPoolDesc', language, { count: selectedCount })}
+          </span>
+        </div>
+      </button>
+
       <h1 class="menu-title">{tr('selectQuizType')}</h1>
 
       <div class="quiz-type-grid">
@@ -45,6 +67,10 @@ export function MainMenu({ onStartQuiz, language }: MainMenuProps) {
           </button>
         ))}
       </div>
+
+      {showWordPool && (
+        <WordPoolModal language={language} onClose={handleWordPoolClose} />
+      )}
     </div>
   );
 }

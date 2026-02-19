@@ -76,3 +76,39 @@
   color: var(--color-text-secondary);
   line-height: 1.4;
 }
+
+.word-pool-button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-align: left;
+  color: var(--color-primary);
+}
+
+.word-pool-button:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.word-pool-button-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.word-pool-button-title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.word-pool-button-count {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
