@@ -1,0 +1,867 @@
+[
+  {
+    "nl": "aankomen",
+    "type": "verb",
+    "perfectum": "aangekomen",
+    "imperfectum": "kwam aan",
+    "tr": "varmak, gelmek",
+    "en": "to arrive",
+    "ar": "يصل",
+    "fr": "arriver"
+  },
+  {
+    "nl": "aankomst",
+    "type": "noun",
+    "article": "de",
+    "tr": "varış",
+    "en": "arrival",
+    "ar": "وصول",
+    "fr": "arrivée"
+  },
+  {
+    "nl": "bedankt",
+    "type": "phrase",
+    "tr": "teşekkürler",
+    "en": "thank you",
+    "ar": "شكرا",
+    "fr": "merci"
+  },
+  {
+    "nl": "centraal",
+    "type": "adj",
+    "tr": "merkezi",
+    "en": "central",
+    "ar": "مركزي",
+    "fr": "central"
+  },
+  {
+    "nl": "direct",
+    "type": "adv",
+    "tr": "doğrudan, hemen",
+    "en": "directly, immediately",
+    "ar": "مباشرة",
+    "fr": "directement"
+  },
+  {
+    "nl": "gelukkig",
+    "type": "adj",
+    "tr": "mutlu, neyse ki",
+    "en": "happy, fortunately",
+    "ar": "سعيد، لحسن الحظ",
+    "fr": "heureux, heureusement"
+  },
+  {
+    "nl": "intercity",
+    "type": "noun",
+    "article": "de",
+    "tr": "şehirlerarası tren",
+    "en": "intercity train",
+    "ar": "قطار بين المدن",
+    "fr": "train intercity"
+  },
+  {
+    "nl": "minuut",
+    "type": "noun",
+    "article": "de",
+    "tr": "dakika",
+    "en": "minute",
+    "ar": "دقيقة",
+    "fr": "minute"
+  },
+  {
+    "nl": "nergens",
+    "type": "adv",
+    "tr": "hiçbir yerde",
+    "en": "nowhere",
+    "ar": "لا مكان",
+    "fr": "nulle part"
+  },
+  {
+    "nl": "normaal",
+    "type": "adj",
+    "tr": "normal",
+    "en": "normal",
+    "ar": "عادي",
+    "fr": "normal"
+  },
+  {
+    "nl": "opletten",
+    "type": "verb",
+    "perfectum": "opgelet",
+    "imperfectum": "lette op",
+    "tr": "dikkat etmek",
+    "en": "to pay attention",
+    "ar": "ينتبه",
+    "fr": "faire attention"
+  },
+  {
+    "nl": "overstappen",
+    "type": "verb",
+    "perfectum": "overgestapt",
+    "imperfectum": "stapte over",
+    "tr": "aktarma yapmak",
+    "en": "to transfer, to change",
+    "ar": "يغير",
+    "fr": "changer"
+  },
+  {
+    "nl": "reiziger",
+    "type": "noun",
+    "article": "de",
+    "tr": "yolcu",
+    "en": "traveler",
+    "ar": "مسافر",
+    "fr": "voyageur"
+  },
+  {
+    "nl": "spoor",
+    "type": "noun",
+    "article": "het",
+    "tr": "ray, platform",
+    "en": "track, platform",
+    "ar": "رصيف",
+    "fr": "voie"
+  },
+  {
+    "nl": "sprinter",
+    "type": "noun",
+    "article": "de",
+    "tr": "banliyö treni",
+    "en": "local train",
+    "ar": "قطار محلي",
+    "fr": "train régional"
+  },
+  {
+    "nl": "station",
+    "type": "noun",
+    "article": "het",
+    "tr": "istasyon",
+    "en": "station",
+    "ar": "محطة",
+    "fr": "gare"
+  },
+  {
+    "nl": "tas",
+    "type": "noun",
+    "article": "de",
+    "tr": "çanta",
+    "en": "bag",
+    "ar": "حقيبة",
+    "fr": "sac"
+  },
+  {
+    "nl": "telefoon",
+    "type": "noun",
+    "article": "de",
+    "tr": "telefon",
+    "en": "phone",
+    "ar": "هاتف",
+    "fr": "téléphone"
+  },
+  {
+    "nl": "verbinding",
+    "type": "noun",
+    "article": "de",
+    "tr": "bağlantı",
+    "en": "connection",
+    "ar": "اتصال",
+    "fr": "connexion"
+  },
+  {
+    "nl": "verstaan",
+    "type": "verb",
+    "perfectum": "verstaan",
+    "imperfectum": "verstond",
+    "tr": "anlamak, duymak",
+    "en": "to understand, to hear",
+    "ar": "يفهم",
+    "fr": "comprendre"
+  },
+  {
+    "nl": "vertraging",
+    "type": "noun",
+    "article": "de",
+    "tr": "gecikme",
+    "en": "delay",
+    "ar": "تأخير",
+    "fr": "retard"
+  },
+  {
+    "nl": "vertrek",
+    "type": "noun",
+    "article": "het",
+    "tr": "kalkış",
+    "en": "departure",
+    "ar": "مغادرة",
+    "fr": "départ"
+  },
+  {
+    "nl": "vertrekken",
+    "type": "verb",
+    "perfectum": "vertrokken",
+    "imperfectum": "vertrok",
+    "tr": "ayrılmak, kalkmak",
+    "en": "to leave, to depart",
+    "ar": "يغادر",
+    "fr": "partir"
+  },
+  {
+    "nl": "volgende",
+    "type": "adj",
+    "tr": "sonraki, gelecek",
+    "en": "next",
+    "ar": "التالي",
+    "fr": "prochain"
+  },
+  {
+    "nl": "dochter",
+    "type": "noun",
+    "article": "de",
+    "tr": "kız (çocuk)",
+    "en": "daughter",
+    "ar": "ابنة",
+    "fr": "fille"
+  },
+  {
+    "nl": "duidelijk",
+    "type": "adj",
+    "tr": "açık, net",
+    "en": "clear",
+    "ar": "واضح",
+    "fr": "clair"
+  },
+  {
+    "nl": "eerst",
+    "type": "adv",
+    "tr": "önce, ilk",
+    "en": "first",
+    "ar": "أولا",
+    "fr": "d'abord"
+  },
+  {
+    "nl": "eventueel",
+    "type": "adv",
+    "tr": "olası, belki",
+    "en": "possibly, perhaps",
+    "ar": "ربما",
+    "fr": "éventuellement"
+  },
+  {
+    "nl": "geloven",
+    "type": "verb",
+    "perfectum": "geloofd",
+    "imperfectum": "geloofde",
+    "tr": "inanmak",
+    "en": "to believe",
+    "ar": "يؤمن",
+    "fr": "croire"
+  },
+  {
+    "nl": "idee",
+    "type": "noun",
+    "article": "het",
+    "tr": "fikir",
+    "en": "idea",
+    "ar": "فكرة",
+    "fr": "idée"
+  },
+  {
+    "nl": "kleren",
+    "type": "noun",
+    "article": "de",
+    "tr": "kıyafetler",
+    "en": "clothes",
+    "ar": "ملابس",
+    "fr": "vêtements"
+  },
+  {
+    "nl": "links",
+    "type": "adv",
+    "tr": "sol, solda",
+    "en": "left",
+    "ar": "يسار",
+    "fr": "à gauche"
+  },
+  {
+    "nl": "linksaf",
+    "type": "adv",
+    "tr": "sola dön",
+    "en": "turn left",
+    "ar": "انعطف يسارا",
+    "fr": "à gauche"
+  },
+  {
+    "nl": "mam",
+    "type": "noun",
+    "article": "de",
+    "tr": "anne",
+    "en": "mom",
+    "ar": "ماما",
+    "fr": "maman"
+  },
+  {
+    "nl": "mezelf",
+    "type": "pron",
+    "tr": "kendim",
+    "en": "myself",
+    "ar": "نفسي",
+    "fr": "moi-même"
+  },
+  {
+    "nl": "naartoe",
+    "type": "adv",
+    "tr": "-e doğru",
+    "en": "to (direction)",
+    "ar": "إلى",
+    "fr": "vers"
+  },
+  {
+    "nl": "plattegrond",
+    "type": "noun",
+    "article": "de",
+    "tr": "harita, plan",
+    "en": "map, floor plan",
+    "ar": "خريطة",
+    "fr": "plan"
+  },
+  {
+    "nl": "rechtdoor",
+    "type": "adv",
+    "tr": "dosdoğru",
+    "en": "straight ahead",
+    "ar": "مباشرة",
+    "fr": "tout droit"
+  },
+  {
+    "nl": "rechterkant",
+    "type": "noun",
+    "article": "de",
+    "tr": "sağ taraf",
+    "en": "right side",
+    "ar": "الجهة اليمنى",
+    "fr": "côté droit"
+  },
+  {
+    "nl": "rechts",
+    "type": "adv",
+    "tr": "sağ, sağda",
+    "en": "right",
+    "ar": "يمين",
+    "fr": "à droite"
+  },
+  {
+    "nl": "rechtsaf",
+    "type": "adv",
+    "tr": "sağa dön",
+    "en": "turn right",
+    "ar": "انعطف يمينا",
+    "fr": "à droite"
+  },
+  {
+    "nl": "route",
+    "type": "noun",
+    "article": "de",
+    "tr": "rota, yol",
+    "en": "route",
+    "ar": "طريق",
+    "fr": "route"
+  },
+  {
+    "nl": "slim",
+    "type": "adj",
+    "tr": "zeki, akıllı",
+    "en": "smart, clever",
+    "ar": "ذكي",
+    "fr": "intelligent"
+  },
+  {
+    "nl": "stuk",
+    "type": "noun",
+    "article": "het",
+    "tr": "parça, mesafe",
+    "en": "piece, distance",
+    "ar": "قطعة",
+    "fr": "morceau"
+  },
+  {
+    "nl": "tegenover",
+    "type": "prep",
+    "tr": "karşısında",
+    "en": "opposite, across from",
+    "ar": "مقابل",
+    "fr": "en face de"
+  },
+  {
+    "nl": "tekenen",
+    "type": "verb",
+    "perfectum": "getekend",
+    "imperfectum": "tekende",
+    "tr": "çizmek",
+    "en": "to draw",
+    "ar": "يرسم",
+    "fr": "dessiner"
+  },
+  {
+    "nl": "terug",
+    "type": "adv",
+    "tr": "geri",
+    "en": "back",
+    "ar": "رجوع",
+    "fr": "retour"
+  },
+  {
+    "nl": "tijdje",
+    "type": "noun",
+    "article": "het",
+    "tr": "bir süre",
+    "en": "a while",
+    "ar": "فترة",
+    "fr": "un moment"
+  },
+  {
+    "nl": "uitleggen",
+    "type": "verb",
+    "perfectum": "uitgelegd",
+    "imperfectum": "legde uit",
+    "tr": "açıklamak",
+    "en": "to explain",
+    "ar": "يشرح",
+    "fr": "expliquer"
+  },
+  {
+    "nl": "winkelen",
+    "type": "verb",
+    "perfectum": "gewinkeld",
+    "imperfectum": "winkelde",
+    "tr": "alışveriş yapmak",
+    "en": "to shop",
+    "ar": "يتسوق",
+    "fr": "faire les courses"
+  },
+  {
+    "nl": "auto",
+    "type": "noun",
+    "article": "de",
+    "tr": "araba",
+    "en": "car",
+    "ar": "سيارة",
+    "fr": "voiture"
+  },
+  {
+    "nl": "bus",
+    "type": "noun",
+    "article": "de",
+    "tr": "otobüs",
+    "en": "bus",
+    "ar": "حافلة",
+    "fr": "bus"
+  },
+  {
+    "nl": "collega",
+    "type": "noun",
+    "article": "de",
+    "tr": "iş arkadaşı",
+    "en": "colleague",
+    "ar": "زميل",
+    "fr": "collègue"
+  },
+  {
+    "nl": "docent",
+    "type": "noun",
+    "article": "de",
+    "tr": "öğretmen, hoca",
+    "en": "teacher",
+    "ar": "مدرس",
+    "fr": "enseignant"
+  },
+  {
+    "nl": "enorm",
+    "type": "adj",
+    "tr": "devasa, çok büyük",
+    "en": "enormous",
+    "ar": "ضخم",
+    "fr": "énorme"
+  },
+  {
+    "nl": "excuses",
+    "type": "noun",
+    "article": "de",
+    "tr": "özür",
+    "en": "apologies",
+    "ar": "اعتذارات",
+    "fr": "excuses"
+  },
+  {
+    "nl": "fiets",
+    "type": "noun",
+    "article": "de",
+    "tr": "bisiklet",
+    "en": "bicycle",
+    "ar": "دراجة",
+    "fr": "vélo"
+  },
+  {
+    "nl": "file",
+    "type": "noun",
+    "article": "de",
+    "tr": "trafik sıkışıklığı",
+    "en": "traffic jam",
+    "ar": "ازدحام مروري",
+    "fr": "embouteillage"
+  },
+  {
+    "nl": "gewoon",
+    "type": "adv",
+    "tr": "sadece, normal",
+    "en": "just, simply",
+    "ar": "عادي، فقط",
+    "fr": "simplement"
+  },
+  {
+    "nl": "griep",
+    "type": "noun",
+    "article": "de",
+    "tr": "grip",
+    "en": "flu",
+    "ar": "إنفلونزا",
+    "fr": "grippe"
+  },
+  {
+    "nl": "helaas",
+    "type": "adv",
+    "tr": "maalesef",
+    "en": "unfortunately",
+    "ar": "للأسف",
+    "fr": "malheureusement"
+  },
+  {
+    "nl": "kantoor",
+    "type": "noun",
+    "article": "het",
+    "tr": "ofis",
+    "en": "office",
+    "ar": "مكتب",
+    "fr": "bureau"
+  },
+  {
+    "nl": "manager",
+    "type": "noun",
+    "article": "de",
+    "tr": "yönetici",
+    "en": "manager",
+    "ar": "مدير",
+    "fr": "manager"
+  },
+  {
+    "nl": "na",
+    "type": "prep",
+    "tr": "-den sonra",
+    "en": "after",
+    "ar": "بعد",
+    "fr": "après"
+  },
+  {
+    "nl": "ongeluk",
+    "type": "noun",
+    "article": "het",
+    "tr": "kaza",
+    "en": "accident",
+    "ar": "حادث",
+    "fr": "accident"
+  },
+  {
+    "nl": "pas",
+    "type": "adv",
+    "tr": "ancak, yeni",
+    "en": "only, just",
+    "ar": "فقط",
+    "fr": "seulement"
+  },
+  {
+    "nl": "rijden",
+    "type": "verb",
+    "perfectum": "gereden",
+    "imperfectum": "reed",
+    "tr": "sürmek (araç)",
+    "en": "to drive, to ride",
+    "ar": "يقود",
+    "fr": "conduire"
+  },
+  {
+    "nl": "sturen",
+    "type": "verb",
+    "perfectum": "gestuurd",
+    "imperfectum": "stuurde",
+    "tr": "göndermek",
+    "en": "to send",
+    "ar": "يرسل",
+    "fr": "envoyer"
+  },
+  {
+    "nl": "tram",
+    "type": "noun",
+    "article": "de",
+    "tr": "tramvay",
+    "en": "tram",
+    "ar": "ترام",
+    "fr": "tramway"
+  },
+  {
+    "nl": "vergadering",
+    "type": "noun",
+    "article": "de",
+    "tr": "toplantı",
+    "en": "meeting",
+    "ar": "اجتماع",
+    "fr": "réunion"
+  },
+  {
+    "nl": "verhuizing",
+    "type": "noun",
+    "article": "de",
+    "tr": "taşınma",
+    "en": "moving (house)",
+    "ar": "انتقال",
+    "fr": "déménagement"
+  },
+  {
+    "nl": "vriendelijk",
+    "type": "adj",
+    "tr": "nazik, dostça",
+    "en": "friendly, kind",
+    "ar": "ودود",
+    "fr": "aimable"
+  },
+  {
+    "nl": "werk",
+    "type": "noun",
+    "article": "het",
+    "tr": "iş",
+    "en": "work",
+    "ar": "عمل",
+    "fr": "travail"
+  },
+  {
+    "nl": "benzine",
+    "type": "noun",
+    "article": "de",
+    "tr": "benzin",
+    "en": "petrol, gas",
+    "ar": "بنزين",
+    "fr": "essence"
+  },
+  {
+    "nl": "duren",
+    "type": "verb",
+    "perfectum": "geduurd",
+    "imperfectum": "duurde",
+    "tr": "sürmek (zaman)",
+    "en": "to last, to take (time)",
+    "ar": "يستغرق",
+    "fr": "durer"
+  },
+  {
+    "nl": "erg",
+    "type": "adv",
+    "tr": "çok, fazla",
+    "en": "very, quite",
+    "ar": "جدا",
+    "fr": "très"
+  },
+  {
+    "nl": "halte",
+    "type": "noun",
+    "article": "de",
+    "tr": "durak",
+    "en": "stop",
+    "ar": "محطة",
+    "fr": "arrêt"
+  },
+  {
+    "nl": "handig",
+    "type": "adj",
+    "tr": "kullanışlı, becerikli",
+    "en": "handy, useful",
+    "ar": "مفيد",
+    "fr": "pratique"
+  },
+  {
+    "nl": "haten",
+    "type": "verb",
+    "perfectum": "gehaat",
+    "imperfectum": "haatte",
+    "tr": "nefret etmek",
+    "en": "to hate",
+    "ar": "يكره",
+    "fr": "détester"
+  },
+  {
+    "nl": "helemaal",
+    "type": "adv",
+    "tr": "tamamen, hiç",
+    "en": "completely, at all",
+    "ar": "تماما",
+    "fr": "complètement"
+  },
+  {
+    "nl": "irritant",
+    "type": "adj",
+    "tr": "sinir bozucu",
+    "en": "irritating, annoying",
+    "ar": "مزعج",
+    "fr": "irritant"
+  },
+  {
+    "nl": "kosten",
+    "type": "verb",
+    "perfectum": "gekost",
+    "imperfectum": "kostte",
+    "tr": "mal olmak",
+    "en": "to cost",
+    "ar": "يكلف",
+    "fr": "coûter"
+  },
+  {
+    "nl": "kou",
+    "type": "noun",
+    "article": "de",
+    "tr": "soğuk (hava)",
+    "en": "cold",
+    "ar": "برد",
+    "fr": "froid"
+  },
+  {
+    "nl": "milieu",
+    "type": "noun",
+    "article": "het",
+    "tr": "çevre",
+    "en": "environment",
+    "ar": "بيئة",
+    "fr": "environnement"
+  },
+  {
+    "nl": "nieuwsbrief",
+    "type": "noun",
+    "article": "de",
+    "tr": "bülten",
+    "en": "newsletter",
+    "ar": "نشرة إخبارية",
+    "fr": "bulletin"
+  },
+  {
+    "nl": "ov",
+    "type": "noun",
+    "article": "het",
+    "tr": "toplu taşıma",
+    "en": "public transport",
+    "ar": "نقل عام",
+    "fr": "transports en commun"
+  },
+  {
+    "nl": "parkeren",
+    "type": "verb",
+    "perfectum": "geparkeerd",
+    "imperfectum": "parkeerde",
+    "tr": "park etmek",
+    "en": "to park",
+    "ar": "يركن",
+    "fr": "garer"
+  },
+  {
+    "nl": "prettig",
+    "type": "adj",
+    "tr": "hoş, güzel",
+    "en": "pleasant",
+    "ar": "ممتع",
+    "fr": "agréable"
+  },
+  {
+    "nl": "reistijd",
+    "type": "noun",
+    "article": "de",
+    "tr": "seyahat süresi",
+    "en": "travel time",
+    "ar": "وقت السفر",
+    "fr": "temps de trajet"
+  },
+  {
+    "nl": "rijbewijs",
+    "type": "noun",
+    "article": "het",
+    "tr": "ehliyet",
+    "en": "driver's license",
+    "ar": "رخصة قيادة",
+    "fr": "permis de conduire"
+  },
+  {
+    "nl": "rit",
+    "type": "noun",
+    "article": "de",
+    "diminutive": "ritje",
+    "tr": "yolculuk, gezi",
+    "en": "ride, trip",
+    "ar": "رحلة",
+    "fr": "trajet"
+  },
+  {
+    "nl": "slecht",
+    "type": "adj",
+    "tr": "kötü",
+    "en": "bad",
+    "ar": "سيئ",
+    "fr": "mauvais"
+  },
+  {
+    "nl": "stoppen",
+    "type": "verb",
+    "perfectum": "gestopt",
+    "imperfectum": "stopte",
+    "tr": "durmak, bırakmak",
+    "en": "to stop",
+    "ar": "يتوقف",
+    "fr": "arrêter"
+  },
+  {
+    "nl": "treinkaartje",
+    "type": "noun",
+    "article": "het",
+    "tr": "tren bileti",
+    "en": "train ticket",
+    "ar": "تذكرة قطار",
+    "fr": "billet de train"
+  },
+  {
+    "nl": "verhaal",
+    "type": "noun",
+    "article": "het",
+    "tr": "hikaye",
+    "en": "story",
+    "ar": "قصة",
+    "fr": "histoire"
+  },
+  {
+    "nl": "want",
+    "type": "conj",
+    "tr": "çünkü",
+    "en": "because",
+    "ar": "لأن",
+    "fr": "car"
+  },
+  {
+    "nl": "winter",
+    "type": "noun",
+    "article": "de",
+    "tr": "kış",
+    "en": "winter",
+    "ar": "شتاء",
+    "fr": "hiver"
+  },
+  {
+    "nl": "zelfs",
+    "type": "adv",
+    "tr": "hatta, bile",
+    "en": "even",
+    "ar": "حتى",
+    "fr": "même"
+  }
+]

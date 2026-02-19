@@ -1,7 +1,6 @@
-import { useRef } from 'preact/hooks';
-import { Sun, Moon, ChevronLeft, Globe, Flame, Settings, Download, Upload } from 'lucide-preact';
+import { Sun, Moon, ChevronLeft, Globe, Flame, Settings } from 'lucide-preact';
 import type { Language } from '../types';
-import { getStreak, getDailyStats, getDailyGoal, exportData, importData } from '../services/storage';
+import { getStreak, getDailyStats, getDailyGoal } from '../services/storage';
 import './Header.css';
 
 interface HeaderProps {
@@ -11,7 +10,7 @@ interface HeaderProps {
   onLanguageChange: (lang: Language) => void;
   showBackButton?: boolean;
   onBack?: () => void;
-  onDataImported?: () => void;
+  onSettingsClick?: () => void;
 }
 
 const languages: { code: Language; name: string; flag: string }[] = [
@@ -28,52 +27,13 @@ export function Header({
   onLanguageChange,
   showBackButton = false,
   onBack,
-  onDataImported,
+  onSettingsClick,
 }: HeaderProps) {
-  const fileInputRef = useRef<HTMLInputElement>(null);
   const currentLang = languages.find(l => l.code === language);
   const streak = getStreak();
   const dailyStats = getDailyStats();
   const dailyGoal = getDailyGoal();
   const progressPercent = Math.min((dailyStats.practiced / dailyGoal) * 100, 100);
-
-  const handleExport = () => {
-    const data = exportData();
-    const blob = new Blob([data], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    const date = new Date().toISOString().split('T')[0];
-    a.href = url;
-    a.download = `woorden_backup_${date}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  };
-
-  const handleImportClick = () => {
-    fileInputRef.current?.click();
-  };
-
-  const handleFileChange = (e: Event) => {
-    const target = e.target as HTMLInputElement;
-    const file = target.files?.[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      const content = event.target?.result as string;
-      const result = importData(content);
-      if (result.success) {
-        alert(result.message);
-        onDataImported?.();
-      } else {
-        alert(`Import failed: ${result.message}`);
-      }
-    };
-    reader.readAsText(file);
-    target.value = '';
-  };
 
   return (
     <header class="header">
@@ -129,34 +89,14 @@ export function Header({
           </div>
         </div>
 
-        <div class="settings-selector">
-          <button class="header-btn settings-btn" aria-label="Settings">
-            <Settings size={20} />
-          </button>
-          <div class="settings-dropdown">
-            <button class="settings-option" onClick={handleExport}>
-              <Download size={16} />
-              <span>Export Data</span>
-            </button>
-            <button class="settings-option" onClick={handleImportClick}>
-              <Upload size={16} />
-              <span>Import Data</span>
-            </button>
-          </div>
-        </div>
+        <button class="header-btn settings-btn" onClick={onSettingsClick} aria-label="Settings">
+          <Settings size={20} />
+        </button>
 
         <button class="header-btn theme-btn" onClick={onToggleTheme} aria-label="Toggle theme">
           {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
         </button>
       </div>
-
-      <input
-        ref={fileInputRef}
-        type="file"
-        accept=".json"
-        onChange={handleFileChange}
-        style={{ display: 'none' }}
-      />
     </header>
   );
 }

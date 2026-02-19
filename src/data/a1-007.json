@@ -1,0 +1,865 @@
+[
+  {
+    "nl": "assistente",
+    "type": "noun",
+    "article": "de",
+    "tr": "asistan",
+    "en": "assistant",
+    "ar": "مساعد",
+    "fr": "assistante"
+  },
+  {
+    "nl": "behandelen",
+    "type": "verb",
+    "perfectum": "behandeld",
+    "imperfectum": "behandelde",
+    "tr": "tedavi etmek, ele almak",
+    "en": "to treat",
+    "ar": "يعالج",
+    "fr": "traiter"
+  },
+  {
+    "nl": "dokter",
+    "type": "noun",
+    "article": "de",
+    "tr": "doktor",
+    "en": "doctor",
+    "ar": "طبيب",
+    "fr": "médecin"
+  },
+  {
+    "nl": "dubbel",
+    "type": "adj",
+    "tr": "çift, iki kat",
+    "en": "double",
+    "ar": "مضاعف",
+    "fr": "double"
+  },
+  {
+    "nl": "een paar",
+    "type": "phrase",
+    "tr": "birkaç",
+    "en": "a few, a couple",
+    "ar": "بضعة",
+    "fr": "quelques"
+  },
+  {
+    "nl": "ernstig",
+    "type": "adj",
+    "tr": "ciddi",
+    "en": "serious",
+    "ar": "خطير",
+    "fr": "grave"
+  },
+  {
+    "nl": "gegevens",
+    "type": "noun",
+    "article": "de",
+    "tr": "veriler, bilgiler",
+    "en": "data, details",
+    "ar": "بيانات",
+    "fr": "données"
+  },
+  {
+    "nl": "gesloten",
+    "type": "adj",
+    "tr": "kapalı",
+    "en": "closed",
+    "ar": "مغلق",
+    "fr": "fermé"
+  },
+  {
+    "nl": "gezondheidszorg",
+    "type": "noun",
+    "article": "de",
+    "tr": "sağlık hizmeti",
+    "en": "healthcare",
+    "ar": "رعاية صحية",
+    "fr": "soins de santé"
+  },
+  {
+    "nl": "huisarts",
+    "type": "noun",
+    "article": "de",
+    "tr": "aile hekimi",
+    "en": "general practitioner",
+    "ar": "طبيب عام",
+    "fr": "médecin généraliste"
+  },
+  {
+    "nl": "huisartsenpost",
+    "type": "noun",
+    "article": "de",
+    "tr": "acil aile hekimliği",
+    "en": "out-of-hours GP clinic",
+    "ar": "عيادة طوارئ",
+    "fr": "service de garde"
+  },
+  {
+    "nl": "klacht",
+    "type": "noun",
+    "article": "de",
+    "tr": "şikayet",
+    "en": "complaint",
+    "ar": "شكوى",
+    "fr": "plainte"
+  },
+  {
+    "nl": "kort",
+    "type": "adj",
+    "tr": "kısa",
+    "en": "short",
+    "ar": "قصير",
+    "fr": "court"
+  },
+  {
+    "nl": "onderzoek",
+    "type": "noun",
+    "article": "het",
+    "tr": "muayene, araştırma",
+    "en": "examination, research",
+    "ar": "فحص",
+    "fr": "examen"
+  },
+  {
+    "nl": "praktijk",
+    "type": "noun",
+    "article": "de",
+    "tr": "muayenehane",
+    "en": "practice, clinic",
+    "ar": "عيادة",
+    "fr": "cabinet"
+  },
+  {
+    "nl": "sommige",
+    "type": "pron",
+    "tr": "bazı",
+    "en": "some",
+    "ar": "بعض",
+    "fr": "certains"
+  },
+  {
+    "nl": "specialist",
+    "type": "noun",
+    "article": "de",
+    "tr": "uzman",
+    "en": "specialist",
+    "ar": "أخصائي",
+    "fr": "spécialiste"
+  },
+  {
+    "nl": "spoed",
+    "type": "noun",
+    "article": "de",
+    "tr": "acele",
+    "en": "urgency",
+    "ar": "عجلة",
+    "fr": "urgence"
+  },
+  {
+    "nl": "spoedgeval",
+    "type": "noun",
+    "article": "het",
+    "tr": "acil durum",
+    "en": "emergency",
+    "ar": "حالة طوارئ",
+    "fr": "cas d'urgence"
+  },
+  {
+    "nl": "spreekuur",
+    "type": "noun",
+    "article": "het",
+    "tr": "muayene saati",
+    "en": "consultation hour",
+    "ar": "ساعة الاستشارة",
+    "fr": "heure de consultation"
+  },
+  {
+    "nl": "toetsen",
+    "type": "verb",
+    "perfectum": "getoetst",
+    "imperfectum": "toetste",
+    "tr": "tuşa basmak, test etmek",
+    "en": "to press (key), to test",
+    "ar": "يضغط",
+    "fr": "appuyer"
+  },
+  {
+    "nl": "verwijzing",
+    "type": "noun",
+    "article": "de",
+    "tr": "sevk",
+    "en": "referral",
+    "ar": "إحالة",
+    "fr": "référence"
+  },
+  {
+    "nl": "via",
+    "type": "prep",
+    "tr": "yoluyla, üzerinden",
+    "en": "via, through",
+    "ar": "عبر",
+    "fr": "via"
+  },
+  {
+    "nl": "ziekenhuis",
+    "type": "noun",
+    "article": "het",
+    "tr": "hastane",
+    "en": "hospital",
+    "ar": "مستشفى",
+    "fr": "hôpital"
+  },
+  {
+    "nl": "brengen",
+    "type": "verb",
+    "perfectum": "gebracht",
+    "imperfectum": "bracht",
+    "tr": "getirmek",
+    "en": "to bring",
+    "ar": "يحضر",
+    "fr": "apporter"
+  },
+  {
+    "nl": "eigenlijk",
+    "type": "adv",
+    "tr": "aslında",
+    "en": "actually",
+    "ar": "في الواقع",
+    "fr": "en fait"
+  },
+  {
+    "nl": "geduld",
+    "type": "noun",
+    "article": "het",
+    "tr": "sabır",
+    "en": "patience",
+    "ar": "صبر",
+    "fr": "patience"
+  },
+  {
+    "nl": "graad",
+    "type": "noun",
+    "article": "de",
+    "tr": "derece",
+    "en": "degree",
+    "ar": "درجة",
+    "fr": "degré"
+  },
+  {
+    "nl": "hoesten",
+    "type": "verb",
+    "perfectum": "gehoest",
+    "imperfectum": "hoestte",
+    "tr": "öksürmek",
+    "en": "to cough",
+    "ar": "يسعل",
+    "fr": "tousser"
+  },
+  {
+    "nl": "keel",
+    "type": "noun",
+    "article": "de",
+    "tr": "boğaz",
+    "en": "throat",
+    "ar": "حلق",
+    "fr": "gorge"
+  },
+  {
+    "nl": "keelpijn",
+    "type": "noun",
+    "article": "de",
+    "tr": "boğaz ağrısı",
+    "en": "sore throat",
+    "ar": "التهاب الحلق",
+    "fr": "mal de gorge"
+  },
+  {
+    "nl": "koorts",
+    "type": "noun",
+    "article": "de",
+    "tr": "ateş",
+    "en": "fever",
+    "ar": "حمى",
+    "fr": "fièvre"
+  },
+  {
+    "nl": "lijn",
+    "type": "noun",
+    "article": "de",
+    "tr": "hat, çizgi",
+    "en": "line",
+    "ar": "خط",
+    "fr": "ligne"
+  },
+  {
+    "nl": "mogelijk",
+    "type": "adj",
+    "tr": "mümkün",
+    "en": "possible",
+    "ar": "ممكن",
+    "fr": "possible"
+  },
+  {
+    "nl": "moment",
+    "type": "noun",
+    "article": "het",
+    "tr": "an",
+    "en": "moment",
+    "ar": "لحظة",
+    "fr": "moment"
+  },
+  {
+    "nl": "ogenblik",
+    "type": "noun",
+    "article": "het",
+    "tr": "an",
+    "en": "moment",
+    "ar": "لحظة",
+    "fr": "instant"
+  },
+  {
+    "nl": "opnieuw",
+    "type": "adv",
+    "tr": "yeniden",
+    "en": "again",
+    "ar": "مجددا",
+    "fr": "à nouveau"
+  },
+  {
+    "nl": "overgaan",
+    "type": "verb",
+    "perfectum": "overgegaan",
+    "imperfectum": "ging over",
+    "tr": "geçmek",
+    "en": "to pass, to go away",
+    "ar": "يمر",
+    "fr": "passer"
+  },
+  {
+    "nl": "pijn",
+    "type": "noun",
+    "article": "de",
+    "tr": "ağrı",
+    "en": "pain",
+    "ar": "ألم",
+    "fr": "douleur"
+  },
+  {
+    "nl": "spijten",
+    "type": "verb",
+    "perfectum": "gespeten",
+    "imperfectum": "speet",
+    "tr": "pişman olmak, üzgün olmak",
+    "en": "to regret",
+    "ar": "يأسف",
+    "fr": "regretter"
+  },
+  {
+    "nl": "spreken",
+    "type": "verb",
+    "perfectum": "gesproken",
+    "imperfectum": "sprak",
+    "tr": "konuşmak",
+    "en": "to speak",
+    "ar": "يتكلم",
+    "fr": "parler"
+  },
+  {
+    "nl": "vader",
+    "type": "noun",
+    "article": "de",
+    "tr": "baba",
+    "en": "father",
+    "ar": "أب",
+    "fr": "père"
+  },
+  {
+    "nl": "vanzelf",
+    "type": "adv",
+    "tr": "kendiliğinden",
+    "en": "by itself",
+    "ar": "تلقائيا",
+    "fr": "de lui-même"
+  },
+  {
+    "nl": "verkouden",
+    "type": "adj",
+    "tr": "nezle, soğuk algınlığı",
+    "en": "having a cold",
+    "ar": "مصاب بالزكام",
+    "fr": "enrhumé"
+  },
+  {
+    "nl": "verzetten",
+    "type": "verb",
+    "perfectum": "verzet",
+    "imperfectum": "verzette",
+    "tr": "ertelemek, değiştirmek",
+    "en": "to reschedule",
+    "ar": "يؤجل",
+    "fr": "reporter"
+  },
+  {
+    "nl": "vrij",
+    "type": "adj",
+    "tr": "boş, serbest",
+    "en": "free",
+    "ar": "حر",
+    "fr": "libre"
+  },
+  {
+    "nl": "apotheek",
+    "type": "noun",
+    "article": "de",
+    "tr": "eczane",
+    "en": "pharmacy",
+    "ar": "صيدلية",
+    "fr": "pharmacie"
+  },
+  {
+    "nl": "bijsluiter",
+    "type": "noun",
+    "article": "de",
+    "tr": "prospektüs",
+    "en": "leaflet, package insert",
+    "ar": "نشرة الدواء",
+    "fr": "notice"
+  },
+  {
+    "nl": "doos",
+    "type": "noun",
+    "article": "de",
+    "diminutive": "doosje",
+    "tr": "kutu",
+    "en": "box",
+    "ar": "صندوق",
+    "fr": "boîte"
+  },
+  {
+    "nl": "dosering",
+    "type": "noun",
+    "article": "de",
+    "tr": "dozaj",
+    "en": "dosage",
+    "ar": "جرعة",
+    "fr": "dosage"
+  },
+  {
+    "nl": "drogist",
+    "type": "noun",
+    "article": "de",
+    "tr": "drogist (eczacı)",
+    "en": "drugstore",
+    "ar": "صيدلية",
+    "fr": "droguerie"
+  },
+  {
+    "nl": "gebruik",
+    "type": "noun",
+    "article": "het",
+    "tr": "kullanım",
+    "en": "use",
+    "ar": "استخدام",
+    "fr": "usage"
+  },
+  {
+    "nl": "huismerk",
+    "type": "noun",
+    "article": "het",
+    "tr": "market markası",
+    "en": "house brand",
+    "ar": "علامة تجارية خاصة",
+    "fr": "marque maison"
+  },
+  {
+    "nl": "jong",
+    "type": "adj",
+    "tr": "genç",
+    "en": "young",
+    "ar": "شاب",
+    "fr": "jeune"
+  },
+  {
+    "nl": "kant",
+    "type": "noun",
+    "article": "de",
+    "tr": "taraf, yön",
+    "en": "side",
+    "ar": "جانب",
+    "fr": "côté"
+  },
+  {
+    "nl": "leeftijd",
+    "type": "noun",
+    "article": "de",
+    "tr": "yaş",
+    "en": "age",
+    "ar": "عمر",
+    "fr": "âge"
+  },
+  {
+    "nl": "luier",
+    "type": "noun",
+    "article": "de",
+    "tr": "bebek bezi",
+    "en": "diaper",
+    "ar": "حفاضة",
+    "fr": "couche"
+  },
+  {
+    "nl": "maximaal",
+    "type": "adj",
+    "tr": "maksimum, en fazla",
+    "en": "maximum",
+    "ar": "الحد الأقصى",
+    "fr": "maximum"
+  },
+  {
+    "nl": "medicijn",
+    "type": "noun",
+    "article": "het",
+    "tr": "ilaç",
+    "en": "medicine",
+    "ar": "دواء",
+    "fr": "médicament"
+  },
+  {
+    "nl": "merk",
+    "type": "noun",
+    "article": "het",
+    "tr": "marka",
+    "en": "brand",
+    "ar": "علامة تجارية",
+    "fr": "marque"
+  },
+  {
+    "nl": "milligram",
+    "type": "noun",
+    "article": "de",
+    "tr": "miligram",
+    "en": "milligram",
+    "ar": "ميليغرام",
+    "fr": "milligramme"
+  },
+  {
+    "nl": "naast",
+    "type": "prep",
+    "tr": "yanında",
+    "en": "next to",
+    "ar": "بجانب",
+    "fr": "à côté de"
+  },
+  {
+    "nl": "neus",
+    "type": "noun",
+    "article": "de",
+    "tr": "burun",
+    "en": "nose",
+    "ar": "أنف",
+    "fr": "nez"
+  },
+  {
+    "nl": "neusspray",
+    "type": "noun",
+    "article": "de",
+    "tr": "burun spreyi",
+    "en": "nasal spray",
+    "ar": "بخاخ الأنف",
+    "fr": "spray nasal"
+  },
+  {
+    "nl": "pijnstiller",
+    "type": "noun",
+    "article": "de",
+    "tr": "ağrı kesici",
+    "en": "painkiller",
+    "ar": "مسكن",
+    "fr": "antidouleur"
+  },
+  {
+    "nl": "proberen",
+    "type": "verb",
+    "perfectum": "geprobeerd",
+    "imperfectum": "probeerde",
+    "tr": "denemek",
+    "en": "to try",
+    "ar": "يحاول",
+    "fr": "essayer"
+  },
+  {
+    "nl": "recept",
+    "type": "noun",
+    "article": "het",
+    "tr": "reçete",
+    "en": "prescription, recipe",
+    "ar": "وصفة طبية",
+    "fr": "ordonnance"
+  },
+  {
+    "nl": "rug",
+    "type": "noun",
+    "article": "de",
+    "tr": "sırt",
+    "en": "back",
+    "ar": "ظهر",
+    "fr": "dos"
+  },
+  {
+    "nl": "verder",
+    "type": "adv",
+    "tr": "başka, devamında",
+    "en": "further, else",
+    "ar": "أكثر",
+    "fr": "en plus"
+  },
+  {
+    "nl": "verschil",
+    "type": "noun",
+    "article": "het",
+    "tr": "fark",
+    "en": "difference",
+    "ar": "فرق",
+    "fr": "différence"
+  },
+  {
+    "nl": "wakker",
+    "type": "adj",
+    "tr": "uyanık",
+    "en": "awake",
+    "ar": "مستيقظ",
+    "fr": "éveillé"
+  },
+  {
+    "nl": "wc-papier",
+    "type": "noun",
+    "article": "het",
+    "tr": "tuvalet kağıdı",
+    "en": "toilet paper",
+    "ar": "ورق تواليت",
+    "fr": "papier toilette"
+  },
+  {
+    "nl": "zoon",
+    "type": "noun",
+    "article": "de",
+    "diminutive": "zoontje",
+    "tr": "oğul",
+    "en": "son",
+    "ar": "ابن",
+    "fr": "fils"
+  },
+  {
+    "nl": "zwaar",
+    "type": "adj",
+    "tr": "ağır",
+    "en": "heavy",
+    "ar": "ثقيل",
+    "fr": "lourd"
+  },
+  {
+    "nl": "alcohol",
+    "type": "noun",
+    "article": "de",
+    "tr": "alkol",
+    "en": "alcohol",
+    "ar": "كحول",
+    "fr": "alcool"
+  },
+  {
+    "nl": "bewaren",
+    "type": "verb",
+    "perfectum": "bewaard",
+    "imperfectum": "bewaarde",
+    "tr": "saklamak, korumak",
+    "en": "to keep, to store",
+    "ar": "يحفظ",
+    "fr": "conserver"
+  },
+  {
+    "nl": "bijwerking",
+    "type": "noun",
+    "article": "de",
+    "tr": "yan etki",
+    "en": "side effect",
+    "ar": "آثار جانبية",
+    "fr": "effet secondaire"
+  },
+  {
+    "nl": "borstvoeding",
+    "type": "noun",
+    "article": "de",
+    "tr": "emzirme",
+    "en": "breastfeeding",
+    "ar": "رضاعة طبيعية",
+    "fr": "allaitement"
+  },
+  {
+    "nl": "boven",
+    "type": "prep",
+    "tr": "üstünde, yukarıda",
+    "en": "above",
+    "ar": "فوق",
+    "fr": "au-dessus"
+  },
+  {
+    "nl": "contact",
+    "type": "noun",
+    "article": "het",
+    "tr": "iletişim, temas",
+    "en": "contact",
+    "ar": "اتصال",
+    "fr": "contact"
+  },
+  {
+    "nl": "glas",
+    "type": "noun",
+    "article": "het",
+    "tr": "bardak",
+    "en": "glass",
+    "ar": "كأس",
+    "fr": "verre"
+  },
+  {
+    "nl": "hardlopen",
+    "type": "verb",
+    "perfectum": "hardgelopen",
+    "imperfectum": "liep hard",
+    "tr": "koşmak",
+    "en": "to run",
+    "ar": "يركض",
+    "fr": "courir"
+  },
+  {
+    "nl": "innemen",
+    "type": "verb",
+    "perfectum": "ingenomen",
+    "imperfectum": "nam in",
+    "tr": "almak (ilaç)",
+    "en": "to take (medicine)",
+    "ar": "يتناول",
+    "fr": "prendre"
+  },
+  {
+    "nl": "knie",
+    "type": "noun",
+    "article": "de",
+    "tr": "diz",
+    "en": "knee",
+    "ar": "ركبة",
+    "fr": "genou"
+  },
+  {
+    "nl": "laatst",
+    "type": "adv",
+    "tr": "geçenlerde, son",
+    "en": "recently, last",
+    "ar": "مؤخرا",
+    "fr": "récemment"
+  },
+  {
+    "nl": "maal",
+    "type": "noun",
+    "article": "de",
+    "tr": "kez, defa",
+    "en": "time (occasion)",
+    "ar": "مرة",
+    "fr": "fois"
+  },
+  {
+    "nl": "maaltijd",
+    "type": "noun",
+    "article": "de",
+    "tr": "öğün",
+    "en": "meal",
+    "ar": "وجبة",
+    "fr": "repas"
+  },
+  {
+    "nl": "misselijk",
+    "type": "adj",
+    "tr": "mide bulantısı olan",
+    "en": "nauseous",
+    "ar": "يشعر بالغثيان",
+    "fr": "nauséeux"
+  },
+  {
+    "nl": "nacht",
+    "type": "noun",
+    "article": "de",
+    "tr": "gece",
+    "en": "night",
+    "ar": "ليل",
+    "fr": "nuit"
+  },
+  {
+    "nl": "pil",
+    "type": "noun",
+    "article": "de",
+    "tr": "hap",
+    "en": "pill",
+    "ar": "حبة",
+    "fr": "pilule"
+  },
+  {
+    "nl": "slaappil",
+    "type": "noun",
+    "article": "de",
+    "tr": "uyku hapı",
+    "en": "sleeping pill",
+    "ar": "حبة نوم",
+    "fr": "somnifère"
+  },
+  {
+    "nl": "stress",
+    "type": "noun",
+    "article": "de",
+    "tr": "stres",
+    "en": "stress",
+    "ar": "توتر",
+    "fr": "stress"
+  },
+  {
+    "nl": "tablet",
+    "type": "noun",
+    "article": "de",
+    "tr": "tablet (ilaç)",
+    "en": "tablet",
+    "ar": "قرص",
+    "fr": "comprimé"
+  },
+  {
+    "nl": "tegelijk",
+    "type": "adv",
+    "tr": "aynı anda",
+    "en": "at the same time",
+    "ar": "في نفس الوقت",
+    "fr": "en même temps"
+  },
+  {
+    "nl": "tijdens",
+    "type": "prep",
+    "tr": "sırasında",
+    "en": "during",
+    "ar": "أثناء",
+    "fr": "pendant"
+  },
+  {
+    "nl": "verpakking",
+    "type": "noun",
+    "article": "de",
+    "tr": "ambalaj",
+    "en": "packaging",
+    "ar": "تغليف",
+    "fr": "emballage"
+  },
+  {
+    "nl": "zwangerschap",
+    "type": "noun",
+    "article": "de",
+    "tr": "hamilelik",
+    "en": "pregnancy",
+    "ar": "حمل",
+    "fr": "grossesse"
+  }
+]

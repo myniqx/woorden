@@ -1,0 +1,903 @@
+[
+  {
+    "nl": "afwas",
+    "type": "noun",
+    "article": "de",
+    "tr": "bulaşık",
+    "en": "dishes",
+    "ar": "أطباق",
+    "fr": "vaisselle"
+  },
+  {
+    "nl": "bewoner",
+    "type": "noun",
+    "article": "de",
+    "tr": "sakin, oturan",
+    "en": "resident",
+    "ar": "ساكن",
+    "fr": "résident"
+  },
+  {
+    "nl": "boos",
+    "type": "adj",
+    "tr": "kızgın, sinirli",
+    "en": "angry",
+    "ar": "غاضب",
+    "fr": "en colère"
+  },
+  {
+    "nl": "eerlijk",
+    "type": "adj",
+    "tr": "dürüst",
+    "en": "honest",
+    "ar": "صادق",
+    "fr": "honnête"
+  },
+  {
+    "nl": "geluk",
+    "type": "noun",
+    "article": "het",
+    "tr": "şans, mutluluk",
+    "en": "luck, happiness",
+    "ar": "حظ، سعادة",
+    "fr": "chance, bonheur"
+  },
+  {
+    "nl": "gewoonte",
+    "type": "noun",
+    "article": "de",
+    "tr": "alışkanlık",
+    "en": "habit",
+    "ar": "عادة",
+    "fr": "habitude"
+  },
+  {
+    "nl": "hetzelfde",
+    "type": "pron",
+    "tr": "aynı",
+    "en": "the same",
+    "ar": "نفسه",
+    "fr": "le même"
+  },
+  {
+    "nl": "huishouden",
+    "type": "noun",
+    "article": "het",
+    "tr": "ev işleri",
+    "en": "household",
+    "ar": "أعمال منزلية",
+    "fr": "ménage"
+  },
+  {
+    "nl": "ideaal",
+    "type": "adj",
+    "tr": "ideal",
+    "en": "ideal",
+    "ar": "مثالي",
+    "fr": "idéal"
+  },
+  {
+    "nl": "leven",
+    "type": "noun",
+    "article": "het",
+    "tr": "hayat",
+    "en": "life",
+    "ar": "حياة",
+    "fr": "vie"
+  },
+  {
+    "nl": "muziek",
+    "type": "noun",
+    "article": "de",
+    "tr": "müzik",
+    "en": "music",
+    "ar": "موسيقى",
+    "fr": "musique"
+  },
+  {
+    "nl": "omgeving",
+    "type": "noun",
+    "article": "de",
+    "tr": "çevre, ortam",
+    "en": "environment, surroundings",
+    "ar": "محيط",
+    "fr": "environnement"
+  },
+  {
+    "nl": "oplossen",
+    "type": "verb",
+    "perfectum": "opgelost",
+    "imperfectum": "loste op",
+    "tr": "çözmek",
+    "en": "to solve",
+    "ar": "يحل",
+    "fr": "résoudre"
+  },
+  {
+    "nl": "opschieten met",
+    "type": "verb",
+    "perfectum": "opgeschoten met",
+    "imperfectum": "schoot op met",
+    "tr": "iyi geçinmek",
+    "en": "to get along with",
+    "ar": "ينسجم مع",
+    "fr": "bien s'entendre avec"
+  },
+  {
+    "nl": "overdag",
+    "type": "adv",
+    "tr": "gündüz",
+    "en": "during the day",
+    "ar": "خلال النهار",
+    "fr": "pendant la journée"
+  },
+  {
+    "nl": "rest",
+    "type": "noun",
+    "article": "de",
+    "tr": "geri kalan",
+    "en": "rest, remainder",
+    "ar": "الباقي",
+    "fr": "reste"
+  },
+  {
+    "nl": "roken",
+    "type": "verb",
+    "perfectum": "gerookt",
+    "imperfectum": "rookte",
+    "tr": "sigara içmek",
+    "en": "to smoke",
+    "ar": "يدخن",
+    "fr": "fumer"
+  },
+  {
+    "nl": "ruzie",
+    "type": "noun",
+    "article": "de",
+    "tr": "kavga, tartışma",
+    "en": "argument, quarrel",
+    "ar": "شجار",
+    "fr": "dispute"
+  },
+  {
+    "nl": "schoon",
+    "type": "adj",
+    "tr": "temiz",
+    "en": "clean",
+    "ar": "نظيف",
+    "fr": "propre"
+  },
+  {
+    "nl": "serieus",
+    "type": "adj",
+    "tr": "ciddi",
+    "en": "serious",
+    "ar": "جاد",
+    "fr": "sérieux"
+  },
+  {
+    "nl": "sinds",
+    "type": "prep",
+    "tr": "-den beri",
+    "en": "since",
+    "ar": "منذ",
+    "fr": "depuis"
+  },
+  {
+    "nl": "uitgaan",
+    "type": "verb",
+    "perfectum": "uitgegaan",
+    "imperfectum": "ging uit",
+    "tr": "eğlenmeye gitmek",
+    "en": "to go out",
+    "ar": "يخرج للتسلية",
+    "fr": "sortir"
+  },
+  {
+    "nl": "verdelen",
+    "type": "verb",
+    "perfectum": "verdeeld",
+    "imperfectum": "verdeelde",
+    "tr": "bölmek, paylaştırmak",
+    "en": "to divide",
+    "ar": "يقسم",
+    "fr": "répartir"
+  },
+  {
+    "nl": "vies",
+    "type": "adj",
+    "tr": "pis, kirli",
+    "en": "dirty",
+    "ar": "وسخ",
+    "fr": "sale"
+  },
+  {
+    "nl": "weleens",
+    "type": "adv",
+    "tr": "bazen, ara sıra",
+    "en": "sometimes",
+    "ar": "أحيانا",
+    "fr": "parfois"
+  },
+  {
+    "nl": "activiteit",
+    "type": "noun",
+    "article": "de",
+    "tr": "etkinlik",
+    "en": "activity",
+    "ar": "نشاط",
+    "fr": "activité"
+  },
+  {
+    "nl": "begane grond",
+    "type": "noun",
+    "article": "de",
+    "tr": "zemin kat",
+    "en": "ground floor",
+    "ar": "الطابق الأرضي",
+    "fr": "rez-de-chaussée"
+  },
+  {
+    "nl": "bibliotheek",
+    "type": "noun",
+    "article": "de",
+    "tr": "kütüphane",
+    "en": "library",
+    "ar": "مكتبة",
+    "fr": "bibliothèque"
+  },
+  {
+    "nl": "buurtcentrum",
+    "type": "noun",
+    "article": "het",
+    "tr": "mahalle merkezi",
+    "en": "community center",
+    "ar": "مركز الحي",
+    "fr": "centre communautaire"
+  },
+  {
+    "nl": "deelnemer",
+    "type": "noun",
+    "article": "de",
+    "tr": "katılımcı",
+    "en": "participant",
+    "ar": "مشارك",
+    "fr": "participant"
+  },
+  {
+    "nl": "gebeuren",
+    "type": "verb",
+    "perfectum": "gebeurd",
+    "imperfectum": "gebeurde",
+    "tr": "olmak, meydana gelmek",
+    "en": "to happen",
+    "ar": "يحدث",
+    "fr": "se passer"
+  },
+  {
+    "nl": "groep",
+    "type": "noun",
+    "article": "de",
+    "tr": "grup",
+    "en": "group",
+    "ar": "مجموعة",
+    "fr": "groupe"
+  },
+  {
+    "nl": "hoeven",
+    "type": "verb",
+    "perfectum": "gehoeven",
+    "imperfectum": "hoefde",
+    "tr": "gerekmemek",
+    "en": "to need (negative)",
+    "ar": "لا يحتاج",
+    "fr": "ne pas avoir besoin"
+  },
+  {
+    "nl": "iemand",
+    "type": "pron",
+    "tr": "biri, birisi",
+    "en": "someone",
+    "ar": "شخص ما",
+    "fr": "quelqu'un"
+  },
+  {
+    "nl": "ingang",
+    "type": "noun",
+    "article": "de",
+    "tr": "giriş",
+    "en": "entrance",
+    "ar": "مدخل",
+    "fr": "entrée"
+  },
+  {
+    "nl": "krant",
+    "type": "noun",
+    "article": "de",
+    "tr": "gazete",
+    "en": "newspaper",
+    "ar": "جريدة",
+    "fr": "journal"
+  },
+  {
+    "nl": "medewerkster",
+    "type": "noun",
+    "article": "de",
+    "tr": "kadın çalışan",
+    "en": "female employee",
+    "ar": "موظفة",
+    "fr": "employée"
+  },
+  {
+    "nl": "oefenen",
+    "type": "verb",
+    "perfectum": "geoefend",
+    "imperfectum": "oefende",
+    "tr": "pratik yapmak",
+    "en": "to practice",
+    "ar": "يتدرب",
+    "fr": "s'entraîner"
+  },
+  {
+    "nl": "onderwerp",
+    "type": "noun",
+    "article": "het",
+    "tr": "konu",
+    "en": "subject, topic",
+    "ar": "موضوع",
+    "fr": "sujet"
+  },
+  {
+    "nl": "organiseren",
+    "type": "verb",
+    "perfectum": "georganiseerd",
+    "imperfectum": "organiseerde",
+    "tr": "organize etmek",
+    "en": "to organize",
+    "ar": "ينظم",
+    "fr": "organiser"
+  },
+  {
+    "nl": "precies",
+    "type": "adv",
+    "tr": "tam olarak",
+    "en": "exactly",
+    "ar": "بالضبط",
+    "fr": "exactement"
+  },
+  {
+    "nl": "spelletje",
+    "type": "noun",
+    "article": "het",
+    "tr": "oyun",
+    "en": "game",
+    "ar": "لعبة",
+    "fr": "jeu"
+  },
+  {
+    "nl": "taal",
+    "type": "noun",
+    "article": "de",
+    "tr": "dil",
+    "en": "language",
+    "ar": "لغة",
+    "fr": "langue"
+  },
+  {
+    "nl": "taalcafé",
+    "type": "noun",
+    "article": "het",
+    "tr": "dil kahvesi",
+    "en": "language café",
+    "ar": "مقهى اللغات",
+    "fr": "café des langues"
+  },
+  {
+    "nl": "taalcoach",
+    "type": "noun",
+    "article": "de",
+    "tr": "dil koçu",
+    "en": "language coach",
+    "ar": "مدرب لغة",
+    "fr": "coach linguistique"
+  },
+  {
+    "nl": "vanaf",
+    "type": "prep",
+    "tr": "-den itibaren",
+    "en": "from, as of",
+    "ar": "اعتبارا من",
+    "fr": "à partir de"
+  },
+  {
+    "nl": "verschillen",
+    "type": "verb",
+    "perfectum": "verschild",
+    "imperfectum": "verschilde",
+    "tr": "farklı olmak",
+    "en": "to differ",
+    "ar": "يختلف",
+    "fr": "différer"
+  },
+  {
+    "nl": "voorbereiden",
+    "type": "verb",
+    "perfectum": "voorbereid",
+    "imperfectum": "bereidde voor",
+    "tr": "hazırlamak",
+    "en": "to prepare",
+    "ar": "يستعد",
+    "fr": "préparer"
+  },
+  {
+    "nl": "vrijwilliger",
+    "type": "noun",
+    "article": "de",
+    "tr": "gönüllü",
+    "en": "volunteer",
+    "ar": "متطوع",
+    "fr": "bénévole"
+  },
+  {
+    "nl": "zich aanmelden",
+    "type": "verb",
+    "perfectum": "zich aangemeld",
+    "imperfectum": "meldde zich aan",
+    "tr": "kaydolmak",
+    "en": "to register",
+    "ar": "يسجل",
+    "fr": "s'inscrire"
+  },
+  {
+    "nl": "bioscoop",
+    "type": "noun",
+    "article": "de",
+    "tr": "sinema",
+    "en": "cinema",
+    "ar": "سينما",
+    "fr": "cinéma"
+  },
+  {
+    "nl": "boom",
+    "type": "noun",
+    "article": "de",
+    "tr": "ağaç",
+    "en": "tree",
+    "ar": "شجرة",
+    "fr": "arbre"
+  },
+  {
+    "nl": "buitenland",
+    "type": "noun",
+    "article": "het",
+    "tr": "yurt dışı",
+    "en": "abroad",
+    "ar": "الخارج",
+    "fr": "étranger"
+  },
+  {
+    "nl": "café",
+    "type": "noun",
+    "article": "het",
+    "tr": "bar, kafe",
+    "en": "café, bar",
+    "ar": "مقهى",
+    "fr": "café"
+  },
+  {
+    "nl": "elk",
+    "type": "pron",
+    "tr": "her",
+    "en": "each, every",
+    "ar": "كل",
+    "fr": "chaque"
+  },
+  {
+    "nl": "film",
+    "type": "noun",
+    "article": "de",
+    "tr": "film",
+    "en": "film, movie",
+    "ar": "فيلم",
+    "fr": "film"
+  },
+  {
+    "nl": "gang",
+    "type": "noun",
+    "article": "de",
+    "tr": "koridor",
+    "en": "hallway, corridor",
+    "ar": "ممر",
+    "fr": "couloir"
+  },
+  {
+    "nl": "gebouw",
+    "type": "noun",
+    "article": "het",
+    "tr": "bina",
+    "en": "building",
+    "ar": "مبنى",
+    "fr": "bâtiment"
+  },
+  {
+    "nl": "grasveld",
+    "type": "noun",
+    "article": "het",
+    "tr": "çimlik",
+    "en": "lawn",
+    "ar": "عشب",
+    "fr": "pelouse"
+  },
+  {
+    "nl": "groen",
+    "type": "adj",
+    "tr": "yeşil",
+    "en": "green",
+    "ar": "أخضر",
+    "fr": "vert"
+  },
+  {
+    "nl": "kletsen",
+    "type": "verb",
+    "perfectum": "gekletst",
+    "imperfectum": "kletste",
+    "tr": "sohbet etmek",
+    "en": "to chat",
+    "ar": "يدردش",
+    "fr": "bavarder"
+  },
+  {
+    "nl": "lift",
+    "type": "noun",
+    "article": "de",
+    "tr": "asansör",
+    "en": "elevator, lift",
+    "ar": "مصعد",
+    "fr": "ascenseur"
+  },
+  {
+    "nl": "metro",
+    "type": "noun",
+    "article": "de",
+    "tr": "metro",
+    "en": "metro, subway",
+    "ar": "مترو",
+    "fr": "métro"
+  },
+  {
+    "nl": "missen",
+    "type": "verb",
+    "perfectum": "gemist",
+    "imperfectum": "miste",
+    "tr": "özlemek, kaçırmak",
+    "en": "to miss",
+    "ar": "يفتقد",
+    "fr": "manquer"
+  },
+  {
+    "nl": "openbaar vervoer",
+    "type": "noun",
+    "article": "het",
+    "tr": "toplu taşıma",
+    "en": "public transport",
+    "ar": "نقل عام",
+    "fr": "transports publics"
+  },
+  {
+    "nl": "park",
+    "type": "noun",
+    "article": "het",
+    "tr": "park",
+    "en": "park",
+    "ar": "حديقة",
+    "fr": "parc"
+  },
+  {
+    "nl": "parkeerplaats",
+    "type": "noun",
+    "article": "de",
+    "tr": "otopark",
+    "en": "parking lot",
+    "ar": "موقف سيارات",
+    "fr": "parking"
+  },
+  {
+    "nl": "regelmatig",
+    "type": "adj",
+    "tr": "düzenli",
+    "en": "regular",
+    "ar": "منتظم",
+    "fr": "régulier"
+  },
+  {
+    "nl": "speeltuin",
+    "type": "noun",
+    "article": "de",
+    "tr": "oyun parkı",
+    "en": "playground",
+    "ar": "ملعب",
+    "fr": "aire de jeux"
+  },
+  {
+    "nl": "spelen",
+    "type": "verb",
+    "perfectum": "gespeeld",
+    "imperfectum": "speelde",
+    "tr": "oynamak",
+    "en": "to play",
+    "ar": "يلعب",
+    "fr": "jouer"
+  },
+  {
+    "nl": "struik",
+    "type": "noun",
+    "article": "de",
+    "tr": "çalı",
+    "en": "bush, shrub",
+    "ar": "شجيرة",
+    "fr": "buisson"
+  },
+  {
+    "nl": "tevreden",
+    "type": "adj",
+    "tr": "memnun",
+    "en": "satisfied",
+    "ar": "راضٍ",
+    "fr": "satisfait"
+  },
+  {
+    "nl": "verkeer",
+    "type": "noun",
+    "article": "het",
+    "tr": "trafik",
+    "en": "traffic",
+    "ar": "حركة المرور",
+    "fr": "circulation"
+  },
+  {
+    "nl": "voetballen",
+    "type": "verb",
+    "perfectum": "gevoetbald",
+    "imperfectum": "voetbalde",
+    "tr": "futbol oynamak",
+    "en": "to play football",
+    "ar": "يلعب كرة القدم",
+    "fr": "jouer au football"
+  },
+  {
+    "nl": "zoveel",
+    "type": "adv",
+    "tr": "o kadar çok",
+    "en": "so much, so many",
+    "ar": "الكثير",
+    "fr": "autant"
+  },
+  {
+    "nl": "bang",
+    "type": "adj",
+    "tr": "korkmuş",
+    "en": "afraid, scared",
+    "ar": "خائف",
+    "fr": "effrayé"
+  },
+  {
+    "nl": "blaffen",
+    "type": "verb",
+    "perfectum": "geblaft",
+    "imperfectum": "blafte",
+    "tr": "havlamak",
+    "en": "to bark",
+    "ar": "ينبح",
+    "fr": "aboyer"
+  },
+  {
+    "nl": "buurman",
+    "type": "noun",
+    "article": "de",
+    "tr": "erkek komşu",
+    "en": "male neighbor",
+    "ar": "جار",
+    "fr": "voisin"
+  },
+  {
+    "nl": "gedrag",
+    "type": "noun",
+    "article": "het",
+    "tr": "davranış",
+    "en": "behavior",
+    "ar": "سلوك",
+    "fr": "comportement"
+  },
+  {
+    "nl": "geluid",
+    "type": "noun",
+    "article": "het",
+    "tr": "ses",
+    "en": "sound",
+    "ar": "صوت",
+    "fr": "son"
+  },
+  {
+    "nl": "hond",
+    "type": "noun",
+    "article": "de",
+    "tr": "köpek",
+    "en": "dog",
+    "ar": "كلب",
+    "fr": "chien"
+  },
+  {
+    "nl": "huisdier",
+    "type": "noun",
+    "article": "het",
+    "tr": "evcil hayvan",
+    "en": "pet",
+    "ar": "حيوان أليف",
+    "fr": "animal domestique"
+  },
+  {
+    "nl": "ineens",
+    "type": "adv",
+    "tr": "aniden, birdenbire",
+    "en": "suddenly",
+    "ar": "فجأة",
+    "fr": "soudain"
+  },
+  {
+    "nl": "klagen",
+    "type": "verb",
+    "perfectum": "geklaagd",
+    "imperfectum": "klaagde",
+    "tr": "şikayet etmek",
+    "en": "to complain",
+    "ar": "يشتكي",
+    "fr": "se plaindre"
+  },
+  {
+    "nl": "laten",
+    "type": "verb",
+    "perfectum": "gelaten",
+    "imperfectum": "liet",
+    "tr": "bırakmak",
+    "en": "to let, to leave",
+    "ar": "يترك",
+    "fr": "laisser"
+  },
+  {
+    "nl": "oplossing",
+    "type": "noun",
+    "article": "de",
+    "tr": "çözüm",
+    "en": "solution",
+    "ar": "حل",
+    "fr": "solution"
+  },
+  {
+    "nl": "overlast",
+    "type": "noun",
+    "article": "de",
+    "tr": "rahatsızlık",
+    "en": "nuisance",
+    "ar": "إزعاج",
+    "fr": "nuisance"
+  },
+  {
+    "nl": "overleggen",
+    "type": "verb",
+    "perfectum": "overlegd",
+    "imperfectum": "overlegde",
+    "tr": "danışmak, görüşmek",
+    "en": "to consult",
+    "ar": "يتشاور",
+    "fr": "discuter"
+  },
+  {
+    "nl": "schuld",
+    "type": "noun",
+    "article": "de",
+    "tr": "suç, borç",
+    "en": "fault, debt",
+    "ar": "ذنب، دين",
+    "fr": "faute, dette"
+  },
+  {
+    "nl": "situatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "durum",
+    "en": "situation",
+    "ar": "وضع",
+    "fr": "situation"
+  },
+  {
+    "nl": "stinken",
+    "type": "verb",
+    "perfectum": "gestonken",
+    "imperfectum": "stonk",
+    "tr": "kötü kokmak",
+    "en": "to stink",
+    "ar": "ينتن",
+    "fr": "puer"
+  },
+  {
+    "nl": "trap",
+    "type": "noun",
+    "article": "de",
+    "tr": "merdiven",
+    "en": "stairs",
+    "ar": "درج",
+    "fr": "escalier"
+  },
+  {
+    "nl": "uitlaten",
+    "type": "verb",
+    "perfectum": "uitgelaten",
+    "imperfectum": "liet uit",
+    "tr": "gezdirmek (köpek)",
+    "en": "to walk (dog)",
+    "ar": "يمشي الكلب",
+    "fr": "promener"
+  },
+  {
+    "nl": "veroorzaken",
+    "type": "verb",
+    "perfectum": "veroorzaakt",
+    "imperfectum": "veroorzaakte",
+    "tr": "neden olmak",
+    "en": "to cause",
+    "ar": "يتسبب",
+    "fr": "causer"
+  },
+  {
+    "nl": "vuilniszak",
+    "type": "noun",
+    "article": "de",
+    "tr": "çöp torbası",
+    "en": "garbage bag",
+    "ar": "كيس قمامة",
+    "fr": "sac poubelle"
+  },
+  {
+    "nl": "waarschijnlijk",
+    "type": "adv",
+    "tr": "muhtemelen",
+    "en": "probably",
+    "ar": "على الأرجح",
+    "fr": "probablement"
+  },
+  {
+    "nl": "wennen",
+    "type": "verb",
+    "perfectum": "gewend",
+    "imperfectum": "wende",
+    "tr": "alışmak",
+    "en": "to get used to",
+    "ar": "يعتاد",
+    "fr": "s'habituer"
+  },
+  {
+    "nl": "woningbouwvereniging",
+    "type": "noun",
+    "article": "de",
+    "tr": "konut kooperatifi",
+    "en": "housing association",
+    "ar": "جمعية إسكان",
+    "fr": "société de logement"
+  },
+  {
+    "nl": "zielig",
+    "type": "adj",
+    "tr": "zavallı",
+    "en": "pitiful",
+    "ar": "مسكين",
+    "fr": "pitoyable"
+  },
+  {
+    "nl": "zomaar",
+    "type": "adv",
+    "tr": "öylesine, sebepsiz",
+    "en": "just like that",
+    "ar": "هكذا",
+    "fr": "comme ça"
+  }
+]

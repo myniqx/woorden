@@ -1,0 +1,897 @@
+[
+  {
+    "nl": "aandoen",
+    "type": "verb",
+    "perfectum": "aangedaan",
+    "imperfectum": "deed aan",
+    "tr": "giymek, açmak",
+    "en": "to put on, to turn on",
+    "ar": "يرتدي، يشغل",
+    "fr": "mettre, allumer"
+  },
+  {
+    "nl": "aantrekken",
+    "type": "verb",
+    "perfectum": "aangetrokken",
+    "imperfectum": "trok aan",
+    "tr": "giymek",
+    "en": "to put on (clothes)",
+    "ar": "يرتدي",
+    "fr": "mettre"
+  },
+  {
+    "nl": "bedoelen",
+    "type": "verb",
+    "perfectum": "bedoeld",
+    "imperfectum": "bedoelde",
+    "tr": "kastetmek",
+    "en": "to mean",
+    "ar": "يقصد",
+    "fr": "vouloir dire"
+  },
+  {
+    "nl": "benieuwd",
+    "type": "adj",
+    "tr": "meraklı",
+    "en": "curious",
+    "ar": "فضولي",
+    "fr": "curieux"
+  },
+  {
+    "nl": "blouse",
+    "type": "noun",
+    "article": "de",
+    "tr": "bluz",
+    "en": "blouse",
+    "ar": "بلوزة",
+    "fr": "chemisier"
+  },
+  {
+    "nl": "broek",
+    "type": "noun",
+    "article": "de",
+    "tr": "pantolon",
+    "en": "pants, trousers",
+    "ar": "بنطلون",
+    "fr": "pantalon"
+  },
+  {
+    "nl": "bruiloft",
+    "type": "noun",
+    "article": "de",
+    "tr": "düğün",
+    "en": "wedding",
+    "ar": "زفاف",
+    "fr": "mariage"
+  },
+  {
+    "nl": "dragen",
+    "type": "verb",
+    "perfectum": "gedragen",
+    "imperfectum": "droeg",
+    "tr": "giymek, taşımak",
+    "en": "to wear, to carry",
+    "ar": "يرتدي، يحمل",
+    "fr": "porter"
+  },
+  {
+    "nl": "geel",
+    "type": "adj",
+    "tr": "sarı",
+    "en": "yellow",
+    "ar": "أصفر",
+    "fr": "jaune"
+  },
+  {
+    "nl": "jurk",
+    "type": "noun",
+    "article": "de",
+    "tr": "elbise",
+    "en": "dress",
+    "ar": "فستان",
+    "fr": "robe"
+  },
+  {
+    "nl": "kaart",
+    "type": "noun",
+    "article": "de",
+    "tr": "kart, bilet, harita",
+    "en": "card, ticket, map",
+    "ar": "بطاقة، خريطة",
+    "fr": "carte"
+  },
+  {
+    "nl": "lelijk",
+    "type": "adj",
+    "tr": "çirkin",
+    "en": "ugly",
+    "ar": "قبيح",
+    "fr": "laid"
+  },
+  {
+    "nl": "lievelings",
+    "type": "adj",
+    "tr": "favori",
+    "en": "favorite",
+    "ar": "مفضل",
+    "fr": "préféré"
+  },
+  {
+    "nl": "mening",
+    "type": "noun",
+    "article": "de",
+    "tr": "görüş, fikir",
+    "en": "opinion",
+    "ar": "رأي",
+    "fr": "avis"
+  },
+  {
+    "nl": "nadenken",
+    "type": "verb",
+    "perfectum": "nagedacht",
+    "imperfectum": "dacht na",
+    "tr": "düşünmek",
+    "en": "to think about",
+    "ar": "يفكر",
+    "fr": "réfléchir"
+  },
+  {
+    "nl": "niets",
+    "type": "pron",
+    "tr": "hiçbir şey",
+    "en": "nothing",
+    "ar": "لا شيء",
+    "fr": "rien"
+  },
+  {
+    "nl": "overhemd",
+    "type": "noun",
+    "article": "het",
+    "tr": "gömlek",
+    "en": "shirt",
+    "ar": "قميص",
+    "fr": "chemise"
+  },
+  {
+    "nl": "pak",
+    "type": "noun",
+    "article": "het",
+    "tr": "takım elbise",
+    "en": "suit",
+    "ar": "بدلة",
+    "fr": "costume"
+  },
+  {
+    "nl": "prachtig",
+    "type": "adj",
+    "tr": "muhteşem",
+    "en": "wonderful, gorgeous",
+    "ar": "رائع",
+    "fr": "magnifique"
+  },
+  {
+    "nl": "rood",
+    "type": "adj",
+    "tr": "kırmızı",
+    "en": "red",
+    "ar": "أحمر",
+    "fr": "rouge"
+  },
+  {
+    "nl": "roze",
+    "type": "adj",
+    "tr": "pembe",
+    "en": "pink",
+    "ar": "زهري",
+    "fr": "rose"
+  },
+  {
+    "nl": "schoen",
+    "type": "noun",
+    "article": "de",
+    "tr": "ayakkabı",
+    "en": "shoe",
+    "ar": "حذاء",
+    "fr": "chaussure"
+  },
+  {
+    "nl": "spijkerbroek",
+    "type": "noun",
+    "article": "de",
+    "tr": "kot pantolon",
+    "en": "jeans",
+    "ar": "جينز",
+    "fr": "jean"
+  },
+  {
+    "nl": "trouwen",
+    "type": "verb",
+    "perfectum": "getrouwd",
+    "imperfectum": "trouwde",
+    "tr": "evlenmek",
+    "en": "to marry",
+    "ar": "يتزوج",
+    "fr": "se marier"
+  },
+  {
+    "nl": "trui",
+    "type": "noun",
+    "article": "de",
+    "tr": "kazak",
+    "en": "sweater",
+    "ar": "سترة",
+    "fr": "pull"
+  },
+  {
+    "nl": "uitgeven",
+    "type": "verb",
+    "perfectum": "uitgegeven",
+    "imperfectum": "gaf uit",
+    "tr": "harcamak",
+    "en": "to spend",
+    "ar": "ينفق",
+    "fr": "dépenser"
+  },
+  {
+    "nl": "aanbieding",
+    "type": "noun",
+    "article": "de",
+    "tr": "teklif, indirim",
+    "en": "offer, sale",
+    "ar": "عرض",
+    "fr": "offre"
+  },
+  {
+    "nl": "aankoop",
+    "type": "noun",
+    "article": "de",
+    "tr": "satın alma",
+    "en": "purchase",
+    "ar": "شراء",
+    "fr": "achat"
+  },
+  {
+    "nl": "algemeen",
+    "type": "adj",
+    "tr": "genel",
+    "en": "general",
+    "ar": "عام",
+    "fr": "général"
+  },
+  {
+    "nl": "bankafschrift",
+    "type": "noun",
+    "article": "het",
+    "tr": "banka hesap özeti",
+    "en": "bank statement",
+    "ar": "كشف حساب",
+    "fr": "relevé bancaire"
+  },
+  {
+    "nl": "bepaald",
+    "type": "adj",
+    "tr": "belirli",
+    "en": "certain, specific",
+    "ar": "معين",
+    "fr": "certain"
+  },
+  {
+    "nl": "binnen",
+    "type": "prep",
+    "tr": "içinde",
+    "en": "within, inside",
+    "ar": "داخل",
+    "fr": "dans"
+  },
+  {
+    "nl": "contant",
+    "type": "adj",
+    "tr": "nakit",
+    "en": "cash",
+    "ar": "نقدي",
+    "fr": "comptant"
+  },
+  {
+    "nl": "garantie",
+    "type": "noun",
+    "article": "de",
+    "tr": "garanti",
+    "en": "guarantee, warranty",
+    "ar": "ضمان",
+    "fr": "garantie"
+  },
+  {
+    "nl": "gelden",
+    "type": "verb",
+    "perfectum": "gegolden",
+    "imperfectum": "gold",
+    "tr": "geçerli olmak",
+    "en": "to be valid",
+    "ar": "يسري",
+    "fr": "être valable"
+  },
+  {
+    "nl": "houden",
+    "type": "verb",
+    "perfectum": "gehouden",
+    "imperfectum": "hield",
+    "tr": "tutmak",
+    "en": "to hold, to keep",
+    "ar": "يمسك",
+    "fr": "tenir"
+  },
+  {
+    "nl": "kapotgaan",
+    "type": "verb",
+    "perfectum": "kapotgegaan",
+    "imperfectum": "ging kapot",
+    "tr": "bozulmak",
+    "en": "to break",
+    "ar": "يتعطل",
+    "fr": "se casser"
+  },
+  {
+    "nl": "kassabon",
+    "type": "noun",
+    "article": "de",
+    "tr": "kasa fişi",
+    "en": "receipt",
+    "ar": "إيصال",
+    "fr": "ticket de caisse"
+  },
+  {
+    "nl": "klantenservice",
+    "type": "noun",
+    "article": "de",
+    "tr": "müşteri hizmetleri",
+    "en": "customer service",
+    "ar": "خدمة العملاء",
+    "fr": "service client"
+  },
+  {
+    "nl": "namelijk",
+    "type": "adv",
+    "tr": "çünkü, şöyle ki",
+    "en": "namely, because",
+    "ar": "وهو",
+    "fr": "à savoir"
+  },
+  {
+    "nl": "origineel",
+    "type": "adj",
+    "tr": "orijinal",
+    "en": "original",
+    "ar": "أصلي",
+    "fr": "original"
+  },
+  {
+    "nl": "pinpas",
+    "type": "noun",
+    "article": "de",
+    "tr": "banka kartı",
+    "en": "debit card",
+    "ar": "بطاقة مصرفية",
+    "fr": "carte bancaire"
+  },
+  {
+    "nl": "product",
+    "type": "noun",
+    "article": "het",
+    "tr": "ürün",
+    "en": "product",
+    "ar": "منتج",
+    "fr": "produit"
+  },
+  {
+    "nl": "reparatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "tamir",
+    "en": "repair",
+    "ar": "إصلاح",
+    "fr": "réparation"
+  },
+  {
+    "nl": "ruilen",
+    "type": "verb",
+    "perfectum": "geruild",
+    "imperfectum": "ruilde",
+    "tr": "değiştirmek",
+    "en": "to exchange",
+    "ar": "يستبدل",
+    "fr": "échanger"
+  },
+  {
+    "nl": "tegoedbon",
+    "type": "noun",
+    "article": "de",
+    "tr": "hediye çeki",
+    "en": "gift voucher",
+    "ar": "قسيمة",
+    "fr": "bon d'achat"
+  },
+  {
+    "nl": "telefonisch",
+    "type": "adj",
+    "tr": "telefonla",
+    "en": "by phone",
+    "ar": "هاتفيا",
+    "fr": "téléphonique"
+  },
+  {
+    "nl": "terugkrijgen",
+    "type": "verb",
+    "perfectum": "teruggekregen",
+    "imperfectum": "kreeg terug",
+    "tr": "geri almak",
+    "en": "to get back",
+    "ar": "يستعيد",
+    "fr": "récupérer"
+  },
+  {
+    "nl": "terugstorten",
+    "type": "verb",
+    "perfectum": "teruggestort",
+    "imperfectum": "stortte terug",
+    "tr": "para iade etmek",
+    "en": "to refund",
+    "ar": "يسترد",
+    "fr": "rembourser"
+  },
+  {
+    "nl": "terugsturen",
+    "type": "verb",
+    "perfectum": "teruggestuurd",
+    "imperfectum": "stuurde terug",
+    "tr": "geri göndermek",
+    "en": "to send back",
+    "ar": "يعيد إرسال",
+    "fr": "renvoyer"
+  },
+  {
+    "nl": "tijd",
+    "type": "noun",
+    "article": "de",
+    "tr": "zaman",
+    "en": "time",
+    "ar": "وقت",
+    "fr": "temps"
+  },
+  {
+    "nl": "voorwaarde",
+    "type": "noun",
+    "article": "de",
+    "tr": "koşul, şart",
+    "en": "condition",
+    "ar": "شرط",
+    "fr": "condition"
+  },
+  {
+    "nl": "aantal",
+    "type": "noun",
+    "article": "het",
+    "tr": "adet, sayı",
+    "en": "number, amount",
+    "ar": "عدد",
+    "fr": "nombre"
+  },
+  {
+    "nl": "argument",
+    "type": "noun",
+    "article": "het",
+    "tr": "argüman",
+    "en": "argument",
+    "ar": "حجة",
+    "fr": "argument"
+  },
+  {
+    "nl": "bekijken",
+    "type": "verb",
+    "perfectum": "bekeken",
+    "imperfectum": "bekeek",
+    "tr": "bakmak, incelemek",
+    "en": "to look at, to examine",
+    "ar": "ينظر",
+    "fr": "regarder"
+  },
+  {
+    "nl": "beoordeling",
+    "type": "noun",
+    "article": "de",
+    "tr": "değerlendirme",
+    "en": "review, rating",
+    "ar": "تقييم",
+    "fr": "évaluation"
+  },
+  {
+    "nl": "beslissing",
+    "type": "noun",
+    "article": "de",
+    "tr": "karar",
+    "en": "decision",
+    "ar": "قرار",
+    "fr": "décision"
+  },
+  {
+    "nl": "betrouwbaar",
+    "type": "adj",
+    "tr": "güvenilir",
+    "en": "reliable",
+    "ar": "موثوق",
+    "fr": "fiable"
+  },
+  {
+    "nl": "boek",
+    "type": "noun",
+    "article": "het",
+    "tr": "kitap",
+    "en": "book",
+    "ar": "كتاب",
+    "fr": "livre"
+  },
+  {
+    "nl": "gaaf",
+    "type": "adj",
+    "tr": "harika",
+    "en": "cool, awesome",
+    "ar": "رائع",
+    "fr": "super"
+  },
+  {
+    "nl": "kwaliteit",
+    "type": "noun",
+    "article": "de",
+    "tr": "kalite",
+    "en": "quality",
+    "ar": "جودة",
+    "fr": "qualité"
+  },
+  {
+    "nl": "laptop",
+    "type": "noun",
+    "article": "de",
+    "tr": "dizüstü bilgisayar",
+    "en": "laptop",
+    "ar": "حاسوب محمول",
+    "fr": "ordinateur portable"
+  },
+  {
+    "nl": "letten op",
+    "type": "verb",
+    "perfectum": "gelet op",
+    "imperfectum": "lette op",
+    "tr": "dikkat etmek",
+    "en": "to pay attention to",
+    "ar": "ينتبه إلى",
+    "fr": "faire attention à"
+  },
+  {
+    "nl": "minstens",
+    "type": "adv",
+    "tr": "en az",
+    "en": "at least",
+    "ar": "على الأقل",
+    "fr": "au moins"
+  },
+  {
+    "nl": "noemen",
+    "type": "verb",
+    "perfectum": "genoemd",
+    "imperfectum": "noemde",
+    "tr": "adlandırmak, bahsetmek",
+    "en": "to call, to name",
+    "ar": "يسمي",
+    "fr": "appeler"
+  },
+  {
+    "nl": "nogal",
+    "type": "adv",
+    "tr": "oldukça",
+    "en": "quite, rather",
+    "ar": "إلى حد ما",
+    "fr": "assez"
+  },
+  {
+    "nl": "opruiming",
+    "type": "noun",
+    "article": "de",
+    "tr": "indirim, tasfiye",
+    "en": "clearance sale",
+    "ar": "تصفية",
+    "fr": "soldes"
+  },
+  {
+    "nl": "rotzooi",
+    "type": "noun",
+    "article": "de",
+    "tr": "pislik, karışıklık",
+    "en": "mess, junk",
+    "ar": "فوضى",
+    "fr": "désordre"
+  },
+  {
+    "nl": "stukgaan",
+    "type": "verb",
+    "perfectum": "stukgegaan",
+    "imperfectum": "ging stuk",
+    "tr": "bozulmak",
+    "en": "to break",
+    "ar": "ينكسر",
+    "fr": "se casser"
+  },
+  {
+    "nl": "twijfelen",
+    "type": "verb",
+    "perfectum": "getwijfeld",
+    "imperfectum": "twijfelde",
+    "tr": "şüphe etmek",
+    "en": "to doubt",
+    "ar": "يشك",
+    "fr": "douter"
+  },
+  {
+    "nl": "verdienen",
+    "type": "verb",
+    "perfectum": "verdiend",
+    "imperfectum": "verdiende",
+    "tr": "kazanmak",
+    "en": "to earn",
+    "ar": "يكسب",
+    "fr": "gagner"
+  },
+  {
+    "nl": "vinger",
+    "type": "noun",
+    "article": "de",
+    "tr": "parmak",
+    "en": "finger",
+    "ar": "إصبع",
+    "fr": "doigt"
+  },
+  {
+    "nl": "waar",
+    "type": "adv",
+    "tr": "nerede",
+    "en": "where",
+    "ar": "أين",
+    "fr": "où"
+  },
+  {
+    "nl": "afgeven",
+    "type": "verb",
+    "perfectum": "afgegeven",
+    "imperfectum": "gaf af",
+    "tr": "teslim etmek",
+    "en": "to hand over",
+    "ar": "يسلم",
+    "fr": "remettre"
+  },
+  {
+    "nl": "artikel",
+    "type": "noun",
+    "article": "het",
+    "tr": "ürün, makale",
+    "en": "article, item",
+    "ar": "مقالة، سلعة",
+    "fr": "article"
+  },
+  {
+    "nl": "dichtmaken",
+    "type": "verb",
+    "perfectum": "dichtgemaakt",
+    "imperfectum": "maakte dicht",
+    "tr": "kapatmak",
+    "en": "to close",
+    "ar": "يغلق",
+    "fr": "fermer"
+  },
+  {
+    "nl": "inloggen",
+    "type": "verb",
+    "perfectum": "ingelogd",
+    "imperfectum": "logde in",
+    "tr": "giriş yapmak",
+    "en": "to log in",
+    "ar": "يسجل الدخول",
+    "fr": "se connecter"
+  },
+  {
+    "nl": "juist",
+    "type": "adj",
+    "tr": "doğru",
+    "en": "correct",
+    "ar": "صحيح",
+    "fr": "correct"
+  },
+  {
+    "nl": "klikken",
+    "type": "verb",
+    "perfectum": "geklikt",
+    "imperfectum": "klikte",
+    "tr": "tıklamak",
+    "en": "to click",
+    "ar": "ينقر",
+    "fr": "cliquer"
+  },
+  {
+    "nl": "leggen",
+    "type": "verb",
+    "perfectum": "gelegd",
+    "imperfectum": "legde",
+    "tr": "koymak, yatırmak",
+    "en": "to lay, to put",
+    "ar": "يضع",
+    "fr": "poser"
+  },
+  {
+    "nl": "locatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "konum",
+    "en": "location",
+    "ar": "موقع",
+    "fr": "emplacement"
+  },
+  {
+    "nl": "maat",
+    "type": "noun",
+    "article": "de",
+    "tr": "beden, ölçü",
+    "en": "size",
+    "ar": "مقاس",
+    "fr": "taille"
+  },
+  {
+    "nl": "ontvangen",
+    "type": "verb",
+    "perfectum": "ontvangen",
+    "imperfectum": "ontving",
+    "tr": "almak, teslim almak",
+    "en": "to receive",
+    "ar": "يستلم",
+    "fr": "recevoir"
+  },
+  {
+    "nl": "order",
+    "type": "noun",
+    "article": "de",
+    "tr": "sipariş",
+    "en": "order",
+    "ar": "طلب",
+    "fr": "commande"
+  },
+  {
+    "nl": "over ... heen",
+    "type": "prep",
+    "tr": "üzerinden",
+    "en": "over",
+    "ar": "فوق",
+    "fr": "par-dessus"
+  },
+  {
+    "nl": "pakket",
+    "type": "noun",
+    "article": "het",
+    "tr": "paket",
+    "en": "package",
+    "ar": "طرد",
+    "fr": "colis"
+  },
+  {
+    "nl": "plakken",
+    "type": "verb",
+    "perfectum": "geplakt",
+    "imperfectum": "plakte",
+    "tr": "yapıştırmak",
+    "en": "to stick",
+    "ar": "يلصق",
+    "fr": "coller"
+  },
+  {
+    "nl": "reden",
+    "type": "noun",
+    "article": "de",
+    "tr": "sebep, neden",
+    "en": "reason",
+    "ar": "سبب",
+    "fr": "raison"
+  },
+  {
+    "nl": "retour",
+    "type": "noun",
+    "article": "het",
+    "tr": "iade, gidiş-dönüş",
+    "en": "return",
+    "ar": "إرجاع",
+    "fr": "retour"
+  },
+  {
+    "nl": "sok",
+    "type": "noun",
+    "article": "de",
+    "tr": "çorap",
+    "en": "sock",
+    "ar": "جورب",
+    "fr": "chaussette"
+  },
+  {
+    "nl": "stap",
+    "type": "noun",
+    "article": "de",
+    "tr": "adım",
+    "en": "step",
+    "ar": "خطوة",
+    "fr": "étape"
+  },
+  {
+    "nl": "sticker",
+    "type": "noun",
+    "article": "de",
+    "tr": "çıkartma",
+    "en": "sticker",
+    "ar": "ملصق",
+    "fr": "autocollant"
+  },
+  {
+    "nl": "verkeerd",
+    "type": "adj",
+    "tr": "yanlış",
+    "en": "wrong",
+    "ar": "خاطئ",
+    "fr": "faux"
+  },
+  {
+    "nl": "vervolgens",
+    "type": "adv",
+    "tr": "sonra, ardından",
+    "en": "then, next",
+    "ar": "بعد ذلك",
+    "fr": "ensuite"
+  },
+  {
+    "nl": "verzendbewijs",
+    "type": "noun",
+    "article": "het",
+    "tr": "gönderi makbuzu",
+    "en": "shipping receipt",
+    "ar": "إيصال شحن",
+    "fr": "preuve d'envoi"
+  },
+  {
+    "nl": "verzenden",
+    "type": "verb",
+    "perfectum": "verzonden",
+    "imperfectum": "verzond",
+    "tr": "göndermek",
+    "en": "to send, to ship",
+    "ar": "يرسل",
+    "fr": "envoyer"
+  },
+  {
+    "nl": "wachtwoord",
+    "type": "noun",
+    "article": "het",
+    "tr": "şifre",
+    "en": "password",
+    "ar": "كلمة مرور",
+    "fr": "mot de passe"
+  },
+  {
+    "nl": "webwinkel",
+    "type": "noun",
+    "article": "de",
+    "tr": "online mağaza",
+    "en": "online shop",
+    "ar": "متجر إلكتروني",
+    "fr": "boutique en ligne"
+  },
+  {
+    "nl": "totaal",
+    "type": "noun",
+    "article": "het",
+    "tr": "toplam",
+    "en": "total",
+    "ar": "المجموع",
+    "fr": "total"
+  }
+]

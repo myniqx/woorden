@@ -1,0 +1,863 @@
+[
+  {
+    "nl": "appartement",
+    "type": "noun",
+    "article": "het",
+    "tr": "daire",
+    "en": "apartment",
+    "ar": "شقة",
+    "fr": "appartement"
+  },
+  {
+    "nl": "badkamer",
+    "type": "noun",
+    "article": "de",
+    "tr": "banyo",
+    "en": "bathroom",
+    "ar": "حمام",
+    "fr": "salle de bain"
+  },
+  {
+    "nl": "balkon",
+    "type": "noun",
+    "article": "het",
+    "tr": "balkon",
+    "en": "balcony",
+    "ar": "شرفة",
+    "fr": "balcon"
+  },
+  {
+    "nl": "betalen",
+    "type": "verb",
+    "perfectum": "betaald",
+    "imperfectum": "betaalde",
+    "tr": "ödemek",
+    "en": "to pay",
+    "ar": "يدفع",
+    "fr": "payer"
+  },
+  {
+    "nl": "centrum",
+    "type": "noun",
+    "article": "het",
+    "tr": "merkez",
+    "en": "center",
+    "ar": "مركز",
+    "fr": "centre"
+  },
+  {
+    "nl": "delen",
+    "type": "verb",
+    "perfectum": "gedeeld",
+    "imperfectum": "deelde",
+    "tr": "paylaşmak",
+    "en": "to share",
+    "ar": "يشارك",
+    "fr": "partager"
+  },
+  {
+    "nl": "eigen",
+    "type": "adj",
+    "tr": "kendi, özel",
+    "en": "own",
+    "ar": "خاص",
+    "fr": "propre"
+  },
+  {
+    "nl": "familie",
+    "type": "noun",
+    "article": "de",
+    "tr": "aile",
+    "en": "family",
+    "ar": "عائلة",
+    "fr": "famille"
+  },
+  {
+    "nl": "gebruiken",
+    "type": "verb",
+    "perfectum": "gebruikt",
+    "imperfectum": "gebruikte",
+    "tr": "kullanmak",
+    "en": "to use",
+    "ar": "يستخدم",
+    "fr": "utiliser"
+  },
+  {
+    "nl": "gezin",
+    "type": "noun",
+    "article": "het",
+    "tr": "aile (çekirdek)",
+    "en": "family (nuclear)",
+    "ar": "أسرة",
+    "fr": "famille"
+  },
+  {
+    "nl": "hoog",
+    "type": "adj",
+    "tr": "yüksek",
+    "en": "high",
+    "ar": "عالي",
+    "fr": "haut"
+  },
+  {
+    "nl": "huisgenoot",
+    "type": "noun",
+    "article": "de",
+    "tr": "ev arkadaşı",
+    "en": "housemate",
+    "ar": "زميل سكن",
+    "fr": "colocataire"
+  },
+  {
+    "nl": "huur",
+    "type": "noun",
+    "article": "de",
+    "tr": "kira",
+    "en": "rent",
+    "ar": "إيجار",
+    "fr": "loyer"
+  },
+  {
+    "nl": "informatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "bilgi",
+    "en": "information",
+    "ar": "معلومات",
+    "fr": "information"
+  },
+  {
+    "nl": "kamer",
+    "type": "noun",
+    "article": "de",
+    "tr": "oda",
+    "en": "room",
+    "ar": "غرفة",
+    "fr": "chambre"
+  },
+  {
+    "nl": "maar",
+    "type": "conj",
+    "tr": "ama, fakat, ancak",
+    "en": "but",
+    "ar": "لكن",
+    "fr": "mais"
+  },
+  {
+    "nl": "plek",
+    "type": "noun",
+    "article": "de",
+    "tr": "yer, mekan",
+    "en": "place, spot",
+    "ar": "مكان",
+    "fr": "endroit"
+  },
+  {
+    "nl": "rijtjeshuis",
+    "type": "noun",
+    "article": "het",
+    "tr": "sıra ev",
+    "en": "terraced house",
+    "ar": "منزل متصل",
+    "fr": "maison mitoyenne"
+  },
+  {
+    "nl": "slaapkamer",
+    "type": "noun",
+    "article": "de",
+    "tr": "yatak odası",
+    "en": "bedroom",
+    "ar": "غرفة نوم",
+    "fr": "chambre à coucher"
+  },
+  {
+    "nl": "tuin",
+    "type": "noun",
+    "article": "de",
+    "tr": "bahçe",
+    "en": "garden",
+    "ar": "حديقة",
+    "fr": "jardin"
+  },
+  {
+    "nl": "verdieping",
+    "type": "noun",
+    "article": "de",
+    "tr": "kat",
+    "en": "floor, story",
+    "ar": "طابق",
+    "fr": "étage"
+  },
+  {
+    "nl": "vierkante meter",
+    "type": "noun",
+    "article": "de",
+    "tr": "metrekare",
+    "en": "square meter",
+    "ar": "متر مربع",
+    "fr": "mètre carré"
+  },
+  {
+    "nl": "vlakbij",
+    "type": "adv",
+    "tr": "yakınında",
+    "en": "nearby",
+    "ar": "قريب",
+    "fr": "à proximité"
+  },
+  {
+    "nl": "vrijstaand",
+    "type": "adj",
+    "tr": "müstakil",
+    "en": "detached",
+    "ar": "منفصل",
+    "fr": "indépendant"
+  },
+  {
+    "nl": "wc",
+    "type": "noun",
+    "article": "de",
+    "tr": "tuvalet",
+    "en": "toilet",
+    "ar": "مرحاض",
+    "fr": "toilettes"
+  },
+  {
+    "nl": "bed",
+    "type": "noun",
+    "article": "het",
+    "tr": "yatak",
+    "en": "bed",
+    "ar": "سرير",
+    "fr": "lit"
+  },
+  {
+    "nl": "ervaring",
+    "type": "noun",
+    "article": "de",
+    "tr": "deneyim, tecrübe",
+    "en": "experience",
+    "ar": "تجربة",
+    "fr": "expérience"
+  },
+  {
+    "nl": "flat",
+    "type": "noun",
+    "article": "de",
+    "tr": "apartman dairesi",
+    "en": "flat, apartment",
+    "ar": "شقة",
+    "fr": "appartement"
+  },
+  {
+    "nl": "hulp",
+    "type": "noun",
+    "article": "de",
+    "tr": "yardım",
+    "en": "help",
+    "ar": "مساعدة",
+    "fr": "aide"
+  },
+  {
+    "nl": "klussen",
+    "type": "verb",
+    "perfectum": "geklust",
+    "imperfectum": "kluste",
+    "tr": "tamirat yapmak",
+    "en": "to do odd jobs",
+    "ar": "يصلح",
+    "fr": "bricoler"
+  },
+  {
+    "nl": "kwijt",
+    "type": "adj",
+    "tr": "kayıp, kaybetmiş",
+    "en": "lost",
+    "ar": "مفقود",
+    "fr": "perdu"
+  },
+  {
+    "nl": "laag",
+    "type": "adj",
+    "tr": "düşük, alçak",
+    "en": "low",
+    "ar": "منخفض",
+    "fr": "bas"
+  },
+  {
+    "nl": "langskomen",
+    "type": "verb",
+    "perfectum": "langsgekomen",
+    "imperfectum": "kwam langs",
+    "tr": "uğramak",
+    "en": "to come by, to visit",
+    "ar": "يمر",
+    "fr": "passer"
+  },
+  {
+    "nl": "meisje",
+    "type": "noun",
+    "article": "het",
+    "tr": "kız",
+    "en": "girl",
+    "ar": "فتاة",
+    "fr": "fille"
+  },
+  {
+    "nl": "mooi",
+    "type": "adj",
+    "tr": "güzel",
+    "en": "beautiful",
+    "ar": "جميل",
+    "fr": "beau"
+  },
+  {
+    "nl": "ongeveer",
+    "type": "adv",
+    "tr": "yaklaşık",
+    "en": "approximately, about",
+    "ar": "تقريبا",
+    "fr": "environ"
+  },
+  {
+    "nl": "ophalen",
+    "type": "verb",
+    "perfectum": "opgehaald",
+    "imperfectum": "haalde op",
+    "tr": "almaya gitmek",
+    "en": "to pick up",
+    "ar": "يلتقط",
+    "fr": "aller chercher"
+  },
+  {
+    "nl": "oppas",
+    "type": "noun",
+    "article": "de",
+    "tr": "çocuk bakıcısı",
+    "en": "babysitter",
+    "ar": "جليسة أطفال",
+    "fr": "baby-sitter"
+  },
+  {
+    "nl": "prijs",
+    "type": "noun",
+    "article": "de",
+    "tr": "fiyat",
+    "en": "price",
+    "ar": "سعر",
+    "fr": "prix"
+  },
+  {
+    "nl": "schoonmaken",
+    "type": "verb",
+    "perfectum": "schoongemaakt",
+    "imperfectum": "maakte schoon",
+    "tr": "temizlemek",
+    "en": "to clean",
+    "ar": "ينظف",
+    "fr": "nettoyer"
+  },
+  {
+    "nl": "sleutel",
+    "type": "noun",
+    "article": "de",
+    "tr": "anahtar",
+    "en": "key",
+    "ar": "مفتاح",
+    "fr": "clé"
+  },
+  {
+    "nl": "spullen",
+    "type": "noun",
+    "article": "de",
+    "tr": "eşyalar",
+    "en": "stuff, things",
+    "ar": "أغراض",
+    "fr": "affaires"
+  },
+  {
+    "nl": "stoel",
+    "type": "noun",
+    "article": "de",
+    "tr": "sandalye",
+    "en": "chair",
+    "ar": "كرسي",
+    "fr": "chaise"
+  },
+  {
+    "nl": "student",
+    "type": "noun",
+    "article": "de",
+    "tr": "öğrenci",
+    "en": "student",
+    "ar": "طالب",
+    "fr": "étudiant"
+  },
+  {
+    "nl": "tweedehands",
+    "type": "adj",
+    "tr": "ikinci el",
+    "en": "second-hand",
+    "ar": "مستعمل",
+    "fr": "d'occasion"
+  },
+  {
+    "nl": "verhuizen",
+    "type": "verb",
+    "perfectum": "verhuisd",
+    "imperfectum": "verhuisde",
+    "tr": "taşınmak",
+    "en": "to move (house)",
+    "ar": "ينتقل",
+    "fr": "déménager"
+  },
+  {
+    "nl": "verkopen",
+    "type": "verb",
+    "perfectum": "verkocht",
+    "imperfectum": "verkocht",
+    "tr": "satmak",
+    "en": "to sell",
+    "ar": "يبيع",
+    "fr": "vendre"
+  },
+  {
+    "nl": "zoeken",
+    "type": "verb",
+    "perfectum": "gezocht",
+    "imperfectum": "zocht",
+    "tr": "aramak",
+    "en": "to search, to look for",
+    "ar": "يبحث",
+    "fr": "chercher"
+  },
+  {
+    "nl": "belangrijk",
+    "type": "adj",
+    "tr": "önemli",
+    "en": "important",
+    "ar": "مهم",
+    "fr": "important"
+  },
+  {
+    "nl": "blauw",
+    "type": "adj",
+    "tr": "mavi",
+    "en": "blue",
+    "ar": "أزرق",
+    "fr": "bleu"
+  },
+  {
+    "nl": "donker",
+    "type": "adj",
+    "tr": "koyu, karanlık",
+    "en": "dark",
+    "ar": "داكن",
+    "fr": "sombre"
+  },
+  {
+    "nl": "iedereen",
+    "type": "pron",
+    "tr": "herkes",
+    "en": "everyone",
+    "ar": "الجميع",
+    "fr": "tout le monde"
+  },
+  {
+    "nl": "kast",
+    "type": "noun",
+    "article": "de",
+    "tr": "dolap",
+    "en": "closet, cupboard",
+    "ar": "خزانة",
+    "fr": "armoire"
+  },
+  {
+    "nl": "kiezen",
+    "type": "verb",
+    "perfectum": "gekozen",
+    "imperfectum": "koos",
+    "tr": "seçmek",
+    "en": "to choose",
+    "ar": "يختار",
+    "fr": "choisir"
+  },
+  {
+    "nl": "kleding",
+    "type": "noun",
+    "article": "de",
+    "tr": "giysi, kıyafet",
+    "en": "clothing",
+    "ar": "ملابس",
+    "fr": "vêtements"
+  },
+  {
+    "nl": "kleur",
+    "type": "noun",
+    "article": "de",
+    "tr": "renk",
+    "en": "color",
+    "ar": "لون",
+    "fr": "couleur"
+  },
+  {
+    "nl": "la",
+    "type": "noun",
+    "article": "de",
+    "tr": "çekmece",
+    "en": "drawer",
+    "ar": "درج",
+    "fr": "tiroir"
+  },
+  {
+    "nl": "lamp",
+    "type": "noun",
+    "article": "de",
+    "tr": "lamba",
+    "en": "lamp",
+    "ar": "مصباح",
+    "fr": "lampe"
+  },
+  {
+    "nl": "licht",
+    "type": "adj",
+    "tr": "açık (renk), hafif",
+    "en": "light",
+    "ar": "فاتح",
+    "fr": "clair"
+  },
+  {
+    "nl": "meubel",
+    "type": "noun",
+    "article": "het",
+    "tr": "mobilya",
+    "en": "furniture",
+    "ar": "أثاث",
+    "fr": "meuble"
+  },
+  {
+    "nl": "muur",
+    "type": "noun",
+    "article": "de",
+    "tr": "duvar",
+    "en": "wall",
+    "ar": "جدار",
+    "fr": "mur"
+  },
+  {
+    "nl": "onder",
+    "type": "prep",
+    "tr": "altında",
+    "en": "under",
+    "ar": "تحت",
+    "fr": "sous"
+  },
+  {
+    "nl": "raam",
+    "type": "noun",
+    "article": "het",
+    "tr": "pencere",
+    "en": "window",
+    "ar": "نافذة",
+    "fr": "fenêtre"
+  },
+  {
+    "nl": "ruimte",
+    "type": "noun",
+    "article": "de",
+    "tr": "alan, mekan",
+    "en": "space, room",
+    "ar": "مساحة",
+    "fr": "espace"
+  },
+  {
+    "nl": "tegen",
+    "type": "prep",
+    "tr": "karşı, -e karşı",
+    "en": "against",
+    "ar": "ضد",
+    "fr": "contre"
+  },
+  {
+    "nl": "tip",
+    "type": "noun",
+    "article": "de",
+    "tr": "ipucu, tavsiye",
+    "en": "tip",
+    "ar": "نصيحة",
+    "fr": "conseil"
+  },
+  {
+    "nl": "vloer",
+    "type": "noun",
+    "article": "de",
+    "tr": "zemin, yer",
+    "en": "floor",
+    "ar": "أرضية",
+    "fr": "sol"
+  },
+  {
+    "nl": "vol",
+    "type": "adj",
+    "tr": "dolu",
+    "en": "full",
+    "ar": "ممتلئ",
+    "fr": "plein"
+  },
+  {
+    "nl": "vooral",
+    "type": "adv",
+    "tr": "özellikle",
+    "en": "especially",
+    "ar": "خاصة",
+    "fr": "surtout"
+  },
+  {
+    "nl": "wit",
+    "type": "adj",
+    "tr": "beyaz",
+    "en": "white",
+    "ar": "أبيض",
+    "fr": "blanc"
+  },
+  {
+    "nl": "woning",
+    "type": "noun",
+    "article": "de",
+    "tr": "konut, ev",
+    "en": "dwelling, house",
+    "ar": "مسكن",
+    "fr": "logement"
+  },
+  {
+    "nl": "woonkamer",
+    "type": "noun",
+    "article": "de",
+    "tr": "oturma odası, salon",
+    "en": "living room",
+    "ar": "غرفة المعيشة",
+    "fr": "salon"
+  },
+  {
+    "nl": "zetten",
+    "type": "verb",
+    "perfectum": "gezet",
+    "imperfectum": "zette",
+    "tr": "koymak, yerleştirmek",
+    "en": "to put, to place",
+    "ar": "يضع",
+    "fr": "mettre"
+  },
+  {
+    "nl": "zorgen voor",
+    "type": "verb",
+    "perfectum": "gezorgd voor",
+    "imperfectum": "zorgde voor",
+    "tr": "bakmak, ilgilenmek",
+    "en": "to take care of",
+    "ar": "يعتني بـ",
+    "fr": "s'occuper de"
+  },
+  {
+    "nl": "allebei",
+    "type": "pron",
+    "tr": "her ikisi",
+    "en": "both",
+    "ar": "كلاهما",
+    "fr": "tous les deux"
+  },
+  {
+    "nl": "allemaal",
+    "type": "pron",
+    "tr": "hepsi, herkes",
+    "en": "all, everyone",
+    "ar": "الجميع",
+    "fr": "tous"
+  },
+  {
+    "nl": "elkaar",
+    "type": "pron",
+    "tr": "birbirini",
+    "en": "each other",
+    "ar": "بعضهم البعض",
+    "fr": "l'un l'autre"
+  },
+  {
+    "nl": "geld",
+    "type": "noun",
+    "article": "het",
+    "tr": "para",
+    "en": "money",
+    "ar": "مال",
+    "fr": "argent"
+  },
+  {
+    "nl": "gratis",
+    "type": "adj",
+    "tr": "bedava, ücretsiz",
+    "en": "free",
+    "ar": "مجاني",
+    "fr": "gratuit"
+  },
+  {
+    "nl": "huren",
+    "type": "verb",
+    "perfectum": "gehuurd",
+    "imperfectum": "huurde",
+    "tr": "kiralamak",
+    "en": "to rent",
+    "ar": "يستأجر",
+    "fr": "louer"
+  },
+  {
+    "nl": "lang",
+    "type": "adj",
+    "tr": "uzun",
+    "en": "long, tall",
+    "ar": "طويل",
+    "fr": "long"
+  },
+  {
+    "nl": "makkelijk",
+    "type": "adj",
+    "tr": "kolay",
+    "en": "easy",
+    "ar": "سهل",
+    "fr": "facile"
+  },
+  {
+    "nl": "meeste",
+    "type": "pron",
+    "tr": "çoğu",
+    "en": "most",
+    "ar": "معظم",
+    "fr": "la plupart"
+  },
+  {
+    "nl": "moeilijk",
+    "type": "adj",
+    "tr": "zor",
+    "en": "difficult",
+    "ar": "صعب",
+    "fr": "difficile"
+  },
+  {
+    "nl": "ouder",
+    "type": "noun",
+    "article": "de",
+    "tr": "ebeveyn",
+    "en": "parent",
+    "ar": "والد",
+    "fr": "parent"
+  },
+  {
+    "nl": "procent",
+    "type": "noun",
+    "article": "het",
+    "tr": "yüzde",
+    "en": "percent",
+    "ar": "بالمئة",
+    "fr": "pour cent"
+  },
+  {
+    "nl": "sparen",
+    "type": "verb",
+    "perfectum": "gespaard",
+    "imperfectum": "spaarde",
+    "tr": "biriktirmek, tasarruf etmek",
+    "en": "to save (money)",
+    "ar": "يدخر",
+    "fr": "économiser"
+  },
+  {
+    "nl": "streng",
+    "type": "adj",
+    "tr": "sıkı, sert",
+    "en": "strict",
+    "ar": "صارم",
+    "fr": "strict"
+  },
+  {
+    "nl": "studeren",
+    "type": "verb",
+    "perfectum": "gestudeerd",
+    "imperfectum": "studeerde",
+    "tr": "okumak (üniversite)",
+    "en": "to study",
+    "ar": "يدرس",
+    "fr": "étudier"
+  },
+  {
+    "nl": "studie",
+    "type": "noun",
+    "article": "de",
+    "tr": "eğitim, öğrenim",
+    "en": "study, education",
+    "ar": "دراسة",
+    "fr": "études"
+  },
+  {
+    "nl": "uitstappen",
+    "type": "verb",
+    "perfectum": "uitgestapt",
+    "imperfectum": "stapte uit",
+    "tr": "inmek (araçtan)",
+    "en": "to get off",
+    "ar": "ينزل",
+    "fr": "descendre"
+  },
+  {
+    "nl": "vrijheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "özgürlük",
+    "en": "freedom",
+    "ar": "حرية",
+    "fr": "liberté"
+  },
+  {
+    "nl": "wachten",
+    "type": "verb",
+    "perfectum": "gewacht",
+    "imperfectum": "wachtte",
+    "tr": "beklemek",
+    "en": "to wait",
+    "ar": "ينتظر",
+    "fr": "attendre"
+  },
+  {
+    "nl": "was",
+    "type": "noun",
+    "article": "de",
+    "tr": "çamaşır",
+    "en": "laundry",
+    "ar": "غسيل",
+    "fr": "linge"
+  },
+  {
+    "nl": "wasmachine",
+    "type": "noun",
+    "article": "de",
+    "tr": "çamaşır makinesi",
+    "en": "washing machine",
+    "ar": "غسالة",
+    "fr": "machine à laver"
+  },
+  {
+    "nl": "zelfstandig",
+    "type": "adj",
+    "tr": "bağımsız",
+    "en": "independent",
+    "ar": "مستقل",
+    "fr": "indépendant"
+  },
+  {
+    "nl": "zomer",
+    "type": "noun",
+    "article": "de",
+    "tr": "yaz",
+    "en": "summer",
+    "ar": "صيف",
+    "fr": "été"
+  }
+]

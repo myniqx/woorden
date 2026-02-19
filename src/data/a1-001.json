@@ -1,0 +1,852 @@
+[
+  {
+    "nl": "dat",
+    "type": "pron",
+    "tr": "o, şu",
+    "en": "that",
+    "ar": "ذلك",
+    "fr": "cela"
+  },
+  {
+    "nl": "dit",
+    "type": "pron",
+    "tr": "bu",
+    "en": "this",
+    "ar": "هذا",
+    "fr": "ceci"
+  },
+  {
+    "nl": "dorp",
+    "type": "noun",
+    "article": "het",
+    "tr": "köy",
+    "en": "village",
+    "ar": "قرية",
+    "fr": "village"
+  },
+  {
+    "nl": "een",
+    "type": "num",
+    "tr": "bir",
+    "en": "a, one",
+    "ar": "واحد",
+    "fr": "un"
+  },
+  {
+    "nl": "gaan",
+    "type": "verb",
+    "perfectum": "gegaan",
+    "imperfectum": "ging",
+    "tr": "gitmek",
+    "en": "to go",
+    "ar": "يذهب",
+    "fr": "aller"
+  },
+  {
+    "nl": "hij",
+    "type": "pron",
+    "tr": "o (erkek)",
+    "en": "he",
+    "ar": "هو",
+    "fr": "il"
+  },
+  {
+    "nl": "ik",
+    "type": "pron",
+    "tr": "ben",
+    "en": "I",
+    "ar": "أنا",
+    "fr": "je"
+  },
+  {
+    "nl": "in",
+    "type": "prep",
+    "tr": "-de, -da, içinde",
+    "en": "in, at",
+    "ar": "في",
+    "fr": "dans"
+  },
+  {
+    "nl": "jaar",
+    "type": "noun",
+    "article": "het",
+    "tr": "yıl",
+    "en": "year",
+    "ar": "سنة",
+    "fr": "année"
+  },
+  {
+    "nl": "komen",
+    "type": "verb",
+    "perfectum": "gekomen",
+    "imperfectum": "kwam",
+    "tr": "gelmek",
+    "en": "to come",
+    "ar": "يأتي",
+    "fr": "venir"
+  },
+  {
+    "nl": "leren",
+    "type": "verb",
+    "perfectum": "geleerd",
+    "imperfectum": "leerde",
+    "tr": "öğrenmek",
+    "en": "to learn",
+    "ar": "يتعلم",
+    "fr": "apprendre"
+  },
+  {
+    "nl": "maand",
+    "type": "noun",
+    "article": "de",
+    "tr": "ay (takvim)",
+    "en": "month",
+    "ar": "شهر",
+    "fr": "mois"
+  },
+  {
+    "nl": "naar",
+    "type": "prep",
+    "tr": "-e, -a, -e doğru",
+    "en": "to, towards",
+    "ar": "إلى",
+    "fr": "vers"
+  },
+  {
+    "nl": "Nederland",
+    "type": "noun",
+    "article": "het",
+    "tr": "Hollanda",
+    "en": "Netherlands",
+    "ar": "هولندا",
+    "fr": "Pays-Bas"
+  },
+  {
+    "nl": "Nederlands",
+    "type": "noun",
+    "article": "het",
+    "tr": "Hollandaca",
+    "en": "Dutch (language)",
+    "ar": "الهولندية",
+    "fr": "néerlandais"
+  },
+  {
+    "nl": "niet",
+    "type": "adv",
+    "tr": "değil",
+    "en": "not",
+    "ar": "لا",
+    "fr": "pas"
+  },
+  {
+    "nl": "nu",
+    "type": "adv",
+    "tr": "şimdi",
+    "en": "now",
+    "ar": "الآن",
+    "fr": "maintenant"
+  },
+  {
+    "nl": "school",
+    "type": "noun",
+    "article": "de",
+    "tr": "okul",
+    "en": "school",
+    "ar": "مدرسة",
+    "fr": "école"
+  },
+  {
+    "nl": "stad",
+    "type": "noun",
+    "article": "de",
+    "tr": "şehir",
+    "en": "city",
+    "ar": "مدينة",
+    "fr": "ville"
+  },
+  {
+    "nl": "uit",
+    "type": "prep",
+    "tr": "-den, -dan",
+    "en": "from, out of",
+    "ar": "من",
+    "fr": "de"
+  },
+  {
+    "nl": "werken",
+    "type": "verb",
+    "perfectum": "gewerkt",
+    "imperfectum": "werkte",
+    "tr": "çalışmak",
+    "en": "to work",
+    "ar": "يعمل",
+    "fr": "travailler"
+  },
+  {
+    "nl": "winkel",
+    "type": "noun",
+    "article": "de",
+    "tr": "dükkan, mağaza",
+    "en": "shop, store",
+    "ar": "متجر",
+    "fr": "boutique"
+  },
+  {
+    "nl": "wonen",
+    "type": "verb",
+    "perfectum": "gewoond",
+    "imperfectum": "woonde",
+    "tr": "oturmak, ikamet etmek",
+    "en": "to live, to reside",
+    "ar": "يسكن",
+    "fr": "habiter"
+  },
+  {
+    "nl": "ze",
+    "type": "pron",
+    "tr": "onlar / o (kadın)",
+    "en": "they / she",
+    "ar": "هم / هي",
+    "fr": "ils / elle"
+  },
+  {
+    "nl": "zijn",
+    "type": "verb",
+    "perfectum": "geweest",
+    "imperfectum": "was",
+    "tr": "olmak",
+    "en": "to be",
+    "ar": "يكون",
+    "fr": "être"
+  },
+  {
+    "nl": "één",
+    "type": "num",
+    "tr": "bir (sayı)",
+    "en": "one",
+    "ar": "واحد",
+    "fr": "un"
+  },
+  {
+    "nl": "achternaam",
+    "type": "noun",
+    "article": "de",
+    "tr": "soyadı",
+    "en": "surname, last name",
+    "ar": "اسم العائلة",
+    "fr": "nom de famille"
+  },
+  {
+    "nl": "al",
+    "type": "adv",
+    "tr": "zaten, çoktan",
+    "en": "already",
+    "ar": "بالفعل",
+    "fr": "déjà"
+  },
+  {
+    "nl": "en",
+    "type": "conj",
+    "tr": "ve",
+    "en": "and",
+    "ar": "و",
+    "fr": "et"
+  },
+  {
+    "nl": "hallo",
+    "type": "phrase",
+    "tr": "merhaba",
+    "en": "hello",
+    "ar": "مرحبا",
+    "fr": "bonjour"
+  },
+  {
+    "nl": "hebben",
+    "type": "verb",
+    "perfectum": "gehad",
+    "imperfectum": "had",
+    "tr": "sahip olmak",
+    "en": "to have",
+    "ar": "يملك",
+    "fr": "avoir"
+  },
+  {
+    "nl": "heten",
+    "type": "verb",
+    "perfectum": "geheten",
+    "imperfectum": "heette",
+    "tr": "adı olmak",
+    "en": "to be called",
+    "ar": "يُسمى",
+    "fr": "s'appeler"
+  },
+  {
+    "nl": "hoe",
+    "type": "adv",
+    "tr": "nasıl",
+    "en": "how",
+    "ar": "كيف",
+    "fr": "comment"
+  },
+  {
+    "nl": "hoelang",
+    "type": "adv",
+    "tr": "ne kadar süre",
+    "en": "how long",
+    "ar": "كم من الوقت",
+    "fr": "combien de temps"
+  },
+  {
+    "nl": "ja",
+    "type": "adv",
+    "tr": "evet",
+    "en": "yes",
+    "ar": "نعم",
+    "fr": "oui"
+  },
+  {
+    "nl": "je",
+    "type": "pron",
+    "tr": "sen, senin",
+    "en": "you, your",
+    "ar": "أنت، لك",
+    "fr": "tu, ton"
+  },
+  {
+    "nl": "jij",
+    "type": "pron",
+    "tr": "sen",
+    "en": "you",
+    "ar": "أنت",
+    "fr": "toi"
+  },
+  {
+    "nl": "kloppen",
+    "type": "verb",
+    "perfectum": "geklopt",
+    "imperfectum": "klopte",
+    "tr": "doğru olmak, kapı çalmak",
+    "en": "to be correct, to knock",
+    "ar": "يطرق، صحيح",
+    "fr": "frapper, être correct"
+  },
+  {
+    "nl": "les",
+    "type": "noun",
+    "article": "de",
+    "tr": "ders",
+    "en": "lesson",
+    "ar": "درس",
+    "fr": "leçon"
+  },
+  {
+    "nl": "leuk",
+    "type": "adj",
+    "tr": "güzel, hoş, eğlenceli",
+    "en": "nice, fun",
+    "ar": "لطيف، ممتع",
+    "fr": "sympa, amusant"
+  },
+  {
+    "nl": "mijn",
+    "type": "pron",
+    "tr": "benim",
+    "en": "my",
+    "ar": "لي",
+    "fr": "mon"
+  },
+  {
+    "nl": "oké",
+    "type": "phrase",
+    "tr": "tamam",
+    "en": "okay",
+    "ar": "حسنا",
+    "fr": "d'accord"
+  },
+  {
+    "nl": "ook",
+    "type": "adv",
+    "tr": "de, da, ayrıca",
+    "en": "also, too",
+    "ar": "أيضا",
+    "fr": "aussi"
+  },
+  {
+    "nl": "spellen",
+    "type": "verb",
+    "perfectum": "gespeld",
+    "imperfectum": "spelde",
+    "tr": "harflerini söylemek, hecelemek",
+    "en": "to spell",
+    "ar": "يتهجى",
+    "fr": "épeler"
+  },
+  {
+    "nl": "telefoonnummer",
+    "type": "noun",
+    "article": "het",
+    "tr": "telefon numarası",
+    "en": "phone number",
+    "ar": "رقم الهاتف",
+    "fr": "numéro de téléphone"
+  },
+  {
+    "nl": "vandaan",
+    "type": "adv",
+    "tr": "-den, nereden",
+    "en": "from (origin)",
+    "ar": "من أين",
+    "fr": "d'où"
+  },
+  {
+    "nl": "voornaam",
+    "type": "noun",
+    "article": "de",
+    "tr": "ad, isim",
+    "en": "first name",
+    "ar": "الاسم الأول",
+    "fr": "prénom"
+  },
+  {
+    "nl": "wat",
+    "type": "pron",
+    "tr": "ne",
+    "en": "what",
+    "ar": "ماذا",
+    "fr": "quoi"
+  },
+  {
+    "nl": "adres",
+    "type": "noun",
+    "article": "het",
+    "tr": "adres",
+    "en": "address",
+    "ar": "عنوان",
+    "fr": "adresse"
+  },
+  {
+    "nl": "april",
+    "type": "noun",
+    "article": "de",
+    "tr": "Nisan",
+    "en": "April",
+    "ar": "أبريل",
+    "fr": "avril"
+  },
+  {
+    "nl": "e-mailadres",
+    "type": "noun",
+    "article": "het",
+    "tr": "e-posta adresi",
+    "en": "email address",
+    "ar": "عنوان البريد الإلكتروني",
+    "fr": "adresse e-mail"
+  },
+  {
+    "nl": "formulier",
+    "type": "noun",
+    "article": "het",
+    "tr": "form",
+    "en": "form",
+    "ar": "نموذج",
+    "fr": "formulaire"
+  },
+  {
+    "nl": "geboortedatum",
+    "type": "noun",
+    "article": "de",
+    "tr": "doğum tarihi",
+    "en": "date of birth",
+    "ar": "تاريخ الميلاد",
+    "fr": "date de naissance"
+  },
+  {
+    "nl": "geboren",
+    "type": "adj",
+    "tr": "doğumlu, doğmuş",
+    "en": "born",
+    "ar": "مولود",
+    "fr": "né"
+  },
+  {
+    "nl": "gemeente",
+    "type": "noun",
+    "article": "de",
+    "tr": "belediye",
+    "en": "municipality",
+    "ar": "بلدية",
+    "fr": "commune"
+  },
+  {
+    "nl": "gemeentehuis",
+    "type": "noun",
+    "article": "het",
+    "tr": "belediye binası",
+    "en": "town hall",
+    "ar": "مبنى البلدية",
+    "fr": "mairie"
+  },
+  {
+    "nl": "goedemorgen",
+    "type": "phrase",
+    "tr": "günaydın",
+    "en": "good morning",
+    "ar": "صباح الخير",
+    "fr": "bonjour"
+  },
+  {
+    "nl": "helpen",
+    "type": "verb",
+    "perfectum": "geholpen",
+    "imperfectum": "hielp",
+    "tr": "yardım etmek",
+    "en": "to help",
+    "ar": "يساعد",
+    "fr": "aider"
+  },
+  {
+    "nl": "invullen",
+    "type": "verb",
+    "perfectum": "ingevuld",
+    "imperfectum": "vulde in",
+    "tr": "doldurmak (form)",
+    "en": "to fill in",
+    "ar": "يملأ",
+    "fr": "remplir"
+  },
+  {
+    "nl": "kunnen",
+    "type": "verb",
+    "perfectum": "gekund",
+    "imperfectum": "kon",
+    "tr": "yapabilmek, -ebilmek",
+    "en": "can, to be able to",
+    "ar": "يستطيع",
+    "fr": "pouvoir"
+  },
+  {
+    "nl": "man",
+    "type": "noun",
+    "article": "de",
+    "tr": "adam, erkek",
+    "en": "man",
+    "ar": "رجل",
+    "fr": "homme"
+  },
+  {
+    "nl": "meneer",
+    "type": "noun",
+    "article": "de",
+    "tr": "bay, beyefendi",
+    "en": "mister, sir",
+    "ar": "سيد",
+    "fr": "monsieur"
+  },
+  {
+    "nl": "mobiel",
+    "type": "adj",
+    "tr": "mobil, cep (telefon)",
+    "en": "mobile",
+    "ar": "محمول",
+    "fr": "mobile"
+  },
+  {
+    "nl": "nationaliteit",
+    "type": "noun",
+    "article": "de",
+    "tr": "uyruk, milliyet",
+    "en": "nationality",
+    "ar": "جنسية",
+    "fr": "nationalité"
+  },
+  {
+    "nl": "nieuw",
+    "type": "adj",
+    "tr": "yeni",
+    "en": "new",
+    "ar": "جديد",
+    "fr": "nouveau"
+  },
+  {
+    "nl": "op",
+    "type": "prep",
+    "tr": "üzerinde, -de",
+    "en": "on, at",
+    "ar": "على",
+    "fr": "sur"
+  },
+  {
+    "nl": "postcode",
+    "type": "noun",
+    "article": "de",
+    "tr": "posta kodu",
+    "en": "postal code",
+    "ar": "الرمز البريدي",
+    "fr": "code postal"
+  },
+  {
+    "nl": "u",
+    "type": "pron",
+    "tr": "siz (resmi)",
+    "en": "you (formal)",
+    "ar": "أنت (رسمي)",
+    "fr": "vous"
+  },
+  {
+    "nl": "uw",
+    "type": "pron",
+    "tr": "sizin (resmi)",
+    "en": "your (formal)",
+    "ar": "لك (رسمي)",
+    "fr": "votre"
+  },
+  {
+    "nl": "vrouw",
+    "type": "noun",
+    "article": "de",
+    "tr": "kadın, eş",
+    "en": "woman, wife",
+    "ar": "امرأة، زوجة",
+    "fr": "femme"
+  },
+  {
+    "nl": "woonplaats",
+    "type": "noun",
+    "article": "de",
+    "tr": "ikamet yeri",
+    "en": "place of residence",
+    "ar": "مكان الإقامة",
+    "fr": "lieu de résidence"
+  },
+  {
+    "nl": "zullen",
+    "type": "verb",
+    "perfectum": "-",
+    "imperfectum": "zou",
+    "tr": "-ecek (gelecek zaman)",
+    "en": "shall, will",
+    "ar": "سوف",
+    "fr": "aller (futur)"
+  },
+  {
+    "nl": "alleen",
+    "type": "adv",
+    "tr": "yalnız, sadece",
+    "en": "alone, only",
+    "ar": "وحيد، فقط",
+    "fr": "seul, seulement"
+  },
+  {
+    "nl": "appen",
+    "type": "verb",
+    "perfectum": "geappt",
+    "imperfectum": "appte",
+    "tr": "mesaj göndermek (WhatsApp)",
+    "en": "to text (WhatsApp)",
+    "ar": "يرسل رسالة",
+    "fr": "envoyer un message"
+  },
+  {
+    "nl": "buren",
+    "type": "noun",
+    "article": "de",
+    "tr": "komşular",
+    "en": "neighbors",
+    "ar": "جيران",
+    "fr": "voisins"
+  },
+  {
+    "nl": "buurvrouw",
+    "type": "noun",
+    "article": "de",
+    "tr": "komşu kadın",
+    "en": "female neighbor",
+    "ar": "جارة",
+    "fr": "voisine"
+  },
+  {
+    "nl": "geen",
+    "type": "pron",
+    "tr": "hiç, yok",
+    "en": "no, none",
+    "ar": "لا شيء",
+    "fr": "aucun"
+  },
+  {
+    "nl": "getrouwd",
+    "type": "adj",
+    "tr": "evli",
+    "en": "married",
+    "ar": "متزوج",
+    "fr": "marié"
+  },
+  {
+    "nl": "graag",
+    "type": "adv",
+    "tr": "memnuniyetle, seve seve",
+    "en": "gladly, with pleasure",
+    "ar": "بكل سرور",
+    "fr": "volontiers"
+  },
+  {
+    "nl": "hobby",
+    "type": "noun",
+    "article": "de",
+    "tr": "hobi",
+    "en": "hobby",
+    "ar": "هواية",
+    "fr": "passe-temps"
+  },
+  {
+    "nl": "houden van",
+    "type": "verb",
+    "perfectum": "gehouden van",
+    "imperfectum": "hield van",
+    "tr": "sevmek",
+    "en": "to love, to like",
+    "ar": "يحب",
+    "fr": "aimer"
+  },
+  {
+    "nl": "huis",
+    "type": "noun",
+    "article": "het",
+    "tr": "ev",
+    "en": "house",
+    "ar": "منزل",
+    "fr": "maison"
+  },
+  {
+    "nl": "jullie",
+    "type": "pron",
+    "tr": "siz (çoğul, resmi olmayan)",
+    "en": "you (plural)",
+    "ar": "أنتم",
+    "fr": "vous"
+  },
+  {
+    "nl": "kind",
+    "type": "noun",
+    "article": "het",
+    "tr": "çocuk",
+    "en": "child",
+    "ar": "طفل",
+    "fr": "enfant"
+  },
+  {
+    "nl": "koken",
+    "type": "verb",
+    "perfectum": "gekookt",
+    "imperfectum": "kookte",
+    "tr": "yemek pişirmek",
+    "en": "to cook",
+    "ar": "يطبخ",
+    "fr": "cuisiner"
+  },
+  {
+    "nl": "met",
+    "type": "prep",
+    "tr": "ile, birlikte",
+    "en": "with",
+    "ar": "مع",
+    "fr": "avec"
+  },
+  {
+    "nl": "nog",
+    "type": "adv",
+    "tr": "henüz, daha, hâlâ",
+    "en": "still, yet",
+    "ar": "لا يزال",
+    "fr": "encore"
+  },
+  {
+    "nl": "ontmoeten",
+    "type": "verb",
+    "perfectum": "ontmoet",
+    "imperfectum": "ontmoette",
+    "tr": "tanışmak, buluşmak",
+    "en": "to meet",
+    "ar": "يلتقي",
+    "fr": "rencontrer"
+  },
+  {
+    "nl": "oud",
+    "type": "adj",
+    "tr": "yaşlı, eski",
+    "en": "old",
+    "ar": "قديم، كبير في السن",
+    "fr": "vieux"
+  },
+  {
+    "nl": "poes",
+    "type": "noun",
+    "article": "de",
+    "tr": "kedi",
+    "en": "cat, kitty",
+    "ar": "قطة",
+    "fr": "chat"
+  },
+  {
+    "nl": "restaurant",
+    "type": "noun",
+    "article": "het",
+    "tr": "restoran",
+    "en": "restaurant",
+    "ar": "مطعم",
+    "fr": "restaurant"
+  },
+  {
+    "nl": "sporten",
+    "type": "verb",
+    "perfectum": "gesport",
+    "imperfectum": "sportte",
+    "tr": "spor yapmak",
+    "en": "to exercise, to do sports",
+    "ar": "يمارس الرياضة",
+    "fr": "faire du sport"
+  },
+  {
+    "nl": "week",
+    "type": "noun",
+    "article": "de",
+    "tr": "hafta",
+    "en": "week",
+    "ar": "أسبوع",
+    "fr": "semaine"
+  },
+  {
+    "nl": "weekend",
+    "type": "noun",
+    "article": "het",
+    "tr": "hafta sonu",
+    "en": "weekend",
+    "ar": "نهاية الأسبوع",
+    "fr": "week-end"
+  },
+  {
+    "nl": "welkom",
+    "type": "adj",
+    "tr": "hoş geldin",
+    "en": "welcome",
+    "ar": "أهلا وسهلا",
+    "fr": "bienvenue"
+  },
+  {
+    "nl": "wie",
+    "type": "pron",
+    "tr": "kim",
+    "en": "who",
+    "ar": "من",
+    "fr": "qui"
+  },
+  {
+    "nl": "willen",
+    "type": "verb",
+    "perfectum": "gewild",
+    "imperfectum": "wilde",
+    "tr": "istemek",
+    "en": "to want",
+    "ar": "يريد",
+    "fr": "vouloir"
+  }
+]

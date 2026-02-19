@@ -10,6 +10,8 @@ interface DailyStats {
   correct: number;
 }
 
+export type EnabledPacks = Record<string, boolean>;
+
 interface AppData {
   language: Language;
   wordStats?: AllWordStats; // Old format (kept for backup after migration)
@@ -18,6 +20,7 @@ interface AppData {
   streak: number;
   lastPracticeDate: string | null;
   bestDaily: number;
+  enabledPacks: EnabledPacks; // Which word packs are enabled
 }
 
 const defaultData: AppData = {
@@ -27,6 +30,7 @@ const defaultData: AppData = {
   streak: 0,
   lastPracticeDate: null,
   bestDaily: 0,
+  enabledPacks: {}, // empty = all enabled by default
 };
 
 // Migration helpers
@@ -489,4 +493,25 @@ export function importData(jsonString: string): { success: boolean; message: str
   } catch (e) {
     return { success: false, message: 'Invalid JSON format' };
   }
+}
+
+// Word pack management
+export function getEnabledPacks(): EnabledPacks {
+  return appData.enabledPacks;
+}
+
+export function isPackEnabled(packName: string): boolean {
+  // undefined = enabled by default
+  return appData.enabledPacks[packName] !== false;
+}
+
+export function setPackEnabled(packName: string, enabled: boolean): void {
+  appData.enabledPacks[packName] = enabled;
+  saveData(appData);
+}
+
+export function togglePack(packName: string): boolean {
+  const newState = !isPackEnabled(packName);
+  setPackEnabled(packName, newState);
+  return newState;
 }

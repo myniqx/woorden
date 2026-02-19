@@ -67,5 +67,14 @@ export default defineConfig({
       '@data': resolve(__dirname, './src/data'),
       '@types': resolve(__dirname, './src/types')
     }
+  },
+  server: {
+    proxy: {
+      '/api/deepl': {
+        target: 'https://api-free.deepl.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/deepl/, '')
+      }
+    }
   }
 });
