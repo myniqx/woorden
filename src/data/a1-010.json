@@ -1,0 +1,892 @@
+[
+  {
+    "nl": "aanrijden",
+    "type": "verb",
+    "perfectum": "aangereden",
+    "imperfectum": "reed aan",
+    "tr": "çarpmak",
+    "en": "to hit, to collide",
+    "ar": "يصطدم",
+    "fr": "heurter"
+  },
+  {
+    "nl": "agent",
+    "type": "noun",
+    "article": "de",
+    "tr": "polis memuru",
+    "en": "police officer",
+    "ar": "ضابط شرطة",
+    "fr": "agent de police"
+  },
+  {
+    "nl": "baas",
+    "type": "noun",
+    "article": "de",
+    "tr": "patron",
+    "en": "boss",
+    "ar": "رئيس",
+    "fr": "patron"
+  },
+  {
+    "nl": "belachelijk",
+    "type": "adj",
+    "tr": "gülünç",
+    "en": "ridiculous",
+    "ar": "سخيف",
+    "fr": "ridicule"
+  },
+  {
+    "nl": "beloven",
+    "type": "verb",
+    "perfectum": "beloofd",
+    "imperfectum": "beloofde",
+    "tr": "söz vermek",
+    "en": "to promise",
+    "ar": "يعد",
+    "fr": "promettre"
+  },
+  {
+    "nl": "boete",
+    "type": "noun",
+    "article": "de",
+    "tr": "para cezası",
+    "en": "fine",
+    "ar": "غرامة",
+    "fr": "amende"
+  },
+  {
+    "nl": "dezelfde",
+    "type": "pron",
+    "tr": "aynı",
+    "en": "the same",
+    "ar": "نفس",
+    "fr": "le même"
+  },
+  {
+    "nl": "fietser",
+    "type": "noun",
+    "article": "de",
+    "tr": "bisikletli",
+    "en": "cyclist",
+    "ar": "راكب دراجة",
+    "fr": "cycliste"
+  },
+  {
+    "nl": "fietspad",
+    "type": "noun",
+    "article": "het",
+    "tr": "bisiklet yolu",
+    "en": "bike path",
+    "ar": "ممر دراجات",
+    "fr": "piste cyclable"
+  },
+  {
+    "nl": "gevaarlijk",
+    "type": "adj",
+    "tr": "tehlikeli",
+    "en": "dangerous",
+    "ar": "خطير",
+    "fr": "dangereux"
+  },
+  {
+    "nl": "haast",
+    "type": "noun",
+    "article": "de",
+    "tr": "acele",
+    "en": "hurry",
+    "ar": "عجلة",
+    "fr": "hâte"
+  },
+  {
+    "nl": "helm",
+    "type": "noun",
+    "article": "de",
+    "tr": "kask",
+    "en": "helmet",
+    "ar": "خوذة",
+    "fr": "casque"
+  },
+  {
+    "nl": "identiteitsbewijs",
+    "type": "noun",
+    "article": "het",
+    "tr": "kimlik belgesi",
+    "en": "ID card",
+    "ar": "بطاقة هوية",
+    "fr": "carte d'identité"
+  },
+  {
+    "nl": "onderweg",
+    "type": "adv",
+    "tr": "yolda",
+    "en": "on the way",
+    "ar": "في الطريق",
+    "fr": "en route"
+  },
+  {
+    "nl": "onveilig",
+    "type": "adj",
+    "tr": "güvensiz",
+    "en": "unsafe",
+    "ar": "غير آمن",
+    "fr": "dangereux"
+  },
+  {
+    "nl": "politie",
+    "type": "noun",
+    "article": "de",
+    "tr": "polis",
+    "en": "police",
+    "ar": "شرطة",
+    "fr": "police"
+  },
+  {
+    "nl": "regel",
+    "type": "noun",
+    "article": "de",
+    "tr": "kural",
+    "en": "rule",
+    "ar": "قاعدة",
+    "fr": "règle"
+  },
+  {
+    "nl": "stoep",
+    "type": "noun",
+    "article": "de",
+    "tr": "kaldırım",
+    "en": "sidewalk",
+    "ar": "رصيف",
+    "fr": "trottoir"
+  },
+  {
+    "nl": "stoplicht",
+    "type": "noun",
+    "article": "het",
+    "tr": "trafik ışığı",
+    "en": "traffic light",
+    "ar": "إشارة مرور",
+    "fr": "feu de signalisation"
+  },
+  {
+    "nl": "tegenwoordig",
+    "type": "adv",
+    "tr": "bugünlerde, günümüzde",
+    "en": "nowadays",
+    "ar": "حاليا",
+    "fr": "de nos jours"
+  },
+  {
+    "nl": "uitkijken",
+    "type": "verb",
+    "perfectum": "uitgekeken",
+    "imperfectum": "keek uit",
+    "tr": "dikkat etmek",
+    "en": "to watch out",
+    "ar": "ينتبه",
+    "fr": "faire attention"
+  },
+  {
+    "nl": "uitzondering",
+    "type": "noun",
+    "article": "de",
+    "tr": "istisna",
+    "en": "exception",
+    "ar": "استثناء",
+    "fr": "exception"
+  },
+  {
+    "nl": "veilig",
+    "type": "adj",
+    "tr": "güvenli",
+    "en": "safe",
+    "ar": "آمن",
+    "fr": "sûr"
+  },
+  {
+    "nl": "veranderen",
+    "type": "verb",
+    "perfectum": "veranderd",
+    "imperfectum": "veranderde",
+    "tr": "değiştirmek",
+    "en": "to change",
+    "ar": "يغير",
+    "fr": "changer"
+  },
+  {
+    "nl": "voetganger",
+    "type": "noun",
+    "article": "de",
+    "tr": "yaya",
+    "en": "pedestrian",
+    "ar": "مشاة",
+    "fr": "piéton"
+  },
+  {
+    "nl": "zebrapad",
+    "type": "noun",
+    "article": "het",
+    "tr": "yaya geçidi",
+    "en": "crosswalk",
+    "ar": "ممر المشاة",
+    "fr": "passage piéton"
+  },
+  {
+    "nl": "arm",
+    "type": "noun",
+    "article": "de",
+    "tr": "kol",
+    "en": "arm",
+    "ar": "ذراع",
+    "fr": "bras"
+  },
+  {
+    "nl": "been",
+    "type": "noun",
+    "article": "het",
+    "tr": "bacak",
+    "en": "leg",
+    "ar": "ساق",
+    "fr": "jambe"
+  },
+  {
+    "nl": "brand",
+    "type": "noun",
+    "article": "de",
+    "tr": "yangın",
+    "en": "fire",
+    "ar": "حريق",
+    "fr": "incendie"
+  },
+  {
+    "nl": "breken",
+    "type": "verb",
+    "perfectum": "gebroken",
+    "imperfectum": "brak",
+    "tr": "kırmak",
+    "en": "to break",
+    "ar": "يكسر",
+    "fr": "casser"
+  },
+  {
+    "nl": "dagelijks",
+    "type": "adj",
+    "tr": "günlük",
+    "en": "daily",
+    "ar": "يومي",
+    "fr": "quotidien"
+  },
+  {
+    "nl": "douchen",
+    "type": "verb",
+    "perfectum": "gedoucht",
+    "imperfectum": "douchte",
+    "tr": "duş almak",
+    "en": "to shower",
+    "ar": "يستحم",
+    "fr": "se doucher"
+  },
+  {
+    "nl": "fornuis",
+    "type": "noun",
+    "article": "het",
+    "tr": "ocak",
+    "en": "stove",
+    "ar": "موقد",
+    "fr": "cuisinière"
+  },
+  {
+    "nl": "fout",
+    "type": "noun",
+    "article": "de",
+    "tr": "hata",
+    "en": "mistake",
+    "ar": "خطأ",
+    "fr": "erreur"
+  },
+  {
+    "nl": "gewond",
+    "type": "adj",
+    "tr": "yaralı",
+    "en": "injured",
+    "ar": "جريح",
+    "fr": "blessé"
+  },
+  {
+    "nl": "hand",
+    "type": "noun",
+    "article": "de",
+    "tr": "el",
+    "en": "hand",
+    "ar": "يد",
+    "fr": "main"
+  },
+  {
+    "nl": "heet",
+    "type": "adj",
+    "tr": "çok sıcak",
+    "en": "hot",
+    "ar": "حار",
+    "fr": "chaud"
+  },
+  {
+    "nl": "mes",
+    "type": "noun",
+    "article": "het",
+    "tr": "bıçak",
+    "en": "knife",
+    "ar": "سكين",
+    "fr": "couteau"
+  },
+  {
+    "nl": "ondertussen",
+    "type": "adv",
+    "tr": "bu arada",
+    "en": "meanwhile",
+    "ar": "في هذه الأثناء",
+    "fr": "entre-temps"
+  },
+  {
+    "nl": "onhandig",
+    "type": "adj",
+    "tr": "beceriksiz, sakar",
+    "en": "clumsy",
+    "ar": "أخرق",
+    "fr": "maladroit"
+  },
+  {
+    "nl": "oorzaak",
+    "type": "noun",
+    "article": "de",
+    "tr": "sebep, neden",
+    "en": "cause",
+    "ar": "سبب",
+    "fr": "cause"
+  },
+  {
+    "nl": "overlijden",
+    "type": "verb",
+    "perfectum": "overleden",
+    "imperfectum": "overleed",
+    "tr": "vefat etmek",
+    "en": "to pass away",
+    "ar": "يتوفى",
+    "fr": "décéder"
+  },
+  {
+    "nl": "pan",
+    "type": "noun",
+    "article": "de",
+    "tr": "tencere, tava",
+    "en": "pot, pan",
+    "ar": "قدر",
+    "fr": "casserole"
+  },
+  {
+    "nl": "schoonmaakmiddel",
+    "type": "noun",
+    "article": "het",
+    "tr": "temizlik maddesi",
+    "en": "cleaning product",
+    "ar": "منظف",
+    "fr": "produit de nettoyage"
+  },
+  {
+    "nl": "schrikken",
+    "type": "verb",
+    "perfectum": "geschrokken",
+    "imperfectum": "schrok",
+    "tr": "korkmak, ürkmek",
+    "en": "to be startled",
+    "ar": "يفزع",
+    "fr": "sursauter"
+  },
+  {
+    "nl": "snijden",
+    "type": "verb",
+    "perfectum": "gesneden",
+    "imperfectum": "sneed",
+    "tr": "kesmek",
+    "en": "to cut",
+    "ar": "يقطع",
+    "fr": "couper"
+  },
+  {
+    "nl": "televisie",
+    "type": "noun",
+    "article": "de",
+    "tr": "televizyon",
+    "en": "television",
+    "ar": "تلفزيون",
+    "fr": "télévision"
+  },
+  {
+    "nl": "uitzetten",
+    "type": "verb",
+    "perfectum": "uitgezet",
+    "imperfectum": "zette uit",
+    "tr": "kapatmak",
+    "en": "to turn off",
+    "ar": "يطفئ",
+    "fr": "éteindre"
+  },
+  {
+    "nl": "vallen",
+    "type": "verb",
+    "perfectum": "gevallen",
+    "imperfectum": "viel",
+    "tr": "düşmek",
+    "en": "to fall",
+    "ar": "يسقط",
+    "fr": "tomber"
+  },
+  {
+    "nl": "verbranden",
+    "type": "verb",
+    "perfectum": "verbrand",
+    "imperfectum": "verbrandde",
+    "tr": "yanmak, yakmak",
+    "en": "to burn",
+    "ar": "يحترق",
+    "fr": "brûler"
+  },
+  {
+    "nl": "voorkomen",
+    "type": "verb",
+    "perfectum": "voorkomen",
+    "imperfectum": "voorkwam",
+    "tr": "önlemek",
+    "en": "to prevent",
+    "ar": "يمنع",
+    "fr": "prévenir"
+  },
+  {
+    "nl": "weggaan",
+    "type": "verb",
+    "perfectum": "weggegaan",
+    "imperfectum": "ging weg",
+    "tr": "gitmek, ayrılmak",
+    "en": "to leave",
+    "ar": "يغادر",
+    "fr": "partir"
+  },
+  {
+    "nl": "actie",
+    "type": "noun",
+    "article": "de",
+    "tr": "eylem, aksiyon",
+    "en": "action",
+    "ar": "عمل",
+    "fr": "action"
+  },
+  {
+    "nl": "basisschool",
+    "type": "noun",
+    "article": "de",
+    "tr": "ilkokul",
+    "en": "primary school",
+    "ar": "مدرسة ابتدائية",
+    "fr": "école primaire"
+  },
+  {
+    "nl": "einde",
+    "type": "noun",
+    "article": "het",
+    "tr": "son",
+    "en": "end",
+    "ar": "نهاية",
+    "fr": "fin"
+  },
+  {
+    "nl": "handtekening",
+    "type": "noun",
+    "article": "de",
+    "tr": "imza",
+    "en": "signature",
+    "ar": "توقيع",
+    "fr": "signature"
+  },
+  {
+    "nl": "hard",
+    "type": "adj",
+    "tr": "hızlı, sert",
+    "en": "fast, hard",
+    "ar": "سريع، صلب",
+    "fr": "vite, dur"
+  },
+  {
+    "nl": "een heleboel",
+    "type": "phrase",
+    "tr": "bir sürü",
+    "en": "a lot",
+    "ar": "الكثير",
+    "fr": "beaucoup"
+  },
+  {
+    "nl": "hopen",
+    "type": "verb",
+    "perfectum": "gehoopt",
+    "imperfectum": "hoopte",
+    "tr": "ummak",
+    "en": "to hope",
+    "ar": "يأمل",
+    "fr": "espérer"
+  },
+  {
+    "nl": "kapot",
+    "type": "adj",
+    "tr": "bozuk, kırık",
+    "en": "broken",
+    "ar": "مكسور",
+    "fr": "cassé"
+  },
+  {
+    "nl": "kilometer",
+    "type": "noun",
+    "article": "de",
+    "tr": "kilometre",
+    "en": "kilometer",
+    "ar": "كيلومتر",
+    "fr": "kilomètre"
+  },
+  {
+    "nl": "kruispunt",
+    "type": "noun",
+    "article": "het",
+    "tr": "kavşak",
+    "en": "intersection",
+    "ar": "تقاطع",
+    "fr": "carrefour"
+  },
+  {
+    "nl": "langzaam",
+    "type": "adj",
+    "tr": "yavaş",
+    "en": "slow",
+    "ar": "بطيء",
+    "fr": "lent"
+  },
+  {
+    "nl": "neerzetten",
+    "type": "verb",
+    "perfectum": "neergezet",
+    "imperfectum": "zette neer",
+    "tr": "koymak, yerleştirmek",
+    "en": "to put down",
+    "ar": "يضع",
+    "fr": "poser"
+  },
+  {
+    "nl": "overkant",
+    "type": "noun",
+    "article": "de",
+    "tr": "karşı taraf",
+    "en": "other side",
+    "ar": "الجانب الآخر",
+    "fr": "autre côté"
+  },
+  {
+    "nl": "oversteken",
+    "type": "verb",
+    "perfectum": "overgestoken",
+    "imperfectum": "stak over",
+    "tr": "karşıya geçmek",
+    "en": "to cross",
+    "ar": "يعبر",
+    "fr": "traverser"
+  },
+  {
+    "nl": "radio",
+    "type": "noun",
+    "article": "de",
+    "tr": "radyo",
+    "en": "radio",
+    "ar": "راديو",
+    "fr": "radio"
+  },
+  {
+    "nl": "repareren",
+    "type": "verb",
+    "perfectum": "gerepareerd",
+    "imperfectum": "repareerde",
+    "tr": "tamir etmek",
+    "en": "to repair",
+    "ar": "يصلح",
+    "fr": "réparer"
+  },
+  {
+    "nl": "snelheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "hız",
+    "en": "speed",
+    "ar": "سرعة",
+    "fr": "vitesse"
+  },
+  {
+    "nl": "toen",
+    "type": "conj",
+    "tr": "o zaman, -diğinde",
+    "en": "when, then",
+    "ar": "عندما",
+    "fr": "quand"
+  },
+  {
+    "nl": "verlichting",
+    "type": "noun",
+    "article": "de",
+    "tr": "aydınlatma",
+    "en": "lighting",
+    "ar": "إضاءة",
+    "fr": "éclairage"
+  },
+  {
+    "nl": "vorig",
+    "type": "adj",
+    "tr": "önceki, geçen",
+    "en": "previous, last",
+    "ar": "سابق",
+    "fr": "précédent"
+  },
+  {
+    "nl": "weg",
+    "type": "noun",
+    "article": "de",
+    "tr": "yol",
+    "en": "road, way",
+    "ar": "طريق",
+    "fr": "route"
+  },
+  {
+    "nl": "wijk",
+    "type": "noun",
+    "article": "de",
+    "tr": "mahalle, semt",
+    "en": "district, neighborhood",
+    "ar": "حي",
+    "fr": "quartier"
+  },
+  {
+    "nl": "zwanger",
+    "type": "adj",
+    "tr": "hamile",
+    "en": "pregnant",
+    "ar": "حامل",
+    "fr": "enceinte"
+  },
+  {
+    "nl": "alarmnummer",
+    "type": "noun",
+    "article": "het",
+    "tr": "acil numara",
+    "en": "emergency number",
+    "ar": "رقم الطوارئ",
+    "fr": "numéro d'urgence"
+  },
+  {
+    "nl": "ambulance",
+    "type": "noun",
+    "article": "de",
+    "tr": "ambulans",
+    "en": "ambulance",
+    "ar": "سيارة إسعاف",
+    "fr": "ambulance"
+  },
+  {
+    "nl": "brandweer",
+    "type": "noun",
+    "article": "de",
+    "tr": "itfaiye",
+    "en": "fire department",
+    "ar": "إطفاء",
+    "fr": "pompiers"
+  },
+  {
+    "nl": "daarna",
+    "type": "adv",
+    "tr": "sonra, ardından",
+    "en": "after that",
+    "ar": "بعد ذلك",
+    "fr": "après"
+  },
+  {
+    "nl": "deur",
+    "type": "noun",
+    "article": "de",
+    "tr": "kapı",
+    "en": "door",
+    "ar": "باب",
+    "fr": "porte"
+  },
+  {
+    "nl": "dief",
+    "type": "noun",
+    "article": "de",
+    "tr": "hırsız",
+    "en": "thief",
+    "ar": "لص",
+    "fr": "voleur"
+  },
+  {
+    "nl": "getuige",
+    "type": "noun",
+    "article": "de",
+    "tr": "tanık",
+    "en": "witness",
+    "ar": "شاهد",
+    "fr": "témoin"
+  },
+  {
+    "nl": "geweld",
+    "type": "noun",
+    "article": "het",
+    "tr": "şiddet",
+    "en": "violence",
+    "ar": "عنف",
+    "fr": "violence"
+  },
+  {
+    "nl": "inbreker",
+    "type": "noun",
+    "article": "de",
+    "tr": "hırsız",
+    "en": "burglar",
+    "ar": "لص",
+    "fr": "cambrioleur"
+  },
+  {
+    "nl": "jongere",
+    "type": "noun",
+    "article": "de",
+    "tr": "genç",
+    "en": "young person",
+    "ar": "شاب",
+    "fr": "jeune"
+  },
+  {
+    "nl": "melden",
+    "type": "verb",
+    "perfectum": "gemeld",
+    "imperfectum": "meldde",
+    "tr": "bildirmek, ihbar etmek",
+    "en": "to report",
+    "ar": "يبلغ",
+    "fr": "signaler"
+  },
+  {
+    "nl": "melding",
+    "type": "noun",
+    "article": "de",
+    "tr": "bildirim, ihbar",
+    "en": "report",
+    "ar": "بلاغ",
+    "fr": "signalement"
+  },
+  {
+    "nl": "meteen",
+    "type": "adv",
+    "tr": "hemen",
+    "en": "immediately",
+    "ar": "فورا",
+    "fr": "immédiatement"
+  },
+  {
+    "nl": "noodgeval",
+    "type": "noun",
+    "article": "het",
+    "tr": "acil durum",
+    "en": "emergency",
+    "ar": "حالة طوارئ",
+    "fr": "urgence"
+  },
+  {
+    "nl": "om ... heen",
+    "type": "prep",
+    "tr": "etrafında",
+    "en": "around",
+    "ar": "حول",
+    "fr": "autour"
+  },
+  {
+    "nl": "pagina",
+    "type": "noun",
+    "article": "de",
+    "tr": "sayfa",
+    "en": "page",
+    "ar": "صفحة",
+    "fr": "page"
+  },
+  {
+    "nl": "politiebureau",
+    "type": "noun",
+    "article": "het",
+    "tr": "karakol",
+    "en": "police station",
+    "ar": "مركز شرطة",
+    "fr": "commissariat"
+  },
+  {
+    "nl": "slot",
+    "type": "noun",
+    "article": "het",
+    "tr": "kilit",
+    "en": "lock",
+    "ar": "قفل",
+    "fr": "serrure"
+  },
+  {
+    "nl": "stelen",
+    "type": "verb",
+    "perfectum": "gestolen",
+    "imperfectum": "stal",
+    "tr": "çalmak (hırsızlık)",
+    "en": "to steal",
+    "ar": "يسرق",
+    "fr": "voler"
+  },
+  {
+    "nl": "team",
+    "type": "noun",
+    "article": "het",
+    "tr": "takım, ekip",
+    "en": "team",
+    "ar": "فريق",
+    "fr": "équipe"
+  },
+  {
+    "nl": "veiligheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "güvenlik",
+    "en": "safety, security",
+    "ar": "أمان",
+    "fr": "sécurité"
+  },
+  {
+    "nl": "vertrouwen",
+    "type": "verb",
+    "perfectum": "vertrouwd",
+    "imperfectum": "vertrouwde",
+    "tr": "güvenmek",
+    "en": "to trust",
+    "ar": "يثق",
+    "fr": "faire confiance"
+  },
+  {
+    "nl": "vreemd",
+    "type": "adj",
+    "tr": "garip, yabancı",
+    "en": "strange",
+    "ar": "غريب",
+    "fr": "étrange"
+  },
+  {
+    "nl": "waarschuwen",
+    "type": "verb",
+    "perfectum": "gewaarschuwd",
+    "imperfectum": "waarschuwde",
+    "tr": "uyarmak",
+    "en": "to warn",
+    "ar": "يحذر",
+    "fr": "avertir"
+  }
+]

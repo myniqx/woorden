@@ -1,19 +1,42 @@
-import { useState } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 import { useTheme, useLanguage } from './hooks';
 import { Header } from './components/Header';
 import { MainMenu } from './components/MainMenu';
 import { QuizScreen } from './components/QuizScreen';
 import { StatsFooter } from './components/StatsFooter';
+import { SettingsModal } from './components/SettingsModal';
+import { EditorPage } from './pages/EditorPage';
 import type { QuizType, Screen } from './types';
 import './styles/theme.css';
 import './styles/app.css';
 
 export function App() {
+  // Check if we're on /editor route (dev only)
+  const [isEditorRoute, setIsEditorRoute] = useState(false);
+
+  useEffect(() => {
+    const checkRoute = () => {
+      const isEditor = window.location.pathname === '/editor';
+      const isDev = import.meta.env.DEV;
+      setIsEditorRoute(isEditor && isDev);
+    };
+
+    checkRoute();
+    window.addEventListener('popstate', checkRoute);
+    return () => window.removeEventListener('popstate', checkRoute);
+  }, []);
+
+  // Show editor page in dev mode
+  if (isEditorRoute) {
+    return <EditorPage />;
+  }
+
   const { theme, toggleTheme } = useTheme();
   const { language, setLanguage } = useLanguage();
   const [screen, setScreen] = useState<Screen>('menu');
   const [currentQuizType, setCurrentQuizType] = useState<QuizType | null>(null);
   const [statsVersion, setStatsVersion] = useState(0);
+  const [showSettings, setShowSettings] = useState(false);
 
   const startQuiz = (quizType: QuizType) => {
     setCurrentQuizType(quizType);
@@ -39,7 +62,7 @@ export function App() {
         onLanguageChange={setLanguage}
         showBackButton={screen === 'quiz'}
         onBack={exitQuiz}
-        onDataImported={onStatsUpdate}
+        onSettingsClick={() => setShowSettings(true)}
       />
 
       <main class="main">
@@ -58,6 +81,13 @@ export function App() {
       </main>
 
       <StatsFooter key={`footer-${statsVersion}`} language={language} quizType={currentQuizType} />
+
+      <SettingsModal
+        isOpen={showSettings}
+        onClose={() => setShowSettings(false)}
+        onDataImported={onStatsUpdate}
+        onPacksChanged={onStatsUpdate}
+      />
     </div>
   );
 }

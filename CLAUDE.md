@@ -145,3 +145,120 @@ npm run preview  # Preview production build
 - Types: PascalCase interfaces, camelCase type aliases
 - CSS: BEM-like naming, CSS variables for theming
 - No emojis in code/UI unless explicitly requested
+
+## CSS Variables (IMPORTANT)
+
+All CSS must use the variables defined in `src/styles/theme.css`. Do NOT invent new variable names.
+
+### Available Variables
+
+```css
+/* Colors */
+--color-bg              /* Page background */
+--color-surface         /* Card/modal background */
+--color-surface-elevated /* Elevated surface */
+--color-border          /* Borders */
+
+/* Text */
+--color-text-primary    /* Main text */
+--color-text-secondary  /* Secondary text */
+--color-text-muted      /* Muted/disabled text */
+
+/* Primary (orange) */
+--color-primary         /* Primary color (#ff6b35) */
+--color-primary-hover   /* Primary hover state */
+--color-primary-light   /* Primary light background */
+
+/* Status */
+--color-success         /* Success green */
+--color-success-light   /* Success background */
+--color-error           /* Error red */
+--color-error-light     /* Error background */
+
+/* Spacing */
+--spacing-xs, --spacing-sm, --spacing-md, --spacing-lg, --spacing-xl
+
+/* Typography */
+--text-xs, --text-sm, --text-base, --text-lg, --text-xl, --text-2xl
+
+/* Borders */
+--radius-sm, --radius-md, --radius-lg, --radius-full
+
+/* Shadows */
+--shadow-sm, --shadow-md, --shadow-lg
+
+/* Transitions */
+--transition-fast, --transition-normal
+```
+
+### Common Mistakes to Avoid
+
+```css
+/* WRONG */
+background: var(--bg-secondary);
+color: var(--text-primary);
+border-color: var(--border-color);
+background: var(--accent-color);
+
+/* CORRECT */
+background: var(--color-surface);
+color: var(--color-text-primary);
+border-color: var(--color-border);
+background: var(--color-primary);
+```
+
+## Word Packs System
+
+Words are organized by CEFR levels (A1, A2, B1, B2). Each level can have multiple JSON files.
+
+### Structure
+
+```
+src/data/
+├── a1-001.json    # A1 level, file 1
+├── a1-002.json    # A1 level, file 2
+├── a2-001.json    # A2 level, file 1 (existing)
+├── a2-002.json    # A2 level, file 2 (existing)
+├── ...
+├── b1-001.json    # B1 level, file 1
+└── b2-001.json    # B2 level, file 1
+```
+
+### Adding a New Level
+
+1. Create JSON files: `src/data/{level}-001.json`
+
+2. Update `src/services/words.ts`:
+
+```typescript
+// Add imports
+import b1Data1 from '../data/b1-001.json';
+import b1Data2 from '../data/b1-002.json';
+
+// Add to wordPacks object
+export const wordPacks: Record<string, WordEntry[]> = {
+  A1: [...] as WordEntry[],
+  A2: [...] as WordEntry[],
+  B1: [
+    ...b1Data1,
+    ...b1Data2,
+  ] as WordEntry[],
+};
+```
+
+3. The new pack automatically appears in Settings modal
+
+### User Preferences
+
+- Stored in `localStorage` under `woorden_app_data.enabledPacks`
+- Format: `{ "A2": true, "B1": false }`
+- `undefined` or `true` = enabled (default)
+- `false` = disabled
+- Users toggle packs in Settings modal
+
+### Dev-Only Editor
+
+Access `/editor` route in dev mode (`npm run dev`) to:
+- Paste HTML tables and convert to word JSON format
+- Translate words using DeepL API (requires `VITE_DEEPL_API_KEY` in `.env`)
+- Export words as JSON files (100 words per file)

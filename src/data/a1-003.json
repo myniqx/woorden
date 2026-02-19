@@ -1,0 +1,843 @@
+[
+  {
+    "nl": "alles",
+    "type": "pron",
+    "tr": "her şey",
+    "en": "everything",
+    "ar": "كل شيء",
+    "fr": "tout"
+  },
+  {
+    "nl": "beterschap",
+    "type": "phrase",
+    "tr": "geçmiş olsun",
+    "en": "get well soon",
+    "ar": "سلامتك",
+    "fr": "bon rétablissement"
+  },
+  {
+    "nl": "bezig",
+    "type": "adj",
+    "tr": "meşgul",
+    "en": "busy",
+    "ar": "مشغول",
+    "fr": "occupé"
+  },
+  {
+    "nl": "broer",
+    "type": "noun",
+    "article": "de",
+    "tr": "erkek kardeş, ağabey",
+    "en": "brother",
+    "ar": "أخ",
+    "fr": "frère"
+  },
+  {
+    "nl": "daar",
+    "type": "adv",
+    "tr": "orada",
+    "en": "there",
+    "ar": "هناك",
+    "fr": "là"
+  },
+  {
+    "nl": "druk",
+    "type": "adj",
+    "tr": "yoğun, kalabalık",
+    "en": "busy, crowded",
+    "ar": "مزدحم",
+    "fr": "occupé, animé"
+  },
+  {
+    "nl": "een beetje",
+    "type": "adv",
+    "tr": "biraz",
+    "en": "a little bit",
+    "ar": "قليلا",
+    "fr": "un peu"
+  },
+  {
+    "nl": "eindelijk",
+    "type": "adv",
+    "tr": "nihayet, sonunda",
+    "en": "finally",
+    "ar": "أخيرا",
+    "fr": "enfin"
+  },
+  {
+    "nl": "groet",
+    "type": "noun",
+    "article": "de",
+    "tr": "selam",
+    "en": "greeting",
+    "ar": "تحية",
+    "fr": "salutation"
+  },
+  {
+    "nl": "lekker",
+    "type": "adj",
+    "tr": "lezzetli, güzel",
+    "en": "tasty, nice",
+    "ar": "لذيذ",
+    "fr": "délicieux"
+  },
+  {
+    "nl": "lopen",
+    "type": "verb",
+    "perfectum": "gelopen",
+    "imperfectum": "liep",
+    "tr": "yürümek",
+    "en": "to walk",
+    "ar": "يمشي",
+    "fr": "marcher"
+  },
+  {
+    "nl": "moeder",
+    "type": "noun",
+    "article": "de",
+    "tr": "anne",
+    "en": "mother",
+    "ar": "أم",
+    "fr": "mère"
+  },
+  {
+    "nl": "morgen",
+    "type": "adv",
+    "tr": "yarın",
+    "en": "tomorrow",
+    "ar": "غدا",
+    "fr": "demain"
+  },
+  {
+    "nl": "paracetamol",
+    "type": "noun",
+    "article": "de",
+    "tr": "parasetamol",
+    "en": "paracetamol",
+    "ar": "باراسيتامول",
+    "fr": "paracétamol"
+  },
+  {
+    "nl": "prima",
+    "type": "adj",
+    "tr": "harika, çok iyi",
+    "en": "great, fine",
+    "ar": "ممتاز",
+    "fr": "très bien"
+  },
+  {
+    "nl": "steeds",
+    "type": "adv",
+    "tr": "hâlâ, sürekli",
+    "en": "still, constantly",
+    "ar": "باستمرار",
+    "fr": "toujours"
+  },
+  {
+    "nl": "vervelend",
+    "type": "adj",
+    "tr": "sıkıcı, can sıkıcı",
+    "en": "annoying, boring",
+    "ar": "مزعج",
+    "fr": "ennuyeux"
+  },
+  {
+    "nl": "vriend",
+    "type": "noun",
+    "article": "de",
+    "tr": "arkadaş (erkek)",
+    "en": "friend (male)",
+    "ar": "صديق",
+    "fr": "ami"
+  },
+  {
+    "nl": "vriendin",
+    "type": "noun",
+    "article": "de",
+    "tr": "arkadaş (kadın), sevgili",
+    "en": "friend (female), girlfriend",
+    "ar": "صديقة",
+    "fr": "amie, petite amie"
+  },
+  {
+    "nl": "waarom",
+    "type": "adv",
+    "tr": "neden, niçin",
+    "en": "why",
+    "ar": "لماذا",
+    "fr": "pourquoi"
+  },
+  {
+    "nl": "warm",
+    "type": "adj",
+    "tr": "sıcak",
+    "en": "warm",
+    "ar": "دافئ",
+    "fr": "chaud"
+  },
+  {
+    "nl": "weer",
+    "type": "noun",
+    "article": "het",
+    "tr": "hava durumu",
+    "en": "weather",
+    "ar": "طقس",
+    "fr": "temps"
+  },
+  {
+    "nl": "worden",
+    "type": "verb",
+    "perfectum": "geworden",
+    "imperfectum": "werd",
+    "tr": "olmak, haline gelmek",
+    "en": "to become",
+    "ar": "يصبح",
+    "fr": "devenir"
+  },
+  {
+    "nl": "ziek",
+    "type": "adj",
+    "tr": "hasta",
+    "en": "sick, ill",
+    "ar": "مريض",
+    "fr": "malade"
+  },
+  {
+    "nl": "zo",
+    "type": "adv",
+    "tr": "böyle, o kadar",
+    "en": "so, like this",
+    "ar": "هكذا",
+    "fr": "ainsi, si"
+  },
+  {
+    "nl": "zon",
+    "type": "noun",
+    "article": "de",
+    "tr": "güneş",
+    "en": "sun",
+    "ar": "شمس",
+    "fr": "soleil"
+  },
+  {
+    "nl": "zus",
+    "type": "noun",
+    "article": "de",
+    "tr": "kız kardeş, abla",
+    "en": "sister",
+    "ar": "أخت",
+    "fr": "sœur"
+  },
+  {
+    "nl": "bezoek",
+    "type": "noun",
+    "article": "het",
+    "tr": "ziyaret, misafir",
+    "en": "visit, visitor",
+    "ar": "زيارة",
+    "fr": "visite"
+  },
+  {
+    "nl": "binnenkomen",
+    "type": "verb",
+    "perfectum": "binnengekomen",
+    "imperfectum": "kwam binnen",
+    "tr": "içeri girmek",
+    "en": "to come in",
+    "ar": "يدخل",
+    "fr": "entrer"
+  },
+  {
+    "nl": "drinken",
+    "type": "verb",
+    "perfectum": "gedronken",
+    "imperfectum": "dronk",
+    "tr": "içmek",
+    "en": "to drink",
+    "ar": "يشرب",
+    "fr": "boire"
+  },
+  {
+    "nl": "eruitzien",
+    "type": "verb",
+    "perfectum": "eruitgezien",
+    "imperfectum": "zag eruit",
+    "tr": "görünmek",
+    "en": "to look (appearance)",
+    "ar": "يبدو",
+    "fr": "avoir l'air"
+  },
+  {
+    "nl": "geven",
+    "type": "verb",
+    "perfectum": "gegeven",
+    "imperfectum": "gaf",
+    "tr": "vermek",
+    "en": "to give",
+    "ar": "يعطي",
+    "fr": "donner"
+  },
+  {
+    "nl": "horen",
+    "type": "verb",
+    "perfectum": "gehoord",
+    "imperfectum": "hoorde",
+    "tr": "duymak",
+    "en": "to hear",
+    "ar": "يسمع",
+    "fr": "entendre"
+  },
+  {
+    "nl": "huilen",
+    "type": "verb",
+    "perfectum": "gehuild",
+    "imperfectum": "huilde",
+    "tr": "ağlamak",
+    "en": "to cry",
+    "ar": "يبكي",
+    "fr": "pleurer"
+  },
+  {
+    "nl": "jas",
+    "type": "noun",
+    "article": "de",
+    "tr": "ceket, mont",
+    "en": "jacket, coat",
+    "ar": "سترة",
+    "fr": "veste, manteau"
+  },
+  {
+    "nl": "jongen",
+    "type": "noun",
+    "article": "de",
+    "tr": "oğlan, erkek çocuk",
+    "en": "boy",
+    "ar": "ولد",
+    "fr": "garçon"
+  },
+  {
+    "nl": "klein",
+    "type": "adj",
+    "tr": "küçük",
+    "en": "small",
+    "ar": "صغير",
+    "fr": "petit"
+  },
+  {
+    "nl": "koffie",
+    "type": "noun",
+    "article": "de",
+    "tr": "kahve",
+    "en": "coffee",
+    "ar": "قهوة",
+    "fr": "café"
+  },
+  {
+    "nl": "lachen",
+    "type": "verb",
+    "perfectum": "gelachen",
+    "imperfectum": "lachte",
+    "tr": "gülmek",
+    "en": "to laugh",
+    "ar": "يضحك",
+    "fr": "rire"
+  },
+  {
+    "nl": "lief",
+    "type": "adj",
+    "tr": "tatlı, sevimli, sevgili",
+    "en": "sweet, dear",
+    "ar": "حبيب، لطيف",
+    "fr": "gentil, mignon"
+  },
+  {
+    "nl": "melk",
+    "type": "noun",
+    "article": "de",
+    "tr": "süt",
+    "en": "milk",
+    "ar": "حليب",
+    "fr": "lait"
+  },
+  {
+    "nl": "moe",
+    "type": "adj",
+    "tr": "yorgun",
+    "en": "tired",
+    "ar": "متعب",
+    "fr": "fatigué"
+  },
+  {
+    "nl": "slapen",
+    "type": "verb",
+    "perfectum": "geslapen",
+    "imperfectum": "sliep",
+    "tr": "uyumak",
+    "en": "to sleep",
+    "ar": "ينام",
+    "fr": "dormir"
+  },
+  {
+    "nl": "suiker",
+    "type": "noun",
+    "article": "de",
+    "tr": "şeker",
+    "en": "sugar",
+    "ar": "سكر",
+    "fr": "sucre"
+  },
+  {
+    "nl": "thee",
+    "type": "noun",
+    "article": "de",
+    "tr": "çay",
+    "en": "tea",
+    "ar": "شاي",
+    "fr": "thé"
+  },
+  {
+    "nl": "zelf",
+    "type": "pron",
+    "tr": "kendisi",
+    "en": "self",
+    "ar": "نفسه",
+    "fr": "soi-même"
+  },
+  {
+    "nl": "zitten",
+    "type": "verb",
+    "perfectum": "gezeten",
+    "imperfectum": "zat",
+    "tr": "oturmak",
+    "en": "to sit",
+    "ar": "يجلس",
+    "fr": "s'asseoir"
+  },
+  {
+    "nl": "zonder",
+    "type": "prep",
+    "tr": "-siz, -sız, olmadan",
+    "en": "without",
+    "ar": "بدون",
+    "fr": "sans"
+  },
+  {
+    "nl": "zwart",
+    "type": "adj",
+    "tr": "siyah",
+    "en": "black",
+    "ar": "أسود",
+    "fr": "noir"
+  },
+  {
+    "nl": "avond",
+    "type": "noun",
+    "article": "de",
+    "tr": "akşam",
+    "en": "evening",
+    "ar": "مساء",
+    "fr": "soir"
+  },
+  {
+    "nl": "beginnen",
+    "type": "verb",
+    "perfectum": "begonnen",
+    "imperfectum": "begon",
+    "tr": "başlamak",
+    "en": "to begin, to start",
+    "ar": "يبدأ",
+    "fr": "commencer"
+  },
+  {
+    "nl": "begrijpen",
+    "type": "verb",
+    "perfectum": "begrepen",
+    "imperfectum": "begreep",
+    "tr": "anlamak",
+    "en": "to understand",
+    "ar": "يفهم",
+    "fr": "comprendre"
+  },
+  {
+    "nl": "bellen",
+    "type": "verb",
+    "perfectum": "gebeld",
+    "imperfectum": "belde",
+    "tr": "aramak, telefon etmek",
+    "en": "to call",
+    "ar": "يتصل",
+    "fr": "appeler"
+  },
+  {
+    "nl": "bier",
+    "type": "noun",
+    "article": "het",
+    "tr": "bira",
+    "en": "beer",
+    "ar": "بيرة",
+    "fr": "bière"
+  },
+  {
+    "nl": "blijven",
+    "type": "verb",
+    "perfectum": "gebleven",
+    "imperfectum": "bleef",
+    "tr": "kalmak",
+    "en": "to stay, to remain",
+    "ar": "يبقى",
+    "fr": "rester"
+  },
+  {
+    "nl": "deze",
+    "type": "pron",
+    "tr": "bu (de kelimeler için)",
+    "en": "this, these",
+    "ar": "هذا",
+    "fr": "ce, cette"
+  },
+  {
+    "nl": "die",
+    "type": "pron",
+    "tr": "o, şu (de kelimeler için)",
+    "en": "that, those",
+    "ar": "ذلك",
+    "fr": "ce, cette"
+  },
+  {
+    "nl": "echt",
+    "type": "adv",
+    "tr": "gerçekten",
+    "en": "really",
+    "ar": "حقا",
+    "fr": "vraiment"
+  },
+  {
+    "nl": "genoeg",
+    "type": "adv",
+    "tr": "yeterli, yeterince",
+    "en": "enough",
+    "ar": "كافي",
+    "fr": "assez"
+  },
+  {
+    "nl": "gezellig",
+    "type": "adj",
+    "tr": "samimi, hoş, keyifli",
+    "en": "cozy, pleasant",
+    "ar": "ممتع، مريح",
+    "fr": "convivial, agréable"
+  },
+  {
+    "nl": "heel",
+    "type": "adv",
+    "tr": "çok, tamamen",
+    "en": "very, whole",
+    "ar": "جدا، كامل",
+    "fr": "très, entier"
+  },
+  {
+    "nl": "keer",
+    "type": "noun",
+    "article": "de",
+    "tr": "kez, defa",
+    "en": "time (occasion)",
+    "ar": "مرة",
+    "fr": "fois"
+  },
+  {
+    "nl": "later",
+    "type": "adv",
+    "tr": "daha sonra",
+    "en": "later",
+    "ar": "لاحقا",
+    "fr": "plus tard"
+  },
+  {
+    "nl": "lawaai",
+    "type": "noun",
+    "article": "het",
+    "tr": "gürültü",
+    "en": "noise",
+    "ar": "ضوضاء",
+    "fr": "bruit"
+  },
+  {
+    "nl": "luisteren",
+    "type": "verb",
+    "perfectum": "geluisterd",
+    "imperfectum": "luisterde",
+    "tr": "dinlemek",
+    "en": "to listen",
+    "ar": "يستمع",
+    "fr": "écouter"
+  },
+  {
+    "nl": "rustig",
+    "type": "adj",
+    "tr": "sakin, sessiz",
+    "en": "quiet, calm",
+    "ar": "هادئ",
+    "fr": "calme"
+  },
+  {
+    "nl": "uitnodigen",
+    "type": "verb",
+    "perfectum": "uitgenodigd",
+    "imperfectum": "nodigde uit",
+    "tr": "davet etmek",
+    "en": "to invite",
+    "ar": "يدعو",
+    "fr": "inviter"
+  },
+  {
+    "nl": "vakantie",
+    "type": "noun",
+    "article": "de",
+    "tr": "tatil",
+    "en": "vacation, holiday",
+    "ar": "عطلة",
+    "fr": "vacances"
+  },
+  {
+    "nl": "voetbal",
+    "type": "noun",
+    "article": "het",
+    "tr": "futbol",
+    "en": "football, soccer",
+    "ar": "كرة القدم",
+    "fr": "football"
+  },
+  {
+    "nl": "vrijdag",
+    "type": "noun",
+    "article": "de",
+    "tr": "cuma",
+    "en": "Friday",
+    "ar": "الجمعة",
+    "fr": "vendredi"
+  },
+  {
+    "nl": "weg",
+    "type": "adv",
+    "tr": "uzakta, yok",
+    "en": "away, gone",
+    "ar": "بعيد",
+    "fr": "parti"
+  },
+  {
+    "nl": "afgesproken",
+    "type": "adj",
+    "tr": "anlaşıldı, kararlaştırıldı",
+    "en": "agreed",
+    "ar": "متفق عليه",
+    "fr": "convenu"
+  },
+  {
+    "nl": "afspraak",
+    "type": "noun",
+    "article": "de",
+    "tr": "randevu, buluşma",
+    "en": "appointment",
+    "ar": "موعد",
+    "fr": "rendez-vous"
+  },
+  {
+    "nl": "baan",
+    "type": "noun",
+    "article": "de",
+    "tr": "iş",
+    "en": "job",
+    "ar": "وظيفة",
+    "fr": "emploi"
+  },
+  {
+    "nl": "bericht",
+    "type": "noun",
+    "article": "het",
+    "tr": "mesaj, haber",
+    "en": "message",
+    "ar": "رسالة",
+    "fr": "message"
+  },
+  {
+    "nl": "blij",
+    "type": "adj",
+    "tr": "mutlu, sevinçli",
+    "en": "happy, glad",
+    "ar": "سعيد",
+    "fr": "content"
+  },
+  {
+    "nl": "februari",
+    "type": "noun",
+    "article": "de",
+    "tr": "şubat",
+    "en": "February",
+    "ar": "فبراير",
+    "fr": "février"
+  },
+  {
+    "nl": "feestje",
+    "type": "noun",
+    "article": "het",
+    "tr": "parti, kutlama",
+    "en": "party",
+    "ar": "حفلة",
+    "fr": "fête"
+  },
+  {
+    "nl": "feliciteren",
+    "type": "verb",
+    "perfectum": "gefeliciteerd",
+    "imperfectum": "feliciteerde",
+    "tr": "tebrik etmek",
+    "en": "to congratulate",
+    "ar": "يهنئ",
+    "fr": "féliciter"
+  },
+  {
+    "nl": "gauw",
+    "type": "adv",
+    "tr": "çabuk, hızla",
+    "en": "quickly, soon",
+    "ar": "سريعا",
+    "fr": "vite"
+  },
+  {
+    "nl": "gefeliciteerd",
+    "type": "phrase",
+    "tr": "tebrikler",
+    "en": "congratulations",
+    "ar": "مبروك",
+    "fr": "félicitations"
+  },
+  {
+    "nl": "geleden",
+    "type": "adv",
+    "tr": "önce (zaman)",
+    "en": "ago",
+    "ar": "منذ",
+    "fr": "il y a"
+  },
+  {
+    "nl": "januari",
+    "type": "noun",
+    "article": "de",
+    "tr": "ocak",
+    "en": "January",
+    "ar": "يناير",
+    "fr": "janvier"
+  },
+  {
+    "nl": "jarig",
+    "type": "adj",
+    "tr": "doğum günü olan",
+    "en": "having a birthday",
+    "ar": "عيد ميلاده",
+    "fr": "anniversaire"
+  },
+  {
+    "nl": "klinken",
+    "type": "verb",
+    "perfectum": "geklonken",
+    "imperfectum": "klonk",
+    "tr": "duyulmak, kulağa gelmek",
+    "en": "to sound",
+    "ar": "يبدو",
+    "fr": "sonner"
+  },
+  {
+    "nl": "krijgen",
+    "type": "verb",
+    "perfectum": "gekregen",
+    "imperfectum": "kreeg",
+    "tr": "almak, elde etmek",
+    "en": "to get, to receive",
+    "ar": "يحصل على",
+    "fr": "recevoir"
+  },
+  {
+    "nl": "misschien",
+    "type": "adv",
+    "tr": "belki",
+    "en": "maybe, perhaps",
+    "ar": "ربما",
+    "fr": "peut-être"
+  },
+  {
+    "nl": "net",
+    "type": "adv",
+    "tr": "az önce, tam",
+    "en": "just (now)",
+    "ar": "للتو",
+    "fr": "juste"
+  },
+  {
+    "nl": "nieuws",
+    "type": "noun",
+    "article": "het",
+    "tr": "haber",
+    "en": "news",
+    "ar": "أخبار",
+    "fr": "nouvelles"
+  },
+  {
+    "nl": "succes",
+    "type": "noun",
+    "article": "het",
+    "tr": "başarı",
+    "en": "success",
+    "ar": "نجاح",
+    "fr": "succès"
+  },
+  {
+    "nl": "uitnodiging",
+    "type": "noun",
+    "article": "de",
+    "tr": "davet, davetiye",
+    "en": "invitation",
+    "ar": "دعوة",
+    "fr": "invitation"
+  },
+  {
+    "nl": "vanavond",
+    "type": "adv",
+    "tr": "bu akşam",
+    "en": "tonight, this evening",
+    "ar": "الليلة",
+    "fr": "ce soir"
+  },
+  {
+    "nl": "vandaag",
+    "type": "adv",
+    "tr": "bugün",
+    "en": "today",
+    "ar": "اليوم",
+    "fr": "aujourd'hui"
+  },
+  {
+    "nl": "verjaardag",
+    "type": "noun",
+    "article": "de",
+    "tr": "doğum günü",
+    "en": "birthday",
+    "ar": "عيد ميلاد",
+    "fr": "anniversaire"
+  },
+  {
+    "nl": "volgend",
+    "type": "adj",
+    "tr": "sonraki, gelecek",
+    "en": "next",
+    "ar": "التالي",
+    "fr": "prochain"
+  },
+  {
+    "nl": "zeker",
+    "type": "adv",
+    "tr": "kesinlikle, elbette",
+    "en": "certainly, surely",
+    "ar": "بالتأكيد",
+    "fr": "certainement"
+  }
+]

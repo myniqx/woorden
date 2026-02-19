@@ -1,0 +1,868 @@
+[
+  {
+    "nl": "ander",
+    "type": "adj",
+    "tr": "başka, diğer",
+    "en": "other, different",
+    "ar": "آخر",
+    "fr": "autre"
+  },
+  {
+    "nl": "appel",
+    "type": "noun",
+    "article": "de",
+    "tr": "elma",
+    "en": "apple",
+    "ar": "تفاحة",
+    "fr": "pomme"
+  },
+  {
+    "nl": "banaan",
+    "type": "noun",
+    "article": "de",
+    "tr": "muz",
+    "en": "banana",
+    "ar": "موز",
+    "fr": "banane"
+  },
+  {
+    "nl": "bijna",
+    "type": "adv",
+    "tr": "neredeyse, hemen hemen",
+    "en": "almost, nearly",
+    "ar": "تقريبا",
+    "fr": "presque"
+  },
+  {
+    "nl": "boodschappen",
+    "type": "noun",
+    "article": "de",
+    "tr": "alışveriş",
+    "en": "groceries, shopping",
+    "ar": "تسوق",
+    "fr": "courses"
+  },
+  {
+    "nl": "doen",
+    "type": "verb",
+    "perfectum": "gedaan",
+    "imperfectum": "deed",
+    "tr": "yapmak",
+    "en": "to do",
+    "ar": "يفعل",
+    "fr": "faire"
+  },
+  {
+    "nl": "dus",
+    "type": "conj",
+    "tr": "demek ki, yani",
+    "en": "so, therefore",
+    "ar": "إذن",
+    "fr": "donc"
+  },
+  {
+    "nl": "eten",
+    "type": "verb",
+    "perfectum": "gegeten",
+    "imperfectum": "at",
+    "tr": "yemek yemek",
+    "en": "to eat",
+    "ar": "يأكل",
+    "fr": "manger"
+  },
+  {
+    "nl": "fruit",
+    "type": "noun",
+    "article": "het",
+    "tr": "meyve",
+    "en": "fruit",
+    "ar": "فاكهة",
+    "fr": "fruit"
+  },
+  {
+    "nl": "groente",
+    "type": "noun",
+    "article": "de",
+    "tr": "sebze",
+    "en": "vegetable",
+    "ar": "خضار",
+    "fr": "légume"
+  },
+  {
+    "nl": "kip",
+    "type": "noun",
+    "article": "de",
+    "tr": "tavuk",
+    "en": "chicken",
+    "ar": "دجاج",
+    "fr": "poulet"
+  },
+  {
+    "nl": "kopen",
+    "type": "verb",
+    "perfectum": "gekocht",
+    "imperfectum": "kocht",
+    "tr": "satın almak",
+    "en": "to buy",
+    "ar": "يشتري",
+    "fr": "acheter"
+  },
+  {
+    "nl": "lijst",
+    "type": "noun",
+    "article": "de",
+    "diminutive": "lijstje",
+    "tr": "liste",
+    "en": "list",
+    "ar": "قائمة",
+    "fr": "liste"
+  },
+  {
+    "nl": "maken",
+    "type": "verb",
+    "perfectum": "gemaakt",
+    "imperfectum": "maakte",
+    "tr": "yapmak, hazırlamak",
+    "en": "to make",
+    "ar": "يصنع",
+    "fr": "faire"
+  },
+  {
+    "nl": "markt",
+    "type": "noun",
+    "article": "de",
+    "tr": "pazar",
+    "en": "market",
+    "ar": "سوق",
+    "fr": "marché"
+  },
+  {
+    "nl": "meer",
+    "type": "adv",
+    "tr": "daha çok, daha fazla",
+    "en": "more",
+    "ar": "أكثر",
+    "fr": "plus"
+  },
+  {
+    "nl": "of",
+    "type": "conj",
+    "tr": "veya, ya da",
+    "en": "or",
+    "ar": "أو",
+    "fr": "ou"
+  },
+  {
+    "nl": "praten",
+    "type": "verb",
+    "perfectum": "gepraat",
+    "imperfectum": "praatte",
+    "tr": "konuşmak",
+    "en": "to talk",
+    "ar": "يتحدث",
+    "fr": "parler"
+  },
+  {
+    "nl": "rijst",
+    "type": "noun",
+    "article": "de",
+    "tr": "pirinç, pilav",
+    "en": "rice",
+    "ar": "أرز",
+    "fr": "riz"
+  },
+  {
+    "nl": "supermarkt",
+    "type": "noun",
+    "article": "de",
+    "tr": "süpermarket",
+    "en": "supermarket",
+    "ar": "سوبرماركت",
+    "fr": "supermarché"
+  },
+  {
+    "nl": "thuis",
+    "type": "adv",
+    "tr": "evde",
+    "en": "at home",
+    "ar": "في البيت",
+    "fr": "à la maison"
+  },
+  {
+    "nl": "tomaat",
+    "type": "noun",
+    "article": "de",
+    "tr": "domates",
+    "en": "tomato",
+    "ar": "طماطم",
+    "fr": "tomate"
+  },
+  {
+    "nl": "vis",
+    "type": "noun",
+    "article": "de",
+    "tr": "balık",
+    "en": "fish",
+    "ar": "سمك",
+    "fr": "poisson"
+  },
+  {
+    "nl": "vlees",
+    "type": "noun",
+    "article": "het",
+    "tr": "et",
+    "en": "meat",
+    "ar": "لحم",
+    "fr": "viande"
+  },
+  {
+    "nl": "we",
+    "type": "pron",
+    "tr": "biz",
+    "en": "we",
+    "ar": "نحن",
+    "fr": "nous"
+  },
+  {
+    "nl": "wortel",
+    "type": "noun",
+    "article": "de",
+    "tr": "havuç",
+    "en": "carrot",
+    "ar": "جزر",
+    "fr": "carotte"
+  },
+  {
+    "nl": "aardappel",
+    "type": "noun",
+    "article": "de",
+    "tr": "patates",
+    "en": "potato",
+    "ar": "بطاطس",
+    "fr": "pomme de terre"
+  },
+  {
+    "nl": "alsjeblieft",
+    "type": "phrase",
+    "tr": "lütfen (sen), buyur",
+    "en": "please (informal), here you go",
+    "ar": "من فضلك",
+    "fr": "s'il te plaît"
+  },
+  {
+    "nl": "alstublieft",
+    "type": "phrase",
+    "tr": "lütfen (siz), buyurun",
+    "en": "please (formal), here you go",
+    "ar": "من فضلك (رسمي)",
+    "fr": "s'il vous plaît"
+  },
+  {
+    "nl": "anders",
+    "type": "adv",
+    "tr": "başka, farklı, yoksa",
+    "en": "else, otherwise",
+    "ar": "غير ذلك",
+    "fr": "autrement"
+  },
+  {
+    "nl": "dag",
+    "type": "noun",
+    "article": "de",
+    "tr": "gün",
+    "en": "day",
+    "ar": "يوم",
+    "fr": "jour"
+  },
+  {
+    "nl": "dan",
+    "type": "adv",
+    "tr": "o zaman, öyleyse",
+    "en": "then",
+    "ar": "إذن، ثم",
+    "fr": "alors"
+  },
+  {
+    "nl": "ei",
+    "type": "noun",
+    "article": "het",
+    "tr": "yumurta",
+    "en": "egg",
+    "ar": "بيضة",
+    "fr": "œuf"
+  },
+  {
+    "nl": "fijn",
+    "type": "adj",
+    "tr": "güzel, hoş, iyi",
+    "en": "nice, fine",
+    "ar": "لطيف",
+    "fr": "bien, agréable"
+  },
+  {
+    "nl": "goed",
+    "type": "adj",
+    "tr": "iyi",
+    "en": "good",
+    "ar": "جيد",
+    "fr": "bon"
+  },
+  {
+    "nl": "gram",
+    "type": "noun",
+    "article": "de",
+    "tr": "gram",
+    "en": "gram",
+    "ar": "غرام",
+    "fr": "gramme"
+  },
+  {
+    "nl": "hoeveel",
+    "type": "adv",
+    "tr": "kaç, ne kadar",
+    "en": "how much, how many",
+    "ar": "كم",
+    "fr": "combien"
+  },
+  {
+    "nl": "iets",
+    "type": "pron",
+    "tr": "bir şey",
+    "en": "something",
+    "ar": "شيء ما",
+    "fr": "quelque chose"
+  },
+  {
+    "nl": "jammer",
+    "type": "adj",
+    "tr": "yazık, üzücü",
+    "en": "too bad, unfortunate",
+    "ar": "للأسف",
+    "fr": "dommage"
+  },
+  {
+    "nl": "kaas",
+    "type": "noun",
+    "article": "de",
+    "tr": "peynir",
+    "en": "cheese",
+    "ar": "جبن",
+    "fr": "fromage"
+  },
+  {
+    "nl": "kijken",
+    "type": "verb",
+    "perfectum": "gekeken",
+    "imperfectum": "keek",
+    "tr": "bakmak",
+    "en": "to look, to watch",
+    "ar": "ينظر",
+    "fr": "regarder"
+  },
+  {
+    "nl": "kilo",
+    "type": "noun",
+    "article": "de",
+    "tr": "kilo",
+    "en": "kilo",
+    "ar": "كيلو",
+    "fr": "kilo"
+  },
+  {
+    "nl": "mevrouw",
+    "type": "noun",
+    "article": "de",
+    "tr": "bayan, hanımefendi",
+    "en": "mrs, madam",
+    "ar": "سيدة",
+    "fr": "madame"
+  },
+  {
+    "nl": "mogen",
+    "type": "verb",
+    "perfectum": "gemogen",
+    "imperfectum": "mocht",
+    "tr": "izin almak, -ebilmek",
+    "en": "may, to be allowed to",
+    "ar": "يجوز",
+    "fr": "pouvoir"
+  },
+  {
+    "nl": "nee",
+    "type": "adv",
+    "tr": "hayır",
+    "en": "no",
+    "ar": "لا",
+    "fr": "non"
+  },
+  {
+    "nl": "nemen",
+    "type": "verb",
+    "perfectum": "genomen",
+    "imperfectum": "nam",
+    "tr": "almak",
+    "en": "to take",
+    "ar": "يأخذ",
+    "fr": "prendre"
+  },
+  {
+    "nl": "pinnen",
+    "type": "verb",
+    "perfectum": "gepind",
+    "imperfectum": "pinde",
+    "tr": "kartla ödemek",
+    "en": "to pay by card",
+    "ar": "يدفع بالبطاقة",
+    "fr": "payer par carte"
+  },
+  {
+    "nl": "verkoper",
+    "type": "noun",
+    "article": "de",
+    "tr": "satıcı",
+    "en": "seller, salesperson",
+    "ar": "بائع",
+    "fr": "vendeur"
+  },
+  {
+    "nl": "voor",
+    "type": "prep",
+    "tr": "için, önünde",
+    "en": "for, in front of",
+    "ar": "لـ، أمام",
+    "fr": "pour, devant"
+  },
+  {
+    "nl": "zeggen",
+    "type": "verb",
+    "perfectum": "gezegd",
+    "imperfectum": "zei",
+    "tr": "söylemek, demek",
+    "en": "to say",
+    "ar": "يقول",
+    "fr": "dire"
+  },
+  {
+    "nl": "altijd",
+    "type": "adv",
+    "tr": "her zaman, daima",
+    "en": "always",
+    "ar": "دائما",
+    "fr": "toujours"
+  },
+  {
+    "nl": "bakker",
+    "type": "noun",
+    "article": "de",
+    "tr": "fırıncı",
+    "en": "baker",
+    "ar": "خباز",
+    "fr": "boulanger"
+  },
+  {
+    "nl": "brood",
+    "type": "noun",
+    "article": "het",
+    "tr": "ekmek",
+    "en": "bread",
+    "ar": "خبز",
+    "fr": "pain"
+  },
+  {
+    "nl": "buurt",
+    "type": "noun",
+    "article": "de",
+    "tr": "mahalle, çevre",
+    "en": "neighborhood",
+    "ar": "حي",
+    "fr": "quartier"
+  },
+  {
+    "nl": "dinsdag",
+    "type": "noun",
+    "article": "de",
+    "tr": "salı",
+    "en": "Tuesday",
+    "ar": "الثلاثاء",
+    "fr": "mardi"
+  },
+  {
+    "nl": "duur",
+    "type": "adj",
+    "tr": "pahalı",
+    "en": "expensive",
+    "ar": "غالي",
+    "fr": "cher"
+  },
+  {
+    "nl": "goedkoop",
+    "type": "adj",
+    "tr": "ucuz",
+    "en": "cheap",
+    "ar": "رخيص",
+    "fr": "bon marché"
+  },
+  {
+    "nl": "halen",
+    "type": "verb",
+    "perfectum": "gehaald",
+    "imperfectum": "haalde",
+    "tr": "almak, getirmek",
+    "en": "to get, to fetch",
+    "ar": "يجلب",
+    "fr": "chercher"
+  },
+  {
+    "nl": "hier",
+    "type": "adv",
+    "tr": "burada",
+    "en": "here",
+    "ar": "هنا",
+    "fr": "ici"
+  },
+  {
+    "nl": "hoor",
+    "type": "adv",
+    "tr": "(vurgulama edatı)",
+    "en": "(emphasis particle)",
+    "ar": "(للتأكيد)",
+    "fr": "(particule d'emphase)"
+  },
+  {
+    "nl": "kennen",
+    "type": "verb",
+    "perfectum": "gekend",
+    "imperfectum": "kende",
+    "tr": "tanımak, bilmek",
+    "en": "to know (person/place)",
+    "ar": "يعرف",
+    "fr": "connaître"
+  },
+  {
+    "nl": "meestal",
+    "type": "adv",
+    "tr": "çoğunlukla, genellikle",
+    "en": "usually, mostly",
+    "ar": "عادة",
+    "fr": "généralement"
+  },
+  {
+    "nl": "middag",
+    "type": "noun",
+    "article": "de",
+    "tr": "öğle, öğleden sonra",
+    "en": "afternoon",
+    "ar": "بعد الظهر",
+    "fr": "après-midi"
+  },
+  {
+    "nl": "natuurlijk",
+    "type": "adv",
+    "tr": "tabii ki, elbette",
+    "en": "of course, naturally",
+    "ar": "بالطبع",
+    "fr": "bien sûr"
+  },
+  {
+    "nl": "ochtend",
+    "type": "noun",
+    "article": "de",
+    "tr": "sabah",
+    "en": "morning",
+    "ar": "صباح",
+    "fr": "matin"
+  },
+  {
+    "nl": "soms",
+    "type": "adv",
+    "tr": "bazen",
+    "en": "sometimes",
+    "ar": "أحيانا",
+    "fr": "parfois"
+  },
+  {
+    "nl": "straat",
+    "type": "noun",
+    "article": "de",
+    "tr": "sokak, cadde",
+    "en": "street",
+    "ar": "شارع",
+    "fr": "rue"
+  },
+  {
+    "nl": "veel",
+    "type": "adv",
+    "tr": "çok",
+    "en": "much, many",
+    "ar": "كثير",
+    "fr": "beaucoup"
+  },
+  {
+    "nl": "ver",
+    "type": "adj",
+    "tr": "uzak",
+    "en": "far",
+    "ar": "بعيد",
+    "fr": "loin"
+  },
+  {
+    "nl": "vers",
+    "type": "adj",
+    "tr": "taze",
+    "en": "fresh",
+    "ar": "طازج",
+    "fr": "frais"
+  },
+  {
+    "nl": "vragen",
+    "type": "verb",
+    "perfectum": "gevraagd",
+    "imperfectum": "vroeg",
+    "tr": "sormak, istemek",
+    "en": "to ask",
+    "ar": "يسأل",
+    "fr": "demander"
+  },
+  {
+    "nl": "wanneer",
+    "type": "adv",
+    "tr": "ne zaman",
+    "en": "when",
+    "ar": "متى",
+    "fr": "quand"
+  },
+  {
+    "nl": "wel",
+    "type": "adv",
+    "tr": "evet (olumsuzluğa karşı)",
+    "en": "indeed, actually",
+    "ar": "بالفعل",
+    "fr": "bien, quand même"
+  },
+  {
+    "nl": "welk",
+    "type": "pron",
+    "tr": "hangi",
+    "en": "which",
+    "ar": "أي",
+    "fr": "quel"
+  },
+  {
+    "nl": "zaterdag",
+    "type": "noun",
+    "article": "de",
+    "tr": "cumartesi",
+    "en": "Saturday",
+    "ar": "السبت",
+    "fr": "samedi"
+  },
+  {
+    "nl": "zien",
+    "type": "verb",
+    "perfectum": "gezien",
+    "imperfectum": "zag",
+    "tr": "görmek",
+    "en": "to see",
+    "ar": "يرى",
+    "fr": "voir"
+  },
+  {
+    "nl": "chips",
+    "type": "noun",
+    "article": "de",
+    "tr": "cips",
+    "en": "chips, crisps",
+    "ar": "رقائق",
+    "fr": "chips"
+  },
+  {
+    "nl": "denken",
+    "type": "verb",
+    "perfectum": "gedacht",
+    "imperfectum": "dacht",
+    "tr": "düşünmek, sanmak",
+    "en": "to think",
+    "ar": "يفكر",
+    "fr": "penser"
+  },
+  {
+    "nl": "dicht",
+    "type": "adj",
+    "tr": "kapalı",
+    "en": "closed",
+    "ar": "مغلق",
+    "fr": "fermé"
+  },
+  {
+    "nl": "fietsen",
+    "type": "verb",
+    "perfectum": "gefietst",
+    "imperfectum": "fietste",
+    "tr": "bisiklet sürmek",
+    "en": "to cycle",
+    "ar": "يركب الدراجة",
+    "fr": "faire du vélo"
+  },
+  {
+    "nl": "half",
+    "type": "adj",
+    "tr": "yarım, buçuk",
+    "en": "half",
+    "ar": "نصف",
+    "fr": "demi"
+  },
+  {
+    "nl": "internet",
+    "type": "noun",
+    "article": "het",
+    "tr": "internet",
+    "en": "internet",
+    "ar": "إنترنت",
+    "fr": "internet"
+  },
+  {
+    "nl": "keuken",
+    "type": "noun",
+    "article": "de",
+    "tr": "mutfak",
+    "en": "kitchen",
+    "ar": "مطبخ",
+    "fr": "cuisine"
+  },
+  {
+    "nl": "laat",
+    "type": "adj",
+    "tr": "geç",
+    "en": "late",
+    "ar": "متأخر",
+    "fr": "tard"
+  },
+  {
+    "nl": "leeg",
+    "type": "adj",
+    "tr": "boş",
+    "en": "empty",
+    "ar": "فارغ",
+    "fr": "vide"
+  },
+  {
+    "nl": "liggen",
+    "type": "verb",
+    "perfectum": "gelegen",
+    "imperfectum": "lag",
+    "tr": "yatmak, bulunmak",
+    "en": "to lie, to be located",
+    "ar": "يقع، يستلقي",
+    "fr": "être situé, être couché"
+  },
+  {
+    "nl": "maandag",
+    "type": "noun",
+    "article": "de",
+    "tr": "pazartesi",
+    "en": "Monday",
+    "ar": "الاثنين",
+    "fr": "lundi"
+  },
+  {
+    "nl": "open",
+    "type": "adj",
+    "tr": "açık",
+    "en": "open",
+    "ar": "مفتوح",
+    "fr": "ouvert"
+  },
+  {
+    "nl": "openingstijden",
+    "type": "noun",
+    "article": "de",
+    "tr": "açılış saatleri",
+    "en": "opening hours",
+    "ar": "ساعات العمل",
+    "fr": "heures d'ouverture"
+  },
+  {
+    "nl": "'s avonds",
+    "type": "adv",
+    "tr": "akşamları",
+    "en": "in the evening",
+    "ar": "في المساء",
+    "fr": "le soir"
+  },
+  {
+    "nl": "'s middags",
+    "type": "adv",
+    "tr": "öğleden sonraları",
+    "en": "in the afternoon",
+    "ar": "بعد الظهر",
+    "fr": "l'après-midi"
+  },
+  {
+    "nl": "'s morgens",
+    "type": "adv",
+    "tr": "sabahları",
+    "en": "in the morning",
+    "ar": "في الصباح",
+    "fr": "le matin"
+  },
+  {
+    "nl": "'s nachts",
+    "type": "adv",
+    "tr": "geceleri",
+    "en": "at night",
+    "ar": "في الليل",
+    "fr": "la nuit"
+  },
+  {
+    "nl": "'s ochtends",
+    "type": "adv",
+    "tr": "sabahları",
+    "en": "in the morning",
+    "ar": "في الصباح",
+    "fr": "le matin"
+  },
+  {
+    "nl": "snel",
+    "type": "adj",
+    "tr": "hızlı, çabuk",
+    "en": "fast, quick",
+    "ar": "سريع",
+    "fr": "rapide"
+  },
+  {
+    "nl": "tot",
+    "type": "prep",
+    "tr": "-e kadar",
+    "en": "until, to",
+    "ar": "حتى",
+    "fr": "jusqu'à"
+  },
+  {
+    "nl": "uur",
+    "type": "noun",
+    "article": "het",
+    "tr": "saat",
+    "en": "hour, o'clock",
+    "ar": "ساعة",
+    "fr": "heure"
+  },
+  {
+    "nl": "weten",
+    "type": "verb",
+    "perfectum": "geweten",
+    "imperfectum": "wist",
+    "tr": "bilmek",
+    "en": "to know (fact)",
+    "ar": "يعرف",
+    "fr": "savoir"
+  },
+  {
+    "nl": "zak",
+    "type": "noun",
+    "article": "de",
+    "tr": "torba, çanta, cep",
+    "en": "bag, pocket",
+    "ar": "كيس، جيب",
+    "fr": "sac, poche"
+  }
+]
