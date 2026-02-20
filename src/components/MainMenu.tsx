@@ -5,6 +5,7 @@ import { t } from '../data/translations';
 import { getSelectedWordCount } from '../services/words';
 import { getPinnedWordCount, MIN_PINS_FOR_QUIZ, canPinInQuizType } from '../services/storage';
 import { WordPoolModal } from './WordPoolModal';
+import { SupportButton } from './SupportButton';
 import './MainMenu.css';
 
 interface MainMenuProps {
@@ -95,6 +96,8 @@ export function MainMenu({ onStartQuiz, language }: MainMenuProps) {
           );
         })}
       </div>
+
+      <SupportButton language={language} />
 
       {showWordPool && (
         <WordPoolModal language={language} onClose={handleWordPoolClose} />
