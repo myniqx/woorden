@@ -40,7 +40,19 @@ type TranslationKey =
   | 'type_conj'
   | 'type_phrase'
   | 'type_num'
-  | 'type_pron';
+  | 'type_pron'
+  | 'pinnedWords'
+  | 'pinnedWordsDesc'
+  | 'pinnedWordsDisabled'
+  | 'quiz_nativeToDutch_write'
+  | 'quiz_nativeToDutch_write_desc'
+  | 'quiz_verbForms'
+  | 'quiz_verbForms_desc'
+  | 'writeTheDutch'
+  | 'writeThePerfectum'
+  | 'writeTheImperfectum'
+  | 'skip'
+  | 'correctAnswer';
 
 type Translations = Record<Language, Record<TranslationKey, string>>;
 
@@ -86,6 +98,18 @@ export const translations: Translations = {
     type_phrase: 'deyim',
     type_num: 'sayı',
     type_pron: 'zamir',
+    pinnedWords: 'Pinli Kelimeler',
+    pinnedWordsDesc: '{count} kelime pinli',
+    pinnedWordsDisabled: '{count} kelime pinleyin, 10 olsun',
+    quiz_nativeToDutch_write: 'Yazma Testi',
+    quiz_nativeToDutch_write_desc: 'Hollandaca karşılığını yaz',
+    quiz_verbForms: 'Fiil Formları',
+    quiz_verbForms_desc: 'Perfectum veya imperfectum yaz',
+    writeTheDutch: 'Hollandaca karşılığını yazın',
+    writeThePerfectum: 'Perfectum halini yazın',
+    writeTheImperfectum: 'Imperfectum halini yazın',
+    skip: 'Geç',
+    correctAnswer: 'Doğrusu: {answer}',
   },
 
   en: {
@@ -129,6 +153,18 @@ export const translations: Translations = {
     type_phrase: 'phrase',
     type_num: 'number',
     type_pron: 'pronoun',
+    pinnedWords: 'Pinned Words',
+    pinnedWordsDesc: '{count} words pinned',
+    pinnedWordsDisabled: 'Pin {count} more to reach 10',
+    quiz_nativeToDutch_write: 'Writing Test',
+    quiz_nativeToDutch_write_desc: 'Write the Dutch translation',
+    quiz_verbForms: 'Verb Forms',
+    quiz_verbForms_desc: 'Write perfectum or imperfectum',
+    writeTheDutch: 'Write the Dutch word',
+    writeThePerfectum: 'Write the perfectum form',
+    writeTheImperfectum: 'Write the imperfectum form',
+    skip: 'Skip',
+    correctAnswer: 'Correct: {answer}',
   },
 
   ar: {
@@ -172,6 +208,18 @@ export const translations: Translations = {
     type_phrase: 'عبارة',
     type_num: 'رقم',
     type_pron: 'ضمير',
+    pinnedWords: 'كلمات مثبتة',
+    pinnedWordsDesc: '{count} كلمة مثبتة',
+    pinnedWordsDisabled: 'ثبت {count} كلمة أخرى للوصول إلى 10',
+    quiz_nativeToDutch_write: 'اختبار الكتابة',
+    quiz_nativeToDutch_write_desc: 'اكتب الترجمة الهولندية',
+    quiz_verbForms: 'صيغ الفعل',
+    quiz_verbForms_desc: 'اكتب الماضي أو الماضي التام',
+    writeTheDutch: 'اكتب الكلمة بالهولندية',
+    writeThePerfectum: 'اكتب صيغة الماضي التام',
+    writeTheImperfectum: 'اكتب صيغة الماضي',
+    skip: 'تخطي',
+    correctAnswer: 'الصحيح: {answer}',
   },
 
   fr: {
@@ -215,6 +263,18 @@ export const translations: Translations = {
     type_phrase: 'expression',
     type_num: 'nombre',
     type_pron: 'pronom',
+    pinnedWords: 'Mots épinglés',
+    pinnedWordsDesc: '{count} mots épinglés',
+    pinnedWordsDisabled: 'Épinglez {count} de plus pour atteindre 10',
+    quiz_nativeToDutch_write: 'Test d\'écriture',
+    quiz_nativeToDutch_write_desc: 'Écrivez la traduction néerlandaise',
+    quiz_verbForms: 'Formes verbales',
+    quiz_verbForms_desc: 'Écrivez le perfectum ou imperfectum',
+    writeTheDutch: 'Écrivez le mot en néerlandais',
+    writeThePerfectum: 'Écrivez la forme perfectum',
+    writeTheImperfectum: 'Écrivez la forme imperfectum',
+    skip: 'Passer',
+    correctAnswer: 'Correct: {answer}',
   },
 };
 

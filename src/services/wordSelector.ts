@@ -1,6 +1,6 @@
-import type { Word, WordWithArticle, WordEntry, Language, SkillType } from '../types';
+import type { Word, WordWithArticle, WordEntry, Language, SkillType, QuizMode } from '../types';
 import { words, wordsWithArticles, getLevelWords, getWordLevel } from './words';
-import { getSkillProgress, getOverallStats, getSkillStats, getSkillForQuizType } from './storage';
+import { getSkillProgress, getOverallStats, getSkillStats, getSkillForQuizType, getPinnedWords } from './storage';
 
 function calculatePriority(word: Word, skill: SkillType): number {
   const progress = getSkillProgress(word.nl, skill);
@@ -31,14 +31,26 @@ function getWordPool(quizType: string): Word[] {
     return wordsWithArticles;
   }
   if (quizType === 'verbForms') {
-    return words.filter(w => w.type === 'verb');
+    return words.filter(w => w.type === 'verb' && 'perfectum' in w && 'imperfectum' in w);
   }
+  // nativeToDutch, dutchToNative, nativeToDutch_write, translation all use full word list
   return words;
 }
 
-export function selectWord(quizType: string = 'translation'): Word {
-  const pool = getWordPool(quizType);
+export function selectWord(quizType: string = 'translation', mode: QuizMode = 'normal'): Word {
+  let pool = getWordPool(quizType);
   const skill = getSkillForQuizType(quizType);
+
+  // If pinned mode, filter to only pinned words
+  if (mode === 'pinned') {
+    const pinnedNls = getPinnedWords(quizType);
+    pool = pool.filter(w => pinnedNls.includes(w.nl));
+
+    // If no pinned words somehow, fall back to normal pool
+    if (pool.length === 0) {
+      pool = getWordPool(quizType);
+    }
+  }
 
   const wordPriorities = pool.map((word) => ({
     word,

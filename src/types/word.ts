@@ -64,7 +64,7 @@ export interface AllWordStats {
 // New format
 export type HistoryEntry = 'c' | 'w';
 
-export type SkillType = 'translationTo' | 'translationFrom' | 'article' | 'verbForms';
+export type SkillType = 'translationTo' | 'translationFrom' | 'article' | 'verbForms' | 'translationToWrite';
 
 export interface SkillProgress {
   seen: number;
@@ -84,6 +84,7 @@ export interface WordProgress {
     translationFrom?: SkillProgress;
     article?: SkillProgress;
     verbForms?: SkillProgress;
+    translationToWrite?: SkillProgress;
   };
 }
 

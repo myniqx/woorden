@@ -1,6 +1,9 @@
 import type { Word, Language } from './word';
 
-export type QuizType = 'nativeToDutch' | 'dutchToNative' | 'article';
+export type QuizType = 'nativeToDutch' | 'dutchToNative' | 'article' | 'nativeToDutch_write' | 'verbForms';
+
+// Quiz mode: normal uses all enabled words, pinned uses only pinned words
+export type QuizMode = 'normal' | 'pinned';
 
 export type Screen = 'menu' | 'quiz';
 
