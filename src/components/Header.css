@@ -175,3 +175,10 @@
   color: var(--color-primary);
 }
 
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .logo-text {
+    display: none;
+  }
+}
+

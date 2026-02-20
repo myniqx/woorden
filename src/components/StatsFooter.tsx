@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { BarChart3, Eye, BookOpen, AlertCircle, ChevronUp } from 'lucide-preact';
+import { BarChart3, Eye, BookOpen, AlertCircle, ChevronUp, RefreshCw } from 'lucide-preact';
 import type { Language, Word, WordStats, QuizType } from '../types';
 import { words } from '../services/words';
 import { getAllWordStats } from '../services/storage';
@@ -11,6 +11,8 @@ import './StatsFooter.css';
 interface StatsFooterProps {
   language: Language;
   quizType?: QuizType | null;
+  needRefresh?: boolean;
+  onUpdate?: () => void;
 }
 
 type Category = 'unseen' | 'learning' | 'mastered' | 'difficult';
@@ -55,7 +57,7 @@ function getCategorizedWords(language: Language): Record<Category, WordWithStats
   return { unseen, learning, mastered, difficult };
 }
 
-export function StatsFooter({ language, quizType }: StatsFooterProps) {
+export function StatsFooter({ language, quizType, needRefresh, onUpdate }: StatsFooterProps) {
   const [expanded, setExpanded] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
@@ -72,15 +74,24 @@ export function StatsFooter({ language, quizType }: StatsFooterProps) {
   return (
     <>
       <footer class={`stats-footer ${expanded ? 'expanded' : ''}`}>
-        <button class="stats-toggle" onClick={() => setExpanded(!expanded)}>
-          <div class="stats-summary">
-            <BarChart3 size={18} />
-            <span class="stats-progress">
-              {stats.seen} / {stats.total} ({progressPercent}%)
-            </span>
-          </div>
-          <ChevronUp size={20} class={`toggle-icon ${expanded ? 'rotated' : ''}`} />
-        </button>
+        <div class="stats-footer-row">
+          <button class="stats-toggle" onClick={() => setExpanded(!expanded)}>
+            <div class="stats-summary">
+              <BarChart3 size={18} />
+              <span class="stats-progress">
+                {stats.seen} / {stats.total} ({progressPercent}%)
+              </span>
+            </div>
+            <ChevronUp size={20} class={`toggle-icon ${expanded ? 'rotated' : ''}`} />
+          </button>
+
+          {needRefresh && (
+            <button class="update-btn" onClick={onUpdate} title={t('updateAvailable', language)}>
+              <RefreshCw size={16} />
+              <span>{t('update', language)}</span>
+            </button>
+          )}
+        </div>
 
         {expanded && (
           <div class="stats-details fade-in">

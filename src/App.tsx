@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'preact/hooks';
+import { useRegisterSW } from 'virtual:pwa-register/preact';
 import { useTheme, useLanguage } from './hooks';
 import { Header } from './components/Header';
 import { MainMenu } from './components/MainMenu';
@@ -36,6 +37,11 @@ export function App() {
 
   const { theme, toggleTheme } = useTheme();
   const { language, setLanguage } = useLanguage();
+
+  const {
+    needRefresh: [needRefresh],
+    updateServiceWorker,
+  } = useRegisterSW();
   const [screen, setScreen] = useState<Screen>('menu');
   const [currentQuizType, setCurrentQuizType] = useState<QuizType | null>(null);
   const [currentQuizMode, setCurrentQuizMode] = useState<QuizMode>('normal');
@@ -61,9 +67,7 @@ export function App() {
     <div class="app">
       <Header
         key={`header-${statsVersion}`}
-        theme={theme}
         language={language}
-        onToggleTheme={toggleTheme}
         onLanguageChange={setLanguage}
         showBackButton={screen === 'quiz'}
         onBack={exitQuiz}
@@ -96,13 +100,21 @@ export function App() {
         )}
       </main>
 
-      <StatsFooter key={`footer-${statsVersion}`} language={language} quizType={currentQuizType} />
+      <StatsFooter
+        key={`footer-${statsVersion}`}
+        language={language}
+        quizType={currentQuizType}
+        needRefresh={needRefresh}
+        onUpdate={() => updateServiceWorker(true)}
+      />
 
       <SettingsModal
         isOpen={showSettings}
         onClose={() => setShowSettings(false)}
         onDataImported={onStatsUpdate}
         onPacksChanged={onStatsUpdate}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
     </div>
   );

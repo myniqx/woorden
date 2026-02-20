@@ -1,5 +1,5 @@
 import { useRef } from 'preact/hooks';
-import { X, Download, Upload } from 'lucide-preact';
+import { X, Download, Upload, Sun, Moon } from 'lucide-preact';
 import { exportData, importData } from '../services/storage';
 import './SettingsModal.css';
 
@@ -8,9 +8,11 @@ interface SettingsModalProps {
   onClose: () => void;
   onDataImported?: () => void;
   onPacksChanged?: () => void;
+  theme: 'light' | 'dark';
+  onToggleTheme: () => void;
 }
 
-export function SettingsModal({ isOpen, onClose, onDataImported }: SettingsModalProps) {
+export function SettingsModal({ isOpen, onClose, onDataImported, theme, onToggleTheme }: SettingsModalProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   if (!isOpen) return null;
@@ -70,6 +72,29 @@ export function SettingsModal({ isOpen, onClose, onDataImported }: SettingsModal
         </div>
 
         <div class="settings-modal-content">
+          <section class="settings-section">
+            <h3>
+              {theme === 'dark' ? <Moon size={18} /> : <Sun size={18} />}
+              Theme
+            </h3>
+            <div class="theme-toggle">
+              <button
+                class={`theme-option ${theme === 'light' ? 'active' : ''}`}
+                onClick={() => theme === 'dark' && onToggleTheme()}
+              >
+                <Sun size={16} />
+                Light
+              </button>
+              <button
+                class={`theme-option ${theme === 'dark' ? 'active' : ''}`}
+                onClick={() => theme === 'light' && onToggleTheme()}
+              >
+                <Moon size={16} />
+                Dark
+              </button>
+            </div>
+          </section>
+
           <section class="settings-section">
             <h3>
               <Download size={18} />

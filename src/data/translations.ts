@@ -52,7 +52,9 @@ type TranslationKey =
   | 'writeThePerfectum'
   | 'writeTheImperfectum'
   | 'skip'
-  | 'correctAnswer';
+  | 'correctAnswer'
+  | 'update'
+  | 'updateAvailable';
 
 type Translations = Record<Language, Record<TranslationKey, string>>;
 
@@ -110,6 +112,8 @@ export const translations: Translations = {
     writeTheImperfectum: 'Imperfectum halini yazın',
     skip: 'Geç',
     correctAnswer: 'Doğrusu: {answer}',
+    update: 'Güncelle',
+    updateAvailable: 'Yeni versiyon mevcut',
   },
 
   en: {
@@ -165,6 +169,8 @@ export const translations: Translations = {
     writeTheImperfectum: 'Write the imperfectum form',
     skip: 'Skip',
     correctAnswer: 'Correct: {answer}',
+    update: 'Update',
+    updateAvailable: 'New version available',
   },
 
   ar: {
@@ -220,6 +226,8 @@ export const translations: Translations = {
     writeTheImperfectum: 'اكتب صيغة الماضي',
     skip: 'تخطي',
     correctAnswer: 'الصحيح: {answer}',
+    update: 'تحديث',
+    updateAvailable: 'يتوفر إصدار جديد',
   },
 
   fr: {
@@ -275,6 +283,8 @@ export const translations: Translations = {
     writeTheImperfectum: 'Écrivez la forme imperfectum',
     skip: 'Passer',
     correctAnswer: 'Correct: {answer}',
+    update: 'Mettre à jour',
+    updateAvailable: 'Nouvelle version disponible',
   },
 };
 
