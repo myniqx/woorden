@@ -49,6 +49,7 @@ type TranslationKey =
   | 'quiz_verbForms'
   | 'quiz_verbForms_desc'
   | 'writeTheDutch'
+  | 'writeTheInfinitief'
   | 'writeThePerfectum'
   | 'writeTheImperfectum'
   | 'skip'
@@ -108,6 +109,7 @@ export const translations: Translations = {
     quiz_verbForms: 'Fiil Formları',
     quiz_verbForms_desc: 'Perfectum veya imperfectum yaz',
     writeTheDutch: 'Hollandaca karşılığını yazın',
+    writeTheInfinitief: 'Infinitief halini yazın',
     writeThePerfectum: 'Perfectum halini yazın',
     writeTheImperfectum: 'Imperfectum halini yazın',
     skip: 'Geç',
@@ -165,6 +167,7 @@ export const translations: Translations = {
     quiz_verbForms: 'Verb Forms',
     quiz_verbForms_desc: 'Write perfectum or imperfectum',
     writeTheDutch: 'Write the Dutch word',
+    writeTheInfinitief: 'Write the infinitive form',
     writeThePerfectum: 'Write the perfectum form',
     writeTheImperfectum: 'Write the imperfectum form',
     skip: 'Skip',
@@ -222,6 +225,7 @@ export const translations: Translations = {
     quiz_verbForms: 'صيغ الفعل',
     quiz_verbForms_desc: 'اكتب الماضي أو الماضي التام',
     writeTheDutch: 'اكتب الكلمة بالهولندية',
+    writeTheInfinitief: 'اكتب صيغة المصدر',
     writeThePerfectum: 'اكتب صيغة الماضي التام',
     writeTheImperfectum: 'اكتب صيغة الماضي',
     skip: 'تخطي',
@@ -279,6 +283,7 @@ export const translations: Translations = {
     quiz_verbForms: 'Formes verbales',
     quiz_verbForms_desc: 'Écrivez le perfectum ou imperfectum',
     writeTheDutch: 'Écrivez le mot en néerlandais',
+    writeTheInfinitief: 'Écrivez la forme infinitive',
     writeThePerfectum: 'Écrivez la forme perfectum',
     writeTheImperfectum: 'Écrivez la forme imperfectum',
     skip: 'Passer',
