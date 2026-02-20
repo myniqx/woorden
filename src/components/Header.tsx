@@ -1,12 +1,10 @@
-import { Sun, Moon, ChevronLeft, Globe, Flame, Settings } from 'lucide-preact';
+import { ChevronLeft, Flame, Settings } from 'lucide-preact';
 import type { Language } from '../types';
 import { getStreak, getDailyStats, getDailyGoal } from '../services/storage';
 import './Header.css';
 
 interface HeaderProps {
-  theme: 'light' | 'dark';
   language: Language;
-  onToggleTheme: () => void;
   onLanguageChange: (lang: Language) => void;
   showBackButton?: boolean;
   onBack?: () => void;
@@ -21,9 +19,7 @@ const languages: { code: Language; name: string; flag: string }[] = [
 ];
 
 export function Header({
-  theme,
   language,
-  onToggleTheme,
   onLanguageChange,
   showBackButton = false,
   onBack,
@@ -73,7 +69,6 @@ export function Header({
         <div class="language-selector">
           <button class="header-btn language-btn" aria-label="Select language">
             <span class="lang-flag">{currentLang?.flag}</span>
-            <Globe size={16} />
           </button>
           <div class="language-dropdown">
             {languages.map(lang => (
@@ -91,10 +86,6 @@ export function Header({
 
         <button class="header-btn settings-btn" onClick={onSettingsClick} aria-label="Settings">
           <Settings size={20} />
-        </button>
-
-        <button class="header-btn theme-btn" onClick={onToggleTheme} aria-label="Toggle theme">
-          {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
         </button>
       </div>
     </header>
