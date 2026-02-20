@@ -112,3 +112,56 @@
   font-size: var(--text-sm);
   color: var(--color-text-secondary);
 }
+
+.quiz-type-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.pinned-quiz-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-normal);
+  color: var(--card-color, var(--color-primary));
+}
+
+.pinned-quiz-card:hover:not(.disabled) {
+  border-color: var(--card-color, var(--color-primary));
+  background: var(--color-surface-elevated);
+}
+
+.pinned-quiz-card.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  color: var(--color-text-secondary);
+}
+
+.pinned-quiz-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.pinned-quiz-title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.pinned-quiz-card.disabled .pinned-quiz-title {
+  color: var(--color-text-secondary);
+}
+
+.pinned-quiz-desc {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}

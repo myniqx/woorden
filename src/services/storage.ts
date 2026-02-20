@@ -14,6 +14,10 @@ interface DailyStats {
 // Example: { "A1": { "0": true, "1": false }, "A2": true }
 export type EnabledPacks = Record<string, Record<string, boolean> | boolean>;
 
+// Pinned words per quiz type (only for quizzes where question is in Dutch)
+// Keys: 'dutchToNative', 'article'
+export type PinnedWords = Record<string, string[]>;
+
 interface AppData {
   language: Language;
   wordStats?: AllWordStats; // Old format (kept for backup after migration)
@@ -23,6 +27,7 @@ interface AppData {
   lastPracticeDate: string | null;
   bestDaily: number;
   enabledPacks: EnabledPacks; // Hierarchical word pack config
+  pinnedWords: PinnedWords; // Pinned words per quiz type
 }
 
 const defaultData: AppData = {
@@ -33,6 +38,7 @@ const defaultData: AppData = {
   lastPracticeDate: null,
   bestDaily: 0,
   enabledPacks: {}, // empty = all enabled by default
+  pinnedWords: {}, // empty = no pinned words
 };
 
 // Migration helpers
@@ -269,6 +275,7 @@ const quizTypeToSkill: Record<string, SkillType> = {
   dutchToNative: 'translationFrom',
   article: 'article',
   verbForms: 'verbForms',
+  nativeToDutch_write: 'translationToWrite',
 };
 
 export function getSkillForQuizType(quizType: string): SkillType {
@@ -605,3 +612,73 @@ export function areNoChunksEnabled(level: string, chunkCount: number): boolean {
   }
   return true;
 }
+
+// Pin management - for quizzes where question is in Dutch
+const PIN_ENABLED_QUIZ_TYPES = ['dutchToNative', 'article', 'verbForms'];
+
+export function canPinInQuizType(quizType: string): boolean {
+  return PIN_ENABLED_QUIZ_TYPES.includes(quizType);
+}
+
+export function getPinnedWords(quizType: string): string[] {
+  if (!canPinInQuizType(quizType)) return [];
+  return appData.pinnedWords[quizType] || [];
+}
+
+export function getPinnedWordCount(quizType: string): number {
+  return getPinnedWords(quizType).length;
+}
+
+export function isPinned(quizType: string, wordNl: string): boolean {
+  const pinned = getPinnedWords(quizType);
+  return pinned.includes(wordNl);
+}
+
+export function togglePin(quizType: string, wordNl: string): boolean {
+  if (!canPinInQuizType(quizType)) return false;
+
+  if (!appData.pinnedWords[quizType]) {
+    appData.pinnedWords[quizType] = [];
+  }
+
+  const pinned = appData.pinnedWords[quizType];
+  const index = pinned.indexOf(wordNl);
+
+  if (index === -1) {
+    pinned.push(wordNl);
+    saveData(appData);
+    return true; // now pinned
+  } else {
+    pinned.splice(index, 1);
+    saveData(appData);
+    return false; // now unpinned
+  }
+}
+
+export function addPin(quizType: string, wordNl: string): void {
+  if (!canPinInQuizType(quizType)) return;
+
+  if (!appData.pinnedWords[quizType]) {
+    appData.pinnedWords[quizType] = [];
+  }
+
+  if (!appData.pinnedWords[quizType].includes(wordNl)) {
+    appData.pinnedWords[quizType].push(wordNl);
+    saveData(appData);
+  }
+}
+
+export function removePin(quizType: string, wordNl: string): void {
+  if (!canPinInQuizType(quizType)) return;
+
+  const pinned = appData.pinnedWords[quizType];
+  if (pinned) {
+    const index = pinned.indexOf(wordNl);
+    if (index !== -1) {
+      pinned.splice(index, 1);
+      saveData(appData);
+    }
+  }
+}
+
+export const MIN_PINS_FOR_QUIZ = 10;

@@ -1,10 +1,11 @@
-import type { Quiz, QuizType, QuizOption, Language, Word } from '../types';
+import type { Quiz, QuizType, QuizMode, QuizOption, Language, Word } from '../types';
 import { selectWord, generateOptions } from './wordSelector';
 import { updateWordProgress, getSkillForQuizType } from './storage';
 import { t } from '../data/translations';
 
-export function createQuiz(quizType: QuizType, language: Language): Quiz {
-  const word = selectWord(quizType === 'article' ? 'article' : 'translation');
+export function createQuiz(quizType: QuizType, language: Language, mode: QuizMode = 'normal'): Quiz {
+  // Pass the actual quizType for pinned word lookup, not the pool type
+  const word = selectWord(quizType, mode);
   const tr = (key: string) => t(key, language);
 
   let question: Quiz['question'];

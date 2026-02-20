@@ -3,10 +3,13 @@ import { useTheme, useLanguage } from './hooks';
 import { Header } from './components/Header';
 import { MainMenu } from './components/MainMenu';
 import { QuizScreen } from './components/QuizScreen';
+import { InputQuizScreen } from './components/InputQuizScreen';
 import { StatsFooter } from './components/StatsFooter';
 import { SettingsModal } from './components/SettingsModal';
 import { EditorPage } from './pages/EditorPage';
-import type { QuizType, Screen } from './types';
+
+const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
+import type { QuizType, QuizMode, Screen } from './types';
 import './styles/theme.css';
 import './styles/app.css';
 
@@ -35,11 +38,13 @@ export function App() {
   const { language, setLanguage } = useLanguage();
   const [screen, setScreen] = useState<Screen>('menu');
   const [currentQuizType, setCurrentQuizType] = useState<QuizType | null>(null);
+  const [currentQuizMode, setCurrentQuizMode] = useState<QuizMode>('normal');
   const [statsVersion, setStatsVersion] = useState(0);
   const [showSettings, setShowSettings] = useState(false);
 
-  const startQuiz = (quizType: QuizType) => {
+  const startQuiz = (quizType: QuizType, mode: QuizMode = 'normal') => {
     setCurrentQuizType(quizType);
+    setCurrentQuizMode(mode);
     setScreen('quiz');
   };
 
@@ -71,12 +76,23 @@ export function App() {
         )}
 
         {screen === 'quiz' && currentQuizType && (
-          <QuizScreen
-            quizType={currentQuizType}
-            language={language}
-            onExit={exitQuiz}
-            onAnswer={onStatsUpdate}
-          />
+          INPUT_QUIZ_TYPES.includes(currentQuizType) ? (
+            <InputQuizScreen
+              quizType={currentQuizType}
+              quizMode={currentQuizMode}
+              language={language}
+              onExit={exitQuiz}
+              onAnswer={onStatsUpdate}
+            />
+          ) : (
+            <QuizScreen
+              quizType={currentQuizType}
+              quizMode={currentQuizMode}
+              language={language}
+              onExit={exitQuiz}
+              onAnswer={onStatsUpdate}
+            />
+          )
         )}
       </main>
 
