@@ -50,8 +50,6 @@ export function MainMenu({ onStartQuiz, language }: MainMenuProps) {
         </div>
       </button>
 
-      <h1 class="menu-title">{tr('selectQuizType')}</h1>
-
       <div class="quiz-type-grid">
         {quizTypes.map(({ type, icon: Icon, color }) => {
           const canHavePin = canPinInQuizType(type);
@@ -60,7 +58,7 @@ export function MainMenu({ onStartQuiz, language }: MainMenuProps) {
           const pinsNeeded = MIN_PINS_FOR_QUIZ - pinCount;
 
           return (
-            <div key={type} class="quiz-type-group">
+            <div key={type} class={`quiz-type-group ${canHavePin ? 'has-pin' : ''}`}>
               <button
                 class="quiz-type-card"
                 onClick={() => onStartQuiz(type, 'normal')}

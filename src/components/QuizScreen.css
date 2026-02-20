@@ -42,10 +42,16 @@
   border-radius: var(--radius-sm);
 }
 
-.pin-button {
+.question-actions {
   position: absolute;
   top: var(--spacing-sm);
   right: var(--spacing-sm);
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.pin-button,
+.help-button {
   padding: var(--spacing-xs);
   background: transparent;
   border: 1px solid var(--color-border);
@@ -58,7 +64,8 @@
   transition: all var(--transition-fast);
 }
 
-.pin-button:hover {
+.pin-button:hover,
+.help-button:hover {
   background: var(--color-surface-elevated);
   border-color: var(--color-primary);
   color: var(--color-primary);

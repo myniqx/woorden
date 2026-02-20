@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'preact/hooks';
-import { Pin, Eye, Check, X, Flame } from 'lucide-preact';
+import { Pin, Eye, Check, X, Flame, HelpCircle } from 'lucide-preact';
 import type { QuizType, QuizMode, Language } from '../types';
 import { t } from '../data/translations';
 import {
@@ -13,7 +13,87 @@ import {
 import { selectWord } from '../services/wordSelector';
 import { words } from '../services/words';
 import { compareIgnoringAccents } from '../utils/textUtils';
+import { HelpModal } from './HelpModal';
 import './InputQuizScreen.css';
+
+const helpTexts: Record<string, Record<Language, { title: string; content: string }>> = {
+  nativeToDutch_write: {
+    tr: {
+      title: 'Nasıl Oynanır?',
+      content: `Verilen kelimenin **Hollandaca karşılığını** yazın.
+
+Yazdığınız **doğru ise** otomatik olarak bir sonraki soruya geçilir. Eğer geçilmediyse yazdığınız kelime uyuşmuyor demektir.
+
+**"Geç"** tuşuna bastığınızda doğru cevabı görürsünüz ve bu kelime daha sonra karşınıza tekrar çıkar.
+
+**Alt kısımdaki istatistiklerden** gelişiminizi takip edebilirsiniz.`,
+    },
+    en: {
+      title: 'How to Play?',
+      content: `Write the **Dutch translation** of the given word.
+
+If your answer is **correct**, you automatically move to the next question. If not, your answer doesn't match.
+
+Press **"Skip"** to see the correct answer - this word will appear again later.
+
+Track your progress in the **stats below**.`,
+    },
+    ar: {
+      title: 'كيف تلعب؟',
+      content: `اكتب **الترجمة الهولندية** للكلمة المعطاة.
+
+إذا كانت إجابتك **صحيحة**، تنتقل تلقائياً للسؤال التالي. إذا لم تنتقل، فإجابتك غير مطابقة.
+
+اضغط **"تخطي"** لرؤية الإجابة الصحيحة - ستظهر هذه الكلمة مرة أخرى لاحقاً.`,
+    },
+    fr: {
+      title: 'Comment jouer?',
+      content: `Écrivez la **traduction néerlandaise** du mot donné.
+
+Si votre réponse est **correcte**, vous passez automatiquement à la question suivante. Sinon, votre réponse ne correspond pas.
+
+Appuyez sur **"Passer"** pour voir la bonne réponse - ce mot réapparaîtra plus tard.`,
+    },
+  },
+  verbForms: {
+    tr: {
+      title: 'Nasıl Oynanır?',
+      content: `Bu testte fiillerin **üç farklı hali** sorulur: mastar (infinitief), geçmiş zaman (imperfectum) ve bileşik geçmiş (perfectum).
+
+Size bir form gösterilir (örn: **"gegaan"**) ve diğer formlardan birini yazmanız istenir.
+
+Yazdığınız **doğru ise** otomatik olarak geçilir. **"Geç"** tuşuna basarsanız doğru cevabı görür ve kelime tekrar karşınıza çıkar.
+
+**Örnek:** gaan (mastar) → ging (imperfectum) → gegaan (perfectum)`,
+    },
+    en: {
+      title: 'How to Play?',
+      content: `This test asks for **three verb forms**: infinitive (infinitief), simple past (imperfectum), and past participle (perfectum).
+
+You're shown one form (e.g., **"gegaan"**) and asked to write another form.
+
+If your answer is **correct**, you move on automatically. Press **"Skip"** to see the answer - the word will reappear later.
+
+**Example:** gaan (infinitive) → ging (imperfectum) → gegaan (perfectum)`,
+    },
+    ar: {
+      title: 'كيف تلعب؟',
+      content: `يسأل هذا الاختبار عن **ثلاثة أشكال للفعل**: المصدر والماضي البسيط والماضي التام.
+
+يُعرض عليك شكل واحد (مثل **"gegaan"**) وتُطلب منك كتابة شكل آخر.
+
+إذا كانت إجابتك **صحيحة**، تنتقل تلقائياً. اضغط **"تخطي"** لرؤية الإجابة.`,
+    },
+    fr: {
+      title: 'Comment jouer?',
+      content: `Ce test demande **trois formes verbales**: infinitif, passé simple (imperfectum) et participe passé (perfectum).
+
+On vous montre une forme (ex: **"gegaan"**) et on vous demande d'écrire une autre forme.
+
+Si votre réponse est **correcte**, vous passez automatiquement. Appuyez sur **"Passer"** pour voir la réponse.`,
+    },
+  },
+};
 
 interface InputQuizScreenProps {
   quizType: QuizType;
@@ -46,9 +126,11 @@ export function InputQuizScreen({
   const [isCorrect, setIsCorrect] = useState(false);
   const [skipped, setSkipped] = useState(false);
   const [pinned, setPinned] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const canPin = canPinInQuizType(quizType);
+  const help = helpTexts[quizType]?.[language] || helpTexts[quizType]?.en;
 
   const loadNewQuestion = useCallback(() => {
     let word;
@@ -60,22 +142,36 @@ export function InputQuizScreen({
       // Select a verb
       word = selectWord('verbForms', quizMode);
 
-      // Randomly choose perfectum or imperfectum
-      const askPerfectum = Math.random() > 0.5;
+      const perfectum = 'perfectum' in word ? word.perfectum : '';
+      const imperfectum = 'imperfectum' in word ? word.imperfectum : '';
+      const infinitief = word.nl;
 
-      if (askPerfectum && 'perfectum' in word) {
-        correctAnswer = word.perfectum;
-        subtext = t('writeThePerfectum', language);
-      } else if ('imperfectum' in word) {
-        correctAnswer = word.imperfectum;
-        subtext = t('writeTheImperfectum', language);
-      } else {
-        // Fallback
-        correctAnswer = word.nl;
-        subtext = '';
-      }
+      // All 3 forms with their display and possible questions
+      const forms = [
+        { show: infinitief, label: 'infinitief', askOptions: [
+          { answer: perfectum, key: 'writeThePerfectum' },
+          { answer: imperfectum, key: 'writeTheImperfectum' },
+        ]},
+        { show: perfectum, label: 'perfectum', askOptions: [
+          { answer: infinitief, key: 'writeTheInfinitief' },
+          { answer: imperfectum, key: 'writeTheImperfectum' },
+        ]},
+        { show: imperfectum, label: 'imperfectum', askOptions: [
+          { answer: infinitief, key: 'writeTheInfinitief' },
+          { answer: perfectum, key: 'writeThePerfectum' },
+        ]},
+      ].filter(f => f.show); // Filter out empty forms
 
-      questionText = word.nl;
+      // Pick a random form to show
+      const chosen = forms[Math.floor(Math.random() * forms.length)];
+
+      // Filter valid ask options and pick one
+      const validOptions = chosen.askOptions.filter(opt => opt.answer);
+      const askOption = validOptions[Math.floor(Math.random() * validOptions.length)];
+
+      questionText = chosen.show;
+      subtext = t(askOption.key, language);
+      correctAnswer = askOption.answer;
     } else {
       // nativeToDutch_write
       word = selectWord('nativeToDutch_write', quizMode);
@@ -167,15 +263,26 @@ export function InputQuizScreen({
       <div class="quiz-card">
         <div class="question-section">
           <span class="question-type">{t(`type_${quiz.wordType}`, language)}</span>
-          {canPin && (
-            <button
-              class={`pin-button ${pinned ? 'pinned' : ''}`}
-              onClick={handlePinToggle}
-              aria-label={pinned ? 'Unpin word' : 'Pin word'}
-            >
-              <Pin size={18} />
-            </button>
-          )}
+          <div class="question-actions">
+            {canPin && (
+              <button
+                class={`pin-button ${pinned ? 'pinned' : ''}`}
+                onClick={handlePinToggle}
+                aria-label={pinned ? 'Unpin word' : 'Pin word'}
+              >
+                <Pin size={18} />
+              </button>
+            )}
+            {help?.content && (
+              <button
+                class="help-button"
+                onClick={() => setShowHelp(true)}
+                aria-label="Help"
+              >
+                <HelpCircle size={18} />
+              </button>
+            )}
+          </div>
           <p class="question-text">{quiz.questionText}</p>
           {quiz.subtext && <p class="question-subtext">{quiz.subtext}</p>}
         </div>
@@ -224,6 +331,14 @@ export function InputQuizScreen({
             </span>
           </div>
         </div>
+      )}
+
+      {showHelp && help?.content && (
+        <HelpModal
+          title={help.title}
+          content={help.content}
+          onClose={() => setShowHelp(false)}
+        />
       )}
     </div>
   );

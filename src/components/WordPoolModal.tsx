@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { ChevronDown, ChevronRight, X } from 'lucide-preact';
+import { ChevronDown, ChevronRight, X, HelpCircle } from 'lucide-preact';
 import type { Language } from '../types';
 import { t } from '../data/translations';
 import {
@@ -17,7 +17,27 @@ import {
   areAllChunksEnabled,
   areNoChunksEnabled,
 } from '../services/storage';
+import { HelpModal } from './HelpModal';
 import './WordPoolModal.css';
+
+const helpTexts: Record<Language, { title: string; content: string }> = {
+  tr: {
+    title: 'Kelime Havuzu Nedir?',
+    content: 'Kelime havuzu, testlerde karşınıza çıkacak kelimeleri belirlemenizi sağlar. Seviyeler (A1, A2 vb.) içinde küçük paketler halinde kelimeler bulunur. Başlangıçta küçük bir kelime grubuna odaklanıp, onları öğrendikten sonra yeni paketler ekleyerek ilerlemenizi öneririz.',
+  },
+  en: {
+    title: 'What is Word Pool?',
+    content: 'The word pool lets you choose which words appear in quizzes. Levels (A1, A2, etc.) contain words in smaller packs. We recommend starting with a small group of words, and adding new packs as you learn them.',
+  },
+  ar: {
+    title: 'ما هي مجموعة الكلمات؟',
+    content: 'تتيح لك مجموعة الكلمات اختيار الكلمات التي ستظهر في الاختبارات. تحتوي المستويات (A1، A2، إلخ) على كلمات في حزم صغيرة. نوصي بالبدء بمجموعة صغيرة من الكلمات، وإضافة حزم جديدة كلما تعلمتها.',
+  },
+  fr: {
+    title: "Qu'est-ce que le groupe de mots?",
+    content: "Le groupe de mots vous permet de choisir les mots qui apparaissent dans les quiz. Les niveaux (A1, A2, etc.) contiennent des mots en petits paquets. Nous vous recommandons de commencer avec un petit groupe de mots, puis d'ajouter de nouveaux paquets au fur et à mesure.",
+  },
+};
 
 interface WordPoolModalProps {
   language: Language;
@@ -26,9 +46,11 @@ interface WordPoolModalProps {
 
 export function WordPoolModal({ language, onClose }: WordPoolModalProps) {
   const [expandedLevels, setExpandedLevels] = useState<Record<string, boolean>>({});
+  const [showHelp, setShowHelp] = useState(false);
   const [, forceUpdate] = useState(0);
 
   const levels = getAvailableLevels();
+  const help = helpTexts[language] || helpTexts.en;
 
   const toggleExpand = (level: string) => {
     setExpandedLevels(prev => ({
@@ -74,9 +96,14 @@ export function WordPoolModal({ language, onClose }: WordPoolModalProps) {
               {t('wordPoolDesc', language, { count: totalSelected })}
             </span>
           </div>
-          <button class="word-pool-close" onClick={onClose}>
-            <X size={20} />
-          </button>
+          <div class="word-pool-header-actions">
+            <button class="word-pool-help" onClick={() => setShowHelp(true)}>
+              <HelpCircle size={20} />
+            </button>
+            <button class="word-pool-close" onClick={onClose}>
+              <X size={20} />
+            </button>
+          </div>
         </div>
 
         <div class="word-pool-content">
@@ -141,6 +168,14 @@ export function WordPoolModal({ language, onClose }: WordPoolModalProps) {
           })}
         </div>
       </div>
+
+      {showHelp && (
+        <HelpModal
+          title={help.title}
+          content={help.content}
+          onClose={() => setShowHelp(false)}
+        />
+      )}
     </div>
   );
 }

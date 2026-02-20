@@ -18,11 +18,13 @@ A Progressive Web App (PWA) for learning Dutch vocabulary with spaced repetition
 ```
 src/
 ├── components/       # Preact components (.tsx + .css)
-│   ├── Header.tsx       # Logo, streak, progress, language, settings, theme
+│   ├── Header.tsx       # Logo, streak, progress, language selector, settings
 │   ├── MainMenu.tsx     # Quiz type selection cards
-│   ├── QuizScreen.tsx   # Quiz interface
+│   ├── QuizScreen.tsx   # Multiple choice quiz interface
+│   ├── InputQuizScreen.tsx # Input-based quiz (writing, verb forms)
 │   ├── OptionButton.tsx # Multiple choice button
-│   ├── StatsFooter.tsx  # Expandable stats panel
+│   ├── StatsFooter.tsx  # Expandable stats panel, PWA update button
+│   ├── SettingsModal.tsx # Theme toggle, data export/import
 │   └── WordListModal.tsx # Word list by category
 ├── data/
 │   ├── a2-*.json        # Word data files
@@ -106,10 +108,11 @@ Key: `woorden_app_data`
 ## Key Features
 
 ### Implemented
-- 3 quiz types (translation both ways, article)
+- 5 quiz types (translation both ways, article, writing test, verb forms)
+- Input-based quizzes for writing and verb forms
 - Spaced repetition (priority based on history, last result)
 - Skill-based progress tracking per word
-- Dark/light theme (system preference aware)
+- Dark/light theme (in Settings modal, system preference aware)
 - Multi-language UI (TR/EN/AR/FR)
 - Stats footer (overall or quiz-specific)
 - Word list modal by category
@@ -117,11 +120,8 @@ Key: `woorden_app_data`
 - Personal best daily goal (min 100)
 - Export/Import data (JSON)
 - PWA (offline capable, installable)
-
-### TODO
-- [ ] Verb forms quiz (input-based, not multiple choice)
-  - Show infinitief, user types perfectum & imperfectum
-  - Case insensitive, trim whitespace
+- PWA update notification (green button in footer when new version available)
+- Mobile-optimized header (logo text hidden on small screens)
 
 ## Migration
 
