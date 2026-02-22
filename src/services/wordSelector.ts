@@ -1,29 +1,43 @@
-import type { Word, WordWithArticle, WordEntry, Language, SkillType, QuizMode } from '../types';
+import type { Word, Language, SkillType, QuizMode } from '../types';
 import { words, wordsWithArticles, getLevelWords, getWordLevel } from './words';
 import { getSkillProgress, getOverallStats, getSkillStats, getSkillForQuizType, getPinnedWords } from './storage';
 
-function calculatePriority(word: Word, skill: SkillType): number {
+interface WordScore {
+  word: Word;
+  group: 0 | 1 | 2; // 0=unseen, 1=wrong, 2=correct
+  seen: number;
+  wrongCount: number;
+  correctCount: number;
+}
+
+function buildWordScore(word: Word, skill: SkillType): WordScore {
   const progress = getSkillProgress(word.nl, skill);
 
   if (progress.seen === 0) {
-    return 100;
+    return { word, group: 0, seen: 0, wrongCount: 0, correctCount: 0 };
   }
 
-  let score = 99;
-  if (progress.lastResult !== 'wrong') {
-    score -= 50;
+  const wrongCount = progress.history.filter(h => h === 'w').length;
+  const correctCount = progress.history.filter(h => h === 'c').length;
+  const group = progress.lastResult === 'wrong' ? 1 : 2;
+
+  return { word, group, seen: progress.seen, wrongCount, correctCount };
+}
+
+function compareScores(a: WordScore, b: WordScore): number {
+  // Group order: 0 (unseen) > 1 (wrong) > 2 (correct)
+  if (a.group !== b.group) return a.group - b.group;
+
+  // Within same group: fewer seen first
+  if (a.seen !== b.seen) return a.seen - b.seen;
+
+  if (a.group === 1) {
+    // Wrong group: more wrong first
+    return b.wrongCount - a.wrongCount;
   } else {
-    score -= 10;
+    // Correct group: fewer correct first (least mastered first)
+    return a.correctCount - b.correctCount;
   }
-
-  const timeSinceLastSeen = progress.history.length > 0
-    ? (Date.now() - (progress.masteredAt || Date.now())) / (1000 * 60 * 60)
-    : 0;
-  const timeFactor = Math.log2(timeSinceLastSeen + 1) * 3;
-
-  score += timeFactor;
-
-  return Math.min(99, Math.max(0, score));
 }
 
 function getWordPool(quizType: string): Word[] {
@@ -52,22 +66,16 @@ export function selectWord(quizType: string = 'translation', mode: QuizMode = 'n
     }
   }
 
-  const wordPriorities = pool.map((word) => ({
-    word,
-    priority: calculatePriority(word, skill),
-  }));
+  const scores = pool.map(word => buildWordScore(word, skill));
 
-  const totalPriority = wordPriorities.reduce((sum, wp) => sum + wp.priority, 0);
-  let random = Math.random() * totalPriority;
+  // Sort by priority, shuffle among truly equal candidates
+  scores.sort((a, b) => {
+    const cmp = compareScores(a, b);
+    if (cmp !== 0) return cmp;
+    return Math.random() - 0.5;
+  });
 
-  for (const wp of wordPriorities) {
-    random -= wp.priority;
-    if (random <= 0) {
-      return wp.word;
-    }
-  }
-
-  return pool[Math.floor(Math.random() * pool.length)];
+  return scores[0].word;
 }
 
 export function selectWrongOptions(
