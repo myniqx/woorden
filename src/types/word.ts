@@ -40,12 +40,12 @@ export interface OtherWord extends BaseWord {
 
 export type WordEntry = NounWord | VerbWord | OtherWord;
 
-export interface Word extends WordEntry {
+export type Word = WordEntry & {
   id: number;
   word: string; // alias for nl (backward compatibility)
 }
 
-export interface WordWithArticle extends Word {
+export type WordWithArticle = Word & {
   article: Article;
 }
 
