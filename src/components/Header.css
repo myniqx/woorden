@@ -22,50 +22,82 @@
   gap: var(--spacing-md);
 }
 
-/* Streak Badge */
-.streak-badge {
+
+/* Daily Badge */
+.daily-badge {
   display: flex;
   align-items: center;
-  gap: 4px;
-  padding: 4px 10px;
-  background-color: var(--color-primary-light);
-  color: var(--color-primary);
+  gap: 6px;
+  padding: 4px 10px 4px 4px;
   border-radius: var(--radius-full);
   font-weight: 600;
   font-size: var(--text-sm);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-.streak-badge svg {
+.daily-badge.level-1 {
+  background-color: rgba(255, 107, 53, 0.12);
   color: #ff6b35;
 }
 
-/* Daily Progress */
-.daily-progress {
+.daily-badge.level-2 {
+  background-color: rgba(33, 150, 243, 0.12);
+  color: #2196f3;
+}
+
+.daily-badge.level-3 {
+  background-color: rgba(156, 39, 176, 0.12);
+  color: #9c27b0;
+}
+
+.daily-badge.level-4 {
+  background-color: rgba(245, 166, 35, 0.12);
+  color: #f5a623;
+}
+
+.daily-badge-circle {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
 }
 
-.daily-progress-bar {
-  width: 60px;
-  height: 6px;
-  background-color: var(--color-border);
-  border-radius: var(--radius-full);
-  overflow: hidden;
+.daily-badge-circle svg {
+  position: absolute;
 }
 
-.daily-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-hover));
-  border-radius: var(--radius-full);
-  transition: width var(--transition-normal);
+.circular-track {
+  stroke: currentColor;
+  opacity: 0.2;
 }
 
-.daily-progress-text {
-  font-size: var(--text-xs);
-  color: var(--color-text-secondary);
-  font-weight: 500;
-  min-width: 45px;
+.circular-fill {
+  transition: stroke-dashoffset var(--transition-normal);
+}
+
+.circular-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.daily-badge-text {
+  line-height: 1;
+}
+
+@keyframes level-up {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.25); }
+  70%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+.daily-badge.level-up {
+  animation: level-up 0.5s ease;
 }
 
 .logo {

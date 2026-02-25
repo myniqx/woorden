@@ -1,6 +1,7 @@
-import { ChevronLeft, Flame, Settings } from 'lucide-preact';
+import { useState, useEffect } from 'preact/hooks';
+import { ChevronLeft, Settings, Flame, Zap, Star, Crown } from 'lucide-preact';
 import type { Language } from '../types';
-import { getStreak, getDailyStats, getDailyGoal } from '../services/storage';
+import { getDailyStats, getDailyLevel } from '../services/storage';
 import './Header.css';
 
 interface HeaderProps {
@@ -26,10 +27,32 @@ export function Header({
   onSettingsClick,
 }: HeaderProps) {
   const currentLang = languages.find(l => l.code === language);
-  const streak = getStreak();
   const dailyStats = getDailyStats();
-  const dailyGoal = getDailyGoal();
-  const progressPercent = Math.min((dailyStats.practiced / dailyGoal) * 100, 100);
+  const { level, goal } = getDailyLevel();
+  const progressPercent = Math.min((dailyStats.practiced / goal) * 100, 100);
+
+  const SIZE = 28;
+  const STROKE = 3;
+  const RADIUS = (SIZE - STROKE) / 2;
+  const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+  const dashOffset = CIRCUMFERENCE * (1 - progressPercent / 100);
+
+  const LevelIcon = level === 1 ? Flame : level === 2 ? Zap : level === 3 ? Star : Crown;
+
+  const SESSION_KEY = 'woorden_last_level';
+  const prevLevel = Number(sessionStorage.getItem(SESSION_KEY) || level);
+  const isLevelUp = prevLevel < level;
+  sessionStorage.setItem(SESSION_KEY, String(level));
+
+  const [levelUpAnim, setLevelUpAnim] = useState(isLevelUp);
+
+  useEffect(() => {
+    if (isLevelUp) {
+      setLevelUpAnim(true);
+      const t = setTimeout(() => setLevelUpAnim(false), 500);
+      return () => clearTimeout(t);
+    }
+  }, [isLevelUp]);
 
   return (
     <header class="header">
@@ -47,21 +70,39 @@ export function Header({
       </div>
 
       <div class="header-center">
-        <div class="streak-badge" title="Daily streak">
-          <Flame size={16} />
-          <span>{streak}</span>
-        </div>
-
-        <div class="daily-progress" title={`${dailyStats.practiced} / ${dailyGoal}`}>
-          <div class="daily-progress-bar">
-            <div
-              class="daily-progress-fill"
-              style={{ width: `${progressPercent}%` }}
-            />
+        <div
+          class={`daily-badge level-${level}${levelUpAnim ? ' level-up' : ''}`}
+          title={`${dailyStats.practiced} / ${goal}`}
+        >
+          <div class="daily-badge-circle">
+            <svg width={SIZE} height={SIZE}>
+              <circle
+                class="circular-track"
+                cx={SIZE / 2}
+                cy={SIZE / 2}
+                r={RADIUS}
+                fill="none"
+                stroke-width={STROKE}
+              />
+              <circle
+                class="circular-fill"
+                cx={SIZE / 2}
+                cy={SIZE / 2}
+                r={RADIUS}
+                fill="none"
+                stroke="currentColor"
+                stroke-width={STROKE}
+                stroke-dasharray={CIRCUMFERENCE}
+                stroke-dashoffset={dashOffset}
+                stroke-linecap="round"
+                transform={`rotate(-90 ${SIZE / 2} ${SIZE / 2})`}
+              />
+            </svg>
+            <div class="circular-icon">
+              <LevelIcon size={13} />
+            </div>
           </div>
-          <span class="daily-progress-text">
-            {dailyStats.practiced}/{dailyGoal}
-          </span>
+          <span class="daily-badge-text">{dailyStats.practiced}/{goal}</span>
         </div>
       </div>
 

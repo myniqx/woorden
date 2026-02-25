@@ -48,15 +48,28 @@ export function App() {
   const [statsVersion, setStatsVersion] = useState(0);
   const [showSettings, setShowSettings] = useState(false);
 
+  useEffect(() => {
+    history.replaceState({ screen: 'menu' }, '');
+
+    const handlePopState = () => {
+      setCurrentQuizType(null);
+      setScreen('menu');
+      setShowSettings(false);
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   const startQuiz = (quizType: QuizType, mode: QuizMode = 'normal') => {
+    history.pushState({ screen: 'quiz' }, '');
     setCurrentQuizType(quizType);
     setCurrentQuizMode(mode);
     setScreen('quiz');
   };
 
   const exitQuiz = () => {
-    setCurrentQuizType(null);
-    setScreen('menu');
+    history.back();
   };
 
   const onStatsUpdate = () => {
