@@ -221,7 +221,7 @@ export function QuizScreen({ quizType, quizMode = 'normal', language, onExit, on
         <div class="options-section">
           {quiz.options.map((option) => (
             <OptionButton
-              key={option.id}
+              key={`${quiz.word.nl}-${option.id}`}
               option={option}
               selected={selectedId === option.id}
               showResult={showResult}

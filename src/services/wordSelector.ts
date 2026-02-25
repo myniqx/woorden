@@ -1,6 +1,8 @@
 import type { Word, Language, SkillType, QuizMode } from '../types';
 import { words, wordsWithArticles, getLevelWords, getWordLevel } from './words';
-import { getSkillProgress, getOverallStats, getSkillStats, getSkillForQuizType, getPinnedWords } from './storage';
+import { getSkillProgress, getWordProgress, getOverallStats, getSkillStats, getSkillForQuizType, getPinnedWords } from './storage';
+
+const RECENT_THRESHOLD_MS = 60 * 1000; // 1 minute
 
 interface WordScore {
   word: Word;
@@ -8,23 +10,29 @@ interface WordScore {
   seen: number;
   wrongCount: number;
   correctCount: number;
+  recentlySeen: boolean;
 }
 
 function buildWordScore(word: Word, skill: SkillType): WordScore {
   const progress = getSkillProgress(word.nl, skill);
+  const wordProgress = getWordProgress(word.nl);
+  const recentlySeen = wordProgress.lastSeen !== null && (Date.now() - wordProgress.lastSeen) < RECENT_THRESHOLD_MS;
 
   if (progress.seen === 0) {
-    return { word, group: 0, seen: 0, wrongCount: 0, correctCount: 0 };
+    return { word, group: 0, seen: 0, wrongCount: 0, correctCount: 0, recentlySeen };
   }
 
   const wrongCount = progress.history.filter(h => h === 'w').length;
   const correctCount = progress.history.filter(h => h === 'c').length;
   const group = progress.lastResult === 'wrong' ? 1 : 2;
 
-  return { word, group, seen: progress.seen, wrongCount, correctCount };
+  return { word, group, seen: progress.seen, wrongCount, correctCount, recentlySeen };
 }
 
 function compareScores(a: WordScore, b: WordScore): number {
+  // Recently seen words go last
+  if (a.recentlySeen !== b.recentlySeen) return a.recentlySeen ? 1 : -1;
+
   // Group order: 0 (unseen) > 1 (wrong) > 2 (correct)
   if (a.group !== b.group) return a.group - b.group;
 
@@ -55,15 +63,10 @@ export function selectWord(quizType: string = 'translation', mode: QuizMode = 'n
   let pool = getWordPool(quizType);
   const skill = getSkillForQuizType(quizType);
 
-  // If pinned mode, filter to only pinned words
+  // If pinned mode, filter to only pinned words that are in the active pool
   if (mode === 'pinned') {
     const pinnedNls = getPinnedWords(quizType);
     pool = pool.filter(w => pinnedNls.includes(w.nl));
-
-    // If no pinned words somehow, fall back to normal pool
-    if (pool.length === 0) {
-      pool = getWordPool(quizType);
-    }
   }
 
   const scores = pool.map(word => buildWordScore(word, skill));

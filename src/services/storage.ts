@@ -335,6 +335,30 @@ export function getBestDaily(): number {
   return appData.bestDaily;
 }
 
+export interface DailyLevel {
+  level: 1 | 2 | 3 | 4;
+  goal: number;
+  color: string;
+}
+
+const LEVEL_THRESHOLDS = [100, 250, 500] as const;
+
+export function getDailyLevel(): DailyLevel {
+  const practiced = getDailyStats().practiced;
+  const bestDaily = appData.bestDaily;
+
+  if (practiced < LEVEL_THRESHOLDS[0]) {
+    return { level: 1, goal: LEVEL_THRESHOLDS[0], color: '#ff6b35' };
+  }
+  if (practiced < LEVEL_THRESHOLDS[1]) {
+    return { level: 2, goal: LEVEL_THRESHOLDS[1], color: '#2196f3' };
+  }
+  if (practiced < LEVEL_THRESHOLDS[2]) {
+    return { level: 3, goal: LEVEL_THRESHOLDS[2], color: '#9c27b0' };
+  }
+  return { level: 4, goal: Math.max(LEVEL_THRESHOLDS[2], bestDaily), color: '#f5a623' };
+}
+
 // Get stats for a specific skill across all words
 export function getSkillStats(skill: SkillType): {
   total: number;
@@ -626,7 +650,9 @@ export function getPinnedWords(quizType: string): string[] {
 }
 
 export function getPinnedWordCount(quizType: string): number {
-  return getPinnedWords(quizType).length;
+  const pinnedNls = getPinnedWords(quizType);
+  if (pinnedNls.length === 0) return 0;
+  return words.filter(w => pinnedNls.includes(w.nl)).length;
 }
 
 export function isPinned(quizType: string, wordNl: string): boolean {

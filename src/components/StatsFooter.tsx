@@ -1,8 +1,8 @@
 import { useState } from 'preact/hooks';
-import { BarChart3, Eye, BookOpen, AlertCircle, ChevronUp, RefreshCw } from 'lucide-preact';
+import { BarChart3, Eye, BookOpen, AlertCircle, ChevronUp, RefreshCw, Flame } from 'lucide-preact';
 import type { Language, Word, WordStats, QuizType } from '../types';
 import { words } from '../services/words';
-import { getAllWordStats } from '../services/storage';
+import { getAllWordStats, getStreak } from '../services/storage';
 import { getStatsSummary } from '../services/wordSelector';
 import { t } from '../data/translations';
 import { WordListModal } from './WordListModal';
@@ -62,6 +62,7 @@ export function StatsFooter({ language, quizType, needRefresh, onUpdate }: Stats
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
   const stats = getStatsSummary(quizType || undefined);
+  const streak = getStreak();
   const tr = (key: string) => t(key, language);
   const progressPercent = stats.total > 0 ? Math.round((stats.seen / stats.total) * 100) : 0;
 
@@ -77,10 +78,14 @@ export function StatsFooter({ language, quizType, needRefresh, onUpdate }: Stats
         <div class="stats-footer-row">
           <button class="stats-toggle" onClick={() => setExpanded(!expanded)}>
             <div class="stats-summary">
-              <BarChart3 size={18} />
-              <span class="stats-progress">
-                {stats.seen} / {stats.total} ({progressPercent}%)
-              </span>
+              <div class="stats-progress-badge">
+                <BarChart3 size={14} />
+                <span>{stats.seen} / {stats.total} ({progressPercent}%)</span>
+              </div>
+              <div class="stats-streak">
+                <Flame size={14} />
+                <span>{streak}</span>
+              </div>
             </div>
             <ChevronUp size={20} class={`toggle-icon ${expanded ? 'rotated' : ''}`} />
           </button>

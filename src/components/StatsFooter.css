@@ -34,9 +34,32 @@
   gap: var(--spacing-sm);
 }
 
-.stats-progress {
+.stats-progress-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  background-color: var(--color-surface-elevated);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-full);
+  font-weight: 600;
   font-size: var(--text-sm);
-  font-weight: 500;
+}
+
+.stats-streak {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: var(--text-sm);
+}
+
+.stats-streak svg {
+  color: #ff6b35;
 }
 
 .toggle-icon {
