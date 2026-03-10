@@ -1,5 +1,5 @@
 import { useRef } from 'preact/hooks';
-import { X, Download, Upload, Sun, Moon } from 'lucide-preact';
+import { X, Download, Upload, Sun, Moon, Users } from 'lucide-preact';
 import { exportData, importData } from '../services/storage';
 import './SettingsModal.css';
 
@@ -10,9 +10,10 @@ interface SettingsModalProps {
   onPacksChanged?: () => void;
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
+  visitorCount: number | null;
 }
 
-export function SettingsModal({ isOpen, onClose, onDataImported, theme, onToggleTheme }: SettingsModalProps) {
+export function SettingsModal({ isOpen, onClose, onDataImported, theme, onToggleTheme, visitorCount }: SettingsModalProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   if (!isOpen) return null;
@@ -120,6 +121,14 @@ export function SettingsModal({ isOpen, onClose, onDataImported, theme, onToggle
           onChange={handleFileChange}
           style={{ display: 'none' }}
         />
+
+        <div class="settings-visitor-footer">
+          <Users size={13} />
+          {visitorCount !== null
+            ? <span>{visitorCount.toLocaleString()} {visitorCount === 1 ? 'visitor' : 'visitors'}</span>
+            : <span class="visitor-loading">···</span>
+          }
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import { useState } from 'preact/hooks';
 import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch } from 'lucide-preact';
 import type { QuizType, QuizMode, Language } from '../types';
 import { t } from '../data/translations';
-import { getSelectedWordCount } from '../services/words';
+import { getSelectedWordCount, getAvailableLevels, getChunkCount, getChunkWordCount, getLevelWordCount, isChunkEnabled } from '../services/words';
 import { getPinnedWordCount, MIN_PINS_FOR_QUIZ, canPinInQuizType } from '../services/storage';
 import { WordPoolModal } from './WordPoolModal';
 import { SupportButton } from './SupportButton';
@@ -34,6 +34,16 @@ export function MainMenu({ onStartQuiz, language }: MainMenuProps) {
   const tr = (key: string) => t(key, language);
   const selectedCount = getSelectedWordCount();
 
+  const levelBadges = getAvailableLevels().map(level => {
+    const total = getLevelWordCount(level);
+    const chunkCount = getChunkCount(level);
+    let selected = 0;
+    for (let i = 0; i < chunkCount; i++) {
+      if (isChunkEnabled(level, i)) selected += getChunkWordCount(level, i);
+    }
+    return { level, selected, total };
+  });
+
   const handleWordPoolClose = () => {
     setShowWordPool(false);
     forceUpdate(n => n + 1);
@@ -48,6 +58,17 @@ export function MainMenu({ onStartQuiz, language }: MainMenuProps) {
           <span class="word-pool-button-count">
             {t('wordPoolDesc', language, { count: selectedCount })}
           </span>
+          <div class="word-pool-badges">
+            {levelBadges.map(({ level, selected, total }) => (
+              <span
+                key={level}
+                class={`word-pool-badge ${selected === 0 ? 'muted' : ''}`}
+              >
+                <span class="word-pool-badge-level">{level}</span>
+                <span class="word-pool-badge-count">{selected}/{total}</span>
+              </span>
+            ))}
+          </div>
         </div>
       </button>
 

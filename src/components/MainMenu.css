@@ -106,6 +106,52 @@
   color: var(--color-text-secondary);
 }
 
+.word-pool-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-xs);
+}
+
+.word-pool-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  font-size: var(--text-xs);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+}
+
+.word-pool-badge-level {
+  font-weight: 700;
+  width: 32px;
+  text-align: right;
+  padding: 2px 6px 2px 4px;
+  background: var(--color-primary);
+  color: white;
+}
+
+.word-pool-badge-count {
+  padding: 2px 7px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.word-pool-badge.muted {
+  border-color: var(--color-border);
+}
+
+.word-pool-badge.muted .word-pool-badge-level {
+  background: var(--color-text-muted);
+  color: var(--color-surface);
+}
+
+.word-pool-badge.muted .word-pool-badge-count {
+  background: var(--color-surface-elevated);
+  color: var(--color-text-muted);
+}
+
 .quiz-type-group {
   display: flex;
   flex-direction: column;

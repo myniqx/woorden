@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'preact/hooks';
+import { useState, useEffect, useRef } from 'preact/hooks';
 import { useRegisterSW } from 'virtual:pwa-register/preact';
 import { useTheme, useLanguage } from './hooks';
 import { Header } from './components/Header';
@@ -47,6 +47,32 @@ export function App() {
   const [currentQuizMode, setCurrentQuizMode] = useState<QuizMode>('normal');
   const [statsVersion, setStatsVersion] = useState(0);
   const [showSettings, setShowSettings] = useState(false);
+  const [visitorCount, setVisitorCount] = useState<number | null>(null);
+  const visitorTracked = useRef(false);
+
+  useEffect(() => {
+    if (visitorTracked.current) return;
+    visitorTracked.current = true;
+
+    const COUNTER_KEY = 'woorden-nl-app-visitors-2025';
+    const COUNTER_API = 'https://countapi.mileshilliard.com/api/v1';
+    const alreadyCounted = localStorage.getItem('visitor_counted');
+
+    if (alreadyCounted) {
+      fetch(`${COUNTER_API}/get/${COUNTER_KEY}`)
+        .then(r => r.json())
+        .then(data => setVisitorCount(data.value))
+        .catch(() => {});
+    } else {
+      fetch(`${COUNTER_API}/hit/${COUNTER_KEY}`)
+        .then(r => r.json())
+        .then(data => {
+          localStorage.setItem('visitor_counted', '1');
+          setVisitorCount(data.value);
+        })
+        .catch(() => {});
+    }
+  }, []);
 
   useEffect(() => {
     history.replaceState({ screen: 'menu' }, '');
@@ -128,6 +154,7 @@ export function App() {
         onPacksChanged={onStatsUpdate}
         theme={theme}
         onToggleTheme={toggleTheme}
+        visitorCount={visitorCount}
       />
     </div>
   );
