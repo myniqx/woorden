@@ -5,7 +5,11 @@
     "tr": "o, şu",
     "en": "that",
     "ar": "ذلك",
-    "fr": "cela"
+    "fr": "cela",
+    "zinnen": [
+      "2jdki4r2",
+      "cwmxn81h"
+    ]
   },
   {
     "nl": "dit",
@@ -13,7 +17,10 @@
     "tr": "bu",
     "en": "this",
     "ar": "هذا",
-    "fr": "ceci"
+    "fr": "ceci",
+    "zinnen": [
+      "5o4q5ztl"
+    ]
   },
   {
     "nl": "dorp",
@@ -22,7 +29,12 @@
     "tr": "köy",
     "en": "village",
     "ar": "قرية",
-    "fr": "village"
+    "fr": "village",
+    "zinnen": [
+      "wnur0spl",
+      "djvxhctt",
+      "cwmxn81h"
+    ]
   },
   {
     "nl": "een",
@@ -30,7 +42,11 @@
     "tr": "bir",
     "en": "a, one",
     "ar": "واحد",
-    "fr": "un"
+    "fr": "un",
+    "zinnen": [
+      "wnur0spl",
+      "5o4q5ztl"
+    ]
   },
   {
     "nl": "gaan",
@@ -40,7 +56,10 @@
     "tr": "gitmek",
     "en": "to go",
     "ar": "يذهب",
-    "fr": "aller"
+    "fr": "aller",
+    "zinnen": [
+      "wnur0spl"
+    ]
   },
   {
     "nl": "hij",
@@ -48,7 +67,11 @@
     "tr": "o (erkek)",
     "en": "he",
     "ar": "هو",
-    "fr": "il"
+    "fr": "il",
+    "zinnen": [
+      "djvxhctt",
+      "2jdki4r2"
+    ]
   },
   {
     "nl": "ik",
@@ -56,7 +79,11 @@
     "tr": "ben",
     "en": "I",
     "ar": "أنا",
-    "fr": "je"
+    "fr": "je",
+    "zinnen": [
+      "wnur0spl",
+      "2jdki4r2"
+    ]
   },
   {
     "nl": "in",
@@ -64,7 +91,10 @@
     "tr": "-de, -da, içinde",
     "en": "in, at",
     "ar": "في",
-    "fr": "dans"
+    "fr": "dans",
+    "zinnen": [
+      "djvxhctt"
+    ]
   },
   {
     "nl": "jaar",
@@ -73,7 +103,10 @@
     "tr": "yıl",
     "en": "year",
     "ar": "سنة",
-    "fr": "année"
+    "fr": "année",
+    "zinnen": [
+      "wnur0spl"
+    ]
   },
   {
     "nl": "komen",
@@ -83,7 +116,11 @@
     "tr": "gelmek",
     "en": "to come",
     "ar": "يأتي",
-    "fr": "venir"
+    "fr": "venir",
+    "zinnen": [
+      "djvxhctt",
+      "2jdki4r2"
+    ]
   },
   {
     "nl": "leren",
