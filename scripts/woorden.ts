@@ -3,15 +3,10 @@
  * woorden — CLI tool for managing Dutch word packs
  *
  * Commands:
- *   find-duplicate <PACK> [--page N]   Find words in PACK that also exist in other packs
- *   remove <PACK>                       Remove those duplicates from PACK (with confirmation)
- *
- * Duplicate key: nl + type  →  same word as different type (noun vs verb) is NOT a duplicate
- *
- * Usage:
- *   npm run woorden find-duplicate A1
- *   npm run woorden find-duplicate A1 --page 2
- *   npm run woorden remove A2
+ *   find-duplicate <PACK> [--page N]   Find words in PACK that also exist in higher packs
+ *   remove <PACK> <word>               Remove a specific word from PACK (asks confirmation)
+ *   add-zin [--limit N]                Add an example sentence interactively
+ *   remove-zin <id>                    Remove a sentence by ID (asks confirmation)
  */
 
 import { readFileSync, readdirSync, writeFileSync } from 'fs';
@@ -22,8 +17,10 @@ import * as readline from 'readline';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../src/data');
 const PAGE_SIZE = 5;
+const DEFAULT_ZIN_LIMIT = 5;
+const MAX_ZINNEN_PER_FILE = 100;
 
-// ─── Types ───────────────────────────────────────────────────────────────────
+// ─── Types ────────────────────────────────────────────────────────────────────
 
 interface WordEntry {
   nl: string;
@@ -36,6 +33,7 @@ interface WordEntry {
   tr?: string;
   ar?: string;
   fr?: string;
+  zinnen?: string[];
 }
 
 interface WordInPack {
@@ -46,56 +44,56 @@ interface WordInPack {
 
 interface Duplicate {
   key: string;
-  entries: WordInPack[]; // [0] = from target pack, rest = from other packs
+  entries: WordInPack[];
 }
+
+// ZinFile: { "ab3k9x2m": "ik 1|denk 2|over hen 1|aan", ... }
+type ZinFile = Record<string, string>;
 
 // ─── Pack helpers ─────────────────────────────────────────────────────────────
 
-/** a1-001.json → "A1",  a2p-003.json → "A2+" */
 function filenameToPack(filename: string): string {
   const m = filename.match(/^(a\d+p?)-\d+\.json$/);
   if (!m) return '';
   return m[1] === 'a2p' ? 'A2+' : m[1].toUpperCase();
 }
 
-/** Normalise user input: "a2p" | "a2+" | "A2+" → "A2+" */
 function normalizePack(arg: string): string {
-  const lower = arg.toLowerCase().replace('+', 'p'); // a2+ → a2p
+  const lower = arg.toLowerCase().replace('+', 'p');
   if (lower === 'a2p') return 'A2+';
-  return lower.replace('a', 'A'); // a1 → A1, a2 → A2
+  return lower.replace('a', 'A');
 }
 
-// ─── Data loading ─────────────────────────────────────────────────────────────
+// ─── Word data ────────────────────────────────────────────────────────────────
 
 function loadAllWords(): Map<string, WordInPack[]> {
   const packMap = new Map<string, WordInPack[]>();
-
-  const files = readdirSync(DATA_DIR)
-    .filter(f => f.endsWith('.json'))
-    .sort();
+  const files = readdirSync(DATA_DIR).filter(f => f.endsWith('.json')).sort();
 
   for (const file of files) {
     const pack = filenameToPack(file);
     if (!pack) continue;
-
     const words: WordEntry[] = JSON.parse(readFileSync(join(DATA_DIR, file), 'utf-8'));
     if (!packMap.has(pack)) packMap.set(pack, []);
-    for (const word of words) {
-      packMap.get(pack)!.push({ word, pack, file });
-    }
+    for (const word of words) packMap.get(pack)!.push({ word, pack, file });
   }
-
   return packMap;
+}
+
+function findWordEntry(nl: string, allWords: Map<string, WordInPack[]>): WordInPack | null {
+  for (const words of allWords.values()) {
+    const found = words.find(wp => wp.word.nl === nl);
+    if (found) return found;
+  }
+  return null;
 }
 
 // ─── Duplicate logic ──────────────────────────────────────────────────────────
 
-/** nl + type = unique identity.  Same nl, different type = legitimately different word. */
 function dupKey(w: WordEntry): string {
   return `${w.nl}::${w.type}`;
 }
 
-// Packs ordered from lowest to highest level
 const PACK_ORDER = ['A1', 'A2', 'A2+'];
 
 function higherPacks(targetPack: string): string[] {
@@ -108,7 +106,6 @@ function findDuplicates(targetPack: string, allWords: Map<string, WordInPack[]>)
   const targetWords = allWords.get(targetPack)!;
   const above = new Set(higherPacks(targetPack));
 
-  // Index only words from HIGHER packs
   const otherIndex = new Map<string, WordInPack[]>();
   for (const [pack, words] of allWords) {
     if (!above.has(pack)) continue;
@@ -123,12 +120,85 @@ function findDuplicates(targetPack: string, allWords: Map<string, WordInPack[]>)
   for (const wp of targetWords) {
     const k = dupKey(wp.word);
     const others = otherIndex.get(k);
-    if (others?.length) {
-      duplicates.push({ key: k, entries: [wp, ...others] });
+    if (others?.length) duplicates.push({ key: k, entries: [wp, ...others] });
+  }
+  return duplicates;
+}
+
+// ─── Zin helpers ──────────────────────────────────────────────────────────────
+
+function getZinFiles(): string[] {
+  return readdirSync(DATA_DIR).filter(f => /^zin-\d+\.json$/.test(f)).sort();
+}
+
+function loadZinFile(file: string): ZinFile {
+  try { return JSON.parse(readFileSync(join(DATA_DIR, file), 'utf-8')); }
+  catch { return {}; }
+}
+
+function saveZinFile(file: string, data: ZinFile): void {
+  writeFileSync(join(DATA_DIR, file), JSON.stringify(data, null, 2) + '\n', 'utf-8');
+}
+
+function loadAllZins(): Map<string, { marked: string; file: string }> {
+  const result = new Map<string, { marked: string; file: string }>();
+  for (const file of getZinFiles()) {
+    const data = loadZinFile(file);
+    for (const [id, marked] of Object.entries(data)) result.set(id, { marked, file });
+  }
+  return result;
+}
+
+function getActiveZinFile(): { file: string; data: ZinFile } {
+  const files = getZinFiles();
+  for (const file of [...files].reverse()) {
+    const data = loadZinFile(file);
+    if (Object.keys(data).length < MAX_ZINNEN_PER_FILE) return { file, data };
+  }
+  const num = files.length + 1;
+  return { file: `zin-${String(num).padStart(3, '0')}.json`, data: {} };
+}
+
+function generateId(existingIds: Set<string>): string {
+  const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  let id: string;
+  do {
+    id = Array.from({ length: 8 }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
+  } while (existingIds.has(id));
+  return id;
+}
+
+/**
+ * Parse "ik 1|denk 2|over hen 1|aan"
+ * → clean: "ik denk over hen aan"
+ * → groups: Map { 1 → ["denk","aan"], 2 → ["over"] }
+ */
+function parseMarked(marked: string): { clean: string; groups: Map<number, string[]> } {
+  const tokens = marked.trim().split(/\s+/);
+  const groups = new Map<number, string[]>();
+  const cleanTokens: string[] = [];
+
+  for (const token of tokens) {
+    const m = token.match(/^(\d+)\|(.+)$/);
+    if (m) {
+      const num = parseInt(m[1]);
+      if (!groups.has(num)) groups.set(num, []);
+      groups.get(num)!.push(m[2]);
+      cleanTokens.push(m[2]);
+    } else {
+      cleanTokens.push(token);
     }
   }
+  return { clean: cleanTokens.join(' '), groups };
+}
 
-  return duplicates;
+/** Render with one word group bolded, strip notation from rest */
+function renderHighlight(marked: string, activeNum: number): string {
+  return marked.trim().split(/\s+/).map(token => {
+    const m = token.match(/^(\d+)\|(.+)$/);
+    if (!m) return token;
+    return parseInt(m[1]) === activeNum ? BOLD(m[2]) : m[2];
+  }).join(' ');
 }
 
 // ─── Formatting ───────────────────────────────────────────────────────────────
@@ -156,51 +226,34 @@ function translationMatch(a: WordEntry, b: WordEntry): 'identical' | 'similar' |
 
 function entryLines(w: WordEntry): string[] {
   const lines: string[] = [];
-
-  // Article / diminutive line (nouns)
   if (w.article) {
-    const dim = w.diminutive ? `  diminutive: ${w.diminutive}` : '';
-    lines.push(`article: ${w.article}${dim}`);
+    lines.push(`article: ${w.article}${w.diminutive ? `  diminutive: ${w.diminutive}` : ''}`);
   }
-
-  // Verb forms
   if (w.perfectum || w.imperfectum) {
     const parts: string[] = [];
     if (w.perfectum)   parts.push(`perfectum: ${w.perfectum}`);
     if (w.imperfectum) parts.push(`imperfectum: ${w.imperfectum}`);
     lines.push(parts.join('   '));
   }
-
-  // Translations — print each language on its own column-ish slot
   const langs: Array<keyof WordEntry> = ['en', 'tr', 'fr', 'ar'];
-  const transParts = langs
-    .filter(l => w[l])
-    .map(l => `${l}: ${w[l]}`);
+  const transParts = langs.filter(l => w[l]).map(l => `${l}: ${w[l]}`);
   if (transParts.length) lines.push(transParts.join('   '));
-
   return lines;
 }
 
 function printDuplicate(dup: Duplicate, index: number, total: number) {
   const [target, ...others] = dup.entries;
   const w = target.word;
-
   console.log(`\n  [${index}/${total}]  ${BOLD(w.nl)}   type: ${w.type}`);
   console.log('  ' + '─'.repeat(60));
 
-  const allEntries = [target, ...others];
-  for (let i = 0; i < allEntries.length; i++) {
-    const { word, pack, file } = allEntries[i];
-    const corner = i === 0 ? '┌─' : i < allEntries.length - 1 ? '├─' : '└─';
-    const packTag = pack.padEnd(4);
-    console.log(`  ${corner} ${BOLD(packTag)}  ${DIM(file)}`);
-
-    for (const line of entryLines(word)) {
-      console.log(`       ${line}`);
-    }
+  for (let i = 0; i < dup.entries.length; i++) {
+    const { word, pack, file } = dup.entries[i];
+    const corner = i === 0 ? '┌─' : i < dup.entries.length - 1 ? '├─' : '└─';
+    console.log(`  ${corner} ${BOLD(pack.padEnd(4))}  ${DIM(file)}`);
+    for (const line of entryLines(word)) console.log(`       ${line}`);
   }
 
-  // Summary verdict (only makes sense when exactly 2 entries)
   if (others.length === 1) {
     const match = translationMatch(target.word, others[0].word);
     const label =
@@ -217,23 +270,19 @@ function cmdFindDuplicate(args: string[]) {
   const packArg = args[0];
   if (!packArg || packArg.startsWith('--')) {
     console.error('Usage: woorden find-duplicate <PACK> [--page N]');
-    console.error('       Packs: A1, A2, A2+');
     process.exit(1);
   }
 
   const targetPack = normalizePack(packArg);
   const pageIdx = args.indexOf('--page');
   const page = pageIdx >= 0 ? (parseInt(args[pageIdx + 1]) || 1) : 1;
-
   const allWords = loadAllWords();
 
   if (!allWords.has(targetPack)) {
-    const available = [...allWords.keys()].join(', ');
-    console.error(`Pack "${targetPack}" not found. Available: ${available}`);
+    console.error(`Pack "${targetPack}" not found. Available: ${[...allWords.keys()].join(', ')}`);
     process.exit(1);
   }
 
-  // Pack summary
   console.log('');
   console.log('  Packs loaded:');
   for (const [pack, words] of allWords) {
@@ -256,24 +305,12 @@ function cmdFindDuplicate(args: string[]) {
   console.log(`\n  Found ${BOLD(String(duplicates.length))} duplicate(s) in ${BOLD(targetPack)}` +
     (totalPages > 1 ? `  (page ${clampedPage}/${totalPages})` : '') + '\n');
 
-  for (let i = 0; i < slice.length; i++) {
-    printDuplicate(slice[i], start + i + 1, duplicates.length);
-  }
+  for (let i = 0; i < slice.length; i++) printDuplicate(slice[i], start + i + 1, duplicates.length);
 
   if (clampedPage < totalPages) {
     console.log(`\n  Next page:  woorden find-duplicate ${packArg} --page ${clampedPage + 1}`);
   }
-
   console.log(`\n  To remove a word:  woorden remove ${packArg} <word>\n`);
-}
-
-function removeWordFromFile(file: string, keyToRemove: string): boolean {
-  const path = join(DATA_DIR, file);
-  const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
-  const filtered = words.filter(w => dupKey(w) !== keyToRemove);
-  if (filtered.length === words.length) return false;
-  writeFileSync(path, JSON.stringify(filtered, null, 2) + '\n', 'utf-8');
-  return true;
 }
 
 async function cmdRemove(args: string[]) {
@@ -282,7 +319,6 @@ async function cmdRemove(args: string[]) {
 
   if (!packArg || packArg.startsWith('--') || !nlWord) {
     console.error('Usage: woorden remove <PACK> <word>');
-    console.error('       Example: woorden remove A1 groot');
     process.exit(1);
   }
 
@@ -290,14 +326,11 @@ async function cmdRemove(args: string[]) {
   const allWords = loadAllWords();
 
   if (!allWords.has(targetPack)) {
-    const available = [...allWords.keys()].join(', ');
-    console.error(`Pack "${targetPack}" not found. Available: ${available}`);
+    console.error(`Pack "${targetPack}" not found. Available: ${[...allWords.keys()].join(', ')}`);
     process.exit(1);
   }
 
-  // Find all entries in target pack matching nl word
   const matches = allWords.get(targetPack)!.filter(wp => wp.word.nl === nlWord);
-
   if (matches.length === 0) {
     console.log(`\n  "${nlWord}" not found in ${targetPack}.\n`);
     process.exit(1);
@@ -305,50 +338,187 @@ async function cmdRemove(args: string[]) {
 
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
   const ask = (q: string) => new Promise<string>(resolve => rl.question(q, resolve));
-
   let toDelete: WordInPack;
 
   if (matches.length === 1) {
-    // Single match — show it and confirm
     const wp = matches[0];
     console.log(`\n  Found in ${BOLD(targetPack)}  ${DIM(wp.file)}`);
-    for (const line of entryLines(wp.word)) {
-      console.log(`    ${line}`);
-    }
+    for (const line of entryLines(wp.word)) console.log(`    ${line}`);
     const answer = await ask(`\n  Remove "${nlWord}" (${wp.word.type}) from ${BOLD(targetPack)}? [y/N]  `);
     rl.close();
-    if (answer.trim().toLowerCase() !== 'y') {
-      console.log('  Cancelled.\n');
-      return;
-    }
+    if (answer.trim().toLowerCase() !== 'y') { console.log('  Cancelled.\n'); return; }
     toDelete = wp;
   } else {
-    // Multiple types — let user pick
-    console.log(`\n  "${nlWord}" appears ${matches.length} times in ${BOLD(targetPack)} with different types:\n`);
+    console.log(`\n  "${nlWord}" appears ${matches.length} times in ${BOLD(targetPack)}:\n`);
     for (let i = 0; i < matches.length; i++) {
       const { word, file } = matches[i];
       console.log(`  [${i + 1}]  type: ${BOLD(word.type)}   ${DIM(file)}`);
-      for (const line of entryLines(word)) {
-        console.log(`       ${line}`);
-      }
+      for (const line of entryLines(word)) console.log(`       ${line}`);
       console.log('');
     }
     const answer = await ask(`  Which to remove? [1-${matches.length}] or [n] to cancel:  `);
     rl.close();
     const idx = parseInt(answer.trim()) - 1;
-    if (isNaN(idx) || idx < 0 || idx >= matches.length) {
-      console.log('  Cancelled.\n');
-      return;
-    }
+    if (isNaN(idx) || idx < 0 || idx >= matches.length) { console.log('  Cancelled.\n'); return; }
     toDelete = matches[idx];
   }
 
-  const removed = removeWordFromFile(toDelete.file, dupKey(toDelete.word));
-  if (removed) {
-    console.log(`\n  ${GREEN('✓')} Removed "${nlWord}" (${toDelete.word.type}) from ${DIM(toDelete.file)}\n`);
-  } else {
-    console.error(`  Could not remove word from file.\n`);
+  const path = join(DATA_DIR, toDelete.file);
+  const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
+  const filtered = words.filter(w => dupKey(w) !== dupKey(toDelete.word));
+  writeFileSync(path, JSON.stringify(filtered, null, 2) + '\n', 'utf-8');
+  console.log(`\n  ${GREEN('✓')} Removed "${nlWord}" (${toDelete.word.type}) from ${DIM(toDelete.file)}\n`);
+}
+
+async function cmdAddZin(args: string[]) {
+  const limitIdx = args.indexOf('--limit');
+  const limit = limitIdx >= 0 ? (parseInt(args[limitIdx + 1]) || DEFAULT_ZIN_LIMIT) : DEFAULT_ZIN_LIMIT;
+
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+  const ask = (q: string) => new Promise<string>(resolve => rl.question(q, resolve));
+
+  // Step 1: get marked sentence
+  const markedArg = args.filter(a => !a.startsWith('--') && !/^\d+$/.test(a))[0];
+  const marked = markedArg || (await ask('\n  Zin (with notation): ')).trim();
+
+  const { clean, groups } = parseMarked(marked);
+  if (groups.size === 0) {
+    console.log(`  No annotated words found. Use notation like: ik 1|ga naar 2|school`);
+    rl.close();
+    return;
   }
+
+  // Step 2: get nl base form for each group number
+  const sortedNums = [...groups.keys()].sort((a, b) => a - b);
+  const nlMap = new Map<number, string>();
+  for (const num of sortedNums) {
+    const tokens = groups.get(num)!;
+    const nl = (await ask(`  Word ${num} [${tokens.join('...')}] (nl form): `)).trim();
+    nlMap.set(num, nl);
+  }
+  rl.close();
+
+  // Step 3: preview
+  console.log(`\n  Clean:  ${clean}`);
+  for (const [num, nl] of nlMap) {
+    console.log(`  Word ${num} (${nl}):  ${renderHighlight(marked, num)}`);
+  }
+  console.log('');
+
+  // Step 4: look up words and check limits
+  const allWords = loadAllWords();
+  const nlForms = [...nlMap.values()];
+
+  type WordResult = { nl: string; wp: WordInPack | null; zinCount: number; atLimit: boolean };
+  const results: WordResult[] = [];
+
+  for (const nl of nlForms) {
+    const wp = findWordEntry(nl, allWords);
+    const zinCount = wp?.word.zinnen?.length ?? 0;
+    const atLimit = zinCount >= limit;
+    results.push({ nl, wp, zinCount, atLimit });
+
+    if (!wp) {
+      console.log(`  ${RED('✗')} "${nl}" not found in any pack`);
+    } else {
+      const limitTag = atLimit ? RED(` ← at limit`) : '';
+      console.log(`  ${atLimit ? AMBER('~') : GREEN('✓')} ${nl.padEnd(20)} ${wp.pack}  ${DIM(wp.file)}  zinnen: ${zinCount}/${limit}${limitTag}`);
+    }
+  }
+
+  // All found words are at limit → error
+  const foundResults = results.filter(r => r.wp !== null);
+  if (foundResults.length > 0 && foundResults.every(r => r.atLimit)) {
+    console.log(`\n  ${RED('✗')} All words are at limit (${limit}). Zin not added.\n`);
+    return;
+  }
+
+  // Step 5: generate ID, write to zin file
+  const allZins = loadAllZins();
+  const id = generateId(new Set(allZins.keys()));
+  const { file: zinFile, data: zinData } = getActiveZinFile();
+  zinData[id] = marked;
+  saveZinFile(zinFile, zinData);
+  console.log(`\n  ${GREEN('✓')} Added ${BOLD(id)} → ${DIM(zinFile)}`);
+
+  // Step 6: add ID to word files (skip words at limit or not found)
+  for (const { nl, wp, atLimit } of results) {
+    if (!wp) continue;
+    if (atLimit) {
+      console.log(`  ${AMBER('~')} ${nl} skipped (at limit ${limit})`);
+      continue;
+    }
+    const path = join(DATA_DIR, wp.file);
+    const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
+    const idx = words.findIndex(w => w.nl === wp.word.nl && w.type === wp.word.type);
+    if (idx !== -1) {
+      if (!words[idx].zinnen) words[idx].zinnen = [];
+      words[idx].zinnen!.push(id);
+      writeFileSync(path, JSON.stringify(words, null, 2) + '\n', 'utf-8');
+      console.log(`  ${GREEN('✓')} ${nl}  ${DIM(wp.file)}`);
+    }
+  }
+  console.log('');
+}
+
+async function cmdRemoveZin(args: string[]) {
+  const zinId = args[0];
+  if (!zinId) {
+    console.error('Usage: woorden remove-zin <id>');
+    process.exit(1);
+  }
+
+  const allZins = loadAllZins();
+  const found = allZins.get(zinId);
+  if (!found) {
+    console.error(`\n  Zin "${zinId}" not found.\n`);
+    process.exit(1);
+  }
+
+  const { marked, file } = found;
+  const { clean } = parseMarked(marked);
+
+  console.log(`\n  ${BOLD(zinId)}  ${DIM(file)}`);
+  console.log(`  ${clean}`);
+  console.log(`  ${DIM(marked)}`);
+
+  // Find all word files referencing this ID
+  const allFiles = readdirSync(DATA_DIR).filter(f => f.endsWith('.json') && filenameToPack(f));
+  const wordRefs: Array<{ nl: string; file: string }> = [];
+  for (const wf of allFiles) {
+    const words: WordEntry[] = JSON.parse(readFileSync(join(DATA_DIR, wf), 'utf-8'));
+    for (const w of words) {
+      if (w.zinnen?.includes(zinId)) wordRefs.push({ nl: w.nl, file: wf });
+    }
+  }
+
+  if (wordRefs.length > 0) {
+    console.log(`  Referenced in: ${wordRefs.map(r => r.nl).join(', ')}`);
+  }
+
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+  const answer = await new Promise<string>(resolve => rl.question(`\n  Remove this zin? [y/N]  `, resolve));
+  rl.close();
+
+  if (answer.trim().toLowerCase() !== 'y') { console.log('  Cancelled.\n'); return; }
+
+  // Remove from zin file
+  const zinData = loadZinFile(file);
+  delete zinData[zinId];
+  saveZinFile(file, zinData);
+  console.log(`\n  ${GREEN('✓')} Removed from ${DIM(file)}`);
+
+  // Remove ID from word files
+  for (const { nl, file: wf } of wordRefs) {
+    const path = join(DATA_DIR, wf);
+    const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
+    for (const w of words) {
+      if (w.zinnen) w.zinnen = w.zinnen.filter(id => id !== zinId);
+    }
+    writeFileSync(path, JSON.stringify(words, null, 2) + '\n', 'utf-8');
+    console.log(`  ${GREEN('✓')} Removed from ${nl}  ${DIM(wf)}`);
+  }
+  console.log('');
 }
 
 // ─── Entry point ──────────────────────────────────────────────────────────────
@@ -362,13 +532,21 @@ switch (command) {
   case 'remove':
     cmdRemove(rest).catch(err => { console.error(err); process.exit(1); });
     break;
+  case 'add-zin':
+    cmdAddZin(rest).catch(err => { console.error(err); process.exit(1); });
+    break;
+  case 'remove-zin':
+    cmdRemoveZin(rest).catch(err => { console.error(err); process.exit(1); });
+    break;
   default:
     console.log(`
   woorden — Dutch word pack CLI
 
   Commands:
-    find-duplicate <PACK> [--page N]   Show words in PACK that also appear in other packs
-    remove <PACK> <word>                Remove a specific word from PACK
+    find-duplicate <PACK> [--page N]   Show words in PACK that also appear in higher packs
+    remove <PACK> <word>               Remove a specific word from PACK
+    add-zin [--limit N]                Add an example sentence (default limit: 5 per word)
+    remove-zin <id>                    Remove a sentence and clean up word references
 
   Packs:  A1  A2  A2+
 
@@ -376,7 +554,9 @@ switch (command) {
     npm run woorden find-duplicate A1
     npm run woorden find-duplicate A2 --page 2
     npm run woorden remove A1 groot
-    npm run woorden remove A2 bank      # asks which type if nl appears multiple times
+    npm run woorden add-zin
+    npm run woorden add-zin --limit 6
+    npm run woorden remove-zin ab3k9x2m
 `);
     if (command) process.exit(1);
 }
