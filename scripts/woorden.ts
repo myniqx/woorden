@@ -169,22 +169,36 @@ function generateId(existingIds: Set<string>): string {
 }
 
 /**
- * Parse "ik 1|denk 2|over hen 1|aan"
- * → clean: "ik denk over hen aan"
- * → groups: Map { 1 → ["denk","aan"], 2 → ["over"] }
+ * Parse "ik 1|denkt@nadenken over 1|na"  (Option B inheritance)
+ * → clean: "ik denkt over na"
+ * → groups: Map { 1 → { base: "nadenken", tokens: ["denkt","na"] } }
+ *
+ * Rules:
+ *   N|token@base  — first occurrence of group N; defines the base for that group
+ *   N|token       — subsequent tokens; inherit base from first occurrence
+ *   When token equals base and is lowercase/no punctuation, @base may be omitted
  */
-function parseMarked(marked: string): { clean: string; groups: Map<number, string[]> } {
+function parseMarked(marked: string): {
+  clean: string;
+  groups: Map<number, { base: string; tokens: string[] }>;
+} {
   const tokens = marked.trim().split(/\s+/);
-  const groups = new Map<number, string[]>();
+  const groups = new Map<number, { base: string; tokens: string[] }>();
   const cleanTokens: string[] = [];
 
   for (const token of tokens) {
-    const m = token.match(/^(\d+)\|(.+)$/);
+    const m = token.match(/^(\d+)\|([^@]+)(?:@(.+))?$/);
     if (m) {
       const num = parseInt(m[1]);
-      if (!groups.has(num)) groups.set(num, []);
-      groups.get(num)!.push(m[2]);
-      cleanTokens.push(m[2]);
+      const display = m[2];
+      const explicitBase = m[3];
+      if (!groups.has(num)) {
+        groups.set(num, { base: explicitBase ?? display, tokens: [] });
+      } else if (explicitBase) {
+        groups.get(num)!.base = explicitBase;
+      }
+      groups.get(num)!.tokens.push(display);
+      cleanTokens.push(display);
     } else {
       cleanTokens.push(token);
     }
@@ -192,10 +206,10 @@ function parseMarked(marked: string): { clean: string; groups: Map<number, strin
   return { clean: cleanTokens.join(' '), groups };
 }
 
-/** Render with one word group bolded, strip notation from rest */
+/** Render with one word group bolded, strip @base and notation from rest */
 function renderHighlight(marked: string, activeNum: number): string {
   return marked.trim().split(/\s+/).map(token => {
-    const m = token.match(/^(\d+)\|(.+)$/);
+    const m = token.match(/^(\d+)\|([^@]+)(?:@.+)?$/);
     if (!m) return token;
     return parseInt(m[1]) === activeNum ? BOLD(m[2]) : m[2];
   }).join(' ');
@@ -370,59 +384,52 @@ async function cmdRemove(args: string[]) {
   console.log(`\n  ${GREEN('✓')} Removed "${nlWord}" (${toDelete.word.type}) from ${DIM(toDelete.file)}\n`);
 }
 
-async function cmdAddZin(args: string[]) {
+function cmdAddZin(args: string[]) {
   const limitIdx = args.indexOf('--limit');
   const limit = limitIdx >= 0 ? (parseInt(args[limitIdx + 1]) || DEFAULT_ZIN_LIMIT) : DEFAULT_ZIN_LIMIT;
 
-  const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-  const ask = (q: string) => new Promise<string>(resolve => rl.question(q, resolve));
-
-  // Step 1: get marked sentence
-  const markedArg = args.filter(a => !a.startsWith('--') && !/^\d+$/.test(a))[0];
-  const marked = markedArg || (await ask('\n  Zin (with notation): ')).trim();
+  const marked = args.find(a => !a.startsWith('--'));
+  if (!marked) {
+    console.error('Usage: woorden add-zin "<marked sentence>" [--limit N]');
+    console.error('  Base form embedded with @:  "ik 1|ga@gaan naar 2|school"');
+    console.error('  Separable verb example:     "hij 1|denkt@nadenken over 1|na"');
+    process.exit(1);
+  }
 
   const { clean, groups } = parseMarked(marked);
   if (groups.size === 0) {
-    console.log(`  No annotated words found. Use notation like: ik 1|ga naar 2|school`);
-    rl.close();
-    return;
+    console.error('  No annotated words found. Use notation like: ik 1|ga@gaan naar 2|school');
+    process.exit(1);
   }
 
-  // Step 2: get nl base form for each group number
   const sortedNums = [...groups.keys()].sort((a, b) => a - b);
-  const nlMap = new Map<number, string>();
-  for (const num of sortedNums) {
-    const tokens = groups.get(num)!;
-    const nl = (await ask(`  Word ${num} [${tokens.join('...')}] (nl form): `)).trim();
-    nlMap.set(num, nl);
-  }
-  rl.close();
 
-  // Step 3: preview
+  // Preview
   console.log(`\n  Clean:  ${clean}`);
-  for (const [num, nl] of nlMap) {
-    console.log(`  Word ${num} (${nl}):  ${renderHighlight(marked, num)}`);
+  for (const num of sortedNums) {
+    const { base } = groups.get(num)!;
+    console.log(`  Word ${num} (${base}):  ${renderHighlight(marked, num)}`);
   }
   console.log('');
 
-  // Step 4: look up words and check limits
+  // Look up words and check limits
   const allWords = loadAllWords();
-  const nlForms = [...nlMap.values()];
 
-  type WordResult = { nl: string; wp: WordInPack | null; zinCount: number; atLimit: boolean };
+  type WordResult = { base: string; wp: WordInPack | null; zinCount: number; atLimit: boolean };
   const results: WordResult[] = [];
 
-  for (const nl of nlForms) {
-    const wp = findWordEntry(nl, allWords);
+  for (const num of sortedNums) {
+    const { base } = groups.get(num)!;
+    const wp = findWordEntry(base, allWords);
     const zinCount = wp?.word.zinnen?.length ?? 0;
     const atLimit = zinCount >= limit;
-    results.push({ nl, wp, zinCount, atLimit });
+    results.push({ base, wp, zinCount, atLimit });
 
     if (!wp) {
-      console.log(`  ${RED('✗')} "${nl}" not found in any pack`);
+      console.log(`  ${RED('✗')} "${base}" not found in any pack`);
     } else {
-      const limitTag = atLimit ? RED(` ← at limit`) : '';
-      console.log(`  ${atLimit ? AMBER('~') : GREEN('✓')} ${nl.padEnd(20)} ${wp.pack}  ${DIM(wp.file)}  zinnen: ${zinCount}/${limit}${limitTag}`);
+      const limitTag = atLimit ? RED(' ← at limit') : '';
+      console.log(`  ${atLimit ? AMBER('~') : GREEN('✓')} ${base.padEnd(20)} ${wp.pack}  ${DIM(wp.file)}  zinnen: ${zinCount}/${limit}${limitTag}`);
     }
   }
 
@@ -430,10 +437,10 @@ async function cmdAddZin(args: string[]) {
   const foundResults = results.filter(r => r.wp !== null);
   if (foundResults.length > 0 && foundResults.every(r => r.atLimit)) {
     console.log(`\n  ${RED('✗')} All words are at limit (${limit}). Zin not added.\n`);
-    return;
+    process.exit(1);
   }
 
-  // Step 5: generate ID, write to zin file
+  // Generate ID, write to zin file
   const allZins = loadAllZins();
   const id = generateId(new Set(allZins.keys()));
   const { file: zinFile, data: zinData } = getActiveZinFile();
@@ -441,11 +448,11 @@ async function cmdAddZin(args: string[]) {
   saveZinFile(zinFile, zinData);
   console.log(`\n  ${GREEN('✓')} Added ${BOLD(id)} → ${DIM(zinFile)}`);
 
-  // Step 6: add ID to word files (skip words at limit or not found)
-  for (const { nl, wp, atLimit } of results) {
+  // Add ID to word files (skip words at limit or not found)
+  for (const { base, wp, atLimit } of results) {
     if (!wp) continue;
     if (atLimit) {
-      console.log(`  ${AMBER('~')} ${nl} skipped (at limit ${limit})`);
+      console.log(`  ${AMBER('~')} ${base} skipped (at limit ${limit})`);
       continue;
     }
     const path = join(DATA_DIR, wp.file);
@@ -455,7 +462,7 @@ async function cmdAddZin(args: string[]) {
       if (!words[idx].zinnen) words[idx].zinnen = [];
       words[idx].zinnen!.push(id);
       writeFileSync(path, JSON.stringify(words, null, 2) + '\n', 'utf-8');
-      console.log(`  ${GREEN('✓')} ${nl}  ${DIM(wp.file)}`);
+      console.log(`  ${GREEN('✓')} ${base}  ${DIM(wp.file)}`);
     }
   }
   console.log('');
@@ -574,7 +581,7 @@ switch (command) {
     cmdRemove(rest).catch(err => { console.error(err); process.exit(1); });
     break;
   case 'add-zin':
-    cmdAddZin(rest).catch(err => { console.error(err); process.exit(1); });
+    cmdAddZin(rest);
     break;
   case 'remove-zin':
     cmdRemoveZin(rest).catch(err => { console.error(err); process.exit(1); });
@@ -587,21 +594,27 @@ switch (command) {
   woorden — Dutch word pack CLI
 
   Commands:
-    find-duplicate <PACK> [--page N]   Show words in PACK that also appear in higher packs
-    remove <PACK> <word>               Remove a specific word from PACK
-    add-zin [--limit N]                Add an example sentence (default limit: 5 per word)
-    remove-zin <id>                    Remove a sentence and clean up word references
-    get-no-zin <PACK> [count]          List words without example sentences (default: 5)
+    find-duplicate <PACK> [--page N]           Show words in PACK that also appear in higher packs
+    remove <PACK> <word>                       Remove a specific word from PACK
+    add-zin "<marked>" [--limit N]             Add an example sentence (default limit: 5 per word)
+    remove-zin <id>                            Remove a sentence and clean up word references
+    get-no-zin <PACK> [count]                  List words without example sentences (default: 5)
 
   Packs:  A1  A2  A2+
+
+  Zin notation:
+    N|token@base   — mark word, embed base form (N = group number)
+    N|token        — subsequent part of same group (inherits base from first @)
+    Example:  "ik 1|ga@gaan naar 2|school"
+    Separable:  "hij 1|denkt@nadenken over het 1|na"
 
   Examples:
     npm run woorden find-duplicate A1
     npm run woorden remove A1 groot
     npm run woorden get-no-zin A1
     npm run woorden get-no-zin A1 10
-    npm run woorden add-zin
-    npm run woorden add-zin --limit 6
+    npm run woorden -- add-zin "ik 1|ga@gaan naar 2|school"
+    npm run woorden -- add-zin "ik 1|ga@gaan naar 2|school" --limit 6
     npm run woorden remove-zin ab3k9x2m
 `);
     if (command) process.exit(1);

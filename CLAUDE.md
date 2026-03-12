@@ -262,3 +262,83 @@ Access `/editor` route in dev mode (`npm run dev`) to:
 - Paste HTML tables and convert to word JSON format
 - Translate words using DeepL API (requires `VITE_DEEPL_API_KEY` in `.env`)
 - Export words as JSON files (100 words per file)
+
+## Woorden CLI (`scripts/woorden.ts`)
+
+Run via `npm run woorden -- <command>`.
+
+### Commands
+
+```bash
+# Find words in PACK that also appear in higher-level packs
+npm run woorden find-duplicate <PACK> [--page N]
+
+# Remove a specific word from PACK (asks y/N confirmation)
+npm run woorden remove <PACK> <word>
+
+# Add an example sentence with notation (see Zin Notation below)
+npm run woorden -- add-zin "<marked sentence>" [--limit N]
+
+# Remove a sentence by ID and clean up all word references
+npm run woorden remove-zin <id>
+
+# List words without example sentences
+npm run woorden get-no-zin <PACK> [count]
+```
+
+**Packs:** `A1`, `A2`, `A2+`
+**Pack hierarchy:** A1 < A2 < A2+ — `find-duplicate A1` compares against A2 and A2+, `find-duplicate A2` only against A2+.
+
+### Zin Notation
+
+Example sentences are stored in `src/data/zin-*.json` as `{ "<id>": "<marked string>" }`.
+
+Each word being learned is annotated with a group number:
+
+```
+N|token@base
+```
+
+- `N` — group number (integer, matches one vocabulary word)
+- `token` — the surface form as it appears in the sentence (conjugated, capitalized, etc.)
+- `@base` — the dictionary form (`nl` key in word JSON); required on the **first** occurrence of group N
+
+**Option B inheritance:** the first occurrence of group N defines the `@base`; subsequent tokens with the same N inherit it automatically — no need to repeat `@base`.
+
+```
+# Simple word
+"ik 1|ga@gaan naar 2|school"
+→ Word 1 base: gaan  (token: ga)
+→ Word 2 base: school (token: school, same as base so @school optional)
+
+# Separable verb (nadenken → denkt ... na)
+"hij 1|denkt@nadenken over het 1|na"
+→ Word 1 base: nadenken  (tokens: denkt, na — both map to nadenken)
+
+# Capitalized token, different base
+"1|Ik@ik ben 2|blij@blij."
+→ Word 1 base: ik  (token: Ik)
+→ Word 2 base: blij (token: blij.)
+```
+
+**Limit:** default 5 zinnen per word (`--limit N` to override). If ALL referenced words are already at the limit, the sentence is rejected.
+
+### Zin File Format
+
+```json
+// src/data/zin-001.json
+{
+  "ab3k9x2m": "1|Ik@ik 2|ga@gaan naar 3|school",
+  "xy9q2rtl": "hij 1|denkt@nadenken over het 1|na"
+}
+```
+
+Word entries get a `zinnen` array referencing sentence IDs:
+
+```json
+{
+  "nl": "gaan",
+  "type": "verb",
+  "zinnen": ["ab3k9x2m"]
+}
+```
