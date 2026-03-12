@@ -95,13 +95,23 @@ function dupKey(w: WordEntry): string {
   return `${w.nl}::${w.type}`;
 }
 
+// Packs ordered from lowest to highest level
+const PACK_ORDER = ['A1', 'A2', 'A2+'];
+
+function higherPacks(targetPack: string): string[] {
+  const idx = PACK_ORDER.indexOf(targetPack);
+  if (idx === -1) return [];
+  return PACK_ORDER.slice(idx + 1);
+}
+
 function findDuplicates(targetPack: string, allWords: Map<string, WordInPack[]>): Duplicate[] {
   const targetWords = allWords.get(targetPack)!;
+  const above = new Set(higherPacks(targetPack));
 
-  // Index all words from OTHER packs by dupKey
+  // Index only words from HIGHER packs
   const otherIndex = new Map<string, WordInPack[]>();
   for (const [pack, words] of allWords) {
-    if (pack === targetPack) continue;
+    if (!above.has(pack)) continue;
     for (const wp of words) {
       const k = dupKey(wp.word);
       if (!otherIndex.has(k)) otherIndex.set(k, []);
