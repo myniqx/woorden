@@ -254,13 +254,25 @@ function cmdFindDuplicate(args: string[]) {
     console.log(`\n  Next page:  woorden find-duplicate ${packArg} --page ${clampedPage + 1}`);
   }
 
-  console.log(`\n  To remove:  woorden remove ${packArg}\n`);
+  console.log(`\n  To remove a word:  woorden remove ${packArg} <word>\n`);
+}
+
+function removeWordFromFile(file: string, keyToRemove: string): boolean {
+  const path = join(DATA_DIR, file);
+  const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
+  const filtered = words.filter(w => dupKey(w) !== keyToRemove);
+  if (filtered.length === words.length) return false;
+  writeFileSync(path, JSON.stringify(filtered, null, 2) + '\n', 'utf-8');
+  return true;
 }
 
 async function cmdRemove(args: string[]) {
   const packArg = args[0];
-  if (!packArg || packArg.startsWith('--')) {
-    console.error('Usage: woorden remove <PACK>');
+  const nlWord  = args[1];
+
+  if (!packArg || packArg.startsWith('--') || !nlWord) {
+    console.error('Usage: woorden remove <PACK> <word>');
+    console.error('       Example: woorden remove A1 groot');
     process.exit(1);
   }
 
@@ -273,59 +285,60 @@ async function cmdRemove(args: string[]) {
     process.exit(1);
   }
 
-  const duplicates = findDuplicates(targetPack, allWords);
+  // Find all entries in target pack matching nl word
+  const matches = allWords.get(targetPack)!.filter(wp => wp.word.nl === nlWord);
 
-  if (duplicates.length === 0) {
-    console.log(`\n  ${GREEN('✓')} No duplicates found in ${targetPack}. Nothing to remove.\n`);
-    return;
+  if (matches.length === 0) {
+    console.log(`\n  "${nlWord}" not found in ${targetPack}.\n`);
+    process.exit(1);
   }
 
-  console.log(`\n  Found ${BOLD(String(duplicates.length))} duplicate(s) in ${BOLD(targetPack)}:\n`);
-  for (let i = 0; i < duplicates.length; i++) {
-    printDuplicate(duplicates[i], i + 1, duplicates.length);
-  }
-
-  // Prompt
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-  const answer = await new Promise<string>(resolve => {
-    rl.question(
-      `\n  Remove ${BOLD(String(duplicates.length))} word(s) from ${BOLD(targetPack)}? [y/N]  `,
-      resolve
-    );
-  });
-  rl.close();
+  const ask = (q: string) => new Promise<string>(resolve => rl.question(q, resolve));
 
-  if (answer.trim().toLowerCase() !== 'y') {
-    console.log('  Cancelled.\n');
-    return;
-  }
+  let toDelete: WordInPack;
 
-  // Which keys to remove from target pack
-  const toRemove = new Set(duplicates.map(d => d.key));
-
-  // Group remaining words by file
-  const fileWords = new Map<string, WordEntry[]>();
-  for (const wp of allWords.get(targetPack)!) {
-    if (!fileWords.has(wp.file)) fileWords.set(wp.file, []);
-    if (!toRemove.has(dupKey(wp.word))) {
-      fileWords.get(wp.file)!.push(wp.word);
+  if (matches.length === 1) {
+    // Single match — show it and confirm
+    const wp = matches[0];
+    console.log(`\n  Found in ${BOLD(targetPack)}  ${DIM(wp.file)}`);
+    for (const line of entryLines(wp.word)) {
+      console.log(`    ${line}`);
     }
-  }
-
-  // Write modified files back
-  let totalRemoved = 0;
-  for (const [file, words] of fileWords) {
-    const path = join(DATA_DIR, file);
-    const original: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
-    const diff = original.length - words.length;
-    if (diff > 0) {
-      writeFileSync(path, JSON.stringify(words, null, 2) + '\n', 'utf-8');
-      console.log(`  ${GREEN('✓')}  Removed ${diff} word(s) from ${DIM(file)}`);
-      totalRemoved += diff;
+    const answer = await ask(`\n  Remove "${nlWord}" (${wp.word.type}) from ${BOLD(targetPack)}? [y/N]  `);
+    rl.close();
+    if (answer.trim().toLowerCase() !== 'y') {
+      console.log('  Cancelled.\n');
+      return;
     }
+    toDelete = wp;
+  } else {
+    // Multiple types — let user pick
+    console.log(`\n  "${nlWord}" appears ${matches.length} times in ${BOLD(targetPack)} with different types:\n`);
+    for (let i = 0; i < matches.length; i++) {
+      const { word, file } = matches[i];
+      console.log(`  [${i + 1}]  type: ${BOLD(word.type)}   ${DIM(file)}`);
+      for (const line of entryLines(word)) {
+        console.log(`       ${line}`);
+      }
+      console.log('');
+    }
+    const answer = await ask(`  Which to remove? [1-${matches.length}] or [n] to cancel:  `);
+    rl.close();
+    const idx = parseInt(answer.trim()) - 1;
+    if (isNaN(idx) || idx < 0 || idx >= matches.length) {
+      console.log('  Cancelled.\n');
+      return;
+    }
+    toDelete = matches[idx];
   }
 
-  console.log(`\n  Done. Removed ${BOLD(String(totalRemoved))} word(s) from ${BOLD(targetPack)}.\n`);
+  const removed = removeWordFromFile(toDelete.file, dupKey(toDelete.word));
+  if (removed) {
+    console.log(`\n  ${GREEN('✓')} Removed "${nlWord}" (${toDelete.word.type}) from ${DIM(toDelete.file)}\n`);
+  } else {
+    console.error(`  Could not remove word from file.\n`);
+  }
 }
 
 // ─── Entry point ──────────────────────────────────────────────────────────────
@@ -345,14 +358,15 @@ switch (command) {
 
   Commands:
     find-duplicate <PACK> [--page N]   Show words in PACK that also appear in other packs
-    remove <PACK>                       Remove those duplicates from PACK (asks confirmation)
+    remove <PACK> <word>                Remove a specific word from PACK
 
   Packs:  A1  A2  A2+
 
   Examples:
     npm run woorden find-duplicate A1
     npm run woorden find-duplicate A2 --page 2
-    npm run woorden remove A1
+    npm run woorden remove A1 groot
+    npm run woorden remove A2 bank      # asks which type if nl appears multiple times
 `);
     if (command) process.exit(1);
 }
