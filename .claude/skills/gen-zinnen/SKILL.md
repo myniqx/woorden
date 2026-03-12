@@ -77,7 +77,7 @@ N|token@base
 The first occurrence of group N defines `@base`. Later parts of the same group (prefix split off) just use `N|token` — they inherit the base automatically.
 
 ```
-# Simple verb
+# Simple verb (conjugated → infinitive)
 "ik 1|ga@gaan naar 2|school"
 →  group 1 base: gaan   (surface: ga)
 →  group 2 base: school (surface = base, @school can be omitted)
@@ -86,16 +86,28 @@ The first occurrence of group N defines `@base`. Later parts of the same group (
 "hij 1|denkt@nadenken altijd goed 1|na"
 →  group 1 base: nadenken   (tokens: denkt, na — both resolve to nadenken)
 
+# Adjective inflection (groot → grote, nieuw → nieuwe, etc.)
+"Dat is een 1|grote@groot huis."
+→  group 1 base: groot  (surface: grote, -e added by inflection rule)
+
+"De 1|nieuwe@nieuw leraar is 2|aardig."
+→  group 1 base: nieuw  (surface: nieuwe)
+→  group 2 base: aardig (predicative form, no inflection → @base can be omitted)
+
+# Plural noun (kind → kinderen, huis → huizen, etc.)
+"De 1|kinderen@kind spelen buiten."
+→  group 1 base: kind  (surface: kinderen)
+
+# Capitalised subject or start of sentence
+"1|Hij@hij 2|werkt@werken elke dag."
+→  @hij needed because surface form is capitalised
+
 # Two vocab words in one sentence
 "1|Ik@ik 2|woon@wonen in 3|Nederland."
 →  group 1: ik, group 2: wonen, group 3: Nederland
-
-# Capitalised subject
-"1|Hij@hij 2|werkt@werken elke dag."
-→  @hij needed because surface form is capitalised
 ```
 
-**When @base can be omitted:** only when the surface token is lowercase and already matches the base exactly (e.g. `2|school`, `3|niet`).
+**When @base can be omitted:** only when the surface token is lowercase and already matches the base exactly (e.g. `2|school`, `3|niet`, predicative adjectives like `2|aardig`).
 
 **Punctuation:** keep punctuation outside the token — write `1|dag@dag.` not `1|dag.@dag`.
 
