@@ -332,9 +332,7 @@ N|token@base
 → @ik needed because surface is capitalised; @wonen because woon ≠ wonen
 ```
 
-**When `@base` can be omitted:** only when the surface token is already lowercase and matches the base exactly (`2|school`, `3|niet`, predicative adjectives like `2|aardig`).
-
-**Punctuation:** keep punctuation outside the token — `1|dag@dag.` not `1|dag.@dag`.
+**When `@base` can be omitted:** when the surface token (after stripping trailing punctuation) already matches the base. Trailing `. , ? ! ; :` are stripped automatically before lookup — so `3|school,` and `3|school.` both resolve to base `school` regardless of position in the sentence.
 
 **Limit:** default 5 zinnen per word (`--limit N` to override). If ALL referenced words are already at the limit, the sentence is rejected.
 

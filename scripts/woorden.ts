@@ -176,7 +176,8 @@ function generateId(existingIds: Set<string>): string {
  * Rules:
  *   N|token@base  — first occurrence of group N; defines the base for that group
  *   N|token       — subsequent tokens; inherit base from first occurrence
- *   When token equals base and is lowercase/no punctuation, @base may be omitted
+ *   Trailing punctuation (.,?!;:) is stripped from display before deriving default base,
+ *   so 3|school. and 3|school, both resolve to "school" without needing @base
  */
 function parseMarked(marked: string): {
   clean: string;
@@ -192,8 +193,10 @@ function parseMarked(marked: string): {
       const num = parseInt(m[1]);
       const display = m[2];
       const explicitBase = m[3];
+      // Strip trailing punctuation from display when deriving default base
+      const defaultBase = display.replace(/[.,?!;:]+$/, '');
       if (!groups.has(num)) {
-        groups.set(num, { base: explicitBase ?? display, tokens: [] });
+        groups.set(num, { base: explicitBase ?? defaultBase, tokens: [] });
       } else if (explicitBase) {
         groups.get(num)!.base = explicitBase;
       }
