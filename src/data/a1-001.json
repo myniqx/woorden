@@ -132,7 +132,8 @@
     "ar": "يتعلم",
     "fr": "apprendre",
     "zinnen": [
-      "qo9sxmz2"
+      "qo9sxmz2",
+      "rye0d06u"
     ]
   },
   {
@@ -142,7 +143,10 @@
     "tr": "ay (takvim)",
     "en": "month",
     "ar": "شهر",
-    "fr": "mois"
+    "fr": "mois",
+    "zinnen": [
+      "rye0d06u"
+    ]
   },
   {
     "nl": "naar",
@@ -150,7 +154,10 @@
     "tr": "-e, -a, -e doğru",
     "en": "to, towards",
     "ar": "إلى",
-    "fr": "vers"
+    "fr": "vers",
+    "zinnen": [
+      "ojmxgaua"
+    ]
   },
   {
     "nl": "Nederland",
@@ -159,7 +166,10 @@
     "tr": "Hollanda",
     "en": "Netherlands",
     "ar": "هولندا",
-    "fr": "Pays-Bas"
+    "fr": "Pays-Bas",
+    "zinnen": [
+      "ojmxgaua"
+    ]
   },
   {
     "nl": "Nederlands",
@@ -179,7 +189,10 @@
     "tr": "değil",
     "en": "not",
     "ar": "لا",
-    "fr": "pas"
+    "fr": "pas",
+    "zinnen": [
+      "mred9971"
+    ]
   },
   {
     "nl": "nu",
@@ -187,7 +200,10 @@
     "tr": "şimdi",
     "en": "now",
     "ar": "الآن",
-    "fr": "maintenant"
+    "fr": "maintenant",
+    "zinnen": [
+      "mred9971"
+    ]
   },
   {
     "nl": "school",
