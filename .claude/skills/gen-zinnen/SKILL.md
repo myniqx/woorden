@@ -107,9 +107,7 @@ The first occurrence of group N defines `@base`. Later parts of the same group (
 →  group 1: ik, group 2: wonen, group 3: Nederland
 ```
 
-**When @base can be omitted:** only when the surface token is lowercase and already matches the base exactly (e.g. `2|school`, `3|niet`, predicative adjectives like `2|aardig`).
-
-**Punctuation:** keep punctuation outside the token — write `1|dag@dag.` not `1|dag.@dag`.
+**When @base can be omitted:** when the surface token (after stripping trailing punctuation) matches the base. Trailing `. , ? ! ; :` are stripped automatically before lookup — `3|school,` and `3|school.` both resolve to `school`, whether the word is mid-sentence or at the end.
 
 ## Step 4 — Add each sentence via the CLI
 
