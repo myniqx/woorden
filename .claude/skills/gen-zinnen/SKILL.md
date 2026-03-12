@@ -23,12 +23,41 @@ The output shows: `type  nl  [article/perfectum/imperfectum]`
 
 ## Step 2 — Write the sentences
 
-Design **natural Dutch sentences** for these words. Rules:
+### Sentence count
 
-- **2 to 3 words** from the fetched list may appear in the same sentence (never all in one, spread them)
-- The remaining words each get their own dedicated sentence
-- Keep sentences short and A1–A2 level (simple grammar, everyday vocabulary)
-- Each sentence must include all the fetched words across the full set (prioritise coverage)
+You do **not** need exactly 8 sentences. Combine 2–3 words per sentence when they fit together naturally — this reduces the total sentence count and makes each sentence more useful. Every word from the list must appear in at least one sentence.
+
+- **Allowed:** 2–3 words from the list in one sentence
+- **Avoid:** putting 4+ list words in a single sentence (over-crowded, unnatural)
+- **Result:** typically 3–5 sentences cover all 8 words
+
+### Sentence difficulty
+
+The sentence's grammar and overall vocabulary must match the **pack level**, not the difficulty of the word itself. A hard word in a simple sentence is fine — a simple word in a complex sentence is not.
+
+| Pack | Sentence level | Grammar rules |
+|------|---------------|---------------|
+| A1 | A1 | Simple SVO, present tense, basic pronouns. No subordinate clauses, no passive, no complex modals. |
+| A2 | A2 | Simple past, basic modal verbs (kunnen, willen, moeten), one subordinate clause with `dat` or `omdat` is OK. |
+| A2+ | A2–B1 | Compound sentences, common tense combinations, but still no complex passive or subjunctive. |
+
+**Examples of level discipline:**
+
+```
+Word: Nederland  (A1)
+✓  "Ik woon in 1|Nederland."                    ← A1 grammar, A1 sentence
+✗  "Hoewel hij al jaren in 1|Nederland woont, mist hij zijn vaderland nog steeds."
+   ← B2 grammar — too hard for an A1 sentence
+```
+
+```
+Word: bezorgd (A2+, adjective, "worried")
+✓  "1|Mijn@mijn moeder is 2|bezorgd."           ← A1 grammar with an A2+ word
+✓  "Ze is 1|bezorgd omdat hij niet belt."       ← A2 grammar with one dat/omdat clause
+✗  "Had hij maar geweten hoe 1|bezorgd ze was." ← B2/C1 grammar, too complex
+```
+
+Even if the vocabulary word is advanced, the rest of the sentence must stay at the pack's level.
 
 ## Step 3 — Apply the zin notation
 
@@ -42,7 +71,7 @@ N|token@base
 |------|---------|
 | `N` | Group number — a unique integer per vocabulary word in this sentence (start from 1) |
 | `token` | The word as it appears in the sentence (conjugated form, may be capitalised) |
-| `@base` | The dictionary form — the `nl` value from the word file |
+| `@base` | The dictionary form — the exact `nl` value from the word file |
 
 **Option B inheritance (separable verbs):**
 The first occurrence of group N defines `@base`. Later parts of the same group (prefix split off) just use `N|token` — they inherit the base automatically.
@@ -58,46 +87,43 @@ The first occurrence of group N defines `@base`. Later parts of the same group (
 →  group 1 base: nadenken   (tokens: denkt, na — both resolve to nadenken)
 
 # Two vocab words in one sentence
-"1|De@de 2|trein@trein vertrekt om 3|tien@tien uur."
-→  group 1: de, group 2: trein, group 3: tien
+"1|Ik@ik 2|woon@wonen in 3|Nederland."
+→  group 1: ik, group 2: wonen, group 3: Nederland
 
 # Capitalised subject
 "1|Hij@hij 2|werkt@werken elke dag."
 →  @hij needed because surface form is capitalised
 ```
 
-**When @base can be omitted:** only when the surface token is already lowercase and matches the base exactly (e.g. `2|school`, `3|tien`).
+**When @base can be omitted:** only when the surface token is lowercase and already matches the base exactly (e.g. `2|school`, `3|niet`).
 
-**Punctuation:** include punctuation as part of the token if it is attached (e.g. `1|dag.@dag`). Or keep it outside the token (e.g. `1|dag@dag.`). Be consistent.
+**Punctuation:** keep punctuation outside the token — write `1|dag@dag.` not `1|dag.@dag`.
 
 ## Step 4 — Add each sentence via the CLI
 
-For every sentence you wrote, run:
+For every sentence, run:
 
 ```bash
 npm run woorden -- add-zin "<marked sentence>"
 ```
 
 The CLI will:
-- Show the clean sentence and which word each group number resolves to
-- Look up each base form in the word packs
-- Report how many zinnen each word already has (default limit: 5)
-- Write the sentence to `src/data/zin-001.json` (or next file)
-- Add the zin ID to `zinnen: []` in each referenced word file
-
-If a word is not found, the CLI will report an error — check the spelling of `@base` against the exact `nl` value in the JSON files.
+- Print the clean sentence and which base form each group resolves to
+- Look up each base in the word packs (error if not found — check `@base` spelling)
+- Report zinnen counts per word (default limit: 5 per word)
+- Write the sentence to `src/data/zin-001.json` and add its ID to each word file
 
 ## Example full run
 
-Suppose `get-no-zin A1 8` returns: `gaan, school, jaar, dorp, komen, zien, werken, leven`
+`get-no-zin A1 8` returns: `leren, maand, naar, Nederland, Nederlandss, niet, nu, school`
 
-You could design:
+Planned sentences (A1 grammar throughout):
 
-| Sentence | Words covered |
-|----------|--------------|
-| `"1|Ik@ik 2|ga@gaan dit 3|jaar@jaar naar 4|school."` | gaan, jaar, school |
-| `"1|Hij@hij 2|komt@komen elke dag naar het 3|dorp."` | komen, dorp |
-| `"2|Wij@wij willen 1|leven@leven en 3|werken@werken hier."` | leven, werken |
-| `"1|Zie@zien jij dat 2|dorp@dorp?"` | zien, dorp (shared) |
+| Marked sentence | Words covered |
+|----------------|--------------|
+| `"1|Ik@ik 2|leer@leren 3|Nederlands@Nederlands op 4|school."` | leren, Nederlands, school |
+| `"1|Nederland@nederland is een mooi 2|land."` | Nederland |
+| `"1|Ik@ik ga 2|nu@nu 3|niet@niet 4|naar@naar huis."` | nu, niet, naar |
+| `"Elke 1|maand@maand doe ik iets nieuws."` | maand |
 
-Then run `add-zin` for each of the four sentences.
+4 sentences cover all 8 words. Then run `add-zin` for each.
