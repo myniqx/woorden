@@ -67,14 +67,6 @@
     "fr": "sentiment"
   },
   {
-    "nl": "handig",
-    "type": "adj",
-    "tr": "kullanışlı, becerikli",
-    "en": "handy",
-    "ar": "ماهر",
-    "fr": "pratique"
-  },
-  {
     "nl": "kennis",
     "article": "de",
     "type": "noun",
@@ -99,15 +91,6 @@
     "en": "critical",
     "ar": "انتقادي",
     "fr": "critique"
-  },
-  {
-    "nl": "kwaliteit",
-    "article": "de",
-    "type": "noun",
-    "tr": "kalite",
-    "en": "quality",
-    "ar": "جودة",
-    "fr": "qualité"
   },
   {
     "nl": "leiding",

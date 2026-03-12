@@ -1,102 +1,877 @@
 [
-  {"nl": "afscheid", "article": "het", "type": "noun", "tr": "veda, elveda", "en": "farewell, goodbye", "ar": "وداع", "fr": "adieu, au revoir"},
-  {"nl": "architect", "article": "de", "type": "noun", "tr": "mimar", "en": "architect", "ar": "مهندس معماري", "fr": "architecte"},
-  {"nl": "behang", "article": "het", "type": "noun", "tr": "duvar kağıdı", "en": "wallpaper", "ar": "ورق الجدران", "fr": "papier peint"},
-  {"nl": "beige", "type": "adj", "tr": "bej", "en": "beige", "ar": "بيج", "fr": "beige"},
-  {"nl": "bestand", "article": "het", "type": "noun", "tr": "dosya", "en": "file", "ar": "ملف", "fr": "fichier"},
-  {"nl": "gekleurd", "type": "adj", "tr": "renkli", "en": "coloured", "ar": "ملون", "fr": "coloré"},
-  {"nl": "gordijn", "article": "het", "type": "noun", "tr": "perde", "en": "curtain", "ar": "ستارة", "fr": "rideau"},
-  {"nl": "gras", "article": "het", "type": "noun", "tr": "çim", "en": "grass", "ar": "عشب", "fr": "herbe"},
-  {"nl": "hecht", "type": "adj", "tr": "yakın, sıkı (ilişki)", "en": "close, tight-knit", "ar": "متماسك، وثيق", "fr": "soudé, étroit"},
-  {"nl": "inrichting", "article": "de", "type": "noun", "tr": "iç dekorasyon, döşeme", "en": "interior, furnishing", "ar": "ديكور داخلي", "fr": "aménagement intérieur"},
-  {"nl": "intussen", "type": "adv", "tr": "bu arada", "en": "meanwhile", "ar": "في غضون ذلك", "fr": "entre-temps"},
-  {"nl": "kussen", "article": "het", "type": "noun", "tr": "yastık", "en": "pillow, cushion", "ar": "وسادة", "fr": "coussin, oreiller"},
-  {"nl": "levendig", "type": "adj", "tr": "canlı, hareketli", "en": "lively, vivid", "ar": "نابض بالحياة", "fr": "vivant, animé"},
-  {"nl": "nieuwbouw", "article": "de", "type": "noun", "tr": "yeni yapı, yeni inşaat", "en": "new construction", "ar": "بناء جديد", "fr": "construction neuve"},
-  {"nl": "ontwerpen", "type": "verb", "perfectum": "ontworpen", "imperfectum": "ontwierp", "tr": "tasarlamak", "en": "to design", "ar": "يصمم", "fr": "concevoir, designer"},
-  {"nl": "plant", "article": "de", "type": "noun", "tr": "bitki", "en": "plant", "ar": "نبات", "fr": "plante"},
-  {"nl": "plein", "article": "het", "type": "noun", "tr": "meydan", "en": "square, plaza", "ar": "ميدان", "fr": "place"},
-  {"nl": "ruim", "type": "adj", "tr": "geniş, ferah", "en": "spacious, roomy", "ar": "فسيح، رحب", "fr": "spacieux, vaste"},
-  {"nl": "tapijt", "article": "het", "type": "noun", "tr": "halı", "en": "carpet, rug", "ar": "سجادة", "fr": "tapis"},
-  {"nl": "uitkiezen", "type": "verb", "perfectum": "uitgekozen", "imperfectum": "koos uit", "tr": "seçmek", "en": "to choose, to pick out", "ar": "يختار", "fr": "choisir, sélectionner"},
-  {"nl": "vanuit", "type": "prep", "tr": "itibaren, -den", "en": "from, out of", "ar": "من، انطلاقاً من", "fr": "à partir de, depuis"},
-  {"nl": "villa", "article": "de", "type": "noun", "tr": "villa, konak", "en": "villa", "ar": "فيلا", "fr": "villa"},
-  {"nl": "vliegveld", "article": "het", "type": "noun", "tr": "havaalanı", "en": "airport", "ar": "مطار", "fr": "aéroport"},
-  {"nl": "waanzinnig", "type": "adj", "tr": "inanılmaz, çılgın", "en": "incredible, crazy", "ar": "مجنون، لا يصدق", "fr": "incroyable, fou"},
-  {"nl": "aanbod", "article": "het", "type": "noun", "tr": "teklif, seçenek yelpazesi", "en": "offer, range", "ar": "عرض، تشكيلة", "fr": "offre, gamme"},
-  {"nl": "afgelegen", "type": "adj", "tr": "ücra, uzak", "en": "remote, isolated", "ar": "نائي، بعيد", "fr": "isolé, éloigné"},
-  {"nl": "bouwmarkt", "article": "de", "type": "noun", "tr": "yapı marketi", "en": "DIY store, hardware store", "ar": "متجر مواد البناء", "fr": "magasin de bricolage"},
-  {"nl": "Duitsland", "type": "noun", "tr": "Almanya", "en": "Germany", "ar": "ألمانيا", "fr": "Allemagne"},
-  {"nl": "eind", "article": "het", "type": "noun", "tr": "son, uç; uzun mesafe", "en": "end; long distance", "ar": "نهاية؛ مسافة طويلة", "fr": "fin; longue distance"},
-  {"nl": "grens", "article": "de", "type": "noun", "tr": "sınır", "en": "border, limit", "ar": "حدود", "fr": "frontière, limite"},
-  {"nl": "grond", "article": "de", "type": "noun", "tr": "arsa, toprak", "en": "ground, land", "ar": "أرض، تربة", "fr": "terrain, sol"},
-  {"nl": "hert", "article": "het", "type": "noun", "tr": "geyik", "en": "deer", "ar": "غزال", "fr": "cerf"},
-  {"nl": "hoek", "article": "de", "type": "noun", "tr": "köşe", "en": "corner", "ar": "زاوية", "fr": "coin"},
-  {"nl": "horeca", "article": "de", "type": "noun", "tr": "otelcilik, restoran ve bar sektörü", "en": "hospitality industry", "ar": "قطاع الضيافة والمطاعم", "fr": "secteur hôtellerie-restauration"},
-  {"nl": "landelijk", "type": "adj", "tr": "kırsal", "en": "rural, national", "ar": "ريفي، وطني", "fr": "rural, national"},
-  {"nl": "langsgaan", "type": "verb", "perfectum": "langsgegaan", "imperfectum": "ging langs", "tr": "uğramak", "en": "to drop by, to pass by", "ar": "يمر بـ، يزور", "fr": "passer (par)"},
-  {"nl": "onlangs", "type": "adv", "tr": "yakın geçmişte, geçenlerde", "en": "recently", "ar": "مؤخراً", "fr": "récemment"},
-  {"nl": "optie", "article": "de", "type": "noun", "tr": "seçenek, alternatif", "en": "option", "ar": "خيار", "fr": "option"},
-  {"nl": "platteland", "article": "het", "type": "noun", "tr": "taşra, kır", "en": "countryside", "ar": "الريف", "fr": "campagne"},
-  {"nl": "polder", "article": "de", "type": "noun", "tr": "polder (denizden kazanılan toprak)", "en": "polder (reclaimed land)", "ar": "بولدر (أرض مستصلحة)", "fr": "polder (terre gagnée sur la mer)"},
-  {"nl": "Randstad", "article": "de", "type": "noun", "tr": "Hollanda'nın batı kentsel bölgesi (Amsterdam, Rotterdam, Lahey, Utrecht)", "en": "Randstad (urban region of western Netherlands)", "ar": "راندستاد (المنطقة الحضرية الغربية بهولندا)", "fr": "Randstad (région urbaine de l'ouest des Pays-Bas)"},
-  {"nl": "sinds", "type": "prep", "tr": "-den beri", "en": "since", "ar": "منذ", "fr": "depuis"},
-  {"nl": "spits", "article": "de", "type": "noun", "tr": "yoğun trafik saatleri", "en": "rush hour", "ar": "ساعة الذروة", "fr": "heure de pointe"},
-  {"nl": "spoor", "article": "het", "type": "noun", "tr": "demiryolu, iz", "en": "rail, track", "ar": "مسار السكة الحديدية", "fr": "voie ferrée, trace"},
-  {"nl": "stedentrip", "article": "de", "type": "noun", "tr": "şehir gezisi", "en": "city trip", "ar": "رحلة مدينة", "fr": "city trip"},
-  {"nl": "theater", "article": "het", "type": "noun", "tr": "tiyatro", "en": "theatre", "ar": "مسرح", "fr": "théâtre"},
-  {"nl": "voorziening", "article": "de", "type": "noun", "tr": "tesis, imkân", "en": "facility, amenity", "ar": "مرفق، خدمة", "fr": "équipement, service"},
-  {"nl": "warenhuis", "article": "het", "type": "noun", "tr": "(çok katlı) mağaza", "en": "department store", "ar": "محل تجاري كبير", "fr": "grand magasin"},
-  {"nl": "aansluiten", "type": "verb", "perfectum": "aangesloten", "imperfectum": "sloot aan", "tr": "bağlamak, bağlanmak", "en": "to connect, to join", "ar": "يوصل، ينضم", "fr": "connecter, rejoindre"},
-  {"nl": "af", "type": "adj", "tr": "tamam, bitmiş", "en": "finished, done", "ar": "منتهٍ، جاهز", "fr": "terminé, fini"},
-  {"nl": "afronden", "type": "verb", "perfectum": "afgerond", "imperfectum": "rondde af", "tr": "tamamlamak", "en": "to finish, to round off", "ar": "يكمل، يختتم", "fr": "terminer, finaliser"},
-  {"nl": "blad", "article": "het", "type": "noun", "tr": "yaprak", "en": "leaf", "ar": "ورقة شجر", "fr": "feuille"},
-  {"nl": "boormachine", "article": "de", "type": "noun", "tr": "matkap", "en": "drill", "ar": "مثقاب", "fr": "perceuse"},
-  {"nl": "dakgoot", "article": "de", "type": "noun", "tr": "çatı oluğu", "en": "gutter", "ar": "ميزاب السطح", "fr": "gouttière"},
-  {"nl": "draad", "article": "de", "type": "noun", "tr": "tel, kablo", "en": "wire, thread", "ar": "سلك، خيط", "fr": "fil"},
-  {"nl": "gereedschap", "article": "het", "type": "noun", "tr": "alet, araç gereç", "en": "tools", "ar": "أدوات", "fr": "outils"},
-  {"nl": "installeren", "type": "verb", "perfectum": "geïnstalleerd", "imperfectum": "installeerde", "tr": "monte etmek, kurmak", "en": "to install", "ar": "يثبت، يركب", "fr": "installer"},
-  {"nl": "kabel", "article": "de", "type": "noun", "tr": "kablo", "en": "cable", "ar": "كابل", "fr": "câble"},
-  {"nl": "kozijn", "article": "het", "type": "noun", "tr": "pencere çerçevesi", "en": "window frame", "ar": "إطار النافذة", "fr": "cadre de fenêtre"},
-  {"nl": "ladder", "article": "de", "type": "noun", "tr": "merdiven (portatif)", "en": "ladder", "ar": "سلم", "fr": "échelle"},
-  {"nl": "meterkast", "article": "de", "type": "noun", "tr": "sayaç kutusu", "en": "meter cupboard, fuse box", "ar": "صندوق العداد", "fr": "compteur électrique, tableau de bord"},
-  {"nl": "plafond", "article": "het", "type": "noun", "tr": "tavan", "en": "ceiling", "ar": "سقف", "fr": "plafond"},
-  {"nl": "rookmelder", "article": "de", "type": "noun", "tr": "duman dedektörü", "en": "smoke detector", "ar": "كاشف الدخان", "fr": "détecteur de fumée"},
-  {"nl": "schroef", "article": "de", "type": "noun", "tr": "vida", "en": "screw", "ar": "مسمار لولبي", "fr": "vis"},
-  {"nl": "schroevendraaier", "article": "de", "type": "noun", "tr": "tornavida", "en": "screwdriver", "ar": "مفك براغي", "fr": "tournevis"},
-  {"nl": "snoer", "article": "het", "type": "noun", "tr": "kablo, ip", "en": "cord, cable", "ar": "سلك، حبل", "fr": "cordon, câble"},
-  {"nl": "tang", "article": "de", "type": "noun", "tr": "kerpeten, kıskaç", "en": "pliers, tongs", "ar": "كماشة", "fr": "pince"},
-  {"nl": "tegel", "article": "de", "type": "noun", "tr": "fayans, çini", "en": "tile", "ar": "بلاطة", "fr": "carreau"},
-  {"nl": "uitschakelen", "type": "verb", "perfectum": "uitgeschakeld", "imperfectum": "schakelde uit", "tr": "kapatmak, devre dışı bırakmak", "en": "to switch off, to disable", "ar": "يطفئ، يعطل", "fr": "éteindre, désactiver"},
-  {"nl": "vastmaken", "type": "verb", "perfectum": "vastgemaakt", "imperfectum": "maakte vast", "tr": "takmak, bağlamak", "en": "to attach, to fasten", "ar": "يثبت، يربط", "fr": "attacher, fixer"},
-  {"nl": "verlengen", "type": "verb", "perfectum": "verlengd", "imperfectum": "verlengde", "tr": "uzatmak", "en": "to extend, to lengthen", "ar": "يمدد، يطيل", "fr": "prolonger, allonger"},
-  {"nl": "verstand", "article": "het", "type": "noun", "tr": "akıl, anlayış", "en": "mind, understanding", "ar": "عقل، فهم", "fr": "raison, intelligence"},
-  {"nl": "verven", "type": "verb", "perfectum": "geverfd", "imperfectum": "verfde", "tr": "boyamak", "en": "to paint", "ar": "يدهن، يطلي", "fr": "peindre"},
-  {"nl": "achtergrond", "article": "de", "type": "noun", "tr": "arka plan, altyapı", "en": "background", "ar": "خلفية", "fr": "arrière-plan, contexte"},
-  {"nl": "asiel", "article": "het", "type": "noun", "tr": "iltica, sığınak", "en": "asylum, shelter", "ar": "لجوء، ملجأ", "fr": "asile"},
-  {"nl": "bijkomen", "type": "verb", "perfectum": "bijgekomen", "imperfectum": "kwam bij", "tr": "kendine gelmek", "en": "to recover, to come round", "ar": "يتعافى، يفيق", "fr": "reprendre ses esprits, se remettre"},
-  {"nl": "conflict", "article": "het", "type": "noun", "tr": "çatışma, anlaşmazlık", "en": "conflict", "ar": "صراع، نزاع", "fr": "conflit"},
-  {"nl": "continent", "article": "het", "type": "noun", "tr": "kıta", "en": "continent", "ar": "قارة", "fr": "continent"},
-  {"nl": "diagram", "article": "het", "type": "noun", "tr": "grafik, şema", "en": "diagram, chart", "ar": "مخطط، رسم بياني", "fr": "diagramme, graphique"},
-  {"nl": "dichtbevolkt", "type": "adj", "tr": "yoğun nüfuslu", "en": "densely populated", "ar": "كثيف السكان", "fr": "densément peuplé"},
-  {"nl": "doordat", "type": "conj", "tr": "-diğinden dolayı, nedeniyle", "en": "because of, due to the fact that", "ar": "بسبب أن", "fr": "parce que, du fait que"},
-  {"nl": "economisch", "type": "adj", "tr": "ekonomik", "en": "economic", "ar": "اقتصادي", "fr": "économique"},
-  {"nl": "gebied", "article": "het", "type": "noun", "tr": "bölge, alan", "en": "area, region", "ar": "منطقة", "fr": "région, zone"},
-  {"nl": "gelijk", "type": "adv", "tr": "eşit olarak, hemen", "en": "equally, immediately", "ar": "بالتساوي، فوراً", "fr": "également, immédiatement"},
-  {"nl": "groei", "article": "de", "type": "noun", "tr": "büyüme, artış", "en": "growth", "ar": "نمو", "fr": "croissance"},
-  {"nl": "hoogopgeleide", "article": "de", "type": "noun", "tr": "yüksek eğitimli kişi", "en": "highly educated person", "ar": "شخص متعلم تعليماً عالياً", "fr": "personne hautement qualifiée"},
-  {"nl": "inburgeren", "type": "verb", "perfectum": "ingeburgerd", "imperfectum": "burgerde in", "tr": "topluma entegre olmak", "en": "to integrate, to become established", "ar": "يندمج في المجتمع", "fr": "s'intégrer"},
-  {"nl": "jaarlijks", "type": "adj", "tr": "yıllık", "en": "annual, yearly", "ar": "سنوي", "fr": "annuel"},
-  {"nl": "krimpen", "type": "verb", "perfectum": "gekrompen", "imperfectum": "kromp", "tr": "azalmak, küçülmek", "en": "to shrink, to decrease", "ar": "يتقلص، ينكمش", "fr": "rétrécir, diminuer"},
-  {"nl": "migratie", "article": "de", "type": "noun", "tr": "göç", "en": "migration", "ar": "هجرة", "fr": "migration"},
-  {"nl": "motief", "article": "het", "type": "noun", "tr": "gerekçe, güdü", "en": "motive, reason", "ar": "دافع، سبب", "fr": "motif, mobile"},
-  {"nl": "overigens", "type": "adv", "tr": "ayrıca, öte yandan", "en": "moreover, incidentally", "ar": "علاوة على ذلك، بالمناسبة", "fr": "par ailleurs, au demeurant"},
-  {"nl": "politiek", "type": "adj", "tr": "siyasi", "en": "political", "ar": "سياسي", "fr": "politique"},
-  {"nl": "relatief", "type": "adj", "tr": "görece, nispeten", "en": "relatively", "ar": "نسبياً", "fr": "relativement"},
-  {"nl": "religieus", "type": "adj", "tr": "dini, dinî", "en": "religious", "ar": "ديني", "fr": "religieux"},
-  {"nl": "samenleving", "article": "de", "type": "noun", "tr": "toplum", "en": "society", "ar": "مجتمع", "fr": "société"},
-  {"nl": "vergelijking", "article": "de", "type": "noun", "tr": "karşılaştırma", "en": "comparison", "ar": "مقارنة", "fr": "comparaison"},
-  {"nl": "vergrijzing", "article": "de", "type": "noun", "tr": "nüfusun yaşlanması", "en": "ageing population", "ar": "شيخوخة السكان", "fr": "vieillissement de la population"},
-  {"nl": "vluchten", "type": "verb", "perfectum": "gevlucht", "imperfectum": "vluchtte", "tr": "kaçmak", "en": "to flee, to escape", "ar": "يفر، يهرب", "fr": "fuir, s'échapper"},
-  {"nl": "zich vestigen", "type": "verb", "perfectum": "zich gevestigd", "imperfectum": "vestigde zich", "tr": "yerleşmek", "en": "to settle, to establish oneself", "ar": "يستوطن، يستقر", "fr": "s'établir, s'installer"}
+  {
+    "nl": "afscheid",
+    "article": "het",
+    "type": "noun",
+    "tr": "veda, elveda",
+    "en": "farewell, goodbye",
+    "ar": "وداع",
+    "fr": "adieu, au revoir"
+  },
+  {
+    "nl": "architect",
+    "article": "de",
+    "type": "noun",
+    "tr": "mimar",
+    "en": "architect",
+    "ar": "مهندس معماري",
+    "fr": "architecte"
+  },
+  {
+    "nl": "behang",
+    "article": "het",
+    "type": "noun",
+    "tr": "duvar kağıdı",
+    "en": "wallpaper",
+    "ar": "ورق الجدران",
+    "fr": "papier peint"
+  },
+  {
+    "nl": "beige",
+    "type": "adj",
+    "tr": "bej",
+    "en": "beige",
+    "ar": "بيج",
+    "fr": "beige"
+  },
+  {
+    "nl": "bestand",
+    "article": "het",
+    "type": "noun",
+    "tr": "dosya",
+    "en": "file",
+    "ar": "ملف",
+    "fr": "fichier"
+  },
+  {
+    "nl": "gekleurd",
+    "type": "adj",
+    "tr": "renkli",
+    "en": "coloured",
+    "ar": "ملون",
+    "fr": "coloré"
+  },
+  {
+    "nl": "gordijn",
+    "article": "het",
+    "type": "noun",
+    "tr": "perde",
+    "en": "curtain",
+    "ar": "ستارة",
+    "fr": "rideau"
+  },
+  {
+    "nl": "gras",
+    "article": "het",
+    "type": "noun",
+    "tr": "çim",
+    "en": "grass",
+    "ar": "عشب",
+    "fr": "herbe"
+  },
+  {
+    "nl": "hecht",
+    "type": "adj",
+    "tr": "yakın, sıkı (ilişki)",
+    "en": "close, tight-knit",
+    "ar": "متماسك، وثيق",
+    "fr": "soudé, étroit"
+  },
+  {
+    "nl": "inrichting",
+    "article": "de",
+    "type": "noun",
+    "tr": "iç dekorasyon, döşeme",
+    "en": "interior, furnishing",
+    "ar": "ديكور داخلي",
+    "fr": "aménagement intérieur"
+  },
+  {
+    "nl": "intussen",
+    "type": "adv",
+    "tr": "bu arada",
+    "en": "meanwhile",
+    "ar": "في غضون ذلك",
+    "fr": "entre-temps"
+  },
+  {
+    "nl": "kussen",
+    "article": "het",
+    "type": "noun",
+    "tr": "yastık",
+    "en": "pillow, cushion",
+    "ar": "وسادة",
+    "fr": "coussin, oreiller"
+  },
+  {
+    "nl": "levendig",
+    "type": "adj",
+    "tr": "canlı, hareketli",
+    "en": "lively, vivid",
+    "ar": "نابض بالحياة",
+    "fr": "vivant, animé"
+  },
+  {
+    "nl": "nieuwbouw",
+    "article": "de",
+    "type": "noun",
+    "tr": "yeni yapı, yeni inşaat",
+    "en": "new construction",
+    "ar": "بناء جديد",
+    "fr": "construction neuve"
+  },
+  {
+    "nl": "ontwerpen",
+    "type": "verb",
+    "perfectum": "ontworpen",
+    "imperfectum": "ontwierp",
+    "tr": "tasarlamak",
+    "en": "to design",
+    "ar": "يصمم",
+    "fr": "concevoir, designer"
+  },
+  {
+    "nl": "plant",
+    "article": "de",
+    "type": "noun",
+    "tr": "bitki",
+    "en": "plant",
+    "ar": "نبات",
+    "fr": "plante"
+  },
+  {
+    "nl": "plein",
+    "article": "het",
+    "type": "noun",
+    "tr": "meydan",
+    "en": "square, plaza",
+    "ar": "ميدان",
+    "fr": "place"
+  },
+  {
+    "nl": "ruim",
+    "type": "adj",
+    "tr": "geniş, ferah",
+    "en": "spacious, roomy",
+    "ar": "فسيح، رحب",
+    "fr": "spacieux, vaste"
+  },
+  {
+    "nl": "tapijt",
+    "article": "het",
+    "type": "noun",
+    "tr": "halı",
+    "en": "carpet, rug",
+    "ar": "سجادة",
+    "fr": "tapis"
+  },
+  {
+    "nl": "uitkiezen",
+    "type": "verb",
+    "perfectum": "uitgekozen",
+    "imperfectum": "koos uit",
+    "tr": "seçmek",
+    "en": "to choose, to pick out",
+    "ar": "يختار",
+    "fr": "choisir, sélectionner"
+  },
+  {
+    "nl": "vanuit",
+    "type": "prep",
+    "tr": "itibaren, -den",
+    "en": "from, out of",
+    "ar": "من، انطلاقاً من",
+    "fr": "à partir de, depuis"
+  },
+  {
+    "nl": "villa",
+    "article": "de",
+    "type": "noun",
+    "tr": "villa, konak",
+    "en": "villa",
+    "ar": "فيلا",
+    "fr": "villa"
+  },
+  {
+    "nl": "vliegveld",
+    "article": "het",
+    "type": "noun",
+    "tr": "havaalanı",
+    "en": "airport",
+    "ar": "مطار",
+    "fr": "aéroport"
+  },
+  {
+    "nl": "waanzinnig",
+    "type": "adj",
+    "tr": "inanılmaz, çılgın",
+    "en": "incredible, crazy",
+    "ar": "مجنون، لا يصدق",
+    "fr": "incroyable, fou"
+  },
+  {
+    "nl": "aanbod",
+    "article": "het",
+    "type": "noun",
+    "tr": "teklif, seçenek yelpazesi",
+    "en": "offer, range",
+    "ar": "عرض، تشكيلة",
+    "fr": "offre, gamme"
+  },
+  {
+    "nl": "afgelegen",
+    "type": "adj",
+    "tr": "ücra, uzak",
+    "en": "remote, isolated",
+    "ar": "نائي، بعيد",
+    "fr": "isolé, éloigné"
+  },
+  {
+    "nl": "bouwmarkt",
+    "article": "de",
+    "type": "noun",
+    "tr": "yapı marketi",
+    "en": "DIY store, hardware store",
+    "ar": "متجر مواد البناء",
+    "fr": "magasin de bricolage"
+  },
+  {
+    "nl": "Duitsland",
+    "type": "noun",
+    "tr": "Almanya",
+    "en": "Germany",
+    "ar": "ألمانيا",
+    "fr": "Allemagne"
+  },
+  {
+    "nl": "eind",
+    "article": "het",
+    "type": "noun",
+    "tr": "son, uç; uzun mesafe",
+    "en": "end; long distance",
+    "ar": "نهاية؛ مسافة طويلة",
+    "fr": "fin; longue distance"
+  },
+  {
+    "nl": "grens",
+    "article": "de",
+    "type": "noun",
+    "tr": "sınır",
+    "en": "border, limit",
+    "ar": "حدود",
+    "fr": "frontière, limite"
+  },
+  {
+    "nl": "grond",
+    "article": "de",
+    "type": "noun",
+    "tr": "arsa, toprak",
+    "en": "ground, land",
+    "ar": "أرض، تربة",
+    "fr": "terrain, sol"
+  },
+  {
+    "nl": "hert",
+    "article": "het",
+    "type": "noun",
+    "tr": "geyik",
+    "en": "deer",
+    "ar": "غزال",
+    "fr": "cerf"
+  },
+  {
+    "nl": "hoek",
+    "article": "de",
+    "type": "noun",
+    "tr": "köşe",
+    "en": "corner",
+    "ar": "زاوية",
+    "fr": "coin"
+  },
+  {
+    "nl": "horeca",
+    "article": "de",
+    "type": "noun",
+    "tr": "otelcilik, restoran ve bar sektörü",
+    "en": "hospitality industry",
+    "ar": "قطاع الضيافة والمطاعم",
+    "fr": "secteur hôtellerie-restauration"
+  },
+  {
+    "nl": "landelijk",
+    "type": "adj",
+    "tr": "kırsal",
+    "en": "rural, national",
+    "ar": "ريفي، وطني",
+    "fr": "rural, national"
+  },
+  {
+    "nl": "langsgaan",
+    "type": "verb",
+    "perfectum": "langsgegaan",
+    "imperfectum": "ging langs",
+    "tr": "uğramak",
+    "en": "to drop by, to pass by",
+    "ar": "يمر بـ، يزور",
+    "fr": "passer (par)"
+  },
+  {
+    "nl": "onlangs",
+    "type": "adv",
+    "tr": "yakın geçmişte, geçenlerde",
+    "en": "recently",
+    "ar": "مؤخراً",
+    "fr": "récemment"
+  },
+  {
+    "nl": "optie",
+    "article": "de",
+    "type": "noun",
+    "tr": "seçenek, alternatif",
+    "en": "option",
+    "ar": "خيار",
+    "fr": "option"
+  },
+  {
+    "nl": "platteland",
+    "article": "het",
+    "type": "noun",
+    "tr": "taşra, kır",
+    "en": "countryside",
+    "ar": "الريف",
+    "fr": "campagne"
+  },
+  {
+    "nl": "polder",
+    "article": "de",
+    "type": "noun",
+    "tr": "polder (denizden kazanılan toprak)",
+    "en": "polder (reclaimed land)",
+    "ar": "بولدر (أرض مستصلحة)",
+    "fr": "polder (terre gagnée sur la mer)"
+  },
+  {
+    "nl": "Randstad",
+    "article": "de",
+    "type": "noun",
+    "tr": "Hollanda'nın batı kentsel bölgesi (Amsterdam, Rotterdam, Lahey, Utrecht)",
+    "en": "Randstad (urban region of western Netherlands)",
+    "ar": "راندستاد (المنطقة الحضرية الغربية بهولندا)",
+    "fr": "Randstad (région urbaine de l'ouest des Pays-Bas)"
+  },
+  {
+    "nl": "spits",
+    "article": "de",
+    "type": "noun",
+    "tr": "yoğun trafik saatleri",
+    "en": "rush hour",
+    "ar": "ساعة الذروة",
+    "fr": "heure de pointe"
+  },
+  {
+    "nl": "stedentrip",
+    "article": "de",
+    "type": "noun",
+    "tr": "şehir gezisi",
+    "en": "city trip",
+    "ar": "رحلة مدينة",
+    "fr": "city trip"
+  },
+  {
+    "nl": "theater",
+    "article": "het",
+    "type": "noun",
+    "tr": "tiyatro",
+    "en": "theatre",
+    "ar": "مسرح",
+    "fr": "théâtre"
+  },
+  {
+    "nl": "voorziening",
+    "article": "de",
+    "type": "noun",
+    "tr": "tesis, imkân",
+    "en": "facility, amenity",
+    "ar": "مرفق، خدمة",
+    "fr": "équipement, service"
+  },
+  {
+    "nl": "warenhuis",
+    "article": "het",
+    "type": "noun",
+    "tr": "(çok katlı) mağaza",
+    "en": "department store",
+    "ar": "محل تجاري كبير",
+    "fr": "grand magasin"
+  },
+  {
+    "nl": "aansluiten",
+    "type": "verb",
+    "perfectum": "aangesloten",
+    "imperfectum": "sloot aan",
+    "tr": "bağlamak, bağlanmak",
+    "en": "to connect, to join",
+    "ar": "يوصل، ينضم",
+    "fr": "connecter, rejoindre"
+  },
+  {
+    "nl": "af",
+    "type": "adj",
+    "tr": "tamam, bitmiş",
+    "en": "finished, done",
+    "ar": "منتهٍ، جاهز",
+    "fr": "terminé, fini"
+  },
+  {
+    "nl": "afronden",
+    "type": "verb",
+    "perfectum": "afgerond",
+    "imperfectum": "rondde af",
+    "tr": "tamamlamak",
+    "en": "to finish, to round off",
+    "ar": "يكمل، يختتم",
+    "fr": "terminer, finaliser"
+  },
+  {
+    "nl": "blad",
+    "article": "het",
+    "type": "noun",
+    "tr": "yaprak",
+    "en": "leaf",
+    "ar": "ورقة شجر",
+    "fr": "feuille"
+  },
+  {
+    "nl": "boormachine",
+    "article": "de",
+    "type": "noun",
+    "tr": "matkap",
+    "en": "drill",
+    "ar": "مثقاب",
+    "fr": "perceuse"
+  },
+  {
+    "nl": "dakgoot",
+    "article": "de",
+    "type": "noun",
+    "tr": "çatı oluğu",
+    "en": "gutter",
+    "ar": "ميزاب السطح",
+    "fr": "gouttière"
+  },
+  {
+    "nl": "draad",
+    "article": "de",
+    "type": "noun",
+    "tr": "tel, kablo",
+    "en": "wire, thread",
+    "ar": "سلك، خيط",
+    "fr": "fil"
+  },
+  {
+    "nl": "gereedschap",
+    "article": "het",
+    "type": "noun",
+    "tr": "alet, araç gereç",
+    "en": "tools",
+    "ar": "أدوات",
+    "fr": "outils"
+  },
+  {
+    "nl": "installeren",
+    "type": "verb",
+    "perfectum": "geïnstalleerd",
+    "imperfectum": "installeerde",
+    "tr": "monte etmek, kurmak",
+    "en": "to install",
+    "ar": "يثبت، يركب",
+    "fr": "installer"
+  },
+  {
+    "nl": "kabel",
+    "article": "de",
+    "type": "noun",
+    "tr": "kablo",
+    "en": "cable",
+    "ar": "كابل",
+    "fr": "câble"
+  },
+  {
+    "nl": "kozijn",
+    "article": "het",
+    "type": "noun",
+    "tr": "pencere çerçevesi",
+    "en": "window frame",
+    "ar": "إطار النافذة",
+    "fr": "cadre de fenêtre"
+  },
+  {
+    "nl": "ladder",
+    "article": "de",
+    "type": "noun",
+    "tr": "merdiven (portatif)",
+    "en": "ladder",
+    "ar": "سلم",
+    "fr": "échelle"
+  },
+  {
+    "nl": "meterkast",
+    "article": "de",
+    "type": "noun",
+    "tr": "sayaç kutusu",
+    "en": "meter cupboard, fuse box",
+    "ar": "صندوق العداد",
+    "fr": "compteur électrique, tableau de bord"
+  },
+  {
+    "nl": "plafond",
+    "article": "het",
+    "type": "noun",
+    "tr": "tavan",
+    "en": "ceiling",
+    "ar": "سقف",
+    "fr": "plafond"
+  },
+  {
+    "nl": "rookmelder",
+    "article": "de",
+    "type": "noun",
+    "tr": "duman dedektörü",
+    "en": "smoke detector",
+    "ar": "كاشف الدخان",
+    "fr": "détecteur de fumée"
+  },
+  {
+    "nl": "schroef",
+    "article": "de",
+    "type": "noun",
+    "tr": "vida",
+    "en": "screw",
+    "ar": "مسمار لولبي",
+    "fr": "vis"
+  },
+  {
+    "nl": "schroevendraaier",
+    "article": "de",
+    "type": "noun",
+    "tr": "tornavida",
+    "en": "screwdriver",
+    "ar": "مفك براغي",
+    "fr": "tournevis"
+  },
+  {
+    "nl": "snoer",
+    "article": "het",
+    "type": "noun",
+    "tr": "kablo, ip",
+    "en": "cord, cable",
+    "ar": "سلك، حبل",
+    "fr": "cordon, câble"
+  },
+  {
+    "nl": "tang",
+    "article": "de",
+    "type": "noun",
+    "tr": "kerpeten, kıskaç",
+    "en": "pliers, tongs",
+    "ar": "كماشة",
+    "fr": "pince"
+  },
+  {
+    "nl": "tegel",
+    "article": "de",
+    "type": "noun",
+    "tr": "fayans, çini",
+    "en": "tile",
+    "ar": "بلاطة",
+    "fr": "carreau"
+  },
+  {
+    "nl": "uitschakelen",
+    "type": "verb",
+    "perfectum": "uitgeschakeld",
+    "imperfectum": "schakelde uit",
+    "tr": "kapatmak, devre dışı bırakmak",
+    "en": "to switch off, to disable",
+    "ar": "يطفئ، يعطل",
+    "fr": "éteindre, désactiver"
+  },
+  {
+    "nl": "vastmaken",
+    "type": "verb",
+    "perfectum": "vastgemaakt",
+    "imperfectum": "maakte vast",
+    "tr": "takmak, bağlamak",
+    "en": "to attach, to fasten",
+    "ar": "يثبت، يربط",
+    "fr": "attacher, fixer"
+  },
+  {
+    "nl": "verlengen",
+    "type": "verb",
+    "perfectum": "verlengd",
+    "imperfectum": "verlengde",
+    "tr": "uzatmak",
+    "en": "to extend, to lengthen",
+    "ar": "يمدد، يطيل",
+    "fr": "prolonger, allonger"
+  },
+  {
+    "nl": "verstand",
+    "article": "het",
+    "type": "noun",
+    "tr": "akıl, anlayış",
+    "en": "mind, understanding",
+    "ar": "عقل، فهم",
+    "fr": "raison, intelligence"
+  },
+  {
+    "nl": "verven",
+    "type": "verb",
+    "perfectum": "geverfd",
+    "imperfectum": "verfde",
+    "tr": "boyamak",
+    "en": "to paint",
+    "ar": "يدهن، يطلي",
+    "fr": "peindre"
+  },
+  {
+    "nl": "achtergrond",
+    "article": "de",
+    "type": "noun",
+    "tr": "arka plan, altyapı",
+    "en": "background",
+    "ar": "خلفية",
+    "fr": "arrière-plan, contexte"
+  },
+  {
+    "nl": "asiel",
+    "article": "het",
+    "type": "noun",
+    "tr": "iltica, sığınak",
+    "en": "asylum, shelter",
+    "ar": "لجوء، ملجأ",
+    "fr": "asile"
+  },
+  {
+    "nl": "bijkomen",
+    "type": "verb",
+    "perfectum": "bijgekomen",
+    "imperfectum": "kwam bij",
+    "tr": "kendine gelmek",
+    "en": "to recover, to come round",
+    "ar": "يتعافى، يفيق",
+    "fr": "reprendre ses esprits, se remettre"
+  },
+  {
+    "nl": "conflict",
+    "article": "het",
+    "type": "noun",
+    "tr": "çatışma, anlaşmazlık",
+    "en": "conflict",
+    "ar": "صراع، نزاع",
+    "fr": "conflit"
+  },
+  {
+    "nl": "continent",
+    "article": "het",
+    "type": "noun",
+    "tr": "kıta",
+    "en": "continent",
+    "ar": "قارة",
+    "fr": "continent"
+  },
+  {
+    "nl": "diagram",
+    "article": "het",
+    "type": "noun",
+    "tr": "grafik, şema",
+    "en": "diagram, chart",
+    "ar": "مخطط، رسم بياني",
+    "fr": "diagramme, graphique"
+  },
+  {
+    "nl": "dichtbevolkt",
+    "type": "adj",
+    "tr": "yoğun nüfuslu",
+    "en": "densely populated",
+    "ar": "كثيف السكان",
+    "fr": "densément peuplé"
+  },
+  {
+    "nl": "doordat",
+    "type": "conj",
+    "tr": "-diğinden dolayı, nedeniyle",
+    "en": "because of, due to the fact that",
+    "ar": "بسبب أن",
+    "fr": "parce que, du fait que"
+  },
+  {
+    "nl": "economisch",
+    "type": "adj",
+    "tr": "ekonomik",
+    "en": "economic",
+    "ar": "اقتصادي",
+    "fr": "économique"
+  },
+  {
+    "nl": "gebied",
+    "article": "het",
+    "type": "noun",
+    "tr": "bölge, alan",
+    "en": "area, region",
+    "ar": "منطقة",
+    "fr": "région, zone"
+  },
+  {
+    "nl": "gelijk",
+    "type": "adv",
+    "tr": "eşit olarak, hemen",
+    "en": "equally, immediately",
+    "ar": "بالتساوي، فوراً",
+    "fr": "également, immédiatement"
+  },
+  {
+    "nl": "groei",
+    "article": "de",
+    "type": "noun",
+    "tr": "büyüme, artış",
+    "en": "growth",
+    "ar": "نمو",
+    "fr": "croissance"
+  },
+  {
+    "nl": "hoogopgeleide",
+    "article": "de",
+    "type": "noun",
+    "tr": "yüksek eğitimli kişi",
+    "en": "highly educated person",
+    "ar": "شخص متعلم تعليماً عالياً",
+    "fr": "personne hautement qualifiée"
+  },
+  {
+    "nl": "inburgeren",
+    "type": "verb",
+    "perfectum": "ingeburgerd",
+    "imperfectum": "burgerde in",
+    "tr": "topluma entegre olmak",
+    "en": "to integrate, to become established",
+    "ar": "يندمج في المجتمع",
+    "fr": "s'intégrer"
+  },
+  {
+    "nl": "jaarlijks",
+    "type": "adj",
+    "tr": "yıllık",
+    "en": "annual, yearly",
+    "ar": "سنوي",
+    "fr": "annuel"
+  },
+  {
+    "nl": "krimpen",
+    "type": "verb",
+    "perfectum": "gekrompen",
+    "imperfectum": "kromp",
+    "tr": "azalmak, küçülmek",
+    "en": "to shrink, to decrease",
+    "ar": "يتقلص، ينكمش",
+    "fr": "rétrécir, diminuer"
+  },
+  {
+    "nl": "migratie",
+    "article": "de",
+    "type": "noun",
+    "tr": "göç",
+    "en": "migration",
+    "ar": "هجرة",
+    "fr": "migration"
+  },
+  {
+    "nl": "motief",
+    "article": "het",
+    "type": "noun",
+    "tr": "gerekçe, güdü",
+    "en": "motive, reason",
+    "ar": "دافع، سبب",
+    "fr": "motif, mobile"
+  },
+  {
+    "nl": "overigens",
+    "type": "adv",
+    "tr": "ayrıca, öte yandan",
+    "en": "moreover, incidentally",
+    "ar": "علاوة على ذلك، بالمناسبة",
+    "fr": "par ailleurs, au demeurant"
+  },
+  {
+    "nl": "politiek",
+    "type": "adj",
+    "tr": "siyasi",
+    "en": "political",
+    "ar": "سياسي",
+    "fr": "politique"
+  },
+  {
+    "nl": "relatief",
+    "type": "adj",
+    "tr": "görece, nispeten",
+    "en": "relatively",
+    "ar": "نسبياً",
+    "fr": "relativement"
+  },
+  {
+    "nl": "religieus",
+    "type": "adj",
+    "tr": "dini, dinî",
+    "en": "religious",
+    "ar": "ديني",
+    "fr": "religieux"
+  },
+  {
+    "nl": "samenleving",
+    "article": "de",
+    "type": "noun",
+    "tr": "toplum",
+    "en": "society",
+    "ar": "مجتمع",
+    "fr": "société"
+  },
+  {
+    "nl": "vergelijking",
+    "article": "de",
+    "type": "noun",
+    "tr": "karşılaştırma",
+    "en": "comparison",
+    "ar": "مقارنة",
+    "fr": "comparaison"
+  },
+  {
+    "nl": "vergrijzing",
+    "article": "de",
+    "type": "noun",
+    "tr": "nüfusun yaşlanması",
+    "en": "ageing population",
+    "ar": "شيخوخة السكان",
+    "fr": "vieillissement de la population"
+  },
+  {
+    "nl": "vluchten",
+    "type": "verb",
+    "perfectum": "gevlucht",
+    "imperfectum": "vluchtte",
+    "tr": "kaçmak",
+    "en": "to flee, to escape",
+    "ar": "يفر، يهرب",
+    "fr": "fuir, s'échapper"
+  },
+  {
+    "nl": "zich vestigen",
+    "type": "verb",
+    "perfectum": "zich gevestigd",
+    "imperfectum": "vestigde zich",
+    "tr": "yerleşmek",
+    "en": "to settle, to establish oneself",
+    "ar": "يستوطن، يستقر",
+    "fr": "s'établir, s'installer"
+  }
 ]

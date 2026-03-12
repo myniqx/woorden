@@ -161,16 +161,6 @@
     "fr": "dépense"
   },
   {
-    "nl": "uitkijken",
-    "type": "verb",
-    "perfectum": "uitgekeken",
-    "imperfectum": "keek uit",
-    "tr": "dikkat etmek",
-    "en": "to watch out",
-    "ar": "يحذر",
-    "fr": "faire attention"
-  },
-  {
     "nl": "voordelig",
     "type": "adj",
     "tr": "uygun fiyatlı",
@@ -934,16 +924,6 @@
     "fr": "crime"
   },
   {
-    "nl": "missen",
-    "type": "verb",
-    "perfectum": "gemist",
-    "imperfectum": "miste",
-    "tr": "özlemek",
-    "en": "to miss",
-    "ar": "يفتقد",
-    "fr": "manquer"
-  },
-  {
     "nl": "ontspannen",
     "type": "verb",
     "perfectum": "ontspannen",
@@ -1488,14 +1468,6 @@
     "fr": "tarif"
   },
   {
-    "nl": "toch",
-    "type": "adv",
-    "tr": "değil mi?, yine de",
-    "en": "still, yet",
-    "ar": "مع ذلك",
-    "fr": "quand même"
-  },
-  {
     "nl": "verhogen",
     "type": "verb",
     "perfectum": "verhoogd",
@@ -1531,16 +1503,6 @@
     "en": "unemployment",
     "ar": "بطالة",
     "fr": "chômage"
-  },
-  {
-    "nl": "aankomen",
-    "type": "verb",
-    "perfectum": "aangekomen",
-    "imperfectum": "kwam aan",
-    "tr": "varmak",
-    "en": "to arrive",
-    "ar": "يصل",
-    "fr": "arriver"
   },
   {
     "nl": "aanraden",
