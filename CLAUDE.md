@@ -306,20 +306,35 @@ N|token@base
 **Option B inheritance:** the first occurrence of group N defines the `@base`; subsequent tokens with the same N inherit it automatically — no need to repeat `@base`.
 
 ```
-# Simple word
+# Verb conjugation (surface ≠ infinitive)
 "ik 1|ga@gaan naar 2|school"
-→ Word 1 base: gaan  (token: ga)
-→ Word 2 base: school (token: school, same as base so @school optional)
+→ Word 1 base: gaan   (surface: ga)
+→ Word 2 base: school (surface = base → @school can be omitted)
 
-# Separable verb (nadenken → denkt ... na)
+# Separable verb: both parts share the same group number
 "hij 1|denkt@nadenken over het 1|na"
-→ Word 1 base: nadenken  (tokens: denkt, na — both map to nadenken)
+→ Word 1 base: nadenken  (tokens: denkt, na — both resolve to nadenken)
 
-# Capitalized token, different base
-"1|Ik@ik ben 2|blij@blij."
-→ Word 1 base: ik  (token: Ik)
-→ Word 2 base: blij (token: blij.)
+# Adjective inflection (groot → grote, nieuw → nieuwe, etc.)
+"Dat is een 1|grote@groot huis."
+→ Word 1 base: groot  (surface: grote, -e added by inflection)
+
+"De 1|nieuwe@nieuw leraar is 2|aardig."
+→ Word 1 base: nieuw   (surface: nieuwe)
+→ Word 2 base: aardig  (predicative, no inflection → @base can be omitted)
+
+# Plural noun (kind → kinderen, huis → huizen, etc.)
+"De 1|kinderen@kind spelen buiten."
+→ Word 1 base: kind  (surface: kinderen)
+
+# Capitalised first token
+"1|Ik@ik 2|woon@wonen in 3|Nederland."
+→ @ik needed because surface is capitalised; @wonen because woon ≠ wonen
 ```
+
+**When `@base` can be omitted:** only when the surface token is already lowercase and matches the base exactly (`2|school`, `3|niet`, predicative adjectives like `2|aardig`).
+
+**Punctuation:** keep punctuation outside the token — `1|dag@dag.` not `1|dag.@dag`.
 
 **Limit:** default 5 zinnen per word (`--limit N` to override). If ALL referenced words are already at the limit, the sentence is rejected.
 
