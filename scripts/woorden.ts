@@ -521,6 +521,47 @@ async function cmdRemoveZin(args: string[]) {
   console.log('');
 }
 
+function cmdGetNoZin(args: string[]) {
+  const packArg = args[0];
+  const countArg = args[1];
+
+  if (!packArg || packArg.startsWith('--')) {
+    console.error('Usage: woorden get-no-zin <PACK> [count]');
+    console.error('       count defaults to 5');
+    process.exit(1);
+  }
+
+  const targetPack = normalizePack(packArg);
+  const count = parseInt(countArg) || 5;
+  const allWords = loadAllWords();
+
+  if (!allWords.has(targetPack)) {
+    console.error(`Pack "${targetPack}" not found. Available: ${[...allWords.keys()].join(', ')}`);
+    process.exit(1);
+  }
+
+  const noZin = allWords.get(targetPack)!.filter(wp => !wp.word.zinnen?.length);
+
+  if (noZin.length === 0) {
+    console.log(`\n  ${GREEN('✓')} All words in ${targetPack} have example sentences.\n`);
+    return;
+  }
+
+  const slice = noZin.slice(0, count);
+
+  console.log(`\n  ${BOLD(targetPack)} — words without zinnen: ${noZin.length} (showing ${slice.length})\n`);
+
+  for (const { word: w } of slice) {
+    const parts: string[] = [w.type.padEnd(6), BOLD(w.nl)];
+    if (w.article)     parts.push(w.article);
+    if (w.perfectum)   parts.push(w.perfectum);
+    if (w.imperfectum) parts.push(w.imperfectum);
+    console.log('  ' + parts.join('  '));
+  }
+
+  console.log(`\n  ${DIM(`${noZin.length - slice.length} more without zinnen`)}\n`);
+}
+
 // ─── Entry point ──────────────────────────────────────────────────────────────
 
 const [,, command, ...rest] = process.argv;
@@ -538,6 +579,9 @@ switch (command) {
   case 'remove-zin':
     cmdRemoveZin(rest).catch(err => { console.error(err); process.exit(1); });
     break;
+  case 'get-no-zin':
+    cmdGetNoZin(rest);
+    break;
   default:
     console.log(`
   woorden — Dutch word pack CLI
@@ -547,13 +591,15 @@ switch (command) {
     remove <PACK> <word>               Remove a specific word from PACK
     add-zin [--limit N]                Add an example sentence (default limit: 5 per word)
     remove-zin <id>                    Remove a sentence and clean up word references
+    get-no-zin <PACK> [count]          List words without example sentences (default: 5)
 
   Packs:  A1  A2  A2+
 
   Examples:
     npm run woorden find-duplicate A1
-    npm run woorden find-duplicate A2 --page 2
     npm run woorden remove A1 groot
+    npm run woorden get-no-zin A1
+    npm run woorden get-no-zin A1 10
     npm run woorden add-zin
     npm run woorden add-zin --limit 6
     npm run woorden remove-zin ab3k9x2m
