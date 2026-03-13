@@ -9,7 +9,8 @@
     "ar": "يتنفس",
     "fr": "respirer",
     "zinnen": [
-      "1dehnqi4"
+      "1dehnqi4",
+      "i405h67g"
     ]
   },
   {
@@ -22,7 +23,8 @@
     "ar": "ينهي، يُكمل",
     "fr": "finir, terminer",
     "zinnen": [
-      "5kq9njhg"
+      "5kq9njhg",
+      "m9y04h1v"
     ]
   },
   {
@@ -44,7 +46,8 @@
     "ar": "تعليق، نقد",
     "fr": "commentaire, critique",
     "zinnen": [
-      "kkzx0jtu"
+      "kkzx0jtu",
+      "chr4afxn"
     ]
   },
   {
@@ -56,7 +59,8 @@
     "fr": "agaçant, bête, faible",
     "zinnen": [
       "seeljt0z",
-      "saqt15ym"
+      "saqt15ym",
+      "wxo38o3d"
     ]
   },
   {
@@ -68,7 +72,8 @@
     "fr": "frais, propre",
     "zinnen": [
       "8k07mpv9",
-      "0ysiulyv"
+      "0ysiulyv",
+      "i405h67g"
     ]
   },
   {
@@ -79,7 +84,10 @@
     "tr": "bilgisayar/video oyunu oynamak",
     "en": "to game, to play video games",
     "ar": "يلعب ألعاب الفيديو",
-    "fr": "jouer aux jeux vidéo"
+    "fr": "jouer aux jeux vidéo",
+    "zinnen": [
+      "tf6nexos"
+    ]
   },
   {
     "nl": "gedachte",
@@ -88,7 +96,10 @@
     "tr": "düşünce, fikir",
     "en": "thought, idea",
     "ar": "فكرة، خاطرة",
-    "fr": "pensée, idée"
+    "fr": "pensée, idée",
+    "zinnen": [
+      "m9y04h1v"
+    ]
   },
   {
     "nl": "gestoord",
@@ -99,7 +110,8 @@
     "fr": "dérangé, fou",
     "zinnen": [
       "kkzx0jtu",
-      "5fhmplr0"
+      "5fhmplr0",
+      "chr4afxn"
     ]
   },
   {
@@ -112,7 +124,8 @@
     "fr": "vacarme, bruit",
     "zinnen": [
       "pdlt0o7o",
-      "68i9v6oc"
+      "68i9v6oc",
+      "bddaiyuv"
     ]
   },
   {
@@ -125,7 +138,8 @@
     "ar": "يُزعج، يُهيج",
     "fr": "irriter, agacer",
     "zinnen": [
-      "pev3gji1"
+      "pev3gji1",
+      "bddaiyuv"
     ]
   },
   {
@@ -137,7 +151,8 @@
     "fr": "puéril, enfantin",
     "zinnen": [
       "8z6rrdko",
-      "yupfrqq9"
+      "yupfrqq9",
+      "wxo38o3d"
     ]
   },
   {
@@ -150,7 +165,8 @@
     "fr": "tapis, nappe",
     "zinnen": [
       "bi9ctob5",
-      "4gpqcfsm"
+      "4gpqcfsm",
+      "qe0drwed"
     ]
   },
   {
@@ -163,7 +179,8 @@
     "fr": "remarque, commentaire",
     "zinnen": [
       "8z6rrdko",
-      "saqt15ym"
+      "saqt15ym",
+      "bddaiyuv"
     ]
   },
   {
@@ -177,7 +194,8 @@
     "fr": "faire un pique-nique",
     "zinnen": [
       "f0e6qwh0",
-      "c79eigzk"
+      "c79eigzk",
+      "ofmuz80q"
     ]
   },
   {
@@ -191,7 +209,8 @@
     "zinnen": [
       "78ixcf9x",
       "25sqkrir",
-      "5wap2ap8"
+      "5wap2ap8",
+      "o5688amn"
     ]
   },
   {
@@ -204,7 +223,8 @@
     "fr": "tournée, tour",
     "zinnen": [
       "qmv9kum0",
-      "xu02tbjw"
+      "xu02tbjw",
+      "i405h67g"
     ]
   },
   {
@@ -217,7 +237,8 @@
     "zinnen": [
       "qzt2crg3",
       "g4ns4pj2",
-      "ex7tfdra"
+      "ex7tfdra",
+      "libncghx"
     ]
   },
   {
@@ -232,7 +253,8 @@
       "ho524k23",
       "8k07mpv9",
       "jurqt939",
-      "7x9qrjuz"
+      "7x9qrjuz",
+      "4uzqri25"
     ]
   },
   {
@@ -246,7 +268,8 @@
     "zinnen": [
       "78ixcf9x",
       "seeljt0z",
-      "0671v3b2"
+      "0671v3b2",
+      "0206malk"
     ]
   },
   {
@@ -257,7 +280,10 @@
     "tr": "reddetmek",
     "en": "to refuse, to decline",
     "ar": "يرفض",
-    "fr": "refuser"
+    "fr": "refuser",
+    "zinnen": [
+      "4uzqri25"
+    ]
   },
   {
     "nl": "zich vermaken",
@@ -267,7 +293,10 @@
     "tr": "eğlenmek",
     "en": "to amuse oneself, to have fun",
     "ar": "يستمتع، يُسلي نفسه",
-    "fr": "s'amuser, se divertir"
+    "fr": "s'amuser, se divertir",
+    "zinnen": [
+      "o5688amn"
+    ]
   },
   {
     "nl": "zich vervelen",
@@ -277,7 +306,10 @@
     "tr": "canı sıkılmak",
     "en": "to be bored",
     "ar": "يشعر بالملل",
-    "fr": "s'ennuyer"
+    "fr": "s'ennuyer",
+    "zinnen": [
+      "tf6nexos"
+    ]
   },
   {
     "nl": "zonnig",
@@ -288,7 +320,8 @@
     "fr": "ensoleillé",
     "zinnen": [
       "f0e6qwh0",
-      "0yw4xd5l"
+      "0yw4xd5l",
+      "ofmuz80q"
     ]
   },
   {
@@ -300,7 +333,8 @@
     "ar": "ختام، إغلاق",
     "fr": "clôture, conclusion",
     "zinnen": [
-      "vshcubyn"
+      "vshcubyn",
+      "fqb9zrft"
     ]
   },
   {
@@ -313,7 +347,8 @@
     "fr": "ballon",
     "zinnen": [
       "rhwl647s",
-      "0fn4rkso"
+      "0fn4rkso",
+      "g25778oq"
     ]
   },
   {
@@ -323,7 +358,10 @@
     "tr": "zil, çan",
     "en": "bell",
     "ar": "جرس",
-    "fr": "sonnette, cloche"
+    "fr": "sonnette, cloche",
+    "zinnen": [
+      "7edqxju4"
+    ]
   },
   {
     "nl": "boot",
@@ -334,7 +372,8 @@
     "ar": "قارب",
     "fr": "bateau",
     "zinnen": [
-      "bued4x7w"
+      "bued4x7w",
+      "8tz6ivtx"
     ]
   },
   {
@@ -346,7 +385,8 @@
     "ar": "عمدة، رئيس البلدية",
     "fr": "maire",
     "zinnen": [
-      "4co9i6ye"
+      "4co9i6ye",
+      "za0w08mm"
     ]
   },
   {
@@ -359,7 +399,8 @@
     "fr": "boisson, verre",
     "zinnen": [
       "raejcydr",
-      "ei63ow1q"
+      "ei63ow1q",
+      "ccgewec3"
     ]
   },
   {
@@ -370,7 +411,8 @@
     "ar": "سكران",
     "fr": "ivre, saoul",
     "zinnen": [
-      "42x458iq"
+      "42x458iq",
+      "ccgewec3"
     ]
   },
   {
@@ -382,7 +424,8 @@
     "ar": "ممسحة",
     "fr": "serpillière",
     "zinnen": [
-      "gm79f27w"
+      "gm79f27w",
+      "0tp6jx4d"
     ]
   },
   {
@@ -394,7 +437,8 @@
     "ar": "دلو",
     "fr": "seau",
     "zinnen": [
-      "gm79f27w"
+      "gm79f27w",
+      "0tp6jx4d"
     ]
   },
   {
@@ -407,7 +451,8 @@
     "ar": "يحتفل",
     "fr": "faire la fête",
     "zinnen": [
-      "4co9i6ye"
+      "4co9i6ye",
+      "1h6enu8o"
     ]
   },
   {
@@ -418,7 +463,10 @@
     "tr": "fotoğraf çekmek",
     "en": "to photograph, to take pictures",
     "ar": "يلتقط صوراً",
-    "fr": "photographier"
+    "fr": "photographier",
+    "zinnen": [
+      "kss6yeqo"
+    ]
   },
   {
     "nl": "gebruikelijk",
@@ -428,7 +476,8 @@
     "ar": "معتاد، مألوف",
     "fr": "habituel, coutumier",
     "zinnen": [
-      "baahdckf"
+      "baahdckf",
+      "kss6yeqo"
     ]
   },
   {
@@ -438,7 +487,10 @@
     "tr": "büyükanne / büyükbaba",
     "en": "grandparent",
     "ar": "جد / جدة",
-    "fr": "grand-parent"
+    "fr": "grand-parent",
+    "zinnen": [
+      "bcvg8r0f"
+    ]
   },
   {
     "nl": "inhuren",
@@ -450,7 +502,8 @@
     "ar": "يستأجر",
     "fr": "engager, louer",
     "zinnen": [
-      "zj5flr36"
+      "zj5flr36",
+      "aedk93jl"
     ]
   },
   {
@@ -465,7 +518,8 @@
       "4co9i6ye",
       "82hb9avc",
       "baahdckf",
-      "y61y4749"
+      "y61y4749",
+      "vfu3d7vp"
     ]
   },
   {
@@ -476,7 +530,8 @@
     "ar": "فضولي",
     "fr": "curieux",
     "zinnen": [
-      "bglyic9b"
+      "bglyic9b",
+      "bcvg8r0f"
     ]
   },
   {
@@ -487,7 +542,8 @@
     "ar": "لا يُنسى",
     "fr": "inoubliable",
     "zinnen": [
-      "77073nag"
+      "77073nag",
+      "vfu3d7vp"
     ]
   },
   {
@@ -498,7 +554,8 @@
     "ar": "محترف",
     "fr": "professionnel",
     "zinnen": [
-      "zj5flr36"
+      "zj5flr36",
+      "aedk93jl"
     ]
   },
   {
@@ -508,7 +565,10 @@
     "tr": "rehberli tur",
     "en": "guided tour",
     "ar": "جولة إرشادية",
-    "fr": "visite guidée"
+    "fr": "visite guidée",
+    "zinnen": [
+      "za0w08mm"
+    ]
   },
   {
     "nl": "spanning",
@@ -520,7 +580,8 @@
     "fr": "excitation, tension",
     "zinnen": [
       "77073nag",
-      "ks1uiv4e"
+      "ks1uiv4e",
+      "fqb9zrft"
     ]
   },
   {
@@ -533,7 +594,8 @@
     "ar": "يبحر، يسافر بالقارب",
     "fr": "naviguer, aller en bateau",
     "zinnen": [
-      "bued4x7w"
+      "bued4x7w",
+      "8tz6ivtx"
     ]
   },
   {
@@ -546,7 +608,8 @@
     "ar": "يُجدِّد، يُرمِّم",
     "fr": "rénover, aménager",
     "zinnen": [
-      "bh54mw72"
+      "bh54mw72",
+      "baas881v"
     ]
   },
   {
@@ -557,7 +620,8 @@
     "ar": "مندهش، مفاجأ",
     "fr": "surpris",
     "zinnen": [
-      "vshcubyn"
+      "vshcubyn",
+      "bcvg8r0f"
     ]
   },
   {
@@ -570,7 +634,8 @@
     "ar": "يُزيِّن",
     "fr": "décorer",
     "zinnen": [
-      "0fn4rkso"
+      "0fn4rkso",
+      "g25778oq"
     ]
   },
   {
@@ -581,7 +646,8 @@
     "ar": "مسبقاً، قبلاً",
     "fr": "au préalable, à l'avance",
     "zinnen": [
-      "bh54mw72"
+      "bh54mw72",
+      "1h6enu8o"
     ]
   },
   {
@@ -592,7 +658,10 @@
     "tr": "geçmek",
     "en": "to pass by, to go by",
     "ar": "يمر",
-    "fr": "passer"
+    "fr": "passer",
+    "zinnen": [
+      "pbmw0j3g"
+    ]
   },
   {
     "nl": "vrijgezel",
@@ -603,7 +672,8 @@
     "ar": "أعزب",
     "fr": "célibataire",
     "zinnen": [
-      "w176tjre"
+      "w176tjre",
+      "8tz6ivtx"
     ]
   },
   {
@@ -616,7 +686,8 @@
     "fr": "salle",
     "zinnen": [
       "rhwl647s",
-      "0fn4rkso"
+      "0fn4rkso",
+      "g25778oq"
     ]
   },
   {
@@ -626,7 +697,10 @@
     "tr": "çilek",
     "en": "strawberry",
     "ar": "فراولة",
-    "fr": "fraise"
+    "fr": "fraise",
+    "zinnen": [
+      "sdjst227"
+    ]
   },
   {
     "nl": "biologisch",
@@ -636,7 +710,8 @@
     "ar": "عضوي، بيولوجي",
     "fr": "biologique, bio",
     "zinnen": [
-      "c04281vf"
+      "c04281vf",
+      "tt557054"
     ]
   },
   {
@@ -647,7 +722,10 @@
     "tr": "kontrol etmek",
     "en": "to check",
     "ar": "يتحقق، يراجع",
-    "fr": "vérifier, checker"
+    "fr": "vérifier, checker",
+    "zinnen": [
+      "nj5mf9m6"
+    ]
   },
   {
     "nl": "dorst",
@@ -659,7 +737,8 @@
     "fr": "soif",
     "zinnen": [
       "5fp7qwpn",
-      "ei63ow1q"
+      "ei63ow1q",
+      "sjhd3quf"
     ]
   },
   {
@@ -668,7 +747,10 @@
     "tr": "ince, zayıf",
     "en": "thin, slim",
     "ar": "رفيع، نحيف",
-    "fr": "mince, fin"
+    "fr": "mince, fin",
+    "zinnen": [
+      "sjhd3quf"
+    ]
   },
   {
     "nl": "eigenaar",
@@ -679,7 +761,8 @@
     "ar": "مالك، صاحب",
     "fr": "propriétaire",
     "zinnen": [
-      "p0fvn141"
+      "p0fvn141",
+      "tt557054"
     ]
   },
   {
@@ -691,7 +774,8 @@
     "ar": "لحم مفروم",
     "fr": "viande hachée",
     "zinnen": [
-      "hadk2tyr"
+      "hadk2tyr",
+      "vzq6c85m"
     ]
   },
   {
@@ -703,7 +787,8 @@
     "ar": "طبق، وجبة",
     "fr": "plat",
     "zinnen": [
-      "bcydtkbq"
+      "bcydtkbq",
+      "c4bt0hhu"
     ]
   },
   {
@@ -715,7 +800,8 @@
     "ar": "وزن",
     "fr": "poids",
     "zinnen": [
-      "t9txtnjr"
+      "t9txtnjr",
+      "zyko35cq"
     ]
   },
   {
@@ -726,7 +812,10 @@
     "tr": "teslim etmek",
     "en": "to hand in, to submit",
     "ar": "يسلِّم، يُقدِّم",
-    "fr": "remettre, rendre"
+    "fr": "remettre, rendre",
+    "zinnen": [
+      "xq5pa7j6"
+    ]
   },
   {
     "nl": "klaarmaken",
@@ -738,7 +827,8 @@
     "ar": "يُحضِّر",
     "fr": "préparer",
     "zinnen": [
-      "s6er1rru"
+      "s6er1rru",
+      "8vxfgw6g"
     ]
   },
   {
@@ -750,7 +840,8 @@
     "ar": "ملعقة",
     "fr": "cuillère",
     "zinnen": [
-      "s6er1rru"
+      "s6er1rru",
+      "8vxfgw6g"
     ]
   },
   {
@@ -764,7 +855,8 @@
     "zinnen": [
       "zyb3n8rz",
       "raejcydr",
-      "etl26oea"
+      "etl26oea",
+      "c4bt0hhu"
     ]
   },
   {
@@ -775,7 +867,10 @@
     "tr": "çözdürmek, buzunu eritmek",
     "en": "to defrost, to thaw",
     "ar": "يذيب الثلج",
-    "fr": "décongeler"
+    "fr": "décongeler",
+    "zinnen": [
+      "vzq6c85m"
+    ]
   },
   {
     "nl": "overwerken",
@@ -785,7 +880,10 @@
     "tr": "fazla mesai yapmak",
     "en": "to work overtime",
     "ar": "يعمل ساعات إضافية",
-    "fr": "faire des heures supplémentaires"
+    "fr": "faire des heures supplémentaires",
+    "zinnen": [
+      "zyko35cq"
+    ]
   },
   {
     "nl": "portie",
@@ -798,7 +896,8 @@
     "zinnen": [
       "bwt6guij",
       "dgppg0pw",
-      "t9txtnjr"
+      "t9txtnjr",
+      "3ta15fti"
     ]
   },
   {
@@ -809,7 +908,8 @@
     "ar": "مكلف، غالٍ",
     "fr": "cher, coûteux",
     "zinnen": [
-      "bcydtkbq"
+      "bcydtkbq",
+      "3ta15fti"
     ]
   },
   {
@@ -823,7 +923,8 @@
     "zinnen": [
       "zyb3n8rz",
       "boojzajc",
-      "jk47lstc"
+      "jk47lstc",
+      "c4bt0hhu"
     ]
   },
   {
@@ -835,7 +936,8 @@
     "ar": "عزيزي، كنز",
     "fr": "chéri, trésor",
     "zinnen": [
-      "pzila2fr"
+      "pzila2fr",
+      "cefnzidk"
     ]
   },
   {
@@ -848,7 +950,8 @@
     "fr": "crème chantilly",
     "zinnen": [
       "bs8r0k3b",
-      "dgppg0pw"
+      "dgppg0pw",
+      "sdjst227"
     ]
   },
   {
@@ -860,7 +963,8 @@
     "ar": "سبانخ",
     "fr": "épinards",
     "zinnen": [
-      "bwt6guij"
+      "bwt6guij",
+      "3ta15fti"
     ]
   },
   {
@@ -872,7 +976,8 @@
     "ar": "غسالة صحون",
     "fr": "lave-vaisselle",
     "zinnen": [
-      "eu3v8ewg"
+      "eu3v8ewg",
+      "xq5pa7j6"
     ]
   },
   {
@@ -885,7 +990,8 @@
     "ar": "يشك، يخمن",
     "fr": "soupçonner, supposer",
     "zinnen": [
-      "boojzajc"
+      "boojzajc",
+      "tt557054"
     ]
   },
   {
@@ -897,7 +1003,8 @@
     "ar": "شوكة",
     "fr": "fourchette",
     "zinnen": [
-      "evh37odr"
+      "evh37odr",
+      "8vxfgw6g"
     ]
   },
   {
@@ -908,7 +1015,10 @@
     "tr": "bildirmek, belirtmek",
     "en": "to indicate, to report",
     "ar": "يُبلِّغ، يُشير",
-    "fr": "indiquer, signaler"
+    "fr": "indiquer, signaler",
+    "zinnen": [
+      "xjnmmrlj"
+    ]
   },
   {
     "nl": "alsnog",
@@ -916,7 +1026,10 @@
     "tr": "sonunda, gecikmeli olarak",
     "en": "still, after all",
     "ar": "في نهاية المطاف",
-    "fr": "finalement, quand même"
+    "fr": "finalement, quand même",
+    "zinnen": [
+      "xjnmmrlj"
+    ]
   },
   {
     "nl": "arbeidsovereenkomst",
@@ -927,7 +1040,8 @@
     "ar": "عقد العمل",
     "fr": "contrat de travail",
     "zinnen": [
-      "csh41y52"
+      "csh41y52",
+      "hz4ri60y"
     ]
   },
   {
@@ -937,7 +1051,10 @@
     "tr": "koruma (örn. ücretli izin)",
     "en": "retention, maintenance (e.g. of pay)",
     "ar": "حفظ، صون",
-    "fr": "maintien, conservation"
+    "fr": "maintien, conservation",
+    "zinnen": [
+      "pbp84phz"
+    ]
   },
   {
     "nl": "berekenen",
@@ -947,7 +1064,10 @@
     "tr": "hesaplamak",
     "en": "to calculate",
     "ar": "يحسب",
-    "fr": "calculer"
+    "fr": "calculer",
+    "zinnen": [
+      "7qvarq0i"
+    ]
   },
   {
     "nl": "bestemming",
@@ -956,7 +1076,10 @@
     "tr": "gidilecek yer, hedef",
     "en": "destination",
     "ar": "وجهة",
-    "fr": "destination"
+    "fr": "destination",
+    "zinnen": [
+      "yi9v4v45"
+    ]
   },
   {
     "nl": "bezwaar",
@@ -965,7 +1088,10 @@
     "tr": "itiraz, engel",
     "en": "objection, obstacle",
     "ar": "اعتراض",
-    "fr": "objection"
+    "fr": "objection",
+    "zinnen": [
+      "4ofsrb26"
+    ]
   },
   {
     "nl": "bouw",
@@ -974,7 +1100,10 @@
     "tr": "inşaat",
     "en": "construction, building",
     "ar": "بناء",
-    "fr": "construction"
+    "fr": "construction",
+    "zinnen": [
+      "lbx4c7if"
+    ]
   },
   {
     "nl": "collectief",
@@ -984,7 +1113,8 @@
     "ar": "جماعي",
     "fr": "collectif",
     "zinnen": [
-      "plsd75do"
+      "plsd75do",
+      "e96cqfxo"
     ]
   },
   {
@@ -995,7 +1125,10 @@
     "tr": "ödemeye devam etmek",
     "en": "to continue paying",
     "ar": "يستمر في الدفع",
-    "fr": "continuer à payer"
+    "fr": "continuer à payer",
+    "zinnen": [
+      "x3n6pyrd"
+    ]
   },
   {
     "nl": "geval",
@@ -1004,7 +1137,10 @@
     "tr": "durum, hal",
     "en": "case, situation",
     "ar": "حالة",
-    "fr": "cas, situation"
+    "fr": "cas, situation",
+    "zinnen": [
+      "7qvarq0i"
+    ]
   },
   {
     "nl": "leiden tot",
@@ -1012,7 +1148,10 @@
     "tr": "yol açmak, -e neden olmak",
     "en": "to lead to, to result in",
     "ar": "يؤدي إلى",
-    "fr": "mener à, conduire à"
+    "fr": "mener à, conduire à",
+    "zinnen": [
+      "4ofsrb26"
+    ]
   },
   {
     "nl": "minimum",
@@ -1021,7 +1160,10 @@
     "tr": "asgari, minimum",
     "en": "minimum",
     "ar": "حد أدنى",
-    "fr": "minimum"
+    "fr": "minimum",
+    "zinnen": [
+      "igbjyh72"
+    ]
   },
   {
     "nl": "opmaken",
@@ -1031,7 +1173,10 @@
     "tr": "tüketmek, harcamak",
     "en": "to use up, to spend",
     "ar": "يستنفد، يُنفق",
-    "fr": "dépenser, utiliser"
+    "fr": "dépenser, utiliser",
+    "zinnen": [
+      "cc1mifne"
+    ]
   },
   {
     "nl": "opnemen",
@@ -1060,7 +1205,8 @@
     "ar": "خطياً، مكتوب",
     "fr": "écrit, par écrit",
     "zinnen": [
-      "repxrri7"
+      "repxrri7",
+      "hz4ri60y"
     ]
   },
   {
@@ -1071,7 +1217,11 @@
     "tr": "teşvik etmek",
     "en": "to stimulate, to encourage",
     "ar": "يُحفِّز، يُشجِّع",
-    "fr": "stimuler, encourager"
+    "fr": "stimuler, encourager",
+    "zinnen": [
+      "pbp84phz",
+      "lbx4c7if"
+    ]
   },
   {
     "nl": "tellen",
@@ -1081,7 +1231,10 @@
     "tr": "saymak",
     "en": "to count",
     "ar": "يعد",
-    "fr": "compter"
+    "fr": "compter",
+    "zinnen": [
+      "7qvarq0i"
+    ]
   },
   {
     "nl": "vaststaan",
@@ -1091,7 +1244,10 @@
     "tr": "kesinleşmek, belirlenmek",
     "en": "to be certain, to be established",
     "ar": "يكون محدداً، مُقرَّراً",
-    "fr": "être établi, être certain"
+    "fr": "être établi, être certain",
+    "zinnen": [
+      "hz4ri60y"
+    ]
   },
   {
     "nl": "verblijven",
@@ -1103,7 +1259,8 @@
     "ar": "يُقيم، يبقى",
     "fr": "séjourner, résider",
     "zinnen": [
-      "ub5q4a4l"
+      "ub5q4a4l",
+      "yi9v4v45"
     ]
   },
   {
@@ -1114,7 +1271,10 @@
     "tr": "düşmek, geçersiz olmak",
     "en": "to expire, to lapse",
     "ar": "يسقط، ينتهي مفعوله",
-    "fr": "expirer, tomber en désuétude"
+    "fr": "expirer, tomber en désuétude",
+    "zinnen": [
+      "oluvmpv7"
+    ]
   },
   {
     "nl": "zich houden aan",
@@ -1124,7 +1284,10 @@
     "tr": "uymak, bağlı kalmak",
     "en": "to stick to, to comply with",
     "ar": "يلتزم بـ",
-    "fr": "respecter, se conformer à"
+    "fr": "respecter, se conformer à",
+    "zinnen": [
+      "igbjyh72"
+    ]
   },
   {
     "nl": "zogenaamd",
@@ -1132,6 +1295,9 @@
     "tr": "sözde, güya",
     "en": "so-called",
     "ar": "المزعوم، ما يُسمى بـ",
-    "fr": "soi-disant, prétendu"
+    "fr": "soi-disant, prétendu",
+    "zinnen": [
+      "e96cqfxo"
+    ]
   }
 ]
