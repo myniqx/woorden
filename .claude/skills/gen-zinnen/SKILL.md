@@ -144,17 +144,56 @@ Dat is een 1|speciale@speciaal dag.
 
 **Reflexive pronouns** (`zich`, `me`, `je`) that are part of a reflexive verb construction are **plain text** in the sentence — do NOT mark them with a group number.
 
-**Edge cases to watch out for:**
+**Edge cases and troubleshooting:**
 
-| Situation | Problem | Fix |
-|-----------|---------|-----|
-| Inflected adjective, no `@base` | `"uitstekende" not found in any pack` | Always add `@base`: `1\|uitstekende@uitstekend` |
-| Multi-word `nl` key with spaces | `"oppassen" not found` or wrong base | Use underscores: `@oppassen_op` |
-| Proper noun with spaces ("Europese Unie") | Parser splits at space | Mark first word only: `1\|Europese@Europese_Unie Unie` |
-| `nl` key ends with period ("etc.") | Period stripped → "etc" not found | Remove period from `nl` key in JSON, or skip the word |
-| Word exists in both A1 and A2 | Sentence always links to A1 entry | Remove the duplicate from A2 with `npm run woorden -- remove A2 <word>` |
-| Word appears twice in same pack | Second entry stays unlinked | Run `npm run woorden -- remove A2 <word>`, choose which copy to remove (pick the one without zinnen) |
-| Capitalized token that equals base | `"Engels" not found` (base "Engels" ≠ nl "engels") | Use `@base` with correct case: `1\|Engels@engels` |
+After running `add-zin`, the CLI prints `✗ "word" not found in any pack` for each group that couldn't be linked. The sentence is still saved — but that word won't have a zin. Fix these immediately with a corrected sentence.
+
+**Diagnose by error type:**
+
+```
+✗ "uitstekende" not found in any pack
+→ Inflected adjective without @base. Fix: 1|uitstekende@uitstekend
+
+✗ "oppassen" not found in any pack
+→ Multi-word nl key, spaces not encoded. Fix: @oppassen_op (underscores for spaces)
+
+✗ "Europese" not found in any pack
+→ Proper noun split at space. Fix: 1|Europese@Europese_Unie Unie (mark first word only)
+
+✗ "Engels" not found in any pack
+→ Token capitalized but nl key is lowercase. Fix: 1|Engels@engels
+
+✗ "etc" not found in any pack
+→ nl key is "etc." (with period), period is stripped from base → no match.
+  Fix: edit the nl key in the JSON file to remove the period, then re-add.
+
+✗ "zich" not found in any pack
+→ Reflexive pronoun marked as a group token. Fix: only mark the verb form,
+  leave "zich" / "me" / "je" as plain text.
+  Wrong: Ze 1|scheert@zich_scheren 1|zich@zich_scheren elke ochtend.
+  Right: Ze 1|scheert@zich_scheren zich elke ochtend.
+```
+
+**After fixing:** run `npm run woorden -- get-no-zin <PACK> 999` and check if the word still appears. If yes, add a new corrected sentence.
+
+**Duplicate word problems** — word still appears in `get-no-zin` after adding a sentence:
+
+```bash
+# Check which files contain the word
+grep -l '"nl": "meer"' src/data/a*.json
+# → src/data/a1-002.json   src/data/a2-004.json
+
+# Case 1: Word exists in a lower pack (A1) AND the target pack (A2)
+# → CLI always links to the lower pack first → A2 entry stays unlinked
+# Fix: remove the duplicate from A2
+npm run woorden -- remove A2 meer   # type y to confirm
+
+# Case 2: Word appears twice inside the same pack (two files)
+# → CLI links to the first match → second entry stays unlinked
+# Fix: remove one copy — choose the one WITHOUT zinnen
+npm run woorden -- remove A2 soort
+# CLI asks [1-2]: pick the number of the copy without zinnen
+```
 
 ## Step 4 — Add each sentence via the CLI
 
