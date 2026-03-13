@@ -599,7 +599,65 @@ function cmdGetNoZin(args: string[]) {
 
 // ─── Check ────────────────────────────────────────────────────────────────────
 
+function cmdCheckVanWoord(args: string[]) {
+  const fix = args.includes('--fix');
+  const allZins = loadAllZins();
+  const allWords = loadAllWords();
+
+  let totalWords = 0;
+  let totalIds = 0;
+  let problems = 0;
+  let removed = 0;
+
+  for (const words of allWords.values()) {
+    for (const { word, file } of words) {
+      if (!word.zinnen?.length) continue;
+      totalWords++;
+
+      const badIds: string[] = [];
+
+      for (const id of word.zinnen) {
+        totalIds++;
+        const zinEntry = allZins.get(id);
+
+        // ID has no matching sentence
+        if (!zinEntry) {
+          badIds.push(id);
+          problems++;
+          console.log(`${word.nl}  ${id}(no-sentence)`);
+          continue;
+        }
+
+        // Sentence exists but word's nl not referenced in it
+        const { groups } = parseMarked(zinEntry.marked);
+        const bases = [...groups.values()].map(g => g.base.toLowerCase());
+        if (!bases.includes(word.nl.toLowerCase())) {
+          badIds.push(id);
+          problems++;
+          console.log(`${word.nl}  ${id}(not-in-sentence)   >> ${zinEntry.marked}`);
+        }
+      }
+
+      if (fix && badIds.length > 0) {
+        const path = join(DATA_DIR, file);
+        const fileWords: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
+        const idx = fileWords.findIndex(w => w.nl === word.nl && w.type === word.type);
+        if (idx !== -1) {
+          fileWords[idx].zinnen = (fileWords[idx].zinnen ?? []).filter(id => !badIds.includes(id));
+          writeFileSync(path, JSON.stringify(fileWords, null, 2) + '\n', 'utf-8');
+          removed += badIds.length;
+        }
+      }
+    }
+  }
+
+  if (fix && removed > 0) console.log(`\n  ${GREEN('✓')} Removed ${removed} bad reference(s)`);
+  console.log(`\n  ${totalWords} words checked, ${totalIds} zinnen refs, ${problems} problems${fix ? ' fixed' : ' found'}`);
+}
+
 function cmdCheck(args: string[]) {
+  if (args.includes('--van-woord')) return cmdCheckVanWoord(args);
+
   const hideNotFound = args.includes('--hide-not-found');
   const fix = args.includes('--fix');
 
@@ -686,6 +744,7 @@ switch (command) {
     remove-zin <id>                            Remove a sentence and clean up word references
     get-no-zin <PACK> [count]                  List words without example sentences (default: 5)
     check [--hide-not-found] [--fix]           Check all zinnen for broken word references
+    check --van-woord [--fix]                  Check all words' zinnen refs (no-sentence / not-in-sentence)
 
   Packs:  A1  A2  A2+
 

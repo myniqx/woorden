@@ -1,0 +1,14 @@
+.example-zin {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin: var(--spacing-xs) 0 0;
+  line-height: 1.5;
+}
+
+.example-zin__highlight {
+  background: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-style: normal;
+}
