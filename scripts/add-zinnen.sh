@@ -33,6 +33,8 @@ while IFS= read -r line; do
 
   if [[ $STATUS -eq 0 ]]; then
     echo "$line" >> "$DONE_FILE"
+  elif [[ $STATUS -eq 2 ]]; then
+    echo "DUPLICATE: $line"
   else
     echo "FAILED (exit $STATUS): $line"
     echo "Press Enter to continue, Ctrl+C to abort..."
