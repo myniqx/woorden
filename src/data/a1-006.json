@@ -7,7 +7,10 @@
     "tr": "varmak, gelmek",
     "en": "to arrive",
     "ar": "يصل",
-    "fr": "arriver"
+    "fr": "arriver",
+    "zinnen": [
+      "tav1n1aw"
+    ]
   },
   {
     "nl": "aankomst",
@@ -16,7 +19,10 @@
     "tr": "varış",
     "en": "arrival",
     "ar": "وصول",
-    "fr": "arrivée"
+    "fr": "arrivée",
+    "zinnen": [
+      "m4hzv56i"
+    ]
   },
   {
     "nl": "bedankt",
@@ -24,7 +30,10 @@
     "tr": "teşekkürler",
     "en": "thank you",
     "ar": "شكرا",
-    "fr": "merci"
+    "fr": "merci",
+    "zinnen": [
+      "seazsgv9"
+    ]
   },
   {
     "nl": "centraal",
@@ -32,7 +41,11 @@
     "tr": "merkezi",
     "en": "central",
     "ar": "مركزي",
-    "fr": "central"
+    "fr": "central",
+    "zinnen": [
+      "y02soq54",
+      "fcr2l3zz"
+    ]
   },
   {
     "nl": "direct",
@@ -40,7 +53,11 @@
     "tr": "doğrudan, hemen",
     "en": "directly, immediately",
     "ar": "مباشرة",
-    "fr": "directement"
+    "fr": "directement",
+    "zinnen": [
+      "kly49gxh",
+      "t5iek0gl"
+    ]
   },
   {
     "nl": "gelukkig",
@@ -48,7 +65,10 @@
     "tr": "mutlu, neyse ki",
     "en": "happy, fortunately",
     "ar": "سعيد، لحسن الحظ",
-    "fr": "heureux, heureusement"
+    "fr": "heureux, heureusement",
+    "zinnen": [
+      "8n9ljmua"
+    ]
   },
   {
     "nl": "intercity",
@@ -57,7 +77,10 @@
     "tr": "şehirlerarası tren",
     "en": "intercity train",
     "ar": "قطار بين المدن",
-    "fr": "train intercity"
+    "fr": "train intercity",
+    "zinnen": [
+      "7e3ev3o4"
+    ]
   },
   {
     "nl": "minuut",
@@ -66,7 +89,10 @@
     "tr": "dakika",
     "en": "minute",
     "ar": "دقيقة",
-    "fr": "minute"
+    "fr": "minute",
+    "zinnen": [
+      "nka1k63e"
+    ]
   },
   {
     "nl": "nergens",
@@ -74,7 +100,10 @@
     "tr": "hiçbir yerde",
     "en": "nowhere",
     "ar": "لا مكان",
-    "fr": "nulle part"
+    "fr": "nulle part",
+    "zinnen": [
+      "8tas5smc"
+    ]
   },
   {
     "nl": "normaal",
@@ -82,7 +111,10 @@
     "tr": "normal",
     "en": "normal",
     "ar": "عادي",
-    "fr": "normal"
+    "fr": "normal",
+    "zinnen": [
+      "f0tbaxk7"
+    ]
   },
   {
     "nl": "opletten",
@@ -92,7 +124,11 @@
     "tr": "dikkat etmek",
     "en": "to pay attention",
     "ar": "ينتبه",
-    "fr": "faire attention"
+    "fr": "faire attention",
+    "zinnen": [
+      "6qi7uppt",
+      "7l15ic6g"
+    ]
   },
   {
     "nl": "overstappen",
@@ -102,7 +138,11 @@
     "tr": "aktarma yapmak",
     "en": "to transfer, to change",
     "ar": "يغير",
-    "fr": "changer"
+    "fr": "changer",
+    "zinnen": [
+      "qtos96s9",
+      "dse2bgg4"
+    ]
   },
   {
     "nl": "reiziger",
@@ -111,7 +151,11 @@
     "tr": "yolcu",
     "en": "traveler",
     "ar": "مسافر",
-    "fr": "voyageur"
+    "fr": "voyageur",
+    "zinnen": [
+      "7ggc52nh",
+      "twyp9ugm"
+    ]
   },
   {
     "nl": "spoor",
@@ -120,7 +164,10 @@
     "tr": "ray, platform",
     "en": "track, platform",
     "ar": "رصيف",
-    "fr": "voie"
+    "fr": "voie",
+    "zinnen": [
+      "x1y56cex"
+    ]
   },
   {
     "nl": "sprinter",
@@ -129,7 +176,10 @@
     "tr": "banliyö treni",
     "en": "local train",
     "ar": "قطار محلي",
-    "fr": "train régional"
+    "fr": "train régional",
+    "zinnen": [
+      "c6hij97z"
+    ]
   },
   {
     "nl": "station",
@@ -138,7 +188,10 @@
     "tr": "istasyon",
     "en": "station",
     "ar": "محطة",
-    "fr": "gare"
+    "fr": "gare",
+    "zinnen": [
+      "2bp3nxz3"
+    ]
   },
   {
     "nl": "tas",
@@ -147,7 +200,11 @@
     "tr": "çanta",
     "en": "bag",
     "ar": "حقيبة",
-    "fr": "sac"
+    "fr": "sac",
+    "zinnen": [
+      "rfdr9cux",
+      "dhtir18o"
+    ]
   },
   {
     "nl": "telefoon",
@@ -156,7 +213,10 @@
     "tr": "telefon",
     "en": "phone",
     "ar": "هاتف",
-    "fr": "téléphone"
+    "fr": "téléphone",
+    "zinnen": [
+      "usxbifsr"
+    ]
   },
   {
     "nl": "verbinding",
@@ -165,7 +225,10 @@
     "tr": "bağlantı",
     "en": "connection",
     "ar": "اتصال",
-    "fr": "connexion"
+    "fr": "connexion",
+    "zinnen": [
+      "c99pg7mk"
+    ]
   },
   {
     "nl": "verstaan",
@@ -175,7 +238,10 @@
     "tr": "anlamak, duymak",
     "en": "to understand, to hear",
     "ar": "يفهم",
-    "fr": "comprendre"
+    "fr": "comprendre",
+    "zinnen": [
+      "41s8onjv"
+    ]
   },
   {
     "nl": "vertraging",
@@ -184,7 +250,10 @@
     "tr": "gecikme",
     "en": "delay",
     "ar": "تأخير",
-    "fr": "retard"
+    "fr": "retard",
+    "zinnen": [
+      "ti33h1qh"
+    ]
   },
   {
     "nl": "vertrek",
@@ -193,7 +262,10 @@
     "tr": "kalkış",
     "en": "departure",
     "ar": "مغادرة",
-    "fr": "départ"
+    "fr": "départ",
+    "zinnen": [
+      "ti33h1qh"
+    ]
   },
   {
     "nl": "vertrekken",
@@ -203,7 +275,11 @@
     "tr": "ayrılmak, kalkmak",
     "en": "to leave, to depart",
     "ar": "يغادر",
-    "fr": "partir"
+    "fr": "partir",
+    "zinnen": [
+      "8jnfraev",
+      "37qa62s7"
+    ]
   },
   {
     "nl": "volgende",
@@ -211,7 +287,10 @@
     "tr": "sonraki, gelecek",
     "en": "next",
     "ar": "التالي",
-    "fr": "prochain"
+    "fr": "prochain",
+    "zinnen": [
+      "7a440ky5"
+    ]
   },
   {
     "nl": "dochter",
@@ -220,7 +299,10 @@
     "tr": "kız (çocuk)",
     "en": "daughter",
     "ar": "ابنة",
-    "fr": "fille"
+    "fr": "fille",
+    "zinnen": [
+      "3o2ss0w5"
+    ]
   },
   {
     "nl": "duidelijk",
@@ -228,7 +310,10 @@
     "tr": "açık, net",
     "en": "clear",
     "ar": "واضح",
-    "fr": "clair"
+    "fr": "clair",
+    "zinnen": [
+      "byudgol3"
+    ]
   },
   {
     "nl": "eerst",
@@ -236,7 +321,10 @@
     "tr": "önce, ilk",
     "en": "first",
     "ar": "أولا",
-    "fr": "d'abord"
+    "fr": "d'abord",
+    "zinnen": [
+      "pdaoi2d4"
+    ]
   },
   {
     "nl": "eventueel",
@@ -244,7 +332,10 @@
     "tr": "olası, belki",
     "en": "possibly, perhaps",
     "ar": "ربما",
-    "fr": "éventuellement"
+    "fr": "éventuellement",
+    "zinnen": [
+      "xpfw47bg"
+    ]
   },
   {
     "nl": "geloven",
@@ -254,7 +345,10 @@
     "tr": "inanmak",
     "en": "to believe",
     "ar": "يؤمن",
-    "fr": "croire"
+    "fr": "croire",
+    "zinnen": [
+      "534n9qeu"
+    ]
   },
   {
     "nl": "idee",
@@ -263,7 +357,11 @@
     "tr": "fikir",
     "en": "idea",
     "ar": "فكرة",
-    "fr": "idée"
+    "fr": "idée",
+    "zinnen": [
+      "z3i7d54r",
+      "hsydopff"
+    ]
   },
   {
     "nl": "kleren",
@@ -272,7 +370,10 @@
     "tr": "kıyafetler",
     "en": "clothes",
     "ar": "ملابس",
-    "fr": "vêtements"
+    "fr": "vêtements",
+    "zinnen": [
+      "bxqy2i92"
+    ]
   },
   {
     "nl": "links",
@@ -280,7 +381,10 @@
     "tr": "sol, solda",
     "en": "left",
     "ar": "يسار",
-    "fr": "à gauche"
+    "fr": "à gauche",
+    "zinnen": [
+      "wge32ka3"
+    ]
   },
   {
     "nl": "linksaf",
@@ -288,7 +392,10 @@
     "tr": "sola dön",
     "en": "turn left",
     "ar": "انعطف يسارا",
-    "fr": "à gauche"
+    "fr": "à gauche",
+    "zinnen": [
+      "cws3k1cf"
+    ]
   },
   {
     "nl": "mam",
@@ -297,7 +404,10 @@
     "tr": "anne",
     "en": "mom",
     "ar": "ماما",
-    "fr": "maman"
+    "fr": "maman",
+    "zinnen": [
+      "qpbe8gg8"
+    ]
   },
   {
     "nl": "mezelf",
@@ -305,7 +415,10 @@
     "tr": "kendim",
     "en": "myself",
     "ar": "نفسي",
-    "fr": "moi-même"
+    "fr": "moi-même",
+    "zinnen": [
+      "up36li1g"
+    ]
   },
   {
     "nl": "naartoe",
@@ -313,7 +426,10 @@
     "tr": "-e doğru",
     "en": "to (direction)",
     "ar": "إلى",
-    "fr": "vers"
+    "fr": "vers",
+    "zinnen": [
+      "wi2jryz1"
+    ]
   },
   {
     "nl": "plattegrond",
@@ -322,7 +438,10 @@
     "tr": "harita, plan",
     "en": "map, floor plan",
     "ar": "خريطة",
-    "fr": "plan"
+    "fr": "plan",
+    "zinnen": [
+      "yz9j1uyy"
+    ]
   },
   {
     "nl": "rechtdoor",
@@ -330,7 +449,10 @@
     "tr": "dosdoğru",
     "en": "straight ahead",
     "ar": "مباشرة",
-    "fr": "tout droit"
+    "fr": "tout droit",
+    "zinnen": [
+      "6cx3j7xs"
+    ]
   },
   {
     "nl": "rechterkant",
@@ -339,7 +461,10 @@
     "tr": "sağ taraf",
     "en": "right side",
     "ar": "الجهة اليمنى",
-    "fr": "côté droit"
+    "fr": "côté droit",
+    "zinnen": [
+      "try2hzyl"
+    ]
   },
   {
     "nl": "rechts",
@@ -347,7 +472,10 @@
     "tr": "sağ, sağda",
     "en": "right",
     "ar": "يمين",
-    "fr": "à droite"
+    "fr": "à droite",
+    "zinnen": [
+      "aacrsb64"
+    ]
   },
   {
     "nl": "rechtsaf",
@@ -355,7 +483,10 @@
     "tr": "sağa dön",
     "en": "turn right",
     "ar": "انعطف يمينا",
-    "fr": "à droite"
+    "fr": "à droite",
+    "zinnen": [
+      "bc7a0d4x"
+    ]
   },
   {
     "nl": "route",
@@ -364,7 +495,11 @@
     "tr": "rota, yol",
     "en": "route",
     "ar": "طريق",
-    "fr": "route"
+    "fr": "route",
+    "zinnen": [
+      "vl5407ep",
+      "yhjg18f0"
+    ]
   },
   {
     "nl": "slim",
@@ -372,7 +507,11 @@
     "tr": "zeki, akıllı",
     "en": "smart, clever",
     "ar": "ذكي",
-    "fr": "intelligent"
+    "fr": "intelligent",
+    "zinnen": [
+      "drz29isz",
+      "ys93lasn"
+    ]
   },
   {
     "nl": "stuk",
@@ -381,7 +520,11 @@
     "tr": "parça, mesafe",
     "en": "piece, distance",
     "ar": "قطعة",
-    "fr": "morceau"
+    "fr": "morceau",
+    "zinnen": [
+      "m95i7lll",
+      "v21k843a"
+    ]
   },
   {
     "nl": "tegenover",
@@ -389,7 +532,10 @@
     "tr": "karşısında",
     "en": "opposite, across from",
     "ar": "مقابل",
-    "fr": "en face de"
+    "fr": "en face de",
+    "zinnen": [
+      "o3z33q9b"
+    ]
   },
   {
     "nl": "tekenen",
@@ -399,7 +545,11 @@
     "tr": "çizmek",
     "en": "to draw",
     "ar": "يرسم",
-    "fr": "dessiner"
+    "fr": "dessiner",
+    "zinnen": [
+      "7xe7orcd",
+      "5459knzh"
+    ]
   },
   {
     "nl": "terug",
@@ -407,7 +557,11 @@
     "tr": "geri",
     "en": "back",
     "ar": "رجوع",
-    "fr": "retour"
+    "fr": "retour",
+    "zinnen": [
+      "vz4vrged",
+      "az49hagf"
+    ]
   },
   {
     "nl": "tijdje",
@@ -416,7 +570,10 @@
     "tr": "bir süre",
     "en": "a while",
     "ar": "فترة",
-    "fr": "un moment"
+    "fr": "un moment",
+    "zinnen": [
+      "duamewax"
+    ]
   },
   {
     "nl": "uitleggen",
@@ -426,7 +583,10 @@
     "tr": "açıklamak",
     "en": "to explain",
     "ar": "يشرح",
-    "fr": "expliquer"
+    "fr": "expliquer",
+    "zinnen": [
+      "3v65lver"
+    ]
   },
   {
     "nl": "winkelen",
@@ -436,7 +596,10 @@
     "tr": "alışveriş yapmak",
     "en": "to shop",
     "ar": "يتسوق",
-    "fr": "faire les courses"
+    "fr": "faire les courses",
+    "zinnen": [
+      "s7mvpwrh"
+    ]
   },
   {
     "nl": "auto",
@@ -445,7 +608,10 @@
     "tr": "araba",
     "en": "car",
     "ar": "سيارة",
-    "fr": "voiture"
+    "fr": "voiture",
+    "zinnen": [
+      "14xr6l6w"
+    ]
   },
   {
     "nl": "bus",
@@ -454,7 +620,10 @@
     "tr": "otobüs",
     "en": "bus",
     "ar": "حافلة",
-    "fr": "bus"
+    "fr": "bus",
+    "zinnen": [
+      "3nly9tac"
+    ]
   },
   {
     "nl": "collega",
@@ -463,7 +632,10 @@
     "tr": "iş arkadaşı",
     "en": "colleague",
     "ar": "زميل",
-    "fr": "collègue"
+    "fr": "collègue",
+    "zinnen": [
+      "pzr5lu7p"
+    ]
   },
   {
     "nl": "docent",
@@ -472,7 +644,10 @@
     "tr": "öğretmen, hoca",
     "en": "teacher",
     "ar": "مدرس",
-    "fr": "enseignant"
+    "fr": "enseignant",
+    "zinnen": [
+      "d4ogsgy0"
+    ]
   },
   {
     "nl": "enorm",
@@ -480,7 +655,10 @@
     "tr": "devasa, çok büyük",
     "en": "enormous",
     "ar": "ضخم",
-    "fr": "énorme"
+    "fr": "énorme",
+    "zinnen": [
+      "k7bi5at2"
+    ]
   },
   {
     "nl": "excuses",
@@ -489,7 +667,10 @@
     "tr": "özür",
     "en": "apologies",
     "ar": "اعتذارات",
-    "fr": "excuses"
+    "fr": "excuses",
+    "zinnen": [
+      "48jm7m1t"
+    ]
   },
   {
     "nl": "fiets",
@@ -498,7 +679,10 @@
     "tr": "bisiklet",
     "en": "bicycle",
     "ar": "دراجة",
-    "fr": "vélo"
+    "fr": "vélo",
+    "zinnen": [
+      "i0kmt3ou"
+    ]
   },
   {
     "nl": "file",
@@ -507,7 +691,10 @@
     "tr": "trafik sıkışıklığı",
     "en": "traffic jam",
     "ar": "ازدحام مروري",
-    "fr": "embouteillage"
+    "fr": "embouteillage",
+    "zinnen": [
+      "8zsh3zii"
+    ]
   },
   {
     "nl": "gewoon",
@@ -515,7 +702,10 @@
     "tr": "sadece, normal",
     "en": "just, simply",
     "ar": "عادي، فقط",
-    "fr": "simplement"
+    "fr": "simplement",
+    "zinnen": [
+      "0w9npwm8"
+    ]
   },
   {
     "nl": "griep",
@@ -524,7 +714,10 @@
     "tr": "grip",
     "en": "flu",
     "ar": "إنفلونزا",
-    "fr": "grippe"
+    "fr": "grippe",
+    "zinnen": [
+      "27v3k6r8"
+    ]
   },
   {
     "nl": "helaas",
@@ -532,7 +725,11 @@
     "tr": "maalesef",
     "en": "unfortunately",
     "ar": "للأسف",
-    "fr": "malheureusement"
+    "fr": "malheureusement",
+    "zinnen": [
+      "zc8pn9ah",
+      "1ixm8qqc"
+    ]
   },
   {
     "nl": "kantoor",
@@ -541,7 +738,11 @@
     "tr": "ofis",
     "en": "office",
     "ar": "مكتب",
-    "fr": "bureau"
+    "fr": "bureau",
+    "zinnen": [
+      "xhy4oumm",
+      "gl81wvms"
+    ]
   },
   {
     "nl": "manager",
@@ -550,7 +751,10 @@
     "tr": "yönetici",
     "en": "manager",
     "ar": "مدير",
-    "fr": "manager"
+    "fr": "manager",
+    "zinnen": [
+      "tc1y6i49"
+    ]
   },
   {
     "nl": "na",
@@ -558,7 +762,10 @@
     "tr": "-den sonra",
     "en": "after",
     "ar": "بعد",
-    "fr": "après"
+    "fr": "après",
+    "zinnen": [
+      "u1jcjgu5"
+    ]
   },
   {
     "nl": "ongeluk",
@@ -567,7 +774,10 @@
     "tr": "kaza",
     "en": "accident",
     "ar": "حادث",
-    "fr": "accident"
+    "fr": "accident",
+    "zinnen": [
+      "nz2mgsha"
+    ]
   },
   {
     "nl": "pas",
@@ -575,7 +785,10 @@
     "tr": "ancak, yeni",
     "en": "only, just",
     "ar": "فقط",
-    "fr": "seulement"
+    "fr": "seulement",
+    "zinnen": [
+      "x07nz9eo"
+    ]
   },
   {
     "nl": "rijden",
@@ -585,7 +798,10 @@
     "tr": "sürmek (araç)",
     "en": "to drive, to ride",
     "ar": "يقود",
-    "fr": "conduire"
+    "fr": "conduire",
+    "zinnen": [
+      "axidv0a4"
+    ]
   },
   {
     "nl": "sturen",
@@ -595,7 +811,10 @@
     "tr": "göndermek",
     "en": "to send",
     "ar": "يرسل",
-    "fr": "envoyer"
+    "fr": "envoyer",
+    "zinnen": [
+      "b95af9ar"
+    ]
   },
   {
     "nl": "tram",
@@ -604,7 +823,10 @@
     "tr": "tramvay",
     "en": "tram",
     "ar": "ترام",
-    "fr": "tramway"
+    "fr": "tramway",
+    "zinnen": [
+      "j04oktss"
+    ]
   },
   {
     "nl": "vergadering",
@@ -613,7 +835,10 @@
     "tr": "toplantı",
     "en": "meeting",
     "ar": "اجتماع",
-    "fr": "réunion"
+    "fr": "réunion",
+    "zinnen": [
+      "vt0yfosu"
+    ]
   },
   {
     "nl": "verhuizing",
@@ -622,7 +847,10 @@
     "tr": "taşınma",
     "en": "moving (house)",
     "ar": "انتقال",
-    "fr": "déménagement"
+    "fr": "déménagement",
+    "zinnen": [
+      "v4pu0r3m"
+    ]
   },
   {
     "nl": "vriendelijk",
@@ -630,7 +858,10 @@
     "tr": "nazik, dostça",
     "en": "friendly, kind",
     "ar": "ودود",
-    "fr": "aimable"
+    "fr": "aimable",
+    "zinnen": [
+      "udngight"
+    ]
   },
   {
     "nl": "werk",
@@ -651,7 +882,10 @@
     "tr": "benzin",
     "en": "petrol, gas",
     "ar": "بنزين",
-    "fr": "essence"
+    "fr": "essence",
+    "zinnen": [
+      "wtn05czj"
+    ]
   },
   {
     "nl": "duren",
@@ -661,7 +895,10 @@
     "tr": "sürmek (zaman)",
     "en": "to last, to take (time)",
     "ar": "يستغرق",
-    "fr": "durer"
+    "fr": "durer",
+    "zinnen": [
+      "n5e2svzb"
+    ]
   },
   {
     "nl": "erg",
@@ -669,7 +906,10 @@
     "tr": "çok, fazla",
     "en": "very, quite",
     "ar": "جدا",
-    "fr": "très"
+    "fr": "très",
+    "zinnen": [
+      "2jlauxlb"
+    ]
   },
   {
     "nl": "halte",
@@ -678,7 +918,10 @@
     "tr": "durak",
     "en": "stop",
     "ar": "محطة",
-    "fr": "arrêt"
+    "fr": "arrêt",
+    "zinnen": [
+      "gq38eole"
+    ]
   },
   {
     "nl": "handig",
@@ -686,7 +929,10 @@
     "tr": "kullanışlı, becerikli",
     "en": "handy, useful",
     "ar": "مفيد",
-    "fr": "pratique"
+    "fr": "pratique",
+    "zinnen": [
+      "8oacvhda"
+    ]
   },
   {
     "nl": "haten",
@@ -696,7 +942,10 @@
     "tr": "nefret etmek",
     "en": "to hate",
     "ar": "يكره",
-    "fr": "détester"
+    "fr": "détester",
+    "zinnen": [
+      "hprap39o"
+    ]
   },
   {
     "nl": "helemaal",
@@ -704,7 +953,10 @@
     "tr": "tamamen, hiç",
     "en": "completely, at all",
     "ar": "تماما",
-    "fr": "complètement"
+    "fr": "complètement",
+    "zinnen": [
+      "i3rvielm"
+    ]
   },
   {
     "nl": "irritant",
@@ -712,7 +964,10 @@
     "tr": "sinir bozucu",
     "en": "irritating, annoying",
     "ar": "مزعج",
-    "fr": "irritant"
+    "fr": "irritant",
+    "zinnen": [
+      "s6rxzt7a"
+    ]
   },
   {
     "nl": "kosten",
@@ -722,7 +977,10 @@
     "tr": "mal olmak",
     "en": "to cost",
     "ar": "يكلف",
-    "fr": "coûter"
+    "fr": "coûter",
+    "zinnen": [
+      "g799c72z"
+    ]
   },
   {
     "nl": "kou",
@@ -731,7 +989,10 @@
     "tr": "soğuk (hava)",
     "en": "cold",
     "ar": "برد",
-    "fr": "froid"
+    "fr": "froid",
+    "zinnen": [
+      "itx58ayu"
+    ]
   },
   {
     "nl": "milieu",
@@ -740,7 +1001,10 @@
     "tr": "çevre",
     "en": "environment",
     "ar": "بيئة",
-    "fr": "environnement"
+    "fr": "environnement",
+    "zinnen": [
+      "u0wzbyye"
+    ]
   },
   {
     "nl": "nieuwsbrief",
@@ -749,7 +1013,10 @@
     "tr": "bülten",
     "en": "newsletter",
     "ar": "نشرة إخبارية",
-    "fr": "bulletin"
+    "fr": "bulletin",
+    "zinnen": [
+      "7hcj4oib"
+    ]
   },
   {
     "nl": "ov",
@@ -758,7 +1025,10 @@
     "tr": "toplu taşıma",
     "en": "public transport",
     "ar": "نقل عام",
-    "fr": "transports en commun"
+    "fr": "transports en commun",
+    "zinnen": [
+      "7bqsokkt"
+    ]
   },
   {
     "nl": "parkeren",
@@ -768,7 +1038,10 @@
     "tr": "park etmek",
     "en": "to park",
     "ar": "يركن",
-    "fr": "garer"
+    "fr": "garer",
+    "zinnen": [
+      "2jd6npks"
+    ]
   },
   {
     "nl": "prettig",
@@ -776,7 +1049,10 @@
     "tr": "hoş, güzel",
     "en": "pleasant",
     "ar": "ممتع",
-    "fr": "agréable"
+    "fr": "agréable",
+    "zinnen": [
+      "8pvsm8k4"
+    ]
   },
   {
     "nl": "reistijd",
@@ -785,7 +1061,10 @@
     "tr": "seyahat süresi",
     "en": "travel time",
     "ar": "وقت السفر",
-    "fr": "temps de trajet"
+    "fr": "temps de trajet",
+    "zinnen": [
+      "cbisrbrm"
+    ]
   },
   {
     "nl": "rijbewijs",
@@ -794,7 +1073,10 @@
     "tr": "ehliyet",
     "en": "driver's license",
     "ar": "رخصة قيادة",
-    "fr": "permis de conduire"
+    "fr": "permis de conduire",
+    "zinnen": [
+      "bx1f3mbi"
+    ]
   },
   {
     "nl": "rit",
@@ -804,7 +1086,10 @@
     "tr": "yolculuk, gezi",
     "en": "ride, trip",
     "ar": "رحلة",
-    "fr": "trajet"
+    "fr": "trajet",
+    "zinnen": [
+      "q3r2dhbr"
+    ]
   },
   {
     "nl": "slecht",
@@ -812,7 +1097,10 @@
     "tr": "kötü",
     "en": "bad",
     "ar": "سيئ",
-    "fr": "mauvais"
+    "fr": "mauvais",
+    "zinnen": [
+      "mgi2joy1"
+    ]
   },
   {
     "nl": "stoppen",
@@ -822,7 +1110,10 @@
     "tr": "durmak, bırakmak",
     "en": "to stop",
     "ar": "يتوقف",
-    "fr": "arrêter"
+    "fr": "arrêter",
+    "zinnen": [
+      "urje29d5"
+    ]
   },
   {
     "nl": "treinkaartje",
@@ -831,7 +1122,10 @@
     "tr": "tren bileti",
     "en": "train ticket",
     "ar": "تذكرة قطار",
-    "fr": "billet de train"
+    "fr": "billet de train",
+    "zinnen": [
+      "6sweh1a8"
+    ]
   },
   {
     "nl": "verhaal",
@@ -840,7 +1134,10 @@
     "tr": "hikaye",
     "en": "story",
     "ar": "قصة",
-    "fr": "histoire"
+    "fr": "histoire",
+    "zinnen": [
+      "50759rma"
+    ]
   },
   {
     "nl": "want",
@@ -848,7 +1145,10 @@
     "tr": "çünkü",
     "en": "because",
     "ar": "لأن",
-    "fr": "car"
+    "fr": "car",
+    "zinnen": [
+      "tcql6nip"
+    ]
   },
   {
     "nl": "winter",
@@ -857,7 +1157,10 @@
     "tr": "kış",
     "en": "winter",
     "ar": "شتاء",
-    "fr": "hiver"
+    "fr": "hiver",
+    "zinnen": [
+      "6ghyj52h"
+    ]
   },
   {
     "nl": "zelfs",
@@ -865,6 +1168,10 @@
     "tr": "hatta, bile",
     "en": "even",
     "ar": "حتى",
-    "fr": "même"
+    "fr": "même",
+    "zinnen": [
+      "xn4enwkj",
+      "bcupvi9l"
+    ]
   }
 ]

@@ -1,0 +1,368 @@
+# A1 fix batch — punctuation corrections + remaining words
+
+# === GREETINGS (comma/punct issue fixed) ===
+Ik zeg 1|hallo@hallo.
+Ze zegt 1|goedemorgen@goedemorgen.
+Hij zegt altijd 1|ja@ja.
+Ze zegt 1|nee@nee.
+Zeg 1|alsjeblieft@alsjeblieft.
+Vraag 1|alstublieft@alstublieft om hulp.
+Ik zeg 1|dag@dag en ga weg.
+Dat is goed, 1|hoor.
+Dat is 1|natuurlijk zo.
+Dat is 1|wel goed.
+Ik wens je 1|beterschap.
+
+# === TIME EXPRESSIONS (mid-sentence) ===
+Ik drink 1|'s ochtends@'s ochtends koffie.
+Ik eet 1|'s middags@'s middags thuis.
+Ik kijk 1|'s avonds@'s avonds televisie.
+Ik ga 1|'s morgens@'s morgens sporten.
+Het is 1|'s nachts@'s nachts stil.
+
+# === MISC FIXES ===
+Ik zie de 1|zon schijnen.
+Ik doe het 1|zo.
+Met vriendelijke 1|groet.
+Ik koop 1|een brood.
+
+# === HOUDEN VAN / ZORGEN VOOR (underscore encoding) ===
+Ik 1|houd@houden_van 1|van@houden_van muziek.
+Ik 1|zorg@zorgen_voor 1|voor@zorgen_voor mijn kinderen.
+
+# === SEPARABLE VERBS (corrected) ===
+Hij 1|komt@binnenkomen de kamer 1|binnen@binnenkomen.
+Ik 1|neem@meenemen mijn tas 1|mee@meenemen.
+Ik 1|kom@langskomen morgen 1|langs@langskomen.
+Ik 1|haal@ophalen het pakket 1|op@ophalen.
+Ik 1|stap@uitstappen hier 1|uit@uitstappen.
+Ik 1|stap@overstappen 1|over@overstappen in Utrecht.
+Ik 1|leg@uitleggen de route 1|uit@uitleggen.
+Ik 1|val@afvallen 1|af@afvallen.
+Ik 1|maak@schoonmaken de kamer 1|schoon@schoonmaken.
+Ik 1|doe@aandoen het licht 1|aan@aandoen.
+Ik 1|trek@aantrekken een jas 1|aan@aantrekken.
+Ik 1|maak@dichtmaken de doos 1|dicht@dichtmaken.
+Ik 1|loop@hardlopen 1|hard@hardlopen in het park.
+De pijn 1|gaat@overgaan 1|over@overgaan.
+Ik 1|nodig@uitnodigen hem 1|uit@uitnodigen voor een feest.
+Ik 1|log@inloggen 1|in@inloggen met mijn wachtwoord.
+Ik 1|geef@afgeven het pakket 1|af@afgeven.
+1|Let@opletten 1|op@opletten bij het fietsen.
+Ik 1|kom@aankomen morgen 1|aan@aankomen.
+De trein 1|vertrekt@vertrekken om tien uur.
+1|Zet@neerzetten de stoel 1|neer@neerzetten.
+Ik 1|stap@uitstappen hier 1|uit@uitstappen.
+1|Schiet@opschieten 1|op@opschieten we zijn laat.
+De laptop 1|gaat@stukgaan 1|stuk@stukgaan.
+Ik 1|ga@uitgaan vanavond 1|uit@uitgaan.
+Ik 1|zorg@zorgen 1|voor@zorgen mijn kind.
+1|Kijk@uitkijken 1|uit@uitkijken bij het oversteken.
+1|Maak@dichtmaken de brief 1|dicht@dichtmaken.
+Ik 1|bewaarde@bewaren het medicijn koud.
+Ik 1|steek@oversteken de straat 1|over@oversteken.
+
+# === FEELINGS/STATES ===
+Ik 1|drink@drinken water.
+Ze 1|huilt@huilen.
+Hij 1|lacht@lachen.
+Ik ga 1|slapen.
+Ik 1|bel@bellen jou.
+1|Deze@deze trein gaat naar Amsterdam.
+1|Die@die man is mijn buurman.
+Het is 1|heel groot.
+Ik speel 1|voetbal.
+1|Afgesproken, tot morgen.
+1|Gefeliciteerd met je verjaardag.
+De muziek 1|klinkt@klinken mooi.
+Ik 1|krijg@krijgen een cadeau.
+1|Misschien kom ik later.
+1|Vanavond gaan we eten.
+1|Vandaag is het vrijdag.
+
+# === FOOD/HOUSEHOLD ===
+Hij draagt een 1|jas.
+Ik wil een 1|fles water.
+Eet 1|gezond.
+Alles is 1|klaar.
+Open de 1|koelkast.
+Ik ga 1|langs de bakker.
+Ik 1|neem@meenemen mijn lunch 1|mee@meenemen.
+Ik 1|moet@moeten vroeg opstaan.
+Ik heb 1|niks gedaan.
+Ik heb alles 1|nodig.
+Ik ga hier 1|over nadenken.
+De bloemen 1|staan@staan in de vaas.
+Ik kan het niet 1|vinden@vinden.
+We eten 1|avondeten om zes uur.
+Ik maak een 1|boterham.
+Wat is dat voor 1|ding?
+Ik ga 1|doordeweeks naar school.
+Dat is 1|gek.
+Het 1|lijkt@lijken goed.
+Ik ga 1|lunchen@lunchen.
+Ik eet 's ochtends 1|ontbijt.
+Er zit iets 1|tussen.
+Ik kom 1|vanmiddag terug.
+
+# === HEALTH/LIFESTYLE ===
+Mijn dokter geeft 1|advies.
+Ik wil 1|afvallen door meer te bewegen.
+Ik ga meer 1|bewegen.
+Ik heb 1|gelijk@gelijk.
+1|Ieder mens is anders.
+Ik 1|leef@leven gezond.
+Dit eten is 1|ongezond.
+Ik 1|pak@pakken mijn tas.
+Dat is een 1|probleem.
+1|Tussendoor eet ik een appel.
+Ik 1|weeg@wegen 70 kilo.
+Ik heb 1|weinig geld.
+
+# === RESTAURANT/ORDERING ===
+1|Alle producten zijn in de aanbieding.
+Ik doe het 1|bijvoorbeeld zo.
+1|Daarom ga ik niet mee.
+Ik ga naar een ander 1|land.
+Wat is de beste 1|manier?
+Wat is de beste 1|plaats?
+Mag ik dit 1|proeven?
+Ik wil een tafel 1|reserveren.
+Dit 1|smaakt@smaken lekker.
+We zitten op het 1|terras.
+Dit zijn 1|verschillende producten.
+
+# === HOUSING ===
+Ik woon in het 1|centrum.
+We 1|delen@delen de keuken.
+Dit is mijn 1|eigen kamer.
+Ik zoek 1|informatie over de huur.
+Ik huur een 1|kamer.
+Dat is 1|maar een kamer.
+Dit is een mooie 1|plek.
+Het appartement is 80 1|vierkante meter.
+Ik heb 1|ervaring met klussen.
+Ik heb 1|hulp nodig.
+Ik ben mijn sleutel 1|kwijt.
+Ik 1|kom@langskomen morgen 1|langs@langskomen.
+De prijs is 1|ongeveer 800 euro.
+Ik 1|haal@ophalen mijn pakket 1|op@ophalen.
+Ik heb een 1|oppas nodig.
+Ik maak de keuken 1|schoon.
+Mijn 1|spullen@spullen staan in de kamer.
+Ik koop een 1|tweedehands bank.
+Ik wil mijn auto 1|verkopen.
+Ik 1|zoek@zoeken een nieuw huis.
+
+# === INTERIOR/COLORS ===
+1|Iedereen is welkom.
+Ik 1|kies@kiezen een nieuwe lamp.
+Het boek ligt 1|onder de tafel.
+De 1|ruimte is groot.
+Ik leun 1|tegen de muur.
+Heb je een 1|tip?
+1|Vooral de keuken is mooi.
+Ik 1|zet@zetten de stoel neer.
+
+# === TRANSPORT/NAVIGATION ===
+De trein 1|komt@aankomen aan.
+1|Bedankt voor de hulp.
+Dat is het 1|centrale station.
+1|Direct na de school ga ik naar huis.
+Het duurt vijf 1|minuten.
+1|Normaal doe ik dit anders.
+Ik heb een grote 1|tas.
+Mijn 1|telefoon is leeg.
+Ik 1|verstaan@verstaan je niet goed.
+Hij 1|vertrekt@vertrekken morgen.
+1|Eventueel kan ik later komen.
+Ik 1|geloof@geloven dat het goed is.
+Ik heb een 1|idee.
+Mijn 1|kleren@kleren liggen op bed.
+Ik ga naar 1|mam.
+Ik ga het zelf 1|uitzoeken.
+Wat is de 1|rechterkant?
+Ik ga 1|terug naar huis.
+Ik 1|leg@uitleggen het 1|uit@uitleggen.
+
+# === TRAFFIC/COMMUTE ===
+Ik ga met de auto. 1|Excuses voor het lawaai.
+1|Helaas is er een probleem.
+Er is een 1|ongeluk op de weg.
+Hij 1|rijdt@rijden snel.
+Ik 1|stuur@sturen een bericht.
+De 1|verhuizing is morgen.
+Zij is erg 1|vriendelijk.
+Hoelang 1|duurt@duren het?
+Ik 1|haat@haten files.
+Wat 1|kost@kosten dat?
+Het is 1|kou buiten.
+Ik denk aan het 1|milieu.
+Ik lees de 1|nieuwsbrief.
+Ik gebruik het 1|ov.
+De bus 1|stopt@stoppen hier.
+Dat is een mooi 1|verhaal.
+Het is 1|winter.
+1|Zelfs hij doet mee.
+
+# === MEDICAL (remaining) ===
+Ik ga naar de 1|dokter.
+Een 1|korte afspraak graag.
+1|Sommige medicijnen zijn op recept.
+Dit is 1|spoed.
+De verpleegster 1|toetst@toetsen de gegevens.
+1|Eigenlijk voel ik mij beter.
+Mijn temperatuur is 38 1|graden.
+Wacht even, een 1|moment.
+Wacht een 1|ogenblik.
+De pijn 1|gaat@overgaan 1|over@overgaan vanzelf.
+Ik 1|spreek@spreken met de dokter.
+Het 1|gaat@vanzelf vanzelf over.
+Ik 1|verzet@verzetten de afspraak.
+
+# === PHARMACY (remaining) ===
+Ben je 1|jong of oud?
+Aan welke 1|kant zit de pijn?
+Wat is uw 1|leeftijd?
+Dit product is voor 1|luiers@luier.
+Wat is de 1|maximale dosis?
+Welk 1|medicijn heeft u nodig?
+1|Probeer@proberen dit medicijn.
+Ga je 1|verder met de kuur?
+Wat is het 1|verschil?
+Ik heb 1|wc-papier nodig.
+Dit pakket is 1|zwaar.
+Wat zijn de 1|bijwerkingen@bijwerking?
+De doos staat 1|boven.
+Neem 1|contact op met de dokter.
+Een 1|glas water graag.
+Ik ga 1|hardlopen@hardlopen.
+1|Neem@innemen dit medicijn 1|in@innemen na het eten.
+Ik heb 1|nacht na nacht slecht geslapen.
+Dit is 1|stress.
+1|Tegelijk mag je dit niet innemen.
+1|Tijdens de zwangerschap niet gebruiken.
+
+# === HOUSEHOLD ROUTINES ===
+Ik doe de 1|afwas.
+Wees 1|eerlijk.
+Dat is een 1|geluk.
+Dat is een 1|gewoonte.
+Ze doen 1|hetzelfde.
+Ik doe het 1|huishouden.
+Dat is een 1|ideaal situatie.
+Ik 1|leef@leven in Nederland.
+De 1|omgeving is mooi.
+Ik 1|los@oplossen het 1|op@oplossen.
+1|Schiet@opschieten 1|op@opschieten we zijn laat.
+Ik werk 1|overdag.
+Doe de 1|rest maar.
+Er is 1|ruzie.
+De keuken is 1|schoon.
+Neem dit 1|serieus.
+Ik doe dit al 1|sinds een jaar.
+Dat is 1|vies.
+
+# === COMMUNITY ===
+Er is een activiteit op de 1|begane grond.
+Er 1|gebeurt@gebeuren iets.
+Je 1|hoeft@hoeven niet te komen.
+Er is 1|iemand aan de deur.
+De 1|ingang is daar.
+Ga 1|precies rechtdoor.
+1|Vanaf hier is het ver.
+Er zijn 1|verschillen@verschillen tussen de twee.
+Ik moet mij 1|zich klaar maken.
+
+# === NATURE/OUTDOORS ===
+Ik ga naar het 1|buitenland.
+1|Elk weekend ga ik wandelen.
+Er is veel 1|groen in het park.
+Ik 1|mis@missen mijn vrienden.
+Ik neem het 1|openbaar vervoer.
+Er is een 1|parkeerplaats achter het gebouw.
+Ze gaan 1|regelmatig naar het park.
+Ik ben 1|tevreden.
+Er zijn 1|zoveel mensen.
+
+# === NEIGHBOURS ===
+De hond 1|blaft@blaffen.
+1|Ineens was het stil.
+Wat is de 1|oplossing?
+We moeten 1|overleggen.
+De vuilniszak 1|stinkt@stinken.
+Hij loopt op de 1|trap.
+Ik 1|laat@uitlaten de hond 1|uit@uitlaten.
+De 1|vuilniszak is buiten.
+1|Waarschijnlijk is hij ziek.
+Ik moet 1|wennen aan het lawaai.
+De 1|woningbouwvereniging belt.
+Dat is 1|zielig.
+Hij doet dit 1|zomaar.
+
+# === CLOTHING/SHOPPING ===
+Ik 1|doe@aandoen het licht 1|aan@aandoen.
+Ik 1|trek@aantrekken een trui 1|aan@aantrekken.
+Wat 1|bedoel@bedoelen je?
+Ik ben 1|benieuwd.
+Ik 1|geef@uitgeven veel geld 1|uit@uitgeven.
+
+# === ONLINE RETURNS ===
+Wat is het 1|algemene beleid?
+Dat is een 1|bepaalde prijs.
+Betaal 1|binnen een week.
+De telefoon 1|gaat@kapotgaan 1|kapot@kapotgaan.
+1|Namelijk dit product is fout.
+Is dit het 1|originele product?
+Ik wil dit 1|ruilen.
+Bel 1|telefonisch de klantenservice.
+Ik wil mijn geld 1|terugkrijgen.
+Ik wil het geld 1|terugstorten.
+Ik stuur het product 1|terug.
+Ik heb nog 1|tijd.
+Wat zijn de 1|voorwaarden?
+
+# === REVIEWS ===
+Wat is het 1|aantal?
+Ik lees een 1|boek.
+1|Let@letten 1|op@letten bij het kopen.
+Ik 1|noem@noemen dit een probleem.
+De kwaliteit 1|stopt@stukgaan 1|stuk@stukgaan na een jaar.
+Ik 1|twijfel@twijfelen over de aankoop.
+
+# === CLOSING/RETURNS ONLINE ===
+Ik 1|maak@dichtmaken de doos 1|dicht@dichtmaken.
+Ik 1|log@inloggen 1|in@inloggen.
+Ik heb het 1|ontvangen@ontvangen.
+Ik ga dit 1|over nadenken.
+Het adres is 1|verkeerd.
+Wat is het 1|totaal?
+
+# === TRAFFIC/POLICE ===
+De auto 1|rijdt@aanrijden 1|aan@aanrijden.
+De 1|baas van het bedrijf is hier.
+Dat is 1|belachelijk.
+Ik 1|beloof@beloven het.
+1|Dezelfde fout nogmaals.
+Ik ben 1|onderweg.
+Volg de 1|regel.
+Dit 1|verandert@veranderen.
+
+# === HOME ACCIDENTS ===
+Mijn arm is 1|gebroken@breken.
+Ik doe dit 1|dagelijks.
+Ik ga 1|douchen.
+1|Ondertussen bel ik de dokter.
+Ik heb mij 1|gesneden@snijden.
+Ik 1|zet@uitzetten de televisie 1|uit@uitzetten.
+Ik heb mij 1|verbrand@verbranden.
+Hij is 1|weggegaan@weggaan.
+
+# === ROAD SAFETY ===
+Ik ga 1|oversteken@oversteken bij het zebrapad.
+Ik 1|repareer@repareren de fiets.
+Dat was 1|toen anders.
+De 1|weg is veilig.
+1|Daarna bel ik de politie.
+Draai je 1|om.
+Ik 1|steel@stelen niks.

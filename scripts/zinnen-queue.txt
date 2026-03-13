@@ -216,3 +216,753 @@ Ik koop 1|een 2|brood.
 # ============================================================
 # BATCH 3 — next 100 words
 # ============================================================
+
+# A1 complete batch — fixes + all remaining words
+
+# BATCH FIXES
+1|Werk@werken jij 2|hier?
+Ik 1|woon@wonen in 2|Amsterdam.
+1|Ze@ze 2|werkt@werken in het 3|ziekenhuis.
+1|Hallo@hallo, hoe gaat het?
+1|Ja@ja, ik kom morgen.
+1|Je@je bent erg vriendelijk.
+1|Jij@jij hebt gelijk.
+1|Goedemorgen@goedemorgen, 2|meneer!
+Spreekt 1|u@u Nederlands?
+Wij 1|zullen@zullen morgen 2|komen@komen.
+1|Welkom@welkom bij onze 2|school.
+1|Wie@wie is dat?
+Ik 1|koop@kopen een 2|brood.
+Ik 1|maak@maken een 2|salade.
+Ik 1|houd@houden 1|van@houden muziek.
+Zij 1|kookt@koken elke 2|avond.
+
+# PEOPLE / FAMILY
+Mijn 1|broer woont in Utrecht.
+Mijn 1|zus is dokter.
+1|Moeder@moeder 2|kookt@koken elke dag.
+Mijn 1|vader 2|werkt@werken op 3|kantoor.
+Ze heeft een 1|dochter en een 2|zoon.
+1|Mam@mam, kom je?
+Ons 1|gezin heeft vier mensen.
+De hele 1|familie is blij.
+Zijn 1|ouders@ouder wonen in België.
+Het 1|meisje speelt in het park.
+De 1|jongen leest een boek.
+Mijn 1|vriend heet Pieter.
+Mijn 1|vriendin woont naast mij.
+De 1|man 2|betaalt@betalen de rekening.
+Goedemiddag, 1|mevrouw!
+De 1|buurman heeft een hond.
+De 1|buurvrouw 2|helpt@helpen mij.
+Elk 1|mens heeft rechten.
+1|Iedereen is welkom.
+1|Iemand heeft mijn fiets gestolen.
+Zij is 1|Nederlander@Nederlander en spreekt goed Engels.
+Hij is 1|vegetariër@vegetariër en eet geen vlees.
+Mijn 1|collega 2|werkt@werken ook op kantoor.
+De 1|docent 2|legt@uitleggen de les 2|uit@uitleggen.
+De 1|manager heeft een vergadering.
+De 1|assistente 2|helpt@helpen de dokter.
+De 1|huisarts is erg vriendelijk.
+De 1|specialist doet onderzoek.
+De 1|reiziger wacht op de trein.
+De 1|student 2|studeert@studeren elke dag.
+De 1|vrijwilliger 2|helpt@helpen in het ziekenhuis.
+De 1|verkoper 2|helpt@helpen mij.
+De 1|agent staat op straat.
+De 1|fietser rijdt snel.
+De 1|voetganger 2|steekt@oversteken de straat 2|over@oversteken.
+De 1|bewoner woont hier al lang.
+De 1|taalcoach 2|helpt@helpen met Nederlands.
+De 1|deelnemer doet mee.
+De 1|medewerkster 2|werkt@werken in de winkel.
+
+# BODY / HEALTH
+Mijn 1|keel doet pijn.
+Mijn 1|neus loopt.
+Mijn 1|knie doet pijn na het hardlopen.
+Mijn 1|rug doet pijn.
+Was je 1|handen@hand na het eten.
+Mijn 1|been doet pijn.
+Mijn 1|arm is gebroken.
+Ik heb mijn 1|vinger gesneden.
+Mijn 1|buik doet pijn.
+Ik heb 1|pijn in mijn rug.
+Ik heb 1|keelpijn.
+Ik heb 1|koorts.
+Hij 1|hoest@hoesten de hele dag.
+Ik heb 1|griep en koorts.
+Ik ben 1|verkouden en 2|ziek.
+Ik voel mij 1|misselijk.
+De situatie is 1|ernstig.
+Wat is uw 1|klacht?
+Dit is een 1|spoedgeval.
+1|Spoed! Bel de ambulance!
+Heb 1|geduld, de dokter komt zo.
+Een 1|moment@moment, graag.
+1|Ogenblik@ogenblik, ik kom eraan.
+1|Opnieuw@opnieuw proberen?
+De pijn 1|gaat@overgaan 1|over@overgaan.
+Het 1|spijt@spijten me.
+De 1|lijn is bezet.
+Ik heb koorts van 38 1|graden@graad.
+Het is een 1|korte ziekte.
+Ik heb een 1|dubbel gevoel.
+
+# MEDICAL
+Ik ga naar de 1|huisartsenpost.
+De 1|praktijk van de 2|huisarts is open.
+Ik wil een afspraak met de 1|specialist.
+Het 1|spreekuur begint om negen uur.
+Ik heb een 1|verwijzing nodig.
+De dokter 1|behandelt@behandelen de patiënt.
+Het 1|onderzoek is klaar.
+Het 1|ziekenhuis is open.
+De 1|gezondheidszorg in Nederland is goed.
+Ik ga naar de 1|apotheek.
+Bij de 1|drogist koop ik 2|medicijnen@medicijn.
+Heeft u een 1|recept voor dit medicijn?
+Ik neem een 1|pijnstiller.
+1|Paracetamol is een pijnstiller.
+Ik heb een 1|recept van de dokter.
+Hoeveel 1|tabletten@tablet per dag?
+Ik slik een 1|pil elke ochtend.
+De dokter schrijft een 1|slaappil voor.
+Ik gebruik een 1|neusspray.
+Lees de 1|bijsluiter goed.
+Wat zijn de 1|bijwerkingen@bijwerking?
+Wat is de 1|dosering?
+Hoe moet ik dit 1|innemen@innemen?
+1|Bewaar@bewaren dit medicijn koel.
+Wat is het 1|gebruik?
+Welk 1|merk heeft u?
+Dit is een 1|huismerk, maar goed.
+De 1|doos zit in de 2|verpakking.
+Hoeveel 1|milligram is dit?
+Het 1|maximum is vier tabletten per dag.
+Gebruik dit niet met 1|alcohol.
+Dit is niet goed bij 1|borstvoeding.
+Informeer bij 1|zwangerschap.
+1|Stress is slecht voor je gezondheid.
+1|Contact opnemen als het erger wordt.
+Ik ben 1|wakker van de pijn.
+Ik slaap slecht 1|'s nachts@'s nachts.
+Twee 1|maal@maal per dag.
+Na de 1|maaltijd innemen.
+De apotheek is 1|gesloten op zondag.
+Wat zijn uw 1|gegevens?
+Ik heb een 1|verwijzing van de huisarts.
+Je kunt 1|via de telefoon bellen.
+Ik 1|breng@brengen je naar het ziekenhuis.
+1|Eigenlijk voelt hij zich beter.
+Dat is 1|mogelijk.
+Ik heb 1|vrij vandaag.
+
+# FOOD / DRINK
+Ik eet een 1|tomaat.
+De 1|wortel is vers.
+Ik kook 1|aardappels@aardappel.
+We eten 1|vis op vrijdag.
+Dit 1|vlees is lekker.
+Ik bak een 1|ei elke ochtend.
+Wil je 1|kaas op je brood?
+Ik eet elke dag 1|brood.
+Ik maak een 1|boterham met kaas.
+Een 1|broodje met ham, graag.
+Wil je 1|koffie of 2|thee?
+Ik drink elke dag 1|melk met 2|suiker.
+Mag ik een 1|water, graag?
+Hij drinkt 1|wijn bij het eten.
+Wil je een 1|bier of wijn?
+Ze maakt 1|soep van groenten.
+Ik eet 1|pasta met saus.
+Ik houd van 1|noedels.
+Maak een 1|salade van tomaat en ui.
+1|Stamppot is een typisch Nederlands gerecht.
+Ik eet graag 1|patat.
+Hij eet een 1|hamburger met patat.
+Wil je 1|frisdrank of water?
+Ik drink graag 1|cola.
+Wil je 1|sinaasappelsap?
+Ik smeer 1|jam op mijn brood.
+Hij smeert 1|boter op zijn brood.
+Ik eet 's ochtends 1|yoghurt.
+Doe je 1|zout in de soep?
+Ik eet 1|havermout 's ochtends.
+Snijd de 1|ui voor de soep.
+Wil je een 1|toetje na het eten?
+Ik eet graag 1|haring.
+Hij eet haring met 1|mayonaise.
+De winkel heeft 1|allerlei producten.
+Het koekje is 1|zoet.
+1|Gezond eten is belangrijk.
+1|Ongezond eten maakt je ziek.
+Het brood is lekker en 1|vers.
+De soep is 1|koud.
+De koffie is 1|warm.
+Dit eten is te 1|vet.
+Hij is 1|dik geworden.
+Ik eet 1|minder vet.
+
+# SHOPPING
+De 1|verkoper helpt mij.
+Ik 1|betaal@betalen met mijn pinpas.
+Ik 1|pin@pinnen bij de kassa.
+Ik neem 200 1|gram@gram kaas.
+1|Hoeveel kost dat?
+Wat is de 1|prijs?
+Dit is 1|duur.
+Dit is 1|goedkoop.
+Er is een 1|aanbieding op kaas.
+Ik heb een 1|tegoedbon van vijf euro.
+Bewaar de 1|kassabon voor de 2|garantie.
+Bel de 1|klantenservice.
+Ik wil dit 1|retourneren.
+Ik wil dit product 1|ruilen@ruilen.
+Ik wil een 1|reparatie aanvragen.
+Ik betaal 1|contant.
+Ik heb mijn 1|pinpas vergeten.
+Ik controleer mijn 1|bankafschrift.
+Wat zijn de 1|voorwaarden@voorwaarde?
+De korting 1|geldt@gelden voor alle producten.
+Het 1|product is kapot.
+Welke 1|aankoop wil je doen?
+
+# ONLINE SHOPPING
+Ik 1|bestel@bestellen online.
+De postbode 1|bezorgt@bezorgen het 2|pakket.
+Ik 1|haal@afhalen het pakket 1|af@afhalen bij de winkel.
+Ik koop bij een 1|webwinkel.
+Ik heb een 1|order geplaatst.
+Ik heb het 1|pakket 2|ontvangen@ontvangen.
+Ik 1|verstuur@verzenden het pakket morgen.
+Bewaar het 1|verzendbewijs.
+Ik stuur het pakket 1|retour.
+1|Log@inloggen in met je wachtwoord 1|in@inloggen.
+1|Klik@klikken op de knop.
+Voer je 1|wachtwoord in.
+Wat is je 1|locatie?
+Welke 1|maat heb je?
+1|Plak@plakken de 2|sticker op het pakket.
+1|Maak@dichtmaken de doos 1|dicht@dichtmaken.
+Welk 1|artikel wil je?
+Wat is de 1|reden voor retour?
+Ik heb het 1|verkeerde product ontvangen.
+1|Vervolgens@vervolgens stuur je het pakket terug.
+Volg de 1|stappen@stap op de website.
+Dat is 1|juist.
+Ik zoek een 1|sok maar heb de verkeerde maat.
+1|Leg@leggen de kleding in de doos.
+1|Geef@afgeven het pakket 1|af@afgeven bij de post.
+
+# TIME
+Vandaag is het 1|dinsdag.
+Op 1|maandag ga ik naar school.
+Wij gaan op 1|zaterdag winkelen.
+Op 1|vrijdag werkt hij thuis.
+In 1|januari is het koud.
+In 1|februari beginnen de lessen.
+1|'s Ochtends@'s ochtends ga ik naar school.
+1|'s Middags@'s middags eet ik thuis.
+1|'s Avonds@'s avonds kijk ik tv.
+1|'s Morgens@'s morgens drink ik koffie.
+1|'s Nachts@'s nachts slaap ik.
+1|Morgen ga ik naar de dokter.
+1|Vandaag is het vrijdag.
+1|Vanavond ga ik uit.
+1|Vanmiddag heb ik een afspraak.
+Ik doe dit 1|altijd zo.
+1|Soms ga ik lopen.
+Ik ga 1|meestal op de fiets.
+Ik doe dit 1|nooit.
+Ik sta 1|vroeg op.
+Ik kom 1|laat thuis.
+Ik ga 1|vaak naar de markt.
+Ik kom 1|later.
+Ik kom 1|straks.
+Kom 1|gauw!
+1|Doordeweeks ga ik naar mijn werk.
+1|Wanneer kom je?
+1|Hoelang duurt het?
+Dat was een 1|keer.
+Na een 1|tijdje is hij beter.
+Ik ben 1|net thuis.
+1|Eindelijk is hij hier.
+Hij belt 1|steeds opnieuw.
+1|Overdag werk ik.
+Heb je 1|weleens sushi gegeten?
+1|Tegenwoordig doe ik alles online.
+
+# TRANSPORT
+Ik neem de 1|trein naar Amsterdam.
+Ik ga met de 1|bus naar school.
+Mijn 1|auto is stuk.
+Ik neem de 1|tram naar het centrum.
+Ik ga op de 1|fiets.
+We rijden met de 1|metro.
+Ik neem de 1|intercity naar Rotterdam.
+De 1|sprinter stopt op elk station.
+Ik wacht op het 1|station.
+Het 1|spoor is geblokkeerd.
+Ik wacht bij de 1|halte.
+Ik heb een 1|ov-kaart.
+Ik koop een 1|treinkaartje.
+Ik heb een 1|rijbewijs.
+Ik tank 1|benzine.
+Ik 1|parkeer@parkeren mijn auto.
+Er is 1|file op de snelweg.
+Wat is de 1|reistijd?
+De 1|verbinding is goed.
+Er is 1|vertraging bij het 2|vertrek.
+Wat is de 1|aankomst?
+Ik moet 1|overstappen@overstappen 1|over@overstappen in Utrecht.
+De trein 1|komt@aankomen om tien uur 1|aan@aankomen.
+Ik 1|stap@uitstappen hier 1|uit@uitstappen.
+De 1|reiziger vraagt om informatie.
+Wat is de 1|route?
+Het is een korte 1|rit.
+Het duurt tien 1|minuten@minuut.
+Ik moet naar Centraal 1|Station.
+1|Normaal duurt het een uur.
+Er is een 1|directe verbinding.
+1|Bedankt voor de hulp.
+1|Let@opletten 1|op@opletten bij het instappen!
+De trein rijdt 1|nergens naartoe.
+1|Gelukkig kom ik op tijd aan.
+De 1|volgende trein is om elf uur.
+
+# DIRECTIONS / NAVIGATION
+Ga 1|links bij het stoplicht.
+Ga 1|rechts bij de kerk.
+Sla 1|linksaf bij de hoek.
+Sla 1|rechtsaf bij de school.
+Ga 1|rechtdoor.
+De bakker is 1|tegenover de school.
+Waar gaat u 1|naartoe?
+Heb je een 1|plattegrond?
+Wat is de 1|route naar het station?
+Het is een kort 1|stuk lopen.
+De winkel is 1|naast de apotheek.
+Kan je het 1|uitleggen@uitleggen 1|uit@uitleggen?
+Kan je het 1|tekenen@tekenen?
+Dat is een 1|slim idee.
+Dat is 1|duidelijk.
+Ga 1|eerst rechtdoor.
+Ik heb geen 1|idee.
+Ik doe het 1|zelf.
+
+# HOUSING
+Ik heb een grote 1|kamer.
+De 1|slaapkamer is boven.
+We zitten in de 1|woonkamer.
+De 1|badkamer is rechts.
+We hebben een mooie 1|tuin.
+Het appartement heeft een 1|balkon.
+Waar is de 1|wc?
+Ik woon in een 1|appartement.
+Hij woont in een 1|flat.
+Ze wonen in een 1|rijtjeshuis.
+Ze wonen in een 1|vrijstaand huis.
+Wij wonen op de tweede 1|verdieping.
+Het is 80 1|vierkante meter.
+Het 1|bed is groot.
+Ik zit op een 1|stoel.
+De 1|tafel staat in de keuken.
+De 1|kast is vol kleren.
+De 1|lamp is kapot.
+De 1|vloer is van hout.
+De 1|muur is wit.
+Open het 1|raam.
+De 1|la zit vast.
+Alle 1|meubels@meubel zijn nieuw.
+Ik zoek een 1|woning.
+Dit is een mooie 1|plek.
+De 1|huur is hoog.
+Ik 1|huur@huren een kamer.
+Mijn 1|spullen@spul staan in de slaapkamer.
+Ik heb de 1|sleutel verloren.
+Ik 1|maak@schoonmaken de keuken 1|schoon@schoonmaken.
+Ik ga 1|klussen dit weekend.
+We 1|verhuizen@verhuizen volgende maand.
+De winkel is 1|vlakbij.
+Mijn 1|huisgenoot is aardig.
+Ik heb een 1|oppas voor de kinderen.
+Ik heb mijn 1|eigen kamer.
+Het centrum is 1|dichtbij.
+De huur is 1|laag.
+Het gebouw is 1|hoog.
+Het huis is 1|mooi.
+De kamer is 1|groot.
+De kamer is 1|klein.
+De kamer is 1|leeg.
+De kamer is 1|vol.
+Het is 1|donker hier.
+Er is veel 1|licht.
+De muur is 1|blauw.
+De muur is 1|wit.
+De deur is 1|rood.
+De deur is 1|geel.
+De fiets is 1|roze.
+De kat is 1|zwart.
+Mijn lievelings 1|kleur is blauw.
+Ik koop nieuwe 1|kleding.
+
+# WORK / STUDY
+Ik heb een goede 1|baan.
+Ik werk op 1|kantoor.
+We hebben een 1|vergadering om twee uur.
+Ik doe een 1|studie Nederlands.
+Ik 1|studeer@studeren aan de universiteit.
+Ik heb 1|vrijheid in mijn werk.
+Hij werkt 1|zelfstandig.
+De leraar is 1|streng.
+De taak is 1|moeilijk.
+Dit is 1|makkelijk.
+Het duurt 1|lang.
+De 1|meeste studenten zijn present.
+Dat is tien 1|procent.
+Ik 1|spaar@sparen elke maand.
+De cursus is 1|gratis.
+Ik heb geen 1|geld.
+We doen het 1|allemaal samen.
+Ze doen het 1|allebei goed.
+We helpen 1|elkaar.
+De 1|wasmachine is stuk.
+Ik doe de 1|was.
+Ik 1|wacht@wachten op de bus.
+Mijn 1|ouders@ouder wonen in Groningen.
+In de 1|zomer ga ik op vakantie.
+
+# LEISURE / ACTIVITIES
+We 1|voetballen@voetballen in het park.
+Ik ga 1|hardlopen@hardlopen.
+Ik ga 1|winkelen@winkelen in de stad.
+We gaan naar de 1|film.
+We gaan naar de 1|bioscoop.
+We zitten in het 1|café met vrienden.
+Ik wandel in het 1|park.
+Ik luister naar 1|muziek.
+Ik 1|nodig@uitnodigen mijn vriend 1|uit@uitnodigen voor een feestje.
+We gaan op 1|vakantie.
+Ik ga naar het 1|taalcafé.
+Ik leer de 1|taal.
+Mijn 1|taalcoach helpt mij.
+We doen een leuke 1|activiteit.
+Wij 1|doen@deelnemen mee aan het spelletje 1|mee@deelnemen.
+Ik ga naar de 1|bibliotheek.
+Het 1|buurtcentrum is open.
+Ik lees de 1|krant.
+Ik 1|oefen@oefenen elke dag.
+We 1|organiseren@organiseren een feestje.
+We 1|bereiden@voorbereiden de les 2|voor@voorbereiden.
+We 1|kletsen@kletsen in het café.
+We nemen het 1|openbaar vervoer.
+Ik loop in het 1|park.
+Er staat een grote 1|boom.
+Er zijn 1|struiken@struik in de tuin.
+Er is een 1|grasveld in het park.
+De kinderen spelen op de 1|speeltuin.
+We nemen de 1|metro.
+We nemen de 1|lift.
+De 1|gang is lang.
+Dit is een groot 1|gebouw.
+
+# SOCIAL / EVENTS
+Vandaag is mijn 1|verjaardag.
+We geven een 1|feestje voor zijn verjaardag.
+Ik 1|feliciteer@feliciteren jou.
+1|Gefeliciteerd met je verjaardag!
+Ik heb een 1|uitnodiging ontvangen.
+Ik 1|nodig@uitnodigen jou 1|uit@uitnodigen voor het feest.
+Ik ben zo 1|blij!
+Ben jij 1|jarig vandaag?
+Laat de glazen 1|klinken@klinken!
+Veel 1|succes!
+Wat is het 1|nieuws?
+Ik heb een 1|bericht ontvangen.
+Ik heb een 1|afspraak morgen.
+1|Afgesproken! Tot morgen.
+1|Vanavond gaan we uit eten.
+1|Misschien kom ik later.
+Ik kom 1|zeker.
+1|Volgend@volgend jaar ga ik op vakantie.
+Ik kom 1|gauw terug.
+Dat was een week 1|geleden.
+In 1|januari of 2|februari?
+Ik ben 1|net thuis.
+
+# FEELINGS / CHARACTER
+Het was 1|gezellig.
+Het is hier 1|rustig.
+Het is 1|druk in de winkel.
+Dit is 1|vervelend.
+Dat is 1|jammer.
+Het is 1|warm buiten.
+Zij is 1|slim.
+Ze is 1|mooi.
+Hij is 1|vriendelijk@vriendelijk.
+Dit is 1|lelijk.
+Hij is 1|boos.
+Ik ben 1|bang.
+Dat is 1|zielig.
+Ik ben 1|gelukkig.
+Het gaat 1|prima.
+Zij is 1|lief.
+Dat is 1|echt waar.
+Het is heel mooi, 1|echt!
+Dat is 1|genoeg.
+Er is veel 1|lawaai.
+Ik ga 1|weg.
+Ik kom 1|later.
+Ik 1|blijf@blijven hier.
+Wanneer 1|beginnen@beginnen we?
+Ik 1|begrijp@begrijpen het niet.
+1|Luister@luisteren goed.
+Zij 1|huilt@huilen.
+Hij 1|lacht@lachen.
+Ik doe het 1|zelf.
+Ik ben 1|bezig.
+Er is 1|bezoek.
+Hij 1|komt@binnenkomen 1|binnen@binnenkomen.
+Jij 1|ziet@eruitzien er goed 1|uit@eruitzien.
+Ik 1|geef@geven hem een cadeau.
+Ik 1|hoor@horen muziek.
+Ik ben 1|moe.
+Ik ga 1|slapen@slapen.
+Hij 1|zit@zitten op de stoel.
+Ik doe het 1|zonder suiker.
+Het is 's 1|avonds@avond rustig.
+Ik ga op 1|vakantie op vrijdag.
+Ik ga 1|weg volgende week.
+1|Beterschap! Je bent ziek.
+
+# NEIGHBOURHOOD / CITY
+Er is een mooi 1|park in de buurt.
+We nemen het 1|openbaar vervoer.
+Er is veel 1|verkeer op de weg.
+Er is een 1|fietspad naast de weg.
+Loop op de 1|stoep.
+1|Kijk@uitkijken 1|uit@uitkijken bij het 2|zebrapad.
+Wacht bij het 1|stoplicht.
+Pas op bij het 1|kruispunt.
+De 1|weg is lang.
+Dit is een mooie 1|wijk.
+Het centrum is dichtbij.
+Er is een 1|parkeerplaats.
+De kinderen spelen op de 1|speeltuin.
+Aan de 1|overkant is een winkel.
+1|Steek@oversteken de straat 1|over@oversteken.
+1|Kijk@uitkijken goed 1|uit@uitkijken.
+Rijd 1|veilig.
+Dit is 1|onveilig.
+Dit is 1|gevaarlijk, let op!
+Hij heeft 1|haast.
+Draag een 1|helm op de fiets.
+Heb je een 1|identiteitsbewijs bij je?
+Hij heeft een 1|boete gekregen.
+De 1|agent schrijft een boete.
+De 1|politie is er.
+Volg de 1|regels@regel.
+1|Tegenwoordig is er meer verkeer.
+Er is een 1|uitzondering op de regel.
+De 1|voetganger steekt over.
+De 1|fietser rijdt op het fietspad.
+
+# SAFETY / EMERGENCIES
+Bel het 1|alarmnummer 112.
+De 1|ambulance is onderweg.
+De 1|brandweer blust de brand.
+Ga naar het 1|politiebureau.
+De 1|deur zit op 2|slot.
+Iemand heeft mijn fiets 1|gestolen@stelen.
+Er is een 1|inbreker!
+De 1|dief is gepakt.
+Ben jij een 1|getuige?
+Er is 1|geweld op straat.
+1|Meld@melden dit bij de politie.
+Ik doe een 1|melding.
+Dit is een 1|noodgeval.
+Je 1|veiligheid is belangrijk.
+Ik 1|vertrouw@vertrouwen deze persoon niet.
+Dit is 1|vreemd.
+1|Waarschuw@waarschuwen de politie!
+Het hele 1|team helpt.
+De 1|jongere is in gevaar.
+Zie 1|pagina twee.
+1|Daarna bel je de politie.
+Bel 1|meteen de ambulance.
+De winkel is 1|om@om de hoek.
+
+# HOME ACCIDENTS
+Er is 1|brand in de keuken.
+Hij is 1|gewond.
+Pas op, dat is 1|heet.
+Gebruik het 1|mes voorzichtig.
+Zet de 1|pan op het 2|fornuis.
+1|Val@vallen niet van de trap!
+Ik heb mij 1|gesneden@snijden.
+Ik heb mij 1|verbrand@verbranden.
+Ik 1|schrik@schrikken ervan.
+Wat is de 1|oorzaak?
+Dat was een 1|fout.
+Dat was 1|onhandig.
+Hoe 1|voorkomen@voorkomen we dit?
+1|Zet@uitzetten de lamp 1|uit@uitzetten.
+Gebruik geen 1|schoonmaakmiddel in de ogen.
+De 1|televisie staat te hard.
+Gelukkig is er niemand 1|overleden@overlijden.
+1|Ondertussen bel ik de dokter.
+
+# CLOTHING
+Ze draagt een mooie 1|blouse.
+Hij heeft een korte 1|broek aan.
+Ze draagt een 1|jurk.
+Ik draag een warme 1|trui.
+Hij draagt een 1|overhemd.
+Hij heeft een 1|pak aan.
+Ik draag een 1|spijkerbroek.
+Ik heb nieuwe 1|schoenen@schoen gekocht.
+Wat voor 1|kleding draag jij?
+Hij 1|draagt@dragen een jas.
+Ik 1|trek@aantrekken een trui 1|aan@aantrekken.
+Welke 1|maat heb je?
+De rok is 1|geel.
+De jas is 1|rood.
+De blouse is 1|roze.
+De broek is 1|blauw.
+Het overhemd is 1|wit.
+De jas is 1|zwart.
+Die rok is 1|lelijk.
+Die jurk is 1|prachtig.
+Wat is je 1|lievelings kleur?
+Wat is jouw 1|mening?
+Ik 1|nadenk@nadenken erover.
+Ik wil 1|niets kopen.
+We gaan 1|trouwen!
+We gaan naar de 1|bruiloft.
+Ik stuur een 1|kaart.
+Ik 1|geef@geven veel geld 1|uit@uitgeven.
+
+# MONEY / FINANCES
+Ik heb geen 1|geld.
+Ik 1|betaal@betalen 1|contant.
+Ik 1|spaar@sparen elke maand.
+De rente is vijf 1|procent.
+Ik betaal elke maand 1|huur.
+Wat is de 1|prijs?
+De cursus is 1|gratis.
+Ik gebruik mijn 1|pinpas.
+Ik bekijk mijn 1|bankafschrift.
+Ik heb een 1|tegoedbon.
+Bewaar de 1|kassabon.
+Er is 1|garantie op dit product.
+Ik doe een 1|aankoop.
+Er is een 1|aanbieding vandaag.
+Wat is het 1|product?
+Wat is het 1|merk?
+Dit heeft goede 1|kwaliteit.
+Dit is 1|betrouwbaar.
+Ik 1|twijfel@twijfelen.
+Ik moet een 1|beslissing nemen.
+Lees de 1|beoordeling.
+Wat is jouw 1|argument?
+Ik 1|bekijk@bekijken het product.
+Het is 1|nogal duur.
+Er is 1|opruiming in de winkel.
+Er is 1|rotzooi in de winkel.
+Mijn telefoon 1|gaat@stukgaan 1|stuk@stukgaan.
+Ik 1|verdien@verdienen goed.
+Dat is 1|gaaf!
+Mijn 1|laptop is nieuw.
+1|Let@letten goed 1|op@letten bij het kopen.
+Het kost 1|minstens tien euro.
+
+# MISC VERBS
+Ik 1|gebruik@gebruiken dit elke dag.
+Ik 1|zorg@zorgen voor 1|voor@zorgen mijn kind.
+Ik 1|los@oplossen het probleem 1|op@oplossen.
+1|Schiet@opschieten 1|op@opschieten, we zijn laat!
+We 1|verdelen@verdelen de taken.
+Roken is slecht. 1|Rook@roken niet!
+Wij 1|gaan@uitgaan 1|uit@uitgaan vanavond.
+Het kost tijd om te 1|wennen@wennen.
+Wat 1|veroorzaakt@veroorzaken dit probleem?
+Hij 1|klaagt@klagen altijd.
+We moeten 1|overleggen@overleggen.
+Dat is jouw 1|schuld.
+Er is 1|overlast van de hond.
+Wat is de 1|situatie?
+Zijn 1|gedrag is slecht.
+De hond 1|blaft@blaffen.
+De vuilniszak 1|stinkt@stinken.
+Heeft hij een 1|hond?
+Ik heb een 1|huisdier.
+1|Ineens was hij weg.
+Ik 1|laat@laten hem gaan.
+Ik 1|laat@uitlaten de hond 1|uit@uitlaten.
+Er is 1|geluid van buiten.
+
+# MISC ADJ / ADV
+Dat is 1|belangrijk.
+Er zijn 1|verschillende@verschillende mogelijkheden.
+Dat is 1|typisch@typisch Nederlands.
+Het is 1|internationaal.
+Ik zie dat 1|overal.
+1|Zoals je ziet, is het druk.
+1|Bijvoorbeeld: ik drink thee.
+1|Daarom ga ik niet.
+Ik woon 1|buiten de stad.
+Dat is 1|gewoon normaal.
+Het is 1|enorm groot.
+1|Helaas kan ik niet komen.
+Ze zijn 1|vriendelijk@vriendelijk.
+Dat is 1|handig.
+Dat is 1|irritant.
+Dit is 1|prettig.
+Het is 1|erg koud.
+Dat is 1|helemaal verkeerd.
+1|Zelfs hij doet mee.
+Ik doe mee, 1|want het is leuk.
+Dat is 1|slecht.
+Ik kom 1|na jou.
+Hij is 1|pas twaalf jaar.
+Ik doe het 1|toch.
+Ik 1|snap@snappen het niet.
+Ik heb 1|weinig geld.
+Ik eet 1|minder vlees.
+1|Ieder mens is anders.
+1|Alle kinderen lachen.
+Doe 1|zoals ik.
+
+# SCHOOL / LANGUAGE
+Ik leer de 1|taal.
+Ik ga naar het 1|taalcafé.
+Mijn 1|taalcoach is aardig.
+Ik ga naar de 1|bibliotheek.
+Het 1|buurtcentrum biedt taalles aan.
+Ik 1|oefen@oefenen elke dag.
+We 1|organiseren@organiseren een taalcafé.
+We 1|bereiden@voorbereiden de les 2|voor@voorbereiden.
+Wat is het 1|onderwerp van de les?
+Wij zitten in een kleine 1|groep.
+1|Precies zo doe je het.
+We doen een 1|spelletje.
+Ik ga naar de 1|basisschool.
+Aan het 1|einde van de dag ga ik naar huis.
+Ik 1|hoop@hopen dat ik slaag.
+Ik luister naar de 1|radio.
+Het is tien 1|kilometer ver.
+Spreek 1|langzaam, graag.
+1|Zet@neerzetten de stoel 1|neer@neerzetten.
+Kun jij de fiets 1|repareren@repareren?
+Wat is de 1|snelheid?
+1|Toen ik jong was, woonde ik in Utrecht.
+1|Vorig@vorig jaar was het anders.
+Er is 1|verlichting op de fiets nodig.
+Dit is een mooie 1|wijk.
+Ze is 1|zwanger.
+We starten een 1|actie.
+Zet je 1|handtekening hier.
+Rijd niet te 1|hard.
+Mijn fiets is 1|kapot.

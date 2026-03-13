@@ -6,7 +6,10 @@
     "tr": "daire",
     "en": "apartment",
     "ar": "شقة",
-    "fr": "appartement"
+    "fr": "appartement",
+    "zinnen": [
+      "jhfer9le"
+    ]
   },
   {
     "nl": "badkamer",
@@ -15,7 +18,10 @@
     "tr": "banyo",
     "en": "bathroom",
     "ar": "حمام",
-    "fr": "salle de bain"
+    "fr": "salle de bain",
+    "zinnen": [
+      "wjbtbgwg"
+    ]
   },
   {
     "nl": "balkon",
@@ -24,7 +30,10 @@
     "tr": "balkon",
     "en": "balcony",
     "ar": "شرفة",
-    "fr": "balcon"
+    "fr": "balcon",
+    "zinnen": [
+      "vui3ov9e"
+    ]
   },
   {
     "nl": "betalen",
@@ -34,7 +43,12 @@
     "tr": "ödemek",
     "en": "to pay",
     "ar": "يدفع",
-    "fr": "payer"
+    "fr": "payer",
+    "zinnen": [
+      "p20md1jz",
+      "l7c7ec2f",
+      "t0gy0ca4"
+    ]
   },
   {
     "nl": "centrum",
@@ -43,7 +57,11 @@
     "tr": "merkez",
     "en": "center",
     "ar": "مركز",
-    "fr": "centre"
+    "fr": "centre",
+    "zinnen": [
+      "zx7ko7ch",
+      "gvgj1r4w"
+    ]
   },
   {
     "nl": "delen",
@@ -53,7 +71,10 @@
     "tr": "paylaşmak",
     "en": "to share",
     "ar": "يشارك",
-    "fr": "partager"
+    "fr": "partager",
+    "zinnen": [
+      "0v0s7ieb"
+    ]
   },
   {
     "nl": "eigen",
@@ -61,7 +82,11 @@
     "tr": "kendi, özel",
     "en": "own",
     "ar": "خاص",
-    "fr": "propre"
+    "fr": "propre",
+    "zinnen": [
+      "gumsr2nb",
+      "7hsh1653"
+    ]
   },
   {
     "nl": "familie",
@@ -70,7 +95,10 @@
     "tr": "aile",
     "en": "family",
     "ar": "عائلة",
-    "fr": "famille"
+    "fr": "famille",
+    "zinnen": [
+      "2u9d4l1j"
+    ]
   },
   {
     "nl": "gebruiken",
@@ -80,7 +108,10 @@
     "tr": "kullanmak",
     "en": "to use",
     "ar": "يستخدم",
-    "fr": "utiliser"
+    "fr": "utiliser",
+    "zinnen": [
+      "u3abk6fs"
+    ]
   },
   {
     "nl": "gezin",
@@ -89,7 +120,10 @@
     "tr": "aile (çekirdek)",
     "en": "family (nuclear)",
     "ar": "أسرة",
-    "fr": "famille"
+    "fr": "famille",
+    "zinnen": [
+      "r9z4zby5"
+    ]
   },
   {
     "nl": "hoog",
@@ -97,7 +131,10 @@
     "tr": "yüksek",
     "en": "high",
     "ar": "عالي",
-    "fr": "haut"
+    "fr": "haut",
+    "zinnen": [
+      "l6k8bi73"
+    ]
   },
   {
     "nl": "huisgenoot",
@@ -106,7 +143,10 @@
     "tr": "ev arkadaşı",
     "en": "housemate",
     "ar": "زميل سكن",
-    "fr": "colocataire"
+    "fr": "colocataire",
+    "zinnen": [
+      "b8a0q8dn"
+    ]
   },
   {
     "nl": "huur",
@@ -115,7 +155,11 @@
     "tr": "kira",
     "en": "rent",
     "ar": "إيجار",
-    "fr": "loyer"
+    "fr": "loyer",
+    "zinnen": [
+      "b1pcblks",
+      "n07fiee4"
+    ]
   },
   {
     "nl": "informatie",
@@ -124,7 +168,10 @@
     "tr": "bilgi",
     "en": "information",
     "ar": "معلومات",
-    "fr": "information"
+    "fr": "information",
+    "zinnen": [
+      "rrppwq8a"
+    ]
   },
   {
     "nl": "kamer",
@@ -133,7 +180,11 @@
     "tr": "oda",
     "en": "room",
     "ar": "غرفة",
-    "fr": "chambre"
+    "fr": "chambre",
+    "zinnen": [
+      "76ceyl5c",
+      "o7i7ak5t"
+    ]
   },
   {
     "nl": "maar",
@@ -141,7 +192,10 @@
     "tr": "ama, fakat, ancak",
     "en": "but",
     "ar": "لكن",
-    "fr": "mais"
+    "fr": "mais",
+    "zinnen": [
+      "nl9a4sbn"
+    ]
   },
   {
     "nl": "plek",
@@ -150,7 +204,11 @@
     "tr": "yer, mekan",
     "en": "place, spot",
     "ar": "مكان",
-    "fr": "endroit"
+    "fr": "endroit",
+    "zinnen": [
+      "cy99xdx0",
+      "jb0eoc48"
+    ]
   },
   {
     "nl": "rijtjeshuis",
@@ -159,7 +217,10 @@
     "tr": "sıra ev",
     "en": "terraced house",
     "ar": "منزل متصل",
-    "fr": "maison mitoyenne"
+    "fr": "maison mitoyenne",
+    "zinnen": [
+      "zqp68phx"
+    ]
   },
   {
     "nl": "slaapkamer",
@@ -168,7 +229,10 @@
     "tr": "yatak odası",
     "en": "bedroom",
     "ar": "غرفة نوم",
-    "fr": "chambre à coucher"
+    "fr": "chambre à coucher",
+    "zinnen": [
+      "d9cwrd7w"
+    ]
   },
   {
     "nl": "tuin",
@@ -177,7 +241,10 @@
     "tr": "bahçe",
     "en": "garden",
     "ar": "حديقة",
-    "fr": "jardin"
+    "fr": "jardin",
+    "zinnen": [
+      "61f5nlke"
+    ]
   },
   {
     "nl": "verdieping",
@@ -186,7 +253,10 @@
     "tr": "kat",
     "en": "floor, story",
     "ar": "طابق",
-    "fr": "étage"
+    "fr": "étage",
+    "zinnen": [
+      "g26ty9t0"
+    ]
   },
   {
     "nl": "vierkante meter",
@@ -195,7 +265,11 @@
     "tr": "metrekare",
     "en": "square meter",
     "ar": "متر مربع",
-    "fr": "mètre carré"
+    "fr": "mètre carré",
+    "zinnen": [
+      "g2uyvxc6",
+      "26ixublk"
+    ]
   },
   {
     "nl": "vlakbij",
@@ -203,7 +277,10 @@
     "tr": "yakınında",
     "en": "nearby",
     "ar": "قريب",
-    "fr": "à proximité"
+    "fr": "à proximité",
+    "zinnen": [
+      "xblatyfk"
+    ]
   },
   {
     "nl": "vrijstaand",
@@ -211,7 +288,10 @@
     "tr": "müstakil",
     "en": "detached",
     "ar": "منفصل",
-    "fr": "indépendant"
+    "fr": "indépendant",
+    "zinnen": [
+      "r8c2mu1a"
+    ]
   },
   {
     "nl": "wc",
@@ -220,7 +300,10 @@
     "tr": "tuvalet",
     "en": "toilet",
     "ar": "مرحاض",
-    "fr": "toilettes"
+    "fr": "toilettes",
+    "zinnen": [
+      "a1uzgon6"
+    ]
   },
   {
     "nl": "bed",
@@ -229,7 +312,10 @@
     "tr": "yatak",
     "en": "bed",
     "ar": "سرير",
-    "fr": "lit"
+    "fr": "lit",
+    "zinnen": [
+      "sj0qvo4b"
+    ]
   },
   {
     "nl": "ervaring",
@@ -238,7 +324,10 @@
     "tr": "deneyim, tecrübe",
     "en": "experience",
     "ar": "تجربة",
-    "fr": "expérience"
+    "fr": "expérience",
+    "zinnen": [
+      "3zm3q90c"
+    ]
   },
   {
     "nl": "flat",
@@ -247,7 +336,10 @@
     "tr": "apartman dairesi",
     "en": "flat, apartment",
     "ar": "شقة",
-    "fr": "appartement"
+    "fr": "appartement",
+    "zinnen": [
+      "5qicykxu"
+    ]
   },
   {
     "nl": "hulp",
@@ -256,7 +348,10 @@
     "tr": "yardım",
     "en": "help",
     "ar": "مساعدة",
-    "fr": "aide"
+    "fr": "aide",
+    "zinnen": [
+      "c4eyy22b"
+    ]
   },
   {
     "nl": "klussen",
@@ -266,7 +361,10 @@
     "tr": "tamirat yapmak",
     "en": "to do odd jobs",
     "ar": "يصلح",
-    "fr": "bricoler"
+    "fr": "bricoler",
+    "zinnen": [
+      "zsnr3094"
+    ]
   },
   {
     "nl": "kwijt",
@@ -274,7 +372,10 @@
     "tr": "kayıp, kaybetmiş",
     "en": "lost",
     "ar": "مفقود",
-    "fr": "perdu"
+    "fr": "perdu",
+    "zinnen": [
+      "fcns8m08"
+    ]
   },
   {
     "nl": "laag",
@@ -282,7 +383,10 @@
     "tr": "düşük, alçak",
     "en": "low",
     "ar": "منخفض",
-    "fr": "bas"
+    "fr": "bas",
+    "zinnen": [
+      "oy92zahb"
+    ]
   },
   {
     "nl": "langskomen",
@@ -292,7 +396,10 @@
     "tr": "uğramak",
     "en": "to come by, to visit",
     "ar": "يمر",
-    "fr": "passer"
+    "fr": "passer",
+    "zinnen": [
+      "cxea1yc1"
+    ]
   },
   {
     "nl": "meisje",
@@ -301,7 +408,10 @@
     "tr": "kız",
     "en": "girl",
     "ar": "فتاة",
-    "fr": "fille"
+    "fr": "fille",
+    "zinnen": [
+      "2q95qpny"
+    ]
   },
   {
     "nl": "mooi",
@@ -309,7 +419,11 @@
     "tr": "güzel",
     "en": "beautiful",
     "ar": "جميل",
-    "fr": "beau"
+    "fr": "beau",
+    "zinnen": [
+      "rx81k00b",
+      "b8cb5sxp"
+    ]
   },
   {
     "nl": "ongeveer",
@@ -317,7 +431,10 @@
     "tr": "yaklaşık",
     "en": "approximately, about",
     "ar": "تقريبا",
-    "fr": "environ"
+    "fr": "environ",
+    "zinnen": [
+      "s3oywg2c"
+    ]
   },
   {
     "nl": "ophalen",
@@ -327,7 +444,10 @@
     "tr": "almaya gitmek",
     "en": "to pick up",
     "ar": "يلتقط",
-    "fr": "aller chercher"
+    "fr": "aller chercher",
+    "zinnen": [
+      "oqe6xpvg"
+    ]
   },
   {
     "nl": "oppas",
@@ -336,7 +456,11 @@
     "tr": "çocuk bakıcısı",
     "en": "babysitter",
     "ar": "جليسة أطفال",
-    "fr": "baby-sitter"
+    "fr": "baby-sitter",
+    "zinnen": [
+      "gchc54qn",
+      "okrq3v0x"
+    ]
   },
   {
     "nl": "prijs",
@@ -345,7 +469,10 @@
     "tr": "fiyat",
     "en": "price",
     "ar": "سعر",
-    "fr": "prix"
+    "fr": "prix",
+    "zinnen": [
+      "bkzykj4d"
+    ]
   },
   {
     "nl": "schoonmaken",
@@ -355,7 +482,10 @@
     "tr": "temizlemek",
     "en": "to clean",
     "ar": "ينظف",
-    "fr": "nettoyer"
+    "fr": "nettoyer",
+    "zinnen": [
+      "z0lg5ubl"
+    ]
   },
   {
     "nl": "sleutel",
@@ -364,7 +494,10 @@
     "tr": "anahtar",
     "en": "key",
     "ar": "مفتاح",
-    "fr": "clé"
+    "fr": "clé",
+    "zinnen": [
+      "xoxzghq8"
+    ]
   },
   {
     "nl": "spullen",
@@ -373,7 +506,10 @@
     "tr": "eşyalar",
     "en": "stuff, things",
     "ar": "أغراض",
-    "fr": "affaires"
+    "fr": "affaires",
+    "zinnen": [
+      "ugu47hze"
+    ]
   },
   {
     "nl": "stoel",
@@ -382,7 +518,10 @@
     "tr": "sandalye",
     "en": "chair",
     "ar": "كرسي",
-    "fr": "chaise"
+    "fr": "chaise",
+    "zinnen": [
+      "bbv5ensp"
+    ]
   },
   {
     "nl": "student",
@@ -391,7 +530,10 @@
     "tr": "öğrenci",
     "en": "student",
     "ar": "طالب",
-    "fr": "étudiant"
+    "fr": "étudiant",
+    "zinnen": [
+      "eeo8ooi5"
+    ]
   },
   {
     "nl": "tweedehands",
@@ -399,7 +541,10 @@
     "tr": "ikinci el",
     "en": "second-hand",
     "ar": "مستعمل",
-    "fr": "d'occasion"
+    "fr": "d'occasion",
+    "zinnen": [
+      "8qki347l"
+    ]
   },
   {
     "nl": "verhuizen",
@@ -409,7 +554,10 @@
     "tr": "taşınmak",
     "en": "to move (house)",
     "ar": "ينتقل",
-    "fr": "déménager"
+    "fr": "déménager",
+    "zinnen": [
+      "fpswp6jk"
+    ]
   },
   {
     "nl": "verkopen",
@@ -419,7 +567,10 @@
     "tr": "satmak",
     "en": "to sell",
     "ar": "يبيع",
-    "fr": "vendre"
+    "fr": "vendre",
+    "zinnen": [
+      "1j82y59e"
+    ]
   },
   {
     "nl": "zoeken",
@@ -429,7 +580,10 @@
     "tr": "aramak",
     "en": "to search, to look for",
     "ar": "يبحث",
-    "fr": "chercher"
+    "fr": "chercher",
+    "zinnen": [
+      "mb52gibj"
+    ]
   },
   {
     "nl": "belangrijk",
@@ -437,7 +591,10 @@
     "tr": "önemli",
     "en": "important",
     "ar": "مهم",
-    "fr": "important"
+    "fr": "important",
+    "zinnen": [
+      "meap3acb"
+    ]
   },
   {
     "nl": "blauw",
@@ -445,7 +602,11 @@
     "tr": "mavi",
     "en": "blue",
     "ar": "أزرق",
-    "fr": "bleu"
+    "fr": "bleu",
+    "zinnen": [
+      "s8zvgp2w",
+      "qld1i4ca"
+    ]
   },
   {
     "nl": "donker",
@@ -453,7 +614,10 @@
     "tr": "koyu, karanlık",
     "en": "dark",
     "ar": "داكن",
-    "fr": "sombre"
+    "fr": "sombre",
+    "zinnen": [
+      "eixd7pfl"
+    ]
   },
   {
     "nl": "iedereen",
@@ -461,7 +625,11 @@
     "tr": "herkes",
     "en": "everyone",
     "ar": "الجميع",
-    "fr": "tout le monde"
+    "fr": "tout le monde",
+    "zinnen": [
+      "qn2rmhar",
+      "5wgwcpad"
+    ]
   },
   {
     "nl": "kast",
@@ -470,7 +638,10 @@
     "tr": "dolap",
     "en": "closet, cupboard",
     "ar": "خزانة",
-    "fr": "armoire"
+    "fr": "armoire",
+    "zinnen": [
+      "lusmyt2j"
+    ]
   },
   {
     "nl": "kiezen",
@@ -480,7 +651,10 @@
     "tr": "seçmek",
     "en": "to choose",
     "ar": "يختار",
-    "fr": "choisir"
+    "fr": "choisir",
+    "zinnen": [
+      "84glducx"
+    ]
   },
   {
     "nl": "kleding",
@@ -489,7 +663,11 @@
     "tr": "giysi, kıyafet",
     "en": "clothing",
     "ar": "ملابس",
-    "fr": "vêtements"
+    "fr": "vêtements",
+    "zinnen": [
+      "otywdfyq",
+      "vop3ab9x"
+    ]
   },
   {
     "nl": "kleur",
@@ -498,7 +676,10 @@
     "tr": "renk",
     "en": "color",
     "ar": "لون",
-    "fr": "couleur"
+    "fr": "couleur",
+    "zinnen": [
+      "0rjcbufq"
+    ]
   },
   {
     "nl": "la",
@@ -507,7 +688,10 @@
     "tr": "çekmece",
     "en": "drawer",
     "ar": "درج",
-    "fr": "tiroir"
+    "fr": "tiroir",
+    "zinnen": [
+      "ey77g3ze"
+    ]
   },
   {
     "nl": "lamp",
@@ -516,7 +700,10 @@
     "tr": "lamba",
     "en": "lamp",
     "ar": "مصباح",
-    "fr": "lampe"
+    "fr": "lampe",
+    "zinnen": [
+      "es14ifap"
+    ]
   },
   {
     "nl": "licht",
@@ -524,7 +711,10 @@
     "tr": "açık (renk), hafif",
     "en": "light",
     "ar": "فاتح",
-    "fr": "clair"
+    "fr": "clair",
+    "zinnen": [
+      "wgvm3vjr"
+    ]
   },
   {
     "nl": "meubel",
@@ -533,7 +723,10 @@
     "tr": "mobilya",
     "en": "furniture",
     "ar": "أثاث",
-    "fr": "meuble"
+    "fr": "meuble",
+    "zinnen": [
+      "y9310skj"
+    ]
   },
   {
     "nl": "muur",
@@ -542,7 +735,10 @@
     "tr": "duvar",
     "en": "wall",
     "ar": "جدار",
-    "fr": "mur"
+    "fr": "mur",
+    "zinnen": [
+      "5xc93jjd"
+    ]
   },
   {
     "nl": "onder",
@@ -550,7 +746,10 @@
     "tr": "altında",
     "en": "under",
     "ar": "تحت",
-    "fr": "sous"
+    "fr": "sous",
+    "zinnen": [
+      "t1xkc42o"
+    ]
   },
   {
     "nl": "raam",
@@ -559,7 +758,10 @@
     "tr": "pencere",
     "en": "window",
     "ar": "نافذة",
-    "fr": "fenêtre"
+    "fr": "fenêtre",
+    "zinnen": [
+      "5nnrkpab"
+    ]
   },
   {
     "nl": "ruimte",
@@ -568,7 +770,10 @@
     "tr": "alan, mekan",
     "en": "space, room",
     "ar": "مساحة",
-    "fr": "espace"
+    "fr": "espace",
+    "zinnen": [
+      "5e3898dc"
+    ]
   },
   {
     "nl": "tegen",
@@ -576,7 +781,10 @@
     "tr": "karşı, -e karşı",
     "en": "against",
     "ar": "ضد",
-    "fr": "contre"
+    "fr": "contre",
+    "zinnen": [
+      "kcxprohv"
+    ]
   },
   {
     "nl": "tip",
@@ -585,7 +793,10 @@
     "tr": "ipucu, tavsiye",
     "en": "tip",
     "ar": "نصيحة",
-    "fr": "conseil"
+    "fr": "conseil",
+    "zinnen": [
+      "18u9t3gu"
+    ]
   },
   {
     "nl": "vloer",
@@ -594,7 +805,10 @@
     "tr": "zemin, yer",
     "en": "floor",
     "ar": "أرضية",
-    "fr": "sol"
+    "fr": "sol",
+    "zinnen": [
+      "eagp81i0"
+    ]
   },
   {
     "nl": "vol",
@@ -602,7 +816,10 @@
     "tr": "dolu",
     "en": "full",
     "ar": "ممتلئ",
-    "fr": "plein"
+    "fr": "plein",
+    "zinnen": [
+      "i9kby2uf"
+    ]
   },
   {
     "nl": "vooral",
@@ -610,7 +827,10 @@
     "tr": "özellikle",
     "en": "especially",
     "ar": "خاصة",
-    "fr": "surtout"
+    "fr": "surtout",
+    "zinnen": [
+      "lljct12h"
+    ]
   },
   {
     "nl": "wit",
@@ -618,7 +838,11 @@
     "tr": "beyaz",
     "en": "white",
     "ar": "أبيض",
-    "fr": "blanc"
+    "fr": "blanc",
+    "zinnen": [
+      "733hd1tu",
+      "cpsuisox"
+    ]
   },
   {
     "nl": "woning",
@@ -627,7 +851,10 @@
     "tr": "konut, ev",
     "en": "dwelling, house",
     "ar": "مسكن",
-    "fr": "logement"
+    "fr": "logement",
+    "zinnen": [
+      "tfpu5nr1"
+    ]
   },
   {
     "nl": "woonkamer",
@@ -636,7 +863,10 @@
     "tr": "oturma odası, salon",
     "en": "living room",
     "ar": "غرفة المعيشة",
-    "fr": "salon"
+    "fr": "salon",
+    "zinnen": [
+      "zre89xud"
+    ]
   },
   {
     "nl": "zetten",
@@ -646,7 +876,10 @@
     "tr": "koymak, yerleştirmek",
     "en": "to put, to place",
     "ar": "يضع",
-    "fr": "mettre"
+    "fr": "mettre",
+    "zinnen": [
+      "naf7dysz"
+    ]
   },
   {
     "nl": "zorgen voor",
@@ -656,7 +889,10 @@
     "tr": "bakmak, ilgilenmek",
     "en": "to take care of",
     "ar": "يعتني بـ",
-    "fr": "s'occuper de"
+    "fr": "s'occuper de",
+    "zinnen": [
+      "zfi33yei"
+    ]
   },
   {
     "nl": "allebei",
@@ -664,7 +900,10 @@
     "tr": "her ikisi",
     "en": "both",
     "ar": "كلاهما",
-    "fr": "tous les deux"
+    "fr": "tous les deux",
+    "zinnen": [
+      "09w0soqg"
+    ]
   },
   {
     "nl": "allemaal",
@@ -672,7 +911,10 @@
     "tr": "hepsi, herkes",
     "en": "all, everyone",
     "ar": "الجميع",
-    "fr": "tous"
+    "fr": "tous",
+    "zinnen": [
+      "5s8wyuwf"
+    ]
   },
   {
     "nl": "elkaar",
@@ -680,7 +922,10 @@
     "tr": "birbirini",
     "en": "each other",
     "ar": "بعضهم البعض",
-    "fr": "l'un l'autre"
+    "fr": "l'un l'autre",
+    "zinnen": [
+      "6xqstd02"
+    ]
   },
   {
     "nl": "geld",
@@ -689,7 +934,10 @@
     "tr": "para",
     "en": "money",
     "ar": "مال",
-    "fr": "argent"
+    "fr": "argent",
+    "zinnen": [
+      "hudhp6z5"
+    ]
   },
   {
     "nl": "gratis",
@@ -697,7 +945,10 @@
     "tr": "bedava, ücretsiz",
     "en": "free",
     "ar": "مجاني",
-    "fr": "gratuit"
+    "fr": "gratuit",
+    "zinnen": [
+      "tqxisg9z"
+    ]
   },
   {
     "nl": "huren",
@@ -707,7 +958,10 @@
     "tr": "kiralamak",
     "en": "to rent",
     "ar": "يستأجر",
-    "fr": "louer"
+    "fr": "louer",
+    "zinnen": [
+      "z3xy287i"
+    ]
   },
   {
     "nl": "lang",
@@ -715,7 +969,10 @@
     "tr": "uzun",
     "en": "long, tall",
     "ar": "طويل",
-    "fr": "long"
+    "fr": "long",
+    "zinnen": [
+      "nglsqqxi"
+    ]
   },
   {
     "nl": "makkelijk",
@@ -723,7 +980,10 @@
     "tr": "kolay",
     "en": "easy",
     "ar": "سهل",
-    "fr": "facile"
+    "fr": "facile",
+    "zinnen": [
+      "7e85y2k7"
+    ]
   },
   {
     "nl": "meeste",
@@ -731,7 +991,10 @@
     "tr": "çoğu",
     "en": "most",
     "ar": "معظم",
-    "fr": "la plupart"
+    "fr": "la plupart",
+    "zinnen": [
+      "nh95yt2n"
+    ]
   },
   {
     "nl": "moeilijk",
@@ -739,7 +1002,10 @@
     "tr": "zor",
     "en": "difficult",
     "ar": "صعب",
-    "fr": "difficile"
+    "fr": "difficile",
+    "zinnen": [
+      "c161rt1u"
+    ]
   },
   {
     "nl": "ouder",
@@ -748,7 +1014,11 @@
     "tr": "ebeveyn",
     "en": "parent",
     "ar": "والد",
-    "fr": "parent"
+    "fr": "parent",
+    "zinnen": [
+      "drxgqpdo",
+      "a4d6fv8n"
+    ]
   },
   {
     "nl": "procent",
@@ -757,7 +1027,11 @@
     "tr": "yüzde",
     "en": "percent",
     "ar": "بالمئة",
-    "fr": "pour cent"
+    "fr": "pour cent",
+    "zinnen": [
+      "m1hr3miu",
+      "zjspuqe1"
+    ]
   },
   {
     "nl": "sparen",
@@ -767,7 +1041,10 @@
     "tr": "biriktirmek, tasarruf etmek",
     "en": "to save (money)",
     "ar": "يدخر",
-    "fr": "économiser"
+    "fr": "économiser",
+    "zinnen": [
+      "6xyn9ovt"
+    ]
   },
   {
     "nl": "streng",
@@ -775,7 +1052,10 @@
     "tr": "sıkı, sert",
     "en": "strict",
     "ar": "صارم",
-    "fr": "strict"
+    "fr": "strict",
+    "zinnen": [
+      "bei2p220"
+    ]
   },
   {
     "nl": "studeren",
@@ -785,7 +1065,11 @@
     "tr": "okumak (üniversite)",
     "en": "to study",
     "ar": "يدرس",
-    "fr": "étudier"
+    "fr": "étudier",
+    "zinnen": [
+      "eeo8ooi5",
+      "9rn5rwkn"
+    ]
   },
   {
     "nl": "studie",
@@ -794,7 +1078,10 @@
     "tr": "eğitim, öğrenim",
     "en": "study, education",
     "ar": "دراسة",
-    "fr": "études"
+    "fr": "études",
+    "zinnen": [
+      "gwwohc2l"
+    ]
   },
   {
     "nl": "uitstappen",
@@ -804,7 +1091,10 @@
     "tr": "inmek (araçtan)",
     "en": "to get off",
     "ar": "ينزل",
-    "fr": "descendre"
+    "fr": "descendre",
+    "zinnen": [
+      "tug743i7"
+    ]
   },
   {
     "nl": "vrijheid",
@@ -813,7 +1103,10 @@
     "tr": "özgürlük",
     "en": "freedom",
     "ar": "حرية",
-    "fr": "liberté"
+    "fr": "liberté",
+    "zinnen": [
+      "kcnbp6uq"
+    ]
   },
   {
     "nl": "wachten",
@@ -823,7 +1116,10 @@
     "tr": "beklemek",
     "en": "to wait",
     "ar": "ينتظر",
-    "fr": "attendre"
+    "fr": "attendre",
+    "zinnen": [
+      "vsjuxa0t"
+    ]
   },
   {
     "nl": "was",
@@ -832,7 +1128,10 @@
     "tr": "çamaşır",
     "en": "laundry",
     "ar": "غسيل",
-    "fr": "linge"
+    "fr": "linge",
+    "zinnen": [
+      "jc1liqsc"
+    ]
   },
   {
     "nl": "wasmachine",
@@ -841,7 +1140,10 @@
     "tr": "çamaşır makinesi",
     "en": "washing machine",
     "ar": "غسالة",
-    "fr": "machine à laver"
+    "fr": "machine à laver",
+    "zinnen": [
+      "z11g0etl"
+    ]
   },
   {
     "nl": "zelfstandig",
@@ -849,7 +1151,10 @@
     "tr": "bağımsız",
     "en": "independent",
     "ar": "مستقل",
-    "fr": "indépendant"
+    "fr": "indépendant",
+    "zinnen": [
+      "potwl794"
+    ]
   },
   {
     "nl": "zomer",
@@ -858,6 +1163,9 @@
     "tr": "yaz",
     "en": "summer",
     "ar": "صيف",
-    "fr": "été"
+    "fr": "été",
+    "zinnen": [
+      "6mmw9wri"
+    ]
   }
 ]

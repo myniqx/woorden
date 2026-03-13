@@ -6,7 +6,10 @@
     "tr": "asistan",
     "en": "assistant",
     "ar": "مساعد",
-    "fr": "assistante"
+    "fr": "assistante",
+    "zinnen": [
+      "vcd3unqn"
+    ]
   },
   {
     "nl": "behandelen",
@@ -16,7 +19,10 @@
     "tr": "tedavi etmek, ele almak",
     "en": "to treat",
     "ar": "يعالج",
-    "fr": "traiter"
+    "fr": "traiter",
+    "zinnen": [
+      "tuc0qsh1"
+    ]
   },
   {
     "nl": "dokter",
@@ -25,7 +31,10 @@
     "tr": "doktor",
     "en": "doctor",
     "ar": "طبيب",
-    "fr": "médecin"
+    "fr": "médecin",
+    "zinnen": [
+      "m7tj33ll"
+    ]
   },
   {
     "nl": "dubbel",
@@ -33,7 +42,10 @@
     "tr": "çift, iki kat",
     "en": "double",
     "ar": "مضاعف",
-    "fr": "double"
+    "fr": "double",
+    "zinnen": [
+      "dnvillud"
+    ]
   },
   {
     "nl": "een paar",
@@ -41,7 +53,10 @@
     "tr": "birkaç",
     "en": "a few, a couple",
     "ar": "بضعة",
-    "fr": "quelques"
+    "fr": "quelques",
+    "zinnen": [
+      "p4ziv4nm"
+    ]
   },
   {
     "nl": "ernstig",
@@ -49,7 +64,10 @@
     "tr": "ciddi",
     "en": "serious",
     "ar": "خطير",
-    "fr": "grave"
+    "fr": "grave",
+    "zinnen": [
+      "2oas1gq7"
+    ]
   },
   {
     "nl": "gegevens",
@@ -58,7 +76,10 @@
     "tr": "veriler, bilgiler",
     "en": "data, details",
     "ar": "بيانات",
-    "fr": "données"
+    "fr": "données",
+    "zinnen": [
+      "y5vv0r96"
+    ]
   },
   {
     "nl": "gesloten",
@@ -66,7 +87,10 @@
     "tr": "kapalı",
     "en": "closed",
     "ar": "مغلق",
-    "fr": "fermé"
+    "fr": "fermé",
+    "zinnen": [
+      "krvs1s29"
+    ]
   },
   {
     "nl": "gezondheidszorg",
@@ -75,7 +99,10 @@
     "tr": "sağlık hizmeti",
     "en": "healthcare",
     "ar": "رعاية صحية",
-    "fr": "soins de santé"
+    "fr": "soins de santé",
+    "zinnen": [
+      "07nairh6"
+    ]
   },
   {
     "nl": "huisarts",
@@ -84,7 +111,11 @@
     "tr": "aile hekimi",
     "en": "general practitioner",
     "ar": "طبيب عام",
-    "fr": "médecin généraliste"
+    "fr": "médecin généraliste",
+    "zinnen": [
+      "jgdkoles",
+      "rpsfx9tg"
+    ]
   },
   {
     "nl": "huisartsenpost",
@@ -93,7 +124,10 @@
     "tr": "acil aile hekimliği",
     "en": "out-of-hours GP clinic",
     "ar": "عيادة طوارئ",
-    "fr": "service de garde"
+    "fr": "service de garde",
+    "zinnen": [
+      "bvg2n5f1"
+    ]
   },
   {
     "nl": "klacht",
@@ -102,7 +136,10 @@
     "tr": "şikayet",
     "en": "complaint",
     "ar": "شكوى",
-    "fr": "plainte"
+    "fr": "plainte",
+    "zinnen": [
+      "vjlodijz"
+    ]
   },
   {
     "nl": "kort",
@@ -110,7 +147,10 @@
     "tr": "kısa",
     "en": "short",
     "ar": "قصير",
-    "fr": "court"
+    "fr": "court",
+    "zinnen": [
+      "ioja81bv"
+    ]
   },
   {
     "nl": "onderzoek",
@@ -119,7 +159,10 @@
     "tr": "muayene, araştırma",
     "en": "examination, research",
     "ar": "فحص",
-    "fr": "examen"
+    "fr": "examen",
+    "zinnen": [
+      "iwzub4qo"
+    ]
   },
   {
     "nl": "praktijk",
@@ -128,7 +171,10 @@
     "tr": "muayenehane",
     "en": "practice, clinic",
     "ar": "عيادة",
-    "fr": "cabinet"
+    "fr": "cabinet",
+    "zinnen": [
+      "rpsfx9tg"
+    ]
   },
   {
     "nl": "sommige",
@@ -136,7 +182,11 @@
     "tr": "bazı",
     "en": "some",
     "ar": "بعض",
-    "fr": "certains"
+    "fr": "certains",
+    "zinnen": [
+      "n87h4sz4",
+      "r29y578e"
+    ]
   },
   {
     "nl": "specialist",
@@ -145,7 +195,11 @@
     "tr": "uzman",
     "en": "specialist",
     "ar": "أخصائي",
-    "fr": "spécialiste"
+    "fr": "spécialiste",
+    "zinnen": [
+      "drf3jldq",
+      "ho9i8adu"
+    ]
   },
   {
     "nl": "spoed",
@@ -154,7 +208,10 @@
     "tr": "acele",
     "en": "urgency",
     "ar": "عجلة",
-    "fr": "urgence"
+    "fr": "urgence",
+    "zinnen": [
+      "oys2ag87"
+    ]
   },
   {
     "nl": "spoedgeval",
@@ -163,7 +220,10 @@
     "tr": "acil durum",
     "en": "emergency",
     "ar": "حالة طوارئ",
-    "fr": "cas d'urgence"
+    "fr": "cas d'urgence",
+    "zinnen": [
+      "v0k9gn2o"
+    ]
   },
   {
     "nl": "spreekuur",
@@ -172,7 +232,10 @@
     "tr": "muayene saati",
     "en": "consultation hour",
     "ar": "ساعة الاستشارة",
-    "fr": "heure de consultation"
+    "fr": "heure de consultation",
+    "zinnen": [
+      "spklje0r"
+    ]
   },
   {
     "nl": "toetsen",
@@ -182,7 +245,10 @@
     "tr": "tuşa basmak, test etmek",
     "en": "to press (key), to test",
     "ar": "يضغط",
-    "fr": "appuyer"
+    "fr": "appuyer",
+    "zinnen": [
+      "9374d75o"
+    ]
   },
   {
     "nl": "verwijzing",
@@ -191,7 +257,11 @@
     "tr": "sevk",
     "en": "referral",
     "ar": "إحالة",
-    "fr": "référence"
+    "fr": "référence",
+    "zinnen": [
+      "jb0zsz2i",
+      "2dkgrpww"
+    ]
   },
   {
     "nl": "via",
@@ -199,7 +269,10 @@
     "tr": "yoluyla, üzerinden",
     "en": "via, through",
     "ar": "عبر",
-    "fr": "via"
+    "fr": "via",
+    "zinnen": [
+      "z84bi0v9"
+    ]
   },
   {
     "nl": "ziekenhuis",
@@ -208,7 +281,11 @@
     "tr": "hastane",
     "en": "hospital",
     "ar": "مستشفى",
-    "fr": "hôpital"
+    "fr": "hôpital",
+    "zinnen": [
+      "5208lx83",
+      "9ckc8erf"
+    ]
   },
   {
     "nl": "brengen",
@@ -218,7 +295,10 @@
     "tr": "getirmek",
     "en": "to bring",
     "ar": "يحضر",
-    "fr": "apporter"
+    "fr": "apporter",
+    "zinnen": [
+      "d7hw2fjh"
+    ]
   },
   {
     "nl": "eigenlijk",
@@ -226,7 +306,11 @@
     "tr": "aslında",
     "en": "actually",
     "ar": "في الواقع",
-    "fr": "en fait"
+    "fr": "en fait",
+    "zinnen": [
+      "zv0vf0wx",
+      "h11piaak"
+    ]
   },
   {
     "nl": "geduld",
@@ -235,7 +319,10 @@
     "tr": "sabır",
     "en": "patience",
     "ar": "صبر",
-    "fr": "patience"
+    "fr": "patience",
+    "zinnen": [
+      "21i77ydw"
+    ]
   },
   {
     "nl": "graad",
@@ -244,7 +331,11 @@
     "tr": "derece",
     "en": "degree",
     "ar": "درجة",
-    "fr": "degré"
+    "fr": "degré",
+    "zinnen": [
+      "0kwz97c7",
+      "1xgrizu6"
+    ]
   },
   {
     "nl": "hoesten",
@@ -254,7 +345,10 @@
     "tr": "öksürmek",
     "en": "to cough",
     "ar": "يسعل",
-    "fr": "tousser"
+    "fr": "tousser",
+    "zinnen": [
+      "4j2r4oxe"
+    ]
   },
   {
     "nl": "keel",
@@ -263,7 +357,10 @@
     "tr": "boğaz",
     "en": "throat",
     "ar": "حلق",
-    "fr": "gorge"
+    "fr": "gorge",
+    "zinnen": [
+      "c3wyog4p"
+    ]
   },
   {
     "nl": "keelpijn",
@@ -272,7 +369,10 @@
     "tr": "boğaz ağrısı",
     "en": "sore throat",
     "ar": "التهاب الحلق",
-    "fr": "mal de gorge"
+    "fr": "mal de gorge",
+    "zinnen": [
+      "gh8g5ul9"
+    ]
   },
   {
     "nl": "koorts",
@@ -281,7 +381,10 @@
     "tr": "ateş",
     "en": "fever",
     "ar": "حمى",
-    "fr": "fièvre"
+    "fr": "fièvre",
+    "zinnen": [
+      "6img09j3"
+    ]
   },
   {
     "nl": "lijn",
@@ -290,7 +393,10 @@
     "tr": "hat, çizgi",
     "en": "line",
     "ar": "خط",
-    "fr": "ligne"
+    "fr": "ligne",
+    "zinnen": [
+      "46elhots"
+    ]
   },
   {
     "nl": "mogelijk",
@@ -298,7 +404,10 @@
     "tr": "mümkün",
     "en": "possible",
     "ar": "ممكن",
-    "fr": "possible"
+    "fr": "possible",
+    "zinnen": [
+      "rjmy9ub7"
+    ]
   },
   {
     "nl": "moment",
@@ -307,7 +416,10 @@
     "tr": "an",
     "en": "moment",
     "ar": "لحظة",
-    "fr": "moment"
+    "fr": "moment",
+    "zinnen": [
+      "vmsaetpm"
+    ]
   },
   {
     "nl": "ogenblik",
@@ -316,7 +428,10 @@
     "tr": "an",
     "en": "moment",
     "ar": "لحظة",
-    "fr": "instant"
+    "fr": "instant",
+    "zinnen": [
+      "aed94r73"
+    ]
   },
   {
     "nl": "opnieuw",
@@ -324,7 +439,10 @@
     "tr": "yeniden",
     "en": "again",
     "ar": "مجددا",
-    "fr": "à nouveau"
+    "fr": "à nouveau",
+    "zinnen": [
+      "ep7zw2no"
+    ]
   },
   {
     "nl": "overgaan",
@@ -334,7 +452,10 @@
     "tr": "geçmek",
     "en": "to pass, to go away",
     "ar": "يمر",
-    "fr": "passer"
+    "fr": "passer",
+    "zinnen": [
+      "o0u9h56w"
+    ]
   },
   {
     "nl": "pijn",
@@ -343,7 +464,10 @@
     "tr": "ağrı",
     "en": "pain",
     "ar": "ألم",
-    "fr": "douleur"
+    "fr": "douleur",
+    "zinnen": [
+      "mmxw4n1z"
+    ]
   },
   {
     "nl": "spijten",
@@ -353,7 +477,10 @@
     "tr": "pişman olmak, üzgün olmak",
     "en": "to regret",
     "ar": "يأسف",
-    "fr": "regretter"
+    "fr": "regretter",
+    "zinnen": [
+      "wdabmge1"
+    ]
   },
   {
     "nl": "spreken",
@@ -363,7 +490,10 @@
     "tr": "konuşmak",
     "en": "to speak",
     "ar": "يتكلم",
-    "fr": "parler"
+    "fr": "parler",
+    "zinnen": [
+      "19azjccb"
+    ]
   },
   {
     "nl": "vader",
@@ -372,7 +502,10 @@
     "tr": "baba",
     "en": "father",
     "ar": "أب",
-    "fr": "père"
+    "fr": "père",
+    "zinnen": [
+      "xhy4oumm"
+    ]
   },
   {
     "nl": "vanzelf",
@@ -380,7 +513,10 @@
     "tr": "kendiliğinden",
     "en": "by itself",
     "ar": "تلقائيا",
-    "fr": "de lui-même"
+    "fr": "de lui-même",
+    "zinnen": [
+      "jnk3ygof"
+    ]
   },
   {
     "nl": "verkouden",
@@ -388,7 +524,10 @@
     "tr": "nezle, soğuk algınlığı",
     "en": "having a cold",
     "ar": "مصاب بالزكام",
-    "fr": "enrhumé"
+    "fr": "enrhumé",
+    "zinnen": [
+      "muz9vxcq"
+    ]
   },
   {
     "nl": "verzetten",
@@ -398,7 +537,10 @@
     "tr": "ertelemek, değiştirmek",
     "en": "to reschedule",
     "ar": "يؤجل",
-    "fr": "reporter"
+    "fr": "reporter",
+    "zinnen": [
+      "53gcyxbn"
+    ]
   },
   {
     "nl": "vrij",
@@ -406,7 +548,10 @@
     "tr": "boş, serbest",
     "en": "free",
     "ar": "حر",
-    "fr": "libre"
+    "fr": "libre",
+    "zinnen": [
+      "puqr6i16"
+    ]
   },
   {
     "nl": "apotheek",
@@ -415,7 +560,10 @@
     "tr": "eczane",
     "en": "pharmacy",
     "ar": "صيدلية",
-    "fr": "pharmacie"
+    "fr": "pharmacie",
+    "zinnen": [
+      "ruvkwxay"
+    ]
   },
   {
     "nl": "bijsluiter",
@@ -424,7 +572,10 @@
     "tr": "prospektüs",
     "en": "leaflet, package insert",
     "ar": "نشرة الدواء",
-    "fr": "notice"
+    "fr": "notice",
+    "zinnen": [
+      "5n1qt47a"
+    ]
   },
   {
     "nl": "doos",
@@ -434,7 +585,10 @@
     "tr": "kutu",
     "en": "box",
     "ar": "صندوق",
-    "fr": "boîte"
+    "fr": "boîte",
+    "zinnen": [
+      "fp0i2ykl"
+    ]
   },
   {
     "nl": "dosering",
@@ -443,7 +597,10 @@
     "tr": "dozaj",
     "en": "dosage",
     "ar": "جرعة",
-    "fr": "dosage"
+    "fr": "dosage",
+    "zinnen": [
+      "emlaevap"
+    ]
   },
   {
     "nl": "drogist",
@@ -452,7 +609,10 @@
     "tr": "drogist (eczacı)",
     "en": "drugstore",
     "ar": "صيدلية",
-    "fr": "droguerie"
+    "fr": "droguerie",
+    "zinnen": [
+      "henj0znt"
+    ]
   },
   {
     "nl": "gebruik",
@@ -461,7 +621,10 @@
     "tr": "kullanım",
     "en": "use",
     "ar": "استخدام",
-    "fr": "usage"
+    "fr": "usage",
+    "zinnen": [
+      "ls0h1u99"
+    ]
   },
   {
     "nl": "huismerk",
@@ -470,7 +633,10 @@
     "tr": "market markası",
     "en": "house brand",
     "ar": "علامة تجارية خاصة",
-    "fr": "marque maison"
+    "fr": "marque maison",
+    "zinnen": [
+      "0icmwwza"
+    ]
   },
   {
     "nl": "jong",
@@ -478,7 +644,10 @@
     "tr": "genç",
     "en": "young",
     "ar": "شاب",
-    "fr": "jeune"
+    "fr": "jeune",
+    "zinnen": [
+      "nvguze63"
+    ]
   },
   {
     "nl": "kant",
@@ -487,7 +656,10 @@
     "tr": "taraf, yön",
     "en": "side",
     "ar": "جانب",
-    "fr": "côté"
+    "fr": "côté",
+    "zinnen": [
+      "40lwyzyf"
+    ]
   },
   {
     "nl": "leeftijd",
@@ -496,7 +668,10 @@
     "tr": "yaş",
     "en": "age",
     "ar": "عمر",
-    "fr": "âge"
+    "fr": "âge",
+    "zinnen": [
+      "ooxcuuex"
+    ]
   },
   {
     "nl": "luier",
@@ -505,7 +680,10 @@
     "tr": "bebek bezi",
     "en": "diaper",
     "ar": "حفاضة",
-    "fr": "couche"
+    "fr": "couche",
+    "zinnen": [
+      "5wc51jpa"
+    ]
   },
   {
     "nl": "maximaal",
@@ -513,7 +691,11 @@
     "tr": "maksimum, en fazla",
     "en": "maximum",
     "ar": "الحد الأقصى",
-    "fr": "maximum"
+    "fr": "maximum",
+    "zinnen": [
+      "qxlchcli",
+      "zov3lydb"
+    ]
   },
   {
     "nl": "medicijn",
@@ -522,7 +704,10 @@
     "tr": "ilaç",
     "en": "medicine",
     "ar": "دواء",
-    "fr": "médicament"
+    "fr": "médicament",
+    "zinnen": [
+      "dloyph2f"
+    ]
   },
   {
     "nl": "merk",
@@ -531,7 +716,11 @@
     "tr": "marka",
     "en": "brand",
     "ar": "علامة تجارية",
-    "fr": "marque"
+    "fr": "marque",
+    "zinnen": [
+      "uw1n25dm",
+      "0040zwkc"
+    ]
   },
   {
     "nl": "milligram",
@@ -540,7 +729,10 @@
     "tr": "miligram",
     "en": "milligram",
     "ar": "ميليغرام",
-    "fr": "milligramme"
+    "fr": "milligramme",
+    "zinnen": [
+      "3sllk0dm"
+    ]
   },
   {
     "nl": "naast",
@@ -548,7 +740,10 @@
     "tr": "yanında",
     "en": "next to",
     "ar": "بجانب",
-    "fr": "à côté de"
+    "fr": "à côté de",
+    "zinnen": [
+      "v6mlsghk"
+    ]
   },
   {
     "nl": "neus",
@@ -557,7 +752,10 @@
     "tr": "burun",
     "en": "nose",
     "ar": "أنف",
-    "fr": "nez"
+    "fr": "nez",
+    "zinnen": [
+      "3hr37xgc"
+    ]
   },
   {
     "nl": "neusspray",
@@ -566,7 +764,10 @@
     "tr": "burun spreyi",
     "en": "nasal spray",
     "ar": "بخاخ الأنف",
-    "fr": "spray nasal"
+    "fr": "spray nasal",
+    "zinnen": [
+      "hzrcqwua"
+    ]
   },
   {
     "nl": "pijnstiller",
@@ -575,7 +776,10 @@
     "tr": "ağrı kesici",
     "en": "painkiller",
     "ar": "مسكن",
-    "fr": "antidouleur"
+    "fr": "antidouleur",
+    "zinnen": [
+      "0pygla9m"
+    ]
   },
   {
     "nl": "proberen",
@@ -585,7 +789,10 @@
     "tr": "denemek",
     "en": "to try",
     "ar": "يحاول",
-    "fr": "essayer"
+    "fr": "essayer",
+    "zinnen": [
+      "gdn3dftl"
+    ]
   },
   {
     "nl": "recept",
@@ -594,7 +801,11 @@
     "tr": "reçete",
     "en": "prescription, recipe",
     "ar": "وصفة طبية",
-    "fr": "ordonnance"
+    "fr": "ordonnance",
+    "zinnen": [
+      "9e1n6qru",
+      "8l2hsh0i"
+    ]
   },
   {
     "nl": "rug",
@@ -603,7 +814,10 @@
     "tr": "sırt",
     "en": "back",
     "ar": "ظهر",
-    "fr": "dos"
+    "fr": "dos",
+    "zinnen": [
+      "4jka2wql"
+    ]
   },
   {
     "nl": "verder",
@@ -611,7 +825,10 @@
     "tr": "başka, devamında",
     "en": "further, else",
     "ar": "أكثر",
-    "fr": "en plus"
+    "fr": "en plus",
+    "zinnen": [
+      "qzh2u3sl"
+    ]
   },
   {
     "nl": "verschil",
@@ -620,7 +837,10 @@
     "tr": "fark",
     "en": "difference",
     "ar": "فرق",
-    "fr": "différence"
+    "fr": "différence",
+    "zinnen": [
+      "gwvuxpu1"
+    ]
   },
   {
     "nl": "wakker",
@@ -628,7 +848,10 @@
     "tr": "uyanık",
     "en": "awake",
     "ar": "مستيقظ",
-    "fr": "éveillé"
+    "fr": "éveillé",
+    "zinnen": [
+      "wobrcp52"
+    ]
   },
   {
     "nl": "wc-papier",
@@ -637,7 +860,10 @@
     "tr": "tuvalet kağıdı",
     "en": "toilet paper",
     "ar": "ورق تواليت",
-    "fr": "papier toilette"
+    "fr": "papier toilette",
+    "zinnen": [
+      "8dneuwvc"
+    ]
   },
   {
     "nl": "zoon",
@@ -647,7 +873,10 @@
     "tr": "oğul",
     "en": "son",
     "ar": "ابن",
-    "fr": "fils"
+    "fr": "fils",
+    "zinnen": [
+      "3o2ss0w5"
+    ]
   },
   {
     "nl": "zwaar",
@@ -655,7 +884,10 @@
     "tr": "ağır",
     "en": "heavy",
     "ar": "ثقيل",
-    "fr": "lourd"
+    "fr": "lourd",
+    "zinnen": [
+      "4vjb1rpu"
+    ]
   },
   {
     "nl": "alcohol",
@@ -664,7 +896,10 @@
     "tr": "alkol",
     "en": "alcohol",
     "ar": "كحول",
-    "fr": "alcool"
+    "fr": "alcool",
+    "zinnen": [
+      "c3gnf27j"
+    ]
   },
   {
     "nl": "bewaren",
@@ -674,7 +909,11 @@
     "tr": "saklamak, korumak",
     "en": "to keep, to store",
     "ar": "يحفظ",
-    "fr": "conserver"
+    "fr": "conserver",
+    "zinnen": [
+      "1km2a7fc",
+      "waw0hy80"
+    ]
   },
   {
     "nl": "bijwerking",
@@ -683,7 +922,10 @@
     "tr": "yan etki",
     "en": "side effect",
     "ar": "آثار جانبية",
-    "fr": "effet secondaire"
+    "fr": "effet secondaire",
+    "zinnen": [
+      "fkrgrpde"
+    ]
   },
   {
     "nl": "borstvoeding",
@@ -692,7 +934,10 @@
     "tr": "emzirme",
     "en": "breastfeeding",
     "ar": "رضاعة طبيعية",
-    "fr": "allaitement"
+    "fr": "allaitement",
+    "zinnen": [
+      "32p0hl76"
+    ]
   },
   {
     "nl": "boven",
@@ -700,7 +945,10 @@
     "tr": "üstünde, yukarıda",
     "en": "above",
     "ar": "فوق",
-    "fr": "au-dessus"
+    "fr": "au-dessus",
+    "zinnen": [
+      "qvln4nkz"
+    ]
   },
   {
     "nl": "contact",
@@ -709,7 +957,10 @@
     "tr": "iletişim, temas",
     "en": "contact",
     "ar": "اتصال",
-    "fr": "contact"
+    "fr": "contact",
+    "zinnen": [
+      "3si6t9x1"
+    ]
   },
   {
     "nl": "glas",
@@ -718,7 +969,10 @@
     "tr": "bardak",
     "en": "glass",
     "ar": "كأس",
-    "fr": "verre"
+    "fr": "verre",
+    "zinnen": [
+      "656vpted"
+    ]
   },
   {
     "nl": "hardlopen",
@@ -728,7 +982,10 @@
     "tr": "koşmak",
     "en": "to run",
     "ar": "يركض",
-    "fr": "courir"
+    "fr": "courir",
+    "zinnen": [
+      "1k943bfj"
+    ]
   },
   {
     "nl": "innemen",
@@ -738,7 +995,10 @@
     "tr": "almak (ilaç)",
     "en": "to take (medicine)",
     "ar": "يتناول",
-    "fr": "prendre"
+    "fr": "prendre",
+    "zinnen": [
+      "av0w3dj8"
+    ]
   },
   {
     "nl": "knie",
@@ -747,7 +1007,10 @@
     "tr": "diz",
     "en": "knee",
     "ar": "ركبة",
-    "fr": "genou"
+    "fr": "genou",
+    "zinnen": [
+      "323hk2mj"
+    ]
   },
   {
     "nl": "laatst",
@@ -755,7 +1018,11 @@
     "tr": "geçenlerde, son",
     "en": "recently, last",
     "ar": "مؤخرا",
-    "fr": "récemment"
+    "fr": "récemment",
+    "zinnen": [
+      "0a1pkjpp",
+      "sf28y474"
+    ]
   },
   {
     "nl": "maal",
@@ -764,7 +1031,10 @@
     "tr": "kez, defa",
     "en": "time (occasion)",
     "ar": "مرة",
-    "fr": "fois"
+    "fr": "fois",
+    "zinnen": [
+      "y6x0va4k"
+    ]
   },
   {
     "nl": "maaltijd",
@@ -773,7 +1043,10 @@
     "tr": "öğün",
     "en": "meal",
     "ar": "وجبة",
-    "fr": "repas"
+    "fr": "repas",
+    "zinnen": [
+      "84h33j0x"
+    ]
   },
   {
     "nl": "misselijk",
@@ -781,7 +1054,10 @@
     "tr": "mide bulantısı olan",
     "en": "nauseous",
     "ar": "يشعر بالغثيان",
-    "fr": "nauséeux"
+    "fr": "nauséeux",
+    "zinnen": [
+      "sxezuv71"
+    ]
   },
   {
     "nl": "nacht",
@@ -790,7 +1066,10 @@
     "tr": "gece",
     "en": "night",
     "ar": "ليل",
-    "fr": "nuit"
+    "fr": "nuit",
+    "zinnen": [
+      "v16qojg2"
+    ]
   },
   {
     "nl": "pil",
@@ -799,7 +1078,10 @@
     "tr": "hap",
     "en": "pill",
     "ar": "حبة",
-    "fr": "pilule"
+    "fr": "pilule",
+    "zinnen": [
+      "pkukogvn"
+    ]
   },
   {
     "nl": "slaappil",
@@ -808,7 +1090,10 @@
     "tr": "uyku hapı",
     "en": "sleeping pill",
     "ar": "حبة نوم",
-    "fr": "somnifère"
+    "fr": "somnifère",
+    "zinnen": [
+      "zdij3ft7"
+    ]
   },
   {
     "nl": "stress",
@@ -817,7 +1102,10 @@
     "tr": "stres",
     "en": "stress",
     "ar": "توتر",
-    "fr": "stress"
+    "fr": "stress",
+    "zinnen": [
+      "4lppvg7d"
+    ]
   },
   {
     "nl": "tablet",
@@ -826,7 +1114,10 @@
     "tr": "tablet (ilaç)",
     "en": "tablet",
     "ar": "قرص",
-    "fr": "comprimé"
+    "fr": "comprimé",
+    "zinnen": [
+      "gbcr8oer"
+    ]
   },
   {
     "nl": "tegelijk",
@@ -834,7 +1125,11 @@
     "tr": "aynı anda",
     "en": "at the same time",
     "ar": "في نفس الوقت",
-    "fr": "en même temps"
+    "fr": "en même temps",
+    "zinnen": [
+      "hfumtnhx",
+      "vo1t08bp"
+    ]
   },
   {
     "nl": "tijdens",
@@ -842,7 +1137,10 @@
     "tr": "sırasında",
     "en": "during",
     "ar": "أثناء",
-    "fr": "pendant"
+    "fr": "pendant",
+    "zinnen": [
+      "f938uzjm"
+    ]
   },
   {
     "nl": "verpakking",
@@ -851,7 +1149,10 @@
     "tr": "ambalaj",
     "en": "packaging",
     "ar": "تغليف",
-    "fr": "emballage"
+    "fr": "emballage",
+    "zinnen": [
+      "fp0i2ykl"
+    ]
   },
   {
     "nl": "zwangerschap",
@@ -860,6 +1161,9 @@
     "tr": "hamilelik",
     "en": "pregnancy",
     "ar": "حمل",
-    "fr": "grossesse"
+    "fr": "grossesse",
+    "zinnen": [
+      "dmijbtsr"
+    ]
   }
 ]
