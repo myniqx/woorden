@@ -5,7 +5,10 @@
     "tr": "başka, diğer",
     "en": "other, different",
     "ar": "آخر",
-    "fr": "autre"
+    "fr": "autre",
+    "zinnen": [
+      "acxd06w6"
+    ]
   },
   {
     "nl": "appel",
@@ -14,7 +17,10 @@
     "tr": "elma",
     "en": "apple",
     "ar": "تفاحة",
-    "fr": "pomme"
+    "fr": "pomme",
+    "zinnen": [
+      "97bon1uq"
+    ]
   },
   {
     "nl": "banaan",
@@ -23,7 +29,10 @@
     "tr": "muz",
     "en": "banana",
     "ar": "موز",
-    "fr": "banane"
+    "fr": "banane",
+    "zinnen": [
+      "97bon1uq"
+    ]
   },
   {
     "nl": "bijna",
@@ -31,7 +40,10 @@
     "tr": "neredeyse, hemen hemen",
     "en": "almost, nearly",
     "ar": "تقريبا",
-    "fr": "presque"
+    "fr": "presque",
+    "zinnen": [
+      "px6olnkp"
+    ]
   },
   {
     "nl": "boodschappen",
@@ -40,7 +52,11 @@
     "tr": "alışveriş",
     "en": "groceries, shopping",
     "ar": "تسوق",
-    "fr": "courses"
+    "fr": "courses",
+    "zinnen": [
+      "n9syr148",
+      "px6olnkp"
+    ]
   },
   {
     "nl": "doen",
@@ -50,7 +66,10 @@
     "tr": "yapmak",
     "en": "to do",
     "ar": "يفعل",
-    "fr": "faire"
+    "fr": "faire",
+    "zinnen": [
+      "vuzjw9q2"
+    ]
   },
   {
     "nl": "dus",
@@ -58,7 +77,10 @@
     "tr": "demek ki, yani",
     "en": "so, therefore",
     "ar": "إذن",
-    "fr": "donc"
+    "fr": "donc",
+    "zinnen": [
+      "gweu17bn"
+    ]
   },
   {
     "nl": "eten",
@@ -68,7 +90,11 @@
     "tr": "yemek yemek",
     "en": "to eat",
     "ar": "يأكل",
-    "fr": "manger"
+    "fr": "manger",
+    "zinnen": [
+      "gweu17bn",
+      "cdb55ja7"
+    ]
   },
   {
     "nl": "fruit",
@@ -77,7 +103,11 @@
     "tr": "meyve",
     "en": "fruit",
     "ar": "فاكهة",
-    "fr": "fruit"
+    "fr": "fruit",
+    "zinnen": [
+      "acxd06w6",
+      "cdb55ja7"
+    ]
   },
   {
     "nl": "groente",
@@ -86,7 +116,11 @@
     "tr": "sebze",
     "en": "vegetable",
     "ar": "خضار",
-    "fr": "légume"
+    "fr": "légume",
+    "zinnen": [
+      "cdb55ja7",
+      "4p4vjfc0"
+    ]
   },
   {
     "nl": "kip",
@@ -95,7 +129,10 @@
     "tr": "tavuk",
     "en": "chicken",
     "ar": "دجاج",
-    "fr": "poulet"
+    "fr": "poulet",
+    "zinnen": [
+      "i1tj87kg"
+    ]
   },
   {
     "nl": "kopen",
@@ -115,7 +152,11 @@
     "tr": "liste",
     "en": "list",
     "ar": "قائمة",
-    "fr": "liste"
+    "fr": "liste",
+    "zinnen": [
+      "bos1yo7r",
+      "8g3bi5hg"
+    ]
   },
   {
     "nl": "maken",
@@ -134,7 +175,10 @@
     "tr": "pazar",
     "en": "market",
     "ar": "سوق",
-    "fr": "marché"
+    "fr": "marché",
+    "zinnen": [
+      "i1tj87kg"
+    ]
   },
   {
     "nl": "meer",
@@ -142,7 +186,11 @@
     "tr": "daha çok, daha fazla",
     "en": "more",
     "ar": "أكثر",
-    "fr": "plus"
+    "fr": "plus",
+    "zinnen": [
+      "4p4vjfc0",
+      "1w2mcqaz"
+    ]
   },
   {
     "nl": "of",
@@ -150,7 +198,10 @@
     "tr": "veya, ya da",
     "en": "or",
     "ar": "أو",
-    "fr": "ou"
+    "fr": "ou",
+    "zinnen": [
+      "4p4vjfc0"
+    ]
   },
   {
     "nl": "praten",
@@ -160,7 +211,10 @@
     "tr": "konuşmak",
     "en": "to talk",
     "ar": "يتحدث",
-    "fr": "parler"
+    "fr": "parler",
+    "zinnen": [
+      "1w2mcqaz"
+    ]
   },
   {
     "nl": "rijst",
@@ -169,7 +223,10 @@
     "tr": "pirinç, pilav",
     "en": "rice",
     "ar": "أرز",
-    "fr": "riz"
+    "fr": "riz",
+    "zinnen": [
+      "dnukjep9"
+    ]
   },
   {
     "nl": "supermarkt",
@@ -178,7 +235,10 @@
     "tr": "süpermarket",
     "en": "supermarket",
     "ar": "سوبرماركت",
-    "fr": "supermarché"
+    "fr": "supermarché",
+    "zinnen": [
+      "dnukjep9"
+    ]
   },
   {
     "nl": "thuis",
@@ -186,7 +246,10 @@
     "tr": "evde",
     "en": "at home",
     "ar": "في البيت",
-    "fr": "à la maison"
+    "fr": "à la maison",
+    "zinnen": [
+      "vbjo5w5a"
+    ]
   },
   {
     "nl": "tomaat",

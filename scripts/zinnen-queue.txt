@@ -1,0 +1,137 @@
+# A1 batch 1 — ~100 words
+# stad, wonen, werken
+1|Zij 2|woont in een grote 3|stad.
+Ik 1|werk in de 2|stad.
+
+# winkel, uit, boodschappen
+Ik ga 1|uit de 2|winkel met mijn 3|boodschappen.
+
+# achternaam, heten, voornaam
+Mijn 1|voornaam is Jan en mijn 2|achternaam is de Vries.
+1|Hoe 2|heet@heten jij?
+
+# hallo, hoe, ja, oké
+1|Hallo, 2|hoe gaat het?
+1|Ja, dat is 2|oké.
+
+# hebben, zijn, je, jij
+1|Jij 2|hebt@hebben een 3|huis.
+
+# één, ook, wat
+Dit is 1|één ding dat ik 2|ook 3|wat wil.
+
+# les, leuk, spellen
+De 1|les is 2|leuk.
+Kun je dit woord 1|spellen?
+
+# hoelang, vandaan
+1|Hoelang ben jij hier?
+2|Waar kom jij 1|vandaan?
+
+# kloppen, ze, al, en
+1|Klopt@kloppen dit 2|al?
+3|Ze 1|studeert 2|en werkt.
+
+# telefoonnummer, e-mailadres, formulier
+Mijn 1|telefoonnummer en 2|e-mailadres staan op het 3|formulier.
+
+# adres, postcode, woonplaats
+Wat is uw 1|adres en 2|postcode?
+Uw 1|woonplaats staat op het 2|formulier.
+
+# april, geboortedatum, geboren
+Ik ben 1|geboren in 2|april.
+Mijn 1|geboortedatum staat op het 2|formulier.
+
+# gemeente, gemeentehuis
+Het 1|gemeentehuis is in de 2|gemeente.
+
+# goedemorgen, helpen, kunnen
+1|Goedemorgen, 2|kan@kunnen ik u 3|helpen?
+
+# invullen, nieuw
+Kunt u dit 1|nieuwe@nieuw 2|formulier 3|invullen?
+
+# man, meneer, vrouw, u, uw
+1|Meneer, is dit 2|uw 3|adres?
+De 1|man en de 2|vrouw 3|helpen@helpen u.
+
+# mobiel, nationaliteit, op
+Mijn 1|mobiel staat 2|op de 3|lijst.
+Wat is uw 1|nationaliteit?
+
+# zullen
+1|Zullen we dat 2|invullen?
+
+# alleen, geen
+Ik woon 1|alleen en heb 2|geen buren.
+
+# appen, buren, buurvrouw
+Mijn 1|buurvrouw 2|appt@appen me.
+Ik 1|app@appen mijn 2|buren.
+
+# getrouwd, jullie
+1|Zijn@zijn 2|jullie 3|getrouwd?
+
+# graag, houden van, hobby
+Ik 1|houd van@houden van mijn 2|hobby.
+Ik doe dit 1|graag.
+
+# kind, koken, met
+Ik 1|kook 2|met mijn 3|kind.
+
+# nog, ontmoeten
+Wij 1|ontmoeten 2|nog een vriend.
+
+# oud, poes
+De 1|poes is 2|oud.
+
+# restaurant, week
+Deze 1|week gaan we naar een 2|restaurant.
+
+# sporten, weekend
+Ik 1|sport@sporten elk 2|weekend.
+
+# welkom, huis
+1|Welkom in ons 2|huis!
+
+# wie, willen
+1|Wie 2|wil@willen dit weekend komen?
+
+# ander, appel, banaan
+Ik koop een 1|appel en een 2|banaan.
+Heb je een 1|ander soort 2|fruit?
+
+# bijna
+De 1|boodschappen zijn 2|bijna klaar.
+
+# doen, dus
+Wat 1|doe@doen jij vandaag?
+Ik ben klaar, 1|dus ik ga 2|eten.
+
+# eten, fruit, groente
+We 1|eten 2|fruit en 3|groente.
+
+# kip, markt
+Op de 1|markt koop ik 2|kip.
+
+# kopen, lijst, maken
+Ik 1|maak een 2|lijst en 3|koop alles.
+
+# meer, of
+Wil je 1|meer 2|groente 3|of fruit?
+
+# praten
+Wij 1|praten 2|meer thuis.
+
+# rijst, supermarkt
+Ik koop 1|rijst in de 2|supermarkt.
+
+# thuis
+Ik ben 1|thuis.
+
+# mijn, pron
+Dit is 1|mijn huis.
+
+# welkom extra
+1|Welkom, 2|meneer!
