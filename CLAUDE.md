@@ -334,6 +334,36 @@ N|token@base
 
 **When `@base` can be omitted:** when the surface token (after stripping trailing punctuation) already matches the base. Trailing `. , ? ! ; :` are stripped automatically before lookup — so `3|school,` and `3|school.` both resolve to base `school` regardless of position in the sentence.
 
+**Multi-word bases (spaces in `nl` key):** use underscores in `@base` to encode spaces.
+
+```
+# nl key: "oppassen op"
+Ze 1|paste@oppassen_op op de kinderen 1|op@oppassen_op.
+→ base: oppassen op  (tokens: paste, op)
+
+# nl key: "zich scheren"
+Ze 1|scheert@zich_scheren zich elke ochtend.
+→ base: zich scheren  (token: scheert; "zich" is plain text — do NOT mark it as a separate group)
+
+# nl key: "Europese Unie"  (proper noun — mark first word only)
+De 1|Europese@Europese_Unie Unie heeft veel leden.
+→ base: Europese Unie  (token: Europese)
+```
+
+**Inflected adjectives always need `@base`:**
+
+```
+# WRONG — "uitstekende" not found in any pack
+Dat was een 1|uitstekende oplossing.
+
+# CORRECT
+Dat was een 1|uitstekende@uitstekend oplossing.
+Dat is een 1|traditionele@traditioneel familie.
+Dat is een 1|financiële@financieel probleem.
+```
+
+**Reflexive pronouns (`zich`, `me`, `je`) that are the split-off part of a reflexive verb are NOT marked as a second group token** — they are plain text, only the conjugated verb form carries the group annotation.
+
 **Limit:** default 5 zinnen per word (`--limit N` to override). If ALL referenced words are already at the limit, the sentence is rejected.
 
 ### Zin File Format

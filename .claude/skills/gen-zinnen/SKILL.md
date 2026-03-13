@@ -109,6 +109,41 @@ The first occurrence of group N defines `@base`. Later parts of the same group (
 
 **When @base can be omitted:** when the surface token (after stripping trailing punctuation) matches the base. Trailing `. , ? ! ; :` are stripped automatically before lookup — `3|school,` and `3|school.` both resolve to `school`, whether the word is mid-sentence or at the end.
 
+**Multi-word bases (spaces in `nl` key):** use underscores in `@base` to encode spaces.
+
+```
+# nl key: "oppassen op"  (separable verb + preposition)
+Ze 1|paste@oppassen_op op de kinderen 1|op@oppassen_op.
+→ base: oppassen op  (tokens: paste, op)
+
+# nl key: "afhangen van"
+Dat 1|hangt@afhangen_van van de situatie 1|af@afhangen_van.
+→ base: afhangen van  (tokens: hangt, af)
+
+# nl key: "zich scheren"  (reflexive verb — mark finite verb only; "zich" is plain text)
+Ze 1|scheert@zich_scheren zich elke ochtend.
+→ base: zich scheren  (token: scheert)
+
+# nl key: "Europese Unie"  (proper noun — mark first word, rest plain text)
+De 1|Europese@Europese_Unie Unie heeft veel leden.
+→ base: Europese Unie
+```
+
+**Inflected adjectives ALWAYS need `@base`** — the inflected form alone is not in the pack:
+
+```
+# WRONG — causes "not found in any pack" error
+Dat was een 1|uitstekende oplossing.
+
+# CORRECT
+Dat was een 1|uitstekende@uitstekend oplossing.
+Dat is een 1|traditionele@traditioneel familie.
+Dat is een 1|financiële@financieel probleem.
+Dat is een 1|speciale@speciaal dag.
+```
+
+**Reflexive pronouns** (`zich`, `me`, `je`) that are part of a reflexive verb construction are **plain text** in the sentence — do NOT mark them with a group number.
+
 ## Step 4 — Add each sentence via the CLI
 
 For every sentence, run:
