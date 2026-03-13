@@ -412,7 +412,10 @@
     "tr": "masraf, maliyet",
     "en": "costs",
     "ar": "تكاليف",
-    "fr": "coûts"
+    "fr": "coûts",
+    "zinnen": [
+      "06tvyxeh"
+    ]
   },
   {
     "nl": "leverancier",
@@ -522,7 +525,10 @@
     "tr": "sokmak",
     "en": "to put, to sting",
     "ar": "يضع، يلدغ",
-    "fr": "mettre, piquer"
+    "fr": "mettre, piquer",
+    "zinnen": [
+      "it46scs3"
+    ]
   },
   {
     "nl": "stekker",
@@ -642,7 +648,10 @@
     "tr": "tanınmış, bilinen",
     "en": "known, famous",
     "ar": "معروف",
-    "fr": "connu"
+    "fr": "connu",
+    "zinnen": [
+      "xsldfobn"
+    ]
   },
   {
     "nl": "controleren",
@@ -893,7 +902,10 @@
     "tr": "doldurmak",
     "en": "to fill",
     "ar": "يملأ",
-    "fr": "remplir"
+    "fr": "remplir",
+    "zinnen": [
+      "dn8vj2yz"
+    ]
   },
   {
     "nl": "zuinig",
@@ -963,7 +975,10 @@
     "tr": "basmak",
     "en": "to press",
     "ar": "يضغط",
-    "fr": "appuyer"
+    "fr": "appuyer",
+    "zinnen": [
+      "ny5m88u9"
+    ]
   },
   {
     "nl": "drukte",
@@ -1118,7 +1133,9 @@
     "ar": "برنامج",
     "fr": "programme",
     "zinnen": [
-      "v3iame1a"
+      "v3iame1a",
+      "mqi4432n",
+      "npb6csq7"
     ]
   },
   {
@@ -1133,14 +1150,6 @@
       "delayqjt",
       "qhgpd9rt"
     ]
-  },
-  {
-    "nl": "stuk",
-    "type": "adj",
-    "tr": "parça, bozuk",
-    "en": "piece, broken",
-    "ar": "قطعة، معطل",
-    "fr": "cassé"
   },
   {
     "nl": "telkens",
@@ -1284,7 +1293,10 @@
     "tr": "indirmek",
     "en": "to download",
     "ar": "يحمل",
-    "fr": "télécharger"
+    "fr": "télécharger",
+    "zinnen": [
+      "xew11g6i"
+    ]
   },
   {
     "nl": "e-boek",
@@ -1381,15 +1393,6 @@
     "zinnen": [
       "xatrmsxc"
     ]
-  },
-  {
-    "nl": "pas",
-    "article": "de",
-    "type": "noun",
-    "tr": "kart",
-    "en": "card",
-    "ar": "بطاقة",
-    "fr": "carte"
   },
   {
     "nl": "termijn",
@@ -1682,14 +1685,6 @@
     "zinnen": [
       "9r8blh4l"
     ]
-  },
-  {
-    "nl": "totaal",
-    "type": "adj",
-    "tr": "toplam",
-    "en": "total",
-    "ar": "إجمالي",
-    "fr": "total"
   },
   {
     "nl": "volhouden",
@@ -2129,7 +2124,10 @@
     "tr": "yüz",
     "en": "face",
     "ar": "وجه",
-    "fr": "visage"
+    "fr": "visage",
+    "zinnen": [
+      "uw51fz0m"
+    ]
   },
   {
     "nl": "grijs",
@@ -2247,7 +2245,10 @@
     "tr": "düz",
     "en": "straight",
     "ar": "مستقيم",
-    "fr": "droit"
+    "fr": "droit",
+    "zinnen": [
+      "h1ar2zhg"
+    ]
   },
   {
     "nl": "rond",
@@ -2281,7 +2282,10 @@
     "tr": "kapatmak",
     "en": "to close",
     "ar": "يغلق",
-    "fr": "fermer"
+    "fr": "fermer",
+    "zinnen": [
+      "cb9tzu40"
+    ]
   },
   {
     "nl": "spiegel",

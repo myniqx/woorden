@@ -18,7 +18,10 @@
     "tr": "bardak",
     "en": "cup",
     "ar": "كوب",
-    "fr": "gobelet"
+    "fr": "gobelet",
+    "zinnen": [
+      "pbl6g3oy"
+    ]
   },
   {
     "nl": "blik",
@@ -284,7 +287,10 @@
     "tr": "çöp",
     "en": "garbage",
     "ar": "قمامة",
-    "fr": "ordures"
+    "fr": "ordures",
+    "zinnen": [
+      "sku8c1i9"
+    ]
   },
   {
     "nl": "weggooien",
@@ -452,7 +458,10 @@
     "tr": "aile üyesi",
     "en": "family member",
     "ar": "فرد من العائلة",
-    "fr": "membre de la famille"
+    "fr": "membre de la famille",
+    "zinnen": [
+      "818s73kq"
+    ]
   },
   {
     "nl": "geboorte",
@@ -509,7 +518,10 @@
     "tr": "kimlik",
     "en": "identification",
     "ar": "هوية",
-    "fr": "identification"
+    "fr": "identification",
+    "zinnen": [
+      "uhv6nl1u"
+    ]
   },
   {
     "nl": "legitimatiebewijs",
@@ -1324,7 +1336,10 @@
     "tr": "parlamak, görünmek",
     "en": "to shine, to seem",
     "ar": "يلمع، يبدو",
-    "fr": "briller, sembler"
+    "fr": "briller, sembler",
+    "zinnen": [
+      "ool68ppt"
+    ]
   },
   {
     "nl": "tijdelijk",
@@ -1429,7 +1444,10 @@
     "tr": "dünya",
     "en": "world",
     "ar": "عالم",
-    "fr": "monde"
+    "fr": "monde",
+    "zinnen": [
+      "cfypj21o"
+    ]
   },
   {
     "nl": "zee",
@@ -1610,7 +1628,9 @@
     "fr": "relation",
     "zinnen": [
       "xxfdg123",
-      "6vjc0z67"
+      "6vjc0z67",
+      "48a8cled",
+      "0qh8uyrl"
     ]
   },
   {
@@ -2011,7 +2031,10 @@
     "tr": "göndermek",
     "en": "to send",
     "ar": "يرسل",
-    "fr": "envoyer"
+    "fr": "envoyer",
+    "zinnen": [
+      "9vuyi8u1"
+    ]
   },
   {
     "nl": "verwachten",
@@ -2101,7 +2124,10 @@
     "tr": "şaka",
     "en": "joke",
     "ar": "نكتة",
-    "fr": "blague"
+    "fr": "blague",
+    "zinnen": [
+      "69c02yjp"
+    ]
   },
   {
     "nl": "grappig",

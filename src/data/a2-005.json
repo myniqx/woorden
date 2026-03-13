@@ -6,7 +6,10 @@
     "tr": "kontrol",
     "en": "control",
     "ar": "سيطرة",
-    "fr": "contrôle"
+    "fr": "contrôle",
+    "zinnen": [
+      "dsui0fu0"
+    ]
   },
   {
     "nl": "gat",
@@ -65,7 +68,10 @@
     "tr": "röportajcı",
     "en": "interviewer (female)",
     "ar": "محاورة",
-    "fr": "intervieweuse"
+    "fr": "intervieweuse",
+    "zinnen": [
+      "byq713ng"
+    ]
   },
   {
     "nl": "jawel",
@@ -265,7 +271,10 @@
     "tr": "taahhüt, vaat",
     "en": "promise",
     "ar": "وعد",
-    "fr": "promesse"
+    "fr": "promesse",
+    "zinnen": [
+      "f0r86tra"
+    ]
   },
   {
     "nl": "bewust",
@@ -445,15 +454,6 @@
     ]
   },
   {
-    "nl": "soort",
-    "article": "het",
-    "type": "noun",
-    "tr": "tür",
-    "en": "type, kind",
-    "ar": "نوع",
-    "fr": "sorte"
-  },
-  {
     "nl": "toeval",
     "article": "het",
     "type": "noun",
@@ -485,7 +485,10 @@
     "tr": "(mevsim sonu) indirim",
     "en": "sale",
     "ar": "تخفيضات",
-    "fr": "soldes"
+    "fr": "soldes",
+    "zinnen": [
+      "obczhgbe"
+    ]
   },
   {
     "nl": "verleiden",
@@ -577,7 +580,10 @@
     "tr": "vergi",
     "en": "tax",
     "ar": "ضريبة",
-    "fr": "impôt"
+    "fr": "impôt",
+    "zinnen": [
+      "unmw3koj"
+    ]
   },
   {
     "nl": "belastingaanslag",
@@ -1010,15 +1016,6 @@
     ]
   },
   {
-    "nl": "relatie",
-    "article": "de",
-    "type": "noun",
-    "tr": "ilişki",
-    "en": "relationship",
-    "ar": "علاقة",
-    "fr": "relation"
-  },
-  {
     "nl": "samenvatting",
     "article": "de",
     "type": "noun",
@@ -1171,7 +1168,10 @@
     "tr": "ölü",
     "en": "dead",
     "ar": "ميت",
-    "fr": "mort"
+    "fr": "mort",
+    "zinnen": [
+      "vwk8i462"
+    ]
   },
   {
     "nl": "drama",
@@ -1246,15 +1246,6 @@
     "zinnen": [
       "m7rykhrz"
     ]
-  },
-  {
-    "nl": "programma",
-    "article": "het",
-    "type": "noun",
-    "tr": "program",
-    "en": "program",
-    "ar": "برنامج",
-    "fr": "programme"
   },
   {
     "nl": "quiz",
@@ -1575,15 +1566,6 @@
     ]
   },
   {
-    "nl": "kennis",
-    "article": "de",
-    "type": "noun",
-    "tr": "bilgi / tanıdık",
-    "en": "knowledge / acquaintance",
-    "ar": "معرفة",
-    "fr": "connaissance"
-  },
-  {
     "nl": "kleinkind",
     "article": "het",
     "type": "noun",
@@ -1674,7 +1656,10 @@
     "tr": "sosyal medya",
     "en": "social media",
     "ar": "وسائل التواصل الاجتماعي",
-    "fr": "réseau social"
+    "fr": "réseau social",
+    "zinnen": [
+      "lwgi9c7h"
+    ]
   },
   {
     "nl": "toename",
