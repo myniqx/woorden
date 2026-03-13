@@ -18,7 +18,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '../src/data');
 const PAGE_SIZE = 5;
 const DEFAULT_ZIN_LIMIT = 5;
-const MAX_ZINNEN_PER_FILE = 100;
+const MAX_ZINNEN_PER_FILE = 1000;
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -227,11 +227,11 @@ function renderHighlight(marked: string, activeNum: number): string {
 
 // ─── Formatting ───────────────────────────────────────────────────────────────
 
-const BOLD  = (s: string) => `\x1b[1m${s}\x1b[0m`;
-const DIM   = (s: string) => `\x1b[2m${s}\x1b[0m`;
+const BOLD = (s: string) => `\x1b[1m${s}\x1b[0m`;
+const DIM = (s: string) => `\x1b[2m${s}\x1b[0m`;
 const GREEN = (s: string) => `\x1b[32m${s}\x1b[0m`;
 const AMBER = (s: string) => `\x1b[33m${s}\x1b[0m`;
-const RED   = (s: string) => `\x1b[31m${s}\x1b[0m`;
+const RED = (s: string) => `\x1b[31m${s}\x1b[0m`;
 
 function translationMatch(a: WordEntry, b: WordEntry): 'identical' | 'similar' | 'different' {
   const langs = ['en', 'tr', 'ar', 'fr'] as const;
@@ -255,7 +255,7 @@ function entryLines(w: WordEntry): string[] {
   }
   if (w.perfectum || w.imperfectum) {
     const parts: string[] = [];
-    if (w.perfectum)   parts.push(`perfectum: ${w.perfectum}`);
+    if (w.perfectum) parts.push(`perfectum: ${w.perfectum}`);
     if (w.imperfectum) parts.push(`imperfectum: ${w.imperfectum}`);
     lines.push(parts.join('   '));
   }
@@ -282,8 +282,8 @@ function printDuplicate(dup: Duplicate, index: number, total: number) {
     const match = translationMatch(target.word, others[0].word);
     const label =
       match === 'identical' ? GREEN('✓ IDENTICAL — safe to remove from either pack') :
-      match === 'similar'   ? AMBER('~ SIMILAR   — translations differ slightly, review before removing') :
-                              RED('✗ DIFFERENT — same nl+type but different translations, check carefully');
+        match === 'similar' ? AMBER('~ SIMILAR   — translations differ slightly, review before removing') :
+          RED('✗ DIFFERENT — same nl+type but different translations, check carefully');
     console.log(`\n       ${label}`);
   }
 }
@@ -339,7 +339,7 @@ function cmdFindDuplicate(args: string[]) {
 
 async function cmdRemove(args: string[]) {
   const packArg = args[0];
-  const nlWord  = args[1];
+  const nlWord = args[1];
 
   if (!packArg || packArg.startsWith('--') || !nlWord) {
     console.error('Usage: woorden remove <PACK> <word>');
@@ -452,6 +452,15 @@ function cmdAddZin(args: string[]) {
 
   // Generate ID, write to zin file
   const allZins = loadAllZins();
+
+  // Reject duplicate sentences
+  for (const [existingId, existingMarked] of allZins.entries()) {
+    if (existingMarked === marked) {
+      console.log(`\n  ${RED('✗')} Duplicate sentence — already exists as ${BOLD(existingId)}\n`);
+      process.exit(2);
+    }
+  }
+
   const id = generateId(new Set(allZins.keys()));
   const { file: zinFile, data: zinData } = getActiveZinFile();
   zinData[id] = marked;
@@ -570,8 +579,8 @@ function cmdGetNoZin(args: string[]) {
 
   for (const { word: w } of slice) {
     const parts: string[] = [w.type.padEnd(6), BOLD(w.nl)];
-    if (w.article)     parts.push(w.article);
-    if (w.perfectum)   parts.push(w.perfectum);
+    if (w.article) parts.push(w.article);
+    if (w.perfectum) parts.push(w.perfectum);
     if (w.imperfectum) parts.push(w.imperfectum);
     console.log('  ' + parts.join('  '));
   }
@@ -579,9 +588,45 @@ function cmdGetNoZin(args: string[]) {
   console.log(`\n  ${DIM(`${noZin.length - slice.length} more without zinnen`)}\n`);
 }
 
+// ─── Check ────────────────────────────────────────────────────────────────────
+
+function cmdCheck() {
+  const allZins = loadAllZins();
+  const allWords = loadAllWords();
+
+  let total = 0;
+  let ok = 0;
+
+  for (const [id, { marked }] of allZins.entries()) {
+    total++;
+    const { groups } = parseMarked(marked);
+    if (groups.size === 0) continue;
+
+    const problems: string[] = [];
+
+    for (const [, { base }] of groups.entries()) {
+      const wp = findWordEntry(base, allWords);
+      if (!wp) {
+        problems.push(`${base}(not-found)`);
+        continue;
+      }
+      const attached = wp.word.zinnen?.includes(id) ?? false;
+      if (!attached) problems.push(`${base}(not-attached)`);
+    }
+
+    if (problems.length === 0) {
+      ok++;
+    } else {
+      console.log(`${id}: ${problems.join(' ')}   >> ${marked}`);
+    }
+  }
+
+  console.log(`\n  ${total} zinnen, ${ok} ok, ${total - ok} with problems`);
+}
+
 // ─── Entry point ──────────────────────────────────────────────────────────────
 
-const [,, command, ...rest] = process.argv;
+const [, , command, ...rest] = process.argv;
 
 switch (command) {
   case 'find-duplicate':
@@ -599,6 +644,9 @@ switch (command) {
   case 'get-no-zin':
     cmdGetNoZin(rest);
     break;
+  case 'check':
+    cmdCheck();
+    break;
   default:
     console.log(`
   woorden — Dutch word pack CLI
@@ -609,6 +657,7 @@ switch (command) {
     add-zin "<marked>" [--limit N]             Add an example sentence (default limit: 5 per word)
     remove-zin <id>                            Remove a sentence and clean up word references
     get-no-zin <PACK> [count]                  List words without example sentences (default: 5)
+    check                                      Check all zinnen for broken word references
 
   Packs:  A1  A2  A2+
 

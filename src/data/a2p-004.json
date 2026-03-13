@@ -6,7 +6,10 @@
     "tr": "anlaşma, mutabakat",
     "en": "agreement, accord",
     "ar": "اتفاق، تفاهم",
-    "fr": "accord"
+    "fr": "accord",
+    "zinnen": [
+      "csh41y52"
+    ]
   },
   {
     "nl": "arbeidsvoorwaarden",
@@ -15,7 +18,10 @@
     "tr": "çalışma koşulları",
     "en": "employment conditions, terms of employment",
     "ar": "شروط العمل",
-    "fr": "conditions de travail"
+    "fr": "conditions de travail",
+    "zinnen": [
+      "usneb5yw"
+    ]
   },
   {
     "nl": "cao",
@@ -24,7 +30,10 @@
     "tr": "kolektif iş sözleşmesi",
     "en": "collective labour agreement",
     "ar": "اتفاقية العمل الجماعية",
-    "fr": "convention collective de travail"
+    "fr": "convention collective de travail",
+    "zinnen": [
+      "usneb5yw"
+    ]
   },
   {
     "nl": "communicatie",
@@ -33,7 +42,10 @@
     "tr": "iletişim",
     "en": "communication",
     "ar": "تواصل، اتصال",
-    "fr": "communication"
+    "fr": "communication",
+    "zinnen": [
+      "zo0mqbw5"
+    ]
   },
   {
     "nl": "contract",
@@ -42,7 +54,10 @@
     "tr": "sözleşme, kontrat",
     "en": "contract",
     "ar": "عقد",
-    "fr": "contrat"
+    "fr": "contrat",
+    "zinnen": [
+      "repxrri7"
+    ]
   },
   {
     "nl": "doorgroeien",
@@ -61,7 +76,10 @@
     "tr": "Avrupalı",
     "en": "European",
     "ar": "أوروبي",
-    "fr": "Européen"
+    "fr": "Européen",
+    "zinnen": [
+      "83xfgaat"
+    ]
   },
   {
     "nl": "indicatie",
@@ -70,7 +88,10 @@
     "tr": "gösterge, ipucu",
     "en": "indication",
     "ar": "مؤشر، دلالة",
-    "fr": "indication"
+    "fr": "indication",
+    "zinnen": [
+      "2tnejtq3"
+    ]
   },
   {
     "nl": "inkomsten",
@@ -79,7 +100,12 @@
     "tr": "gelirler",
     "en": "income, earnings",
     "ar": "دخل، عائدات",
-    "fr": "revenus"
+    "fr": "revenus",
+    "zinnen": [
+      "byxdro9a",
+      "g2n93ehn",
+      "fv2usxcb"
+    ]
   },
   {
     "nl": "loonsverhoging",
@@ -88,7 +114,10 @@
     "tr": "ücret artışı, zam",
     "en": "pay rise, salary increase",
     "ar": "زيادة الراتب",
-    "fr": "augmentation de salaire"
+    "fr": "augmentation de salaire",
+    "zinnen": [
+      "dz9k9vmv"
+    ]
   },
   {
     "nl": "masteropleiding",
@@ -97,7 +126,12 @@
     "tr": "yüksek lisans programı",
     "en": "master's programme",
     "ar": "برنامج الماجستير",
-    "fr": "master, formation de master"
+    "fr": "master, formation de master",
+    "zinnen": [
+      "ikjlml9y",
+      "c4bj130u",
+      "9u4owij0"
+    ]
   },
   {
     "nl": "netto",
@@ -123,7 +157,10 @@
     "tr": "rahatsız edici, tuhaf",
     "en": "uncomfortable, awkward",
     "ar": "غير مريح، محرج",
-    "fr": "inconfortable, gêné"
+    "fr": "inconfortable, gêné",
+    "zinnen": [
+      "83xfgaat"
+    ]
   },
   {
     "nl": "redden",
@@ -133,7 +170,10 @@
     "tr": "kurtarmak, başarmak",
     "en": "to save, to manage",
     "ar": "ينقذ، يُفلح",
-    "fr": "sauver, s'en sortir"
+    "fr": "sauver, s'en sortir",
+    "zinnen": [
+      "krf82bs6"
+    ]
   },
   {
     "nl": "salarisschaal",
@@ -142,7 +182,10 @@
     "tr": "maaş kademesi, ücret skalası",
     "en": "salary scale, pay grade",
     "ar": "سلم الرواتب",
-    "fr": "grille salariale"
+    "fr": "grille salariale",
+    "zinnen": [
+      "plsd75do"
+    ]
   },
   {
     "nl": "strategie",
@@ -151,7 +194,10 @@
     "tr": "strateji",
     "en": "strategy",
     "ar": "استراتيجية",
-    "fr": "stratégie"
+    "fr": "stratégie",
+    "zinnen": [
+      "zo0mqbw5"
+    ]
   },
   {
     "nl": "tegenvallen",
@@ -171,7 +217,10 @@
     "tr": "yerine getirmek, uygulamak",
     "en": "to carry out, to execute",
     "ar": "ينفذ، يُطبِّق",
-    "fr": "exécuter, mettre en œuvre"
+    "fr": "exécuter, mettre en œuvre",
+    "zinnen": [
+      "6e1osi9l"
+    ]
   },
   {
     "nl": "vakantiedag",
@@ -180,7 +229,10 @@
     "tr": "tatil günü, izin günü",
     "en": "holiday day, day off",
     "ar": "يوم إجازة",
-    "fr": "jour de congé"
+    "fr": "jour de congé",
+    "zinnen": [
+      "9a7wp1vm"
+    ]
   },
   {
     "nl": "verdeling",
@@ -189,7 +241,11 @@
     "tr": "dağılım, paylaşım",
     "en": "distribution, division",
     "ar": "توزيع",
-    "fr": "répartition, distribution"
+    "fr": "répartition, distribution",
+    "zinnen": [
+      "f30l35rc",
+      "fucr9kib"
+    ]
   },
   {
     "nl": "voorkomen",
@@ -208,7 +264,10 @@
     "tr": "öneri, teklif",
     "en": "proposal, suggestion",
     "ar": "اقتراح",
-    "fr": "proposition, suggestion"
+    "fr": "proposition, suggestion",
+    "zinnen": [
+      "fucr9kib"
+    ]
   },
   {
     "nl": "willekeurig",
@@ -216,7 +275,10 @@
     "tr": "rastgele, keyfi",
     "en": "random, arbitrary",
     "ar": "عشوائي، تعسفي",
-    "fr": "aléatoire, arbitraire"
+    "fr": "aléatoire, arbitraire",
+    "zinnen": [
+      "f30l35rc"
+    ]
   },
   {
     "nl": "zzp'er",
@@ -225,7 +287,10 @@
     "tr": "serbest çalışan, bağımsız girişimci",
     "en": "freelancer, self-employed person",
     "ar": "عامل مستقل، صاحب عمل حر",
-    "fr": "travailleur indépendant, freelance"
+    "fr": "travailleur indépendant, freelance",
+    "zinnen": [
+      "9a7wp1vm"
+    ]
   },
   {
     "nl": "administratie",
@@ -253,7 +318,10 @@
     "tr": "banknot, not kağıdı",
     "en": "banknote, note",
     "ar": "ورقة نقدية، ملاحظة",
-    "fr": "billet, petit mot"
+    "fr": "billet, petit mot",
+    "zinnen": [
+      "wk63t5ww"
+    ]
   },
   {
     "nl": "fooi",
@@ -262,7 +330,10 @@
     "tr": "bahşiş",
     "en": "tip, gratuity",
     "ar": "إكرامية",
-    "fr": "pourboire"
+    "fr": "pourboire",
+    "zinnen": [
+      "etl26oea"
+    ]
   },
   {
     "nl": "gedoe",
@@ -271,7 +342,10 @@
     "tr": "karışıklık, uğraş",
     "en": "fuss, hassle",
     "ar": "عناء، فوضى",
-    "fr": "tracas, histoire"
+    "fr": "tracas, histoire",
+    "zinnen": [
+      "cyev1rlf"
+    ]
   },
   {
     "nl": "gênant",
@@ -279,7 +353,10 @@
     "tr": "mahcup edici, utandırıcı",
     "en": "embarrassing",
     "ar": "محرج",
-    "fr": "gênant, embarrassant"
+    "fr": "gênant, embarrassant",
+    "zinnen": [
+      "a0i4ny8b"
+    ]
   },
   {
     "nl": "goede doel",
@@ -306,7 +383,11 @@
     "tr": "kurabiye, kek",
     "en": "cookie, cake",
     "ar": "كعكة، بسكويت",
-    "fr": "gâteau, biscuit"
+    "fr": "gâteau, biscuit",
+    "zinnen": [
+      "y61y4749",
+      "lrlz1u1k"
+    ]
   },
   {
     "nl": "los",
@@ -314,7 +395,10 @@
     "tr": "ayrı, serbest",
     "en": "separate, loose",
     "ar": "منفصل، حر",
-    "fr": "séparé, détaché"
+    "fr": "séparé, détaché",
+    "zinnen": [
+      "9d07rn2z"
+    ]
   },
   {
     "nl": "middel",
@@ -323,7 +407,10 @@
     "tr": "araç, çare",
     "en": "means, remedy",
     "ar": "وسيلة، دواء",
-    "fr": "moyen, remède"
+    "fr": "moyen, remède",
+    "zinnen": [
+      "b0tsfuv3"
+    ]
   },
   {
     "nl": "munt",
@@ -332,7 +419,10 @@
     "tr": "madeni para, bozuk para",
     "en": "coin",
     "ar": "عملة معدنية",
-    "fr": "pièce de monnaie"
+    "fr": "pièce de monnaie",
+    "zinnen": [
+      "utlibf4j"
+    ]
   },
   {
     "nl": "naïef",
@@ -340,7 +430,10 @@
     "tr": "saf, naif",
     "en": "naive",
     "ar": "ساذج",
-    "fr": "naïf"
+    "fr": "naïf",
+    "zinnen": [
+      "k825u64d"
+    ]
   },
   {
     "nl": "ouderwets",
@@ -348,7 +441,10 @@
     "tr": "eski kafalı, modası geçmiş",
     "en": "old-fashioned",
     "ar": "قديم الطراز",
-    "fr": "démodé, vieux jeu"
+    "fr": "démodé, vieux jeu",
+    "zinnen": [
+      "v6tiy21k"
+    ]
   },
   {
     "nl": "overmaken",
@@ -358,7 +454,11 @@
     "tr": "havale etmek, transfer etmek",
     "en": "to transfer (money)",
     "ar": "يحوِّل (مالاً)",
-    "fr": "virer, transférer"
+    "fr": "virer, transférer",
+    "zinnen": [
+      "9ci5zmcx",
+      "v6tiy21k"
+    ]
   },
   {
     "nl": "portemonnee",
@@ -367,7 +467,11 @@
     "tr": "cüzdan",
     "en": "wallet, purse",
     "ar": "محفظة",
-    "fr": "porte-monnaie"
+    "fr": "porte-monnaie",
+    "zinnen": [
+      "nfqud2zs",
+      "w8xo2a15"
+    ]
   },
   {
     "nl": "saldo",
@@ -376,7 +480,10 @@
     "tr": "bakiye, hesap durumu",
     "en": "balance",
     "ar": "رصيد",
-    "fr": "solde"
+    "fr": "solde",
+    "zinnen": [
+      "nfqud2zs"
+    ]
   },
   {
     "nl": "technologie",
@@ -385,7 +492,11 @@
     "tr": "teknoloji",
     "en": "technology",
     "ar": "تكنولوجيا",
-    "fr": "technologie"
+    "fr": "technologie",
+    "zinnen": [
+      "zo7r3dl1",
+      "v6tiy21k"
+    ]
   },
   {
     "nl": "terugbetalen",
@@ -404,7 +515,10 @@
     "tr": "ton balığı",
     "en": "tuna",
     "ar": "تونة",
-    "fr": "thon"
+    "fr": "thon",
+    "zinnen": [
+      "jk47lstc"
+    ]
   },
   {
     "nl": "trakteren",
@@ -414,7 +528,10 @@
     "tr": "ikram etmek, ısmarlamak",
     "en": "to treat, to buy a round",
     "ar": "يُكرم، يدفع عن الجميع",
-    "fr": "offrir, régaler"
+    "fr": "offrir, régaler",
+    "zinnen": [
+      "y61y4749"
+    ]
   },
   {
     "nl": "verzoek",
@@ -423,7 +540,10 @@
     "tr": "talep, istek",
     "en": "request",
     "ar": "طلب",
-    "fr": "demande, requête"
+    "fr": "demande, requête",
+    "zinnen": [
+      "udu20sk3"
+    ]
   },
   {
     "nl": "voorbij",
@@ -444,7 +564,10 @@
     "tr": "ödünç olarak ödemek",
     "en": "to advance money, to pay upfront",
     "ar": "يدفع مسبقاً",
-    "fr": "avancer de l'argent"
+    "fr": "avancer de l'argent",
+    "zinnen": [
+      "s5fbo3pz"
+    ]
   },
   {
     "nl": "zich haasten",
@@ -462,7 +585,11 @@
     "tr": "sorumlu, yükümlü",
     "en": "liable, responsible",
     "ar": "مسؤول قانونياً",
-    "fr": "responsable, liable"
+    "fr": "responsable, liable",
+    "zinnen": [
+      "i2qtv57a",
+      "ozv8ebob"
+    ]
   },
   {
     "nl": "afsluiten",
@@ -472,7 +599,10 @@
     "tr": "imzalamak, kapatmak, sonlandırmak",
     "en": "to close, to sign (a contract)",
     "ar": "يُغلق، يُبرم (عقداً)",
-    "fr": "clore, souscrire"
+    "fr": "clore, souscrire",
+    "zinnen": [
+      "pg2zzqsm"
+    ]
   },
   {
     "nl": "antiek",
@@ -480,7 +610,10 @@
     "tr": "antika, eski",
     "en": "antique",
     "ar": "عتيق، تحفة",
-    "fr": "antique"
+    "fr": "antique",
+    "zinnen": [
+      "utlibf4j"
+    ]
   },
   {
     "nl": "bal",
@@ -489,7 +622,10 @@
     "tr": "top",
     "en": "ball",
     "ar": "كرة",
-    "fr": "balle, ballon"
+    "fr": "balle, ballon",
+    "zinnen": [
+      "4kzrpvd6"
+    ]
   },
   {
     "nl": "buitenkant",
@@ -498,7 +634,10 @@
     "tr": "dış taraf, dış görünüş",
     "en": "outside, exterior",
     "ar": "الخارج",
-    "fr": "extérieur"
+    "fr": "extérieur",
+    "zinnen": [
+      "797h1lzl"
+    ]
   },
   {
     "nl": "dekken",
@@ -508,7 +647,10 @@
     "tr": "kapsamak, örtmek",
     "en": "to cover",
     "ar": "يغطي",
-    "fr": "couvrir"
+    "fr": "couvrir",
+    "zinnen": [
+      "jl4ppsdu"
+    ]
   },
   {
     "nl": "diefstal",
@@ -517,7 +659,11 @@
     "tr": "hırsızlık",
     "en": "theft",
     "ar": "سرقة",
-    "fr": "vol"
+    "fr": "vol",
+    "zinnen": [
+      "v2ef76uk",
+      "e12fl1sk"
+    ]
   },
   {
     "nl": "eigendom",
@@ -526,7 +672,10 @@
     "tr": "mülkiyet, mülk",
     "en": "property, ownership",
     "ar": "ملكية",
-    "fr": "propriété"
+    "fr": "propriété",
+    "zinnen": [
+      "pg2zzqsm"
+    ]
   },
   {
     "nl": "inboedel",
@@ -535,7 +684,10 @@
     "tr": "ev eşyası, mobilya",
     "en": "household contents, furniture",
     "ar": "أثاث المنزل",
-    "fr": "mobilier, contenu du logement"
+    "fr": "mobilier, contenu du logement",
+    "zinnen": [
+      "v2ef76uk"
+    ]
   },
   {
     "nl": "kopie",
@@ -544,7 +696,10 @@
     "tr": "kopya, fotokopi",
     "en": "copy",
     "ar": "نسخة",
-    "fr": "copie"
+    "fr": "copie",
+    "zinnen": [
+      "f64fvnh7"
+    ]
   },
   {
     "nl": "lekkage",
@@ -553,7 +708,10 @@
     "tr": "su sızıntısı",
     "en": "leak, leakage",
     "ar": "تسرب، سرب",
-    "fr": "fuite, infiltration"
+    "fr": "fuite, infiltration",
+    "zinnen": [
+      "mguxq5oz"
+    ]
   },
   {
     "nl": "onverwacht",
@@ -570,7 +728,10 @@
     "tr": "kasıt, niyet",
     "en": "intent, deliberate act",
     "ar": "نية، قصد",
-    "fr": "intention, préméditation"
+    "fr": "intention, préméditation",
+    "zinnen": [
+      "e12fl1sk"
+    ]
   },
   {
     "nl": "ruil",
@@ -579,7 +740,10 @@
     "tr": "takas, değiş tokuş",
     "en": "exchange, swap",
     "ar": "مبادلة",
-    "fr": "échange"
+    "fr": "échange",
+    "zinnen": [
+      "n091ke4m"
+    ]
   },
   {
     "nl": "ruit",
@@ -588,7 +752,10 @@
     "tr": "cam, pencere camı",
     "en": "window pane, glass",
     "ar": "زجاج النافذة",
-    "fr": "vitre, carreau"
+    "fr": "vitre, carreau",
+    "zinnen": [
+      "eixmpnc7"
+    ]
   },
   {
     "nl": "schade",
@@ -597,7 +764,11 @@
     "tr": "hasar, zarar",
     "en": "damage",
     "ar": "ضرر، أذى",
-    "fr": "dommage, dégât"
+    "fr": "dommage, dégât",
+    "zinnen": [
+      "irfr4yz1",
+      "mguxq5oz"
+    ]
   },
   {
     "nl": "trappen",
@@ -616,7 +787,10 @@
     "tr": "vazo",
     "en": "vase",
     "ar": "مزهرية",
-    "fr": "vase"
+    "fr": "vase",
+    "zinnen": [
+      "684n9u6c"
+    ]
   },
   {
     "nl": "vergoeding",
@@ -625,7 +799,10 @@
     "tr": "tazminat, karşılık",
     "en": "compensation, allowance",
     "ar": "تعويض، بدل",
-    "fr": "indemnisation, compensation"
+    "fr": "indemnisation, compensation",
+    "zinnen": [
+      "d1lhc5jn"
+    ]
   },
   {
     "nl": "verzekeraar",
@@ -634,7 +811,11 @@
     "tr": "sigortacı",
     "en": "insurer",
     "ar": "شركة تأمين",
-    "fr": "assureur"
+    "fr": "assureur",
+    "zinnen": [
+      "irfr4yz1",
+      "d1lhc5jn"
+    ]
   },
   {
     "nl": "visite",
@@ -652,7 +833,10 @@
     "tr": "araç, taşıt",
     "en": "vehicle",
     "ar": "مركبة",
-    "fr": "véhicule"
+    "fr": "véhicule",
+    "zinnen": [
+      "797h1lzl"
+    ]
   },
   {
     "nl": "vrijwillig",
@@ -660,7 +844,10 @@
     "tr": "gönüllü",
     "en": "voluntary",
     "ar": "طوعي، تطوعي",
-    "fr": "volontaire, bénévole"
+    "fr": "volontaire, bénévole",
+    "zinnen": [
+      "aarvysbf"
+    ]
   },
   {
     "nl": "wet",
@@ -669,7 +856,10 @@
     "tr": "yasa, kanun",
     "en": "law",
     "ar": "قانون",
-    "fr": "loi"
+    "fr": "loi",
+    "zinnen": [
+      "i2qtv57a"
+    ]
   },
   {
     "nl": "wettelijk",
@@ -677,7 +867,11 @@
     "tr": "yasal, kanuni",
     "en": "legal, statutory",
     "ar": "قانوني",
-    "fr": "légal"
+    "fr": "légal",
+    "zinnen": [
+      "ozv8ebob",
+      "o11r9vk7"
+    ]
   },
   {
     "nl": "belediging",
@@ -686,7 +880,10 @@
     "tr": "hakaret, aşağılama",
     "en": "insult",
     "ar": "إهانة",
-    "fr": "insulte"
+    "fr": "insulte",
+    "zinnen": [
+      "plms1xtc"
+    ]
   },
   {
     "nl": "bijdragen",
@@ -705,7 +902,10 @@
     "tr": "gelin ve damat, evli çift",
     "en": "bridal couple, newlyweds",
     "ar": "العروسان",
-    "fr": "couple de mariés"
+    "fr": "couple de mariés",
+    "zinnen": [
+      "m6a8r4ro"
+    ]
   },
   {
     "nl": "brutaal",
@@ -713,7 +913,10 @@
     "tr": "arsız, yüzsüz",
     "en": "cheeky, impudent",
     "ar": "وقح، صفيق",
-    "fr": "effronté, impudent"
+    "fr": "effronté, impudent",
+    "zinnen": [
+      "3tzvte8j"
+    ]
   },
   {
     "nl": "eer",
@@ -722,7 +925,10 @@
     "tr": "onur, şeref",
     "en": "honour",
     "ar": "شرف",
-    "fr": "honneur"
+    "fr": "honneur",
+    "zinnen": [
+      "ucfn60u6"
+    ]
   },
   {
     "nl": "envelop",
@@ -731,7 +937,10 @@
     "tr": "zarf, mektup zarfı",
     "en": "envelope",
     "ar": "ظرف",
-    "fr": "enveloppe"
+    "fr": "enveloppe",
+    "zinnen": [
+      "kpl4dxh2"
+    ]
   },
   {
     "nl": "frituurpan",
@@ -740,7 +949,10 @@
     "tr": "fritöz",
     "en": "deep fryer",
     "ar": "مقلاة عميقة",
-    "fr": "friteuse"
+    "fr": "friteuse",
+    "zinnen": [
+      "0qwnxh1d"
+    ]
   },
   {
     "nl": "goud",
@@ -748,7 +960,11 @@
     "tr": "altın",
     "en": "gold",
     "ar": "ذهب",
-    "fr": "or"
+    "fr": "or",
+    "zinnen": [
+      "azjlga4a",
+      "b260j0rn"
+    ]
   },
   {
     "nl": "horloge",
@@ -757,7 +973,10 @@
     "tr": "kol saati",
     "en": "watch",
     "ar": "ساعة يد",
-    "fr": "montre"
+    "fr": "montre",
+    "zinnen": [
+      "azjlga4a"
+    ]
   },
   {
     "nl": "huishoudelijk",
@@ -765,7 +984,10 @@
     "tr": "ev işleriyle ilgili, ev eşyası",
     "en": "household, domestic",
     "ar": "منزلي",
-    "fr": "ménager, domestique"
+    "fr": "ménager, domestique",
+    "zinnen": [
+      "0qwnxh1d"
+    ]
   },
   {
     "nl": "ketting",
@@ -774,7 +996,10 @@
     "tr": "kolye, zincir",
     "en": "necklace, chain",
     "ar": "قلادة، سلسلة",
-    "fr": "collier, chaîne"
+    "fr": "collier, chaîne",
+    "zinnen": [
+      "azjlga4a"
+    ]
   },
   {
     "nl": "lieverd",
@@ -783,7 +1008,10 @@
     "tr": "sevgilim, canım",
     "en": "darling, sweetheart",
     "ar": "حبيبي، عزيزي",
-    "fr": "chéri, bien-aimé"
+    "fr": "chéri, bien-aimé",
+    "zinnen": [
+      "bmsqajlp"
+    ]
   },
   {
     "nl": "meebrengen",
@@ -793,7 +1021,10 @@
     "tr": "getirmek, yanında getirmek",
     "en": "to bring along",
     "ar": "يُحضر معه",
-    "fr": "apporter, amener"
+    "fr": "apporter, amener",
+    "zinnen": [
+      "m6a8r4ro"
+    ]
   },
   {
     "nl": "onpersoonlijk",
@@ -801,7 +1032,10 @@
     "tr": "kişisel olmayan, soğuk",
     "en": "impersonal",
     "ar": "غير شخصي",
-    "fr": "impersonnel"
+    "fr": "impersonnel",
+    "zinnen": [
+      "cm1hwb4g"
+    ]
   },
   {
     "nl": "opscheppen",
@@ -811,7 +1045,10 @@
     "tr": "böbürlenmek, övünmek",
     "en": "to boast, to brag",
     "ar": "يتفاخر، يتباهى",
-    "fr": "se vanter"
+    "fr": "se vanter",
+    "zinnen": [
+      "3tzvte8j"
+    ]
   },
   {
     "nl": "overdrijven",
@@ -821,7 +1058,11 @@
     "tr": "abartmak",
     "en": "to exaggerate",
     "ar": "يبالغ",
-    "fr": "exagérer"
+    "fr": "exagérer",
+    "zinnen": [
+      "9d69rczv",
+      "9sdtuv02"
+    ]
   },
   {
     "nl": "respecteren",
@@ -840,7 +1081,10 @@
     "tr": "yemek takımı, çay takımı",
     "en": "crockery, dinner service",
     "ar": "طقم أواني",
-    "fr": "service de table, vaisselle"
+    "fr": "service de table, vaisselle",
+    "zinnen": [
+      "6jktu8c9"
+    ]
   },
   {
     "nl": "staafmixer",
@@ -849,7 +1093,10 @@
     "tr": "çubuk blender",
     "en": "hand blender, stick blender",
     "ar": "خلاط يدوي",
-    "fr": "mixeur plongeant"
+    "fr": "mixeur plongeant",
+    "zinnen": [
+      "ojbs1jg4"
+    ]
   },
   {
     "nl": "stiefvader",
@@ -858,7 +1105,10 @@
     "tr": "üvey baba",
     "en": "stepfather",
     "ar": "زوج الأم، الأب الزوج",
-    "fr": "beau-père"
+    "fr": "beau-père",
+    "zinnen": [
+      "w3gr2s74"
+    ]
   },
   {
     "nl": "suggestie",
@@ -867,7 +1117,10 @@
     "tr": "öneri, fikir",
     "en": "suggestion",
     "ar": "اقتراح",
-    "fr": "suggestion"
+    "fr": "suggestion",
+    "zinnen": [
+      "6jktu8c9"
+    ]
   },
   {
     "nl": "terugbellen",
@@ -895,6 +1148,9 @@
     "tr": "gümüş",
     "en": "silver",
     "ar": "فضة",
-    "fr": "argent (métal)"
+    "fr": "argent (métal)",
+    "zinnen": [
+      "bmsqajlp"
+    ]
   }
 ]

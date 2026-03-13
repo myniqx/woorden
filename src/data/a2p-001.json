@@ -5,7 +5,11 @@
     "tr": "rahat",
     "en": "comfortable",
     "ar": "مريح",
-    "fr": "confortable"
+    "fr": "confortable",
+    "zinnen": [
+      "2dakho1n",
+      "kpbjkoq3"
+    ]
   },
   {
     "nl": "dromen",
@@ -44,7 +48,11 @@
     "tr": "sınıf arkadaşı",
     "en": "classmate",
     "ar": "زميل في الصف",
-    "fr": "camarade de classe"
+    "fr": "camarade de classe",
+    "zinnen": [
+      "opoofkn7",
+      "uiwwgpet"
+    ]
   },
   {
     "nl": "lui",
@@ -61,7 +69,10 @@
     "tr": "toplum",
     "en": "society",
     "ar": "مجتمع",
-    "fr": "société"
+    "fr": "société",
+    "zinnen": [
+      "hno8yad0"
+    ]
   },
   {
     "nl": "onafhankelijk",
@@ -69,7 +80,10 @@
     "tr": "bağımsız",
     "en": "independent",
     "ar": "مستقل",
-    "fr": "indépendant"
+    "fr": "indépendant",
+    "zinnen": [
+      "4ky76kmj"
+    ]
   },
   {
     "nl": "patiënt",
@@ -78,7 +92,11 @@
     "tr": "hasta (olan kişi)",
     "en": "patient",
     "ar": "مريض",
-    "fr": "patient"
+    "fr": "patient",
+    "zinnen": [
+      "7g63tyqw",
+      "ho8t4pz6"
+    ]
   },
   {
     "nl": "prioriteit",
@@ -96,7 +114,10 @@
     "tr": "terfi",
     "en": "promotion",
     "ar": "ترقية",
-    "fr": "promotion"
+    "fr": "promotion",
+    "zinnen": [
+      "poii6ygl"
+    ]
   },
   {
     "nl": "realistisch",
@@ -104,7 +125,10 @@
     "tr": "gerçekçi",
     "en": "realistic",
     "ar": "واقعي",
-    "fr": "réaliste"
+    "fr": "réaliste",
+    "zinnen": [
+      "ysjavyyi"
+    ]
   },
   {
     "nl": "vanwege",
@@ -112,7 +136,10 @@
     "tr": "-den dolayı",
     "en": "because of",
     "ar": "بسبب",
-    "fr": "à cause de"
+    "fr": "à cause de",
+    "zinnen": [
+      "9zd582lt"
+    ]
   },
   {
     "nl": "verklaren",
@@ -131,7 +158,10 @@
     "tr": "hemşirelik",
     "en": "nursing",
     "ar": "التمريض",
-    "fr": "soins infirmiers"
+    "fr": "soins infirmiers",
+    "zinnen": [
+      "dol8gygb"
+    ]
   },
   {
     "nl": "verpleegkundige",
@@ -140,7 +170,11 @@
     "tr": "hemşire, hasta bakıcısı",
     "en": "nurse",
     "ar": "ممرض / ممرضة",
-    "fr": "infirmier / infirmière"
+    "fr": "infirmier / infirmière",
+    "zinnen": [
+      "ai8r43nv",
+      "7g63tyqw"
+    ]
   },
   {
     "nl": "verwennen",
@@ -159,7 +193,10 @@
     "tr": "memnuniyet, tatmin",
     "en": "satisfaction",
     "ar": "رضا، قناعة",
-    "fr": "satisfaction"
+    "fr": "satisfaction",
+    "zinnen": [
+      "ho8t4pz6"
+    ]
   },
   {
     "nl": "waarde",
@@ -168,7 +205,10 @@
     "tr": "değer",
     "en": "value",
     "ar": "قيمة",
-    "fr": "valeur"
+    "fr": "valeur",
+    "zinnen": [
+      "ysjavyyi"
+    ]
   },
   {
     "nl": "zekerheid",
@@ -177,7 +217,10 @@
     "tr": "istikrar, güven",
     "en": "certainty, security",
     "ar": "يقين، أمان",
-    "fr": "certitude, sécurité"
+    "fr": "certitude, sécurité",
+    "zinnen": [
+      "omv6fcpw"
+    ]
   },
   {
     "nl": "zelden",
@@ -185,7 +228,10 @@
     "tr": "nadiren",
     "en": "rarely",
     "ar": "نادراً",
-    "fr": "rarement"
+    "fr": "rarement",
+    "zinnen": [
+      "3kr9u8sb"
+    ]
   },
   {
     "nl": "zo meteen",
@@ -201,7 +247,10 @@
     "tr": "özenli, şefkatli",
     "en": "caring",
     "ar": "مهتم، عطوف",
-    "fr": "attentionné"
+    "fr": "attentionné",
+    "zinnen": [
+      "uiwwgpet"
+    ]
   },
   {
     "nl": "ambtenaar",
@@ -210,7 +259,10 @@
     "tr": "memur",
     "en": "civil servant",
     "ar": "موظف حكومي",
-    "fr": "fonctionnaire"
+    "fr": "fonctionnaire",
+    "zinnen": [
+      "e9soqtdy"
+    ]
   },
   {
     "nl": "daarentegen",
@@ -237,7 +289,10 @@
     "tr": "disko",
     "en": "disco, nightclub",
     "ar": "ديسكو، ملهى ليلي",
-    "fr": "discothèque"
+    "fr": "discothèque",
+    "zinnen": [
+      "j627eyp7"
+    ]
   },
   {
     "nl": "huiswerk",
@@ -246,7 +301,10 @@
     "tr": "ev ödevi",
     "en": "homework",
     "ar": "واجب منزلي",
-    "fr": "devoir à la maison"
+    "fr": "devoir à la maison",
+    "zinnen": [
+      "peg1gsme"
+    ]
   },
   {
     "nl": "jeugd",
@@ -264,7 +322,10 @@
     "tr": "(evde yapılacak) iş",
     "en": "chore, odd job",
     "ar": "مهمة منزلية",
-    "fr": "corvée, petit travail"
+    "fr": "corvée, petit travail",
+    "zinnen": [
+      "khy7aaje"
+    ]
   },
   {
     "nl": "lerares",
@@ -273,7 +334,11 @@
     "tr": "(kadın) öğretmen",
     "en": "female teacher",
     "ar": "معلمة",
-    "fr": "professeure"
+    "fr": "professeure",
+    "zinnen": [
+      "peg1gsme",
+      "2f7hjoma"
+    ]
   },
   {
     "nl": "meehelpen",
@@ -291,7 +356,10 @@
     "tr": "insafsız, mantıksız",
     "en": "unreasonable",
     "ar": "غير معقول",
-    "fr": "déraisonnable"
+    "fr": "déraisonnable",
+    "zinnen": [
+      "0sh9vdoz"
+    ]
   },
   {
     "nl": "opstaan",
@@ -311,7 +379,10 @@
     "tr": "(çocuk) yetiştirmek",
     "en": "to raise, to bring up",
     "ar": "يربي",
-    "fr": "élever, éduquer"
+    "fr": "élever, éduquer",
+    "zinnen": [
+      "4p8wm3zm"
+    ]
   },
   {
     "nl": "rapport",
@@ -320,7 +391,10 @@
     "tr": "karne",
     "en": "report card",
     "ar": "كشف الدرجات",
-    "fr": "bulletin scolaire"
+    "fr": "bulletin scolaire",
+    "zinnen": [
+      "0sh9vdoz"
+    ]
   },
   {
     "nl": "rechtvaardig",
@@ -328,7 +402,10 @@
     "tr": "adil",
     "en": "fair, just",
     "ar": "عادل",
-    "fr": "juste, équitable"
+    "fr": "juste, équitable",
+    "zinnen": [
+      "ggzwfhj8"
+    ]
   },
   {
     "nl": "roddelen",
@@ -338,7 +415,10 @@
     "tr": "dedikodu yapmak",
     "en": "to gossip",
     "ar": "يتغيب",
-    "fr": "cancaner, faire des commérages"
+    "fr": "cancaner, faire des commérages",
+    "zinnen": [
+      "2f7hjoma"
+    ]
   },
   {
     "nl": "snoep",
@@ -347,7 +427,10 @@
     "tr": "abur cubur, şeker",
     "en": "sweets, candy",
     "ar": "حلوى",
-    "fr": "bonbons, sucreries"
+    "fr": "bonbons, sucreries",
+    "zinnen": [
+      "nh9xrn4g"
+    ]
   },
   {
     "nl": "speelgoed",
@@ -356,7 +439,10 @@
     "tr": "oyuncak",
     "en": "toys",
     "ar": "ألعاب",
-    "fr": "jouets"
+    "fr": "jouets",
+    "zinnen": [
+      "3vwhq4vq"
+    ]
   },
   {
     "nl": "straf",
@@ -365,7 +451,10 @@
     "tr": "ceza",
     "en": "punishment",
     "ar": "عقوبة",
-    "fr": "punition"
+    "fr": "punition",
+    "zinnen": [
+      "nh9xrn4g"
+    ]
   },
   {
     "nl": "terugdenken",
@@ -384,7 +473,11 @@
     "tr": "genç (13-19 yaş)",
     "en": "teenager",
     "ar": "مراهق",
-    "fr": "adolescent"
+    "fr": "adolescent",
+    "zinnen": [
+      "j627eyp7",
+      "8sh9ra5y"
+    ]
   },
   {
     "nl": "uitje",
@@ -402,7 +495,10 @@
     "tr": "sorumluluk",
     "en": "responsibility",
     "ar": "مسؤولية",
-    "fr": "responsabilité"
+    "fr": "responsabilité",
+    "zinnen": [
+      "ownctklw"
+    ]
   },
   {
     "nl": "verzorgd",
@@ -482,7 +578,11 @@
     "tr": "duygu",
     "en": "emotion",
     "ar": "عاطفة",
-    "fr": "émotion"
+    "fr": "émotion",
+    "zinnen": [
+      "5783817i",
+      "d8dffats"
+    ]
   },
   {
     "nl": "emotioneel",
@@ -490,7 +590,10 @@
     "tr": "duygusal",
     "en": "emotional",
     "ar": "عاطفي",
-    "fr": "émotionnel"
+    "fr": "émotionnel",
+    "zinnen": [
+      "cf34q8aa"
+    ]
   },
   {
     "nl": "geïrriteerd",
@@ -498,7 +601,10 @@
     "tr": "sinirlenmiş",
     "en": "irritated",
     "ar": "متضايق، منزعج",
-    "fr": "irrité"
+    "fr": "irrité",
+    "zinnen": [
+      "he29w1x1"
+    ]
   },
   {
     "nl": "mededeling",
@@ -507,7 +613,11 @@
     "tr": "duyuru, haber",
     "en": "announcement, notice",
     "ar": "إعلان، بلاغ",
-    "fr": "annonce, communication"
+    "fr": "annonce, communication",
+    "zinnen": [
+      "j8s0062g",
+      "20h5f7b8"
+    ]
   },
   {
     "nl": "menen",
@@ -517,7 +627,10 @@
     "tr": "ciddi olmak, kastetmek",
     "en": "to mean, to be serious",
     "ar": "يقصد، يعني",
-    "fr": "vouloir dire, être sérieux"
+    "fr": "vouloir dire, être sérieux",
+    "zinnen": [
+      "9d69rczv"
+    ]
   },
   {
     "nl": "nogmaals",
@@ -525,7 +638,10 @@
     "tr": "bir kez daha",
     "en": "once more, again",
     "ar": "مرة أخرى",
-    "fr": "encore une fois"
+    "fr": "encore une fois",
+    "zinnen": [
+      "j8s0062g"
+    ]
   },
   {
     "nl": "onzeker",
@@ -533,7 +649,10 @@
     "tr": "emin olmayan, kararsız",
     "en": "uncertain, insecure",
     "ar": "غير متأكد، مترددة",
-    "fr": "incertain, peu sûr"
+    "fr": "incertain, peu sûr",
+    "zinnen": [
+      "c4mgjdif"
+    ]
   },
   {
     "nl": "opgelucht",
@@ -541,7 +660,10 @@
     "tr": "rahatlamış",
     "en": "relieved",
     "ar": "مرتاح",
-    "fr": "soulagé"
+    "fr": "soulagé",
+    "zinnen": [
+      "6g4ge6l6"
+    ]
   },
   {
     "nl": "optimistisch",
@@ -549,7 +671,10 @@
     "tr": "iyimser",
     "en": "optimistic",
     "ar": "متفائل",
-    "fr": "optimiste"
+    "fr": "optimiste",
+    "zinnen": [
+      "d218xxr4"
+    ]
   },
   {
     "nl": "sensationeel",
@@ -567,7 +692,10 @@
     "tr": "başlamak",
     "en": "to start",
     "ar": "يبدأ",
-    "fr": "démarrer, commencer"
+    "fr": "démarrer, commencer",
+    "zinnen": [
+      "lxeybkaf"
+    ]
   },
   {
     "nl": "tentamen",
@@ -576,7 +704,13 @@
     "tr": "sınav",
     "en": "exam, test",
     "ar": "اختبار",
-    "fr": "examen"
+    "fr": "examen",
+    "zinnen": [
+      "6g4ge6l6",
+      "r0xy9k3k",
+      "wxgoqom4",
+      "oxa7nmm1"
+    ]
   },
   {
     "nl": "trillen",
@@ -594,7 +728,10 @@
     "tr": "gururlu",
     "en": "proud",
     "ar": "فخور",
-    "fr": "fier"
+    "fr": "fier",
+    "zinnen": [
+      "arlz22e4"
+    ]
   },
   {
     "nl": "tweeling",
@@ -603,7 +740,10 @@
     "tr": "ikiz",
     "en": "twins",
     "ar": "توأم",
-    "fr": "jumeaux"
+    "fr": "jumeaux",
+    "zinnen": [
+      "arlz22e4"
+    ]
   },
   {
     "nl": "verloofd",
@@ -611,7 +751,10 @@
     "tr": "nişanlı",
     "en": "engaged",
     "ar": "مخطوب",
-    "fr": "fiancé"
+    "fr": "fiancé",
+    "zinnen": [
+      "a0jpq6iw"
+    ]
   },
   {
     "nl": "verrassing",
@@ -620,7 +763,13 @@
     "tr": "sürpriz",
     "en": "surprise",
     "ar": "مفاجأة",
-    "fr": "surprise"
+    "fr": "surprise",
+    "zinnen": [
+      "cf34q8aa",
+      "ks1uiv4e",
+      "bglyic9b",
+      "ysqd3089"
+    ]
   },
   {
     "nl": "zakken",
@@ -658,7 +807,10 @@
     "tr": "parlak, çarpıcı",
     "en": "bright, intense",
     "ar": "ساطع، حاد",
-    "fr": "vif, intense"
+    "fr": "vif, intense",
+    "zinnen": [
+      "iybq7ivq"
+    ]
   },
   {
     "nl": "geslacht",
@@ -667,7 +819,10 @@
     "tr": "cinsiyet",
     "en": "gender, sex",
     "ar": "جنس",
-    "fr": "genre, sexe"
+    "fr": "genre, sexe",
+    "zinnen": [
+      "zj89muq9"
+    ]
   },
   {
     "nl": "hak",
@@ -676,7 +831,10 @@
     "tr": "topuk",
     "en": "heel",
     "ar": "كعب",
-    "fr": "talon"
+    "fr": "talon",
+    "zinnen": [
+      "98fhaytv"
+    ]
   },
   {
     "nl": "hip",
@@ -684,7 +842,10 @@
     "tr": "havalı, modern",
     "en": "hip, trendy",
     "ar": "عصري",
-    "fr": "branché"
+    "fr": "branché",
+    "zinnen": [
+      "98fhaytv"
+    ]
   },
   {
     "nl": "hoewel",
@@ -692,7 +853,11 @@
     "tr": "-e rağmen",
     "en": "although, even though",
     "ar": "على الرغم من",
-    "fr": "bien que, même si"
+    "fr": "bien que, même si",
+    "zinnen": [
+      "cd1x17va",
+      "eox8emvn"
+    ]
   },
   {
     "nl": "hoofddoek",
@@ -701,7 +866,10 @@
     "tr": "başörtüsü",
     "en": "headscarf",
     "ar": "حجاب",
-    "fr": "foulard"
+    "fr": "foulard",
+    "zinnen": [
+      "ksede0lv"
+    ]
   },
   {
     "nl": "identiteit",
@@ -710,7 +878,11 @@
     "tr": "kimlik",
     "en": "identity",
     "ar": "هوية",
-    "fr": "identité"
+    "fr": "identité",
+    "zinnen": [
+      "c4mgjdif",
+      "cd1x17va"
+    ]
   },
   {
     "nl": "make-up",
@@ -719,7 +891,10 @@
     "tr": "makyaj",
     "en": "make-up",
     "ar": "مكياج",
-    "fr": "maquillage"
+    "fr": "maquillage",
+    "zinnen": [
+      "tl0jyea4"
+    ]
   },
   {
     "nl": "moslima",
@@ -728,7 +903,10 @@
     "tr": "(kadın) Müslüman",
     "en": "Muslim woman",
     "ar": "مسلمة",
-    "fr": "femme musulmane"
+    "fr": "femme musulmane",
+    "zinnen": [
+      "2kvy6vp3"
+    ]
   },
   {
     "nl": "opvallend",
@@ -736,7 +914,11 @@
     "tr": "göz alıcı, dikkat çekici",
     "en": "striking, conspicuous",
     "ar": "لافت للنظر",
-    "fr": "frappant, remarquable"
+    "fr": "frappant, remarquable",
+    "zinnen": [
+      "46eob5lx",
+      "tl0jyea4"
+    ]
   },
   {
     "nl": "pet",
@@ -745,7 +927,10 @@
     "tr": "kasket",
     "en": "cap",
     "ar": "قبعة كاب",
-    "fr": "casquette"
+    "fr": "casquette",
+    "zinnen": [
+      "f0pvqgzv"
+    ]
   },
   {
     "nl": "rok",
@@ -763,7 +948,10 @@
     "tr": "takı",
     "en": "jewellery, ornament",
     "ar": "مجوهرات، حلية",
-    "fr": "bijou"
+    "fr": "bijou",
+    "zinnen": [
+      "ksede0lv"
+    ]
   },
   {
     "nl": "sneaker",
@@ -772,7 +960,10 @@
     "tr": "sneaker, spor ayakkabısı",
     "en": "sneaker",
     "ar": "حذاء رياضي",
-    "fr": "basket"
+    "fr": "basket",
+    "zinnen": [
+      "46eob5lx"
+    ]
   },
   {
     "nl": "snor",
@@ -781,7 +972,10 @@
     "tr": "bıyık",
     "en": "moustache",
     "ar": "شارب",
-    "fr": "moustache"
+    "fr": "moustache",
+    "zinnen": [
+      "e4hpbjd1"
+    ]
   },
   {
     "nl": "stijl",
@@ -790,7 +984,10 @@
     "tr": "stil",
     "en": "style",
     "ar": "أسلوب، ستايل",
-    "fr": "style"
+    "fr": "style",
+    "zinnen": [
+      "2kvy6vp3"
+    ]
   },
   {
     "nl": "strak",
@@ -798,7 +995,10 @@
     "tr": "dar, sıkı",
     "en": "tight, taut",
     "ar": "ضيق",
-    "fr": "serré, ajusté"
+    "fr": "serré, ajusté",
+    "zinnen": [
+      "f0pvqgzv"
+    ]
   },
   {
     "nl": "tatoeage",
@@ -807,7 +1007,11 @@
     "tr": "dövme",
     "en": "tattoo",
     "ar": "وشم",
-    "fr": "tatouage"
+    "fr": "tatouage",
+    "zinnen": [
+      "e4hpbjd1",
+      "jq80dwcj"
+    ]
   },
   {
     "nl": "trend",
@@ -816,7 +1020,11 @@
     "tr": "moda, eğilim",
     "en": "trend",
     "ar": "اتجاه، موضة",
-    "fr": "tendance"
+    "fr": "tendance",
+    "zinnen": [
+      "2dakho1n",
+      "3oensbsl"
+    ]
   },
   {
     "nl": "verplichten",
@@ -834,7 +1042,10 @@
     "tr": "kadınsı, dişil",
     "en": "feminine, female",
     "ar": "أنثوي",
-    "fr": "féminin"
+    "fr": "féminin",
+    "zinnen": [
+      "iybq7ivq"
+    ]
   },
   {
     "nl": "wijd",
@@ -842,7 +1053,10 @@
     "tr": "bol, geniş",
     "en": "wide, loose",
     "ar": "فضفاض، واسع",
-    "fr": "large, ample"
+    "fr": "large, ample",
+    "zinnen": [
+      "2dakho1n"
+    ]
   },
   {
     "nl": "zich kleden",

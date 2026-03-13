@@ -23,7 +23,10 @@
     "tr": "şimdiden, önceden",
     "en": "in advance, already",
     "ar": "مسبقاً",
-    "fr": "dès maintenant, à l'avance"
+    "fr": "dès maintenant, à l'avance",
+    "zinnen": [
+      "5azn5e2k"
+    ]
   },
   {
     "nl": "amper",
@@ -31,7 +34,10 @@
     "tr": "neredeyse hiç, güçlükle",
     "en": "barely, hardly",
     "ar": "بالكاد",
-    "fr": "à peine"
+    "fr": "à peine",
+    "zinnen": [
+      "pujyvfhp"
+    ]
   },
   {
     "nl": "bank",
@@ -40,7 +46,13 @@
     "tr": "banka / kanepe",
     "en": "bank / sofa",
     "ar": "بنك / أريكة",
-    "fr": "banque / canapé"
+    "fr": "banque / canapé",
+    "zinnen": [
+      "qrlox29b",
+      "1a3b6rni",
+      "qpatziv6",
+      "5wap2ap8"
+    ]
   },
   {
     "nl": "glad",
@@ -48,7 +60,11 @@
     "tr": "kaygan, düzgün",
     "en": "smooth, slippery",
     "ar": "أملس، زلق",
-    "fr": "lisse, glissant"
+    "fr": "lisse, glissant",
+    "zinnen": [
+      "rqi63row",
+      "1a3b6rni"
+    ]
   },
   {
     "nl": "heftig",
@@ -56,7 +72,10 @@
     "tr": "ciddi, şiddetli",
     "en": "intense, fierce",
     "ar": "عنيف، شديد",
-    "fr": "intense, violent"
+    "fr": "intense, violent",
+    "zinnen": [
+      "unqfgh13"
+    ]
   },
   {
     "nl": "inbraak",
@@ -65,7 +84,11 @@
     "tr": "hırsızlık, ev soyma",
     "en": "burglary, break-in",
     "ar": "سطو، اقتحام",
-    "fr": "cambriolage"
+    "fr": "cambriolage",
+    "zinnen": [
+      "kptkg0k7",
+      "eixmpnc7"
+    ]
   },
   {
     "nl": "inmiddels",
@@ -73,7 +96,10 @@
     "tr": "bu arada, artık",
     "en": "meanwhile, by now",
     "ar": "في غضون ذلك، الآن",
-    "fr": "entre-temps, désormais"
+    "fr": "entre-temps, désormais",
+    "zinnen": [
+      "lavmygaz"
+    ]
   },
   {
     "nl": "kok",
@@ -82,7 +108,10 @@
     "tr": "aşçı",
     "en": "cook, chef",
     "ar": "طاهٍ",
-    "fr": "cuisinier, chef"
+    "fr": "cuisinier, chef",
+    "zinnen": [
+      "v39ssb49"
+    ]
   },
   {
     "nl": "mistig",
@@ -90,7 +119,10 @@
     "tr": "sisli",
     "en": "foggy, misty",
     "ar": "ضبابي",
-    "fr": "brumeux"
+    "fr": "brumeux",
+    "zinnen": [
+      "1nxxtknm"
+    ]
   },
   {
     "nl": "motor",
@@ -99,7 +131,10 @@
     "tr": "motosiklet / motor",
     "en": "motorbike / engine",
     "ar": "دراجة نارية / محرك",
-    "fr": "moto / moteur"
+    "fr": "moto / moteur",
+    "zinnen": [
+      "ipx83th0"
+    ]
   },
   {
     "nl": "pardon",
@@ -107,7 +142,10 @@
     "tr": "affedersiniz, özür dilerim",
     "en": "pardon, excuse me",
     "ar": "عذراً، آسف",
-    "fr": "pardon, excusez-moi"
+    "fr": "pardon, excusez-moi",
+    "zinnen": [
+      "yzicrqc6"
+    ]
   },
   {
     "nl": "rijles",
@@ -116,7 +154,10 @@
     "tr": "direksiyon dersi",
     "en": "driving lesson",
     "ar": "درس قيادة",
-    "fr": "leçon de conduite"
+    "fr": "leçon de conduite",
+    "zinnen": [
+      "2u19dw4r"
+    ]
   },
   {
     "nl": "schoonfamilie",
@@ -125,7 +166,11 @@
     "tr": "kayınlar, eşin ailesi",
     "en": "in-laws",
     "ar": "أهل الزوج / الزوجة",
-    "fr": "belle-famille"
+    "fr": "belle-famille",
+    "zinnen": [
+      "avydfn0f",
+      "0kavaum1"
+    ]
   },
   {
     "nl": "schuur",
@@ -134,7 +179,10 @@
     "tr": "ahır, ek bina",
     "en": "barn, shed",
     "ar": "حظيرة، مستودع",
-    "fr": "grange, remise"
+    "fr": "grange, remise",
+    "zinnen": [
+      "kptkg0k7"
+    ]
   },
   {
     "nl": "stoer",
@@ -142,7 +190,10 @@
     "tr": "cesur, havalı",
     "en": "tough, cool",
     "ar": "شجاع، بارد",
-    "fr": "courageux, cool"
+    "fr": "courageux, cool",
+    "zinnen": [
+      "ipx83th0"
+    ]
   },
   {
     "nl": "tenminste",
@@ -150,7 +201,10 @@
     "tr": "en azından",
     "en": "at least",
     "ar": "على الأقل",
-    "fr": "au moins"
+    "fr": "au moins",
+    "zinnen": [
+      "bbv8da2q"
+    ]
   },
   {
     "nl": "troep",
@@ -159,7 +213,11 @@
     "tr": "dağınıklık, ıvır zıvır",
     "en": "mess, junk",
     "ar": "فوضى",
-    "fr": "désordre, bric-à-brac"
+    "fr": "désordre, bric-à-brac",
+    "zinnen": [
+      "unqfgh13",
+      "pyoapecb"
+    ]
   },
   {
     "nl": "uit eten",
@@ -187,7 +245,10 @@
     "tr": "tutmak",
     "en": "to hold, to keep",
     "ar": "يمسك، يحتفظ",
-    "fr": "tenir, retenir"
+    "fr": "tenir, retenir",
+    "zinnen": [
+      "xpsplt3h"
+    ]
   },
   {
     "nl": "verliezen",
@@ -197,7 +258,10 @@
     "tr": "kaybetmek",
     "en": "to lose",
     "ar": "يخسر، يفقد",
-    "fr": "perdre"
+    "fr": "perdre",
+    "zinnen": [
+      "qxl5i8c3"
+    ]
   },
   {
     "nl": "voorzichtig",
@@ -205,7 +269,11 @@
     "tr": "dikkatli, ihtiyatlı",
     "en": "careful, cautious",
     "ar": "حذر، دقيق",
-    "fr": "prudent, attentif"
+    "fr": "prudent, attentif",
+    "zinnen": [
+      "1nxxtknm",
+      "1a3b6rni"
+    ]
   },
   {
     "nl": "aanleren",
@@ -215,7 +283,10 @@
     "tr": "öğretmek, kazandırmak",
     "en": "to teach, to learn (a skill)",
     "ar": "يعلم، يكتسب مهارة",
-    "fr": "enseigner, apprendre"
+    "fr": "enseigner, apprendre",
+    "zinnen": [
+      "tleia0qa"
+    ]
   },
   {
     "nl": "afruimen",
@@ -225,7 +296,10 @@
     "tr": "(sofrayı) toplamak, kaldırmak",
     "en": "to clear (the table)",
     "ar": "يرتب الطاولة",
-    "fr": "débarrasser (la table)"
+    "fr": "débarrasser (la table)",
+    "zinnen": [
+      "iv35ya76"
+    ]
   },
   {
     "nl": "bad",
@@ -234,7 +308,10 @@
     "tr": "banyo, küvet",
     "en": "bath, bathtub",
     "ar": "حمام، بانيو",
-    "fr": "bain, baignoire"
+    "fr": "bain, baignoire",
+    "zinnen": [
+      "ovkwmjyt"
+    ]
   },
   {
     "nl": "bakken",
@@ -244,7 +321,11 @@
     "tr": "kızartmak, pişirmek",
     "en": "to fry, to bake",
     "ar": "يقلي، يخبز",
-    "fr": "frire, cuire"
+    "fr": "frire, cuire",
+    "zinnen": [
+      "bwt6guij",
+      "35cjfqbc"
+    ]
   },
   {
     "nl": "bestek",
@@ -253,7 +334,11 @@
     "tr": "çatal bıçak takımı",
     "en": "cutlery",
     "ar": "أدوات المائدة",
-    "fr": "couverts"
+    "fr": "couverts",
+    "zinnen": [
+      "eu3v8ewg",
+      "vzo2uijr"
+    ]
   },
   {
     "nl": "blaadje",
@@ -280,7 +365,10 @@
     "tr": "tartışma",
     "en": "discussion, debate",
     "ar": "نقاش",
-    "fr": "discussion, débat"
+    "fr": "discussion, débat",
+    "zinnen": [
+      "fy7x59ry"
+    ]
   },
   {
     "nl": "helder",
@@ -288,7 +376,10 @@
     "tr": "net, açık, berrak",
     "en": "clear, bright",
     "ar": "واضح، صافٍ",
-    "fr": "clair, limpide"
+    "fr": "clair, limpide",
+    "zinnen": [
+      "axzg6sd3"
+    ]
   },
   {
     "nl": "herhalen",
@@ -298,7 +389,10 @@
     "tr": "tekrarlamak",
     "en": "to repeat",
     "ar": "يكرر",
-    "fr": "répéter"
+    "fr": "répéter",
+    "zinnen": [
+      "e2ewx6zi"
+    ]
   },
   {
     "nl": "inpakken",
@@ -308,7 +402,11 @@
     "tr": "hazırlamak, toplamak, paketlemek",
     "en": "to pack",
     "ar": "يحزم، يعبئ",
-    "fr": "emballer, faire ses bagages"
+    "fr": "emballer, faire ses bagages",
+    "zinnen": [
+      "y5xn5l8z",
+      "2xhgbs6f"
+    ]
   },
   {
     "nl": "kortom",
@@ -316,7 +414,10 @@
     "tr": "kısacası",
     "en": "in short, in brief",
     "ar": "باختصار",
-    "fr": "en bref, bref"
+    "fr": "en bref, bref",
+    "zinnen": [
+      "g7bn8yt7"
+    ]
   },
   {
     "nl": "lunch",
@@ -325,7 +426,11 @@
     "tr": "öğle yemeği",
     "en": "lunch",
     "ar": "غداء",
-    "fr": "déjeuner"
+    "fr": "déjeuner",
+    "zinnen": [
+      "kn1w84b6",
+      "e75rcebq"
+    ]
   },
   {
     "nl": "meerdere",
@@ -333,7 +438,11 @@
     "tr": "birden çok, birkaç",
     "en": "several, multiple",
     "ar": "عدة، أكثر من واحد",
-    "fr": "plusieurs"
+    "fr": "plusieurs",
+    "zinnen": [
+      "e2ewx6zi",
+      "3grij8ns"
+    ]
   },
   {
     "nl": "negeren",
@@ -343,7 +452,10 @@
     "tr": "görmezden gelmek",
     "en": "to ignore",
     "ar": "يتجاهل",
-    "fr": "ignorer"
+    "fr": "ignorer",
+    "zinnen": [
+      "s17p9wiv"
+    ]
   },
   {
     "nl": "regelmaat",
@@ -352,7 +464,10 @@
     "tr": "düzen, düzenlilik",
     "en": "regularity, routine",
     "ar": "انتظام، روتين",
-    "fr": "régularité, routine"
+    "fr": "régularité, routine",
+    "zinnen": [
+      "54vntx5s"
+    ]
   },
   {
     "nl": "slaan",
@@ -362,7 +477,10 @@
     "tr": "vurmak, tokat atmak",
     "en": "to hit, to slap",
     "ar": "يضرب",
-    "fr": "frapper, gifler"
+    "fr": "frapper, gifler",
+    "zinnen": [
+      "a4qlec5n"
+    ]
   },
   {
     "nl": "smeren",
@@ -381,7 +499,11 @@
     "tr": "destek",
     "en": "support",
     "ar": "دعم",
-    "fr": "soutien"
+    "fr": "soutien",
+    "zinnen": [
+      "krf82bs6",
+      "6pvs396n"
+    ]
   },
   {
     "nl": "structuur",
@@ -390,7 +512,10 @@
     "tr": "yapı, düzen",
     "en": "structure",
     "ar": "بنية، هيكل",
-    "fr": "structure"
+    "fr": "structure",
+    "zinnen": [
+      "lt02qqww"
+    ]
   },
   {
     "nl": "toestemming",
@@ -399,7 +524,10 @@
     "tr": "izin, onay",
     "en": "permission, consent",
     "ar": "إذن، موافقة",
-    "fr": "permission, autorisation"
+    "fr": "permission, autorisation",
+    "zinnen": [
+      "yxcfxr79"
+    ]
   },
   {
     "nl": "uiterlijk",
@@ -424,7 +552,10 @@
     "tr": "özgüven",
     "en": "self-confidence",
     "ar": "ثقة بالنفس",
-    "fr": "confiance en soi"
+    "fr": "confiance en soi",
+    "zinnen": [
+      "mtpb3lvi"
+    ]
   },
   {
     "nl": "zich ergeren",
@@ -452,7 +583,11 @@
     "tr": "cenaze",
     "en": "funeral",
     "ar": "جنازة",
-    "fr": "enterrement, funérailles"
+    "fr": "enterrement, funérailles",
+    "zinnen": [
+      "istqvh0t",
+      "z64i6b97"
+    ]
   },
   {
     "nl": "bidden",
@@ -462,7 +597,10 @@
     "tr": "dua etmek",
     "en": "to pray",
     "ar": "يصلي، يدعو",
-    "fr": "prier"
+    "fr": "prier",
+    "zinnen": [
+      "gd12ppa4"
+    ]
   },
   {
     "nl": "condoleren",
@@ -472,7 +610,10 @@
     "tr": "baş sağlığı dilemek",
     "en": "to condole, to offer condolences",
     "ar": "يعزي",
-    "fr": "présenter ses condoléances"
+    "fr": "présenter ses condoléances",
+    "zinnen": [
+      "6330at9a"
+    ]
   },
   {
     "nl": "crematie",
@@ -481,7 +622,10 @@
     "tr": "kremasyon, ölü yakma",
     "en": "cremation",
     "ar": "حرق الجثة",
-    "fr": "crémation"
+    "fr": "crémation",
+    "zinnen": [
+      "istqvh0t"
+    ]
   },
   {
     "nl": "diner",
@@ -490,7 +634,10 @@
     "tr": "akşam yemeği",
     "en": "dinner",
     "ar": "عشاء",
-    "fr": "dîner"
+    "fr": "dîner",
+    "zinnen": [
+      "6vt6o548"
+    ]
   },
   {
     "nl": "favoriet",
@@ -498,7 +645,10 @@
     "tr": "en sevilen, favori",
     "en": "favourite",
     "ar": "مفضل",
-    "fr": "favori, préféré"
+    "fr": "favori, préféré",
+    "zinnen": [
+      "6vt6o548"
+    ]
   },
   {
     "nl": "fit",
@@ -506,7 +656,10 @@
     "tr": "diri, formda",
     "en": "fit, in shape",
     "ar": "في صحة جيدة، رشيق",
-    "fr": "en forme"
+    "fr": "en forme",
+    "zinnen": [
+      "wwvuq9yk"
+    ]
   },
   {
     "nl": "graf",
@@ -515,7 +668,10 @@
     "tr": "mezar",
     "en": "grave",
     "ar": "قبر",
-    "fr": "tombe"
+    "fr": "tombe",
+    "zinnen": [
+      "6330at9a"
+    ]
   },
   {
     "nl": "hapje",
@@ -533,7 +689,10 @@
     "tr": "kilise ayini",
     "en": "church service",
     "ar": "قداس كنسي",
-    "fr": "service religieux"
+    "fr": "service religieux",
+    "zinnen": [
+      "1shtkgtw"
+    ]
   },
   {
     "nl": "kist",
@@ -542,7 +701,10 @@
     "tr": "tabut",
     "en": "coffin",
     "ar": "نعش",
-    "fr": "cercueil"
+    "fr": "cercueil",
+    "zinnen": [
+      "gd12ppa4"
+    ]
   },
   {
     "nl": "koor",
@@ -551,7 +713,10 @@
     "tr": "koro",
     "en": "choir",
     "ar": "جوقة، كورال",
-    "fr": "chœur"
+    "fr": "chœur",
+    "zinnen": [
+      "2gn8fa6l"
+    ]
   },
   {
     "nl": "liedje",
@@ -560,7 +725,10 @@
     "tr": "şarkı",
     "en": "song",
     "ar": "أغنية",
-    "fr": "chanson"
+    "fr": "chanson",
+    "zinnen": [
+      "1shtkgtw"
+    ]
   },
   {
     "nl": "men",
@@ -576,7 +744,10 @@
     "tr": "dokunaklı, duygusal",
     "en": "touching, moving",
     "ar": "مؤثر، مُحرِّك للمشاعر",
-    "fr": "émouvant, touchant"
+    "fr": "émouvant, touchant",
+    "zinnen": [
+      "2gn8fa6l"
+    ]
   },
   {
     "nl": "overmorgen",
@@ -584,7 +755,11 @@
     "tr": "öbür gün",
     "en": "the day after tomorrow",
     "ar": "بعد غد",
-    "fr": "après-demain"
+    "fr": "après-demain",
+    "zinnen": [
+      "istqvh0t",
+      "gbfmrlrw"
+    ]
   },
   {
     "nl": "plaatsvinden",
@@ -594,7 +769,10 @@
     "tr": "gerçekleşmek",
     "en": "to take place",
     "ar": "يجري، يقع",
-    "fr": "avoir lieu"
+    "fr": "avoir lieu",
+    "zinnen": [
+      "hva0bb6s"
+    ]
   },
   {
     "nl": "ritueel",
@@ -603,7 +781,10 @@
     "tr": "tören, ritüel",
     "en": "ritual",
     "ar": "طقس، شعيرة",
-    "fr": "rituel"
+    "fr": "rituel",
+    "zinnen": [
+      "f1oyn7c8"
+    ]
   },
   {
     "nl": "somber",
@@ -611,7 +792,10 @@
     "tr": "hüzünlü, kasvetli",
     "en": "gloomy, sombre",
     "ar": "كئيب، قاتم",
-    "fr": "sombre, mélancolique"
+    "fr": "sombre, mélancolique",
+    "zinnen": [
+      "f1oyn7c8"
+    ]
   },
   {
     "nl": "sterven",
@@ -631,7 +815,10 @@
     "tr": "avutmak, teselli etmek",
     "en": "to comfort, to console",
     "ar": "يواسي، يعزي",
-    "fr": "consoler, réconforter"
+    "fr": "consoler, réconforter",
+    "zinnen": [
+      "gxppjqww"
+    ]
   },
   {
     "nl": "uitvaart",
@@ -640,7 +827,11 @@
     "tr": "cenaze töreni",
     "en": "funeral",
     "ar": "مراسم الجنازة",
-    "fr": "obsèques"
+    "fr": "obsèques",
+    "zinnen": [
+      "hva0bb6s",
+      "wwvuq9yk"
+    ]
   },
   {
     "nl": "verdriet",
@@ -649,7 +840,10 @@
     "tr": "üzüntü, keder",
     "en": "grief, sadness",
     "ar": "حزن",
-    "fr": "chagrin, tristesse"
+    "fr": "chagrin, tristesse",
+    "zinnen": [
+      "gxppjqww"
+    ]
   },
   {
     "nl": "zingen",
@@ -659,7 +853,10 @@
     "tr": "şarkı söylemek",
     "en": "to sing",
     "ar": "يغني",
-    "fr": "chanter"
+    "fr": "chanter",
+    "zinnen": [
+      "1shtkgtw"
+    ]
   },
   {
     "nl": "aanmoedigen",
@@ -669,7 +866,10 @@
     "tr": "moral vermek, cesaretlendirmek",
     "en": "to encourage",
     "ar": "يشجع",
-    "fr": "encourager"
+    "fr": "encourager",
+    "zinnen": [
+      "4efn1ap6"
+    ]
   },
   {
     "nl": "avontuur",
@@ -688,7 +888,10 @@
     "tr": "üzülmek, siniri bozulmak",
     "en": "to be fed up, to be disappointed",
     "ar": "يضيق، يحزن",
-    "fr": "être déçu, en avoir marre"
+    "fr": "être déçu, en avoir marre",
+    "zinnen": [
+      "m5thrxs5"
+    ]
   },
   {
     "nl": "chocola",
@@ -707,7 +910,10 @@
     "tr": "tartışmak",
     "en": "to discuss, to debate",
     "ar": "يناقش",
-    "fr": "discuter, débattre"
+    "fr": "discuter, débattre",
+    "zinnen": [
+      "ma6afkw4"
+    ]
   },
   {
     "nl": "eindeloos",
@@ -715,7 +921,10 @@
     "tr": "sonsuz, bitmez",
     "en": "endless",
     "ar": "لا نهاية له",
-    "fr": "interminable, sans fin"
+    "fr": "interminable, sans fin",
+    "zinnen": [
+      "fy7x59ry"
+    ]
   },
   {
     "nl": "excursie",
@@ -724,7 +933,11 @@
     "tr": "gezi, okul gezisi",
     "en": "excursion, field trip",
     "ar": "رحلة، نزهة",
-    "fr": "excursion, sortie scolaire"
+    "fr": "excursion, sortie scolaire",
+    "zinnen": [
+      "k9bnmtk9",
+      "yxcfxr79"
+    ]
   },
   {
     "nl": "extreem",
@@ -732,7 +945,10 @@
     "tr": "aşırı",
     "en": "extreme",
     "ar": "متطرف، شديد",
-    "fr": "extrême"
+    "fr": "extrême",
+    "zinnen": [
+      "k9bnmtk9"
+    ]
   },
   {
     "nl": "geheim",
@@ -741,7 +957,11 @@
     "tr": "sır",
     "en": "secret",
     "ar": "سر",
-    "fr": "secret"
+    "fr": "secret",
+    "zinnen": [
+      "rx9u8x7p",
+      "yp1o9vs7"
+    ]
   },
   {
     "nl": "geruststellen",
@@ -751,7 +971,10 @@
     "tr": "rahatlatmak, yatıştırmak",
     "en": "to reassure",
     "ar": "يطمئن",
-    "fr": "rassurer"
+    "fr": "rassurer",
+    "zinnen": [
+      "ysqd3089"
+    ]
   },
   {
     "nl": "gitaar",
@@ -760,7 +983,10 @@
     "tr": "gitar",
     "en": "guitar",
     "ar": "جيتار",
-    "fr": "guitare"
+    "fr": "guitare",
+    "zinnen": [
+      "zok5oypy"
+    ]
   },
   {
     "nl": "kroeg",
@@ -769,7 +995,11 @@
     "tr": "bar, birahane",
     "en": "pub, bar",
     "ar": "حانة",
-    "fr": "café, bar"
+    "fr": "café, bar",
+    "zinnen": [
+      "v39ssb49",
+      "zok5oypy"
+    ]
   },
   {
     "nl": "liefs",
@@ -786,7 +1016,10 @@
     "tr": "ortak nokta, benzerlik",
     "en": "similarity, agreement",
     "ar": "تشابه، اتفاق",
-    "fr": "ressemblance, accord"
+    "fr": "ressemblance, accord",
+    "zinnen": [
+      "ma6afkw4"
+    ]
   },
   {
     "nl": "psychologie",
@@ -795,7 +1028,11 @@
     "tr": "psikoloji",
     "en": "psychology",
     "ar": "علم النفس",
-    "fr": "psychologie"
+    "fr": "psychologie",
+    "zinnen": [
+      "89gz15vt",
+      "qje7l3a0"
+    ]
   },
   {
     "nl": "rechten",
@@ -804,7 +1041,10 @@
     "tr": "hukuk",
     "en": "law",
     "ar": "القانون",
-    "fr": "droit"
+    "fr": "droit",
+    "zinnen": [
+      "nzqtgl5d"
+    ]
   },
   {
     "nl": "steunen",
@@ -814,7 +1054,11 @@
     "tr": "desteklemek",
     "en": "to support",
     "ar": "يدعم",
-    "fr": "soutenir"
+    "fr": "soutenir",
+    "zinnen": [
+      "5vziojol",
+      "nzqtgl5d"
+    ]
   },
   {
     "nl": "stiekem",
@@ -822,7 +1066,10 @@
     "tr": "gizlice",
     "en": "secretly, sneakily",
     "ar": "سراً",
-    "fr": "en secret, discrètement"
+    "fr": "en secret, discrètement",
+    "zinnen": [
+      "rx9u8x7p"
+    ]
   },
   {
     "nl": "sympathiek",
@@ -830,7 +1077,10 @@
     "tr": "sempatik, hoş",
     "en": "sympathetic, nice",
     "ar": "لطيف، محبوب",
-    "fr": "sympathique"
+    "fr": "sympathique",
+    "zinnen": [
+      "oh3tbcsr"
+    ]
   },
   {
     "nl": "verdwalen",
@@ -840,7 +1090,10 @@
     "tr": "yolu kaybetmek",
     "en": "to get lost",
     "ar": "يضيع، يتيه",
-    "fr": "se perdre"
+    "fr": "se perdre",
+    "zinnen": [
+      "8cbtaolu"
+    ]
   },
   {
     "nl": "verlegen",
@@ -848,7 +1101,10 @@
     "tr": "çekingen, utangaç",
     "en": "shy, timid",
     "ar": "خجول",
-    "fr": "timide, gêné"
+    "fr": "timide, gêné",
+    "zinnen": [
+      "oh3tbcsr"
+    ]
   },
   {
     "nl": "volwassen",
@@ -856,7 +1112,10 @@
     "tr": "büyük, olgun, yetişkin",
     "en": "adult, mature",
     "ar": "ناضج، بالغ",
-    "fr": "adulte, mature"
+    "fr": "adulte, mature",
+    "zinnen": [
+      "i2e26sd6"
+    ]
   },
   {
     "nl": "waarderen",
@@ -866,7 +1125,10 @@
     "tr": "takdir etmek",
     "en": "to appreciate, to value",
     "ar": "يُقدِّر",
-    "fr": "apprécier, valoriser"
+    "fr": "apprécier, valoriser",
+    "zinnen": [
+      "uft7dyxg"
+    ]
   },
   {
     "nl": "wensen",
@@ -884,6 +1146,9 @@
     "tr": "-ir -mez, hemen ardından",
     "en": "as soon as",
     "ar": "بمجرد أن",
-    "fr": "dès que"
+    "fr": "dès que",
+    "zinnen": [
+      "aondw3fo"
+    ]
   }
 ]
