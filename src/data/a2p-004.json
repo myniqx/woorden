@@ -1,101 +1,1299 @@
 [
-  {"nl": "akkoord", "article": "het", "type": "noun", "tr": "anlaşma, mutabakat", "en": "agreement, accord", "ar": "اتفاق، تفاهم", "fr": "accord"},
-  {"nl": "arbeidsvoorwaarden", "article": "de", "type": "noun", "tr": "çalışma koşulları", "en": "employment conditions, terms of employment", "ar": "شروط العمل", "fr": "conditions de travail"},
-  {"nl": "cao", "article": "de", "type": "noun", "tr": "kolektif iş sözleşmesi", "en": "collective labour agreement", "ar": "اتفاقية العمل الجماعية", "fr": "convention collective de travail"},
-  {"nl": "communicatie", "article": "de", "type": "noun", "tr": "iletişim", "en": "communication", "ar": "تواصل، اتصال", "fr": "communication"},
-  {"nl": "contract", "article": "het", "type": "noun", "tr": "sözleşme, kontrat", "en": "contract", "ar": "عقد", "fr": "contrat"},
-  {"nl": "doorgroeien", "type": "verb", "perfectum": "doorgegroeid", "imperfectum": "groeide door", "tr": "ilerlemek, yükselmek", "en": "to advance, to grow further", "ar": "يتقدم، يرتقي", "fr": "évoluer, progresser"},
-  {"nl": "Europeaan", "article": "de", "type": "noun", "tr": "Avrupalı", "en": "European", "ar": "أوروبي", "fr": "Européen"},
-  {"nl": "indicatie", "article": "de", "type": "noun", "tr": "gösterge, ipucu", "en": "indication", "ar": "مؤشر، دلالة", "fr": "indication"},
-  {"nl": "inkomsten", "article": "de", "type": "noun", "tr": "gelirler", "en": "income, earnings", "ar": "دخل، عائدات", "fr": "revenus"},
-  {"nl": "loonsverhoging", "article": "de", "type": "noun", "tr": "ücret artışı, zam", "en": "pay rise, salary increase", "ar": "زيادة الراتب", "fr": "augmentation de salaire"},
-  {"nl": "masteropleiding", "article": "de", "type": "noun", "tr": "yüksek lisans programı", "en": "master's programme", "ar": "برنامج الماجستير", "fr": "master, formation de master"},
-  {"nl": "netto", "type": "adj", "tr": "net (vergi sonrası)", "en": "net", "ar": "صافٍ", "fr": "net"},
-  {"nl": "onderhandelen", "type": "verb", "perfectum": "onderhandeld", "imperfectum": "onderhandelde", "tr": "pazarlık yapmak, müzakere etmek", "en": "to negotiate", "ar": "يفاوض", "fr": "négocier"},
-  {"nl": "ongemakkelijk", "type": "adj", "tr": "rahatsız edici, tuhaf", "en": "uncomfortable, awkward", "ar": "غير مريح، محرج", "fr": "inconfortable, gêné"},
-  {"nl": "redden", "type": "verb", "perfectum": "gered", "imperfectum": "redde", "tr": "kurtarmak, başarmak", "en": "to save, to manage", "ar": "ينقذ، يُفلح", "fr": "sauver, s'en sortir"},
-  {"nl": "salarisschaal", "article": "de", "type": "noun", "tr": "maaş kademesi, ücret skalası", "en": "salary scale, pay grade", "ar": "سلم الرواتب", "fr": "grille salariale"},
-  {"nl": "strategie", "article": "de", "type": "noun", "tr": "strateji", "en": "strategy", "ar": "استراتيجية", "fr": "stratégie"},
-  {"nl": "tegenvallen", "type": "verb", "perfectum": "tegengevallen", "imperfectum": "viel tegen", "tr": "hayal kırıklığı yaratmak, beklentinin altında kalmak", "en": "to disappoint, to fall short", "ar": "يخيب الظن", "fr": "décevoir, ne pas être à la hauteur"},
-  {"nl": "uitvoeren", "type": "verb", "perfectum": "uitgevoerd", "imperfectum": "voerde uit", "tr": "yerine getirmek, uygulamak", "en": "to carry out, to execute", "ar": "ينفذ، يُطبِّق", "fr": "exécuter, mettre en œuvre"},
-  {"nl": "vakantiedag", "article": "de", "type": "noun", "tr": "tatil günü, izin günü", "en": "holiday day, day off", "ar": "يوم إجازة", "fr": "jour de congé"},
-  {"nl": "verdeling", "article": "de", "type": "noun", "tr": "dağılım, paylaşım", "en": "distribution, division", "ar": "توزيع", "fr": "répartition, distribution"},
-  {"nl": "voorkomen", "type": "verb", "perfectum": "voorgekomen", "imperfectum": "kwam voor", "tr": "görülmek, meydana gelmek", "en": "to occur, to appear", "ar": "يحدث، يظهر", "fr": "se produire, apparaître"},
-  {"nl": "voorstel", "article": "het", "type": "noun", "tr": "öneri, teklif", "en": "proposal, suggestion", "ar": "اقتراح", "fr": "proposition, suggestion"},
-  {"nl": "willekeurig", "type": "adj", "tr": "rastgele, keyfi", "en": "random, arbitrary", "ar": "عشوائي، تعسفي", "fr": "aléatoire, arbitraire"},
-  {"nl": "zzp'er", "article": "de", "type": "noun", "tr": "serbest çalışan, bağımsız girişimci", "en": "freelancer, self-employed person", "ar": "عامل مستقل، صاحب عمل حر", "fr": "travailleur indépendant, freelance"},
-  {"nl": "administratie", "article": "de", "type": "noun", "tr": "yazı işleri, idare", "en": "administration", "ar": "إدارة", "fr": "administration"},
-  {"nl": "afrekenen", "type": "verb", "perfectum": "afgerekend", "imperfectum": "rekende af", "tr": "(hesabını) ödemek", "en": "to pay the bill, to settle up", "ar": "يسدد الحساب", "fr": "régler l'addition, payer"},
-  {"nl": "briefje", "article": "het", "type": "noun", "tr": "banknot, not kağıdı", "en": "banknote, note", "ar": "ورقة نقدية، ملاحظة", "fr": "billet, petit mot"},
-  {"nl": "fooi", "article": "de", "type": "noun", "tr": "bahşiş", "en": "tip, gratuity", "ar": "إكرامية", "fr": "pourboire"},
-  {"nl": "gedoe", "article": "het", "type": "noun", "tr": "karışıklık, uğraş", "en": "fuss, hassle", "ar": "عناء، فوضى", "fr": "tracas, histoire"},
-  {"nl": "gênant", "type": "adj", "tr": "mahcup edici, utandırıcı", "en": "embarrassing", "ar": "محرج", "fr": "gênant, embarrassant"},
-  {"nl": "goede doel", "article": "het", "type": "noun", "tr": "hayır kurumu, iyilik amacı", "en": "charity, good cause", "ar": "قضية خيرية", "fr": "bonne cause, association caritative"},
-  {"nl": "kleingeld", "article": "het", "type": "noun", "tr": "bozuk para", "en": "small change, coins", "ar": "فكة، نقود معدنية", "fr": "monnaie (pièces)"},
-  {"nl": "koek", "article": "de", "type": "noun", "tr": "kurabiye, kek", "en": "cookie, cake", "ar": "كعكة، بسكويت", "fr": "gâteau, biscuit"},
-  {"nl": "los", "type": "adj", "tr": "ayrı, serbest", "en": "separate, loose", "ar": "منفصل، حر", "fr": "séparé, détaché"},
-  {"nl": "middel", "article": "het", "type": "noun", "tr": "araç, çare", "en": "means, remedy", "ar": "وسيلة، دواء", "fr": "moyen, remède"},
-  {"nl": "munt", "article": "de", "type": "noun", "tr": "madeni para, bozuk para", "en": "coin", "ar": "عملة معدنية", "fr": "pièce de monnaie"},
-  {"nl": "naïef", "type": "adj", "tr": "saf, naif", "en": "naive", "ar": "ساذج", "fr": "naïf"},
-  {"nl": "ouderwets", "type": "adj", "tr": "eski kafalı, modası geçmiş", "en": "old-fashioned", "ar": "قديم الطراز", "fr": "démodé, vieux jeu"},
-  {"nl": "overmaken", "type": "verb", "perfectum": "overgemaakt", "imperfectum": "maakte over", "tr": "havale etmek, transfer etmek", "en": "to transfer (money)", "ar": "يحوِّل (مالاً)", "fr": "virer, transférer"},
-  {"nl": "portemonnee", "article": "de", "type": "noun", "tr": "cüzdan", "en": "wallet, purse", "ar": "محفظة", "fr": "porte-monnaie"},
-  {"nl": "saldo", "article": "het", "type": "noun", "tr": "bakiye, hesap durumu", "en": "balance", "ar": "رصيد", "fr": "solde"},
-  {"nl": "technologie", "article": "de", "type": "noun", "tr": "teknoloji", "en": "technology", "ar": "تكنولوجيا", "fr": "technologie"},
-  {"nl": "terugbetalen", "type": "verb", "perfectum": "terugbetaald", "imperfectum": "betaalde terug", "tr": "geri ödemek, iade etmek", "en": "to repay, to pay back", "ar": "يعيد الدفع، يسدد", "fr": "rembourser"},
-  {"nl": "tonijn", "article": "de", "type": "noun", "tr": "ton balığı", "en": "tuna", "ar": "تونة", "fr": "thon"},
-  {"nl": "trakteren", "type": "verb", "perfectum": "getrakteerd", "imperfectum": "trakteerde", "tr": "ikram etmek, ısmarlamak", "en": "to treat, to buy a round", "ar": "يُكرم، يدفع عن الجميع", "fr": "offrir, régaler"},
-  {"nl": "verzoek", "article": "het", "type": "noun", "tr": "talep, istek", "en": "request", "ar": "طلب", "fr": "demande, requête"},
-  {"nl": "voorbij", "type": "adj", "tr": "geçmiş, sona ermiş", "en": "over, past", "ar": "انتهى، مضى", "fr": "passé, terminé"},
-  {"nl": "voorschieten", "type": "verb", "perfectum": "voorgeschoten", "imperfectum": "schoot voor", "tr": "ödünç olarak ödemek", "en": "to advance money, to pay upfront", "ar": "يدفع مسبقاً", "fr": "avancer de l'argent"},
-  {"nl": "zich haasten", "type": "verb", "perfectum": "zich gehaast", "imperfectum": "haastte zich", "tr": "acele etmek", "en": "to hurry", "ar": "يتسرع، يُسرع", "fr": "se dépêcher"},
-  {"nl": "aansprakelijk", "type": "adj", "tr": "sorumlu, yükümlü", "en": "liable, responsible", "ar": "مسؤول قانونياً", "fr": "responsable, liable"},
-  {"nl": "afsluiten", "type": "verb", "perfectum": "afgesloten", "imperfectum": "sloot af", "tr": "imzalamak, kapatmak, sonlandırmak", "en": "to close, to sign (a contract)", "ar": "يُغلق، يُبرم (عقداً)", "fr": "clore, souscrire"},
-  {"nl": "antiek", "type": "adj", "tr": "antika, eski", "en": "antique", "ar": "عتيق، تحفة", "fr": "antique"},
-  {"nl": "bal", "article": "de", "type": "noun", "tr": "top", "en": "ball", "ar": "كرة", "fr": "balle, ballon"},
-  {"nl": "buitenkant", "article": "de", "type": "noun", "tr": "dış taraf, dış görünüş", "en": "outside, exterior", "ar": "الخارج", "fr": "extérieur"},
-  {"nl": "dekken", "type": "verb", "perfectum": "gedekt", "imperfectum": "dekte", "tr": "kapsamak, örtmek", "en": "to cover", "ar": "يغطي", "fr": "couvrir"},
-  {"nl": "diefstal", "article": "de", "type": "noun", "tr": "hırsızlık", "en": "theft", "ar": "سرقة", "fr": "vol"},
-  {"nl": "eigendom", "article": "het", "type": "noun", "tr": "mülkiyet, mülk", "en": "property, ownership", "ar": "ملكية", "fr": "propriété"},
-  {"nl": "inboedel", "article": "de", "type": "noun", "tr": "ev eşyası, mobilya", "en": "household contents, furniture", "ar": "أثاث المنزل", "fr": "mobilier, contenu du logement"},
-  {"nl": "kopie", "article": "de", "type": "noun", "tr": "kopya, fotokopi", "en": "copy", "ar": "نسخة", "fr": "copie"},
-  {"nl": "lekkage", "article": "de", "type": "noun", "tr": "su sızıntısı", "en": "leak, leakage", "ar": "تسرب، سرب", "fr": "fuite, infiltration"},
-  {"nl": "onverwacht", "type": "adj", "tr": "beklenmedik, ansızın", "en": "unexpected", "ar": "غير متوقع", "fr": "inattendu"},
-  {"nl": "opzet", "article": "de", "type": "noun", "tr": "kasıt, niyet", "en": "intent, deliberate act", "ar": "نية، قصد", "fr": "intention, préméditation"},
-  {"nl": "ruil", "article": "de", "type": "noun", "tr": "takas, değiş tokuş", "en": "exchange, swap", "ar": "مبادلة", "fr": "échange"},
-  {"nl": "ruit", "article": "de", "type": "noun", "tr": "cam, pencere camı", "en": "window pane, glass", "ar": "زجاج النافذة", "fr": "vitre, carreau"},
-  {"nl": "schade", "article": "de", "type": "noun", "tr": "hasar, zarar", "en": "damage", "ar": "ضرر، أذى", "fr": "dommage, dégât"},
-  {"nl": "trappen", "type": "verb", "perfectum": "getrapt", "imperfectum": "trapte", "tr": "tekmelemek, (topa) vurmak", "en": "to kick", "ar": "يركل", "fr": "donner un coup de pied"},
-  {"nl": "vaas", "article": "de", "type": "noun", "tr": "vazo", "en": "vase", "ar": "مزهرية", "fr": "vase"},
-  {"nl": "vergoeding", "article": "de", "type": "noun", "tr": "tazminat, karşılık", "en": "compensation, allowance", "ar": "تعويض، بدل", "fr": "indemnisation, compensation"},
-  {"nl": "verzekeraar", "article": "de", "type": "noun", "tr": "sigortacı", "en": "insurer", "ar": "شركة تأمين", "fr": "assureur"},
-  {"nl": "visite", "article": "de", "type": "noun", "tr": "ziyaret, misafir", "en": "visit, visitor", "ar": "زيارة، زوار", "fr": "visite"},
-  {"nl": "voertuig", "article": "het", "type": "noun", "tr": "araç, taşıt", "en": "vehicle", "ar": "مركبة", "fr": "véhicule"},
-  {"nl": "vrijwillig", "type": "adj", "tr": "gönüllü", "en": "voluntary", "ar": "طوعي، تطوعي", "fr": "volontaire, bénévole"},
-  {"nl": "wet", "article": "de", "type": "noun", "tr": "yasa, kanun", "en": "law", "ar": "قانون", "fr": "loi"},
-  {"nl": "wettelijk", "type": "adj", "tr": "yasal, kanuni", "en": "legal, statutory", "ar": "قانوني", "fr": "légal"},
-  {"nl": "belediging", "article": "de", "type": "noun", "tr": "hakaret, aşağılama", "en": "insult", "ar": "إهانة", "fr": "insulte"},
-  {"nl": "bijdragen", "type": "verb", "perfectum": "bijgedragen", "imperfectum": "droeg bij", "tr": "katkıda bulunmak", "en": "to contribute", "ar": "يساهم", "fr": "contribuer"},
-  {"nl": "bruidspaar", "article": "het", "type": "noun", "tr": "gelin ve damat, evli çift", "en": "bridal couple, newlyweds", "ar": "العروسان", "fr": "couple de mariés"},
-  {"nl": "brutaal", "type": "adj", "tr": "arsız, yüzsüz", "en": "cheeky, impudent", "ar": "وقح، صفيق", "fr": "effronté, impudent"},
-  {"nl": "eer", "article": "de", "type": "noun", "tr": "onur, şeref", "en": "honour", "ar": "شرف", "fr": "honneur"},
-  {"nl": "envelop", "article": "de", "type": "noun", "tr": "zarf, mektup zarfı", "en": "envelope", "ar": "ظرف", "fr": "enveloppe"},
-  {"nl": "frituurpan", "article": "de", "type": "noun", "tr": "fritöz", "en": "deep fryer", "ar": "مقلاة عميقة", "fr": "friteuse"},
-  {"nl": "goud", "type": "noun", "tr": "altın", "en": "gold", "ar": "ذهب", "fr": "or"},
-  {"nl": "horloge", "article": "het", "type": "noun", "tr": "kol saati", "en": "watch", "ar": "ساعة يد", "fr": "montre"},
-  {"nl": "huishoudelijk", "type": "adj", "tr": "ev işleriyle ilgili, ev eşyası", "en": "household, domestic", "ar": "منزلي", "fr": "ménager, domestique"},
-  {"nl": "ketting", "article": "de", "type": "noun", "tr": "kolye, zincir", "en": "necklace, chain", "ar": "قلادة، سلسلة", "fr": "collier, chaîne"},
-  {"nl": "lieverd", "article": "de", "type": "noun", "tr": "sevgilim, canım", "en": "darling, sweetheart", "ar": "حبيبي، عزيزي", "fr": "chéri, bien-aimé"},
-  {"nl": "meebrengen", "type": "verb", "perfectum": "meegebracht", "imperfectum": "bracht mee", "tr": "getirmek, yanında getirmek", "en": "to bring along", "ar": "يُحضر معه", "fr": "apporter, amener"},
-  {"nl": "onpersoonlijk", "type": "adj", "tr": "kişisel olmayan, soğuk", "en": "impersonal", "ar": "غير شخصي", "fr": "impersonnel"},
-  {"nl": "opscheppen", "type": "verb", "perfectum": "opgeschept", "imperfectum": "schepte op", "tr": "böbürlenmek, övünmek", "en": "to boast, to brag", "ar": "يتفاخر، يتباهى", "fr": "se vanter"},
-  {"nl": "overdrijven", "type": "verb", "perfectum": "overdreven", "imperfectum": "overdreef", "tr": "abartmak", "en": "to exaggerate", "ar": "يبالغ", "fr": "exagérer"},
-  {"nl": "respecteren", "type": "verb", "perfectum": "gerespecteerd", "imperfectum": "respecteerde", "tr": "saygı göstermek", "en": "to respect", "ar": "يحترم", "fr": "respecter"},
-  {"nl": "servies", "article": "het", "type": "noun", "tr": "yemek takımı, çay takımı", "en": "crockery, dinner service", "ar": "طقم أواني", "fr": "service de table, vaisselle"},
-  {"nl": "staafmixer", "article": "de", "type": "noun", "tr": "çubuk blender", "en": "hand blender, stick blender", "ar": "خلاط يدوي", "fr": "mixeur plongeant"},
-  {"nl": "stiefvader", "article": "de", "type": "noun", "tr": "üvey baba", "en": "stepfather", "ar": "زوج الأم، الأب الزوج", "fr": "beau-père"},
-  {"nl": "suggestie", "article": "de", "type": "noun", "tr": "öneri, fikir", "en": "suggestion", "ar": "اقتراح", "fr": "suggestion"},
-  {"nl": "terugbellen", "type": "verb", "perfectum": "teruggebeld", "imperfectum": "belde terug", "tr": "geri aramak", "en": "to call back", "ar": "يعيد الاتصال", "fr": "rappeler"},
-  {"nl": "zich aanpassen", "type": "verb", "perfectum": "zich aangepast", "imperfectum": "paste zich aan", "tr": "uyum sağlamak", "en": "to adapt, to adjust", "ar": "يتكيف", "fr": "s'adapter"},
-  {"nl": "zilver", "type": "noun", "tr": "gümüş", "en": "silver", "ar": "فضة", "fr": "argent (métal)"}
+  {
+    "nl": "akkoord",
+    "article": "het",
+    "type": "noun",
+    "tr": "anlaşma, mutabakat",
+    "en": "agreement, accord",
+    "ar": "اتفاق، تفاهم",
+    "fr": "accord",
+    "zinnen": [
+      "csh41y52",
+      "t0bjp9zy"
+    ]
+  },
+  {
+    "nl": "arbeidsvoorwaarden",
+    "article": "de",
+    "type": "noun",
+    "tr": "çalışma koşulları",
+    "en": "employment conditions, terms of employment",
+    "ar": "شروط العمل",
+    "fr": "conditions de travail",
+    "zinnen": [
+      "usneb5yw",
+      "x6tj481e"
+    ]
+  },
+  {
+    "nl": "cao",
+    "article": "de",
+    "type": "noun",
+    "tr": "kolektif iş sözleşmesi",
+    "en": "collective labour agreement",
+    "ar": "اتفاقية العمل الجماعية",
+    "fr": "convention collective de travail",
+    "zinnen": [
+      "usneb5yw",
+      "x6tj481e"
+    ]
+  },
+  {
+    "nl": "communicatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "iletişim",
+    "en": "communication",
+    "ar": "تواصل، اتصال",
+    "fr": "communication",
+    "zinnen": [
+      "zo0mqbw5",
+      "r6uly5di"
+    ]
+  },
+  {
+    "nl": "contract",
+    "article": "het",
+    "type": "noun",
+    "tr": "sözleşme, kontrat",
+    "en": "contract",
+    "ar": "عقد",
+    "fr": "contrat",
+    "zinnen": [
+      "repxrri7",
+      "cvydu80a"
+    ]
+  },
+  {
+    "nl": "doorgroeien",
+    "type": "verb",
+    "perfectum": "doorgegroeid",
+    "imperfectum": "groeide door",
+    "tr": "ilerlemek, yükselmek",
+    "en": "to advance, to grow further",
+    "ar": "يتقدم، يرتقي",
+    "fr": "évoluer, progresser",
+    "zinnen": [
+      "jw1gyf0d",
+      "ikjlml9y"
+    ]
+  },
+  {
+    "nl": "Europeaan",
+    "article": "de",
+    "type": "noun",
+    "tr": "Avrupalı",
+    "en": "European",
+    "ar": "أوروبي",
+    "fr": "Européen",
+    "zinnen": [
+      "83xfgaat",
+      "8pxan5rv"
+    ]
+  },
+  {
+    "nl": "indicatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "gösterge, ipucu",
+    "en": "indication",
+    "ar": "مؤشر، دلالة",
+    "fr": "indication",
+    "zinnen": [
+      "2tnejtq3",
+      "wjib3r2u"
+    ]
+  },
+  {
+    "nl": "inkomsten",
+    "article": "de",
+    "type": "noun",
+    "tr": "gelirler",
+    "en": "income, earnings",
+    "ar": "دخل، عائدات",
+    "fr": "revenus",
+    "zinnen": [
+      "byxdro9a",
+      "g2n93ehn",
+      "fv2usxcb",
+      "x1u6np4l"
+    ]
+  },
+  {
+    "nl": "loonsverhoging",
+    "article": "de",
+    "type": "noun",
+    "tr": "ücret artışı, zam",
+    "en": "pay rise, salary increase",
+    "ar": "زيادة الراتب",
+    "fr": "augmentation de salaire",
+    "zinnen": [
+      "dz9k9vmv",
+      "cvydu80a"
+    ]
+  },
+  {
+    "nl": "masteropleiding",
+    "article": "de",
+    "type": "noun",
+    "tr": "yüksek lisans programı",
+    "en": "master's programme",
+    "ar": "برنامج الماجستير",
+    "fr": "master, formation de master",
+    "zinnen": [
+      "ikjlml9y",
+      "c4bj130u",
+      "9u4owij0",
+      "jw1gyf0d"
+    ]
+  },
+  {
+    "nl": "netto",
+    "type": "adj",
+    "tr": "net (vergi sonrası)",
+    "en": "net",
+    "ar": "صافٍ",
+    "fr": "net",
+    "zinnen": [
+      "x1u6np4l"
+    ]
+  },
+  {
+    "nl": "onderhandelen",
+    "type": "verb",
+    "perfectum": "onderhandeld",
+    "imperfectum": "onderhandelde",
+    "tr": "pazarlık yapmak, müzakere etmek",
+    "en": "to negotiate",
+    "ar": "يفاوض",
+    "fr": "négocier",
+    "zinnen": [
+      "x6tj481e",
+      "dz9k9vmv"
+    ]
+  },
+  {
+    "nl": "ongemakkelijk",
+    "type": "adj",
+    "tr": "rahatsız edici, tuhaf",
+    "en": "uncomfortable, awkward",
+    "ar": "غير مريح، محرج",
+    "fr": "inconfortable, gêné",
+    "zinnen": [
+      "83xfgaat",
+      "u5wwrbc4"
+    ]
+  },
+  {
+    "nl": "redden",
+    "type": "verb",
+    "perfectum": "gered",
+    "imperfectum": "redde",
+    "tr": "kurtarmak, başarmak",
+    "en": "to save, to manage",
+    "ar": "ينقذ، يُفلح",
+    "fr": "sauver, s'en sortir",
+    "zinnen": [
+      "krf82bs6",
+      "u5wwrbc4"
+    ]
+  },
+  {
+    "nl": "salarisschaal",
+    "article": "de",
+    "type": "noun",
+    "tr": "maaş kademesi, ücret skalası",
+    "en": "salary scale, pay grade",
+    "ar": "سلم الرواتب",
+    "fr": "grille salariale",
+    "zinnen": [
+      "plsd75do",
+      "wjib3r2u"
+    ]
+  },
+  {
+    "nl": "strategie",
+    "article": "de",
+    "type": "noun",
+    "tr": "strateji",
+    "en": "strategy",
+    "ar": "استراتيجية",
+    "fr": "stratégie",
+    "zinnen": [
+      "zo0mqbw5",
+      "jw1gyf0d"
+    ]
+  },
+  {
+    "nl": "tegenvallen",
+    "type": "verb",
+    "perfectum": "tegengevallen",
+    "imperfectum": "viel tegen",
+    "tr": "hayal kırıklığı yaratmak, beklentinin altında kalmak",
+    "en": "to disappoint, to fall short",
+    "ar": "يخيب الظن",
+    "fr": "décevoir, ne pas être à la hauteur",
+    "zinnen": [
+      "x1u6np4l"
+    ]
+  },
+  {
+    "nl": "uitvoeren",
+    "type": "verb",
+    "perfectum": "uitgevoerd",
+    "imperfectum": "voerde uit",
+    "tr": "yerine getirmek, uygulamak",
+    "en": "to carry out, to execute",
+    "ar": "ينفذ، يُطبِّق",
+    "fr": "exécuter, mettre en œuvre",
+    "zinnen": [
+      "6e1osi9l",
+      "fnaoicx7"
+    ]
+  },
+  {
+    "nl": "vakantiedag",
+    "article": "de",
+    "type": "noun",
+    "tr": "tatil günü, izin günü",
+    "en": "holiday day, day off",
+    "ar": "يوم إجازة",
+    "fr": "jour de congé",
+    "zinnen": [
+      "9a7wp1vm",
+      "ogly3k08"
+    ]
+  },
+  {
+    "nl": "verdeling",
+    "article": "de",
+    "type": "noun",
+    "tr": "dağılım, paylaşım",
+    "en": "distribution, division",
+    "ar": "توزيع",
+    "fr": "répartition, distribution",
+    "zinnen": [
+      "f30l35rc",
+      "fucr9kib",
+      "ogly3k08"
+    ]
+  },
+  {
+    "nl": "voorkomen",
+    "type": "verb",
+    "perfectum": "voorgekomen",
+    "imperfectum": "kwam voor",
+    "tr": "görülmek, meydana gelmek",
+    "en": "to occur, to appear",
+    "ar": "يحدث، يظهر",
+    "fr": "se produire, apparaître",
+    "zinnen": [
+      "wdz89qox",
+      "56p2d11u",
+      "us0b14hy"
+    ]
+  },
+  {
+    "nl": "voorstel",
+    "article": "het",
+    "type": "noun",
+    "tr": "öneri, teklif",
+    "en": "proposal, suggestion",
+    "ar": "اقتراح",
+    "fr": "proposition, suggestion",
+    "zinnen": [
+      "fucr9kib",
+      "ogly3k08",
+      "fnaoicx7"
+    ]
+  },
+  {
+    "nl": "willekeurig",
+    "type": "adj",
+    "tr": "rastgele, keyfi",
+    "en": "random, arbitrary",
+    "ar": "عشوائي، تعسفي",
+    "fr": "aléatoire, arbitraire",
+    "zinnen": [
+      "f30l35rc",
+      "r6uly5di"
+    ]
+  },
+  {
+    "nl": "zzp'er",
+    "article": "de",
+    "type": "noun",
+    "tr": "serbest çalışan, bağımsız girişimci",
+    "en": "freelancer, self-employed person",
+    "ar": "عامل مستقل، صاحب عمل حر",
+    "fr": "travailleur indépendant, freelance",
+    "zinnen": [
+      "9a7wp1vm",
+      "8pxan5rv"
+    ]
+  },
+  {
+    "nl": "administratie",
+    "article": "de",
+    "type": "noun",
+    "tr": "yazı işleri, idare",
+    "en": "administration",
+    "ar": "إدارة",
+    "fr": "administration",
+    "zinnen": [
+      "j88erwlk"
+    ]
+  },
+  {
+    "nl": "afrekenen",
+    "type": "verb",
+    "perfectum": "afgerekend",
+    "imperfectum": "rekende af",
+    "tr": "(hesabını) ödemek",
+    "en": "to pay the bill, to settle up",
+    "ar": "يسدد الحساب",
+    "fr": "régler l'addition, payer",
+    "zinnen": [
+      "yj5twqi0",
+      "l7jg0zkf"
+    ]
+  },
+  {
+    "nl": "briefje",
+    "article": "het",
+    "type": "noun",
+    "tr": "banknot, not kağıdı",
+    "en": "banknote, note",
+    "ar": "ورقة نقدية، ملاحظة",
+    "fr": "billet, petit mot",
+    "zinnen": [
+      "wk63t5ww",
+      "bdlkogqr"
+    ]
+  },
+  {
+    "nl": "fooi",
+    "article": "de",
+    "type": "noun",
+    "tr": "bahşiş",
+    "en": "tip, gratuity",
+    "ar": "إكرامية",
+    "fr": "pourboire",
+    "zinnen": [
+      "etl26oea",
+      "yj5twqi0"
+    ]
+  },
+  {
+    "nl": "gedoe",
+    "article": "het",
+    "type": "noun",
+    "tr": "karışıklık, uğraş",
+    "en": "fuss, hassle",
+    "ar": "عناء، فوضى",
+    "fr": "tracas, histoire",
+    "zinnen": [
+      "cyev1rlf",
+      "3w1exom4"
+    ]
+  },
+  {
+    "nl": "gênant",
+    "type": "adj",
+    "tr": "mahcup edici, utandırıcı",
+    "en": "embarrassing",
+    "ar": "محرج",
+    "fr": "gênant, embarrassant",
+    "zinnen": [
+      "a0i4ny8b",
+      "2omko0oe"
+    ]
+  },
+  {
+    "nl": "goede doel",
+    "article": "het",
+    "type": "noun",
+    "tr": "hayır kurumu, iyilik amacı",
+    "en": "charity, good cause",
+    "ar": "قضية خيرية",
+    "fr": "bonne cause, association caritative",
+    "zinnen": [
+      "qwm2rche"
+    ]
+  },
+  {
+    "nl": "kleingeld",
+    "article": "het",
+    "type": "noun",
+    "tr": "bozuk para",
+    "en": "small change, coins",
+    "ar": "فكة، نقود معدنية",
+    "fr": "monnaie (pièces)",
+    "zinnen": [
+      "wnpi05ya"
+    ]
+  },
+  {
+    "nl": "koek",
+    "article": "de",
+    "type": "noun",
+    "tr": "kurabiye, kek",
+    "en": "cookie, cake",
+    "ar": "كعكة، بسكويت",
+    "fr": "gâteau, biscuit",
+    "zinnen": [
+      "y61y4749",
+      "lrlz1u1k",
+      "rfthgp3r"
+    ]
+  },
+  {
+    "nl": "los",
+    "type": "adj",
+    "tr": "ayrı, serbest",
+    "en": "separate, loose",
+    "ar": "منفصل، حر",
+    "fr": "séparé, détaché",
+    "zinnen": [
+      "9d07rn2z",
+      "3w1exom4"
+    ]
+  },
+  {
+    "nl": "middel",
+    "article": "het",
+    "type": "noun",
+    "tr": "araç, çare",
+    "en": "means, remedy",
+    "ar": "وسيلة، دواء",
+    "fr": "moyen, remède",
+    "zinnen": [
+      "b0tsfuv3",
+      "bdlkogqr"
+    ]
+  },
+  {
+    "nl": "munt",
+    "article": "de",
+    "type": "noun",
+    "tr": "madeni para, bozuk para",
+    "en": "coin",
+    "ar": "عملة معدنية",
+    "fr": "pièce de monnaie",
+    "zinnen": [
+      "utlibf4j",
+      "wnpi05ya"
+    ]
+  },
+  {
+    "nl": "naïef",
+    "type": "adj",
+    "tr": "saf, naif",
+    "en": "naive",
+    "ar": "ساذج",
+    "fr": "naïf",
+    "zinnen": [
+      "k825u64d",
+      "2omko0oe"
+    ]
+  },
+  {
+    "nl": "ouderwets",
+    "type": "adj",
+    "tr": "eski kafalı, modası geçmiş",
+    "en": "old-fashioned",
+    "ar": "قديم الطراز",
+    "fr": "démodé, vieux jeu",
+    "zinnen": [
+      "v6tiy21k",
+      "mco6peak"
+    ]
+  },
+  {
+    "nl": "overmaken",
+    "type": "verb",
+    "perfectum": "overgemaakt",
+    "imperfectum": "maakte over",
+    "tr": "havale etmek, transfer etmek",
+    "en": "to transfer (money)",
+    "ar": "يحوِّل (مالاً)",
+    "fr": "virer, transférer",
+    "zinnen": [
+      "9ci5zmcx",
+      "v6tiy21k",
+      "tigyiukk"
+    ]
+  },
+  {
+    "nl": "portemonnee",
+    "article": "de",
+    "type": "noun",
+    "tr": "cüzdan",
+    "en": "wallet, purse",
+    "ar": "محفظة",
+    "fr": "porte-monnaie",
+    "zinnen": [
+      "nfqud2zs",
+      "w8xo2a15",
+      "5224jhpt"
+    ]
+  },
+  {
+    "nl": "saldo",
+    "article": "het",
+    "type": "noun",
+    "tr": "bakiye, hesap durumu",
+    "en": "balance",
+    "ar": "رصيد",
+    "fr": "solde",
+    "zinnen": [
+      "nfqud2zs",
+      "31q1ggkw"
+    ]
+  },
+  {
+    "nl": "technologie",
+    "article": "de",
+    "type": "noun",
+    "tr": "teknoloji",
+    "en": "technology",
+    "ar": "تكنولوجيا",
+    "fr": "technologie",
+    "zinnen": [
+      "zo7r3dl1",
+      "v6tiy21k",
+      "tigyiukk"
+    ]
+  },
+  {
+    "nl": "terugbetalen",
+    "type": "verb",
+    "perfectum": "terugbetaald",
+    "imperfectum": "betaalde terug",
+    "tr": "geri ödemek, iade etmek",
+    "en": "to repay, to pay back",
+    "ar": "يعيد الدفع، يسدد",
+    "fr": "rembourser",
+    "zinnen": [
+      "dwol8p3m"
+    ]
+  },
+  {
+    "nl": "tonijn",
+    "article": "de",
+    "type": "noun",
+    "tr": "ton balığı",
+    "en": "tuna",
+    "ar": "تونة",
+    "fr": "thon",
+    "zinnen": [
+      "jk47lstc",
+      "ixgzk3qa"
+    ]
+  },
+  {
+    "nl": "trakteren",
+    "type": "verb",
+    "perfectum": "getrakteerd",
+    "imperfectum": "trakteerde",
+    "tr": "ikram etmek, ısmarlamak",
+    "en": "to treat, to buy a round",
+    "ar": "يُكرم، يدفع عن الجميع",
+    "fr": "offrir, régaler",
+    "zinnen": [
+      "y61y4749",
+      "rfthgp3r"
+    ]
+  },
+  {
+    "nl": "verzoek",
+    "article": "het",
+    "type": "noun",
+    "tr": "talep, istek",
+    "en": "request",
+    "ar": "طلب",
+    "fr": "demande, requête",
+    "zinnen": [
+      "udu20sk3",
+      "bdlkogqr"
+    ]
+  },
+  {
+    "nl": "voorbij",
+    "type": "adj",
+    "tr": "geçmiş, sona ermiş",
+    "en": "over, past",
+    "ar": "انتهى، مضى",
+    "fr": "passé, terminé",
+    "zinnen": [
+      "l7jqyhzo"
+    ]
+  },
+  {
+    "nl": "voorschieten",
+    "type": "verb",
+    "perfectum": "voorgeschoten",
+    "imperfectum": "schoot voor",
+    "tr": "ödünç olarak ödemek",
+    "en": "to advance money, to pay upfront",
+    "ar": "يدفع مسبقاً",
+    "fr": "avancer de l'argent",
+    "zinnen": [
+      "s5fbo3pz",
+      "v1i8yyir"
+    ]
+  },
+  {
+    "nl": "zich haasten",
+    "type": "verb",
+    "perfectum": "zich gehaast",
+    "imperfectum": "haastte zich",
+    "tr": "acele etmek",
+    "en": "to hurry",
+    "ar": "يتسرع، يُسرع",
+    "fr": "se dépêcher",
+    "zinnen": [
+      "5224jhpt"
+    ]
+  },
+  {
+    "nl": "aansprakelijk",
+    "type": "adj",
+    "tr": "sorumlu, yükümlü",
+    "en": "liable, responsible",
+    "ar": "مسؤول قانونياً",
+    "fr": "responsable, liable",
+    "zinnen": [
+      "i2qtv57a",
+      "ozv8ebob",
+      "n2kqugn4"
+    ]
+  },
+  {
+    "nl": "afsluiten",
+    "type": "verb",
+    "perfectum": "afgesloten",
+    "imperfectum": "sloot af",
+    "tr": "imzalamak, kapatmak, sonlandırmak",
+    "en": "to close, to sign (a contract)",
+    "ar": "يُغلق، يُبرم (عقداً)",
+    "fr": "clore, souscrire",
+    "zinnen": [
+      "pg2zzqsm",
+      "njq5jrvf"
+    ]
+  },
+  {
+    "nl": "antiek",
+    "type": "adj",
+    "tr": "antika, eski",
+    "en": "antique",
+    "ar": "عتيق، تحفة",
+    "fr": "antique",
+    "zinnen": [
+      "utlibf4j",
+      "m8lke7sy"
+    ]
+  },
+  {
+    "nl": "bal",
+    "article": "de",
+    "type": "noun",
+    "tr": "top",
+    "en": "ball",
+    "ar": "كرة",
+    "fr": "balle, ballon",
+    "zinnen": [
+      "4kzrpvd6",
+      "ui72jrh7"
+    ]
+  },
+  {
+    "nl": "buitenkant",
+    "article": "de",
+    "type": "noun",
+    "tr": "dış taraf, dış görünüş",
+    "en": "outside, exterior",
+    "ar": "الخارج",
+    "fr": "extérieur",
+    "zinnen": [
+      "797h1lzl",
+      "5h0tt37k"
+    ]
+  },
+  {
+    "nl": "dekken",
+    "type": "verb",
+    "perfectum": "gedekt",
+    "imperfectum": "dekte",
+    "tr": "kapsamak, örtmek",
+    "en": "to cover",
+    "ar": "يغطي",
+    "fr": "couvrir",
+    "zinnen": [
+      "jl4ppsdu",
+      "pchm421d",
+      "irfr4yz1"
+    ]
+  },
+  {
+    "nl": "diefstal",
+    "article": "de",
+    "type": "noun",
+    "tr": "hırsızlık",
+    "en": "theft",
+    "ar": "سرقة",
+    "fr": "vol",
+    "zinnen": [
+      "v2ef76uk",
+      "e12fl1sk",
+      "ep0qmaah"
+    ]
+  },
+  {
+    "nl": "eigendom",
+    "article": "het",
+    "type": "noun",
+    "tr": "mülkiyet, mülk",
+    "en": "property, ownership",
+    "ar": "ملكية",
+    "fr": "propriété",
+    "zinnen": [
+      "pg2zzqsm",
+      "m8lke7sy"
+    ]
+  },
+  {
+    "nl": "inboedel",
+    "article": "de",
+    "type": "noun",
+    "tr": "ev eşyası, mobilya",
+    "en": "household contents, furniture",
+    "ar": "أثاث المنزل",
+    "fr": "mobilier, contenu du logement",
+    "zinnen": [
+      "v2ef76uk",
+      "njq5jrvf"
+    ]
+  },
+  {
+    "nl": "kopie",
+    "article": "de",
+    "type": "noun",
+    "tr": "kopya, fotokopi",
+    "en": "copy",
+    "ar": "نسخة",
+    "fr": "copie",
+    "zinnen": [
+      "f64fvnh7",
+      "kg2rdpsn"
+    ]
+  },
+  {
+    "nl": "lekkage",
+    "article": "de",
+    "type": "noun",
+    "tr": "su sızıntısı",
+    "en": "leak, leakage",
+    "ar": "تسرب، سرب",
+    "fr": "fuite, infiltration",
+    "zinnen": [
+      "mguxq5oz",
+      "oz5fbnwe"
+    ]
+  },
+  {
+    "nl": "onverwacht",
+    "type": "adj",
+    "tr": "beklenmedik, ansızın",
+    "en": "unexpected",
+    "ar": "غير متوقع",
+    "fr": "inattendu",
+    "zinnen": [
+      "wa4gvju4"
+    ]
+  },
+  {
+    "nl": "opzet",
+    "article": "de",
+    "type": "noun",
+    "tr": "kasıt, niyet",
+    "en": "intent, deliberate act",
+    "ar": "نية، قصد",
+    "fr": "intention, préméditation",
+    "zinnen": [
+      "e12fl1sk",
+      "scmoi4bp"
+    ]
+  },
+  {
+    "nl": "ruil",
+    "article": "de",
+    "type": "noun",
+    "tr": "takas, değiş tokuş",
+    "en": "exchange, swap",
+    "ar": "مبادلة",
+    "fr": "échange",
+    "zinnen": [
+      "n091ke4m",
+      "rpg9vqzf"
+    ]
+  },
+  {
+    "nl": "ruit",
+    "article": "de",
+    "type": "noun",
+    "tr": "cam, pencere camı",
+    "en": "window pane, glass",
+    "ar": "زجاج النافذة",
+    "fr": "vitre, carreau",
+    "zinnen": [
+      "eixmpnc7",
+      "wa4gvju4"
+    ]
+  },
+  {
+    "nl": "schade",
+    "article": "de",
+    "type": "noun",
+    "tr": "hasar, zarar",
+    "en": "damage",
+    "ar": "ضرر، أذى",
+    "fr": "dommage, dégât",
+    "zinnen": [
+      "irfr4yz1",
+      "mguxq5oz",
+      "ep0qmaah"
+    ]
+  },
+  {
+    "nl": "trappen",
+    "type": "verb",
+    "perfectum": "getrapt",
+    "imperfectum": "trapte",
+    "tr": "tekmelemek, (topa) vurmak",
+    "en": "to kick",
+    "ar": "يركل",
+    "fr": "donner un coup de pied",
+    "zinnen": [
+      "ui72jrh7",
+      "684n9u6c"
+    ]
+  },
+  {
+    "nl": "vaas",
+    "article": "de",
+    "type": "noun",
+    "tr": "vazo",
+    "en": "vase",
+    "ar": "مزهرية",
+    "fr": "vase",
+    "zinnen": [
+      "684n9u6c",
+      "m8lke7sy"
+    ]
+  },
+  {
+    "nl": "vergoeding",
+    "article": "de",
+    "type": "noun",
+    "tr": "tazminat, karşılık",
+    "en": "compensation, allowance",
+    "ar": "تعويض، بدل",
+    "fr": "indemnisation, compensation",
+    "zinnen": [
+      "d1lhc5jn",
+      "oz5fbnwe"
+    ]
+  },
+  {
+    "nl": "verzekeraar",
+    "article": "de",
+    "type": "noun",
+    "tr": "sigortacı",
+    "en": "insurer",
+    "ar": "شركة تأمين",
+    "fr": "assureur",
+    "zinnen": [
+      "irfr4yz1",
+      "d1lhc5jn",
+      "ep0qmaah"
+    ]
+  },
+  {
+    "nl": "visite",
+    "article": "de",
+    "type": "noun",
+    "tr": "ziyaret, misafir",
+    "en": "visit, visitor",
+    "ar": "زيارة، زوار",
+    "fr": "visite",
+    "zinnen": [
+      "rpg9vqzf"
+    ]
+  },
+  {
+    "nl": "voertuig",
+    "article": "het",
+    "type": "noun",
+    "tr": "araç, taşıt",
+    "en": "vehicle",
+    "ar": "مركبة",
+    "fr": "véhicule",
+    "zinnen": [
+      "797h1lzl",
+      "n2kqugn4"
+    ]
+  },
+  {
+    "nl": "vrijwillig",
+    "type": "adj",
+    "tr": "gönüllü",
+    "en": "voluntary",
+    "ar": "طوعي، تطوعي",
+    "fr": "volontaire, bénévole",
+    "zinnen": [
+      "aarvysbf",
+      "kg2rdpsn"
+    ]
+  },
+  {
+    "nl": "wet",
+    "article": "de",
+    "type": "noun",
+    "tr": "yasa, kanun",
+    "en": "law",
+    "ar": "قانون",
+    "fr": "loi",
+    "zinnen": [
+      "i2qtv57a",
+      "tlhl8vgv"
+    ]
+  },
+  {
+    "nl": "wettelijk",
+    "type": "adj",
+    "tr": "yasal, kanuni",
+    "en": "legal, statutory",
+    "ar": "قانوني",
+    "fr": "légal",
+    "zinnen": [
+      "ozv8ebob",
+      "o11r9vk7",
+      "tlhl8vgv"
+    ]
+  },
+  {
+    "nl": "belediging",
+    "article": "de",
+    "type": "noun",
+    "tr": "hakaret, aşağılama",
+    "en": "insult",
+    "ar": "إهانة",
+    "fr": "insulte",
+    "zinnen": [
+      "plms1xtc",
+      "9jot6ws0"
+    ]
+  },
+  {
+    "nl": "bijdragen",
+    "type": "verb",
+    "perfectum": "bijgedragen",
+    "imperfectum": "droeg bij",
+    "tr": "katkıda bulunmak",
+    "en": "to contribute",
+    "ar": "يساهم",
+    "fr": "contribuer",
+    "zinnen": [
+      "4dpoeapc"
+    ]
+  },
+  {
+    "nl": "bruidspaar",
+    "article": "het",
+    "type": "noun",
+    "tr": "gelin ve damat, evli çift",
+    "en": "bridal couple, newlyweds",
+    "ar": "العروسان",
+    "fr": "couple de mariés",
+    "zinnen": [
+      "m6a8r4ro",
+      "m4o6byx7"
+    ]
+  },
+  {
+    "nl": "brutaal",
+    "type": "adj",
+    "tr": "arsız, yüzsüz",
+    "en": "cheeky, impudent",
+    "ar": "وقح، صفيق",
+    "fr": "effronté, impudent",
+    "zinnen": [
+      "3tzvte8j",
+      "9jot6ws0"
+    ]
+  },
+  {
+    "nl": "eer",
+    "article": "de",
+    "type": "noun",
+    "tr": "onur, şeref",
+    "en": "honour",
+    "ar": "شرف",
+    "fr": "honneur",
+    "zinnen": [
+      "ucfn60u6",
+      "4dpoeapc"
+    ]
+  },
+  {
+    "nl": "envelop",
+    "article": "de",
+    "type": "noun",
+    "tr": "zarf, mektup zarfı",
+    "en": "envelope",
+    "ar": "ظرف",
+    "fr": "enveloppe",
+    "zinnen": [
+      "kpl4dxh2",
+      "rjabqmtk"
+    ]
+  },
+  {
+    "nl": "frituurpan",
+    "article": "de",
+    "type": "noun",
+    "tr": "fritöz",
+    "en": "deep fryer",
+    "ar": "مقلاة عميقة",
+    "fr": "friteuse",
+    "zinnen": [
+      "0qwnxh1d",
+      "xo1p5f1l"
+    ]
+  },
+  {
+    "nl": "goud",
+    "type": "noun",
+    "tr": "altın",
+    "en": "gold",
+    "ar": "ذهب",
+    "fr": "or",
+    "zinnen": [
+      "azjlga4a",
+      "b260j0rn",
+      "m4o6byx7"
+    ]
+  },
+  {
+    "nl": "horloge",
+    "article": "het",
+    "type": "noun",
+    "tr": "kol saati",
+    "en": "watch",
+    "ar": "ساعة يد",
+    "fr": "montre",
+    "zinnen": [
+      "azjlga4a",
+      "shy4lfa3"
+    ]
+  },
+  {
+    "nl": "huishoudelijk",
+    "type": "adj",
+    "tr": "ev işleriyle ilgili, ev eşyası",
+    "en": "household, domestic",
+    "ar": "منزلي",
+    "fr": "ménager, domestique",
+    "zinnen": [
+      "0qwnxh1d",
+      "xo1p5f1l"
+    ]
+  },
+  {
+    "nl": "ketting",
+    "article": "de",
+    "type": "noun",
+    "tr": "kolye, zincir",
+    "en": "necklace, chain",
+    "ar": "قلادة، سلسلة",
+    "fr": "collier, chaîne",
+    "zinnen": [
+      "azjlga4a",
+      "m4o6byx7"
+    ]
+  },
+  {
+    "nl": "lieverd",
+    "article": "de",
+    "type": "noun",
+    "tr": "sevgilim, canım",
+    "en": "darling, sweetheart",
+    "ar": "حبيبي، عزيزي",
+    "fr": "chéri, bien-aimé",
+    "zinnen": [
+      "bmsqajlp",
+      "gs20faoq"
+    ]
+  },
+  {
+    "nl": "meebrengen",
+    "type": "verb",
+    "perfectum": "meegebracht",
+    "imperfectum": "bracht mee",
+    "tr": "getirmek, yanında getirmek",
+    "en": "to bring along",
+    "ar": "يُحضر معه",
+    "fr": "apporter, amener",
+    "zinnen": [
+      "m6a8r4ro",
+      "thbaivay"
+    ]
+  },
+  {
+    "nl": "onpersoonlijk",
+    "type": "adj",
+    "tr": "kişisel olmayan, soğuk",
+    "en": "impersonal",
+    "ar": "غير شخصي",
+    "fr": "impersonnel",
+    "zinnen": [
+      "cm1hwb4g",
+      "07qv38pu"
+    ]
+  },
+  {
+    "nl": "opscheppen",
+    "type": "verb",
+    "perfectum": "opgeschept",
+    "imperfectum": "schepte op",
+    "tr": "böbürlenmek, övünmek",
+    "en": "to boast, to brag",
+    "ar": "يتفاخر، يتباهى",
+    "fr": "se vanter",
+    "zinnen": [
+      "3tzvte8j",
+      "glx38u0o"
+    ]
+  },
+  {
+    "nl": "overdrijven",
+    "type": "verb",
+    "perfectum": "overdreven",
+    "imperfectum": "overdreef",
+    "tr": "abartmak",
+    "en": "to exaggerate",
+    "ar": "يبالغ",
+    "fr": "exagérer",
+    "zinnen": [
+      "9d69rczv",
+      "9sdtuv02",
+      "glx38u0o"
+    ]
+  },
+  {
+    "nl": "respecteren",
+    "type": "verb",
+    "perfectum": "gerespecteerd",
+    "imperfectum": "respecteerde",
+    "tr": "saygı göstermek",
+    "en": "to respect",
+    "ar": "يحترم",
+    "fr": "respecter",
+    "zinnen": [
+      "qbi6iwqv",
+      "0kavaum1"
+    ]
+  },
+  {
+    "nl": "servies",
+    "article": "het",
+    "type": "noun",
+    "tr": "yemek takımı, çay takımı",
+    "en": "crockery, dinner service",
+    "ar": "طقم أواني",
+    "fr": "service de table, vaisselle",
+    "zinnen": [
+      "6jktu8c9",
+      "thbaivay"
+    ]
+  },
+  {
+    "nl": "staafmixer",
+    "article": "de",
+    "type": "noun",
+    "tr": "çubuk blender",
+    "en": "hand blender, stick blender",
+    "ar": "خلاط يدوي",
+    "fr": "mixeur plongeant",
+    "zinnen": [
+      "ojbs1jg4",
+      "thbaivay"
+    ]
+  },
+  {
+    "nl": "stiefvader",
+    "article": "de",
+    "type": "noun",
+    "tr": "üvey baba",
+    "en": "stepfather",
+    "ar": "زوج الأم، الأب الزوج",
+    "fr": "beau-père",
+    "zinnen": [
+      "w3gr2s74",
+      "shy4lfa3"
+    ]
+  },
+  {
+    "nl": "suggestie",
+    "article": "de",
+    "type": "noun",
+    "tr": "öneri, fikir",
+    "en": "suggestion",
+    "ar": "اقتراح",
+    "fr": "suggestion",
+    "zinnen": [
+      "6jktu8c9",
+      "07qv38pu"
+    ]
+  },
+  {
+    "nl": "terugbellen",
+    "type": "verb",
+    "perfectum": "teruggebeld",
+    "imperfectum": "belde terug",
+    "tr": "geri aramak",
+    "en": "to call back",
+    "ar": "يعيد الاتصال",
+    "fr": "rappeler",
+    "zinnen": [
+      "4c4caqdv"
+    ]
+  },
+  {
+    "nl": "zich aanpassen",
+    "type": "verb",
+    "perfectum": "zich aangepast",
+    "imperfectum": "paste zich aan",
+    "tr": "uyum sağlamak",
+    "en": "to adapt, to adjust",
+    "ar": "يتكيف",
+    "fr": "s'adapter",
+    "zinnen": [
+      "gs20faoq"
+    ]
+  },
+  {
+    "nl": "zilver",
+    "type": "noun",
+    "tr": "gümüş",
+    "en": "silver",
+    "ar": "فضة",
+    "fr": "argent (métal)",
+    "zinnen": [
+      "bmsqajlp",
+      "shy4lfa3"
+    ]
+  }
 ]

@@ -6,7 +6,10 @@
     "tr": "kontrol",
     "en": "control",
     "ar": "سيطرة",
-    "fr": "contrôle"
+    "fr": "contrôle",
+    "zinnen": [
+      "dsui0fu0"
+    ]
   },
   {
     "nl": "gat",
@@ -15,7 +18,10 @@
     "tr": "delik",
     "en": "hole",
     "ar": "ثقب",
-    "fr": "trou"
+    "fr": "trou",
+    "zinnen": [
+      "4ojc3m14"
+    ]
   },
   {
     "nl": "honger",
@@ -24,7 +30,10 @@
     "tr": "açlık",
     "en": "hunger",
     "ar": "جوع",
-    "fr": "faim"
+    "fr": "faim",
+    "zinnen": [
+      "4jvyhkcm"
+    ]
   },
   {
     "nl": "indruk",
@@ -33,7 +42,10 @@
     "tr": "izlenim",
     "en": "impression",
     "ar": "انطباع",
-    "fr": "impression"
+    "fr": "impression",
+    "zinnen": [
+      "zqj1vign"
+    ]
   },
   {
     "nl": "inkomen",
@@ -42,7 +54,12 @@
     "tr": "gelir",
     "en": "income",
     "ar": "دخل",
-    "fr": "revenu"
+    "fr": "revenu",
+    "zinnen": [
+      "9h6piezo",
+      "ayqgmpqp",
+      "sznpuc8c"
+    ]
   },
   {
     "nl": "interviewster",
@@ -51,7 +68,10 @@
     "tr": "röportajcı",
     "en": "interviewer (female)",
     "ar": "محاورة",
-    "fr": "intervieweuse"
+    "fr": "intervieweuse",
+    "zinnen": [
+      "byq713ng"
+    ]
   },
   {
     "nl": "jawel",
@@ -59,7 +79,10 @@
     "tr": "evet",
     "en": "yes indeed",
     "ar": "نعم بالفعل",
-    "fr": "si"
+    "fr": "si",
+    "zinnen": [
+      "ayqgmpqp"
+    ]
   },
   {
     "nl": "last",
@@ -68,7 +91,10 @@
     "tr": "gider",
     "en": "burden, expense",
     "ar": "عبء",
-    "fr": "charge"
+    "fr": "charge",
+    "zinnen": [
+      "yqkhhpzk"
+    ]
   },
   {
     "nl": "lijden",
@@ -78,7 +104,10 @@
     "tr": "(acı) çekmek",
     "en": "to suffer",
     "ar": "يعاني",
-    "fr": "souffrir"
+    "fr": "souffrir",
+    "zinnen": [
+      "vt94l5z4"
+    ]
   },
   {
     "nl": "luxe",
@@ -86,7 +115,10 @@
     "tr": "lüks",
     "en": "luxury",
     "ar": "رفاهية",
-    "fr": "luxe"
+    "fr": "luxe",
+    "zinnen": [
+      "fjwirugi"
+    ]
   },
   {
     "nl": "meevallen",
@@ -96,7 +128,10 @@
     "tr": "beklenenden iyi olmak",
     "en": "to turn out better than expected",
     "ar": "يكون أفضل من المتوقع",
-    "fr": "s'avérer mieux que prévu"
+    "fr": "s'avérer mieux que prévu",
+    "zinnen": [
+      "tdhfgd7b"
+    ]
   },
   {
     "nl": "ooit",
@@ -104,7 +139,11 @@
     "tr": "(herhangi) bir zaman",
     "en": "ever",
     "ar": "أبداً",
-    "fr": "jamais"
+    "fr": "jamais",
+    "zinnen": [
+      "sznpuc8c",
+      "ggc51tqy"
+    ]
   },
   {
     "nl": "overhouden",
@@ -114,7 +153,11 @@
     "tr": "ödedikten sonra bulundurmak",
     "en": "to have left over",
     "ar": "يتبقى لديه",
-    "fr": "avoir en reste"
+    "fr": "avoir en reste",
+    "zinnen": [
+      "3yhhcz89",
+      "bkybtxra"
+    ]
   },
   {
     "nl": "redelijk",
@@ -122,7 +165,11 @@
     "tr": "makul",
     "en": "reasonable",
     "ar": "معقول",
-    "fr": "raisonnable"
+    "fr": "raisonnable",
+    "zinnen": [
+      "zw74rvw6",
+      "67hb2zuk"
+    ]
   },
   {
     "nl": "reiskosten",
@@ -131,7 +178,10 @@
     "tr": "yol masrafları",
     "en": "travel expenses",
     "ar": "نفقات السفر",
-    "fr": "frais de voyage"
+    "fr": "frais de voyage",
+    "zinnen": [
+      "a1ssegz6"
+    ]
   },
   {
     "nl": "simpel",
@@ -139,7 +189,10 @@
     "tr": "basit",
     "en": "simple",
     "ar": "بسيط",
-    "fr": "simple"
+    "fr": "simple",
+    "zinnen": [
+      "l8qyxno0"
+    ]
   },
   {
     "nl": "tekortkomen",
@@ -149,7 +202,10 @@
     "tr": "yokluğunu çekmek",
     "en": "to lack",
     "ar": "يفتقر",
-    "fr": "manquer"
+    "fr": "manquer",
+    "zinnen": [
+      "fe4zb0y1"
+    ]
   },
   {
     "nl": "uitgave",
@@ -158,17 +214,10 @@
     "tr": "harcama",
     "en": "expense",
     "ar": "نفقة",
-    "fr": "dépense"
-  },
-  {
-    "nl": "uitkijken",
-    "type": "verb",
-    "perfectum": "uitgekeken",
-    "imperfectum": "keek uit",
-    "tr": "dikkat etmek",
-    "en": "to watch out",
-    "ar": "يحذر",
-    "fr": "faire attention"
+    "fr": "dépense",
+    "zinnen": [
+      "syw1s2ip"
+    ]
   },
   {
     "nl": "voordelig",
@@ -176,7 +225,11 @@
     "tr": "uygun fiyatlı",
     "en": "affordable",
     "ar": "ميسور التكلفة",
-    "fr": "avantageux"
+    "fr": "avantageux",
+    "zinnen": [
+      "q0ebsqfx",
+      "qjdob04o"
+    ]
   },
   {
     "nl": "waaraan",
@@ -184,7 +237,11 @@
     "tr": "neye",
     "en": "to what",
     "ar": "إلى ماذا",
-    "fr": "à quoi"
+    "fr": "à quoi",
+    "zinnen": [
+      "2ljtk09n",
+      "2ljtk09n"
+    ]
   },
   {
     "nl": "woonlasten",
@@ -193,7 +250,10 @@
     "tr": "ev masrafları",
     "en": "housing costs",
     "ar": "تكاليف السكن",
-    "fr": "charges de logement"
+    "fr": "charges de logement",
+    "zinnen": [
+      "3t26hva6"
+    ]
   },
   {
     "nl": "aantrekkelijk",
@@ -201,7 +261,10 @@
     "tr": "çekici",
     "en": "attractive",
     "ar": "جذاب",
-    "fr": "attrayant"
+    "fr": "attrayant",
+    "zinnen": [
+      "7lg8knsg"
+    ]
   },
   {
     "nl": "belofte",
@@ -210,7 +273,10 @@
     "tr": "taahhüt, vaat",
     "en": "promise",
     "ar": "وعد",
-    "fr": "promesse"
+    "fr": "promesse",
+    "zinnen": [
+      "f0r86tra"
+    ]
   },
   {
     "nl": "bewust",
@@ -218,7 +284,10 @@
     "tr": "bilinçli",
     "en": "conscious",
     "ar": "واعي",
-    "fr": "conscient"
+    "fr": "conscient",
+    "zinnen": [
+      "xnilhzwb"
+    ]
   },
   {
     "nl": "bukken",
@@ -228,7 +297,10 @@
     "tr": "eğilmek",
     "en": "to bend down",
     "ar": "ينحني",
-    "fr": "se baisser"
+    "fr": "se baisser",
+    "zinnen": [
+      "uei5tmxa"
+    ]
   },
   {
     "nl": "consument",
@@ -237,7 +309,10 @@
     "tr": "tüketici",
     "en": "consumer",
     "ar": "مستهلك",
-    "fr": "consommateur"
+    "fr": "consommateur",
+    "zinnen": [
+      "hxo9j4ag"
+    ]
   },
   {
     "nl": "contactloos",
@@ -245,7 +320,10 @@
     "tr": "temassız (ödeme)",
     "en": "contactless (payment)",
     "ar": "بدون تلامس",
-    "fr": "sans contact"
+    "fr": "sans contact",
+    "zinnen": [
+      "ooxnt9rn"
+    ]
   },
   {
     "nl": "creditcard",
@@ -254,7 +332,10 @@
     "tr": "kredi kartı",
     "en": "credit card",
     "ar": "بطاقة ائتمان",
-    "fr": "carte de crédit"
+    "fr": "carte de crédit",
+    "zinnen": [
+      "ooxnt9rn"
+    ]
   },
   {
     "nl": "folder",
@@ -263,7 +344,10 @@
     "tr": "broşür",
     "en": "brochure",
     "ar": "كتيب",
-    "fr": "brochure"
+    "fr": "brochure",
+    "zinnen": [
+      "tju9mqit"
+    ]
   },
   {
     "nl": "fotomodel",
@@ -272,7 +356,10 @@
     "tr": "model, manken",
     "en": "photo model",
     "ar": "عارضة أزياء",
-    "fr": "mannequin"
+    "fr": "mannequin",
+    "zinnen": [
+      "hjvexksg"
+    ]
   },
   {
     "nl": "gangpad",
@@ -281,7 +368,10 @@
     "tr": "koridor",
     "en": "aisle",
     "ar": "ممر",
-    "fr": "allée"
+    "fr": "allée",
+    "zinnen": [
+      "hgakxj1u"
+    ]
   },
   {
     "nl": "geur",
@@ -290,7 +380,10 @@
     "tr": "koku",
     "en": "smell",
     "ar": "رائحة",
-    "fr": "odeur"
+    "fr": "odeur",
+    "zinnen": [
+      "er2e2k0i"
+    ]
   },
   {
     "nl": "gevoelig",
@@ -298,7 +391,10 @@
     "tr": "hassas",
     "en": "sensitive",
     "ar": "حساس",
-    "fr": "sensible"
+    "fr": "sensible",
+    "zinnen": [
+      "8rghqqvv"
+    ]
   },
   {
     "nl": "korting",
@@ -307,7 +403,11 @@
     "tr": "indirim",
     "en": "discount",
     "ar": "خصم",
-    "fr": "réduction"
+    "fr": "réduction",
+    "zinnen": [
+      "547cqn3u",
+      "f0raw1zy"
+    ]
   },
   {
     "nl": "media",
@@ -316,7 +416,10 @@
     "tr": "medya",
     "en": "media",
     "ar": "وسائل إعلام",
-    "fr": "médias"
+    "fr": "médias",
+    "zinnen": [
+      "xeyfbizp"
+    ]
   },
   {
     "nl": "onderaan",
@@ -324,7 +427,10 @@
     "tr": "aşağı durumda",
     "en": "at the bottom",
     "ar": "في الأسفل",
-    "fr": "en bas"
+    "fr": "en bas",
+    "zinnen": [
+      "1g7yx2ew"
+    ]
   },
   {
     "nl": "reclame",
@@ -333,7 +439,11 @@
     "tr": "reklam",
     "en": "advertisement",
     "ar": "إعلان",
-    "fr": "publicité"
+    "fr": "publicité",
+    "zinnen": [
+      "7lg8knsg",
+      "8rghqqvv"
+    ]
   },
   {
     "nl": "schuldig",
@@ -341,16 +451,10 @@
     "tr": "suçlu",
     "en": "guilty",
     "ar": "مذنب",
-    "fr": "coupable"
-  },
-  {
-    "nl": "soort",
-    "article": "het",
-    "type": "noun",
-    "tr": "tür",
-    "en": "type, kind",
-    "ar": "نوع",
-    "fr": "sorte"
+    "fr": "coupable",
+    "zinnen": [
+      "vremei0o"
+    ]
   },
   {
     "nl": "toeval",
@@ -359,7 +463,10 @@
     "tr": "tesadüf",
     "en": "coincidence",
     "ar": "صدفة",
-    "fr": "hasard"
+    "fr": "hasard",
+    "zinnen": [
+      "bg1cmhys"
+    ]
   },
   {
     "nl": "truc",
@@ -368,7 +475,11 @@
     "tr": "numara",
     "en": "trick",
     "ar": "خدعة",
-    "fr": "truc"
+    "fr": "truc",
+    "zinnen": [
+      "xnilhzwb",
+      "hxo9j4ag"
+    ]
   },
   {
     "nl": "uitverkoop",
@@ -377,7 +488,10 @@
     "tr": "(mevsim sonu) indirim",
     "en": "sale",
     "ar": "تخفيضات",
-    "fr": "soldes"
+    "fr": "soldes",
+    "zinnen": [
+      "obczhgbe"
+    ]
   },
   {
     "nl": "verleiden",
@@ -387,7 +501,10 @@
     "tr": "kandırmak",
     "en": "to seduce",
     "ar": "يغري",
-    "fr": "séduire"
+    "fr": "séduire",
+    "zinnen": [
+      "s5jlacy2"
+    ]
   },
   {
     "nl": "verleiding",
@@ -396,7 +513,10 @@
     "tr": "kandırma",
     "en": "temptation",
     "ar": "إغراء",
-    "fr": "tentation"
+    "fr": "tentation",
+    "zinnen": [
+      "olbyrqyt"
+    ]
   },
   {
     "nl": "verschrikkelijk",
@@ -404,7 +524,10 @@
     "tr": "inanılmaz, müthiş",
     "en": "terrible",
     "ar": "فظيع",
-    "fr": "terrible"
+    "fr": "terrible",
+    "zinnen": [
+      "5ujg75w1"
+    ]
   },
   {
     "nl": "werkelijk",
@@ -412,7 +535,10 @@
     "tr": "gerçekten",
     "en": "really",
     "ar": "حقاً",
-    "fr": "vraiment"
+    "fr": "vraiment",
+    "zinnen": [
+      "gewrfg3h"
+    ]
   },
   {
     "nl": "zichtbaar",
@@ -420,7 +546,10 @@
     "tr": "görünür",
     "en": "visible",
     "ar": "مرئي",
-    "fr": "visible"
+    "fr": "visible",
+    "zinnen": [
+      "547cqn3u"
+    ]
   },
   {
     "nl": "accijns",
@@ -429,7 +558,10 @@
     "tr": "özel tüketim vergisi",
     "en": "excise tax",
     "ar": "ضريبة انتقائية",
-    "fr": "accise"
+    "fr": "accise",
+    "zinnen": [
+      "hfjutrlr"
+    ]
   },
   {
     "nl": "afvoeren",
@@ -439,7 +571,10 @@
     "tr": "uzaklaştırmak",
     "en": "to drain, remove",
     "ar": "يزيل",
-    "fr": "évacuer"
+    "fr": "évacuer",
+    "zinnen": [
+      "dl7aqiu3"
+    ]
   },
   {
     "nl": "belasting",
@@ -448,7 +583,15 @@
     "tr": "vergi",
     "en": "tax",
     "ar": "ضريبة",
-    "fr": "impôt"
+    "fr": "impôt",
+    "zinnen": [
+      "unmw3koj",
+      "0vy98klk",
+      "quccbege",
+      "fgpbo1aq",
+      "wyjfnd4w",
+      "ip85205h"
+    ]
   },
   {
     "nl": "belastingaanslag",
@@ -457,7 +600,10 @@
     "tr": "vergi tahakkuku",
     "en": "tax assessment",
     "ar": "تقدير ضريبي",
-    "fr": "avis d'imposition"
+    "fr": "avis d'imposition",
+    "zinnen": [
+      "l72fw2fe"
+    ]
   },
   {
     "nl": "Belastingdienst",
@@ -466,7 +612,10 @@
     "tr": "Vergi Dairesi",
     "en": "Tax Authority",
     "ar": "مصلحة الضرائب",
-    "fr": "administration fiscale"
+    "fr": "administration fiscale",
+    "zinnen": [
+      "l72fw2fe"
+    ]
   },
   {
     "nl": "bestuur",
@@ -475,7 +624,10 @@
     "tr": "yönetim",
     "en": "administration",
     "ar": "إدارة",
-    "fr": "administration"
+    "fr": "administration",
+    "zinnen": [
+      "tassh2sq"
+    ]
   },
   {
     "nl": "bijdrage",
@@ -484,7 +636,10 @@
     "tr": "katkı payı",
     "en": "contribution",
     "ar": "مساهمة",
-    "fr": "contribution"
+    "fr": "contribution",
+    "zinnen": [
+      "dou9skwo"
+    ]
   },
   {
     "nl": "brommer",
@@ -493,7 +648,10 @@
     "tr": "motorlu bisiklet",
     "en": "moped",
     "ar": "دراجة نارية",
-    "fr": "cyclomoteur"
+    "fr": "cyclomoteur",
+    "zinnen": [
+      "yw7jxd3u"
+    ]
   },
   {
     "nl": "btw",
@@ -502,7 +660,10 @@
     "tr": "KDV",
     "en": "VAT",
     "ar": "ضريبة القيمة المضافة",
-    "fr": "TVA"
+    "fr": "TVA",
+    "zinnen": [
+      "ibwwck36"
+    ]
   },
   {
     "nl": "erfenis",
@@ -511,15 +672,24 @@
     "tr": "miras",
     "en": "inheritance",
     "ar": "ميراث",
-    "fr": "héritage"
+    "fr": "héritage",
+    "zinnen": [
+      "lor8q812"
+    ]
   },
   {
-    "nl": "etc.",
+    "nl": "etc",
     "type": "adv",
     "tr": "vs.",
     "en": "etc.",
     "ar": "إلخ",
-    "fr": "etc."
+    "fr": "etc.",
+    "zinnen": [
+      "g3u7k86j",
+      "md809kue",
+      "yy4agnez",
+      "idz145rq"
+    ]
   },
   {
     "nl": "fietsenmaker",
@@ -528,7 +698,10 @@
     "tr": "bisiklet tamircisi",
     "en": "bicycle mechanic",
     "ar": "ميكانيكي دراجات",
-    "fr": "réparateur de vélos"
+    "fr": "réparateur de vélos",
+    "zinnen": [
+      "wyjfnd4w"
+    ]
   },
   {
     "nl": "financieel",
@@ -536,7 +709,12 @@
     "tr": "mali",
     "en": "financial",
     "ar": "مالي",
-    "fr": "financier"
+    "fr": "financier",
+    "zinnen": [
+      "x1ly2l5t",
+      "ul1jk4uh",
+      "6n3n7tn6"
+    ]
   },
   {
     "nl": "loon",
@@ -545,7 +723,11 @@
     "tr": "maaş",
     "en": "wage",
     "ar": "أجر",
-    "fr": "salaire"
+    "fr": "salaire",
+    "zinnen": [
+      "quccbege",
+      "e5pqs1tw"
+    ]
   },
   {
     "nl": "provincie",
@@ -554,7 +736,10 @@
     "tr": "il",
     "en": "province",
     "ar": "مقاطعة",
-    "fr": "province"
+    "fr": "province",
+    "zinnen": [
+      "tassh2sq"
+    ]
   },
   {
     "nl": "rekeningnummer",
@@ -563,7 +748,10 @@
     "tr": "hesap numarası",
     "en": "account number",
     "ar": "رقم الحساب",
-    "fr": "numéro de compte"
+    "fr": "numéro de compte",
+    "zinnen": [
+      "db716yab"
+    ]
   },
   {
     "nl": "schoenmaker",
@@ -572,7 +760,10 @@
     "tr": "ayakkabıcı",
     "en": "shoemaker",
     "ar": "إسكافي",
-    "fr": "cordonnier"
+    "fr": "cordonnier",
+    "zinnen": [
+      "wyjfnd4w"
+    ]
   },
   {
     "nl": "sigaret",
@@ -581,7 +772,10 @@
     "tr": "sigara",
     "en": "cigarette",
     "ar": "سيجارة",
-    "fr": "cigarette"
+    "fr": "cigarette",
+    "zinnen": [
+      "hfjutrlr"
+    ]
   },
   {
     "nl": "systeem",
@@ -590,7 +784,11 @@
     "tr": "sistem",
     "en": "system",
     "ar": "نظام",
-    "fr": "système"
+    "fr": "système",
+    "zinnen": [
+      "520d8d36",
+      "83xfgaat"
+    ]
   },
   {
     "nl": "toeslag",
@@ -599,7 +797,10 @@
     "tr": "ek ödeneği",
     "en": "surcharge, allowance",
     "ar": "بدل",
-    "fr": "supplément"
+    "fr": "supplément",
+    "zinnen": [
+      "8c5dfcei"
+    ]
   },
   {
     "nl": "toevoegen",
@@ -609,7 +810,10 @@
     "tr": "eklemek",
     "en": "to add",
     "ar": "يضيف",
-    "fr": "ajouter"
+    "fr": "ajouter",
+    "zinnen": [
+      "8c5dfcei"
+    ]
   },
   {
     "nl": "uitstel",
@@ -618,7 +822,10 @@
     "tr": "erteleme",
     "en": "postponement",
     "ar": "تأجيل",
-    "fr": "report"
+    "fr": "report",
+    "zinnen": [
+      "3as73r77"
+    ]
   },
   {
     "nl": "vergissing",
@@ -627,7 +834,10 @@
     "tr": "yanılgı",
     "en": "mistake",
     "ar": "خطأ",
-    "fr": "erreur"
+    "fr": "erreur",
+    "zinnen": [
+      "nc188ewq"
+    ]
   },
   {
     "nl": "vorm",
@@ -636,7 +846,10 @@
     "tr": "şekil",
     "en": "form, shape",
     "ar": "شكل",
-    "fr": "forme"
+    "fr": "forme",
+    "zinnen": [
+      "7b93g3pt"
+    ]
   },
   {
     "nl": "vraag",
@@ -645,7 +858,10 @@
     "tr": "soru",
     "en": "question",
     "ar": "سؤال",
-    "fr": "question"
+    "fr": "question",
+    "zinnen": [
+      "ip85205h"
+    ]
   },
   {
     "nl": "afnemen",
@@ -655,7 +871,10 @@
     "tr": "azalmak",
     "en": "to decrease",
     "ar": "ينقص",
-    "fr": "diminuer"
+    "fr": "diminuer",
+    "zinnen": [
+      "1nbmlsg5"
+    ]
   },
   {
     "nl": "Amerikaans",
@@ -663,7 +882,10 @@
     "tr": "Amerikan",
     "en": "American",
     "ar": "أمريكي",
-    "fr": "américain"
+    "fr": "américain",
+    "zinnen": [
+      "xmwnzy1c"
+    ]
   },
   {
     "nl": "angst",
@@ -672,7 +894,10 @@
     "tr": "korku",
     "en": "fear",
     "ar": "خوف",
-    "fr": "peur"
+    "fr": "peur",
+    "zinnen": [
+      "4p9hofh5"
+    ]
   },
   {
     "nl": "blijken",
@@ -682,7 +907,10 @@
     "tr": "anlaşılmak",
     "en": "to appear, turn out",
     "ar": "يتبين",
-    "fr": "s'avérer"
+    "fr": "s'avérer",
+    "zinnen": [
+      "9ohlpii6"
+    ]
   },
   {
     "nl": "dankbaar",
@@ -690,7 +918,10 @@
     "tr": "minnettar",
     "en": "grateful",
     "ar": "ممتن",
-    "fr": "reconnaissant"
+    "fr": "reconnaissant",
+    "zinnen": [
+      "ghs2pz1q"
+    ]
   },
   {
     "nl": "droom",
@@ -699,7 +930,10 @@
     "tr": "hayal, rüya",
     "en": "dream",
     "ar": "حلم",
-    "fr": "rêve"
+    "fr": "rêve",
+    "zinnen": [
+      "3r64xgje"
+    ]
   },
   {
     "nl": "effect",
@@ -708,7 +942,10 @@
     "tr": "etki",
     "en": "effect",
     "ar": "تأثير",
-    "fr": "effet"
+    "fr": "effet",
+    "zinnen": [
+      "ziod7ae9"
+    ]
   },
   {
     "nl": "gesprek",
@@ -717,7 +954,11 @@
     "tr": "konuşma",
     "en": "conversation",
     "ar": "محادثة",
-    "fr": "conversation"
+    "fr": "conversation",
+    "zinnen": [
+      "ilvl6x4a",
+      "tppqzeds"
+    ]
   },
   {
     "nl": "hypotheek",
@@ -726,7 +967,10 @@
     "tr": "ipotek",
     "en": "mortgage",
     "ar": "رهن عقاري",
-    "fr": "hypothèque"
+    "fr": "hypothèque",
+    "zinnen": [
+      "e5cf8tpi"
+    ]
   },
   {
     "nl": "idioot",
@@ -734,7 +978,10 @@
     "tr": "saçma, aptal",
     "en": "idiotic",
     "ar": "غبي",
-    "fr": "idiot"
+    "fr": "idiot",
+    "zinnen": [
+      "xr76wodu"
+    ]
   },
   {
     "nl": "loterij",
@@ -743,7 +990,10 @@
     "tr": "piyango",
     "en": "lottery",
     "ar": "يانصيب",
-    "fr": "loterie"
+    "fr": "loterie",
+    "zinnen": [
+      "o51b2i2l"
+    ]
   },
   {
     "nl": "onderzoeker",
@@ -752,7 +1002,10 @@
     "tr": "araştırmacı",
     "en": "researcher",
     "ar": "باحث",
-    "fr": "chercheur"
+    "fr": "chercheur",
+    "zinnen": [
+      "kogdgg2i"
+    ]
   },
   {
     "nl": "parttime",
@@ -760,7 +1013,10 @@
     "tr": "yarı zamanlı",
     "en": "part-time",
     "ar": "دوام جزئي",
-    "fr": "à temps partiel"
+    "fr": "à temps partiel",
+    "zinnen": [
+      "tqh8rklz"
+    ]
   },
   {
     "nl": "plotseling",
@@ -768,16 +1024,10 @@
     "tr": "birdenbire",
     "en": "suddenly",
     "ar": "فجأة",
-    "fr": "soudainement"
-  },
-  {
-    "nl": "relatie",
-    "article": "de",
-    "type": "noun",
-    "tr": "ilişki",
-    "en": "relationship",
-    "ar": "علاقة",
-    "fr": "relation"
+    "fr": "soudainement",
+    "zinnen": [
+      "bvoql40m"
+    ]
   },
   {
     "nl": "samenvatting",
@@ -786,7 +1036,10 @@
     "tr": "özet",
     "en": "summary",
     "ar": "ملخص",
-    "fr": "résumé"
+    "fr": "résumé",
+    "zinnen": [
+      "htjkedll"
+    ]
   },
   {
     "nl": "verband",
@@ -795,7 +1048,10 @@
     "tr": "bağlantı",
     "en": "connection",
     "ar": "صلة",
-    "fr": "lien"
+    "fr": "lien",
+    "zinnen": [
+      "sl64j891"
+    ]
   },
   {
     "nl": "Verenigde Staten",
@@ -804,7 +1060,10 @@
     "tr": "Amerika Birleşik Devletleri",
     "en": "United States",
     "ar": "الولايات المتحدة",
-    "fr": "États-Unis"
+    "fr": "États-Unis",
+    "zinnen": [
+      "zy242815"
+    ]
   },
   {
     "nl": "weggeven",
@@ -814,7 +1073,10 @@
     "tr": "hediye etmek",
     "en": "to give away",
     "ar": "يهدي",
-    "fr": "donner"
+    "fr": "donner",
+    "zinnen": [
+      "6hm4i168"
+    ]
   },
   {
     "nl": "wens",
@@ -823,7 +1085,10 @@
     "tr": "arzu",
     "en": "wish",
     "ar": "أمنية",
-    "fr": "souhait"
+    "fr": "souhait",
+    "zinnen": [
+      "1d9nb6ox"
+    ]
   },
   {
     "nl": "winnaar",
@@ -832,7 +1097,10 @@
     "tr": "galip",
     "en": "winner",
     "ar": "فائز",
-    "fr": "gagnant"
+    "fr": "gagnant",
+    "zinnen": [
+      "r0d2q3kc"
+    ]
   },
   {
     "nl": "winnen",
@@ -842,7 +1110,10 @@
     "tr": "kazanmak",
     "en": "to win",
     "ar": "يفوز",
-    "fr": "gagner"
+    "fr": "gagner",
+    "zinnen": [
+      "3m05bgcr"
+    ]
   },
   {
     "nl": "zich voorstellen",
@@ -852,7 +1123,10 @@
     "tr": "hayal etmek, kendini tanıtmak",
     "en": "to imagine, to introduce oneself",
     "ar": "يتخيل، يقدم نفسه",
-    "fr": "imaginer, se présenter"
+    "fr": "imaginer, se présenter",
+    "zinnen": [
+      "mll3r38a"
+    ]
   },
   {
     "nl": "zorgen",
@@ -861,7 +1135,11 @@
     "tr": "endişeler",
     "en": "worries",
     "ar": "مخاوف",
-    "fr": "soucis"
+    "fr": "soucis",
+    "zinnen": [
+      "lp5w5sfi",
+      "xbkdjamy"
+    ]
   },
   {
     "nl": "Zweeds",
@@ -869,7 +1147,10 @@
     "tr": "İsveç(li), İsveççe",
     "en": "Swedish",
     "ar": "سويدي",
-    "fr": "suédois"
+    "fr": "suédois",
+    "zinnen": [
+      "myv5yzl1"
+    ]
   },
   {
     "nl": "absoluut",
@@ -877,7 +1158,10 @@
     "tr": "kesinlikle",
     "en": "absolutely",
     "ar": "بالتأكيد",
-    "fr": "absolument"
+    "fr": "absolument",
+    "zinnen": [
+      "446iujqk"
+    ]
   },
   {
     "nl": "aflevering",
@@ -886,7 +1170,11 @@
     "tr": "dizi bölümü",
     "en": "episode",
     "ar": "حلقة",
-    "fr": "épisode"
+    "fr": "épisode",
+    "zinnen": [
+      "vrgwhyfv",
+      "446iujqk"
+    ]
   },
   {
     "nl": "dood",
@@ -894,7 +1182,13 @@
     "tr": "ölü",
     "en": "dead",
     "ar": "ميت",
-    "fr": "mort"
+    "fr": "mort",
+    "zinnen": [
+      "vwk8i462",
+      "blggdvu0",
+      "6g5n6qpx",
+      "kl74bvhg"
+    ]
   },
   {
     "nl": "drama",
@@ -903,7 +1197,10 @@
     "tr": "dram",
     "en": "drama",
     "ar": "دراما",
-    "fr": "drame"
+    "fr": "drame",
+    "zinnen": [
+      "d9qjiwvr"
+    ]
   },
   {
     "nl": "hangen",
@@ -913,7 +1210,10 @@
     "tr": "asmak",
     "en": "to hang",
     "ar": "يعلق",
-    "fr": "pendre"
+    "fr": "pendre",
+    "zinnen": [
+      "6yebw8ih"
+    ]
   },
   {
     "nl": "journaal",
@@ -922,7 +1222,10 @@
     "tr": "haberler",
     "en": "news",
     "ar": "نشرة الأخبار",
-    "fr": "journal télévisé"
+    "fr": "journal télévisé",
+    "zinnen": [
+      "d4u67u5u"
+    ]
   },
   {
     "nl": "misdaad",
@@ -931,17 +1234,10 @@
     "tr": "suç",
     "en": "crime",
     "ar": "جريمة",
-    "fr": "crime"
-  },
-  {
-    "nl": "missen",
-    "type": "verb",
-    "perfectum": "gemist",
-    "imperfectum": "miste",
-    "tr": "özlemek",
-    "en": "to miss",
-    "ar": "يفتقد",
-    "fr": "manquer"
+    "fr": "crime",
+    "zinnen": [
+      "tkcvjkcz"
+    ]
   },
   {
     "nl": "ontspannen",
@@ -951,7 +1247,10 @@
     "tr": "dinlenmek",
     "en": "to relax",
     "ar": "يسترخي",
-    "fr": "se détendre"
+    "fr": "se détendre",
+    "zinnen": [
+      "v3tjzecp"
+    ]
   },
   {
     "nl": "politiek",
@@ -960,16 +1259,16 @@
     "tr": "siyaset",
     "en": "politics",
     "ar": "سياسة",
-    "fr": "politique"
-  },
-  {
-    "nl": "programma",
-    "article": "het",
-    "type": "noun",
-    "tr": "program",
-    "en": "program",
-    "ar": "برنامج",
-    "fr": "programme"
+    "fr": "politique",
+    "zinnen": [
+      "m7rykhrz",
+      "4zg8z4s1",
+      "jsa1esfj",
+      "p6q68gur",
+      "28y2sdg5",
+      "1idpss45",
+      "us0b14hy"
+    ]
   },
   {
     "nl": "quiz",
@@ -978,7 +1277,11 @@
     "tr": "bilgi yarışması",
     "en": "quiz",
     "ar": "مسابقة",
-    "fr": "quiz"
+    "fr": "quiz",
+    "zinnen": [
+      "qhgpd9rt",
+      "lvquq0hp"
+    ]
   },
   {
     "nl": "romantisch",
@@ -986,7 +1289,12 @@
     "tr": "romantik",
     "en": "romantic",
     "ar": "رومانسي",
-    "fr": "romantique"
+    "fr": "romantique",
+    "zinnen": [
+      "91bv14wt",
+      "d9qjiwvr",
+      "tm1qls04"
+    ]
   },
   {
     "nl": "rust",
@@ -995,7 +1303,10 @@
     "tr": "huzur",
     "en": "peace, rest",
     "ar": "هدوء",
-    "fr": "repos"
+    "fr": "repos",
+    "zinnen": [
+      "7bdbqd9h"
+    ]
   },
   {
     "nl": "soapserie",
@@ -1004,7 +1315,10 @@
     "tr": "pembe dizi",
     "en": "soap opera",
     "ar": "مسلسل",
-    "fr": "feuilleton"
+    "fr": "feuilleton",
+    "zinnen": [
+      "k6ifqdnw"
+    ]
   },
   {
     "nl": "talkshow",
@@ -1013,7 +1327,10 @@
     "tr": "talk show",
     "en": "talk show",
     "ar": "برنامج حواري",
-    "fr": "talk-show"
+    "fr": "talk-show",
+    "zinnen": [
+      "ge3x26zg"
+    ]
   },
   {
     "nl": "terugkijken",
@@ -1023,7 +1340,10 @@
     "tr": "eski program izlemek",
     "en": "to watch back",
     "ar": "يعيد المشاهدة",
-    "fr": "revoir"
+    "fr": "revoir",
+    "zinnen": [
+      "ys7pae1h"
+    ]
   },
   {
     "nl": "thriller",
@@ -1032,7 +1352,11 @@
     "tr": "gerilim filmi",
     "en": "thriller",
     "ar": "فيلم إثارة",
-    "fr": "thriller"
+    "fr": "thriller",
+    "zinnen": [
+      "5fpjy3in",
+      "lszsqff6"
+    ]
   },
   {
     "nl": "titel",
@@ -1041,7 +1365,10 @@
     "tr": "başlık",
     "en": "title",
     "ar": "عنوان",
-    "fr": "titre"
+    "fr": "titre",
+    "zinnen": [
+      "k6ifqdnw"
+    ]
   },
   {
     "nl": "tof",
@@ -1049,7 +1376,10 @@
     "tr": "harika",
     "en": "cool",
     "ar": "رائع",
-    "fr": "cool"
+    "fr": "cool",
+    "zinnen": [
+      "446iujqk"
+    ]
   },
   {
     "nl": "vegetarisch",
@@ -1057,7 +1387,10 @@
     "tr": "vejetaryen",
     "en": "vegetarian",
     "ar": "نباتي",
-    "fr": "végétarien"
+    "fr": "végétarien",
+    "zinnen": [
+      "f6z990oa"
+    ]
   },
   {
     "nl": "verslavend",
@@ -1065,7 +1398,11 @@
     "tr": "bağımlılık yaratan",
     "en": "addictive",
     "ar": "مسبب للإدمان",
-    "fr": "addictif"
+    "fr": "addictif",
+    "zinnen": [
+      "cfs4xol2",
+      "xxrp5kjo"
+    ]
   },
   {
     "nl": "waarover",
@@ -1073,7 +1410,10 @@
     "tr": "ne hakkında",
     "en": "about what",
     "ar": "عن ماذا",
-    "fr": "de quoi"
+    "fr": "de quoi",
+    "zinnen": [
+      "zqgi8pgi"
+    ]
   },
   {
     "nl": "waarvan",
@@ -1081,7 +1421,10 @@
     "tr": "neyi",
     "en": "of which",
     "ar": "الذي منه",
-    "fr": "dont"
+    "fr": "dont",
+    "zinnen": [
+      "zqgi8pgi"
+    ]
   },
   {
     "nl": "zender",
@@ -1090,7 +1433,10 @@
     "tr": "yayıncı",
     "en": "broadcaster",
     "ar": "قناة",
-    "fr": "chaîne"
+    "fr": "chaîne",
+    "zinnen": [
+      "d2htjlh3"
+    ]
   },
   {
     "nl": "advertentie",
@@ -1099,7 +1445,10 @@
     "tr": "reklam, ilan",
     "en": "advertisement",
     "ar": "إعلان",
-    "fr": "annonce"
+    "fr": "annonce",
+    "zinnen": [
+      "efd2h2u0"
+    ]
   },
   {
     "nl": "bevolking",
@@ -1108,7 +1457,11 @@
     "tr": "nüfus",
     "en": "population",
     "ar": "سكان",
-    "fr": "population"
+    "fr": "population",
+    "zinnen": [
+      "vj5ur7eg",
+      "ki7ptutx"
+    ]
   },
   {
     "nl": "bezorgd",
@@ -1116,7 +1469,10 @@
     "tr": "endişeli",
     "en": "worried",
     "ar": "قلق",
-    "fr": "inquiet"
+    "fr": "inquiet",
+    "zinnen": [
+      "ttytfc36"
+    ]
   },
   {
     "nl": "communiceren",
@@ -1126,7 +1482,10 @@
     "tr": "haberleşmek",
     "en": "to communicate",
     "ar": "يتواصل",
-    "fr": "communiquer"
+    "fr": "communiquer",
+    "zinnen": [
+      "sel5zsve"
+    ]
   },
   {
     "nl": "constant",
@@ -1134,7 +1493,10 @@
     "tr": "devamlı",
     "en": "constant",
     "ar": "مستمر",
-    "fr": "constant"
+    "fr": "constant",
+    "zinnen": [
+      "sel5zsve"
+    ]
   },
   {
     "nl": "dankzij",
@@ -1142,7 +1504,10 @@
     "tr": "sayesinde",
     "en": "thanks to",
     "ar": "بفضل",
-    "fr": "grâce à"
+    "fr": "grâce à",
+    "zinnen": [
+      "c7gl1p15"
+    ]
   },
   {
     "nl": "diploma-uitreiking",
@@ -1151,7 +1516,10 @@
     "tr": "diploma töreni",
     "en": "graduation ceremony",
     "ar": "حفل تخرج",
-    "fr": "remise des diplômes"
+    "fr": "remise des diplômes",
+    "zinnen": [
+      "id7eijbs"
+    ]
   },
   {
     "nl": "echter",
@@ -1159,7 +1527,10 @@
     "tr": "ancak",
     "en": "however",
     "ar": "لكن",
-    "fr": "cependant"
+    "fr": "cependant",
+    "zinnen": [
+      "rlxzoh71"
+    ]
   },
   {
     "nl": "evenement",
@@ -1168,7 +1539,10 @@
     "tr": "etkinlik",
     "en": "event",
     "ar": "حدث",
-    "fr": "événement"
+    "fr": "événement",
+    "zinnen": [
+      "gjr80mqo"
+    ]
   },
   {
     "nl": "feestdag",
@@ -1177,7 +1551,10 @@
     "tr": "bayram günü",
     "en": "holiday",
     "ar": "عطلة",
-    "fr": "jour férié"
+    "fr": "jour férié",
+    "zinnen": [
+      "zqx1vilp"
+    ]
   },
   {
     "nl": "festival",
@@ -1186,7 +1563,10 @@
     "tr": "festival",
     "en": "festival",
     "ar": "مهرجان",
-    "fr": "festival"
+    "fr": "festival",
+    "zinnen": [
+      "0s24odrg"
+    ]
   },
   {
     "nl": "gebeurtenis",
@@ -1195,7 +1575,10 @@
     "tr": "olay",
     "en": "event",
     "ar": "حدث",
-    "fr": "événement"
+    "fr": "événement",
+    "zinnen": [
+      "apnbgahg"
+    ]
   },
   {
     "nl": "gebruiker",
@@ -1204,16 +1587,10 @@
     "tr": "kullanıcı",
     "en": "user",
     "ar": "مستخدم",
-    "fr": "utilisateur"
-  },
-  {
-    "nl": "kennis",
-    "article": "de",
-    "type": "noun",
-    "tr": "bilgi / tanıdık",
-    "en": "knowledge / acquaintance",
-    "ar": "معرفة",
-    "fr": "connaissance"
+    "fr": "utilisateur",
+    "zinnen": [
+      "weemk323"
+    ]
   },
   {
     "nl": "kleinkind",
@@ -1222,7 +1599,10 @@
     "tr": "torun",
     "en": "grandchild",
     "ar": "حفيد",
-    "fr": "petit-enfant"
+    "fr": "petit-enfant",
+    "zinnen": [
+      "cn6x2ovc"
+    ]
   },
   {
     "nl": "koopje",
@@ -1231,7 +1611,11 @@
     "tr": "kelepir",
     "en": "bargain",
     "ar": "صفقة",
-    "fr": "bonne affaire"
+    "fr": "bonne affaire",
+    "zinnen": [
+      "uei5tmxa",
+      "ubd40b2k"
+    ]
   },
   {
     "nl": "kwart",
@@ -1240,7 +1624,10 @@
     "tr": "çeyrek",
     "en": "quarter",
     "ar": "ربع",
-    "fr": "quart"
+    "fr": "quart",
+    "zinnen": [
+      "5m64adxh"
+    ]
   },
   {
     "nl": "oudere",
@@ -1249,7 +1636,10 @@
     "tr": "yaşlı",
     "en": "elderly person",
     "ar": "كبير السن",
-    "fr": "personne âgée"
+    "fr": "personne âgée",
+    "zinnen": [
+      "opi8h0vz"
+    ]
   },
   {
     "nl": "privacy",
@@ -1258,7 +1648,10 @@
     "tr": "özel hayat, mahremiyet",
     "en": "privacy",
     "ar": "خصوصية",
-    "fr": "vie privée"
+    "fr": "vie privée",
+    "zinnen": [
+      "9mu3og5t"
+    ]
   },
   {
     "nl": "profiel",
@@ -1267,7 +1660,10 @@
     "tr": "profil",
     "en": "profile",
     "ar": "ملف شخصي",
-    "fr": "profil"
+    "fr": "profil",
+    "zinnen": [
+      "qadut8ak"
+    ]
   },
   {
     "nl": "slechts",
@@ -1275,7 +1671,10 @@
     "tr": "sadece",
     "en": "only",
     "ar": "فقط",
-    "fr": "seulement"
+    "fr": "seulement",
+    "zinnen": [
+      "rzh5jf4k"
+    ]
   },
   {
     "nl": "sociale medium",
@@ -1284,7 +1683,10 @@
     "tr": "sosyal medya",
     "en": "social media",
     "ar": "وسائل التواصل الاجتماعي",
-    "fr": "réseau social"
+    "fr": "réseau social",
+    "zinnen": [
+      "lwgi9c7h"
+    ]
   },
   {
     "nl": "toename",
@@ -1293,7 +1695,10 @@
     "tr": "artış",
     "en": "increase",
     "ar": "زيادة",
-    "fr": "augmentation"
+    "fr": "augmentation",
+    "zinnen": [
+      "la8h05lf"
+    ]
   },
   {
     "nl": "verslaafd",
@@ -1301,7 +1706,10 @@
     "tr": "bağımlı",
     "en": "addicted",
     "ar": "مدمن",
-    "fr": "dépendant"
+    "fr": "dépendant",
+    "zinnen": [
+      "wj2nx0re"
+    ]
   },
   {
     "nl": "afstand",
@@ -1310,7 +1718,10 @@
     "tr": "mesafe",
     "en": "distance",
     "ar": "مسافة",
-    "fr": "distance"
+    "fr": "distance",
+    "zinnen": [
+      "ubsb5k8c"
+    ]
   },
   {
     "nl": "arbeidsmarkt",
@@ -1319,7 +1730,10 @@
     "tr": "iş piyasası",
     "en": "labor market",
     "ar": "سوق العمل",
-    "fr": "marché du travail"
+    "fr": "marché du travail",
+    "zinnen": [
+      "rx1nq0a7"
+    ]
   },
   {
     "nl": "Aziatisch",
@@ -1327,7 +1741,10 @@
     "tr": "Asya(lı)",
     "en": "Asian",
     "ar": "آسيوي",
-    "fr": "asiatique"
+    "fr": "asiatique",
+    "zinnen": [
+      "zl9d5p57"
+    ]
   },
   {
     "nl": "bevallen",
@@ -1337,7 +1754,10 @@
     "tr": "doğum yapmak",
     "en": "to give birth",
     "ar": "تلد",
-    "fr": "accoucher"
+    "fr": "accoucher",
+    "zinnen": [
+      "jsqj2oxr"
+    ]
   },
   {
     "nl": "brandstof",
@@ -1346,7 +1766,10 @@
     "tr": "yakıt",
     "en": "fuel",
     "ar": "وقود",
-    "fr": "carburant"
+    "fr": "carburant",
+    "zinnen": [
+      "blhgyohg"
+    ]
   },
   {
     "nl": "buitenlands",
@@ -1354,7 +1777,11 @@
     "tr": "yabancı, yurtdışı",
     "en": "foreign",
     "ar": "أجنبي",
-    "fr": "étranger"
+    "fr": "étranger",
+    "zinnen": [
+      "ydrr38s5",
+      "yhvrk2bf"
+    ]
   },
   {
     "nl": "daarvoor",
@@ -1362,7 +1789,10 @@
     "tr": "bundan önce",
     "en": "before that",
     "ar": "قبل ذلك",
-    "fr": "avant cela"
+    "fr": "avant cela",
+    "zinnen": [
+      "gglmwycf"
+    ]
   },
   {
     "nl": "economie",
@@ -1371,7 +1801,11 @@
     "tr": "ekonomi",
     "en": "economy",
     "ar": "اقتصاد",
-    "fr": "économie"
+    "fr": "économie",
+    "zinnen": [
+      "ttytfc36",
+      "r7axndf7"
+    ]
   },
   {
     "nl": "Europese Unie",
@@ -1380,7 +1814,10 @@
     "tr": "Avrupa Birliği",
     "en": "European Union",
     "ar": "الاتحاد الأوروبي",
-    "fr": "Union européenne"
+    "fr": "Union européenne",
+    "zinnen": [
+      "v2oiu5gx"
+    ]
   },
   {
     "nl": "feit",
@@ -1389,7 +1826,10 @@
     "tr": "gerçek",
     "en": "fact",
     "ar": "حقيقة",
-    "fr": "fait"
+    "fr": "fait",
+    "zinnen": [
+      "ako0xgmh"
+    ]
   },
   {
     "nl": "hoofdstad",
@@ -1398,7 +1838,10 @@
     "tr": "başkent",
     "en": "capital city",
     "ar": "عاصمة",
-    "fr": "capitale"
+    "fr": "capitale",
+    "zinnen": [
+      "ej7xwkfw"
+    ]
   },
   {
     "nl": "migrant",
@@ -1407,7 +1850,10 @@
     "tr": "göçmen",
     "en": "migrant",
     "ar": "مهاجر",
-    "fr": "migrant"
+    "fr": "migrant",
+    "zinnen": [
+      "0abtlwsc"
+    ]
   },
   {
     "nl": "nieuwssite",
@@ -1416,7 +1862,10 @@
     "tr": "haber sitesi",
     "en": "news site",
     "ar": "موقع إخباري",
-    "fr": "site d'actualités"
+    "fr": "site d'actualités",
+    "zinnen": [
+      "jnryw7d3"
+    ]
   },
   {
     "nl": "ondanks",
@@ -1424,7 +1873,10 @@
     "tr": "-(ye) rağmen",
     "en": "despite",
     "ar": "رغم",
-    "fr": "malgré"
+    "fr": "malgré",
+    "zinnen": [
+      "tmnry67p"
+    ]
   },
   {
     "nl": "onderzoeken",
@@ -1434,7 +1886,10 @@
     "tr": "araştırmak",
     "en": "to investigate",
     "ar": "يبحث",
-    "fr": "examiner"
+    "fr": "examiner",
+    "zinnen": [
+      "08yeqy3c"
+    ]
   },
   {
     "nl": "organisatie",
@@ -1443,7 +1898,10 @@
     "tr": "kuruluş",
     "en": "organization",
     "ar": "منظمة",
-    "fr": "organisation"
+    "fr": "organisation",
+    "zinnen": [
+      "zjicujx1"
+    ]
   },
   {
     "nl": "overdreven",
@@ -1451,7 +1909,10 @@
     "tr": "abartılmış",
     "en": "exaggerated",
     "ar": "مبالغ فيه",
-    "fr": "exagéré"
+    "fr": "exagéré",
+    "zinnen": [
+      "solom518"
+    ]
   },
   {
     "nl": "ruim",
@@ -1459,7 +1920,14 @@
     "tr": "geniş, aşkın",
     "en": "spacious, more than",
     "ar": "أكثر من",
-    "fr": "large"
+    "fr": "large",
+    "zinnen": [
+      "myniohgd",
+      "ezktbcsp",
+      "s4pcli8t",
+      "767or2s0",
+      "3cbesiiq"
+    ]
   },
   {
     "nl": "sloot",
@@ -1468,7 +1936,10 @@
     "tr": "bent",
     "en": "ditch",
     "ar": "خندق",
-    "fr": "fossé"
+    "fr": "fossé",
+    "zinnen": [
+      "0vin2siv"
+    ]
   },
   {
     "nl": "stom",
@@ -1476,7 +1947,10 @@
     "tr": "aptal",
     "en": "stupid",
     "ar": "غبي",
-    "fr": "bête"
+    "fr": "bête",
+    "zinnen": [
+      "46quj52v"
+    ]
   },
   {
     "nl": "tarief",
@@ -1485,15 +1959,11 @@
     "tr": "tarife",
     "en": "rate, tariff",
     "ar": "تعريفة",
-    "fr": "tarif"
-  },
-  {
-    "nl": "toch",
-    "type": "adv",
-    "tr": "değil mi?, yine de",
-    "en": "still, yet",
-    "ar": "مع ذلك",
-    "fr": "quand même"
+    "fr": "tarif",
+    "zinnen": [
+      "494rwzeh",
+      "dh3umi52"
+    ]
   },
   {
     "nl": "verhogen",
@@ -1503,7 +1973,10 @@
     "tr": "yükseltmek",
     "en": "to raise",
     "ar": "يرفع",
-    "fr": "augmenter"
+    "fr": "augmenter",
+    "zinnen": [
+      "dh3umi52"
+    ]
   },
   {
     "nl": "voortaan",
@@ -1511,7 +1984,10 @@
     "tr": "artık",
     "en": "from now on",
     "ar": "من الآن فصاعداً",
-    "fr": "désormais"
+    "fr": "désormais",
+    "zinnen": [
+      "cxirw8bw"
+    ]
   },
   {
     "nl": "vrezen",
@@ -1521,7 +1997,10 @@
     "tr": "korkmak",
     "en": "to fear",
     "ar": "يخشى",
-    "fr": "craindre"
+    "fr": "craindre",
+    "zinnen": [
+      "kwc7xldk"
+    ]
   },
   {
     "nl": "werkloosheid",
@@ -1530,17 +2009,11 @@
     "tr": "işsizlik",
     "en": "unemployment",
     "ar": "بطالة",
-    "fr": "chômage"
-  },
-  {
-    "nl": "aankomen",
-    "type": "verb",
-    "perfectum": "aangekomen",
-    "imperfectum": "kwam aan",
-    "tr": "varmak",
-    "en": "to arrive",
-    "ar": "يصل",
-    "fr": "arriver"
+    "fr": "chômage",
+    "zinnen": [
+      "kwc7xldk",
+      "nkoselle"
+    ]
   },
   {
     "nl": "aanraden",
@@ -1550,7 +2023,10 @@
     "tr": "tavsiye etmek",
     "en": "to recommend",
     "ar": "ينصح",
-    "fr": "conseiller"
+    "fr": "conseiller",
+    "zinnen": [
+      "nioaymyd"
+    ]
   },
   {
     "nl": "beeld",
@@ -1559,7 +2035,10 @@
     "tr": "görüntü",
     "en": "image",
     "ar": "صورة",
-    "fr": "image"
+    "fr": "image",
+    "zinnen": [
+      "62fnuf7x"
+    ]
   },
   {
     "nl": "bespreken",
@@ -1569,7 +2048,12 @@
     "tr": "görüşmek",
     "en": "to discuss",
     "ar": "يناقش",
-    "fr": "discuter"
+    "fr": "discuter",
+    "zinnen": [
+      "u502tilz",
+      "zd2lnvqp",
+      "g7bn8yt7"
+    ]
   },
   {
     "nl": "boeddhist",
@@ -1578,7 +2062,10 @@
     "tr": "Budist",
     "en": "Buddhist",
     "ar": "بوذي",
-    "fr": "bouddhiste"
+    "fr": "bouddhiste",
+    "zinnen": [
+      "m7of8svq"
+    ]
   },
   {
     "nl": "christen",
@@ -1587,7 +2074,10 @@
     "tr": "Hristiyan",
     "en": "Christian",
     "ar": "مسيحي",
-    "fr": "chrétien"
+    "fr": "chrétien",
+    "zinnen": [
+      "ybvwed1p"
+    ]
   },
   {
     "nl": "drug",
@@ -1596,7 +2086,10 @@
     "tr": "uyuşturucu",
     "en": "drug",
     "ar": "مخدرات",
-    "fr": "drogue"
+    "fr": "drogue",
+    "zinnen": [
+      "4cat96h3"
+    ]
   },
   {
     "nl": "eiland",
@@ -1605,7 +2098,10 @@
     "tr": "ada",
     "en": "island",
     "ar": "جزيرة",
-    "fr": "île"
+    "fr": "île",
+    "zinnen": [
+      "dvsj19zn"
+    ]
   },
   {
     "nl": "geloof",
@@ -1614,7 +2110,10 @@
     "tr": "din",
     "en": "faith, religion",
     "ar": "دين",
-    "fr": "foi"
+    "fr": "foi",
+    "zinnen": [
+      "fa3cimvl"
+    ]
   },
   {
     "nl": "kerk",
@@ -1623,7 +2122,11 @@
     "tr": "kilise",
     "en": "church",
     "ar": "كنيسة",
-    "fr": "église"
+    "fr": "église",
+    "zinnen": [
+      "r3ie8lc8",
+      "hva0bb6s"
+    ]
   },
   {
     "nl": "kerstvakantie",
@@ -1632,7 +2135,10 @@
     "tr": "Noel tatili",
     "en": "Christmas holiday",
     "ar": "عطلة الكريسماس",
-    "fr": "vacances de Noël"
+    "fr": "vacances de Noël",
+    "zinnen": [
+      "mbrteu9q"
+    ]
   },
   {
     "nl": "liefde",
@@ -1641,7 +2147,11 @@
     "tr": "aşk, sevgi",
     "en": "love",
     "ar": "حب",
-    "fr": "amour"
+    "fr": "amour",
+    "zinnen": [
+      "7vl2bks9",
+      "4p8wm3zm"
+    ]
   },
   {
     "nl": "moskee",
@@ -1650,7 +2160,10 @@
     "tr": "cami",
     "en": "mosque",
     "ar": "مسجد",
-    "fr": "mosquée"
+    "fr": "mosquée",
+    "zinnen": [
+      "cfj8x7r5"
+    ]
   },
   {
     "nl": "moslim",
@@ -1659,7 +2172,10 @@
     "tr": "Müslüman",
     "en": "Muslim",
     "ar": "مسلم",
-    "fr": "musulman"
+    "fr": "musulman",
+    "zinnen": [
+      "0gklnw4j"
+    ]
   },
   {
     "nl": "onbeleefd",
@@ -1667,7 +2183,10 @@
     "tr": "kaba",
     "en": "rude",
     "ar": "وقح",
-    "fr": "impoli"
+    "fr": "impoli",
+    "zinnen": [
+      "gcrrok2k"
+    ]
   },
   {
     "nl": "openbaar",
@@ -1675,7 +2194,11 @@
     "tr": "umumi",
     "en": "public",
     "ar": "عام",
-    "fr": "public"
+    "fr": "public",
+    "zinnen": [
+      "gxzntyy1",
+      "vs2y7g7o"
+    ]
   },
   {
     "nl": "president",
@@ -1684,7 +2207,10 @@
     "tr": "cumhurbaşkanı",
     "en": "president",
     "ar": "رئيس",
-    "fr": "président"
+    "fr": "président",
+    "zinnen": [
+      "6cyhd2s2"
+    ]
   },
   {
     "nl": "privé",
@@ -1692,7 +2218,10 @@
     "tr": "özel",
     "en": "private",
     "ar": "خاص",
-    "fr": "privé"
+    "fr": "privé",
+    "zinnen": [
+      "okf7limp"
+    ]
   },
   {
     "nl": "taboe",
@@ -1701,7 +2230,11 @@
     "tr": "tabu",
     "en": "taboo",
     "ar": "تابو",
-    "fr": "tabou"
+    "fr": "tabou",
+    "zinnen": [
+      "zd2lnvqp",
+      "aimystq4"
+    ]
   },
   {
     "nl": "taxi",
@@ -1710,7 +2243,10 @@
     "tr": "taksi",
     "en": "taxi",
     "ar": "تاكسي",
-    "fr": "taxi"
+    "fr": "taxi",
+    "zinnen": [
+      "zrwx5av3"
+    ]
   },
   {
     "nl": "tempel",
@@ -1719,7 +2255,10 @@
     "tr": "tapınak",
     "en": "temple",
     "ar": "معبد",
-    "fr": "temple"
+    "fr": "temple",
+    "zinnen": [
+      "o7mbcbda"
+    ]
   },
   {
     "nl": "terwijl",
@@ -1727,7 +2266,10 @@
     "tr": "-(ı)ken",
     "en": "while",
     "ar": "بينما",
-    "fr": "tandis que"
+    "fr": "tandis que",
+    "zinnen": [
+      "g056qhoy"
+    ]
   },
   {
     "nl": "vluchteling",
@@ -1736,7 +2278,12 @@
     "tr": "mülteci",
     "en": "refugee",
     "ar": "لاجئ",
-    "fr": "réfugié"
+    "fr": "réfugié",
+    "zinnen": [
+      "zjicujx1",
+      "autv4r1g",
+      "45kpin1y"
+    ]
   },
   {
     "nl": "ziekte",
@@ -1745,7 +2292,12 @@
     "tr": "hastalık",
     "en": "disease",
     "ar": "مرض",
-    "fr": "maladie"
+    "fr": "maladie",
+    "zinnen": [
+      "c61ng6gp",
+      "n4d3hkt4",
+      "2koyw81p"
+    ]
   },
   {
     "nl": "zoiets",
@@ -1753,6 +2305,9 @@
     "tr": "böyle bir şey",
     "en": "something like that",
     "ar": "شيء كهذا",
-    "fr": "quelque chose comme ça"
+    "fr": "quelque chose comme ça",
+    "zinnen": [
+      "0n10yjij"
+    ]
   }
 ]

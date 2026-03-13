@@ -8,6 +8,8 @@ import { InputQuizScreen } from './components/InputQuizScreen';
 import { StatsFooter } from './components/StatsFooter';
 import { SettingsModal } from './components/SettingsModal';
 import { EditorPage } from './pages/EditorPage';
+import { ChangelogScreen, CHANGELOG_STORAGE_KEY } from './components/ChangelogScreen';
+import { latestDate } from './data/changelog';
 
 const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
 import type { QuizType, QuizMode, Screen } from './types';
@@ -48,9 +50,11 @@ export function App() {
   const [statsVersion, setStatsVersion] = useState(0);
   const [showSettings, setShowSettings] = useState(false);
   const [visitorCount, setVisitorCount] = useState<number | null>(null);
+  const hasNewChangelog = (localStorage.getItem(CHANGELOG_STORAGE_KEY) ?? '') < latestDate;
   const visitorTracked = useRef(false);
 
   useEffect(() => {
+    if (import.meta.env.DEV) return;
     if (visitorTracked.current) return;
     visitorTracked.current = true;
 
@@ -108,14 +112,26 @@ export function App() {
         key={`header-${statsVersion}`}
         language={language}
         onLanguageChange={setLanguage}
-        showBackButton={screen === 'quiz'}
-        onBack={exitQuiz}
+        showBackButton={screen === 'quiz' || screen === 'changelog'}
+        onBack={screen === 'changelog' ? () => setScreen('menu') : exitQuiz}
         onSettingsClick={() => setShowSettings(true)}
       />
 
       <main class="main">
         {screen === 'menu' && (
-          <MainMenu onStartQuiz={startQuiz} language={language} />
+          <MainMenu
+            onStartQuiz={startQuiz}
+            onOpenChangelog={() => {
+              history.pushState({ screen: 'changelog' }, '');
+              setScreen('changelog');
+            }}
+            language={language}
+            hasNewChangelog={hasNewChangelog}
+          />
+        )}
+
+        {screen === 'changelog' && (
+          <ChangelogScreen />
         )}
 
         {screen === 'quiz' && currentQuizType && (

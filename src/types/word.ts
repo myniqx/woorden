@@ -20,6 +20,7 @@ export interface BaseWord {
   en: string;
   ar: string;
   fr: string;
+  zinnen?: string[];
 }
 
 export interface NounWord extends BaseWord {

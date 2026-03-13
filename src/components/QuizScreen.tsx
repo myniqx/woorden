@@ -6,6 +6,7 @@ import { t } from '../data/translations';
 import { canPinInQuizType, isPinned, togglePin, getSkillProgress, getSkillForQuizType } from '../services/storage';
 import { OptionButton } from './OptionButton';
 import { HelpModal } from './HelpModal';
+import { ExampleZin } from './ExampleZin';
 import './QuizScreen.css';
 
 const helpTexts: Record<QuizType, Record<Language, { title: string; content: string }>> = {
@@ -215,6 +216,9 @@ export function QuizScreen({ quizType, quizMode = 'normal', language, onExit, on
           <p class="question-text">{quiz.question.text}</p>
           {quiz.question.subtext && (
             <p class="question-subtext">{quiz.question.subtext}</p>
+          )}
+          {quiz.type === 'dutchToNative' && (
+            <ExampleZin word={quiz.word} />
           )}
         </div>
 

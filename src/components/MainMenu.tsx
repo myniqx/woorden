@@ -10,7 +10,9 @@ import './MainMenu.css';
 
 interface MainMenuProps {
   onStartQuiz: (quizType: QuizType, mode?: QuizMode) => void;
+  onOpenChangelog: () => void;
   language: Language;
+  hasNewChangelog: boolean;
 }
 
 interface QuizTypeCard {
@@ -27,7 +29,7 @@ const quizTypes: QuizTypeCard[] = [
   { type: 'verbForms', icon: GitBranch, color: '#00bcd4' },
 ];
 
-export function MainMenu({ onStartQuiz, language }: MainMenuProps) {
+export function MainMenu({ onStartQuiz, onOpenChangelog, language, hasNewChangelog }: MainMenuProps) {
   const [showWordPool, setShowWordPool] = useState(false);
   const [, forceUpdate] = useState(0);
 
@@ -119,6 +121,14 @@ export function MainMenu({ onStartQuiz, language }: MainMenuProps) {
       </div>
 
       <SupportButton language={language} />
+
+      <button
+        class={`changelog-button ${hasNewChangelog ? 'changelog-button--new' : ''}`}
+        onClick={onOpenChangelog}
+      >
+        <span>Changelog</span>
+        {hasNewChangelog && <span class="changelog-button__badge" />}
+      </button>
 
       {showWordPool && (
         <WordPoolModal language={language} onClose={handleWordPoolClose} />

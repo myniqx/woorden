@@ -5,7 +5,11 @@
     "tr": "o, şu",
     "en": "that",
     "ar": "ذلك",
-    "fr": "cela"
+    "fr": "cela",
+    "zinnen": [
+      "2jdki4r2",
+      "cwmxn81h"
+    ]
   },
   {
     "nl": "dit",
@@ -13,7 +17,10 @@
     "tr": "bu",
     "en": "this",
     "ar": "هذا",
-    "fr": "ceci"
+    "fr": "ceci",
+    "zinnen": [
+      "5o4q5ztl"
+    ]
   },
   {
     "nl": "dorp",
@@ -22,7 +29,12 @@
     "tr": "köy",
     "en": "village",
     "ar": "قرية",
-    "fr": "village"
+    "fr": "village",
+    "zinnen": [
+      "wnur0spl",
+      "djvxhctt",
+      "cwmxn81h"
+    ]
   },
   {
     "nl": "een",
@@ -30,7 +42,14 @@
     "tr": "bir",
     "en": "a, one",
     "ar": "واحد",
-    "fr": "un"
+    "fr": "un",
+    "zinnen": [
+      "wnur0spl",
+      "5o4q5ztl",
+      "au1zlouy",
+      "8n625ts3",
+      "r8kzm5cw"
+    ]
   },
   {
     "nl": "gaan",
@@ -40,7 +59,11 @@
     "tr": "gitmek",
     "en": "to go",
     "ar": "يذهب",
-    "fr": "aller"
+    "fr": "aller",
+    "zinnen": [
+      "wnur0spl",
+      "bpippnoa"
+    ]
   },
   {
     "nl": "hij",
@@ -48,7 +71,11 @@
     "tr": "o (erkek)",
     "en": "he",
     "ar": "هو",
-    "fr": "il"
+    "fr": "il",
+    "zinnen": [
+      "djvxhctt",
+      "2jdki4r2"
+    ]
   },
   {
     "nl": "ik",
@@ -56,7 +83,11 @@
     "tr": "ben",
     "en": "I",
     "ar": "أنا",
-    "fr": "je"
+    "fr": "je",
+    "zinnen": [
+      "wnur0spl",
+      "2jdki4r2"
+    ]
   },
   {
     "nl": "in",
@@ -64,7 +95,10 @@
     "tr": "-de, -da, içinde",
     "en": "in, at",
     "ar": "في",
-    "fr": "dans"
+    "fr": "dans",
+    "zinnen": [
+      "djvxhctt"
+    ]
   },
   {
     "nl": "jaar",
@@ -73,7 +107,10 @@
     "tr": "yıl",
     "en": "year",
     "ar": "سنة",
-    "fr": "année"
+    "fr": "année",
+    "zinnen": [
+      "wnur0spl"
+    ]
   },
   {
     "nl": "komen",
@@ -83,7 +120,13 @@
     "tr": "gelmek",
     "en": "to come",
     "ar": "يأتي",
-    "fr": "venir"
+    "fr": "venir",
+    "zinnen": [
+      "djvxhctt",
+      "2jdki4r2",
+      "fv2usxcb",
+      "lhkblbju"
+    ]
   },
   {
     "nl": "leren",
@@ -93,7 +136,12 @@
     "tr": "öğrenmek",
     "en": "to learn",
     "ar": "يتعلم",
-    "fr": "apprendre"
+    "fr": "apprendre",
+    "zinnen": [
+      "qo9sxmz2",
+      "rye0d06u",
+      "iafeynsz"
+    ]
   },
   {
     "nl": "maand",
@@ -102,7 +150,10 @@
     "tr": "ay (takvim)",
     "en": "month",
     "ar": "شهر",
-    "fr": "mois"
+    "fr": "mois",
+    "zinnen": [
+      "rye0d06u"
+    ]
   },
   {
     "nl": "naar",
@@ -110,7 +161,10 @@
     "tr": "-e, -a, -e doğru",
     "en": "to, towards",
     "ar": "إلى",
-    "fr": "vers"
+    "fr": "vers",
+    "zinnen": [
+      "ojmxgaua"
+    ]
   },
   {
     "nl": "Nederland",
@@ -119,7 +173,10 @@
     "tr": "Hollanda",
     "en": "Netherlands",
     "ar": "هولندا",
-    "fr": "Pays-Bas"
+    "fr": "Pays-Bas",
+    "zinnen": [
+      "ojmxgaua"
+    ]
   },
   {
     "nl": "Nederlands",
@@ -128,7 +185,11 @@
     "tr": "Hollandaca",
     "en": "Dutch (language)",
     "ar": "الهولندية",
-    "fr": "néerlandais"
+    "fr": "néerlandais",
+    "zinnen": [
+      "qo9sxmz2",
+      "hgj24hc3"
+    ]
   },
   {
     "nl": "niet",
@@ -136,7 +197,12 @@
     "tr": "değil",
     "en": "not",
     "ar": "لا",
-    "fr": "pas"
+    "fr": "pas",
+    "zinnen": [
+      "mred9971",
+      "5aawxd1m",
+      "he5u0mbl"
+    ]
   },
   {
     "nl": "nu",
@@ -144,7 +210,10 @@
     "tr": "şimdi",
     "en": "now",
     "ar": "الآن",
-    "fr": "maintenant"
+    "fr": "maintenant",
+    "zinnen": [
+      "mred9971"
+    ]
   },
   {
     "nl": "school",
@@ -153,7 +222,12 @@
     "tr": "okul",
     "en": "school",
     "ar": "مدرسة",
-    "fr": "école"
+    "fr": "école",
+    "zinnen": [
+      "qo9sxmz2",
+      "xmq2z6wo",
+      "35cjfqbc"
+    ]
   },
   {
     "nl": "stad",
@@ -162,7 +236,13 @@
     "tr": "şehir",
     "en": "city",
     "ar": "مدينة",
-    "fr": "ville"
+    "fr": "ville",
+    "zinnen": [
+      "qtfpqqvp",
+      "it554hrx",
+      "fyopwyan",
+      "uk53862h"
+    ]
   },
   {
     "nl": "uit",
@@ -170,7 +250,11 @@
     "tr": "-den, -dan",
     "en": "from, out of",
     "ar": "من",
-    "fr": "de"
+    "fr": "de",
+    "zinnen": [
+      "n9syr148",
+      "hjlj1w8q"
+    ]
   },
   {
     "nl": "werken",
@@ -180,7 +264,17 @@
     "tr": "çalışmak",
     "en": "to work",
     "ar": "يعمل",
-    "fr": "travailler"
+    "fr": "travailler",
+    "zinnen": [
+      "c5a59ram",
+      "ghwikukb",
+      "5208lx83",
+      "xhy4oumm",
+      "pzr5lu7p",
+      "7rkjn8eu",
+      "g4ns4pj2",
+      "wsjhppgk"
+    ]
   },
   {
     "nl": "winkel",
@@ -189,7 +283,21 @@
     "tr": "dükkan, mağaza",
     "en": "shop, store",
     "ar": "متجر",
-    "fr": "boutique"
+    "fr": "boutique",
+    "zinnen": [
+      "n9syr148",
+      "c5a59ram",
+      "qzfnkjgc",
+      "7nlcfqm2",
+      "lfsj2qm1",
+      "9y1dldyf",
+      "81qw15u4",
+      "67i4ttb2",
+      "8ctnxlre",
+      "xeytpq6c",
+      "seqlf923",
+      "hwu38bpn"
+    ]
   },
   {
     "nl": "wonen",
@@ -199,7 +307,12 @@
     "tr": "oturmak, ikamet etmek",
     "en": "to live, to reside",
     "ar": "يسكن",
-    "fr": "habiter"
+    "fr": "habiter",
+    "zinnen": [
+      "fyopwyan",
+      "5mmnzff5",
+      "qtfpqqvp"
+    ]
   },
   {
     "nl": "ze",
@@ -207,7 +320,14 @@
     "tr": "onlar / o (kadın)",
     "en": "they / she",
     "ar": "هم / هي",
-    "fr": "ils / elle"
+    "fr": "ils / elle",
+    "zinnen": [
+      "c5a59ram",
+      "m6j4ylol",
+      "5208lx83",
+      "f2yxm7vo",
+      "qtfpqqvp"
+    ]
   },
   {
     "nl": "zijn",
@@ -217,7 +337,12 @@
     "tr": "olmak",
     "en": "to be",
     "ar": "يكون",
-    "fr": "être"
+    "fr": "être",
+    "zinnen": [
+      "mgnjl498",
+      "1r8kdfql",
+      "uwhd4481"
+    ]
   },
   {
     "nl": "één",
@@ -225,7 +350,10 @@
     "tr": "bir (sayı)",
     "en": "one",
     "ar": "واحد",
-    "fr": "un"
+    "fr": "un",
+    "zinnen": [
+      "lrmfog5p"
+    ]
   },
   {
     "nl": "achternaam",
@@ -234,7 +362,10 @@
     "tr": "soyadı",
     "en": "surname, last name",
     "ar": "اسم العائلة",
-    "fr": "nom de famille"
+    "fr": "nom de famille",
+    "zinnen": [
+      "4m356nql"
+    ]
   },
   {
     "nl": "al",
@@ -242,7 +373,10 @@
     "tr": "zaten, çoktan",
     "en": "already",
     "ar": "بالفعل",
-    "fr": "déjà"
+    "fr": "déjà",
+    "zinnen": [
+      "20drrwbf"
+    ]
   },
   {
     "nl": "en",
@@ -250,7 +384,10 @@
     "tr": "ve",
     "en": "and",
     "ar": "و",
-    "fr": "et"
+    "fr": "et",
+    "zinnen": [
+      "f2yxm7vo"
+    ]
   },
   {
     "nl": "hallo",
@@ -258,7 +395,14 @@
     "tr": "merhaba",
     "en": "hello",
     "ar": "مرحبا",
-    "fr": "bonjour"
+    "fr": "bonjour",
+    "zinnen": [
+      "1334iihg",
+      "xtfwql0d",
+      "b81b4w3h",
+      "f8lilfiz",
+      "qktjjba4"
+    ]
   },
   {
     "nl": "hebben",
@@ -268,7 +412,12 @@
     "tr": "sahip olmak",
     "en": "to have",
     "ar": "يملك",
-    "fr": "avoir"
+    "fr": "avoir",
+    "zinnen": [
+      "brgtrpgw",
+      "5fhmplr0",
+      "k594n1by"
+    ]
   },
   {
     "nl": "heten",
@@ -278,7 +427,10 @@
     "tr": "adı olmak",
     "en": "to be called",
     "ar": "يُسمى",
-    "fr": "s'appeler"
+    "fr": "s'appeler",
+    "zinnen": [
+      "5wk58m68"
+    ]
   },
   {
     "nl": "hoe",
@@ -286,7 +438,11 @@
     "tr": "nasıl",
     "en": "how",
     "ar": "كيف",
-    "fr": "comment"
+    "fr": "comment",
+    "zinnen": [
+      "xtfwql0d",
+      "5wk58m68"
+    ]
   },
   {
     "nl": "hoelang",
@@ -294,7 +450,12 @@
     "tr": "ne kadar süre",
     "en": "how long",
     "ar": "كم من الوقت",
-    "fr": "combien de temps"
+    "fr": "combien de temps",
+    "zinnen": [
+      "hhj9rylb",
+      "x0l7jqs4",
+      "5412lstf"
+    ]
   },
   {
     "nl": "ja",
@@ -302,7 +463,14 @@
     "tr": "evet",
     "en": "yes",
     "ar": "نعم",
-    "fr": "oui"
+    "fr": "oui",
+    "zinnen": [
+      "4p918y7n",
+      "92mzorfq",
+      "gr9ax8wq",
+      "z19jzfdb",
+      "wpzy2zhf"
+    ]
   },
   {
     "nl": "je",
@@ -310,7 +478,12 @@
     "tr": "sen, senin",
     "en": "you, your",
     "ar": "أنت، لك",
-    "fr": "tu, ton"
+    "fr": "tu, ton",
+    "zinnen": [
+      "5f0f96y0",
+      "dzzj6qrm",
+      "0zquou50"
+    ]
   },
   {
     "nl": "jij",
@@ -318,7 +491,12 @@
     "tr": "sen",
     "en": "you",
     "ar": "أنت",
-    "fr": "toi"
+    "fr": "toi",
+    "zinnen": [
+      "0zquou50",
+      "j0zglbj4",
+      "brgtrpgw"
+    ]
   },
   {
     "nl": "kloppen",
@@ -328,7 +506,10 @@
     "tr": "doğru olmak, kapı çalmak",
     "en": "to be correct, to knock",
     "ar": "يطرق، صحيح",
-    "fr": "frapper, être correct"
+    "fr": "frapper, être correct",
+    "zinnen": [
+      "20drrwbf"
+    ]
   },
   {
     "nl": "les",
@@ -337,7 +518,10 @@
     "tr": "ders",
     "en": "lesson",
     "ar": "درس",
-    "fr": "leçon"
+    "fr": "leçon",
+    "zinnen": [
+      "gss0ojlh"
+    ]
   },
   {
     "nl": "leuk",
@@ -345,7 +529,10 @@
     "tr": "güzel, hoş, eğlenceli",
     "en": "nice, fun",
     "ar": "لطيف، ممتع",
-    "fr": "sympa, amusant"
+    "fr": "sympa, amusant",
+    "zinnen": [
+      "gss0ojlh"
+    ]
   },
   {
     "nl": "mijn",
@@ -353,7 +540,10 @@
     "tr": "benim",
     "en": "my",
     "ar": "لي",
-    "fr": "mon"
+    "fr": "mon",
+    "zinnen": [
+      "4wuz8wb3"
+    ]
   },
   {
     "nl": "oké",
@@ -361,7 +551,10 @@
     "tr": "tamam",
     "en": "okay",
     "ar": "حسنا",
-    "fr": "d'accord"
+    "fr": "d'accord",
+    "zinnen": [
+      "92mzorfq"
+    ]
   },
   {
     "nl": "ook",
@@ -369,7 +562,11 @@
     "tr": "de, da, ayrıca",
     "en": "also, too",
     "ar": "أيضا",
-    "fr": "aussi"
+    "fr": "aussi",
+    "zinnen": [
+      "lrmfog5p",
+      "wf2vi91r"
+    ]
   },
   {
     "nl": "spellen",
@@ -379,7 +576,10 @@
     "tr": "harflerini söylemek, hecelemek",
     "en": "to spell",
     "ar": "يتهجى",
-    "fr": "épeler"
+    "fr": "épeler",
+    "zinnen": [
+      "wr2fbx2h"
+    ]
   },
   {
     "nl": "telefoonnummer",
@@ -388,7 +588,10 @@
     "tr": "telefon numarası",
     "en": "phone number",
     "ar": "رقم الهاتف",
-    "fr": "numéro de téléphone"
+    "fr": "numéro de téléphone",
+    "zinnen": [
+      "sdaaoiyx"
+    ]
   },
   {
     "nl": "vandaan",
@@ -396,7 +599,10 @@
     "tr": "-den, nereden",
     "en": "from (origin)",
     "ar": "من أين",
-    "fr": "d'où"
+    "fr": "d'où",
+    "zinnen": [
+      "xhck0cka"
+    ]
   },
   {
     "nl": "voornaam",
@@ -405,7 +611,10 @@
     "tr": "ad, isim",
     "en": "first name",
     "ar": "الاسم الأول",
-    "fr": "prénom"
+    "fr": "prénom",
+    "zinnen": [
+      "4m356nql"
+    ]
   },
   {
     "nl": "wat",
@@ -413,7 +622,10 @@
     "tr": "ne",
     "en": "what",
     "ar": "ماذا",
-    "fr": "quoi"
+    "fr": "quoi",
+    "zinnen": [
+      "lrmfog5p"
+    ]
   },
   {
     "nl": "adres",
@@ -422,7 +634,11 @@
     "tr": "adres",
     "en": "address",
     "ar": "عنوان",
-    "fr": "adresse"
+    "fr": "adresse",
+    "zinnen": [
+      "yvc6tqv9",
+      "hb7duqc6"
+    ]
   },
   {
     "nl": "april",
@@ -431,7 +647,10 @@
     "tr": "Nisan",
     "en": "April",
     "ar": "أبريل",
-    "fr": "avril"
+    "fr": "avril",
+    "zinnen": [
+      "h320huxl"
+    ]
   },
   {
     "nl": "e-mailadres",
@@ -440,7 +659,10 @@
     "tr": "e-posta adresi",
     "en": "email address",
     "ar": "عنوان البريد الإلكتروني",
-    "fr": "adresse e-mail"
+    "fr": "adresse e-mail",
+    "zinnen": [
+      "sdaaoiyx"
+    ]
   },
   {
     "nl": "formulier",
@@ -449,7 +671,13 @@
     "tr": "form",
     "en": "form",
     "ar": "نموذج",
-    "fr": "formulaire"
+    "fr": "formulaire",
+    "zinnen": [
+      "sdaaoiyx",
+      "ecia6pwq",
+      "z79ewm1w",
+      "ro7xy4pk"
+    ]
   },
   {
     "nl": "geboortedatum",
@@ -458,7 +686,10 @@
     "tr": "doğum tarihi",
     "en": "date of birth",
     "ar": "تاريخ الميلاد",
-    "fr": "date de naissance"
+    "fr": "date de naissance",
+    "zinnen": [
+      "z79ewm1w"
+    ]
   },
   {
     "nl": "geboren",
@@ -466,7 +697,10 @@
     "tr": "doğumlu, doğmuş",
     "en": "born",
     "ar": "مولود",
-    "fr": "né"
+    "fr": "né",
+    "zinnen": [
+      "h320huxl"
+    ]
   },
   {
     "nl": "gemeente",
@@ -475,7 +709,10 @@
     "tr": "belediye",
     "en": "municipality",
     "ar": "بلدية",
-    "fr": "commune"
+    "fr": "commune",
+    "zinnen": [
+      "2ciipkrx"
+    ]
   },
   {
     "nl": "gemeentehuis",
@@ -484,7 +721,10 @@
     "tr": "belediye binası",
     "en": "town hall",
     "ar": "مبنى البلدية",
-    "fr": "mairie"
+    "fr": "mairie",
+    "zinnen": [
+      "2ciipkrx"
+    ]
   },
   {
     "nl": "goedemorgen",
@@ -492,7 +732,13 @@
     "tr": "günaydın",
     "en": "good morning",
     "ar": "صباح الخير",
-    "fr": "bonjour"
+    "fr": "bonjour",
+    "zinnen": [
+      "jd4saswa",
+      "b81b4w3h",
+      "q7d5uwo8",
+      "zqhnoir1"
+    ]
   },
   {
     "nl": "helpen",
@@ -502,7 +748,16 @@
     "tr": "yardım etmek",
     "en": "to help",
     "ar": "يساعد",
-    "fr": "aider"
+    "fr": "aider",
+    "zinnen": [
+      "jd4saswa",
+      "ukwdp00f",
+      "uv3a5hsd",
+      "vcd3unqn",
+      "k77e75jt",
+      "948k68dx",
+      "3ejd5mar"
+    ]
   },
   {
     "nl": "invullen",
@@ -512,7 +767,11 @@
     "tr": "doldurmak (form)",
     "en": "to fill in",
     "ar": "يملأ",
-    "fr": "remplir"
+    "fr": "remplir",
+    "zinnen": [
+      "ro7xy4pk",
+      "9l9n1tvv"
+    ]
   },
   {
     "nl": "kunnen",
@@ -522,7 +781,10 @@
     "tr": "yapabilmek, -ebilmek",
     "en": "can, to be able to",
     "ar": "يستطيع",
-    "fr": "pouvoir"
+    "fr": "pouvoir",
+    "zinnen": [
+      "jd4saswa"
+    ]
   },
   {
     "nl": "man",
@@ -531,7 +793,11 @@
     "tr": "adam, erkek",
     "en": "man",
     "ar": "رجل",
-    "fr": "homme"
+    "fr": "homme",
+    "zinnen": [
+      "ukwdp00f",
+      "p20md1jz"
+    ]
   },
   {
     "nl": "meneer",
@@ -540,7 +806,13 @@
     "tr": "bay, beyefendi",
     "en": "mister, sir",
     "ar": "سيد",
-    "fr": "monsieur"
+    "fr": "monsieur",
+    "zinnen": [
+      "ldf9gtr5",
+      "8k0bmp1o",
+      "q7d5uwo8",
+      "hb7duqc6"
+    ]
   },
   {
     "nl": "mobiel",
@@ -548,7 +820,10 @@
     "tr": "mobil, cep (telefon)",
     "en": "mobile",
     "ar": "محمول",
-    "fr": "mobile"
+    "fr": "mobile",
+    "zinnen": [
+      "bos1yo7r"
+    ]
   },
   {
     "nl": "nationaliteit",
@@ -557,7 +832,10 @@
     "tr": "uyruk, milliyet",
     "en": "nationality",
     "ar": "جنسية",
-    "fr": "nationalité"
+    "fr": "nationalité",
+    "zinnen": [
+      "wx17uo23"
+    ]
   },
   {
     "nl": "nieuw",
@@ -565,7 +843,13 @@
     "tr": "yeni",
     "en": "new",
     "ar": "جديد",
-    "fr": "nouveau"
+    "fr": "nouveau",
+    "zinnen": [
+      "ro7xy4pk",
+      "dkak4sy0",
+      "yl4rfazj",
+      "c6e0jx1h"
+    ]
   },
   {
     "nl": "op",
@@ -573,7 +857,11 @@
     "tr": "üzerinde, -de",
     "en": "on, at",
     "ar": "على",
-    "fr": "sur"
+    "fr": "sur",
+    "zinnen": [
+      "bos1yo7r",
+      "qxl5i8c3"
+    ]
   },
   {
     "nl": "postcode",
@@ -582,7 +870,10 @@
     "tr": "posta kodu",
     "en": "postal code",
     "ar": "الرمز البريدي",
-    "fr": "code postal"
+    "fr": "code postal",
+    "zinnen": [
+      "yvc6tqv9"
+    ]
   },
   {
     "nl": "u",
@@ -590,7 +881,11 @@
     "tr": "siz (resmi)",
     "en": "you (formal)",
     "ar": "أنت (رسمي)",
-    "fr": "vous"
+    "fr": "vous",
+    "zinnen": [
+      "h53uhy1t",
+      "gvwgbgo1"
+    ]
   },
   {
     "nl": "uw",
@@ -598,7 +893,10 @@
     "tr": "sizin (resmi)",
     "en": "your (formal)",
     "ar": "لك (رسمي)",
-    "fr": "votre"
+    "fr": "votre",
+    "zinnen": [
+      "hb7duqc6"
+    ]
   },
   {
     "nl": "vrouw",
@@ -607,7 +905,10 @@
     "tr": "kadın, eş",
     "en": "woman, wife",
     "ar": "امرأة، زوجة",
-    "fr": "femme"
+    "fr": "femme",
+    "zinnen": [
+      "ukwdp00f"
+    ]
   },
   {
     "nl": "woonplaats",
@@ -616,7 +917,10 @@
     "tr": "ikamet yeri",
     "en": "place of residence",
     "ar": "مكان الإقامة",
-    "fr": "lieu de résidence"
+    "fr": "lieu de résidence",
+    "zinnen": [
+      "ecia6pwq"
+    ]
   },
   {
     "nl": "zullen",
@@ -626,7 +930,12 @@
     "tr": "-ecek (gelecek zaman)",
     "en": "shall, will",
     "ar": "سوف",
-    "fr": "aller (futur)"
+    "fr": "aller (futur)",
+    "zinnen": [
+      "8i8b6nre",
+      "lhkblbju",
+      "9l9n1tvv"
+    ]
   },
   {
     "nl": "alleen",
@@ -634,7 +943,10 @@
     "tr": "yalnız, sadece",
     "en": "alone, only",
     "ar": "وحيد، فقط",
-    "fr": "seul, seulement"
+    "fr": "seul, seulement",
+    "zinnen": [
+      "zb2fohw1"
+    ]
   },
   {
     "nl": "appen",
@@ -644,7 +956,11 @@
     "tr": "mesaj göndermek (WhatsApp)",
     "en": "to text (WhatsApp)",
     "ar": "يرسل رسالة",
-    "fr": "envoyer un message"
+    "fr": "envoyer un message",
+    "zinnen": [
+      "nx9padyz",
+      "vsqmr8dp"
+    ]
   },
   {
     "nl": "buren",
@@ -653,7 +969,11 @@
     "tr": "komşular",
     "en": "neighbors",
     "ar": "جيران",
-    "fr": "voisins"
+    "fr": "voisins",
+    "zinnen": [
+      "vsqmr8dp",
+      "pdlt0o7o"
+    ]
   },
   {
     "nl": "buurvrouw",
@@ -662,7 +982,11 @@
     "tr": "komşu kadın",
     "en": "female neighbor",
     "ar": "جارة",
-    "fr": "voisine"
+    "fr": "voisine",
+    "zinnen": [
+      "nx9padyz",
+      "uv3a5hsd"
+    ]
   },
   {
     "nl": "geen",
@@ -670,7 +994,10 @@
     "tr": "hiç, yok",
     "en": "no, none",
     "ar": "لا شيء",
-    "fr": "aucun"
+    "fr": "aucun",
+    "zinnen": [
+      "zb2fohw1"
+    ]
   },
   {
     "nl": "getrouwd",
@@ -678,7 +1005,10 @@
     "tr": "evli",
     "en": "married",
     "ar": "متزوج",
-    "fr": "marié"
+    "fr": "marié",
+    "zinnen": [
+      "mgnjl498"
+    ]
   },
   {
     "nl": "graag",
@@ -686,7 +1016,10 @@
     "tr": "memnuniyetle, seve seve",
     "en": "gladly, with pleasure",
     "ar": "بكل سرور",
-    "fr": "volontiers"
+    "fr": "volontiers",
+    "zinnen": [
+      "qja3l9ng"
+    ]
   },
   {
     "nl": "hobby",
@@ -695,7 +1028,13 @@
     "tr": "hobi",
     "en": "hobby",
     "ar": "هواية",
-    "fr": "passe-temps"
+    "fr": "passe-temps",
+    "zinnen": [
+      "a77s734q",
+      "u9hfelua",
+      "9ng67o5e",
+      "7wplhhav"
+    ]
   },
   {
     "nl": "houden van",
@@ -705,7 +1044,11 @@
     "tr": "sevmek",
     "en": "to love, to like",
     "ar": "يحب",
-    "fr": "aimer"
+    "fr": "aimer",
+    "zinnen": [
+      "9wqv3agh",
+      "a77s734q"
+    ]
   },
   {
     "nl": "huis",
@@ -714,7 +1057,12 @@
     "tr": "ev",
     "en": "house",
     "ar": "منزل",
-    "fr": "maison"
+    "fr": "maison",
+    "zinnen": [
+      "brgtrpgw",
+      "zp2vmvr5",
+      "v2ef76uk"
+    ]
   },
   {
     "nl": "jullie",
@@ -722,7 +1070,10 @@
     "tr": "siz (çoğul, resmi olmayan)",
     "en": "you (plural)",
     "ar": "أنتم",
-    "fr": "vous"
+    "fr": "vous",
+    "zinnen": [
+      "mgnjl498"
+    ]
   },
   {
     "nl": "kind",
@@ -731,7 +1082,19 @@
     "tr": "çocuk",
     "en": "child",
     "ar": "طفل",
-    "fr": "enfant"
+    "fr": "enfant",
+    "zinnen": [
+      "6hnwx9yp",
+      "wn1dpx4d",
+      "aioeva53",
+      "w30figcj",
+      "f0npx4xw",
+      "hyvlllhp",
+      "2cmyqh9r",
+      "lt02qqww",
+      "54vntx5s",
+      "a4qlec5n"
+    ]
   },
   {
     "nl": "koken",
@@ -741,7 +1104,14 @@
     "tr": "yemek pişirmek",
     "en": "to cook",
     "ar": "يطبخ",
-    "fr": "cuisiner"
+    "fr": "cuisiner",
+    "zinnen": [
+      "m6j4ylol",
+      "huon55wa",
+      "xh0zeyz6",
+      "6hnwx9yp",
+      "top1j1ox"
+    ]
   },
   {
     "nl": "met",
@@ -749,7 +1119,10 @@
     "tr": "ile, birlikte",
     "en": "with",
     "ar": "مع",
-    "fr": "avec"
+    "fr": "avec",
+    "zinnen": [
+      "6hnwx9yp"
+    ]
   },
   {
     "nl": "nog",
@@ -757,7 +1130,10 @@
     "tr": "henüz, daha, hâlâ",
     "en": "still, yet",
     "ar": "لا يزال",
-    "fr": "encore"
+    "fr": "encore",
+    "zinnen": [
+      "fm5mnfl9"
+    ]
   },
   {
     "nl": "ontmoeten",
@@ -767,7 +1143,10 @@
     "tr": "tanışmak, buluşmak",
     "en": "to meet",
     "ar": "يلتقي",
-    "fr": "rencontrer"
+    "fr": "rencontrer",
+    "zinnen": [
+      "fm5mnfl9"
+    ]
   },
   {
     "nl": "oud",
@@ -775,7 +1154,13 @@
     "tr": "yaşlı, eski",
     "en": "old",
     "ar": "قديم، كبير في السن",
-    "fr": "vieux"
+    "fr": "vieux",
+    "zinnen": [
+      "eg6rv96t",
+      "oh68mqea",
+      "utlibf4j",
+      "5m6et6tc"
+    ]
   },
   {
     "nl": "poes",
@@ -784,7 +1169,10 @@
     "tr": "kedi",
     "en": "cat, kitty",
     "ar": "قطة",
-    "fr": "chat"
+    "fr": "chat",
+    "zinnen": [
+      "eg6rv96t"
+    ]
   },
   {
     "nl": "restaurant",
@@ -793,7 +1181,10 @@
     "tr": "restoran",
     "en": "restaurant",
     "ar": "مطعم",
-    "fr": "restaurant"
+    "fr": "restaurant",
+    "zinnen": [
+      "56xl19pq"
+    ]
   },
   {
     "nl": "sporten",
@@ -803,7 +1194,10 @@
     "tr": "spor yapmak",
     "en": "to exercise, to do sports",
     "ar": "يمارس الرياضة",
-    "fr": "faire du sport"
+    "fr": "faire du sport",
+    "zinnen": [
+      "9meo55ce"
+    ]
   },
   {
     "nl": "week",
@@ -812,7 +1206,10 @@
     "tr": "hafta",
     "en": "week",
     "ar": "أسبوع",
-    "fr": "semaine"
+    "fr": "semaine",
+    "zinnen": [
+      "56xl19pq"
+    ]
   },
   {
     "nl": "weekend",
@@ -821,7 +1218,11 @@
     "tr": "hafta sonu",
     "en": "weekend",
     "ar": "نهاية الأسبوع",
-    "fr": "week-end"
+    "fr": "week-end",
+    "zinnen": [
+      "9meo55ce",
+      "5kq9njhg"
+    ]
   },
   {
     "nl": "welkom",
@@ -829,7 +1230,13 @@
     "tr": "hoş geldin",
     "en": "welcome",
     "ar": "أهلا وسهلا",
-    "fr": "bienvenue"
+    "fr": "bienvenue",
+    "zinnen": [
+      "xmq2z6wo",
+      "zp2vmvr5",
+      "ldf9gtr5",
+      "8k0bmp1o"
+    ]
   },
   {
     "nl": "wie",
@@ -837,7 +1244,11 @@
     "tr": "kim",
     "en": "who",
     "ar": "من",
-    "fr": "qui"
+    "fr": "qui",
+    "zinnen": [
+      "wssgzo9b",
+      "q6ea7kve"
+    ]
   },
   {
     "nl": "willen",
@@ -847,6 +1258,10 @@
     "tr": "istemek",
     "en": "to want",
     "ar": "يريد",
-    "fr": "vouloir"
+    "fr": "vouloir",
+    "zinnen": [
+      "q6ea7kve",
+      "yp1o9vs7"
+    ]
   }
 ]

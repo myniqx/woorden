@@ -1,102 +1,1326 @@
 [
-  {"nl": "ademen", "type": "verb", "perfectum": "geademd", "imperfectum": "ademde", "tr": "nefes almak", "en": "to breathe", "ar": "يتنفس", "fr": "respirer"},
-  {"nl": "afmaken", "type": "verb", "perfectum": "afgemaakt", "imperfectum": "maakte af", "tr": "bitirmek, tamamlamak", "en": "to finish, to complete", "ar": "ينهي، يُكمل", "fr": "finir, terminer"},
-  {"nl": "bijkomen", "type": "verb", "perfectum": "bijgekomen", "imperfectum": "kwam bij", "tr": "kendine gelmek, toparlanmak", "en": "to recover, to come round", "ar": "يتعافى، يفيق", "fr": "reprendre ses esprits"},
-  {"nl": "commentaar", "article": "het", "type": "noun", "tr": "yorum, eleştiri", "en": "comment, criticism", "ar": "تعليق، نقد", "fr": "commentaire, critique"},
-  {"nl": "flauw", "type": "adj", "tr": "gıcık, saçma, bayılacak gibi", "en": "annoying, silly, faint", "ar": "مزعج، سخيف", "fr": "agaçant, bête, faible"},
-  {"nl": "fris", "type": "adj", "tr": "taze, ferah, temiz", "en": "fresh, clean", "ar": "طازج، منعش", "fr": "frais, propre"},
-  {"nl": "gamen", "type": "verb", "perfectum": "geamed", "imperfectum": "gamede", "tr": "bilgisayar/video oyunu oynamak", "en": "to game, to play video games", "ar": "يلعب ألعاب الفيديو", "fr": "jouer aux jeux vidéo"},
-  {"nl": "gedachte", "article": "de", "type": "noun", "tr": "düşünce, fikir", "en": "thought, idea", "ar": "فكرة، خاطرة", "fr": "pensée, idée"},
-  {"nl": "gestoord", "type": "adj", "tr": "rahatsız, kaçık", "en": "disturbed, crazy", "ar": "مضطرب، مجنون", "fr": "dérangé, fou"},
-  {"nl": "herrie", "article": "de", "type": "noun", "tr": "gürültü, patırtı", "en": "noise, ruckus", "ar": "ضجيج، فوضى", "fr": "vacarme, bruit"},
-  {"nl": "irriteren", "type": "verb", "perfectum": "geïrriteerd", "imperfectum": "irriteerde", "tr": "sinir etmek, tahriş etmek", "en": "to irritate, to annoy", "ar": "يُزعج، يُهيج", "fr": "irriter, agacer"},
-  {"nl": "kinderachtig", "type": "adj", "tr": "çocuksu, olgunlaşmamış", "en": "childish, immature", "ar": "طفولي", "fr": "puéril, enfantin"},
-  {"nl": "kleed", "article": "het", "type": "noun", "tr": "örtü, küçük halı", "en": "rug, cloth", "ar": "بساط صغير، قماش", "fr": "tapis, nappe"},
-  {"nl": "opmerking", "article": "de", "type": "noun", "tr": "yorum, söz, uyarı", "en": "remark, comment", "ar": "ملاحظة، تعليق", "fr": "remarque, commentaire"},
-  {"nl": "picknicken", "type": "verb", "perfectum": "gepicknickt", "imperfectum": "picknickte", "tr": "piknik yapmak", "en": "to have a picnic", "ar": "يتنزه، يعمل نزهة", "fr": "faire un pique-nique"},
-  {"nl": "roman", "article": "de", "type": "noun", "tr": "roman (kitap)", "en": "novel", "ar": "رواية", "fr": "roman"},
-  {"nl": "rondje", "article": "het", "type": "noun", "tr": "tur, içki sırası", "en": "round (drinks), lap", "ar": "جولة", "fr": "tournée, tour"},
-  {"nl": "uitgeput", "type": "adj", "tr": "bitik, tükenmiş", "en": "exhausted", "ar": "منهك، مُنهَك القوى", "fr": "épuisé"},
-  {"nl": "voorstelling", "article": "de", "type": "noun", "tr": "gösteri, temsil", "en": "performance, show", "ar": "عرض، أداء", "fr": "spectacle, représentation"},
-  {"nl": "wandeling", "article": "de", "type": "noun", "tr": "yürüyüş", "en": "walk, stroll", "ar": "نزهة مشياً", "fr": "promenade, balade"},
-  {"nl": "weigeren", "type": "verb", "perfectum": "geweigerd", "imperfectum": "weigerde", "tr": "reddetmek", "en": "to refuse, to decline", "ar": "يرفض", "fr": "refuser"},
-  {"nl": "zich vermaken", "type": "verb", "perfectum": "zich vermaakt", "imperfectum": "vermaakte zich", "tr": "eğlenmek", "en": "to amuse oneself, to have fun", "ar": "يستمتع، يُسلي نفسه", "fr": "s'amuser, se divertir"},
-  {"nl": "zich vervelen", "type": "verb", "perfectum": "zich verveeld", "imperfectum": "verveelde zich", "tr": "canı sıkılmak", "en": "to be bored", "ar": "يشعر بالملل", "fr": "s'ennuyer"},
-  {"nl": "zonnig", "type": "adj", "tr": "güneşli", "en": "sunny", "ar": "مشمس", "fr": "ensoleillé"},
-  {"nl": "afsluiting", "article": "de", "type": "noun", "tr": "kapanış, son", "en": "closing, conclusion", "ar": "ختام، إغلاق", "fr": "clôture, conclusion"},
-  {"nl": "ballon", "article": "de", "type": "noun", "tr": "balon", "en": "balloon", "ar": "بالون", "fr": "ballon"},
-  {"nl": "bel", "article": "de", "type": "noun", "tr": "zil, çan", "en": "bell", "ar": "جرس", "fr": "sonnette, cloche"},
-  {"nl": "boot", "article": "de", "type": "noun", "tr": "tekne, bot", "en": "boat", "ar": "قارب", "fr": "bateau"},
-  {"nl": "burgemeester", "article": "de", "type": "noun", "tr": "belediye başkanı", "en": "mayor", "ar": "عمدة، رئيس البلدية", "fr": "maire"},
-  {"nl": "drankje", "article": "het", "type": "noun", "tr": "içecek", "en": "drink, beverage", "ar": "مشروب", "fr": "boisson, verre"},
-  {"nl": "dronken", "type": "adj", "tr": "sarhoş", "en": "drunk", "ar": "سكران", "fr": "ivre, saoul"},
-  {"nl": "dweil", "article": "de", "type": "noun", "tr": "paspas, mop", "en": "mop", "ar": "ممسحة", "fr": "serpillière"},
-  {"nl": "emmer", "article": "de", "type": "noun", "tr": "kova", "en": "bucket", "ar": "دلو", "fr": "seau"},
-  {"nl": "feesten", "type": "verb", "perfectum": "gefeest", "imperfectum": "feestte", "tr": "parti yapmak, kutlamak", "en": "to party, to celebrate", "ar": "يحتفل", "fr": "faire la fête"},
-  {"nl": "fotograferen", "type": "verb", "perfectum": "gefotografeerd", "imperfectum": "fotografeerde", "tr": "fotoğraf çekmek", "en": "to photograph, to take pictures", "ar": "يلتقط صوراً", "fr": "photographier"},
-  {"nl": "gebruikelijk", "type": "adj", "tr": "alışılagelen, geleneksel", "en": "customary, usual", "ar": "معتاد، مألوف", "fr": "habituel, coutumier"},
-  {"nl": "grootouder", "article": "de", "type": "noun", "tr": "büyükanne / büyükbaba", "en": "grandparent", "ar": "جد / جدة", "fr": "grand-parent"},
-  {"nl": "inhuren", "type": "verb", "perfectum": "ingehuurd", "imperfectum": "huurde in", "tr": "tutmak, kiralamak", "en": "to hire, to rent", "ar": "يستأجر", "fr": "engager, louer"},
-  {"nl": "jubileum", "article": "het", "type": "noun", "tr": "yıldönümü, jübile", "en": "anniversary, jubilee", "ar": "ذكرى سنوية، يوبيل", "fr": "anniversaire, jubilé"},
-  {"nl": "nieuwsgierig", "type": "adj", "tr": "meraklı", "en": "curious, nosy", "ar": "فضولي", "fr": "curieux"},
-  {"nl": "onvergetelijk", "type": "adj", "tr": "unutulmaz", "en": "unforgettable", "ar": "لا يُنسى", "fr": "inoubliable"},
-  {"nl": "professioneel", "type": "adj", "tr": "profesyonel", "en": "professional", "ar": "محترف", "fr": "professionnel"},
-  {"nl": "rondleiding", "article": "de", "type": "noun", "tr": "rehberli tur", "en": "guided tour", "ar": "جولة إرشادية", "fr": "visite guidée"},
-  {"nl": "spanning", "article": "de", "type": "noun", "tr": "heyecan, gerilim", "en": "excitement, tension", "ar": "إثارة، توتر", "fr": "excitation, tension"},
-  {"nl": "varen", "type": "verb", "perfectum": "gevaren", "imperfectum": "voer", "tr": "tekneyle gitmek, seyretmek", "en": "to sail, to travel by boat", "ar": "يبحر، يسافر بالقارب", "fr": "naviguer, aller en bateau"},
-  {"nl": "verbouwen", "type": "verb", "perfectum": "verbouwd", "imperfectum": "verbouwde", "tr": "tadilat yapmak, yenilemek", "en": "to renovate, to remodel", "ar": "يُجدِّد، يُرمِّم", "fr": "rénover, aménager"},
-  {"nl": "verrast", "type": "adj", "tr": "şaşırmış, sürprizle karşılaşmış", "en": "surprised", "ar": "مندهش، مفاجأ", "fr": "surpris"},
-  {"nl": "versieren", "type": "verb", "perfectum": "versierd", "imperfectum": "versierde", "tr": "süslemek", "en": "to decorate", "ar": "يُزيِّن", "fr": "décorer"},
-  {"nl": "vooraf", "type": "adv", "tr": "önceden, öncesinde", "en": "beforehand, in advance", "ar": "مسبقاً، قبلاً", "fr": "au préalable, à l'avance"},
-  {"nl": "voorbijgaan", "type": "verb", "perfectum": "voorbijgegaan", "imperfectum": "ging voorbij", "tr": "geçmek", "en": "to pass by, to go by", "ar": "يمر", "fr": "passer"},
-  {"nl": "vrijgezel", "article": "de", "type": "noun", "tr": "bekar", "en": "bachelor, single person", "ar": "أعزب", "fr": "célibataire"},
-  {"nl": "zaal", "article": "de", "type": "noun", "tr": "salon, salonun büyük bölümü", "en": "hall, room", "ar": "قاعة، صالة", "fr": "salle"},
-  {"nl": "aardbei", "article": "de", "type": "noun", "tr": "çilek", "en": "strawberry", "ar": "فراولة", "fr": "fraise"},
-  {"nl": "biologisch", "type": "adj", "tr": "organik, biyolojik", "en": "organic, biological", "ar": "عضوي، بيولوجي", "fr": "biologique, bio"},
-  {"nl": "checken", "type": "verb", "perfectum": "gecheckt", "imperfectum": "checkte", "tr": "kontrol etmek", "en": "to check", "ar": "يتحقق، يراجع", "fr": "vérifier, checker"},
-  {"nl": "dorst", "article": "de", "type": "noun", "tr": "susuzluk", "en": "thirst", "ar": "عطش", "fr": "soif"},
-  {"nl": "dun", "type": "adj", "tr": "ince, zayıf", "en": "thin, slim", "ar": "رفيع، نحيف", "fr": "mince, fin"},
-  {"nl": "eigenaar", "article": "de", "type": "noun", "tr": "sahip, mal sahibi", "en": "owner", "ar": "مالك، صاحب", "fr": "propriétaire"},
-  {"nl": "gehakt", "article": "het", "type": "noun", "tr": "kıyma", "en": "minced meat", "ar": "لحم مفروم", "fr": "viande hachée"},
-  {"nl": "gerecht", "article": "het", "type": "noun", "tr": "yemek, tabak", "en": "dish, course", "ar": "طبق، وجبة", "fr": "plat"},
-  {"nl": "gewicht", "article": "het", "type": "noun", "tr": "ağırlık, kilo", "en": "weight", "ar": "وزن", "fr": "poids"},
-  {"nl": "inleveren", "type": "verb", "perfectum": "ingeleverd", "imperfectum": "leverde in", "tr": "teslim etmek", "en": "to hand in, to submit", "ar": "يسلِّم، يُقدِّم", "fr": "remettre, rendre"},
-  {"nl": "klaarmaken", "type": "verb", "perfectum": "klaargemaakt", "imperfectum": "maakte klaar", "tr": "hazırlamak", "en": "to prepare, to make ready", "ar": "يُحضِّر", "fr": "préparer"},
-  {"nl": "lepel", "article": "de", "type": "noun", "tr": "kaşık", "en": "spoon", "ar": "ملعقة", "fr": "cuillère"},
-  {"nl": "ober", "article": "de", "type": "noun", "tr": "garson", "en": "waiter", "ar": "نادل", "fr": "serveur"},
-  {"nl": "ontdooien", "type": "verb", "perfectum": "ontdooid", "imperfectum": "ontdooide", "tr": "çözdürmek, buzunu eritmek", "en": "to defrost, to thaw", "ar": "يذيب الثلج", "fr": "décongeler"},
-  {"nl": "overwerken", "type": "verb", "perfectum": "overgewerkt", "imperfectum": "werkte over", "tr": "fazla mesai yapmak", "en": "to work overtime", "ar": "يعمل ساعات إضافية", "fr": "faire des heures supplémentaires"},
-  {"nl": "portie", "article": "de", "type": "noun", "tr": "porsiyon", "en": "portion, serving", "ar": "حصة، وجبة", "fr": "portion"},
-  {"nl": "prijzig", "type": "adj", "tr": "pahalı", "en": "pricey, expensive", "ar": "مكلف، غالٍ", "fr": "cher, coûteux"},
-  {"nl": "saus", "article": "de", "type": "noun", "tr": "sos", "en": "sauce", "ar": "صلصة", "fr": "sauce"},
-  {"nl": "schat", "article": "de", "type": "noun", "tr": "canım, hazine", "en": "darling, treasure", "ar": "عزيزي، كنز", "fr": "chéri, trésor"},
-  {"nl": "slagroom", "article": "de", "type": "noun", "tr": "çırpılmış krema, kremşanti", "en": "whipped cream", "ar": "كريمة مخفوقة", "fr": "crème chantilly"},
-  {"nl": "spinazie", "article": "de", "type": "noun", "tr": "ıspanak", "en": "spinach", "ar": "سبانخ", "fr": "épinards"},
-  {"nl": "vaatwasser", "article": "de", "type": "noun", "tr": "bulaşık makinesi", "en": "dishwasher", "ar": "غسالة صحون", "fr": "lave-vaisselle"},
-  {"nl": "vermoeden", "type": "verb", "perfectum": "vermoed", "imperfectum": "vermoedde", "tr": "tahmin etmek, sanmak", "en": "to suspect, to assume", "ar": "يشك، يخمن", "fr": "soupçonner, supposer"},
-  {"nl": "vork", "article": "de", "type": "noun", "tr": "çatal", "en": "fork", "ar": "شوكة", "fr": "fourchette"},
-  {"nl": "aangeven", "type": "verb", "perfectum": "aangegeven", "imperfectum": "gaf aan", "tr": "bildirmek, belirtmek", "en": "to indicate, to report", "ar": "يُبلِّغ، يُشير", "fr": "indiquer, signaler"},
-  {"nl": "alsnog", "type": "adv", "tr": "sonunda, gecikmeli olarak", "en": "still, after all", "ar": "في نهاية المطاف", "fr": "finalement, quand même"},
-  {"nl": "arbeidsovereenkomst", "article": "de", "type": "noun", "tr": "iş sözleşmesi", "en": "employment contract", "ar": "عقد العمل", "fr": "contrat de travail"},
-  {"nl": "behoud", "article": "het", "type": "noun", "tr": "koruma (örn. ücretli izin)", "en": "retention, maintenance (e.g. of pay)", "ar": "حفظ، صون", "fr": "maintien, conservation"},
-  {"nl": "berekenen", "type": "verb", "perfectum": "berekend", "imperfectum": "berekende", "tr": "hesaplamak", "en": "to calculate", "ar": "يحسب", "fr": "calculer"},
-  {"nl": "bestemming", "article": "de", "type": "noun", "tr": "gidilecek yer, hedef", "en": "destination", "ar": "وجهة", "fr": "destination"},
-  {"nl": "bezwaar", "article": "het", "type": "noun", "tr": "itiraz, engel", "en": "objection, obstacle", "ar": "اعتراض", "fr": "objection"},
-  {"nl": "bouw", "article": "de", "type": "noun", "tr": "inşaat", "en": "construction, building", "ar": "بناء", "fr": "construction"},
-  {"nl": "collectief", "type": "adj", "tr": "kolektif, ortak", "en": "collective", "ar": "جماعي", "fr": "collectif"},
-  {"nl": "doorbetalen", "type": "verb", "perfectum": "doorbetaald", "imperfectum": "betaalde door", "tr": "ödemeye devam etmek", "en": "to continue paying", "ar": "يستمر في الدفع", "fr": "continuer à payer"},
-  {"nl": "geval", "article": "het", "type": "noun", "tr": "durum, hal", "en": "case, situation", "ar": "حالة", "fr": "cas, situation"},
-  {"nl": "leiden tot", "type": "phrase", "tr": "yol açmak, -e neden olmak", "en": "to lead to, to result in", "ar": "يؤدي إلى", "fr": "mener à, conduire à"},
-  {"nl": "minimum", "article": "het", "type": "noun", "tr": "asgari, minimum", "en": "minimum", "ar": "حد أدنى", "fr": "minimum"},
-  {"nl": "opmaken", "type": "verb", "perfectum": "opgemaakt", "imperfectum": "maakte op", "tr": "tüketmek, harcamak", "en": "to use up, to spend", "ar": "يستنفد، يُنفق", "fr": "dépenser, utiliser"},
-  {"nl": "opnemen", "type": "verb", "perfectum": "opgenomen", "imperfectum": "nam op", "tr": "kullanmak (izin), kaydetmek", "en": "to take (leave), to record", "ar": "يأخذ (إجازة)، يسجل", "fr": "prendre (un congé), enregistrer"},
-  {"nl": "recht", "article": "het", "type": "noun", "tr": "hak", "en": "right, entitlement", "ar": "حق", "fr": "droit"},
-  {"nl": "schriftelijk", "type": "adj", "tr": "yazılı", "en": "written, in writing", "ar": "خطياً، مكتوب", "fr": "écrit, par écrit"},
-  {"nl": "stimuleren", "type": "verb", "perfectum": "gestimuleerd", "imperfectum": "stimuleerde", "tr": "teşvik etmek", "en": "to stimulate, to encourage", "ar": "يُحفِّز، يُشجِّع", "fr": "stimuler, encourager"},
-  {"nl": "tellen", "type": "verb", "perfectum": "geteld", "imperfectum": "telde", "tr": "saymak", "en": "to count", "ar": "يعد", "fr": "compter"},
-  {"nl": "vaststaan", "type": "verb", "perfectum": "vastgestaan", "imperfectum": "stond vast", "tr": "kesinleşmek, belirlenmek", "en": "to be certain, to be established", "ar": "يكون محدداً، مُقرَّراً", "fr": "être établi, être certain"},
-  {"nl": "verblijven", "type": "verb", "perfectum": "verbleven", "imperfectum": "verbleef", "tr": "kalmak, ikamet etmek", "en": "to stay, to reside", "ar": "يُقيم، يبقى", "fr": "séjourner, résider"},
-  {"nl": "vervallen", "type": "verb", "perfectum": "vervallen", "imperfectum": "verviel", "tr": "düşmek, geçersiz olmak", "en": "to expire, to lapse", "ar": "يسقط، ينتهي مفعوله", "fr": "expirer, tomber en désuétude"},
-  {"nl": "zich houden aan", "type": "verb", "perfectum": "zich gehouden aan", "imperfectum": "hield zich aan", "tr": "uymak, bağlı kalmak", "en": "to stick to, to comply with", "ar": "يلتزم بـ", "fr": "respecter, se conformer à"},
-  {"nl": "zogenaamd", "type": "adj", "tr": "sözde, güya", "en": "so-called", "ar": "المزعوم، ما يُسمى بـ", "fr": "soi-disant, prétendu"}
+  {
+    "nl": "ademen",
+    "type": "verb",
+    "perfectum": "geademd",
+    "imperfectum": "ademde",
+    "tr": "nefes almak",
+    "en": "to breathe",
+    "ar": "يتنفس",
+    "fr": "respirer",
+    "zinnen": [
+      "1dehnqi4",
+      "i405h67g"
+    ]
+  },
+  {
+    "nl": "afmaken",
+    "type": "verb",
+    "perfectum": "afgemaakt",
+    "imperfectum": "maakte af",
+    "tr": "bitirmek, tamamlamak",
+    "en": "to finish, to complete",
+    "ar": "ينهي، يُكمل",
+    "fr": "finir, terminer",
+    "zinnen": [
+      "5kq9njhg",
+      "m9y04h1v"
+    ]
+  },
+  {
+    "nl": "bijkomen",
+    "type": "verb",
+    "perfectum": "bijgekomen",
+    "imperfectum": "kwam bij",
+    "tr": "kendine gelmek, toparlanmak",
+    "en": "to recover, to come round",
+    "ar": "يتعافى، يفيق",
+    "fr": "reprendre ses esprits",
+    "zinnen": [
+      "libncghx",
+      "ncnn3a6p"
+    ]
+  },
+  {
+    "nl": "commentaar",
+    "article": "het",
+    "type": "noun",
+    "tr": "yorum, eleştiri",
+    "en": "comment, criticism",
+    "ar": "تعليق، نقد",
+    "fr": "commentaire, critique",
+    "zinnen": [
+      "kkzx0jtu",
+      "chr4afxn"
+    ]
+  },
+  {
+    "nl": "flauw",
+    "type": "adj",
+    "tr": "gıcık, saçma, bayılacak gibi",
+    "en": "annoying, silly, faint",
+    "ar": "مزعج، سخيف",
+    "fr": "agaçant, bête, faible",
+    "zinnen": [
+      "seeljt0z",
+      "saqt15ym",
+      "wxo38o3d"
+    ]
+  },
+  {
+    "nl": "fris",
+    "type": "adj",
+    "tr": "taze, ferah, temiz",
+    "en": "fresh, clean",
+    "ar": "طازج، منعش",
+    "fr": "frais, propre",
+    "zinnen": [
+      "8k07mpv9",
+      "0ysiulyv",
+      "i405h67g"
+    ]
+  },
+  {
+    "nl": "gamen",
+    "type": "verb",
+    "perfectum": "geamed",
+    "imperfectum": "gamede",
+    "tr": "bilgisayar/video oyunu oynamak",
+    "en": "to game, to play video games",
+    "ar": "يلعب ألعاب الفيديو",
+    "fr": "jouer aux jeux vidéo",
+    "zinnen": [
+      "tf6nexos"
+    ]
+  },
+  {
+    "nl": "gedachte",
+    "article": "de",
+    "type": "noun",
+    "tr": "düşünce, fikir",
+    "en": "thought, idea",
+    "ar": "فكرة، خاطرة",
+    "fr": "pensée, idée",
+    "zinnen": [
+      "m9y04h1v"
+    ]
+  },
+  {
+    "nl": "gestoord",
+    "type": "adj",
+    "tr": "rahatsız, kaçık",
+    "en": "disturbed, crazy",
+    "ar": "مضطرب، مجنون",
+    "fr": "dérangé, fou",
+    "zinnen": [
+      "kkzx0jtu",
+      "5fhmplr0",
+      "chr4afxn"
+    ]
+  },
+  {
+    "nl": "herrie",
+    "article": "de",
+    "type": "noun",
+    "tr": "gürültü, patırtı",
+    "en": "noise, ruckus",
+    "ar": "ضجيج، فوضى",
+    "fr": "vacarme, bruit",
+    "zinnen": [
+      "pdlt0o7o",
+      "68i9v6oc",
+      "bddaiyuv"
+    ]
+  },
+  {
+    "nl": "irriteren",
+    "type": "verb",
+    "perfectum": "geïrriteerd",
+    "imperfectum": "irriteerde",
+    "tr": "sinir etmek, tahriş etmek",
+    "en": "to irritate, to annoy",
+    "ar": "يُزعج، يُهيج",
+    "fr": "irriter, agacer",
+    "zinnen": [
+      "pev3gji1",
+      "bddaiyuv"
+    ]
+  },
+  {
+    "nl": "kinderachtig",
+    "type": "adj",
+    "tr": "çocuksu, olgunlaşmamış",
+    "en": "childish, immature",
+    "ar": "طفولي",
+    "fr": "puéril, enfantin",
+    "zinnen": [
+      "8z6rrdko",
+      "yupfrqq9",
+      "wxo38o3d"
+    ]
+  },
+  {
+    "nl": "kleed",
+    "article": "het",
+    "type": "noun",
+    "tr": "örtü, küçük halı",
+    "en": "rug, cloth",
+    "ar": "بساط صغير، قماش",
+    "fr": "tapis, nappe",
+    "zinnen": [
+      "bi9ctob5",
+      "4gpqcfsm",
+      "qe0drwed"
+    ]
+  },
+  {
+    "nl": "opmerking",
+    "article": "de",
+    "type": "noun",
+    "tr": "yorum, söz, uyarı",
+    "en": "remark, comment",
+    "ar": "ملاحظة، تعليق",
+    "fr": "remarque, commentaire",
+    "zinnen": [
+      "8z6rrdko",
+      "saqt15ym",
+      "bddaiyuv"
+    ]
+  },
+  {
+    "nl": "picknicken",
+    "type": "verb",
+    "perfectum": "gepicknickt",
+    "imperfectum": "picknickte",
+    "tr": "piknik yapmak",
+    "en": "to have a picnic",
+    "ar": "يتنزه، يعمل نزهة",
+    "fr": "faire un pique-nique",
+    "zinnen": [
+      "f0e6qwh0",
+      "c79eigzk",
+      "ofmuz80q"
+    ]
+  },
+  {
+    "nl": "roman",
+    "article": "de",
+    "type": "noun",
+    "tr": "roman (kitap)",
+    "en": "novel",
+    "ar": "رواية",
+    "fr": "roman",
+    "zinnen": [
+      "78ixcf9x",
+      "25sqkrir",
+      "5wap2ap8",
+      "o5688amn"
+    ]
+  },
+  {
+    "nl": "rondje",
+    "article": "het",
+    "type": "noun",
+    "tr": "tur, içki sırası",
+    "en": "round (drinks), lap",
+    "ar": "جولة",
+    "fr": "tournée, tour",
+    "zinnen": [
+      "qmv9kum0",
+      "xu02tbjw",
+      "i405h67g"
+    ]
+  },
+  {
+    "nl": "uitgeput",
+    "type": "adj",
+    "tr": "bitik, tükenmiş",
+    "en": "exhausted",
+    "ar": "منهك، مُنهَك القوى",
+    "fr": "épuisé",
+    "zinnen": [
+      "qzt2crg3",
+      "g4ns4pj2",
+      "ex7tfdra",
+      "libncghx"
+    ]
+  },
+  {
+    "nl": "voorstelling",
+    "article": "de",
+    "type": "noun",
+    "tr": "gösteri, temsil",
+    "en": "performance, show",
+    "ar": "عرض، أداء",
+    "fr": "spectacle, représentation",
+    "zinnen": [
+      "ho524k23",
+      "8k07mpv9",
+      "jurqt939",
+      "7x9qrjuz",
+      "4uzqri25"
+    ]
+  },
+  {
+    "nl": "wandeling",
+    "article": "de",
+    "type": "noun",
+    "tr": "yürüyüş",
+    "en": "walk, stroll",
+    "ar": "نزهة مشياً",
+    "fr": "promenade, balade",
+    "zinnen": [
+      "78ixcf9x",
+      "seeljt0z",
+      "0671v3b2",
+      "0206malk"
+    ]
+  },
+  {
+    "nl": "weigeren",
+    "type": "verb",
+    "perfectum": "geweigerd",
+    "imperfectum": "weigerde",
+    "tr": "reddetmek",
+    "en": "to refuse, to decline",
+    "ar": "يرفض",
+    "fr": "refuser",
+    "zinnen": [
+      "4uzqri25"
+    ]
+  },
+  {
+    "nl": "zich vermaken",
+    "type": "verb",
+    "perfectum": "zich vermaakt",
+    "imperfectum": "vermaakte zich",
+    "tr": "eğlenmek",
+    "en": "to amuse oneself, to have fun",
+    "ar": "يستمتع، يُسلي نفسه",
+    "fr": "s'amuser, se divertir",
+    "zinnen": [
+      "o5688amn",
+      "ho524k23",
+      "7x9qrjuz"
+    ]
+  },
+  {
+    "nl": "zich vervelen",
+    "type": "verb",
+    "perfectum": "zich verveeld",
+    "imperfectum": "verveelde zich",
+    "tr": "canı sıkılmak",
+    "en": "to be bored",
+    "ar": "يشعر بالملل",
+    "fr": "s'ennuyer",
+    "zinnen": [
+      "tf6nexos",
+      "il2dynd3",
+      "828d9c1u"
+    ]
+  },
+  {
+    "nl": "zonnig",
+    "type": "adj",
+    "tr": "güneşli",
+    "en": "sunny",
+    "ar": "مشمس",
+    "fr": "ensoleillé",
+    "zinnen": [
+      "f0e6qwh0",
+      "0yw4xd5l",
+      "ofmuz80q"
+    ]
+  },
+  {
+    "nl": "afsluiting",
+    "article": "de",
+    "type": "noun",
+    "tr": "kapanış, son",
+    "en": "closing, conclusion",
+    "ar": "ختام، إغلاق",
+    "fr": "clôture, conclusion",
+    "zinnen": [
+      "vshcubyn",
+      "fqb9zrft"
+    ]
+  },
+  {
+    "nl": "ballon",
+    "article": "de",
+    "type": "noun",
+    "tr": "balon",
+    "en": "balloon",
+    "ar": "بالون",
+    "fr": "ballon",
+    "zinnen": [
+      "rhwl647s",
+      "0fn4rkso",
+      "g25778oq"
+    ]
+  },
+  {
+    "nl": "bel",
+    "article": "de",
+    "type": "noun",
+    "tr": "zil, çan",
+    "en": "bell",
+    "ar": "جرس",
+    "fr": "sonnette, cloche",
+    "zinnen": [
+      "7edqxju4"
+    ]
+  },
+  {
+    "nl": "boot",
+    "article": "de",
+    "type": "noun",
+    "tr": "tekne, bot",
+    "en": "boat",
+    "ar": "قارب",
+    "fr": "bateau",
+    "zinnen": [
+      "bued4x7w",
+      "8tz6ivtx"
+    ]
+  },
+  {
+    "nl": "burgemeester",
+    "article": "de",
+    "type": "noun",
+    "tr": "belediye başkanı",
+    "en": "mayor",
+    "ar": "عمدة، رئيس البلدية",
+    "fr": "maire",
+    "zinnen": [
+      "4co9i6ye",
+      "za0w08mm"
+    ]
+  },
+  {
+    "nl": "drankje",
+    "article": "het",
+    "type": "noun",
+    "tr": "içecek",
+    "en": "drink, beverage",
+    "ar": "مشروب",
+    "fr": "boisson, verre",
+    "zinnen": [
+      "raejcydr",
+      "ei63ow1q",
+      "ccgewec3"
+    ]
+  },
+  {
+    "nl": "dronken",
+    "type": "adj",
+    "tr": "sarhoş",
+    "en": "drunk",
+    "ar": "سكران",
+    "fr": "ivre, saoul",
+    "zinnen": [
+      "42x458iq",
+      "ccgewec3"
+    ]
+  },
+  {
+    "nl": "dweil",
+    "article": "de",
+    "type": "noun",
+    "tr": "paspas, mop",
+    "en": "mop",
+    "ar": "ممسحة",
+    "fr": "serpillière",
+    "zinnen": [
+      "gm79f27w",
+      "0tp6jx4d"
+    ]
+  },
+  {
+    "nl": "emmer",
+    "article": "de",
+    "type": "noun",
+    "tr": "kova",
+    "en": "bucket",
+    "ar": "دلو",
+    "fr": "seau",
+    "zinnen": [
+      "gm79f27w",
+      "0tp6jx4d"
+    ]
+  },
+  {
+    "nl": "feesten",
+    "type": "verb",
+    "perfectum": "gefeest",
+    "imperfectum": "feestte",
+    "tr": "parti yapmak, kutlamak",
+    "en": "to party, to celebrate",
+    "ar": "يحتفل",
+    "fr": "faire la fête",
+    "zinnen": [
+      "4co9i6ye",
+      "1h6enu8o"
+    ]
+  },
+  {
+    "nl": "fotograferen",
+    "type": "verb",
+    "perfectum": "gefotografeerd",
+    "imperfectum": "fotografeerde",
+    "tr": "fotoğraf çekmek",
+    "en": "to photograph, to take pictures",
+    "ar": "يلتقط صوراً",
+    "fr": "photographier",
+    "zinnen": [
+      "kss6yeqo",
+      "82hb9avc"
+    ]
+  },
+  {
+    "nl": "gebruikelijk",
+    "type": "adj",
+    "tr": "alışılagelen, geleneksel",
+    "en": "customary, usual",
+    "ar": "معتاد، مألوف",
+    "fr": "habituel, coutumier",
+    "zinnen": [
+      "baahdckf",
+      "kss6yeqo"
+    ]
+  },
+  {
+    "nl": "grootouder",
+    "article": "de",
+    "type": "noun",
+    "tr": "büyükanne / büyükbaba",
+    "en": "grandparent",
+    "ar": "جد / جدة",
+    "fr": "grand-parent",
+    "zinnen": [
+      "bcvg8r0f",
+      "82hb9avc"
+    ]
+  },
+  {
+    "nl": "inhuren",
+    "type": "verb",
+    "perfectum": "ingehuurd",
+    "imperfectum": "huurde in",
+    "tr": "tutmak, kiralamak",
+    "en": "to hire, to rent",
+    "ar": "يستأجر",
+    "fr": "engager, louer",
+    "zinnen": [
+      "zj5flr36",
+      "aedk93jl"
+    ]
+  },
+  {
+    "nl": "jubileum",
+    "article": "het",
+    "type": "noun",
+    "tr": "yıldönümü, jübile",
+    "en": "anniversary, jubilee",
+    "ar": "ذكرى سنوية، يوبيل",
+    "fr": "anniversaire, jubilé",
+    "zinnen": [
+      "4co9i6ye",
+      "82hb9avc",
+      "baahdckf",
+      "y61y4749",
+      "vfu3d7vp"
+    ]
+  },
+  {
+    "nl": "nieuwsgierig",
+    "type": "adj",
+    "tr": "meraklı",
+    "en": "curious, nosy",
+    "ar": "فضولي",
+    "fr": "curieux",
+    "zinnen": [
+      "bglyic9b",
+      "bcvg8r0f"
+    ]
+  },
+  {
+    "nl": "onvergetelijk",
+    "type": "adj",
+    "tr": "unutulmaz",
+    "en": "unforgettable",
+    "ar": "لا يُنسى",
+    "fr": "inoubliable",
+    "zinnen": [
+      "77073nag",
+      "vfu3d7vp"
+    ]
+  },
+  {
+    "nl": "professioneel",
+    "type": "adj",
+    "tr": "profesyonel",
+    "en": "professional",
+    "ar": "محترف",
+    "fr": "professionnel",
+    "zinnen": [
+      "zj5flr36",
+      "aedk93jl"
+    ]
+  },
+  {
+    "nl": "rondleiding",
+    "article": "de",
+    "type": "noun",
+    "tr": "rehberli tur",
+    "en": "guided tour",
+    "ar": "جولة إرشادية",
+    "fr": "visite guidée",
+    "zinnen": [
+      "za0w08mm"
+    ]
+  },
+  {
+    "nl": "spanning",
+    "article": "de",
+    "type": "noun",
+    "tr": "heyecan, gerilim",
+    "en": "excitement, tension",
+    "ar": "إثارة، توتر",
+    "fr": "excitation, tension",
+    "zinnen": [
+      "77073nag",
+      "ks1uiv4e",
+      "fqb9zrft"
+    ]
+  },
+  {
+    "nl": "varen",
+    "type": "verb",
+    "perfectum": "gevaren",
+    "imperfectum": "voer",
+    "tr": "tekneyle gitmek, seyretmek",
+    "en": "to sail, to travel by boat",
+    "ar": "يبحر، يسافر بالقارب",
+    "fr": "naviguer, aller en bateau",
+    "zinnen": [
+      "bued4x7w",
+      "8tz6ivtx"
+    ]
+  },
+  {
+    "nl": "verbouwen",
+    "type": "verb",
+    "perfectum": "verbouwd",
+    "imperfectum": "verbouwde",
+    "tr": "tadilat yapmak, yenilemek",
+    "en": "to renovate, to remodel",
+    "ar": "يُجدِّد، يُرمِّم",
+    "fr": "rénover, aménager",
+    "zinnen": [
+      "bh54mw72",
+      "baas881v"
+    ]
+  },
+  {
+    "nl": "verrast",
+    "type": "adj",
+    "tr": "şaşırmış, sürprizle karşılaşmış",
+    "en": "surprised",
+    "ar": "مندهش، مفاجأ",
+    "fr": "surpris",
+    "zinnen": [
+      "vshcubyn",
+      "bcvg8r0f"
+    ]
+  },
+  {
+    "nl": "versieren",
+    "type": "verb",
+    "perfectum": "versierd",
+    "imperfectum": "versierde",
+    "tr": "süslemek",
+    "en": "to decorate",
+    "ar": "يُزيِّن",
+    "fr": "décorer",
+    "zinnen": [
+      "0fn4rkso",
+      "g25778oq"
+    ]
+  },
+  {
+    "nl": "vooraf",
+    "type": "adv",
+    "tr": "önceden, öncesinde",
+    "en": "beforehand, in advance",
+    "ar": "مسبقاً، قبلاً",
+    "fr": "au préalable, à l'avance",
+    "zinnen": [
+      "bh54mw72",
+      "1h6enu8o"
+    ]
+  },
+  {
+    "nl": "voorbijgaan",
+    "type": "verb",
+    "perfectum": "voorbijgegaan",
+    "imperfectum": "ging voorbij",
+    "tr": "geçmek",
+    "en": "to pass by, to go by",
+    "ar": "يمر",
+    "fr": "passer",
+    "zinnen": [
+      "pbmw0j3g"
+    ]
+  },
+  {
+    "nl": "vrijgezel",
+    "article": "de",
+    "type": "noun",
+    "tr": "bekar",
+    "en": "bachelor, single person",
+    "ar": "أعزب",
+    "fr": "célibataire",
+    "zinnen": [
+      "w176tjre",
+      "8tz6ivtx"
+    ]
+  },
+  {
+    "nl": "zaal",
+    "article": "de",
+    "type": "noun",
+    "tr": "salon, salonun büyük bölümü",
+    "en": "hall, room",
+    "ar": "قاعة، صالة",
+    "fr": "salle",
+    "zinnen": [
+      "rhwl647s",
+      "0fn4rkso",
+      "g25778oq"
+    ]
+  },
+  {
+    "nl": "aardbei",
+    "article": "de",
+    "type": "noun",
+    "tr": "çilek",
+    "en": "strawberry",
+    "ar": "فراولة",
+    "fr": "fraise",
+    "zinnen": [
+      "sdjst227"
+    ]
+  },
+  {
+    "nl": "biologisch",
+    "type": "adj",
+    "tr": "organik, biyolojik",
+    "en": "organic, biological",
+    "ar": "عضوي، بيولوجي",
+    "fr": "biologique, bio",
+    "zinnen": [
+      "c04281vf",
+      "tt557054"
+    ]
+  },
+  {
+    "nl": "checken",
+    "type": "verb",
+    "perfectum": "gecheckt",
+    "imperfectum": "checkte",
+    "tr": "kontrol etmek",
+    "en": "to check",
+    "ar": "يتحقق، يراجع",
+    "fr": "vérifier, checker",
+    "zinnen": [
+      "nj5mf9m6",
+      "t9txtnjr"
+    ]
+  },
+  {
+    "nl": "dorst",
+    "article": "de",
+    "type": "noun",
+    "tr": "susuzluk",
+    "en": "thirst",
+    "ar": "عطش",
+    "fr": "soif",
+    "zinnen": [
+      "5fp7qwpn",
+      "ei63ow1q",
+      "sjhd3quf"
+    ]
+  },
+  {
+    "nl": "dun",
+    "type": "adj",
+    "tr": "ince, zayıf",
+    "en": "thin, slim",
+    "ar": "رفيع، نحيف",
+    "fr": "mince, fin",
+    "zinnen": [
+      "sjhd3quf"
+    ]
+  },
+  {
+    "nl": "eigenaar",
+    "article": "de",
+    "type": "noun",
+    "tr": "sahip, mal sahibi",
+    "en": "owner",
+    "ar": "مالك، صاحب",
+    "fr": "propriétaire",
+    "zinnen": [
+      "p0fvn141",
+      "tt557054"
+    ]
+  },
+  {
+    "nl": "gehakt",
+    "article": "het",
+    "type": "noun",
+    "tr": "kıyma",
+    "en": "minced meat",
+    "ar": "لحم مفروم",
+    "fr": "viande hachée",
+    "zinnen": [
+      "hadk2tyr",
+      "vzq6c85m"
+    ]
+  },
+  {
+    "nl": "gerecht",
+    "article": "het",
+    "type": "noun",
+    "tr": "yemek, tabak",
+    "en": "dish, course",
+    "ar": "طبق، وجبة",
+    "fr": "plat",
+    "zinnen": [
+      "bcydtkbq",
+      "c4bt0hhu"
+    ]
+  },
+  {
+    "nl": "gewicht",
+    "article": "het",
+    "type": "noun",
+    "tr": "ağırlık, kilo",
+    "en": "weight",
+    "ar": "وزن",
+    "fr": "poids",
+    "zinnen": [
+      "t9txtnjr",
+      "zyko35cq"
+    ]
+  },
+  {
+    "nl": "inleveren",
+    "type": "verb",
+    "perfectum": "ingeleverd",
+    "imperfectum": "leverde in",
+    "tr": "teslim etmek",
+    "en": "to hand in, to submit",
+    "ar": "يسلِّم، يُقدِّم",
+    "fr": "remettre, rendre",
+    "zinnen": [
+      "xq5pa7j6"
+    ]
+  },
+  {
+    "nl": "klaarmaken",
+    "type": "verb",
+    "perfectum": "klaargemaakt",
+    "imperfectum": "maakte klaar",
+    "tr": "hazırlamak",
+    "en": "to prepare, to make ready",
+    "ar": "يُحضِّر",
+    "fr": "préparer",
+    "zinnen": [
+      "s6er1rru",
+      "8vxfgw6g"
+    ]
+  },
+  {
+    "nl": "lepel",
+    "article": "de",
+    "type": "noun",
+    "tr": "kaşık",
+    "en": "spoon",
+    "ar": "ملعقة",
+    "fr": "cuillère",
+    "zinnen": [
+      "s6er1rru",
+      "8vxfgw6g"
+    ]
+  },
+  {
+    "nl": "ober",
+    "article": "de",
+    "type": "noun",
+    "tr": "garson",
+    "en": "waiter",
+    "ar": "نادل",
+    "fr": "serveur",
+    "zinnen": [
+      "zyb3n8rz",
+      "raejcydr",
+      "etl26oea",
+      "c4bt0hhu"
+    ]
+  },
+  {
+    "nl": "ontdooien",
+    "type": "verb",
+    "perfectum": "ontdooid",
+    "imperfectum": "ontdooide",
+    "tr": "çözdürmek, buzunu eritmek",
+    "en": "to defrost, to thaw",
+    "ar": "يذيب الثلج",
+    "fr": "décongeler",
+    "zinnen": [
+      "vzq6c85m",
+      "hadk2tyr"
+    ]
+  },
+  {
+    "nl": "overwerken",
+    "type": "verb",
+    "perfectum": "overgewerkt",
+    "imperfectum": "werkte over",
+    "tr": "fazla mesai yapmak",
+    "en": "to work overtime",
+    "ar": "يعمل ساعات إضافية",
+    "fr": "faire des heures supplémentaires",
+    "zinnen": [
+      "zyko35cq"
+    ]
+  },
+  {
+    "nl": "portie",
+    "article": "de",
+    "type": "noun",
+    "tr": "porsiyon",
+    "en": "portion, serving",
+    "ar": "حصة، وجبة",
+    "fr": "portion",
+    "zinnen": [
+      "bwt6guij",
+      "dgppg0pw",
+      "t9txtnjr",
+      "3ta15fti"
+    ]
+  },
+  {
+    "nl": "prijzig",
+    "type": "adj",
+    "tr": "pahalı",
+    "en": "pricey, expensive",
+    "ar": "مكلف، غالٍ",
+    "fr": "cher, coûteux",
+    "zinnen": [
+      "bcydtkbq",
+      "3ta15fti"
+    ]
+  },
+  {
+    "nl": "saus",
+    "article": "de",
+    "type": "noun",
+    "tr": "sos",
+    "en": "sauce",
+    "ar": "صلصة",
+    "fr": "sauce",
+    "zinnen": [
+      "zyb3n8rz",
+      "boojzajc",
+      "jk47lstc",
+      "c4bt0hhu"
+    ]
+  },
+  {
+    "nl": "schat",
+    "article": "de",
+    "type": "noun",
+    "tr": "canım, hazine",
+    "en": "darling, treasure",
+    "ar": "عزيزي، كنز",
+    "fr": "chéri, trésor",
+    "zinnen": [
+      "pzila2fr",
+      "cefnzidk"
+    ]
+  },
+  {
+    "nl": "slagroom",
+    "article": "de",
+    "type": "noun",
+    "tr": "çırpılmış krema, kremşanti",
+    "en": "whipped cream",
+    "ar": "كريمة مخفوقة",
+    "fr": "crème chantilly",
+    "zinnen": [
+      "bs8r0k3b",
+      "dgppg0pw",
+      "sdjst227"
+    ]
+  },
+  {
+    "nl": "spinazie",
+    "article": "de",
+    "type": "noun",
+    "tr": "ıspanak",
+    "en": "spinach",
+    "ar": "سبانخ",
+    "fr": "épinards",
+    "zinnen": [
+      "bwt6guij",
+      "3ta15fti"
+    ]
+  },
+  {
+    "nl": "vaatwasser",
+    "article": "de",
+    "type": "noun",
+    "tr": "bulaşık makinesi",
+    "en": "dishwasher",
+    "ar": "غسالة صحون",
+    "fr": "lave-vaisselle",
+    "zinnen": [
+      "eu3v8ewg",
+      "xq5pa7j6"
+    ]
+  },
+  {
+    "nl": "vermoeden",
+    "type": "verb",
+    "perfectum": "vermoed",
+    "imperfectum": "vermoedde",
+    "tr": "tahmin etmek, sanmak",
+    "en": "to suspect, to assume",
+    "ar": "يشك، يخمن",
+    "fr": "soupçonner, supposer",
+    "zinnen": [
+      "boojzajc",
+      "tt557054"
+    ]
+  },
+  {
+    "nl": "vork",
+    "article": "de",
+    "type": "noun",
+    "tr": "çatal",
+    "en": "fork",
+    "ar": "شوكة",
+    "fr": "fourchette",
+    "zinnen": [
+      "evh37odr",
+      "8vxfgw6g"
+    ]
+  },
+  {
+    "nl": "aangeven",
+    "type": "verb",
+    "perfectum": "aangegeven",
+    "imperfectum": "gaf aan",
+    "tr": "bildirmek, belirtmek",
+    "en": "to indicate, to report",
+    "ar": "يُبلِّغ، يُشير",
+    "fr": "indiquer, signaler",
+    "zinnen": [
+      "xjnmmrlj"
+    ]
+  },
+  {
+    "nl": "alsnog",
+    "type": "adv",
+    "tr": "sonunda, gecikmeli olarak",
+    "en": "still, after all",
+    "ar": "في نهاية المطاف",
+    "fr": "finalement, quand même",
+    "zinnen": [
+      "xjnmmrlj"
+    ]
+  },
+  {
+    "nl": "arbeidsovereenkomst",
+    "article": "de",
+    "type": "noun",
+    "tr": "iş sözleşmesi",
+    "en": "employment contract",
+    "ar": "عقد العمل",
+    "fr": "contrat de travail",
+    "zinnen": [
+      "csh41y52",
+      "hz4ri60y"
+    ]
+  },
+  {
+    "nl": "behoud",
+    "article": "het",
+    "type": "noun",
+    "tr": "koruma (örn. ücretli izin)",
+    "en": "retention, maintenance (e.g. of pay)",
+    "ar": "حفظ، صون",
+    "fr": "maintien, conservation",
+    "zinnen": [
+      "pbp84phz"
+    ]
+  },
+  {
+    "nl": "berekenen",
+    "type": "verb",
+    "perfectum": "berekend",
+    "imperfectum": "berekende",
+    "tr": "hesaplamak",
+    "en": "to calculate",
+    "ar": "يحسب",
+    "fr": "calculer",
+    "zinnen": [
+      "7qvarq0i"
+    ]
+  },
+  {
+    "nl": "bestemming",
+    "article": "de",
+    "type": "noun",
+    "tr": "gidilecek yer, hedef",
+    "en": "destination",
+    "ar": "وجهة",
+    "fr": "destination",
+    "zinnen": [
+      "yi9v4v45"
+    ]
+  },
+  {
+    "nl": "bezwaar",
+    "article": "het",
+    "type": "noun",
+    "tr": "itiraz, engel",
+    "en": "objection, obstacle",
+    "ar": "اعتراض",
+    "fr": "objection",
+    "zinnen": [
+      "4ofsrb26"
+    ]
+  },
+  {
+    "nl": "bouw",
+    "article": "de",
+    "type": "noun",
+    "tr": "inşaat",
+    "en": "construction, building",
+    "ar": "بناء",
+    "fr": "construction",
+    "zinnen": [
+      "lbx4c7if"
+    ]
+  },
+  {
+    "nl": "collectief",
+    "type": "adj",
+    "tr": "kolektif, ortak",
+    "en": "collective",
+    "ar": "جماعي",
+    "fr": "collectif",
+    "zinnen": [
+      "plsd75do",
+      "e96cqfxo"
+    ]
+  },
+  {
+    "nl": "doorbetalen",
+    "type": "verb",
+    "perfectum": "doorbetaald",
+    "imperfectum": "betaalde door",
+    "tr": "ödemeye devam etmek",
+    "en": "to continue paying",
+    "ar": "يستمر في الدفع",
+    "fr": "continuer à payer",
+    "zinnen": [
+      "x3n6pyrd"
+    ]
+  },
+  {
+    "nl": "geval",
+    "article": "het",
+    "type": "noun",
+    "tr": "durum, hal",
+    "en": "case, situation",
+    "ar": "حالة",
+    "fr": "cas, situation",
+    "zinnen": [
+      "7qvarq0i"
+    ]
+  },
+  {
+    "nl": "leiden tot",
+    "type": "phrase",
+    "tr": "yol açmak, -e neden olmak",
+    "en": "to lead to, to result in",
+    "ar": "يؤدي إلى",
+    "fr": "mener à, conduire à",
+    "zinnen": [
+      "4ofsrb26"
+    ]
+  },
+  {
+    "nl": "minimum",
+    "article": "het",
+    "type": "noun",
+    "tr": "asgari, minimum",
+    "en": "minimum",
+    "ar": "حد أدنى",
+    "fr": "minimum",
+    "zinnen": [
+      "igbjyh72"
+    ]
+  },
+  {
+    "nl": "opmaken",
+    "type": "verb",
+    "perfectum": "opgemaakt",
+    "imperfectum": "maakte op",
+    "tr": "tüketmek, harcamak",
+    "en": "to use up, to spend",
+    "ar": "يستنفد، يُنفق",
+    "fr": "dépenser, utiliser",
+    "zinnen": [
+      "cc1mifne"
+    ]
+  },
+  {
+    "nl": "opnemen",
+    "type": "verb",
+    "perfectum": "opgenomen",
+    "imperfectum": "nam op",
+    "tr": "kullanmak (izin), kaydetmek",
+    "en": "to take (leave), to record",
+    "ar": "يأخذ (إجازة)، يسجل",
+    "fr": "prendre (un congé), enregistrer",
+    "zinnen": [
+      "6dq3ak0r",
+      "687xbh8u",
+      "x3n6pyrd",
+      "omf2fkcw"
+    ]
+  },
+  {
+    "nl": "recht",
+    "article": "het",
+    "type": "noun",
+    "tr": "hak",
+    "en": "right, entitlement",
+    "ar": "حق",
+    "fr": "droit",
+    "zinnen": [
+      "h1ar2zhg",
+      "oluvmpv7",
+      "p0oy4bbg"
+    ]
+  },
+  {
+    "nl": "schriftelijk",
+    "type": "adj",
+    "tr": "yazılı",
+    "en": "written, in writing",
+    "ar": "خطياً، مكتوب",
+    "fr": "écrit, par écrit",
+    "zinnen": [
+      "repxrri7",
+      "hz4ri60y"
+    ]
+  },
+  {
+    "nl": "stimuleren",
+    "type": "verb",
+    "perfectum": "gestimuleerd",
+    "imperfectum": "stimuleerde",
+    "tr": "teşvik etmek",
+    "en": "to stimulate, to encourage",
+    "ar": "يُحفِّز، يُشجِّع",
+    "fr": "stimuler, encourager",
+    "zinnen": [
+      "pbp84phz",
+      "lbx4c7if"
+    ]
+  },
+  {
+    "nl": "tellen",
+    "type": "verb",
+    "perfectum": "geteld",
+    "imperfectum": "telde",
+    "tr": "saymak",
+    "en": "to count",
+    "ar": "يعد",
+    "fr": "compter",
+    "zinnen": [
+      "7qvarq0i"
+    ]
+  },
+  {
+    "nl": "vaststaan",
+    "type": "verb",
+    "perfectum": "vastgestaan",
+    "imperfectum": "stond vast",
+    "tr": "kesinleşmek, belirlenmek",
+    "en": "to be certain, to be established",
+    "ar": "يكون محدداً، مُقرَّراً",
+    "fr": "être établi, être certain",
+    "zinnen": [
+      "hz4ri60y"
+    ]
+  },
+  {
+    "nl": "verblijven",
+    "type": "verb",
+    "perfectum": "verbleven",
+    "imperfectum": "verbleef",
+    "tr": "kalmak, ikamet etmek",
+    "en": "to stay, to reside",
+    "ar": "يُقيم، يبقى",
+    "fr": "séjourner, résider",
+    "zinnen": [
+      "ub5q4a4l",
+      "yi9v4v45"
+    ]
+  },
+  {
+    "nl": "vervallen",
+    "type": "verb",
+    "perfectum": "vervallen",
+    "imperfectum": "verviel",
+    "tr": "düşmek, geçersiz olmak",
+    "en": "to expire, to lapse",
+    "ar": "يسقط، ينتهي مفعوله",
+    "fr": "expirer, tomber en désuétude",
+    "zinnen": [
+      "oluvmpv7"
+    ]
+  },
+  {
+    "nl": "zich houden aan",
+    "type": "verb",
+    "perfectum": "zich gehouden aan",
+    "imperfectum": "hield zich aan",
+    "tr": "uymak, bağlı kalmak",
+    "en": "to stick to, to comply with",
+    "ar": "يلتزم بـ",
+    "fr": "respecter, se conformer à",
+    "zinnen": [
+      "igbjyh72"
+    ]
+  },
+  {
+    "nl": "zogenaamd",
+    "type": "adj",
+    "tr": "sözde, güya",
+    "en": "so-called",
+    "ar": "المزعوم، ما يُسمى بـ",
+    "fr": "soi-disant, prétendu",
+    "zinnen": [
+      "e96cqfxo"
+    ]
+  }
 ]

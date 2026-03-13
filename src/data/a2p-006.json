@@ -1,102 +1,1328 @@
 [
-  {"nl": "analyseren", "type": "verb", "perfectum": "geanalyseerd", "imperfectum": "analyseerde", "tr": "analiz etmek", "en": "to analyse", "ar": "يحلل", "fr": "analyser"},
-  {"nl": "apart", "type": "adj", "tr": "ayrı, ilginç", "en": "separate, peculiar", "ar": "منفصل، غريب", "fr": "séparé, particulier"},
-  {"nl": "collegegeld", "article": "het", "type": "noun", "tr": "öğrenim ücreti", "en": "tuition fee", "ar": "رسوم دراسية", "fr": "frais de scolarité"},
-  {"nl": "doorstromen", "type": "verb", "perfectum": "doorgestroomd", "imperfectum": "stroomde door", "tr": "bir üst seviyeye geçmek", "en": "to advance, to move on (to next level)", "ar": "ينتقل إلى المستوى التالي", "fr": "progresser vers le niveau supérieur"},
-  {"nl": "duur", "article": "de", "type": "noun", "tr": "süre, uzunluk", "en": "duration, length", "ar": "مدة", "fr": "durée"},
-  {"nl": "evenveel", "type": "adv", "tr": "aynı kadar, eşit miktarda", "en": "the same amount, equally", "ar": "بنفس القدر", "fr": "autant, la même quantité"},
-  {"nl": "hogeschool", "article": "de", "type": "noun", "tr": "yüksekokul, uygulamalı bilimler üniversitesi", "en": "university of applied sciences", "ar": "كلية تطبيقية", "fr": "école supérieure, université de sciences appliquées"},
-  {"nl": "ingenieur", "article": "de", "type": "noun", "tr": "mühendis", "en": "engineer", "ar": "مهندس", "fr": "ingénieur"},
-  {"nl": "inhoud", "article": "de", "type": "noun", "tr": "içerik, kapsam", "en": "content, contents", "ar": "محتوى", "fr": "contenu"},
-  {"nl": "leraar", "article": "de", "type": "noun", "tr": "öğretmen", "en": "teacher", "ar": "معلم", "fr": "professeur, instituteur"},
-  {"nl": "mbo", "article": "het", "type": "noun", "tr": "mesleki eğitim (orta seviye)", "en": "vocational secondary education", "ar": "التعليم المهني الثانوي", "fr": "enseignement professionnel secondaire"},
-  {"nl": "regering", "article": "de", "type": "noun", "tr": "hükümet", "en": "government", "ar": "حكومة", "fr": "gouvernement"},
-  {"nl": "richting", "article": "de", "type": "noun", "tr": "yön, dal, bölüm", "en": "direction, field of study", "ar": "اتجاه، تخصص", "fr": "direction, filière"},
-  {"nl": "schakelprogramma", "article": "het", "type": "noun", "tr": "geçiş programı", "en": "bridging programme", "ar": "برنامج تحويلي", "fr": "programme passerelle"},
-  {"nl": "scriptie", "article": "de", "type": "noun", "tr": "tez, bitirme ödevi", "en": "thesis, dissertation", "ar": "أطروحة، مذكرة تخرج", "fr": "mémoire, thèse"},
-  {"nl": "specifiek", "type": "adj", "tr": "özel, belirli", "en": "specific", "ar": "محدد، خاص", "fr": "spécifique"},
-  {"nl": "tandheelkunde", "article": "de", "type": "noun", "tr": "diş hekimliği", "en": "dentistry", "ar": "طب الأسنان", "fr": "médecine dentaire"},
-  {"nl": "toelaten", "type": "verb", "perfectum": "toegelaten", "imperfectum": "liet toe", "tr": "kabul etmek, içeri almak", "en": "to admit, to allow", "ar": "يقبل، يأذن", "fr": "admettre, autoriser"},
-  {"nl": "toelating", "article": "de", "type": "noun", "tr": "kabul, giriş izni", "en": "admission", "ar": "قبول", "fr": "admission"},
-  {"nl": "toepassen", "type": "verb", "perfectum": "toegepast", "imperfectum": "paste toe", "tr": "uygulamak", "en": "to apply, to use", "ar": "يُطبِّق، يستخدم", "fr": "appliquer, mettre en pratique"},
-  {"nl": "universitair", "type": "adj", "tr": "akademik, üniversiteye ilişkin", "en": "academic, university-level", "ar": "جامعي، أكاديمي", "fr": "universitaire, académique"},
-  {"nl": "verblijfsvergunning", "article": "de", "type": "noun", "tr": "oturma izni", "en": "residence permit", "ar": "تصريح إقامة", "fr": "permis de séjour"},
-  {"nl": "voldoen", "type": "verb", "perfectum": "voldaan", "imperfectum": "voldeed", "tr": "uymak, karşılamak (şartları)", "en": "to meet (requirements), to comply", "ar": "يستوفي، يلتزم", "fr": "satisfaire (aux exigences), répondre"},
-  {"nl": "vooropleiding", "article": "de", "type": "noun", "tr": "ön eğitim, ön öğrenim", "en": "prior education, prerequisite training", "ar": "تعليم سابق، تأهيل مسبق", "fr": "formation préalable"},
-  {"nl": "zich specialiseren", "type": "verb", "perfectum": "zich gespecialiseerd", "imperfectum": "specialiseerde zich", "tr": "uzmanlaşmak", "en": "to specialise", "ar": "يتخصص", "fr": "se spécialiser"},
-  {"nl": "instelling", "article": "de", "type": "noun", "tr": "kurum, kuruluş", "en": "institution, organisation", "ar": "مؤسسة", "fr": "institution, établissement"},
-  {"nl": "aantekening", "article": "de", "type": "noun", "tr": "not, kayıt", "en": "note, annotation", "ar": "ملاحظة، تدوين", "fr": "note, annotation"},
-  {"nl": "afschaffen", "type": "verb", "perfectum": "afgeschaft", "imperfectum": "schafte af", "tr": "kaldırmak, lağvetmek", "en": "to abolish, to eliminate", "ar": "يلغي، يُقصي", "fr": "abolir, supprimer"},
-  {"nl": "anoniem", "type": "adj", "tr": "anonim, kimliksiz", "en": "anonymous", "ar": "مجهول الهوية", "fr": "anonyme"},
-  {"nl": "bedrijfskunde", "article": "de", "type": "noun", "tr": "işletme (bölümü)", "en": "business administration", "ar": "إدارة الأعمال", "fr": "gestion, sciences de gestion"},
-  {"nl": "deadline", "article": "de", "type": "noun", "tr": "son teslim tarihi", "en": "deadline", "ar": "موعد نهائي", "fr": "date limite, délai"},
-  {"nl": "expert", "article": "de", "type": "noun", "tr": "uzman", "en": "expert", "ar": "خبير", "fr": "expert"},
-  {"nl": "formeel", "type": "adj", "tr": "resmi", "en": "formal", "ar": "رسمي", "fr": "formel"},
-  {"nl": "hoorcollege", "article": "het", "type": "noun", "tr": "amfi dersi, konferans", "en": "lecture", "ar": "محاضرة", "fr": "cours magistral"},
-  {"nl": "individueel", "type": "adj", "tr": "bireysel", "en": "individual", "ar": "فردي", "fr": "individuel"},
-  {"nl": "informeel", "type": "adj", "tr": "gayri resmi, serbest", "en": "informal", "ar": "غير رسمي", "fr": "informel"},
-  {"nl": "initiatief", "article": "het", "type": "noun", "tr": "inisiyatif, girişim", "en": "initiative", "ar": "مبادرة", "fr": "initiative"},
-  {"nl": "leerzaam", "type": "adj", "tr": "öğretici, eğitici", "en": "educational, instructive", "ar": "تعليمي، مفيد", "fr": "instructif, enrichissant"},
-  {"nl": "massaal", "type": "adj", "tr": "kalabalık, toplu", "en": "massive, large-scale", "ar": "جماهيري، ضخم", "fr": "massif, en masse"},
-  {"nl": "mede-", "type": "adj", "tr": "ortak, birlikte", "en": "co-, fellow", "ar": "مشارك، زميل", "fr": "co-, confrère"},
-  {"nl": "Nederlandstalig", "type": "adj", "tr": "Hollandaca konuşan/yazılan", "en": "Dutch-speaking / in Dutch", "ar": "ناطق بالهولندية", "fr": "néerlandophone"},
-  {"nl": "paper", "article": "de", "type": "noun", "tr": "deneme yazısı, makale", "en": "paper, essay", "ar": "ورقة بحثية، مقالة", "fr": "paper, exposé"},
-  {"nl": "passief", "type": "adj", "tr": "pasif, edilgen", "en": "passive", "ar": "سلبي", "fr": "passif"},
-  {"nl": "presenteren", "type": "verb", "perfectum": "gepresenteerd", "imperfectum": "presenteerde", "tr": "sunmak", "en": "to present", "ar": "يعرض، يُقدِّم", "fr": "présenter"},
-  {"nl": "stelling", "article": "de", "type": "noun", "tr": "tez, sav", "en": "thesis, statement", "ar": "قضية، أطروحة", "fr": "thèse, affirmation"},
-  {"nl": "sterk", "type": "adj", "tr": "güçlü, kuvvetli", "en": "strong", "ar": "قوي", "fr": "fort"},
-  {"nl": "stof", "article": "de", "type": "noun", "tr": "ders materyali, toz", "en": "subject matter, dust", "ar": "مادة دراسية، غبار", "fr": "matière (cours), poussière"},
-  {"nl": "voorkeur", "article": "de", "type": "noun", "tr": "tercih", "en": "preference", "ar": "تفضيل", "fr": "préférence"},
-  {"nl": "werkcollege", "article": "het", "type": "noun", "tr": "pratik ders, seminer", "en": "seminar, tutorial", "ar": "حلقة دراسية", "fr": "travaux pratiques, séminaire"},
-  {"nl": "afwezig", "type": "adj", "tr": "devamsız, yok", "en": "absent", "ar": "غائب", "fr": "absent"},
-  {"nl": "alinea", "article": "de", "type": "noun", "tr": "paragraf", "en": "paragraph", "ar": "فقرة", "fr": "paragraphe"},
-  {"nl": "bijgeloof", "article": "het", "type": "noun", "tr": "batıl inanç", "en": "superstition", "ar": "خرافة", "fr": "superstition"},
-  {"nl": "dramatisch", "type": "adj", "tr": "dramatik, abartılı", "en": "dramatic", "ar": "درامي", "fr": "dramatique"},
-  {"nl": "examenvrees", "article": "de", "type": "noun", "tr": "sınav korkusu", "en": "exam anxiety", "ar": "قلق الامتحانات", "fr": "peur des examens, anxiété d'examen"},
-  {"nl": "falen", "type": "verb", "perfectum": "gefaald", "imperfectum": "faalde", "tr": "başarısız olmak", "en": "to fail", "ar": "يفشل", "fr": "échouer"},
-  {"nl": "geheugen", "article": "het", "type": "noun", "tr": "bellek, hafıza", "en": "memory", "ar": "ذاكرة", "fr": "mémoire"},
-  {"nl": "ingewikkeld", "type": "adj", "tr": "karmaşık, zor", "en": "complicated, complex", "ar": "معقد", "fr": "compliqué, complexe"},
-  {"nl": "inhalen", "type": "verb", "perfectum": "ingehaald", "imperfectum": "haalde in", "tr": "telafi etmek, geçmek", "en": "to catch up, to make up for", "ar": "يتعوض، يستدرك", "fr": "rattraper, compenser"},
-  {"nl": "kluisje", "article": "het", "type": "noun", "tr": "kilitli dolap, kasa", "en": "locker", "ar": "خزينة صغيرة، خزانة", "fr": "casier"},
-  {"nl": "nakijken", "type": "verb", "perfectum": "nagekeken", "imperfectum": "keek na", "tr": "kontrol etmek, düzeltmek", "en": "to check, to mark (papers)", "ar": "يراجع، يصحح", "fr": "vérifier, corriger"},
-  {"nl": "opblijven", "type": "verb", "perfectum": "opgebleven", "imperfectum": "bleef op", "tr": "geç saate kadar uyanık kalmak", "en": "to stay up (late)", "ar": "يسهر", "fr": "rester éveillé"},
-  {"nl": "overhoren", "type": "verb", "perfectum": "overhoord", "imperfectum": "hoorde over", "tr": "bilgisini test etmek, sorgulamak", "en": "to quiz, to test (someone)", "ar": "يختبر (معلومات شخص)", "fr": "faire réciter, interroger"},
-  {"nl": "paniek", "article": "de", "type": "noun", "tr": "panik", "en": "panic", "ar": "هلع، ذعر", "fr": "panique"},
-  {"nl": "sjaal", "article": "de", "type": "noun", "tr": "atkı, eşarp", "en": "scarf", "ar": "وشاح", "fr": "écharpe"},
-  {"nl": "spieken", "type": "verb", "perfectum": "gespiekt", "imperfectum": "spieekte", "tr": "(sınavda) kopya çekmek", "en": "to cheat (in an exam)", "ar": "يغش في الامتحان", "fr": "tricher (à un examen)"},
-  {"nl": "talent", "article": "het", "type": "noun", "tr": "yetenek, hüner", "en": "talent", "ar": "موهبة", "fr": "talent"},
-  {"nl": "toespraak", "article": "de", "type": "noun", "tr": "konuşma, nutuk", "en": "speech", "ar": "خطاب، كلمة", "fr": "discours"},
-  {"nl": "uitgerust", "type": "adj", "tr": "dinlenmiş", "en": "rested, refreshed", "ar": "مرتاح", "fr": "reposé"},
-  {"nl": "uitslag", "article": "de", "type": "noun", "tr": "sonuç, sınav sonucu", "en": "result, outcome", "ar": "نتيجة", "fr": "résultat"},
-  {"nl": "voorbereiding", "article": "de", "type": "noun", "tr": "hazırlık", "en": "preparation", "ar": "تحضير، استعداد", "fr": "préparation"},
-  {"nl": "wekker", "article": "de", "type": "noun", "tr": "çalar saat", "en": "alarm clock", "ar": "منبه", "fr": "réveil"},
-  {"nl": "zelfverzekerd", "type": "adj", "tr": "özgüvenli", "en": "self-confident", "ar": "واثق من نفسه", "fr": "sûr de soi"},
-  {"nl": "zich aanstellen", "type": "verb", "perfectum": "zich aangesteld", "imperfectum": "stelde zich aan", "tr": "naz yapmak, abartmak", "en": "to act up, to exaggerate", "ar": "يتصنع، يبالغ", "fr": "faire des manières, exagérer"},
-  {"nl": "zich concentreren", "type": "verb", "perfectum": "zich geconcentreerd", "imperfectum": "concentreerde zich", "tr": "konsantre olmak", "en": "to concentrate, to focus", "ar": "يتركز، يُركِّز", "fr": "se concentrer"},
-  {"nl": "zich ziekmelden", "type": "verb", "perfectum": "zich ziekgemeld", "imperfectum": "meldde zich ziek", "tr": "kendini hasta bildirmek", "en": "to call in sick", "ar": "يُبلِّغ عن مرضه", "fr": "se déclarer malade"},
-  {"nl": "band", "article": "de", "type": "noun", "tr": "lastik / bağ / müzik grubu", "en": "tyre / band / bond", "ar": "إطار / رابط / فرقة موسيقية", "fr": "pneu / lien / groupe (musique)"},
-  {"nl": "echtpaar", "article": "het", "type": "noun", "tr": "evli çift", "en": "married couple", "ar": "زوجان", "fr": "couple marié"},
-  {"nl": "fantasie", "article": "de", "type": "noun", "tr": "hayal gücü, fantezi", "en": "fantasy, imagination", "ar": "خيال", "fr": "fantaisie, imagination"},
-  {"nl": "hout", "article": "het", "type": "noun", "tr": "tahta, ahşap", "en": "wood, timber", "ar": "خشب", "fr": "bois"},
-  {"nl": "instructie", "article": "de", "type": "noun", "tr": "talimat, yönerge", "en": "instruction", "ar": "تعليمات", "fr": "instruction"},
-  {"nl": "inzicht", "article": "het", "type": "noun", "tr": "kavrayış, farkındalık", "en": "insight, understanding", "ar": "بصيرة، فهم", "fr": "perspicacité, compréhension"},
-  {"nl": "kapotmaken", "type": "verb", "perfectum": "kapotgemaakt", "imperfectum": "maakte kapot", "tr": "bozmak, kırmak", "en": "to break, to damage", "ar": "يكسر، يُتلف", "fr": "casser, abîmer"},
-  {"nl": "kinderopvang", "article": "de", "type": "noun", "tr": "kreş, çocuk bakımı", "en": "childcare, nursery", "ar": "رعاية الأطفال", "fr": "crèche, garde d'enfants"},
-  {"nl": "lek", "type": "adj", "tr": "patlak, delik", "en": "punctured, leaking", "ar": "مثقوب، متسرب", "fr": "crevé, percé"},
-  {"nl": "nadoen", "type": "verb", "perfectum": "nagedaan", "imperfectum": "deed na", "tr": "taklit etmek", "en": "to imitate, to mimic", "ar": "يُقلِّد", "fr": "imiter"},
-  {"nl": "observeren", "type": "verb", "perfectum": "geobserveerd", "imperfectum": "observeerde", "tr": "gözlemlemek", "en": "to observe", "ar": "يُراقب", "fr": "observer"},
-  {"nl": "ontwikkelen", "type": "verb", "perfectum": "ontwikkeld", "imperfectum": "ontwikkelde", "tr": "geliştirmek", "en": "to develop", "ar": "يُطوِّر", "fr": "développer"},
-  {"nl": "opgeven", "type": "verb", "perfectum": "opgegeven", "imperfectum": "gaf op", "tr": "vazgeçmek, pes etmek", "en": "to give up", "ar": "يستسلم، يتخلى", "fr": "abandonner, renoncer"},
-  {"nl": "opmeten", "type": "verb", "perfectum": "opgemeten", "imperfectum": "mat op", "tr": "ölçmek", "en": "to measure", "ar": "يقيس", "fr": "mesurer"},
-  {"nl": "plank", "article": "de", "type": "noun", "tr": "tahta, raf", "en": "plank, shelf", "ar": "لوح خشبي، رف", "fr": "planche, étagère"},
-  {"nl": "schaken", "type": "verb", "perfectum": "geschaakt", "imperfectum": "schaakte", "tr": "satranç oynamak", "en": "to play chess", "ar": "يلعب الشطرنج", "fr": "jouer aux échecs"},
-  {"nl": "scheef", "type": "adj", "tr": "yamuk, eğri", "en": "crooked, slanted", "ar": "منحرف، معوج", "fr": "de travers, oblique"},
-  {"nl": "sorteren", "type": "verb", "perfectum": "gesorteerd", "imperfectum": "sorteerde", "tr": "ayırmak, sıralamak", "en": "to sort", "ar": "يُصنِّف، يفرز", "fr": "trier, classer"},
-  {"nl": "stem", "article": "de", "type": "noun", "tr": "ses, oy", "en": "voice, vote", "ar": "صوت، تصويت", "fr": "voix, vote"},
-  {"nl": "techniek", "article": "de", "type": "noun", "tr": "teknik, teknoloji", "en": "technique, technology", "ar": "تقنية", "fr": "technique, technologie"},
-  {"nl": "technisch", "type": "adj", "tr": "teknik", "en": "technical", "ar": "تقني", "fr": "technique"},
-  {"nl": "timmerman", "article": "de", "type": "noun", "tr": "marangoz, dülger", "en": "carpenter", "ar": "نجار", "fr": "charpentier, menuisier"},
-  {"nl": "voordoen", "type": "verb", "perfectum": "voorgedaan", "imperfectum": "deed voor", "tr": "göstermek, örnek olmak", "en": "to demonstrate, to show how", "ar": "يُظهر، يوضح", "fr": "montrer, faire la démonstration"},
-  {"nl": "werkplaats", "article": "de", "type": "noun", "tr": "atölye", "en": "workshop", "ar": "ورشة عمل", "fr": "atelier"},
-  {"nl": "zagen", "type": "verb", "perfectum": "gezaagd", "imperfectum": "zaagde", "tr": "testereyle kesmek", "en": "to saw", "ar": "ينشر (بالمنشار)", "fr": "scier"}
+  {
+    "nl": "analyseren",
+    "type": "verb",
+    "perfectum": "geanalyseerd",
+    "imperfectum": "analyseerde",
+    "tr": "analiz etmek",
+    "en": "to analyse",
+    "ar": "يحلل",
+    "fr": "analyser",
+    "zinnen": [
+      "u70hlb6b",
+      "rkvi5c56"
+    ]
+  },
+  {
+    "nl": "apart",
+    "type": "adj",
+    "tr": "ayrı, ilginç",
+    "en": "separate, peculiar",
+    "ar": "منفصل، غريب",
+    "fr": "séparé, particulier",
+    "zinnen": [
+      "5o1rdiha"
+    ]
+  },
+  {
+    "nl": "collegegeld",
+    "article": "het",
+    "type": "noun",
+    "tr": "öğrenim ücreti",
+    "en": "tuition fee",
+    "ar": "رسوم دراسية",
+    "fr": "frais de scolarité",
+    "zinnen": [
+      "c4bj130u",
+      "qfse7i1y",
+      "5o1rdiha"
+    ]
+  },
+  {
+    "nl": "doorstromen",
+    "type": "verb",
+    "perfectum": "doorgestroomd",
+    "imperfectum": "stroomde door",
+    "tr": "bir üst seviyeye geçmek",
+    "en": "to advance, to move on (to next level)",
+    "ar": "ينتقل إلى المستوى التالي",
+    "fr": "progresser vers le niveau supérieur",
+    "zinnen": [
+      "4e56s7f4",
+      "lyob45rc",
+      "9u4owij0"
+    ]
+  },
+  {
+    "nl": "duur",
+    "article": "de",
+    "type": "noun",
+    "tr": "süre, uzunluk",
+    "en": "duration, length",
+    "ar": "مدة",
+    "fr": "durée",
+    "zinnen": [
+      "me7vdw90",
+      "wpwgtxx8",
+      "1jat6l3b",
+      "h4q6rbad",
+      "r4fukbig",
+      "ixsq7pn0"
+    ]
+  },
+  {
+    "nl": "evenveel",
+    "type": "adv",
+    "tr": "aynı kadar, eşit miktarda",
+    "en": "the same amount, equally",
+    "ar": "بنفس القدر",
+    "fr": "autant, la même quantité",
+    "zinnen": [
+      "u70hlb6b"
+    ]
+  },
+  {
+    "nl": "hogeschool",
+    "article": "de",
+    "type": "noun",
+    "tr": "yüksekokul, uygulamalı bilimler üniversitesi",
+    "en": "university of applied sciences",
+    "ar": "كلية تطبيقية",
+    "fr": "école supérieure, université de sciences appliquées",
+    "zinnen": [
+      "g4hk3hm0",
+      "4e56s7f4"
+    ]
+  },
+  {
+    "nl": "ingenieur",
+    "article": "de",
+    "type": "noun",
+    "tr": "mühendis",
+    "en": "engineer",
+    "ar": "مهندس",
+    "fr": "ingénieur",
+    "zinnen": [
+      "rkvi5c56",
+      "nh6u0yma"
+    ]
+  },
+  {
+    "nl": "inhoud",
+    "article": "de",
+    "type": "noun",
+    "tr": "içerik, kapsam",
+    "en": "content, contents",
+    "ar": "محتوى",
+    "fr": "contenu",
+    "zinnen": [
+      "07je75o6",
+      "i1pjelx4"
+    ]
+  },
+  {
+    "nl": "leraar",
+    "article": "de",
+    "type": "noun",
+    "tr": "öğretmen",
+    "en": "teacher",
+    "ar": "معلم",
+    "fr": "professeur, instituteur",
+    "zinnen": [
+      "q7743gq1",
+      "ykv4fx0q",
+      "n4qpwkoc"
+    ]
+  },
+  {
+    "nl": "mbo",
+    "article": "het",
+    "type": "noun",
+    "tr": "mesleki eğitim (orta seviye)",
+    "en": "vocational secondary education",
+    "ar": "التعليم المهني الثانوي",
+    "fr": "enseignement professionnel secondaire",
+    "zinnen": [
+      "3wt7lnf2",
+      "4e56s7f4"
+    ]
+  },
+  {
+    "nl": "regering",
+    "article": "de",
+    "type": "noun",
+    "tr": "hükümet",
+    "en": "government",
+    "ar": "حكومة",
+    "fr": "gouvernement",
+    "zinnen": [
+      "qfse7i1y"
+    ]
+  },
+  {
+    "nl": "richting",
+    "article": "de",
+    "type": "noun",
+    "tr": "yön, dal, bölüm",
+    "en": "direction, field of study",
+    "ar": "اتجاه، تخصص",
+    "fr": "direction, filière",
+    "zinnen": [
+      "cg2dsm26",
+      "scfhcbme"
+    ]
+  },
+  {
+    "nl": "schakelprogramma",
+    "article": "het",
+    "type": "noun",
+    "tr": "geçiş programı",
+    "en": "bridging programme",
+    "ar": "برنامج تحويلي",
+    "fr": "programme passerelle",
+    "zinnen": [
+      "hfpw0tg9",
+      "n4qpwkoc"
+    ]
+  },
+  {
+    "nl": "scriptie",
+    "article": "de",
+    "type": "noun",
+    "tr": "tez, bitirme ödevi",
+    "en": "thesis, dissertation",
+    "ar": "أطروحة، مذكرة تخرج",
+    "fr": "mémoire, thèse",
+    "zinnen": [
+      "jpeg6d0d",
+      "i1pjelx4"
+    ]
+  },
+  {
+    "nl": "specifiek",
+    "type": "adj",
+    "tr": "özel, belirli",
+    "en": "specific",
+    "ar": "محدد، خاص",
+    "fr": "spécifique",
+    "zinnen": [
+      "3wt7lnf2",
+      "i1pjelx4"
+    ]
+  },
+  {
+    "nl": "tandheelkunde",
+    "article": "de",
+    "type": "noun",
+    "tr": "diş hekimliği",
+    "en": "dentistry",
+    "ar": "طب الأسنان",
+    "fr": "médecine dentaire",
+    "zinnen": [
+      "bvlhfbk8",
+      "8asa7e3g"
+    ]
+  },
+  {
+    "nl": "toelaten",
+    "type": "verb",
+    "perfectum": "toegelaten",
+    "imperfectum": "liet toe",
+    "tr": "kabul etmek, içeri almak",
+    "en": "to admit, to allow",
+    "ar": "يقبل، يأذن",
+    "fr": "admettre, autoriser",
+    "zinnen": [
+      "c7u575yn",
+      "n4qpwkoc"
+    ]
+  },
+  {
+    "nl": "toelating",
+    "article": "de",
+    "type": "noun",
+    "tr": "kabul, giriş izni",
+    "en": "admission",
+    "ar": "قبول",
+    "fr": "admission",
+    "zinnen": [
+      "21lkkk5c",
+      "yunidts6",
+      "5iykywr2"
+    ]
+  },
+  {
+    "nl": "toepassen",
+    "type": "verb",
+    "perfectum": "toegepast",
+    "imperfectum": "paste toe",
+    "tr": "uygulamak",
+    "en": "to apply, to use",
+    "ar": "يُطبِّق، يستخدم",
+    "fr": "appliquer, mettre en pratique",
+    "zinnen": [
+      "g9lwk3qx",
+      "nh6u0yma"
+    ]
+  },
+  {
+    "nl": "universitair",
+    "type": "adj",
+    "tr": "akademik, üniversiteye ilişkin",
+    "en": "academic, university-level",
+    "ar": "جامعي، أكاديمي",
+    "fr": "universitaire, académique",
+    "zinnen": [
+      "lyob45rc",
+      "8asa7e3g"
+    ]
+  },
+  {
+    "nl": "verblijfsvergunning",
+    "article": "de",
+    "type": "noun",
+    "tr": "oturma izni",
+    "en": "residence permit",
+    "ar": "تصريح إقامة",
+    "fr": "permis de séjour",
+    "zinnen": [
+      "k594n1by",
+      "yhvrk2bf",
+      "5iykywr2"
+    ]
+  },
+  {
+    "nl": "voldoen",
+    "type": "verb",
+    "perfectum": "voldaan",
+    "imperfectum": "voldeed",
+    "tr": "uymak, karşılamak (şartları)",
+    "en": "to meet (requirements), to comply",
+    "ar": "يستوفي، يلتزم",
+    "fr": "satisfaire (aux exigences), répondre",
+    "zinnen": [
+      "yunidts6",
+      "vx8w0blx"
+    ]
+  },
+  {
+    "nl": "vooropleiding",
+    "article": "de",
+    "type": "noun",
+    "tr": "ön eğitim, ön öğrenim",
+    "en": "prior education, prerequisite training",
+    "ar": "تعليم سابق، تأهيل مسبق",
+    "fr": "formation préalable",
+    "zinnen": [
+      "21lkkk5c",
+      "vx8w0blx"
+    ]
+  },
+  {
+    "nl": "zich specialiseren",
+    "type": "verb",
+    "perfectum": "zich gespecialiseerd",
+    "imperfectum": "specialiseerde zich",
+    "tr": "uzmanlaşmak",
+    "en": "to specialise",
+    "ar": "يتخصص",
+    "fr": "se spécialiser",
+    "zinnen": [
+      "vap82kmw",
+      "bvlhfbk8"
+    ]
+  },
+  {
+    "nl": "instelling",
+    "article": "de",
+    "type": "noun",
+    "tr": "kurum, kuruluş",
+    "en": "institution, organisation",
+    "ar": "مؤسسة",
+    "fr": "institution, établissement",
+    "zinnen": [
+      "hfpw0tg9",
+      "8asa7e3g"
+    ]
+  },
+  {
+    "nl": "aantekening",
+    "article": "de",
+    "type": "noun",
+    "tr": "not, kayıt",
+    "en": "note, annotation",
+    "ar": "ملاحظة، تدوين",
+    "fr": "note, annotation",
+    "zinnen": [
+      "o85173u8"
+    ]
+  },
+  {
+    "nl": "afschaffen",
+    "type": "verb",
+    "perfectum": "afgeschaft",
+    "imperfectum": "schafte af",
+    "tr": "kaldırmak, lağvetmek",
+    "en": "to abolish, to eliminate",
+    "ar": "يلغي، يُقصي",
+    "fr": "abolir, supprimer",
+    "zinnen": [
+      "qf3a0dr3"
+    ]
+  },
+  {
+    "nl": "anoniem",
+    "type": "adj",
+    "tr": "anonim, kimliksiz",
+    "en": "anonymous",
+    "ar": "مجهول الهوية",
+    "fr": "anonyme",
+    "zinnen": [
+      "qmlw2e71"
+    ]
+  },
+  {
+    "nl": "bedrijfskunde",
+    "article": "de",
+    "type": "noun",
+    "tr": "işletme (bölümü)",
+    "en": "business administration",
+    "ar": "إدارة الأعمال",
+    "fr": "gestion, sciences de gestion",
+    "zinnen": [
+      "jpeg6d0d",
+      "nprl9h4c"
+    ]
+  },
+  {
+    "nl": "deadline",
+    "article": "de",
+    "type": "noun",
+    "tr": "son teslim tarihi",
+    "en": "deadline",
+    "ar": "موعد نهائي",
+    "fr": "date limite, délai",
+    "zinnen": [
+      "gbfmrlrw",
+      "ul7yc2c4"
+    ]
+  },
+  {
+    "nl": "expert",
+    "article": "de",
+    "type": "noun",
+    "tr": "uzman",
+    "en": "expert",
+    "ar": "خبير",
+    "fr": "expert",
+    "zinnen": [
+      "pt4mgcxm"
+    ]
+  },
+  {
+    "nl": "formeel",
+    "type": "adj",
+    "tr": "resmi",
+    "en": "formal",
+    "ar": "رسمي",
+    "fr": "formel",
+    "zinnen": [
+      "2zgi236c"
+    ]
+  },
+  {
+    "nl": "hoorcollege",
+    "article": "het",
+    "type": "noun",
+    "tr": "amfi dersi, konferans",
+    "en": "lecture",
+    "ar": "محاضرة",
+    "fr": "cours magistral",
+    "zinnen": [
+      "q7743gq1",
+      "o85173u8"
+    ]
+  },
+  {
+    "nl": "individueel",
+    "type": "adj",
+    "tr": "bireysel",
+    "en": "individual",
+    "ar": "فردي",
+    "fr": "individuel",
+    "zinnen": [
+      "cg2dsm26",
+      "i2bt9p14",
+      "2zgi236c"
+    ]
+  },
+  {
+    "nl": "informeel",
+    "type": "adj",
+    "tr": "gayri resmi, serbest",
+    "en": "informal",
+    "ar": "غير رسمي",
+    "fr": "informel",
+    "zinnen": [
+      "j8h83j8w",
+      "xxgl96bl"
+    ]
+  },
+  {
+    "nl": "initiatief",
+    "article": "het",
+    "type": "noun",
+    "tr": "inisiyatif, girişim",
+    "en": "initiative",
+    "ar": "مبادرة",
+    "fr": "initiative",
+    "zinnen": [
+      "3n0ik1f2",
+      "5u9kaw4o",
+      "haeam5li"
+    ]
+  },
+  {
+    "nl": "leerzaam",
+    "type": "adj",
+    "tr": "öğretici, eğitici",
+    "en": "educational, instructive",
+    "ar": "تعليمي، مفيد",
+    "fr": "instructif, enrichissant",
+    "zinnen": [
+      "j8h83j8w",
+      "xxgl96bl"
+    ]
+  },
+  {
+    "nl": "massaal",
+    "type": "adj",
+    "tr": "kalabalık, toplu",
+    "en": "massive, large-scale",
+    "ar": "جماهيري، ضخم",
+    "fr": "massif, en masse",
+    "zinnen": [
+      "zletueq1"
+    ]
+  },
+  {
+    "nl": "mede-",
+    "type": "adj",
+    "tr": "ortak, birlikte",
+    "en": "co-, fellow",
+    "ar": "مشارك، زميل",
+    "fr": "co-, confrère",
+    "zinnen": [
+      "dv5zgwxu"
+    ]
+  },
+  {
+    "nl": "Nederlandstalig",
+    "type": "adj",
+    "tr": "Hollandaca konuşan/yazılan",
+    "en": "Dutch-speaking / in Dutch",
+    "ar": "ناطق بالهولندية",
+    "fr": "néerlandophone",
+    "zinnen": [
+      "xyfcnwny",
+      "zletueq1"
+    ]
+  },
+  {
+    "nl": "paper",
+    "article": "de",
+    "type": "noun",
+    "tr": "deneme yazısı, makale",
+    "en": "paper, essay",
+    "ar": "ورقة بحثية، مقالة",
+    "fr": "paper, exposé",
+    "zinnen": [
+      "gbfmrlrw",
+      "xyfcnwny",
+      "2zgi236c"
+    ]
+  },
+  {
+    "nl": "passief",
+    "type": "adj",
+    "tr": "pasif, edilgen",
+    "en": "passive",
+    "ar": "سلبي",
+    "fr": "passif",
+    "zinnen": [
+      "xpox2b5w",
+      "haeam5li"
+    ]
+  },
+  {
+    "nl": "presenteren",
+    "type": "verb",
+    "perfectum": "gepresenteerd",
+    "imperfectum": "presenteerde",
+    "tr": "sunmak",
+    "en": "to present",
+    "ar": "يعرض، يُقدِّم",
+    "fr": "présenter",
+    "zinnen": [
+      "6b9229c6",
+      "xyfcnwny",
+      "pt4mgcxm"
+    ]
+  },
+  {
+    "nl": "stelling",
+    "article": "de",
+    "type": "noun",
+    "tr": "tez, sav",
+    "en": "thesis, statement",
+    "ar": "قضية، أطروحة",
+    "fr": "thèse, affirmation",
+    "zinnen": [
+      "6b9229c6",
+      "bso2dxcr",
+      "pt4mgcxm"
+    ]
+  },
+  {
+    "nl": "sterk",
+    "type": "adj",
+    "tr": "güçlü, kuvvetli",
+    "en": "strong",
+    "ar": "قوي",
+    "fr": "fort",
+    "zinnen": [
+      "bso2dxcr",
+      "13fsdhmk"
+    ]
+  },
+  {
+    "nl": "stof",
+    "article": "de",
+    "type": "noun",
+    "tr": "ders materyali, toz",
+    "en": "subject matter, dust",
+    "ar": "مادة دراسية، غبار",
+    "fr": "matière (cours), poussière",
+    "zinnen": [
+      "8z10f61t",
+      "r0xy9k3k",
+      "3n0ik1f2",
+      "ul7yc2c4",
+      "3ni1qw5q"
+    ]
+  },
+  {
+    "nl": "voorkeur",
+    "article": "de",
+    "type": "noun",
+    "tr": "tercih",
+    "en": "preference",
+    "ar": "تفضيل",
+    "fr": "préférence",
+    "zinnen": [
+      "i2bt9p14",
+      "qmlw2e71"
+    ]
+  },
+  {
+    "nl": "werkcollege",
+    "article": "het",
+    "type": "noun",
+    "tr": "pratik ders, seminer",
+    "en": "seminar, tutorial",
+    "ar": "حلقة دراسية",
+    "fr": "travaux pratiques, séminaire",
+    "zinnen": [
+      "55vztoh6",
+      "xxgl96bl"
+    ]
+  },
+  {
+    "nl": "afwezig",
+    "type": "adj",
+    "tr": "devamsız, yok",
+    "en": "absent",
+    "ar": "غائب",
+    "fr": "absent",
+    "zinnen": [
+      "55vztoh6",
+      "cn2nk980"
+    ]
+  },
+  {
+    "nl": "alinea",
+    "article": "de",
+    "type": "noun",
+    "tr": "paragraf",
+    "en": "paragraph",
+    "ar": "فقرة",
+    "fr": "paragraphe",
+    "zinnen": [
+      "ag3t9vur",
+      "z9ri8i93"
+    ]
+  },
+  {
+    "nl": "bijgeloof",
+    "article": "het",
+    "type": "noun",
+    "tr": "batıl inanç",
+    "en": "superstition",
+    "ar": "خرافة",
+    "fr": "superstition",
+    "zinnen": [
+      "5aawxd1m",
+      "aexj4xeq"
+    ]
+  },
+  {
+    "nl": "dramatisch",
+    "type": "adj",
+    "tr": "dramatik, abartılı",
+    "en": "dramatic",
+    "ar": "درامي",
+    "fr": "dramatique",
+    "zinnen": [
+      "oxa7nmm1",
+      "j34f878m"
+    ]
+  },
+  {
+    "nl": "examenvrees",
+    "article": "de",
+    "type": "noun",
+    "tr": "sınav korkusu",
+    "en": "exam anxiety",
+    "ar": "قلق الامتحانات",
+    "fr": "peur des examens, anxiété d'examen",
+    "zinnen": [
+      "fvdgo0p1",
+      "0kquyd60",
+      "ae8ojbkp"
+    ]
+  },
+  {
+    "nl": "falen",
+    "type": "verb",
+    "perfectum": "gefaald",
+    "imperfectum": "faalde",
+    "tr": "başarısız olmak",
+    "en": "to fail",
+    "ar": "يفشل",
+    "fr": "échouer",
+    "zinnen": [
+      "biojs6hh",
+      "1qzjaspz"
+    ]
+  },
+  {
+    "nl": "geheugen",
+    "article": "het",
+    "type": "noun",
+    "tr": "bellek, hafıza",
+    "en": "memory",
+    "ar": "ذاكرة",
+    "fr": "mémoire",
+    "zinnen": [
+      "fhrof1gm",
+      "336sfjep"
+    ]
+  },
+  {
+    "nl": "ingewikkeld",
+    "type": "adj",
+    "tr": "karmaşık, zor",
+    "en": "complicated, complex",
+    "ar": "معقد",
+    "fr": "compliqué, complexe",
+    "zinnen": [
+      "r0xy9k3k",
+      "336sfjep"
+    ]
+  },
+  {
+    "nl": "inhalen",
+    "type": "verb",
+    "perfectum": "ingehaald",
+    "imperfectum": "haalde in",
+    "tr": "telafi etmek, geçmek",
+    "en": "to catch up, to make up for",
+    "ar": "يتعوض، يستدرك",
+    "fr": "rattraper, compenser",
+    "zinnen": [
+      "azdyydc0",
+      "rj8tbsji"
+    ]
+  },
+  {
+    "nl": "kluisje",
+    "article": "het",
+    "type": "noun",
+    "tr": "kilitli dolap, kasa",
+    "en": "locker",
+    "ar": "خزينة صغيرة، خزانة",
+    "fr": "casier",
+    "zinnen": [
+      "45ptrhi2",
+      "blhimg8s"
+    ]
+  },
+  {
+    "nl": "nakijken",
+    "type": "verb",
+    "perfectum": "nagekeken",
+    "imperfectum": "keek na",
+    "tr": "kontrol etmek, düzeltmek",
+    "en": "to check, to mark (papers)",
+    "ar": "يراجع، يصحح",
+    "fr": "vérifier, corriger",
+    "zinnen": [
+      "yx1v2onp",
+      "bzonno6b"
+    ]
+  },
+  {
+    "nl": "opblijven",
+    "type": "verb",
+    "perfectum": "opgebleven",
+    "imperfectum": "bleef op",
+    "tr": "geç saate kadar uyanık kalmak",
+    "en": "to stay up (late)",
+    "ar": "يسهر",
+    "fr": "rester éveillé",
+    "zinnen": [
+      "ex7tfdra",
+      "8hso83wi"
+    ]
+  },
+  {
+    "nl": "overhoren",
+    "type": "verb",
+    "perfectum": "overhoord",
+    "imperfectum": "hoorde over",
+    "tr": "bilgisini test etmek, sorgulamak",
+    "en": "to quiz, to test (someone)",
+    "ar": "يختبر (معلومات شخص)",
+    "fr": "faire réciter, interroger",
+    "zinnen": [
+      "8r8kbpj2"
+    ]
+  },
+  {
+    "nl": "paniek",
+    "article": "de",
+    "type": "noun",
+    "tr": "panik",
+    "en": "panic",
+    "ar": "هلع، ذعر",
+    "fr": "panique",
+    "zinnen": [
+      "biojs6hh",
+      "0kquyd60",
+      "ae8ojbkp"
+    ]
+  },
+  {
+    "nl": "sjaal",
+    "article": "de",
+    "type": "noun",
+    "tr": "atkı, eşarp",
+    "en": "scarf",
+    "ar": "وشاح",
+    "fr": "écharpe",
+    "zinnen": [
+      "ex1k50l6",
+      "blhimg8s"
+    ]
+  },
+  {
+    "nl": "spieken",
+    "type": "verb",
+    "perfectum": "gespiekt",
+    "imperfectum": "spieekte",
+    "tr": "(sınavda) kopya çekmek",
+    "en": "to cheat (in an exam)",
+    "ar": "يغش في الامتحان",
+    "fr": "tricher (à un examen)",
+    "zinnen": [
+      "45ptrhi2",
+      "mp6e57ga"
+    ]
+  },
+  {
+    "nl": "talent",
+    "article": "het",
+    "type": "noun",
+    "tr": "yetenek, hüner",
+    "en": "talent",
+    "ar": "موهبة",
+    "fr": "talent",
+    "zinnen": [
+      "quus5slz",
+      "5k50ea01",
+      "etk40f6f"
+    ]
+  },
+  {
+    "nl": "toespraak",
+    "article": "de",
+    "type": "noun",
+    "tr": "konuşma, nutuk",
+    "en": "speech",
+    "ar": "خطاب، كلمة",
+    "fr": "discours",
+    "zinnen": [
+      "2p1sb01i",
+      "ykv4fx0q",
+      "j34f878m"
+    ]
+  },
+  {
+    "nl": "uitgerust",
+    "type": "adj",
+    "tr": "dinlenmiş",
+    "en": "rested, refreshed",
+    "ar": "مرتاح",
+    "fr": "reposé",
+    "zinnen": [
+      "cyv6hi47",
+      "aexj4xeq"
+    ]
+  },
+  {
+    "nl": "uitslag",
+    "article": "de",
+    "type": "noun",
+    "tr": "sonuç, sınav sonucu",
+    "en": "result, outcome",
+    "ar": "نتيجة",
+    "fr": "résultat",
+    "zinnen": [
+      "oxa7nmm1",
+      "yx1v2onp",
+      "ae8ojbkp"
+    ]
+  },
+  {
+    "nl": "voorbereiding",
+    "article": "de",
+    "type": "noun",
+    "tr": "hazırlık",
+    "en": "preparation",
+    "ar": "تحضير، استعداد",
+    "fr": "préparation",
+    "zinnen": [
+      "hf5qev7u",
+      "cyv6hi47",
+      "8hso83wi"
+    ]
+  },
+  {
+    "nl": "wekker",
+    "article": "de",
+    "type": "noun",
+    "tr": "çalar saat",
+    "en": "alarm clock",
+    "ar": "منبه",
+    "fr": "réveil",
+    "zinnen": [
+      "hf5qev7u",
+      "ikaxzhgf"
+    ]
+  },
+  {
+    "nl": "zelfverzekerd",
+    "type": "adj",
+    "tr": "özgüvenli",
+    "en": "self-confident",
+    "ar": "واثق من نفسه",
+    "fr": "sûr de soi",
+    "zinnen": [
+      "1ezmhfdk",
+      "etk40f6f"
+    ]
+  },
+  {
+    "nl": "zich aanstellen",
+    "type": "verb",
+    "perfectum": "zich aangesteld",
+    "imperfectum": "stelde zich aan",
+    "tr": "naz yapmak, abartmak",
+    "en": "to act up, to exaggerate",
+    "ar": "يتصنع، يبالغ",
+    "fr": "faire des manières, exagérer",
+    "zinnen": [
+      "xwp84pgo",
+      "8r8kbpj2"
+    ]
+  },
+  {
+    "nl": "zich concentreren",
+    "type": "verb",
+    "perfectum": "zich geconcentreerd",
+    "imperfectum": "concentreerde zich",
+    "tr": "konsantre olmak",
+    "en": "to concentrate, to focus",
+    "ar": "يتركز، يُركِّز",
+    "fr": "se concentrer",
+    "zinnen": [
+      "1qzjaspz",
+      "eox8emvn"
+    ]
+  },
+  {
+    "nl": "zich ziekmelden",
+    "type": "verb",
+    "perfectum": "zich ziekgemeld",
+    "imperfectum": "meldde zich ziek",
+    "tr": "kendini hasta bildirmek",
+    "en": "to call in sick",
+    "ar": "يُبلِّغ عن مرضه",
+    "fr": "se déclarer malade",
+    "zinnen": [
+      "wxgoqom4",
+      "cn2nk980"
+    ]
+  },
+  {
+    "nl": "band",
+    "article": "de",
+    "type": "noun",
+    "tr": "lastik / bağ / müzik grubu",
+    "en": "tyre / band / bond",
+    "ar": "إطار / رابط / فرقة موسيقية",
+    "fr": "pneu / lien / groupe (musique)",
+    "zinnen": [
+      "9e88gnbt",
+      "rsuo5bln",
+      "3ni1qw5q"
+    ]
+  },
+  {
+    "nl": "echtpaar",
+    "article": "het",
+    "type": "noun",
+    "tr": "evli çift",
+    "en": "married couple",
+    "ar": "زوجان",
+    "fr": "couple marié",
+    "zinnen": [
+      "9zcqtrle"
+    ]
+  },
+  {
+    "nl": "fantasie",
+    "article": "de",
+    "type": "noun",
+    "tr": "hayal gücü, fantezi",
+    "en": "fantasy, imagination",
+    "ar": "خيال",
+    "fr": "fantaisie, imagination",
+    "zinnen": [
+      "6e5pl0zp",
+      "2q85gjls"
+    ]
+  },
+  {
+    "nl": "hout",
+    "article": "het",
+    "type": "noun",
+    "tr": "tahta, ahşap",
+    "en": "wood, timber",
+    "ar": "خشب",
+    "fr": "bois",
+    "zinnen": [
+      "yhhiz7mr",
+      "11m7ns1x"
+    ]
+  },
+  {
+    "nl": "instructie",
+    "article": "de",
+    "type": "noun",
+    "tr": "talimat, yönerge",
+    "en": "instruction",
+    "ar": "تعليمات",
+    "fr": "instruction",
+    "zinnen": [
+      "00v5kh3p",
+      "k0nghsli"
+    ]
+  },
+  {
+    "nl": "inzicht",
+    "article": "het",
+    "type": "noun",
+    "tr": "kavrayış, farkındalık",
+    "en": "insight, understanding",
+    "ar": "بصيرة، فهم",
+    "fr": "perspicacité, compréhension",
+    "zinnen": [
+      "mxpaty3l",
+      "jtvx18o0"
+    ]
+  },
+  {
+    "nl": "kapotmaken",
+    "type": "verb",
+    "perfectum": "kapotgemaakt",
+    "imperfectum": "maakte kapot",
+    "tr": "bozmak, kırmak",
+    "en": "to break, to damage",
+    "ar": "يكسر، يُتلف",
+    "fr": "casser, abîmer",
+    "zinnen": [
+      "6g99htaz",
+      "rsuo5bln"
+    ]
+  },
+  {
+    "nl": "kinderopvang",
+    "article": "de",
+    "type": "noun",
+    "tr": "kreş, çocuk bakımı",
+    "en": "childcare, nursery",
+    "ar": "رعاية الأطفال",
+    "fr": "crèche, garde d'enfants",
+    "zinnen": [
+      "r4fukbig",
+      "wsjhppgk",
+      "9zcqtrle"
+    ]
+  },
+  {
+    "nl": "lek",
+    "type": "adj",
+    "tr": "patlak, delik",
+    "en": "punctured, leaking",
+    "ar": "مثقوب، متسرب",
+    "fr": "crevé, percé",
+    "zinnen": [
+      "zj3i88qv"
+    ]
+  },
+  {
+    "nl": "nadoen",
+    "type": "verb",
+    "perfectum": "nagedaan",
+    "imperfectum": "deed na",
+    "tr": "taklit etmek",
+    "en": "to imitate, to mimic",
+    "ar": "يُقلِّد",
+    "fr": "imiter",
+    "zinnen": [
+      "bl77zhb7"
+    ]
+  },
+  {
+    "nl": "observeren",
+    "type": "verb",
+    "perfectum": "geobserveerd",
+    "imperfectum": "observeerde",
+    "tr": "gözlemlemek",
+    "en": "to observe",
+    "ar": "يُراقب",
+    "fr": "observer",
+    "zinnen": [
+      "aioeva53",
+      "v85uxkxi",
+      "h6bwz6nw"
+    ]
+  },
+  {
+    "nl": "ontwikkelen",
+    "type": "verb",
+    "perfectum": "ontwikkeld",
+    "imperfectum": "ontwikkelde",
+    "tr": "geliştirmek",
+    "en": "to develop",
+    "ar": "يُطوِّر",
+    "fr": "développer",
+    "zinnen": [
+      "f0npx4xw",
+      "dkak4sy0",
+      "2q85gjls",
+      "yu39clj1"
+    ]
+  },
+  {
+    "nl": "opgeven",
+    "type": "verb",
+    "perfectum": "opgegeven",
+    "imperfectum": "gaf op",
+    "tr": "vazgeçmek, pes etmek",
+    "en": "to give up",
+    "ar": "يستسلم، يتخلى",
+    "fr": "abandonner, renoncer",
+    "zinnen": [
+      "jtvx18o0"
+    ]
+  },
+  {
+    "nl": "opmeten",
+    "type": "verb",
+    "perfectum": "opgemeten",
+    "imperfectum": "mat op",
+    "tr": "ölçmek",
+    "en": "to measure",
+    "ar": "يقيس",
+    "fr": "mesurer",
+    "zinnen": [
+      "9i1wnmpo",
+      "o7d2sj63"
+    ]
+  },
+  {
+    "nl": "plank",
+    "article": "de",
+    "type": "noun",
+    "tr": "tahta, raf",
+    "en": "plank, shelf",
+    "ar": "لوح خشبي، رف",
+    "fr": "planche, étagère",
+    "zinnen": [
+      "ywph8ese",
+      "9i1wnmpo",
+      "0e7um89q",
+      "44jiu8eb"
+    ]
+  },
+  {
+    "nl": "schaken",
+    "type": "verb",
+    "perfectum": "geschaakt",
+    "imperfectum": "schaakte",
+    "tr": "satranç oynamak",
+    "en": "to play chess",
+    "ar": "يلعب الشطرنج",
+    "fr": "jouer aux échecs",
+    "zinnen": [
+      "qmv9kum0",
+      "1yli7s0g",
+      "k0nghsli"
+    ]
+  },
+  {
+    "nl": "scheef",
+    "type": "adj",
+    "tr": "yamuk, eğri",
+    "en": "crooked, slanted",
+    "ar": "منحرف، معوج",
+    "fr": "de travers, oblique",
+    "zinnen": [
+      "zhzlch7r",
+      "0e7um89q"
+    ]
+  },
+  {
+    "nl": "sorteren",
+    "type": "verb",
+    "perfectum": "gesorteerd",
+    "imperfectum": "sorteerde",
+    "tr": "ayırmak, sıralamak",
+    "en": "to sort",
+    "ar": "يُصنِّف، يفرز",
+    "fr": "trier, classer",
+    "zinnen": [
+      "h6bwz6nw",
+      "ka73sooj"
+    ]
+  },
+  {
+    "nl": "stem",
+    "article": "de",
+    "type": "noun",
+    "tr": "ses, oy",
+    "en": "voice, vote",
+    "ar": "صوت، تصويت",
+    "fr": "voix, vote",
+    "zinnen": [
+      "qa219my7",
+      "7pjot4ty"
+    ]
+  },
+  {
+    "nl": "techniek",
+    "article": "de",
+    "type": "noun",
+    "tr": "teknik, teknoloji",
+    "en": "technique, technology",
+    "ar": "تقنية",
+    "fr": "technique, technologie",
+    "zinnen": [
+      "zkme6ecz",
+      "v85uxkxi",
+      "mxpaty3l",
+      "2q85gjls"
+    ]
+  },
+  {
+    "nl": "technisch",
+    "type": "adj",
+    "tr": "teknik",
+    "en": "technical",
+    "ar": "تقني",
+    "fr": "technique",
+    "zinnen": [
+      "wlkdwkkt",
+      "k0nghsli"
+    ]
+  },
+  {
+    "nl": "timmerman",
+    "article": "de",
+    "type": "noun",
+    "tr": "marangoz, dülger",
+    "en": "carpenter",
+    "ar": "نجار",
+    "fr": "charpentier, menuisier",
+    "zinnen": [
+      "44jiu8eb",
+      "qa219my7",
+      "6e5pl0zp",
+      "11m7ns1x"
+    ]
+  },
+  {
+    "nl": "voordoen",
+    "type": "verb",
+    "perfectum": "voorgedaan",
+    "imperfectum": "deed voor",
+    "tr": "göstermek, örnek olmak",
+    "en": "to demonstrate, to show how",
+    "ar": "يُظهر، يوضح",
+    "fr": "montrer, faire la démonstration",
+    "zinnen": [
+      "ialq0az3",
+      "bl77zhb7"
+    ]
+  },
+  {
+    "nl": "werkplaats",
+    "article": "de",
+    "type": "noun",
+    "tr": "atölye",
+    "en": "workshop",
+    "ar": "ورشة عمل",
+    "fr": "atelier",
+    "zinnen": [
+      "1yli7s0g",
+      "9e88gnbt",
+      "11m7ns1x"
+    ]
+  },
+  {
+    "nl": "zagen",
+    "type": "verb",
+    "perfectum": "gezaagd",
+    "imperfectum": "zaagde",
+    "tr": "testereyle kesmek",
+    "en": "to saw",
+    "ar": "ينشر (بالمنشار)",
+    "fr": "scier",
+    "zinnen": [
+      "0e7um89q",
+      "44jiu8eb"
+    ]
+  }
 ]

@@ -1,99 +1,1221 @@
 [
-  {"nl": "comfortabel", "type": "adj", "tr": "rahat", "en": "comfortable", "ar": "مريح", "fr": "confortable"},
-  {"nl": "dromen", "type": "verb", "perfectum": "gedroomd", "imperfectum": "droomde", "tr": "rüya görmek", "en": "to dream", "ar": "يحلم", "fr": "rêver"},
-  {"nl": "hechten", "type": "verb", "perfectum": "gehecht", "imperfectum": "hechtte", "tr": "bağlanmak, önem vermek", "en": "to attach, to value", "ar": "يرفق، يهتم بـ", "fr": "attacher, tenir à"},
-  {"nl": "interesseren", "type": "verb", "perfectum": "geïnteresseerd", "imperfectum": "interesseerde", "tr": "ilgilendirmek", "en": "to interest", "ar": "يثير الاهتمام", "fr": "intéresser"},
-  {"nl": "klasgenoot", "article": "de", "type": "noun", "tr": "sınıf arkadaşı", "en": "classmate", "ar": "زميل في الصف", "fr": "camarade de classe"},
-  {"nl": "lui", "type": "adj", "tr": "tembel", "en": "lazy", "ar": "كسول", "fr": "paresseux"},
-  {"nl": "maatschappij", "article": "de", "type": "noun", "tr": "toplum", "en": "society", "ar": "مجتمع", "fr": "société"},
-  {"nl": "onafhankelijk", "type": "adj", "tr": "bağımsız", "en": "independent", "ar": "مستقل", "fr": "indépendant"},
-  {"nl": "patiënt", "article": "de", "type": "noun", "tr": "hasta (olan kişi)", "en": "patient", "ar": "مريض", "fr": "patient"},
-  {"nl": "prioriteit", "article": "de", "type": "noun", "tr": "öncelik", "en": "priority", "ar": "أولوية", "fr": "priorité"},
-  {"nl": "promotie", "article": "de", "type": "noun", "tr": "terfi", "en": "promotion", "ar": "ترقية", "fr": "promotion"},
-  {"nl": "realistisch", "type": "adj", "tr": "gerçekçi", "en": "realistic", "ar": "واقعي", "fr": "réaliste"},
-  {"nl": "vanwege", "type": "prep", "tr": "-den dolayı", "en": "because of", "ar": "بسبب", "fr": "à cause de"},
-  {"nl": "verklaren", "type": "verb", "perfectum": "verklaard", "imperfectum": "verklaarde", "tr": "açıklamak", "en": "to explain, to declare", "ar": "يشرح، يصرح", "fr": "expliquer, déclarer"},
-  {"nl": "verpleegkunde", "article": "de", "type": "noun", "tr": "hemşirelik", "en": "nursing", "ar": "التمريض", "fr": "soins infirmiers"},
-  {"nl": "verpleegkundige", "article": "de", "type": "noun", "tr": "hemşire, hasta bakıcısı", "en": "nurse", "ar": "ممرض / ممرضة", "fr": "infirmier / infirmière"},
-  {"nl": "verwennen", "type": "verb", "perfectum": "verwend", "imperfectum": "verwende", "tr": "şımartmak", "en": "to spoil", "ar": "يدلل", "fr": "gâter"},
-  {"nl": "voldoening", "article": "de", "type": "noun", "tr": "memnuniyet, tatmin", "en": "satisfaction", "ar": "رضا، قناعة", "fr": "satisfaction"},
-  {"nl": "waarde", "article": "de", "type": "noun", "tr": "değer", "en": "value", "ar": "قيمة", "fr": "valeur"},
-  {"nl": "zekerheid", "article": "de", "type": "noun", "tr": "istikrar, güven", "en": "certainty, security", "ar": "يقين، أمان", "fr": "certitude, sécurité"},
-  {"nl": "zelden", "type": "adv", "tr": "nadiren", "en": "rarely", "ar": "نادراً", "fr": "rarement"},
-  {"nl": "zo meteen", "type": "adv", "tr": "birazdan", "en": "in a moment", "ar": "بعد قليل", "fr": "dans un instant"},
-  {"nl": "zorgzaam", "type": "adj", "tr": "özenli, şefkatli", "en": "caring", "ar": "مهتم، عطوف", "fr": "attentionné"},
-  {"nl": "ambtenaar", "article": "de", "type": "noun", "tr": "memur", "en": "civil servant", "ar": "موظف حكومي", "fr": "fonctionnaire"},
-  {"nl": "daarentegen", "type": "adv", "tr": "buna karşın, ise", "en": "on the other hand", "ar": "في المقابل", "fr": "en revanche"},
-  {"nl": "dansen", "type": "verb", "perfectum": "gedanst", "imperfectum": "danste", "tr": "dans etmek", "en": "to dance", "ar": "يرقص", "fr": "danser"},
-  {"nl": "discotheek", "article": "de", "type": "noun", "tr": "disko", "en": "disco, nightclub", "ar": "ديسكو، ملهى ليلي", "fr": "discothèque"},
-  {"nl": "huiswerk", "article": "het", "type": "noun", "tr": "ev ödevi", "en": "homework", "ar": "واجب منزلي", "fr": "devoir à la maison"},
-  {"nl": "jeugd", "article": "de", "type": "noun", "tr": "çocukluk, gençlik", "en": "youth", "ar": "شباب، طفولة", "fr": "jeunesse"},
-  {"nl": "klus", "article": "de", "type": "noun", "tr": "(evde yapılacak) iş", "en": "chore, odd job", "ar": "مهمة منزلية", "fr": "corvée, petit travail"},
-  {"nl": "lerares", "article": "de", "type": "noun", "tr": "(kadın) öğretmen", "en": "female teacher", "ar": "معلمة", "fr": "professeure"},
-  {"nl": "meehelpen", "type": "verb", "perfectum": "meegeholpen", "imperfectum": "hielp mee", "tr": "katkıda bulunmak, yardım etmek", "en": "to help out", "ar": "يساعد، يشارك", "fr": "participer, aider"},
-  {"nl": "onredelijk", "type": "adj", "tr": "insafsız, mantıksız", "en": "unreasonable", "ar": "غير معقول", "fr": "déraisonnable"},
-  {"nl": "opstaan", "type": "verb", "perfectum": "opgestaan", "imperfectum": "stond op", "tr": "kalkmak", "en": "to get up, to stand up", "ar": "يقوم، ينهض", "fr": "se lever"},
-  {"nl": "opvoeden", "type": "verb", "perfectum": "opgevoed", "imperfectum": "voedde op", "tr": "(çocuk) yetiştirmek", "en": "to raise, to bring up", "ar": "يربي", "fr": "élever, éduquer"},
-  {"nl": "rapport", "article": "het", "type": "noun", "tr": "karne", "en": "report card", "ar": "كشف الدرجات", "fr": "bulletin scolaire"},
-  {"nl": "rechtvaardig", "type": "adj", "tr": "adil", "en": "fair, just", "ar": "عادل", "fr": "juste, équitable"},
-  {"nl": "roddelen", "type": "verb", "perfectum": "geroddeld", "imperfectum": "roddelde", "tr": "dedikodu yapmak", "en": "to gossip", "ar": "يتغيب", "fr": "cancaner, faire des commérages"},
-  {"nl": "snoep", "article": "het", "type": "noun", "tr": "abur cubur, şeker", "en": "sweets, candy", "ar": "حلوى", "fr": "bonbons, sucreries"},
-  {"nl": "speelgoed", "article": "het", "type": "noun", "tr": "oyuncak", "en": "toys", "ar": "ألعاب", "fr": "jouets"},
-  {"nl": "straf", "article": "de", "type": "noun", "tr": "ceza", "en": "punishment", "ar": "عقوبة", "fr": "punition"},
-  {"nl": "terugdenken", "type": "verb", "perfectum": "teruggedacht", "imperfectum": "dacht terug", "tr": "(geriye dönük) düşünmek", "en": "to look back, to reminisce", "ar": "يتذكر، يعود بالذاكرة", "fr": "repenser à, se souvenir"},
-  {"nl": "tiener", "article": "de", "type": "noun", "tr": "genç (13-19 yaş)", "en": "teenager", "ar": "مراهق", "fr": "adolescent"},
-  {"nl": "uitje", "article": "het", "type": "noun", "tr": "gezi", "en": "outing, trip", "ar": "نزهة", "fr": "sortie"},
-  {"nl": "verantwoordelijkheid", "article": "de", "type": "noun", "tr": "sorumluluk", "en": "responsibility", "ar": "مسؤولية", "fr": "responsabilité"},
-  {"nl": "verzorgd", "type": "adj", "tr": "bakımlı", "en": "well-groomed, neat", "ar": "مرتب، أنيق", "fr": "soigné"},
-  {"nl": "vuil", "article": "het", "type": "noun", "tr": "kirlilik, pislik", "en": "dirt, filth", "ar": "وسخ، قذارة", "fr": "saleté"},
-  {"nl": "zich bemoeien", "type": "verb", "perfectum": "zich bemoeid", "imperfectum": "bemoeide zich", "tr": "karışmak", "en": "to interfere, to meddle", "ar": "يتدخل", "fr": "se mêler de"},
-  {"nl": "aankomend", "type": "adj", "tr": "önümüzdeki, gelecek", "en": "upcoming, next", "ar": "القادم، المقبل", "fr": "prochain, à venir"},
-  {"nl": "afstuderen", "type": "verb", "perfectum": "afgestudeerd", "imperfectum": "studeerde af", "tr": "mezun olmak", "en": "to graduate", "ar": "يتخرج", "fr": "obtenir son diplôme"},
-  {"nl": "blijkbaar", "type": "adv", "tr": "anlaşılan, görünüşe göre", "en": "apparently", "ar": "على ما يبدو", "fr": "apparemment"},
-  {"nl": "boeken", "type": "verb", "perfectum": "geboekt", "imperfectum": "boekte", "tr": "ayırtmak, rezervasyon yapmak", "en": "to book", "ar": "يحجز", "fr": "réserver"},
-  {"nl": "chic", "type": "adj", "tr": "şık", "en": "chic, elegant", "ar": "أنيق", "fr": "chic"},
-  {"nl": "emotie", "article": "de", "type": "noun", "tr": "duygu", "en": "emotion", "ar": "عاطفة", "fr": "émotion"},
-  {"nl": "emotioneel", "type": "adj", "tr": "duygusal", "en": "emotional", "ar": "عاطفي", "fr": "émotionnel"},
-  {"nl": "geïrriteerd", "type": "adj", "tr": "sinirlenmiş", "en": "irritated", "ar": "متضايق، منزعج", "fr": "irrité"},
-  {"nl": "mededeling", "article": "de", "type": "noun", "tr": "duyuru, haber", "en": "announcement, notice", "ar": "إعلان، بلاغ", "fr": "annonce, communication"},
-  {"nl": "menen", "type": "verb", "perfectum": "gemeend", "imperfectum": "meende", "tr": "ciddi olmak, kastetmek", "en": "to mean, to be serious", "ar": "يقصد، يعني", "fr": "vouloir dire, être sérieux"},
-  {"nl": "nogmaals", "type": "adv", "tr": "bir kez daha", "en": "once more, again", "ar": "مرة أخرى", "fr": "encore une fois"},
-  {"nl": "onzeker", "type": "adj", "tr": "emin olmayan, kararsız", "en": "uncertain, insecure", "ar": "غير متأكد، مترددة", "fr": "incertain, peu sûr"},
-  {"nl": "opgelucht", "type": "adj", "tr": "rahatlamış", "en": "relieved", "ar": "مرتاح", "fr": "soulagé"},
-  {"nl": "optimistisch", "type": "adj", "tr": "iyimser", "en": "optimistic", "ar": "متفائل", "fr": "optimiste"},
-  {"nl": "sensationeel", "type": "adj", "tr": "sansasyonel", "en": "sensational", "ar": "مثير", "fr": "sensationnel"},
-  {"nl": "starten", "type": "verb", "perfectum": "gestart", "imperfectum": "startte", "tr": "başlamak", "en": "to start", "ar": "يبدأ", "fr": "démarrer, commencer"},
-  {"nl": "tentamen", "article": "het", "type": "noun", "tr": "sınav", "en": "exam, test", "ar": "اختبار", "fr": "examen"},
-  {"nl": "toen", "type": "conj", "tr": "-diği zaman", "en": "when, then", "ar": "عندما", "fr": "quand, alors"},
-  {"nl": "trillen", "type": "verb", "perfectum": "getrild", "imperfectum": "trilde", "tr": "titremek", "en": "to tremble, to vibrate", "ar": "يرتجف، يهتز", "fr": "trembler, vibrer"},
-  {"nl": "trots", "type": "adj", "tr": "gururlu", "en": "proud", "ar": "فخور", "fr": "fier"},
-  {"nl": "tweeling", "article": "de", "type": "noun", "tr": "ikiz", "en": "twins", "ar": "توأم", "fr": "jumeaux"},
-  {"nl": "verloofd", "type": "adj", "tr": "nişanlı", "en": "engaged", "ar": "مخطوب", "fr": "fiancé"},
-  {"nl": "verrassing", "article": "de", "type": "noun", "tr": "sürpriz", "en": "surprise", "ar": "مفاجأة", "fr": "surprise"},
-  {"nl": "zakken", "type": "verb", "perfectum": "gezakt", "imperfectum": "zakte", "tr": "başarısız olmak (sınavda)", "en": "to fail (an exam)", "ar": "يرسب", "fr": "échouer (à un examen)"},
-  {"nl": "aanhebben", "type": "verb", "perfectum": "aangehad", "imperfectum": "had aan", "tr": "giymek (üstünde olmak)", "en": "to have on, to wear", "ar": "يرتدي", "fr": "porter (un vêtement)"},
-  {"nl": "accepteren", "type": "verb", "perfectum": "geaccepteerd", "imperfectum": "accepteerde", "tr": "kabul etmek", "en": "to accept", "ar": "يقبل", "fr": "accepter"},
-  {"nl": "fel", "type": "adj", "tr": "parlak, çarpıcı", "en": "bright, intense", "ar": "ساطع، حاد", "fr": "vif, intense"},
-  {"nl": "geslacht", "article": "het", "type": "noun", "tr": "cinsiyet", "en": "gender, sex", "ar": "جنس", "fr": "genre, sexe"},
-  {"nl": "hak", "article": "de", "type": "noun", "tr": "topuk", "en": "heel", "ar": "كعب", "fr": "talon"},
-  {"nl": "hip", "type": "adj", "tr": "havalı, modern", "en": "hip, trendy", "ar": "عصري", "fr": "branché"},
-  {"nl": "hoewel", "type": "conj", "tr": "-e rağmen", "en": "although, even though", "ar": "على الرغم من", "fr": "bien que, même si"},
-  {"nl": "hoofddoek", "article": "de", "type": "noun", "tr": "başörtüsü", "en": "headscarf", "ar": "حجاب", "fr": "foulard"},
-  {"nl": "identiteit", "article": "de", "type": "noun", "tr": "kimlik", "en": "identity", "ar": "هوية", "fr": "identité"},
-  {"nl": "make-up", "article": "de", "type": "noun", "tr": "makyaj", "en": "make-up", "ar": "مكياج", "fr": "maquillage"},
-  {"nl": "moslima", "article": "de", "type": "noun", "tr": "(kadın) Müslüman", "en": "Muslim woman", "ar": "مسلمة", "fr": "femme musulmane"},
-  {"nl": "opvallend", "type": "adj", "tr": "göz alıcı, dikkat çekici", "en": "striking, conspicuous", "ar": "لافت للنظر", "fr": "frappant, remarquable"},
-  {"nl": "pet", "article": "de", "type": "noun", "tr": "kasket", "en": "cap", "ar": "قبعة كاب", "fr": "casquette"},
-  {"nl": "rok", "article": "de", "type": "noun", "tr": "etek", "en": "skirt", "ar": "تنورة", "fr": "jupe"},
-  {"nl": "sieraad", "article": "het", "type": "noun", "tr": "takı", "en": "jewellery, ornament", "ar": "مجوهرات، حلية", "fr": "bijou"},
-  {"nl": "sneaker", "article": "de", "type": "noun", "tr": "sneaker, spor ayakkabısı", "en": "sneaker", "ar": "حذاء رياضي", "fr": "basket"},
-  {"nl": "snor", "article": "de", "type": "noun", "tr": "bıyık", "en": "moustache", "ar": "شارب", "fr": "moustache"},
-  {"nl": "stijl", "article": "de", "type": "noun", "tr": "stil", "en": "style", "ar": "أسلوب، ستايل", "fr": "style"},
-  {"nl": "strak", "type": "adj", "tr": "dar, sıkı", "en": "tight, taut", "ar": "ضيق", "fr": "serré, ajusté"},
-  {"nl": "tatoeage", "article": "de", "type": "noun", "tr": "dövme", "en": "tattoo", "ar": "وشم", "fr": "tatouage"},
-  {"nl": "trend", "article": "de", "type": "noun", "tr": "moda, eğilim", "en": "trend", "ar": "اتجاه، موضة", "fr": "tendance"},
-  {"nl": "verplichten", "type": "verb", "perfectum": "verplicht", "imperfectum": "verplichtte", "tr": "zorlamak, yükümlü kılmak", "en": "to oblige, to compel", "ar": "يلزم، يوجب", "fr": "obliger, contraindre"},
-  {"nl": "vrouwelijk", "type": "adj", "tr": "kadınsı, dişil", "en": "feminine, female", "ar": "أنثوي", "fr": "féminin"},
-  {"nl": "wijd", "type": "adj", "tr": "bol, geniş", "en": "wide, loose", "ar": "فضفاض، واسع", "fr": "large, ample"},
-  {"nl": "zich kleden", "type": "verb", "perfectum": "zich gekleed", "imperfectum": "kleedde zich", "tr": "giyinmek", "en": "to dress oneself", "ar": "يلبس", "fr": "s'habiller"}
+  {
+    "nl": "comfortabel",
+    "type": "adj",
+    "tr": "rahat",
+    "en": "comfortable",
+    "ar": "مريح",
+    "fr": "confortable",
+    "zinnen": [
+      "2dakho1n",
+      "kpbjkoq3",
+      "w12hfcok"
+    ]
+  },
+  {
+    "nl": "dromen",
+    "type": "verb",
+    "perfectum": "gedroomd",
+    "imperfectum": "droomde",
+    "tr": "rüya görmek",
+    "en": "to dream",
+    "ar": "يحلم",
+    "fr": "rêver",
+    "zinnen": [
+      "byfn6arz"
+    ]
+  },
+  {
+    "nl": "hechten",
+    "type": "verb",
+    "perfectum": "gehecht",
+    "imperfectum": "hechtte",
+    "tr": "bağlanmak, önem vermek",
+    "en": "to attach, to value",
+    "ar": "يرفق، يهتم بـ",
+    "fr": "attacher, tenir à",
+    "zinnen": [
+      "dxdmgvf5"
+    ]
+  },
+  {
+    "nl": "interesseren",
+    "type": "verb",
+    "perfectum": "geïnteresseerd",
+    "imperfectum": "interesseerde",
+    "tr": "ilgilendirmek",
+    "en": "to interest",
+    "ar": "يثير الاهتمام",
+    "fr": "intéresser",
+    "zinnen": [
+      "w12hfcok"
+    ]
+  },
+  {
+    "nl": "klasgenoot",
+    "article": "de",
+    "type": "noun",
+    "tr": "sınıf arkadaşı",
+    "en": "classmate",
+    "ar": "زميل في الصف",
+    "fr": "camarade de classe",
+    "zinnen": [
+      "opoofkn7",
+      "uiwwgpet",
+      "igev87fq"
+    ]
+  },
+  {
+    "nl": "lui",
+    "type": "adj",
+    "tr": "tembel",
+    "en": "lazy",
+    "ar": "كسول",
+    "fr": "paresseux",
+    "zinnen": [
+      "byfn6arz"
+    ]
+  },
+  {
+    "nl": "maatschappij",
+    "article": "de",
+    "type": "noun",
+    "tr": "toplum",
+    "en": "society",
+    "ar": "مجتمع",
+    "fr": "société",
+    "zinnen": [
+      "hno8yad0",
+      "dxdmgvf5"
+    ]
+  },
+  {
+    "nl": "onafhankelijk",
+    "type": "adj",
+    "tr": "bağımsız",
+    "en": "independent",
+    "ar": "مستقل",
+    "fr": "indépendant",
+    "zinnen": [
+      "4ky76kmj",
+      "0dscyb48"
+    ]
+  },
+  {
+    "nl": "patiënt",
+    "article": "de",
+    "type": "noun",
+    "tr": "hasta (olan kişi)",
+    "en": "patient",
+    "ar": "مريض",
+    "fr": "patient",
+    "zinnen": [
+      "7g63tyqw",
+      "ho8t4pz6"
+    ]
+  },
+  {
+    "nl": "prioriteit",
+    "article": "de",
+    "type": "noun",
+    "tr": "öncelik",
+    "en": "priority",
+    "ar": "أولوية",
+    "fr": "priorité",
+    "zinnen": [
+      "0dscyb48",
+      "yhrinwml"
+    ]
+  },
+  {
+    "nl": "promotie",
+    "article": "de",
+    "type": "noun",
+    "tr": "terfi",
+    "en": "promotion",
+    "ar": "ترقية",
+    "fr": "promotion",
+    "zinnen": [
+      "poii6ygl"
+    ]
+  },
+  {
+    "nl": "realistisch",
+    "type": "adj",
+    "tr": "gerçekçi",
+    "en": "realistic",
+    "ar": "واقعي",
+    "fr": "réaliste",
+    "zinnen": [
+      "ysjavyyi",
+      "igev87fq"
+    ]
+  },
+  {
+    "nl": "vanwege",
+    "type": "prep",
+    "tr": "-den dolayı",
+    "en": "because of",
+    "ar": "بسبب",
+    "fr": "à cause de",
+    "zinnen": [
+      "9zd582lt",
+      "yhrinwml"
+    ]
+  },
+  {
+    "nl": "verklaren",
+    "type": "verb",
+    "perfectum": "verklaard",
+    "imperfectum": "verklaarde",
+    "tr": "açıklamak",
+    "en": "to explain, to declare",
+    "ar": "يشرح، يصرح",
+    "fr": "expliquer, déclarer",
+    "zinnen": [
+      "brp339gz",
+      "e9soqtdy"
+    ]
+  },
+  {
+    "nl": "verpleegkunde",
+    "article": "de",
+    "type": "noun",
+    "tr": "hemşirelik",
+    "en": "nursing",
+    "ar": "التمريض",
+    "fr": "soins infirmiers",
+    "zinnen": [
+      "dol8gygb"
+    ]
+  },
+  {
+    "nl": "verpleegkundige",
+    "article": "de",
+    "type": "noun",
+    "tr": "hemşire, hasta bakıcısı",
+    "en": "nurse",
+    "ar": "ممرض / ممرضة",
+    "fr": "infirmier / infirmière",
+    "zinnen": [
+      "ai8r43nv",
+      "7g63tyqw"
+    ]
+  },
+  {
+    "nl": "verwennen",
+    "type": "verb",
+    "perfectum": "verwend",
+    "imperfectum": "verwende",
+    "tr": "şımartmak",
+    "en": "to spoil",
+    "ar": "يدلل",
+    "fr": "gâter",
+    "zinnen": [
+      "me7vdw90"
+    ]
+  },
+  {
+    "nl": "voldoening",
+    "article": "de",
+    "type": "noun",
+    "tr": "memnuniyet, tatmin",
+    "en": "satisfaction",
+    "ar": "رضا، قناعة",
+    "fr": "satisfaction",
+    "zinnen": [
+      "ho8t4pz6"
+    ]
+  },
+  {
+    "nl": "waarde",
+    "article": "de",
+    "type": "noun",
+    "tr": "değer",
+    "en": "value",
+    "ar": "قيمة",
+    "fr": "valeur",
+    "zinnen": [
+      "ysjavyyi"
+    ]
+  },
+  {
+    "nl": "zekerheid",
+    "article": "de",
+    "type": "noun",
+    "tr": "istikrar, güven",
+    "en": "certainty, security",
+    "ar": "يقين، أمان",
+    "fr": "certitude, sécurité",
+    "zinnen": [
+      "omv6fcpw"
+    ]
+  },
+  {
+    "nl": "zelden",
+    "type": "adv",
+    "tr": "nadiren",
+    "en": "rarely",
+    "ar": "نادراً",
+    "fr": "rarement",
+    "zinnen": [
+      "3kr9u8sb",
+      "igev87fq"
+    ]
+  },
+  {
+    "nl": "zo meteen",
+    "type": "adv",
+    "tr": "birazdan",
+    "en": "in a moment",
+    "ar": "بعد قليل",
+    "fr": "dans un instant",
+    "zinnen": [
+      "brp339gz"
+    ]
+  },
+  {
+    "nl": "zorgzaam",
+    "type": "adj",
+    "tr": "özenli, şefkatli",
+    "en": "caring",
+    "ar": "مهتم، عطوف",
+    "fr": "attentionné",
+    "zinnen": [
+      "uiwwgpet"
+    ]
+  },
+  {
+    "nl": "ambtenaar",
+    "article": "de",
+    "type": "noun",
+    "tr": "memur",
+    "en": "civil servant",
+    "ar": "موظف حكومي",
+    "fr": "fonctionnaire",
+    "zinnen": [
+      "e9soqtdy",
+      "26i4mprj"
+    ]
+  },
+  {
+    "nl": "daarentegen",
+    "type": "adv",
+    "tr": "buna karşın, ise",
+    "en": "on the other hand",
+    "ar": "في المقابل",
+    "fr": "en revanche",
+    "zinnen": [
+      "6c26ncqq"
+    ]
+  },
+  {
+    "nl": "dansen",
+    "type": "verb",
+    "perfectum": "gedanst",
+    "imperfectum": "danste",
+    "tr": "dans etmek",
+    "en": "to dance",
+    "ar": "يرقص",
+    "fr": "danser",
+    "zinnen": [
+      "0u3i4jpj"
+    ]
+  },
+  {
+    "nl": "discotheek",
+    "article": "de",
+    "type": "noun",
+    "tr": "disko",
+    "en": "disco, nightclub",
+    "ar": "ديسكو، ملهى ليلي",
+    "fr": "discothèque",
+    "zinnen": [
+      "j627eyp7",
+      "0u3i4jpj"
+    ]
+  },
+  {
+    "nl": "huiswerk",
+    "article": "het",
+    "type": "noun",
+    "tr": "ev ödevi",
+    "en": "homework",
+    "ar": "واجب منزلي",
+    "fr": "devoir à la maison",
+    "zinnen": [
+      "peg1gsme",
+      "2j0dru36"
+    ]
+  },
+  {
+    "nl": "jeugd",
+    "article": "de",
+    "type": "noun",
+    "tr": "çocukluk, gençlik",
+    "en": "youth",
+    "ar": "شباب، طفولة",
+    "fr": "jeunesse",
+    "zinnen": [
+      "rrcrardx"
+    ]
+  },
+  {
+    "nl": "klus",
+    "article": "de",
+    "type": "noun",
+    "tr": "(evde yapılacak) iş",
+    "en": "chore, odd job",
+    "ar": "مهمة منزلية",
+    "fr": "corvée, petit travail",
+    "zinnen": [
+      "khy7aaje",
+      "nmqr6sw1"
+    ]
+  },
+  {
+    "nl": "lerares",
+    "article": "de",
+    "type": "noun",
+    "tr": "(kadın) öğretmen",
+    "en": "female teacher",
+    "ar": "معلمة",
+    "fr": "professeure",
+    "zinnen": [
+      "peg1gsme",
+      "2f7hjoma",
+      "4z6fwflc"
+    ]
+  },
+  {
+    "nl": "meehelpen",
+    "type": "verb",
+    "perfectum": "meegeholpen",
+    "imperfectum": "hielp mee",
+    "tr": "katkıda bulunmak, yardım etmek",
+    "en": "to help out",
+    "ar": "يساعد، يشارك",
+    "fr": "participer, aider",
+    "zinnen": [
+      "nmqr6sw1",
+      "hawhvdhk"
+    ]
+  },
+  {
+    "nl": "onredelijk",
+    "type": "adj",
+    "tr": "insafsız, mantıksız",
+    "en": "unreasonable",
+    "ar": "غير معقول",
+    "fr": "déraisonnable",
+    "zinnen": [
+      "0sh9vdoz",
+      "udo4frbw"
+    ]
+  },
+  {
+    "nl": "opstaan",
+    "type": "verb",
+    "perfectum": "opgestaan",
+    "imperfectum": "stond op",
+    "tr": "kalkmak",
+    "en": "to get up, to stand up",
+    "ar": "يقوم، ينهض",
+    "fr": "se lever",
+    "zinnen": [
+      "hawhvdhk"
+    ]
+  },
+  {
+    "nl": "opvoeden",
+    "type": "verb",
+    "perfectum": "opgevoed",
+    "imperfectum": "voedde op",
+    "tr": "(çocuk) yetiştirmek",
+    "en": "to raise, to bring up",
+    "ar": "يربي",
+    "fr": "élever, éduquer",
+    "zinnen": [
+      "4p8wm3zm",
+      "vbolzj6w"
+    ]
+  },
+  {
+    "nl": "rapport",
+    "article": "het",
+    "type": "noun",
+    "tr": "karne",
+    "en": "report card",
+    "ar": "كشف الدرجات",
+    "fr": "bulletin scolaire",
+    "zinnen": [
+      "0sh9vdoz",
+      "6c26ncqq"
+    ]
+  },
+  {
+    "nl": "rechtvaardig",
+    "type": "adj",
+    "tr": "adil",
+    "en": "fair, just",
+    "ar": "عادل",
+    "fr": "juste, équitable",
+    "zinnen": [
+      "ggzwfhj8",
+      "26i4mprj"
+    ]
+  },
+  {
+    "nl": "roddelen",
+    "type": "verb",
+    "perfectum": "geroddeld",
+    "imperfectum": "roddelde",
+    "tr": "dedikodu yapmak",
+    "en": "to gossip",
+    "ar": "يتغيب",
+    "fr": "cancaner, faire des commérages",
+    "zinnen": [
+      "2f7hjoma",
+      "udo4frbw"
+    ]
+  },
+  {
+    "nl": "snoep",
+    "article": "het",
+    "type": "noun",
+    "tr": "abur cubur, şeker",
+    "en": "sweets, candy",
+    "ar": "حلوى",
+    "fr": "bonbons, sucreries",
+    "zinnen": [
+      "nh9xrn4g",
+      "tw745l7m"
+    ]
+  },
+  {
+    "nl": "speelgoed",
+    "article": "het",
+    "type": "noun",
+    "tr": "oyuncak",
+    "en": "toys",
+    "ar": "ألعاب",
+    "fr": "jouets",
+    "zinnen": [
+      "3vwhq4vq",
+      "rrcrardx"
+    ]
+  },
+  {
+    "nl": "straf",
+    "article": "de",
+    "type": "noun",
+    "tr": "ceza",
+    "en": "punishment",
+    "ar": "عقوبة",
+    "fr": "punition",
+    "zinnen": [
+      "nh9xrn4g",
+      "4z6fwflc"
+    ]
+  },
+  {
+    "nl": "terugdenken",
+    "type": "verb",
+    "perfectum": "teruggedacht",
+    "imperfectum": "dacht terug",
+    "tr": "(geriye dönük) düşünmek",
+    "en": "to look back, to reminisce",
+    "ar": "يتذكر، يعود بالذاكرة",
+    "fr": "repenser à, se souvenir",
+    "zinnen": [
+      "x2qzolev",
+      "87bnuknq"
+    ]
+  },
+  {
+    "nl": "tiener",
+    "article": "de",
+    "type": "noun",
+    "tr": "genç (13-19 yaş)",
+    "en": "teenager",
+    "ar": "مراهق",
+    "fr": "adolescent",
+    "zinnen": [
+      "j627eyp7",
+      "8sh9ra5y",
+      "4z6fwflc"
+    ]
+  },
+  {
+    "nl": "uitje",
+    "article": "het",
+    "type": "noun",
+    "tr": "gezi",
+    "en": "outing, trip",
+    "ar": "نزهة",
+    "fr": "sortie",
+    "zinnen": [
+      "tw745l7m"
+    ]
+  },
+  {
+    "nl": "verantwoordelijkheid",
+    "article": "de",
+    "type": "noun",
+    "tr": "sorumluluk",
+    "en": "responsibility",
+    "ar": "مسؤولية",
+    "fr": "responsabilité",
+    "zinnen": [
+      "ownctklw",
+      "vbolzj6w"
+    ]
+  },
+  {
+    "nl": "verzorgd",
+    "type": "adj",
+    "tr": "bakımlı",
+    "en": "well-groomed, neat",
+    "ar": "مرتب، أنيق",
+    "fr": "soigné",
+    "zinnen": [
+      "hk0p453r"
+    ]
+  },
+  {
+    "nl": "zich bemoeien",
+    "type": "verb",
+    "perfectum": "zich bemoeid",
+    "imperfectum": "bemoeide zich",
+    "tr": "karışmak",
+    "en": "to interfere, to meddle",
+    "ar": "يتدخل",
+    "fr": "se mêler de",
+    "zinnen": [
+      "2j0dru36",
+      "8sh9ra5y"
+    ]
+  },
+  {
+    "nl": "aankomend",
+    "type": "adj",
+    "tr": "önümüzdeki, gelecek",
+    "en": "upcoming, next",
+    "ar": "القادم، المقبل",
+    "fr": "prochain, à venir",
+    "zinnen": [
+      "1924dlv4"
+    ]
+  },
+  {
+    "nl": "afstuderen",
+    "type": "verb",
+    "perfectum": "afgestudeerd",
+    "imperfectum": "studeerde af",
+    "tr": "mezun olmak",
+    "en": "to graduate",
+    "ar": "يتخرج",
+    "fr": "obtenir son diplôme",
+    "zinnen": [
+      "8r034287"
+    ]
+  },
+  {
+    "nl": "blijkbaar",
+    "type": "adv",
+    "tr": "anlaşılan, görünüşe göre",
+    "en": "apparently",
+    "ar": "على ما يبدو",
+    "fr": "apparemment",
+    "zinnen": [
+      "zg7piql2"
+    ]
+  },
+  {
+    "nl": "boeken",
+    "type": "verb",
+    "perfectum": "geboekt",
+    "imperfectum": "boekte",
+    "tr": "ayırtmak, rezervasyon yapmak",
+    "en": "to book",
+    "ar": "يحجز",
+    "fr": "réserver",
+    "zinnen": [
+      "12u8ps0g"
+    ]
+  },
+  {
+    "nl": "chic",
+    "type": "adj",
+    "tr": "şık",
+    "en": "chic, elegant",
+    "ar": "أنيق",
+    "fr": "chic",
+    "zinnen": [
+      "0skpubnu"
+    ]
+  },
+  {
+    "nl": "emotie",
+    "article": "de",
+    "type": "noun",
+    "tr": "duygu",
+    "en": "emotion",
+    "ar": "عاطفة",
+    "fr": "émotion",
+    "zinnen": [
+      "5783817i",
+      "d8dffats",
+      "09sx6ww6",
+      "89gz15vt"
+    ]
+  },
+  {
+    "nl": "emotioneel",
+    "type": "adj",
+    "tr": "duygusal",
+    "en": "emotional",
+    "ar": "عاطفي",
+    "fr": "émotionnel",
+    "zinnen": [
+      "cf34q8aa",
+      "zg7piql2"
+    ]
+  },
+  {
+    "nl": "geïrriteerd",
+    "type": "adj",
+    "tr": "sinirlenmiş",
+    "en": "irritated",
+    "ar": "متضايق، منزعج",
+    "fr": "irrité",
+    "zinnen": [
+      "he29w1x1",
+      "3pddmsz8"
+    ]
+  },
+  {
+    "nl": "mededeling",
+    "article": "de",
+    "type": "noun",
+    "tr": "duyuru, haber",
+    "en": "announcement, notice",
+    "ar": "إعلان، بلاغ",
+    "fr": "annonce, communication",
+    "zinnen": [
+      "j8s0062g",
+      "20h5f7b8",
+      "wuxhyllx"
+    ]
+  },
+  {
+    "nl": "menen",
+    "type": "verb",
+    "perfectum": "gemeend",
+    "imperfectum": "meende",
+    "tr": "ciddi olmak, kastetmek",
+    "en": "to mean, to be serious",
+    "ar": "يقصد، يعني",
+    "fr": "vouloir dire, être sérieux",
+    "zinnen": [
+      "9d69rczv",
+      "7v7wgwp6"
+    ]
+  },
+  {
+    "nl": "nogmaals",
+    "type": "adv",
+    "tr": "bir kez daha",
+    "en": "once more, again",
+    "ar": "مرة أخرى",
+    "fr": "encore une fois",
+    "zinnen": [
+      "j8s0062g",
+      "7v7wgwp6"
+    ]
+  },
+  {
+    "nl": "onzeker",
+    "type": "adj",
+    "tr": "emin olmayan, kararsız",
+    "en": "uncertain, insecure",
+    "ar": "غير متأكد، مترددة",
+    "fr": "incertain, peu sûr",
+    "zinnen": [
+      "c4mgjdif",
+      "tzc6nib3"
+    ]
+  },
+  {
+    "nl": "opgelucht",
+    "type": "adj",
+    "tr": "rahatlamış",
+    "en": "relieved",
+    "ar": "مرتاح",
+    "fr": "soulagé",
+    "zinnen": [
+      "6g4ge6l6",
+      "wuxhyllx"
+    ]
+  },
+  {
+    "nl": "optimistisch",
+    "type": "adj",
+    "tr": "iyimser",
+    "en": "optimistic",
+    "ar": "متفائل",
+    "fr": "optimiste",
+    "zinnen": [
+      "d218xxr4",
+      "zg7piql2"
+    ]
+  },
+  {
+    "nl": "sensationeel",
+    "type": "adj",
+    "tr": "sansasyonel",
+    "en": "sensational",
+    "ar": "مثير",
+    "fr": "sensationnel",
+    "zinnen": [
+      "8ak9uid2",
+      "d8dffats"
+    ]
+  },
+  {
+    "nl": "starten",
+    "type": "verb",
+    "perfectum": "gestart",
+    "imperfectum": "startte",
+    "tr": "başlamak",
+    "en": "to start",
+    "ar": "يبدأ",
+    "fr": "démarrer, commencer",
+    "zinnen": [
+      "lxeybkaf",
+      "8r034287"
+    ]
+  },
+  {
+    "nl": "tentamen",
+    "article": "het",
+    "type": "noun",
+    "tr": "sınav",
+    "en": "exam, test",
+    "ar": "اختبار",
+    "fr": "examen",
+    "zinnen": [
+      "6g4ge6l6",
+      "r0xy9k3k",
+      "wxgoqom4",
+      "oxa7nmm1",
+      "tzc6nib3"
+    ]
+  },
+  {
+    "nl": "trillen",
+    "type": "verb",
+    "perfectum": "getrild",
+    "imperfectum": "trilde",
+    "tr": "titremek",
+    "en": "to tremble, to vibrate",
+    "ar": "يرتجف، يهتز",
+    "fr": "trembler, vibrer",
+    "zinnen": [
+      "09sx6ww6",
+      "5783817i",
+      "fvdgo0p1"
+    ]
+  },
+  {
+    "nl": "trots",
+    "type": "adj",
+    "tr": "gururlu",
+    "en": "proud",
+    "ar": "فخور",
+    "fr": "fier",
+    "zinnen": [
+      "arlz22e4",
+      "7xbia538"
+    ]
+  },
+  {
+    "nl": "tweeling",
+    "article": "de",
+    "type": "noun",
+    "tr": "ikiz",
+    "en": "twins",
+    "ar": "توأم",
+    "fr": "jumeaux",
+    "zinnen": [
+      "arlz22e4",
+      "1924dlv4"
+    ]
+  },
+  {
+    "nl": "verloofd",
+    "type": "adj",
+    "tr": "nişanlı",
+    "en": "engaged",
+    "ar": "مخطوب",
+    "fr": "fiancé",
+    "zinnen": [
+      "a0jpq6iw",
+      "7xbia538"
+    ]
+  },
+  {
+    "nl": "verrassing",
+    "article": "de",
+    "type": "noun",
+    "tr": "sürpriz",
+    "en": "surprise",
+    "ar": "مفاجأة",
+    "fr": "surprise",
+    "zinnen": [
+      "cf34q8aa",
+      "ks1uiv4e",
+      "bglyic9b",
+      "ysqd3089",
+      "09sx6ww6"
+    ]
+  },
+  {
+    "nl": "zakken",
+    "type": "verb",
+    "perfectum": "gezakt",
+    "imperfectum": "zakte",
+    "tr": "başarısız olmak (sınavda)",
+    "en": "to fail (an exam)",
+    "ar": "يرسب",
+    "fr": "échouer (à un examen)",
+    "zinnen": [
+      "tzc6nib3",
+      "259qhj6b"
+    ]
+  },
+  {
+    "nl": "aanhebben",
+    "type": "verb",
+    "perfectum": "aangehad",
+    "imperfectum": "had aan",
+    "tr": "giymek (üstünde olmak)",
+    "en": "to have on, to wear",
+    "ar": "يرتدي",
+    "fr": "porter (un vêtement)",
+    "zinnen": [
+      "tq2359ew"
+    ]
+  },
+  {
+    "nl": "accepteren",
+    "type": "verb",
+    "perfectum": "geaccepteerd",
+    "imperfectum": "accepteerde",
+    "tr": "kabul etmek",
+    "en": "to accept",
+    "ar": "يقبل",
+    "fr": "accepter",
+    "zinnen": [
+      "53uc52l7",
+      "20h5f7b8"
+    ]
+  },
+  {
+    "nl": "fel",
+    "type": "adj",
+    "tr": "parlak, çarpıcı",
+    "en": "bright, intense",
+    "ar": "ساطع، حاد",
+    "fr": "vif, intense",
+    "zinnen": [
+      "iybq7ivq",
+      "ses7z2tq"
+    ]
+  },
+  {
+    "nl": "geslacht",
+    "article": "het",
+    "type": "noun",
+    "tr": "cinsiyet",
+    "en": "gender, sex",
+    "ar": "جنس",
+    "fr": "genre, sexe",
+    "zinnen": [
+      "zj89muq9",
+      "53uc52l7"
+    ]
+  },
+  {
+    "nl": "hak",
+    "article": "de",
+    "type": "noun",
+    "tr": "topuk",
+    "en": "heel",
+    "ar": "كعب",
+    "fr": "talon",
+    "zinnen": [
+      "98fhaytv",
+      "tq2359ew"
+    ]
+  },
+  {
+    "nl": "hip",
+    "type": "adj",
+    "tr": "havalı, modern",
+    "en": "hip, trendy",
+    "ar": "عصري",
+    "fr": "branché",
+    "zinnen": [
+      "98fhaytv",
+      "fel08i73"
+    ]
+  },
+  {
+    "nl": "hoewel",
+    "type": "conj",
+    "tr": "-e rağmen",
+    "en": "although, even though",
+    "ar": "على الرغم من",
+    "fr": "bien que, même si",
+    "zinnen": [
+      "cd1x17va",
+      "eox8emvn",
+      "69zav3fl"
+    ]
+  },
+  {
+    "nl": "hoofddoek",
+    "article": "de",
+    "type": "noun",
+    "tr": "başörtüsü",
+    "en": "headscarf",
+    "ar": "حجاب",
+    "fr": "foulard",
+    "zinnen": [
+      "ksede0lv",
+      "woornsum"
+    ]
+  },
+  {
+    "nl": "identiteit",
+    "article": "de",
+    "type": "noun",
+    "tr": "kimlik",
+    "en": "identity",
+    "ar": "هوية",
+    "fr": "identité",
+    "zinnen": [
+      "c4mgjdif",
+      "cd1x17va",
+      "0gpyx92r"
+    ]
+  },
+  {
+    "nl": "make-up",
+    "article": "de",
+    "type": "noun",
+    "tr": "makyaj",
+    "en": "make-up",
+    "ar": "مكياج",
+    "fr": "maquillage",
+    "zinnen": [
+      "tl0jyea4",
+      "0gpyx92r"
+    ]
+  },
+  {
+    "nl": "moslima",
+    "article": "de",
+    "type": "noun",
+    "tr": "(kadın) Müslüman",
+    "en": "Muslim woman",
+    "ar": "مسلمة",
+    "fr": "femme musulmane",
+    "zinnen": [
+      "2kvy6vp3",
+      "woornsum"
+    ]
+  },
+  {
+    "nl": "opvallend",
+    "type": "adj",
+    "tr": "göz alıcı, dikkat çekici",
+    "en": "striking, conspicuous",
+    "ar": "لافت للنظر",
+    "fr": "frappant, remarquable",
+    "zinnen": [
+      "46eob5lx",
+      "tl0jyea4",
+      "fel08i73"
+    ]
+  },
+  {
+    "nl": "pet",
+    "article": "de",
+    "type": "noun",
+    "tr": "kasket",
+    "en": "cap",
+    "ar": "قبعة كاب",
+    "fr": "casquette",
+    "zinnen": [
+      "f0pvqgzv",
+      "xqmqh704"
+    ]
+  },
+  {
+    "nl": "rok",
+    "article": "de",
+    "type": "noun",
+    "tr": "etek",
+    "en": "skirt",
+    "ar": "تنورة",
+    "fr": "jupe",
+    "zinnen": [
+      "tq2359ew"
+    ]
+  },
+  {
+    "nl": "sieraad",
+    "article": "het",
+    "type": "noun",
+    "tr": "takı",
+    "en": "jewellery, ornament",
+    "ar": "مجوهرات، حلية",
+    "fr": "bijou",
+    "zinnen": [
+      "ksede0lv",
+      "69zav3fl"
+    ]
+  },
+  {
+    "nl": "sneaker",
+    "article": "de",
+    "type": "noun",
+    "tr": "sneaker, spor ayakkabısı",
+    "en": "sneaker",
+    "ar": "حذاء رياضي",
+    "fr": "basket",
+    "zinnen": [
+      "46eob5lx",
+      "69zav3fl"
+    ]
+  },
+  {
+    "nl": "snor",
+    "article": "de",
+    "type": "noun",
+    "tr": "bıyık",
+    "en": "moustache",
+    "ar": "شارب",
+    "fr": "moustache",
+    "zinnen": [
+      "e4hpbjd1",
+      "xqmqh704"
+    ]
+  },
+  {
+    "nl": "stijl",
+    "article": "de",
+    "type": "noun",
+    "tr": "stil",
+    "en": "style",
+    "ar": "أسلوب، ستايل",
+    "fr": "style",
+    "zinnen": [
+      "2kvy6vp3",
+      "fel08i73"
+    ]
+  },
+  {
+    "nl": "strak",
+    "type": "adj",
+    "tr": "dar, sıkı",
+    "en": "tight, taut",
+    "ar": "ضيق",
+    "fr": "serré, ajusté",
+    "zinnen": [
+      "f0pvqgzv",
+      "g3a6mkam"
+    ]
+  },
+  {
+    "nl": "tatoeage",
+    "article": "de",
+    "type": "noun",
+    "tr": "dövme",
+    "en": "tattoo",
+    "ar": "وشم",
+    "fr": "tatouage",
+    "zinnen": [
+      "e4hpbjd1",
+      "jq80dwcj",
+      "08heekjc"
+    ]
+  },
+  {
+    "nl": "trend",
+    "article": "de",
+    "type": "noun",
+    "tr": "moda, eğilim",
+    "en": "trend",
+    "ar": "اتجاه، موضة",
+    "fr": "tendance",
+    "zinnen": [
+      "2dakho1n",
+      "3oensbsl",
+      "08heekjc"
+    ]
+  },
+  {
+    "nl": "verplichten",
+    "type": "verb",
+    "perfectum": "verplicht",
+    "imperfectum": "verplichtte",
+    "tr": "zorlamak, yükümlü kılmak",
+    "en": "to oblige, to compel",
+    "ar": "يلزم، يوجب",
+    "fr": "obliger, contraindre",
+    "zinnen": [
+      "al9c6jc4"
+    ]
+  },
+  {
+    "nl": "vrouwelijk",
+    "type": "adj",
+    "tr": "kadınsı, dişil",
+    "en": "feminine, female",
+    "ar": "أنثوي",
+    "fr": "féminin",
+    "zinnen": [
+      "iybq7ivq",
+      "g3a6mkam"
+    ]
+  },
+  {
+    "nl": "wijd",
+    "type": "adj",
+    "tr": "bol, geniş",
+    "en": "wide, loose",
+    "ar": "فضفاض، واسع",
+    "fr": "large, ample",
+    "zinnen": [
+      "2dakho1n",
+      "ses7z2tq"
+    ]
+  },
+  {
+    "nl": "zich kleden",
+    "type": "verb",
+    "perfectum": "zich gekleed",
+    "imperfectum": "kleedde zich",
+    "tr": "giyinmek",
+    "en": "to dress oneself",
+    "ar": "يلبس",
+    "fr": "s'habiller",
+    "zinnen": [
+      "g3a6mkam",
+      "3oensbsl"
+    ]
+  }
 ]

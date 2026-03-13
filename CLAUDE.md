@@ -262,3 +262,126 @@ Access `/editor` route in dev mode (`npm run dev`) to:
 - Paste HTML tables and convert to word JSON format
 - Translate words using DeepL API (requires `VITE_DEEPL_API_KEY` in `.env`)
 - Export words as JSON files (100 words per file)
+
+## Woorden CLI (`scripts/woorden.ts`)
+
+Run via `npm run woorden -- <command>`.
+
+### Commands
+
+```bash
+# Find words in PACK that also appear in higher-level packs
+npm run woorden find-duplicate <PACK> [--page N]
+
+# Remove a specific word from PACK (asks y/N confirmation)
+npm run woorden remove <PACK> <word>
+
+# Add an example sentence with notation (see Zin Notation below)
+npm run woorden -- add-zin "<marked sentence>" [--limit N]
+
+# Remove a sentence by ID and clean up all word references
+npm run woorden remove-zin <id>
+
+# List words without example sentences
+npm run woorden get-no-zin <PACK> [count]
+```
+
+**Packs:** `A1`, `A2`, `A2+`
+**Pack hierarchy:** A1 < A2 < A2+ — `find-duplicate A1` compares against A2 and A2+, `find-duplicate A2` only against A2+.
+
+### Zin Notation
+
+Example sentences are stored in `src/data/zin-*.json` as `{ "<id>": "<marked string>" }`.
+
+Each word being learned is annotated with a group number:
+
+```
+N|token@base
+```
+
+- `N` — group number (integer, matches one vocabulary word)
+- `token` — the surface form as it appears in the sentence (conjugated, capitalized, etc.)
+- `@base` — the dictionary form (`nl` key in word JSON); required on the **first** occurrence of group N
+
+**Option B inheritance:** the first occurrence of group N defines the `@base`; subsequent tokens with the same N inherit it automatically — no need to repeat `@base`.
+
+```
+# Verb conjugation (surface ≠ infinitive)
+"ik 1|ga@gaan naar 2|school"
+→ Word 1 base: gaan   (surface: ga)
+→ Word 2 base: school (surface = base → @school can be omitted)
+
+# Separable verb: both parts share the same group number
+"hij 1|denkt@nadenken over het 1|na"
+→ Word 1 base: nadenken  (tokens: denkt, na — both resolve to nadenken)
+
+# Adjective inflection (groot → grote, nieuw → nieuwe, etc.)
+"Dat is een 1|grote@groot huis."
+→ Word 1 base: groot  (surface: grote, -e added by inflection)
+
+"De 1|nieuwe@nieuw leraar is 2|aardig."
+→ Word 1 base: nieuw   (surface: nieuwe)
+→ Word 2 base: aardig  (predicative, no inflection → @base can be omitted)
+
+# Plural noun (kind → kinderen, huis → huizen, etc.)
+"De 1|kinderen@kind spelen buiten."
+→ Word 1 base: kind  (surface: kinderen)
+
+# Capitalised first token
+"1|Ik@ik 2|woon@wonen in 3|Nederland."
+→ @ik needed because surface is capitalised; @wonen because woon ≠ wonen
+```
+
+**When `@base` can be omitted:** when the surface token (after stripping trailing punctuation) already matches the base. Trailing `. , ? ! ; :` are stripped automatically before lookup — so `3|school,` and `3|school.` both resolve to base `school` regardless of position in the sentence.
+
+**Multi-word bases (spaces in `nl` key):** use underscores in `@base` to encode spaces.
+
+```
+# nl key: "oppassen op"
+Ze 1|paste@oppassen_op op de kinderen 1|op@oppassen_op.
+→ base: oppassen op  (tokens: paste, op)
+
+# nl key: "zich scheren"
+Ze 1|scheert@zich_scheren zich elke ochtend.
+→ base: zich scheren  (token: scheert; "zich" is plain text — do NOT mark it as a separate group)
+
+# nl key: "Europese Unie"  (proper noun — mark first word only)
+De 1|Europese@Europese_Unie Unie heeft veel leden.
+→ base: Europese Unie  (token: Europese)
+```
+
+**Inflected adjectives always need `@base`:**
+
+```
+# WRONG — "uitstekende" not found in any pack
+Dat was een 1|uitstekende oplossing.
+
+# CORRECT
+Dat was een 1|uitstekende@uitstekend oplossing.
+Dat is een 1|traditionele@traditioneel familie.
+Dat is een 1|financiële@financieel probleem.
+```
+
+**Reflexive pronouns (`zich`, `me`, `je`) that are the split-off part of a reflexive verb are NOT marked as a second group token** — they are plain text, only the conjugated verb form carries the group annotation.
+
+**Limit:** default 5 zinnen per word (`--limit N` to override). If ALL referenced words are already at the limit, the sentence is rejected.
+
+### Zin File Format
+
+```json
+// src/data/zin-001.json
+{
+  "ab3k9x2m": "1|Ik@ik 2|ga@gaan naar 3|school",
+  "xy9q2rtl": "hij 1|denkt@nadenken over het 1|na"
+}
+```
+
+Word entries get a `zinnen` array referencing sentence IDs:
+
+```json
+{
+  "nl": "gaan",
+  "type": "verb",
+  "zinnen": ["ab3k9x2m"]
+}
+```

@@ -1,202 +1,2467 @@
 [
-  {"nl": "agenda", "article": "de", "type": "noun", "tr": "ajanda", "en": "agenda", "ar": "جدول أعمال", "fr": "agenda"},
-  {"nl": "als", "type": "conj", "tr": "eğer, olarak", "en": "if, as", "ar": "إذا، كـ", "fr": "si, comme"},
-  {"nl": "behoorlijk", "type": "adv", "tr": "oldukça, epey", "en": "quite, considerably", "ar": "إلى حد كبير", "fr": "assez, considérablement"},
-  {"nl": "binnenkort", "type": "adv", "tr": "yakında", "en": "soon", "ar": "قريباً", "fr": "bientôt"},
-  {"nl": "gelijk", "type": "adj", "tr": "eşit, hemen", "en": "equal, immediately", "ar": "متساوي، فوراً", "fr": "égal, immédiatement"},
-  {"nl": "heerlijk", "type": "adj", "tr": "harika, lezzetli", "en": "wonderful, delicious", "ar": "رائع، لذيذ", "fr": "merveilleux, délicieux"},
-  {"nl": "hockey", "article": "de", "type": "noun", "tr": "hokey", "en": "hockey", "ar": "هوكي", "fr": "hockey"},
-  {"nl": "lastig", "type": "adj", "tr": "zor, can sıkıcı", "en": "difficult, annoying", "ar": "صعب، مزعج", "fr": "difficile, ennuyeux"},
-  {"nl": "meegaan", "type": "verb", "perfectum": "meegegaan", "imperfectum": "ging mee", "tr": "birlikte gitmek", "en": "to go along", "ar": "يذهب معه", "fr": "accompagner"},
-  {"nl": "omdat", "type": "conj", "tr": "çünkü", "en": "because", "ar": "لأن", "fr": "parce que"},
-  {"nl": "plezier", "article": "het", "type": "noun", "tr": "eğlence, zevk", "en": "fun, pleasure", "ar": "متعة", "fr": "plaisir"},
-  {"nl": "sauna", "article": "de", "type": "noun", "tr": "sauna", "en": "sauna", "ar": "ساونا", "fr": "sauna"},
-  {"nl": "sowieso", "type": "adv", "tr": "zaten, her halükarda", "en": "anyway", "ar": "على أي حال", "fr": "de toute façon"},
-  {"nl": "speciaal", "type": "adj", "tr": "özel", "en": "special", "ar": "خاص", "fr": "spécial"},
-  {"nl": "strand", "article": "het", "type": "noun", "tr": "plaj, kumsal", "en": "beach", "ar": "شاطئ", "fr": "plage"},
-  {"nl": "trainen", "type": "verb", "perfectum": "getraind", "imperfectum": "trainde", "tr": "antrenman yapmak", "en": "to train", "ar": "يتدرب", "fr": "s'entraîner"},
-  {"nl": "training", "article": "de", "type": "noun", "tr": "antrenman", "en": "training", "ar": "تدريب", "fr": "entraînement"},
-  {"nl": "veld", "article": "het", "type": "noun", "tr": "alan, saha", "en": "field", "ar": "ملعب، حقل", "fr": "champ, terrain"},
-  {"nl": "volwassene", "article": "de", "type": "noun", "tr": "yetişkin", "en": "adult", "ar": "بالغ", "fr": "adulte"},
-  {"nl": "voorlopig", "type": "adv", "tr": "şimdilik", "en": "for now", "ar": "مؤقتاً", "fr": "pour l'instant"},
-  {"nl": "wandelen", "type": "verb", "perfectum": "gewandeld", "imperfectum": "wandelde", "tr": "yürüyüş yapmak", "en": "to walk", "ar": "يتمشى", "fr": "se promener"},
-  {"nl": "wedstrijd", "article": "de", "type": "noun", "tr": "maç, yarışma", "en": "match, competition", "ar": "مباراة", "fr": "match, compétition"},
-  {"nl": "zwembad", "article": "het", "type": "noun", "tr": "yüzme havuzu", "en": "swimming pool", "ar": "حمام سباحة", "fr": "piscine"},
-  {"nl": "zwemmen", "type": "verb", "perfectum": "gezwommen", "imperfectum": "zwom", "tr": "yüzmek", "en": "to swim", "ar": "يسبح", "fr": "nager"},
-  {"nl": "bedenken", "type": "verb", "perfectum": "bedacht", "imperfectum": "bedacht", "tr": "düşünmek, akıl etmek", "en": "to think of", "ar": "يفكر في", "fr": "imaginer, penser à"},
-  {"nl": "bovendien", "type": "adv", "tr": "ayrıca, üstelik", "en": "moreover", "ar": "علاوة على ذلك", "fr": "de plus"},
-  {"nl": "durven", "type": "verb", "perfectum": "gedurfd", "imperfectum": "durfde", "tr": "cesaret etmek", "en": "to dare", "ar": "يجرؤ", "fr": "oser"},
-  {"nl": "egoïstisch", "type": "adj", "tr": "bencil", "en": "selfish", "ar": "أناني", "fr": "égoïste"},
-  {"nl": "examen", "article": "het", "type": "noun", "tr": "sınav", "en": "exam", "ar": "امتحان", "fr": "examen"},
-  {"nl": "excuus", "article": "het", "type": "noun", "tr": "mazeret, özür", "en": "excuse", "ar": "عذر", "fr": "excuse"},
-  {"nl": "kwaad", "type": "adj", "tr": "kızgın, öfkeli", "en": "angry", "ar": "غاضب", "fr": "fâché, en colère"},
-  {"nl": "liegen", "type": "verb", "perfectum": "gelogen", "imperfectum": "loog", "tr": "yalan söylemek", "en": "to lie", "ar": "يكذب", "fr": "mentir"},
-  {"nl": "logeren", "type": "verb", "perfectum": "gelogeerd", "imperfectum": "logeerde", "tr": "misafir kalmak", "en": "to stay over", "ar": "يبيت", "fr": "loger"},
-  {"nl": "moeite", "article": "de", "type": "noun", "tr": "çaba, zorluk", "en": "effort, difficulty", "ar": "جهد، صعوبة", "fr": "effort, difficulté"},
-  {"nl": "neef", "article": "de", "type": "noun", "tr": "kuzen (erkek), yeğen", "en": "cousin, nephew", "ar": "ابن عم، ابن أخ", "fr": "cousin, neveu"},
-  {"nl": "nicht", "article": "de", "type": "noun", "tr": "kuzen (kadın), yeğen", "en": "cousin, niece", "ar": "ابنة عم، ابنة أخ", "fr": "cousine, nièce"},
-  {"nl": "ontdekken", "type": "verb", "perfectum": "ontdekt", "imperfectum": "ontdekte", "tr": "keşfetmek", "en": "to discover", "ar": "يكتشف", "fr": "découvrir"},
-  {"nl": "oppassen op", "type": "verb", "perfectum": "opgepast", "imperfectum": "paste op", "tr": "bakmak, gözetmek", "en": "to look after", "ar": "يعتني بـ", "fr": "surveiller, garder"},
-  {"nl": "plan", "article": "het", "type": "noun", "tr": "plan", "en": "plan", "ar": "خطة", "fr": "plan"},
-  {"nl": "reizen", "type": "verb", "perfectum": "gereisd", "imperfectum": "reisde", "tr": "seyahat etmek", "en": "to travel", "ar": "يسافر", "fr": "voyager"},
-  {"nl": "schoonouders", "article": "de", "type": "noun", "tr": "kayınvalide ve kayınpeder", "en": "parents-in-law", "ar": "أهل الزوج/الزوجة", "fr": "beaux-parents"},
-  {"nl": "smoes", "article": "de", "type": "noun", "tr": "bahane", "en": "excuse", "ar": "حجة", "fr": "excuse, prétexte"},
-  {"nl": "vast", "type": "adj", "tr": "sabit, kesin", "en": "fixed, sure", "ar": "ثابت، مؤكد", "fr": "fixe, sûr"},
-  {"nl": "verzinnen", "type": "verb", "perfectum": "verzonnen", "imperfectum": "verzon", "tr": "uydurmak, icat etmek", "en": "to make up", "ar": "يختلق", "fr": "inventer"},
-  {"nl": "vriendschap", "article": "de", "type": "noun", "tr": "arkadaşlık", "en": "friendship", "ar": "صداقة", "fr": "amitié"},
-  {"nl": "waarheid", "article": "de", "type": "noun", "tr": "gerçek, doğru", "en": "truth", "ar": "حقيقة", "fr": "vérité"},
-  {"nl": "zwager", "article": "de", "type": "noun", "tr": "kayınbirader, enişte", "en": "brother-in-law", "ar": "صهر", "fr": "beau-frère"},
-  {"nl": "bar", "article": "de", "type": "noun", "tr": "bar", "en": "bar", "ar": "بار", "fr": "bar"},
-  {"nl": "bardienst", "article": "de", "type": "noun", "tr": "bar nöbeti", "en": "bar duty", "ar": "نوبة البار", "fr": "service au bar"},
-  {"nl": "beurt", "article": "de", "type": "noun", "tr": "sıra", "en": "turn", "ar": "دور", "fr": "tour"},
-  {"nl": "dienst", "article": "de", "type": "noun", "tr": "hizmet, nöbet", "en": "service, shift", "ar": "خدمة، نوبة", "fr": "service"},
-  {"nl": "herfst", "article": "de", "type": "noun", "tr": "sonbahar", "en": "autumn", "ar": "خريف", "fr": "automne"},
-  {"nl": "hierheen", "type": "adv", "tr": "buraya", "en": "here (direction)", "ar": "إلى هنا", "fr": "ici (direction)"},
-  {"nl": "hoezo", "type": "adv", "tr": "nasıl yani, neden", "en": "how come, why", "ar": "كيف ذلك", "fr": "comment ça"},
-  {"nl": "invallen", "type": "verb", "perfectum": "ingevallen", "imperfectum": "viel in", "tr": "yerine geçmek", "en": "to fill in", "ar": "يحل محل", "fr": "remplacer"},
-  {"nl": "juf", "article": "de", "type": "noun", "tr": "öğretmen (kadın)", "en": "teacher (female)", "ar": "معلمة", "fr": "maîtresse"},
-  {"nl": "kaartje", "article": "het", "type": "noun", "tr": "bilet, kart", "en": "ticket, card", "ar": "تذكرة، بطاقة", "fr": "billet, carte"},
-  {"nl": "kantine", "article": "de", "type": "noun", "tr": "kantin", "en": "canteen", "ar": "مقصف", "fr": "cantine"},
-  {"nl": "oom", "article": "de", "type": "noun", "tr": "amca, dayı", "en": "uncle", "ar": "عم، خال", "fr": "oncle"},
-  {"nl": "overnemen", "type": "verb", "perfectum": "overgenomen", "imperfectum": "nam over", "tr": "devralmak", "en": "to take over", "ar": "يتولى", "fr": "reprendre"},
-  {"nl": "regen", "article": "de", "type": "noun", "tr": "yağmur", "en": "rain", "ar": "مطر", "fr": "pluie"},
-  {"nl": "rooster", "article": "het", "type": "noun", "tr": "program, çizelge", "en": "schedule", "ar": "جدول", "fr": "emploi du temps"},
-  {"nl": "schoolplein", "article": "het", "type": "noun", "tr": "okul bahçesi", "en": "schoolyard", "ar": "ساحة المدرسة", "fr": "cour d'école"},
-  {"nl": "super", "type": "adj", "tr": "süper, harika", "en": "super, great", "ar": "رائع", "fr": "super"},
-  {"nl": "tante", "article": "de", "type": "noun", "tr": "hala, teyze", "en": "aunt", "ar": "عمة، خالة", "fr": "tante"},
-  {"nl": "tentoonstelling", "article": "de", "type": "noun", "tr": "sergi", "en": "exhibition", "ar": "معرض", "fr": "exposition"},
-  {"nl": "vereniging", "article": "de", "type": "noun", "tr": "dernek, kulüp", "en": "association, club", "ar": "جمعية، نادي", "fr": "association"},
-  {"nl": "vieren", "type": "verb", "perfectum": "gevierd", "imperfectum": "vierde", "tr": "kutlamak", "en": "to celebrate", "ar": "يحتفل", "fr": "fêter, célébrer"},
-  {"nl": "vrijwilligerswerk", "article": "het", "type": "noun", "tr": "gönüllü çalışma", "en": "volunteer work", "ar": "عمل تطوعي", "fr": "bénévolat"},
-  {"nl": "wind", "article": "de", "type": "noun", "tr": "rüzgar", "en": "wind", "ar": "رياح", "fr": "vent"},
-  {"nl": "zonde", "type": "noun", "tr": "yazık, günah", "en": "pity, sin", "ar": "خطيئة، يا للأسف", "fr": "dommage, péché"},
-  {"nl": "aflopen", "type": "verb", "perfectum": "afgelopen", "imperfectum": "liep af", "tr": "sona ermek, bitmek", "en": "to end", "ar": "ينتهي", "fr": "se terminer"},
-  {"nl": "bedrijf", "article": "het", "type": "noun", "tr": "şirket, işletme", "en": "company", "ar": "شركة", "fr": "entreprise"},
-  {"nl": "behalve", "type": "prep", "tr": "hariç, dışında", "en": "except", "ar": "ما عدا", "fr": "sauf, excepté"},
-  {"nl": "christelijk", "type": "adj", "tr": "Hristiyan", "en": "Christian", "ar": "مسيحي", "fr": "chrétien"},
-  {"nl": "datum", "article": "de", "type": "noun", "tr": "tarih", "en": "date", "ar": "تاريخ", "fr": "date"},
-  {"nl": "enzovoorts", "type": "adv", "tr": "vesaire, vb.", "en": "etcetera", "ar": "إلخ", "fr": "et cetera"},
-  {"nl": "Europees", "type": "adj", "tr": "Avrupalı", "en": "European", "ar": "أوروبي", "fr": "européen"},
-  {"nl": "Hemelvaart", "type": "noun", "tr": "Göğe Yükseliş", "en": "Ascension Day", "ar": "عيد الصعود", "fr": "Ascension"},
-  {"nl": "herdenken", "type": "verb", "perfectum": "herdacht", "imperfectum": "herdacht", "tr": "anmak", "en": "to commemorate", "ar": "يحيي ذكرى", "fr": "commémorer"},
-  {"nl": "Kerstmis", "type": "noun", "tr": "Noel", "en": "Christmas", "ar": "عيد الميلاد", "fr": "Noël"},
-  {"nl": "koning", "article": "de", "type": "noun", "tr": "kral", "en": "king", "ar": "ملك", "fr": "roi"},
-  {"nl": "Koningsdag", "type": "noun", "tr": "Kral Günü", "en": "King's Day", "ar": "يوم الملك", "fr": "Jour du Roi"},
-  {"nl": "midden", "article": "het", "type": "noun", "tr": "orta", "en": "middle", "ar": "وسط", "fr": "milieu"},
-  {"nl": "noorden", "article": "het", "type": "noun", "tr": "kuzey", "en": "north", "ar": "شمال", "fr": "nord"},
-  {"nl": "officieel", "type": "adj", "tr": "resmi", "en": "official", "ar": "رسمي", "fr": "officiel"},
-  {"nl": "oorlog", "article": "de", "type": "noun", "tr": "savaş", "en": "war", "ar": "حرب", "fr": "guerre"},
-  {"nl": "optreden", "article": "het", "type": "noun", "tr": "gösteri, performans", "en": "performance", "ar": "عرض", "fr": "représentation"},
-  {"nl": "oranje", "type": "adj", "tr": "turuncu", "en": "orange", "ar": "برتقالي", "fr": "orange"},
-  {"nl": "oud en nieuw", "type": "phrase", "tr": "yılbaşı", "en": "New Year's Eve", "ar": "رأس السنة", "fr": "réveillon du Nouvel An"},
-  {"nl": "Pasen", "type": "noun", "tr": "Paskalya", "en": "Easter", "ar": "عيد الفصح", "fr": "Pâques"},
-  {"nl": "Pinksteren", "type": "noun", "tr": "Pentekost", "en": "Pentecost", "ar": "عيد العنصرة", "fr": "Pentecôte"},
-  {"nl": "regio", "article": "de", "type": "noun", "tr": "bölge", "en": "region", "ar": "منطقة", "fr": "région"},
-  {"nl": "respect", "article": "het", "type": "noun", "tr": "saygı", "en": "respect", "ar": "احترام", "fr": "respect"},
-  {"nl": "scholier", "article": "de", "type": "noun", "tr": "öğrenci", "en": "student", "ar": "طالب", "fr": "élève"},
-  {"nl": "slachtoffer", "article": "het", "type": "noun", "tr": "kurban", "en": "victim", "ar": "ضحية", "fr": "victime"},
-  {"nl": "stil", "type": "adj", "tr": "sessiz", "en": "quiet", "ar": "هادئ", "fr": "silencieux"},
-  {"nl": "traditie", "article": "de", "type": "noun", "tr": "gelenek", "en": "tradition", "ar": "تقليد", "fr": "tradition"},
-  {"nl": "voorjaar", "article": "het", "type": "noun", "tr": "ilkbahar", "en": "spring", "ar": "ربيع", "fr": "printemps"},
-  {"nl": "zuiden", "article": "het", "type": "noun", "tr": "güney", "en": "south", "ar": "جنوب", "fr": "sud"},
-  {"nl": "aardrijkskunde", "article": "de", "type": "noun", "tr": "coğrafya", "en": "geography", "ar": "جغرافيا", "fr": "géographie"},
-  {"nl": "bedrag", "article": "het", "type": "noun", "tr": "miktar, tutar", "en": "amount", "ar": "مبلغ", "fr": "montant"},
-  {"nl": "biologie", "article": "de", "type": "noun", "tr": "biyoloji", "en": "biology", "ar": "أحياء", "fr": "biologie"},
-  {"nl": "bouwen", "type": "verb", "perfectum": "gebouwd", "imperfectum": "bouwde", "tr": "inşa etmek", "en": "to build", "ar": "يبني", "fr": "construire"},
-  {"nl": "eerder", "type": "adv", "tr": "daha önce", "en": "earlier", "ar": "سابقاً", "fr": "plus tôt"},
-  {"nl": "engels", "type": "adj", "tr": "İngilizce", "en": "English", "ar": "إنجليزي", "fr": "anglais"},
-  {"nl": "geschiedenis", "article": "de", "type": "noun", "tr": "tarih", "en": "history", "ar": "تاريخ", "fr": "histoire"},
-  {"nl": "gymnastiek", "article": "de", "type": "noun", "tr": "jimnastik", "en": "gymnastics", "ar": "جمباز", "fr": "gymnastique"},
-  {"nl": "klas", "article": "de", "type": "noun", "tr": "sınıf", "en": "class", "ar": "صف", "fr": "classe"},
-  {"nl": "knutselen", "type": "verb", "perfectum": "geknutseld", "imperfectum": "knutselde", "tr": "el işi yapmak", "en": "to do crafts", "ar": "يصنع يدوياً", "fr": "bricoler"},
-  {"nl": "leerling", "article": "de", "type": "noun", "tr": "öğrenci", "en": "pupil", "ar": "تلميذ", "fr": "élève"},
-  {"nl": "lokaal", "article": "het", "type": "noun", "tr": "derslik", "en": "classroom", "ar": "فصل دراسي", "fr": "salle de classe"},
-  {"nl": "meester", "article": "de", "type": "noun", "tr": "öğretmen (erkek)", "en": "teacher (male)", "ar": "معلم", "fr": "maître"},
-  {"nl": "omgaan met", "type": "verb", "perfectum": "omgegaan", "imperfectum": "ging om", "tr": "ilgilenmek, başa çıkmak", "en": "to deal with", "ar": "يتعامل مع", "fr": "gérer, s'occuper de"},
-  {"nl": "ontwikkeling", "article": "de", "type": "noun", "tr": "gelişim", "en": "development", "ar": "تطور", "fr": "développement"},
-  {"nl": "pauze", "article": "de", "type": "noun", "tr": "ara, mola", "en": "break", "ar": "استراحة", "fr": "pause"},
-  {"nl": "prestatie", "article": "de", "type": "noun", "tr": "başarı, performans", "en": "achievement", "ar": "إنجاز", "fr": "performance"},
-  {"nl": "rekenen", "article": "het", "type": "noun", "tr": "matematik, hesap", "en": "arithmetic", "ar": "حساب", "fr": "calcul"},
-  {"nl": "religie", "article": "de", "type": "noun", "tr": "din", "en": "religion", "ar": "دين", "fr": "religion"},
-  {"nl": "rennen", "type": "verb", "perfectum": "gerend", "imperfectum": "rende", "tr": "koşmak", "en": "to run", "ar": "يركض", "fr": "courir"},
-  {"nl": "schoolreisje", "article": "het", "type": "noun", "tr": "okul gezisi", "en": "school trip", "ar": "رحلة مدرسية", "fr": "voyage scolaire"},
-  {"nl": "uitstapje", "article": "het", "type": "noun", "tr": "gezi", "en": "outing", "ar": "نزهة", "fr": "excursion"},
-  {"nl": "uniform", "article": "het", "type": "noun", "tr": "üniforma", "en": "uniform", "ar": "زي موحد", "fr": "uniforme"},
-  {"nl": "vak", "article": "het", "type": "noun", "tr": "ders, alan", "en": "subject", "ar": "مادة دراسية", "fr": "matière"},
-  {"nl": "verplicht", "type": "adj", "tr": "zorunlu", "en": "mandatory", "ar": "إلزامي", "fr": "obligatoire"},
-  {"nl": "advocaat", "article": "de", "type": "noun", "tr": "avukat", "en": "lawyer", "ar": "محامي", "fr": "avocat"},
-  {"nl": "automonteur", "article": "de", "type": "noun", "tr": "oto tamircisi", "en": "car mechanic", "ar": "ميكانيكي سيارات", "fr": "mécanicien auto"},
-  {"nl": "beroep", "article": "het", "type": "noun", "tr": "meslek", "en": "profession", "ar": "مهنة", "fr": "métier"},
-  {"nl": "beslissen", "type": "verb", "perfectum": "beslist", "imperfectum": "besliste", "tr": "karar vermek", "en": "to decide", "ar": "يقرر", "fr": "décider"},
-  {"nl": "cijfer", "article": "het", "type": "noun", "tr": "not, rakam", "en": "grade, number", "ar": "درجة، رقم", "fr": "note, chiffre"},
-  {"nl": "diploma", "article": "het", "type": "noun", "tr": "diploma", "en": "diploma", "ar": "شهادة", "fr": "diplôme"},
-  {"nl": "elektricien", "article": "de", "type": "noun", "tr": "elektrikçi", "en": "electrician", "ar": "كهربائي", "fr": "électricien"},
-  {"nl": "fysiotherapie", "article": "de", "type": "noun", "tr": "fizyoterapi", "en": "physiotherapy", "ar": "علاج طبيعي", "fr": "physiothérapie"},
-  {"nl": "geneeskunde", "article": "de", "type": "noun", "tr": "tıp", "en": "medicine", "ar": "طب", "fr": "médecine"},
-  {"nl": "hbo", "article": "het", "type": "noun", "tr": "yüksekokul", "en": "university of applied sciences", "ar": "كلية تطبيقية", "fr": "école supérieure"},
-  {"nl": "inschrijven", "type": "verb", "perfectum": "ingeschreven", "imperfectum": "schreef in", "tr": "kayıt olmak", "en": "to register", "ar": "يسجل", "fr": "s'inscrire"},
-  {"nl": "interessant", "type": "adj", "tr": "ilginç", "en": "interesting", "ar": "مثير للاهتمام", "fr": "intéressant"},
-  {"nl": "kapper", "article": "de", "type": "noun", "tr": "kuaför", "en": "hairdresser", "ar": "حلاق", "fr": "coiffeur"},
-  {"nl": "keuze", "article": "de", "type": "noun", "tr": "seçim", "en": "choice", "ar": "اختيار", "fr": "choix"},
-  {"nl": "middelbaar", "type": "adj", "tr": "orta (öğretim)", "en": "secondary", "ar": "ثانوي", "fr": "secondaire"},
-  {"nl": "minimaal", "type": "adj", "tr": "en az", "en": "minimum", "ar": "الحد الأدنى", "fr": "minimal"},
-  {"nl": "niveau", "article": "het", "type": "noun", "tr": "seviye", "en": "level", "ar": "مستوى", "fr": "niveau"},
-  {"nl": "onderwijs", "article": "het", "type": "noun", "tr": "eğitim", "en": "education", "ar": "تعليم", "fr": "enseignement"},
-  {"nl": "opleiding", "article": "de", "type": "noun", "tr": "eğitim, öğrenim", "en": "education, training", "ar": "تعليم، تدريب", "fr": "formation"},
-  {"nl": "praktisch", "type": "adj", "tr": "pratik", "en": "practical", "ar": "عملي", "fr": "pratique"},
-  {"nl": "slagen", "type": "verb", "perfectum": "geslaagd", "imperfectum": "slaagde", "tr": "başarmak, geçmek", "en": "to pass", "ar": "ينجح", "fr": "réussir"},
-  {"nl": "theoretisch", "type": "adj", "tr": "teorik", "en": "theoretical", "ar": "نظري", "fr": "théorique"},
-  {"nl": "toekomst", "article": "de", "type": "noun", "tr": "gelecek", "en": "future", "ar": "مستقبل", "fr": "avenir"},
-  {"nl": "universiteit", "article": "de", "type": "noun", "tr": "üniversite", "en": "university", "ar": "جامعة", "fr": "université"},
-  {"nl": "vroeger", "type": "adv", "tr": "eskiden", "en": "in the past", "ar": "في الماضي", "fr": "autrefois"},
-  {"nl": "wetenschappelijk", "type": "adj", "tr": "bilimsel", "en": "scientific", "ar": "علمي", "fr": "scientifique"},
-  {"nl": "zenuwachtig", "type": "adj", "tr": "gergin, sinirli", "en": "nervous", "ar": "متوتر", "fr": "nerveux"},
-  {"nl": "aandacht", "article": "de", "type": "noun", "tr": "dikkat", "en": "attention", "ar": "انتباه", "fr": "attention"},
-  {"nl": "actief", "type": "adj", "tr": "aktif", "en": "active", "ar": "نشيط", "fr": "actif"},
-  {"nl": "bezoeken", "type": "verb", "perfectum": "bezocht", "imperfectum": "bezocht", "tr": "ziyaret etmek", "en": "to visit", "ar": "يزور", "fr": "visiter"},
-  {"nl": "bijbaantje", "article": "het", "type": "noun", "tr": "yarı zamanlı iş", "en": "part-time job", "ar": "عمل جزئي", "fr": "petit boulot"},
-  {"nl": "bijles", "article": "de", "type": "noun", "tr": "özel ders", "en": "tutoring", "ar": "دروس خصوصية", "fr": "cours particulier"},
-  {"nl": "bijzonder", "type": "adj", "tr": "özel, olağanüstü", "en": "special", "ar": "خاص، استثنائي", "fr": "particulier, spécial"},
-  {"nl": "campus", "article": "de", "type": "noun", "tr": "kampüs", "en": "campus", "ar": "حرم جامعي", "fr": "campus"},
-  {"nl": "Chinees", "type": "adj", "tr": "Çince", "en": "Chinese", "ar": "صيني", "fr": "chinois"},
-  {"nl": "gemotiveerd", "type": "adj", "tr": "motive olmuş", "en": "motivated", "ar": "متحمس", "fr": "motivé"},
-  {"nl": "nauwelijks", "type": "adv", "tr": "neredeyse hiç", "en": "hardly", "ar": "بالكاد", "fr": "à peine"},
-  {"nl": "ontzettend", "type": "adv", "tr": "son derece", "en": "extremely", "ar": "للغاية", "fr": "extrêmement"},
-  {"nl": "opvallen", "type": "verb", "perfectum": "opgevallen", "imperfectum": "viel op", "tr": "dikkat çekmek", "en": "to stand out", "ar": "يلفت الانتباه", "fr": "se faire remarquer"},
-  {"nl": "piano", "article": "de", "type": "noun", "tr": "piyano", "en": "piano", "ar": "بيانو", "fr": "piano"},
-  {"nl": "positief", "type": "adj", "tr": "olumlu", "en": "positive", "ar": "إيجابي", "fr": "positif"},
-  {"nl": "presentatie", "article": "de", "type": "noun", "tr": "sunum", "en": "presentation", "ar": "عرض تقديمي", "fr": "présentation"},
-  {"nl": "presteren", "type": "verb", "perfectum": "gepresteerd", "imperfectum": "presteerde", "tr": "performans göstermek", "en": "to perform", "ar": "يؤدي", "fr": "performer"},
-  {"nl": "reis", "article": "de", "type": "noun", "tr": "yolculuk, gezi", "en": "trip", "ar": "رحلة", "fr": "voyage"},
-  {"nl": "samenwerken", "type": "verb", "perfectum": "samengewerkt", "imperfectum": "werkte samen", "tr": "birlikte çalışmak", "en": "to cooperate", "ar": "يتعاون", "fr": "collaborer"},
-  {"nl": "sportclub", "article": "de", "type": "noun", "tr": "spor kulübü", "en": "sports club", "ar": "نادي رياضي", "fr": "club sportif"},
-  {"nl": "toeristisch", "type": "adj", "tr": "turistik", "en": "touristic", "ar": "سياحي", "fr": "touristique"},
-  {"nl": "trouwens", "type": "adv", "tr": "bu arada", "en": "by the way", "ar": "بالمناسبة", "fr": "d'ailleurs"},
-  {"nl": "volgen", "type": "verb", "perfectum": "gevolgd", "imperfectum": "volgde", "tr": "takip etmek", "en": "to follow", "ar": "يتبع", "fr": "suivre"},
-  {"nl": "workshop", "article": "de", "type": "noun", "tr": "atölye", "en": "workshop", "ar": "ورشة عمل", "fr": "atelier"},
-  {"nl": "afhangen van", "type": "verb", "perfectum": "afgehangen", "imperfectum": "hing af", "tr": "bağlı olmak", "en": "to depend on", "ar": "يعتمد على", "fr": "dépendre de"},
-  {"nl": "Arabisch", "type": "adj", "tr": "Arapça", "en": "Arabic", "ar": "عربي", "fr": "arabe"},
-  {"nl": "bedoeling", "article": "de", "type": "noun", "tr": "amaç, niyet", "en": "intention", "ar": "نية، قصد", "fr": "intention"},
-  {"nl": "bereiken", "type": "verb", "perfectum": "bereikt", "imperfectum": "bereikte", "tr": "ulaşmak", "en": "to reach", "ar": "يصل إلى", "fr": "atteindre"},
-  {"nl": "bestaan", "type": "verb", "perfectum": "bestaan", "imperfectum": "bestond", "tr": "var olmak", "en": "to exist", "ar": "يوجد", "fr": "exister"},
-  {"nl": "besteden", "type": "verb", "perfectum": "besteed", "imperfectum": "besteedde", "tr": "harcamak", "en": "to spend", "ar": "ينفق", "fr": "consacrer, dépenser"},
-  {"nl": "dichtbij", "type": "adv", "tr": "yakın", "en": "nearby", "ar": "قريب", "fr": "près"},
-  {"nl": "doel", "article": "het", "type": "noun", "tr": "hedef, amaç", "en": "goal", "ar": "هدف", "fr": "but, objectif"},
-  {"nl": "doorgaan", "type": "verb", "perfectum": "doorgegaan", "imperfectum": "ging door", "tr": "devam etmek", "en": "to continue", "ar": "يستمر", "fr": "continuer"},
-  {"nl": "Duits", "type": "adj", "tr": "Almanca", "en": "German", "ar": "ألماني", "fr": "allemand"},
-  {"nl": "gemakkelijk", "type": "adj", "tr": "kolay", "en": "easy", "ar": "سهل", "fr": "facile"},
-  {"nl": "grammatica", "article": "de", "type": "noun", "tr": "dilbilgisi", "en": "grammar", "ar": "قواعد اللغة", "fr": "grammaire"},
-  {"nl": "interview", "article": "het", "type": "noun", "tr": "mülakat", "en": "interview", "ar": "مقابلة", "fr": "entretien"},
-  {"nl": "invloed", "article": "de", "type": "noun", "tr": "etki", "en": "influence", "ar": "تأثير", "fr": "influence"},
-  {"nl": "klank", "article": "de", "type": "noun", "tr": "ses", "en": "sound", "ar": "صوت", "fr": "son"},
-  {"nl": "lesmethode", "article": "de", "type": "noun", "tr": "öğretim yöntemi", "en": "teaching method", "ar": "طريقة التدريس", "fr": "méthode d'enseignement"},
-  {"nl": "moedertaal", "article": "de", "type": "noun", "tr": "anadil", "en": "mother tongue", "ar": "لغة أم", "fr": "langue maternelle"},
-  {"nl": "motivatie", "article": "de", "type": "noun", "tr": "motivasyon", "en": "motivation", "ar": "دافع", "fr": "motivation"},
-  {"nl": "negatief", "type": "adj", "tr": "olumsuz", "en": "negative", "ar": "سلبي", "fr": "négatif"},
-  {"nl": "onbekend", "type": "adj", "tr": "bilinmeyen", "en": "unknown", "ar": "مجهول", "fr": "inconnu"},
-  {"nl": "staatsexamen NT2", "article": "het", "type": "noun", "tr": "devlet Hollandaca sınavı", "en": "state Dutch exam", "ar": "امتحان الدولة للهولندية", "fr": "examen d'État de néerlandais"},
-  {"nl": "taalcontact", "article": "het", "type": "noun", "tr": "dil teması", "en": "language contact", "ar": "اتصال لغوي", "fr": "contact linguistique"},
-  {"nl": "uitspraak", "article": "de", "type": "noun", "tr": "telaffuz", "en": "pronunciation", "ar": "نطق", "fr": "prononciation"},
-  {"nl": "uitspreken", "type": "verb", "perfectum": "uitgesproken", "imperfectum": "sprak uit", "tr": "telaffuz etmek", "en": "to pronounce", "ar": "ينطق", "fr": "prononcer"},
-  {"nl": "voordeel", "article": "het", "type": "noun", "tr": "avantaj", "en": "advantage", "ar": "ميزة", "fr": "avantage"}
+  {
+    "nl": "agenda",
+    "article": "de",
+    "type": "noun",
+    "tr": "ajanda",
+    "en": "agenda",
+    "ar": "جدول أعمال",
+    "fr": "agenda",
+    "zinnen": [
+      "jz31omtb",
+      "u502tilz"
+    ]
+  },
+  {
+    "nl": "als",
+    "type": "conj",
+    "tr": "eğer, olarak",
+    "en": "if, as",
+    "ar": "إذا، كـ",
+    "fr": "si, comme",
+    "zinnen": [
+      "ajx07tzq"
+    ]
+  },
+  {
+    "nl": "behoorlijk",
+    "type": "adv",
+    "tr": "oldukça, epey",
+    "en": "quite, considerably",
+    "ar": "إلى حد كبير",
+    "fr": "assez, considérablement",
+    "zinnen": [
+      "c658o0h0"
+    ]
+  },
+  {
+    "nl": "binnenkort",
+    "type": "adv",
+    "tr": "yakında",
+    "en": "soon",
+    "ar": "قريباً",
+    "fr": "bientôt",
+    "zinnen": [
+      "jz31omtb"
+    ]
+  },
+  {
+    "nl": "gelijk",
+    "type": "adj",
+    "tr": "eşit, hemen",
+    "en": "equal, immediately",
+    "ar": "متساوي، فوراً",
+    "fr": "égal, immédiatement",
+    "zinnen": [
+      "ajx07tzq",
+      "ki7ptutx",
+      "28y2sdg5",
+      "5wx6svgd",
+      "omf2fkcw"
+    ]
+  },
+  {
+    "nl": "heerlijk",
+    "type": "adj",
+    "tr": "harika, lezzetli",
+    "en": "wonderful, delicious",
+    "ar": "رائع، لذيذ",
+    "fr": "merveilleux, délicieux",
+    "zinnen": [
+      "c9s7a22h",
+      "v39ssb49"
+    ]
+  },
+  {
+    "nl": "hockey",
+    "article": "de",
+    "type": "noun",
+    "tr": "hokey",
+    "en": "hockey",
+    "ar": "هوكي",
+    "fr": "hockey",
+    "zinnen": [
+      "c9s7a22h"
+    ]
+  },
+  {
+    "nl": "lastig",
+    "type": "adj",
+    "tr": "zor, can sıkıcı",
+    "en": "difficult, annoying",
+    "ar": "صعب، مزعج",
+    "fr": "difficile, ennuyeux",
+    "zinnen": [
+      "75tt338d"
+    ]
+  },
+  {
+    "nl": "meegaan",
+    "type": "verb",
+    "perfectum": "meegegaan",
+    "imperfectum": "ging mee",
+    "tr": "birlikte gitmek",
+    "en": "to go along",
+    "ar": "يذهب معه",
+    "fr": "accompagner",
+    "zinnen": [
+      "q9hce29s"
+    ]
+  },
+  {
+    "nl": "omdat",
+    "type": "conj",
+    "tr": "çünkü",
+    "en": "because",
+    "ar": "لأن",
+    "fr": "parce que",
+    "zinnen": [
+      "h4ngz2fl"
+    ]
+  },
+  {
+    "nl": "plezier",
+    "article": "het",
+    "type": "noun",
+    "tr": "eğlence, zevk",
+    "en": "fun, pleasure",
+    "ar": "متعة",
+    "fr": "plaisir",
+    "zinnen": [
+      "5hye1zc4"
+    ]
+  },
+  {
+    "nl": "sauna",
+    "article": "de",
+    "type": "noun",
+    "tr": "sauna",
+    "en": "sauna",
+    "ar": "ساونا",
+    "fr": "sauna",
+    "zinnen": [
+      "brvigb6v"
+    ]
+  },
+  {
+    "nl": "sowieso",
+    "type": "adv",
+    "tr": "zaten, her halükarda",
+    "en": "anyway",
+    "ar": "على أي حال",
+    "fr": "de toute façon",
+    "zinnen": [
+      "l9o6clho"
+    ]
+  },
+  {
+    "nl": "speciaal",
+    "type": "adj",
+    "tr": "özel",
+    "en": "special",
+    "ar": "خاص",
+    "fr": "spécial",
+    "zinnen": [
+      "brvigb6v"
+    ]
+  },
+  {
+    "nl": "strand",
+    "article": "het",
+    "type": "noun",
+    "tr": "plaj, kumsal",
+    "en": "beach",
+    "ar": "شاطئ",
+    "fr": "plage",
+    "zinnen": [
+      "q9hce29s"
+    ]
+  },
+  {
+    "nl": "trainen",
+    "type": "verb",
+    "perfectum": "getraind",
+    "imperfectum": "trainde",
+    "tr": "antrenman yapmak",
+    "en": "to train",
+    "ar": "يتدرب",
+    "fr": "s'entraîner",
+    "zinnen": [
+      "thpv2z5a"
+    ]
+  },
+  {
+    "nl": "training",
+    "article": "de",
+    "type": "noun",
+    "tr": "antrenman",
+    "en": "training",
+    "ar": "تدريب",
+    "fr": "entraînement",
+    "zinnen": [
+      "l9o6clho"
+    ]
+  },
+  {
+    "nl": "veld",
+    "article": "het",
+    "type": "noun",
+    "tr": "alan, saha",
+    "en": "field",
+    "ar": "ملعب، حقل",
+    "fr": "champ, terrain",
+    "zinnen": [
+      "rl1atvv0",
+      "a6n75kuo",
+      "l4nc6122"
+    ]
+  },
+  {
+    "nl": "volwassene",
+    "article": "de",
+    "type": "noun",
+    "tr": "yetişkin",
+    "en": "adult",
+    "ar": "بالغ",
+    "fr": "adulte",
+    "zinnen": [
+      "vo40i9yg"
+    ]
+  },
+  {
+    "nl": "voorlopig",
+    "type": "adv",
+    "tr": "şimdilik",
+    "en": "for now",
+    "ar": "مؤقتاً",
+    "fr": "pour l'instant",
+    "zinnen": [
+      "q9hce29s"
+    ]
+  },
+  {
+    "nl": "wandelen",
+    "type": "verb",
+    "perfectum": "gewandeld",
+    "imperfectum": "wandelde",
+    "tr": "yürüyüş yapmak",
+    "en": "to walk",
+    "ar": "يتمشى",
+    "fr": "se promener",
+    "zinnen": [
+      "h4ngz2fl",
+      "k5rbemak",
+      "ghichm1o"
+    ]
+  },
+  {
+    "nl": "wedstrijd",
+    "article": "de",
+    "type": "noun",
+    "tr": "maç, yarışma",
+    "en": "match, competition",
+    "ar": "مباراة",
+    "fr": "match, compétition",
+    "zinnen": [
+      "thpv2z5a",
+      "rl1atvv0"
+    ]
+  },
+  {
+    "nl": "zwembad",
+    "article": "het",
+    "type": "noun",
+    "tr": "yüzme havuzu",
+    "en": "swimming pool",
+    "ar": "حمام سباحة",
+    "fr": "piscine",
+    "zinnen": [
+      "68yr59gj"
+    ]
+  },
+  {
+    "nl": "zwemmen",
+    "type": "verb",
+    "perfectum": "gezwommen",
+    "imperfectum": "zwom",
+    "tr": "yüzmek",
+    "en": "to swim",
+    "ar": "يسبح",
+    "fr": "nager",
+    "zinnen": [
+      "68yr59gj"
+    ]
+  },
+  {
+    "nl": "bedenken",
+    "type": "verb",
+    "perfectum": "bedacht",
+    "imperfectum": "bedacht",
+    "tr": "düşünmek, akıl etmek",
+    "en": "to think of",
+    "ar": "يفكر في",
+    "fr": "imaginer, penser à",
+    "zinnen": [
+      "nnsfavl7"
+    ]
+  },
+  {
+    "nl": "bovendien",
+    "type": "adv",
+    "tr": "ayrıca, üstelik",
+    "en": "moreover",
+    "ar": "علاوة على ذلك",
+    "fr": "de plus",
+    "zinnen": [
+      "cku0wtvz"
+    ]
+  },
+  {
+    "nl": "durven",
+    "type": "verb",
+    "perfectum": "gedurfd",
+    "imperfectum": "durfde",
+    "tr": "cesaret etmek",
+    "en": "to dare",
+    "ar": "يجرؤ",
+    "fr": "oser",
+    "zinnen": [
+      "68xic7ge"
+    ]
+  },
+  {
+    "nl": "egoïstisch",
+    "type": "adj",
+    "tr": "bencil",
+    "en": "selfish",
+    "ar": "أناني",
+    "fr": "égoïste",
+    "zinnen": [
+      "f6o341gl"
+    ]
+  },
+  {
+    "nl": "examen",
+    "article": "het",
+    "type": "noun",
+    "tr": "sınav",
+    "en": "exam",
+    "ar": "امتحان",
+    "fr": "examen",
+    "zinnen": [
+      "ayv6bxu5",
+      "biojs6hh",
+      "azdyydc0"
+    ]
+  },
+  {
+    "nl": "excuus",
+    "article": "het",
+    "type": "noun",
+    "tr": "mazeret, özür",
+    "en": "excuse",
+    "ar": "عذر",
+    "fr": "excuse",
+    "zinnen": [
+      "vcy7k88x"
+    ]
+  },
+  {
+    "nl": "kwaad",
+    "type": "adj",
+    "tr": "kızgın, öfkeli",
+    "en": "angry",
+    "ar": "غاضب",
+    "fr": "fâché, en colère",
+    "zinnen": [
+      "vcy7k88x"
+    ]
+  },
+  {
+    "nl": "liegen",
+    "type": "verb",
+    "perfectum": "gelogen",
+    "imperfectum": "loog",
+    "tr": "yalan söylemek",
+    "en": "to lie",
+    "ar": "يكذب",
+    "fr": "mentir",
+    "zinnen": [
+      "oxfias52"
+    ]
+  },
+  {
+    "nl": "logeren",
+    "type": "verb",
+    "perfectum": "gelogeerd",
+    "imperfectum": "logeerde",
+    "tr": "misafir kalmak",
+    "en": "to stay over",
+    "ar": "يبيت",
+    "fr": "loger",
+    "zinnen": [
+      "g1pghl1b"
+    ]
+  },
+  {
+    "nl": "moeite",
+    "article": "de",
+    "type": "noun",
+    "tr": "çaba, zorluk",
+    "en": "effort, difficulty",
+    "ar": "جهد، صعوبة",
+    "fr": "effort, difficulté",
+    "zinnen": [
+      "iqas0y7h"
+    ]
+  },
+  {
+    "nl": "neef",
+    "article": "de",
+    "type": "noun",
+    "tr": "kuzen (erkek), yeğen",
+    "en": "cousin, nephew",
+    "ar": "ابن عم، ابن أخ",
+    "fr": "cousin, neveu",
+    "zinnen": [
+      "ogyzanl1"
+    ]
+  },
+  {
+    "nl": "nicht",
+    "article": "de",
+    "type": "noun",
+    "tr": "kuzen (kadın), yeğen",
+    "en": "cousin, niece",
+    "ar": "ابنة عم، ابنة أخ",
+    "fr": "cousine, nièce",
+    "zinnen": [
+      "ogyzanl1",
+      "g1pghl1b"
+    ]
+  },
+  {
+    "nl": "ontdekken",
+    "type": "verb",
+    "perfectum": "ontdekt",
+    "imperfectum": "ontdekte",
+    "tr": "keşfetmek",
+    "en": "to discover",
+    "ar": "يكتشف",
+    "fr": "découvrir",
+    "zinnen": [
+      "7dcngvn3"
+    ]
+  },
+  {
+    "nl": "oppassen op",
+    "type": "verb",
+    "perfectum": "opgepast",
+    "imperfectum": "paste op",
+    "tr": "bakmak, gözetmek",
+    "en": "to look after",
+    "ar": "يعتني بـ",
+    "fr": "surveiller, garder",
+    "zinnen": [
+      "jlmmqiuu",
+      "geuorax7"
+    ]
+  },
+  {
+    "nl": "plan",
+    "article": "het",
+    "type": "noun",
+    "tr": "plan",
+    "en": "plan",
+    "ar": "خطة",
+    "fr": "plan",
+    "zinnen": [
+      "nnsfavl7"
+    ]
+  },
+  {
+    "nl": "reizen",
+    "type": "verb",
+    "perfectum": "gereisd",
+    "imperfectum": "reisde",
+    "tr": "seyahat etmek",
+    "en": "to travel",
+    "ar": "يسافر",
+    "fr": "voyager",
+    "zinnen": [
+      "7dcngvn3"
+    ]
+  },
+  {
+    "nl": "schoonouders",
+    "article": "de",
+    "type": "noun",
+    "tr": "kayınvalide ve kayınpeder",
+    "en": "parents-in-law",
+    "ar": "أهل الزوج/الزوجة",
+    "fr": "beaux-parents",
+    "zinnen": [
+      "elslftmn"
+    ]
+  },
+  {
+    "nl": "smoes",
+    "article": "de",
+    "type": "noun",
+    "tr": "bahane",
+    "en": "excuse",
+    "ar": "حجة",
+    "fr": "excuse, prétexte",
+    "zinnen": [
+      "ovowzp2m"
+    ]
+  },
+  {
+    "nl": "vast",
+    "type": "adj",
+    "tr": "sabit, kesin",
+    "en": "fixed, sure",
+    "ar": "ثابت، مؤكد",
+    "fr": "fixe, sûr",
+    "zinnen": [
+      "ldgzgay4"
+    ]
+  },
+  {
+    "nl": "verzinnen",
+    "type": "verb",
+    "perfectum": "verzonnen",
+    "imperfectum": "verzon",
+    "tr": "uydurmak, icat etmek",
+    "en": "to make up",
+    "ar": "يختلق",
+    "fr": "inventer",
+    "zinnen": [
+      "ovowzp2m"
+    ]
+  },
+  {
+    "nl": "vriendschap",
+    "article": "de",
+    "type": "noun",
+    "tr": "arkadaşlık",
+    "en": "friendship",
+    "ar": "صداقة",
+    "fr": "amitié",
+    "zinnen": [
+      "iqas0y7h",
+      "uft7dyxg"
+    ]
+  },
+  {
+    "nl": "waarheid",
+    "article": "de",
+    "type": "noun",
+    "tr": "gerçek, doğru",
+    "en": "truth",
+    "ar": "حقيقة",
+    "fr": "vérité",
+    "zinnen": [
+      "oxfias52"
+    ]
+  },
+  {
+    "nl": "zwager",
+    "article": "de",
+    "type": "noun",
+    "tr": "kayınbirader, enişte",
+    "en": "brother-in-law",
+    "ar": "صهر",
+    "fr": "beau-frère",
+    "zinnen": [
+      "g1pghl1b",
+      "elslftmn"
+    ]
+  },
+  {
+    "nl": "bar",
+    "article": "de",
+    "type": "noun",
+    "tr": "bar",
+    "en": "bar",
+    "ar": "بار",
+    "fr": "bar",
+    "zinnen": [
+      "ykwki3hb"
+    ]
+  },
+  {
+    "nl": "bardienst",
+    "article": "de",
+    "type": "noun",
+    "tr": "bar nöbeti",
+    "en": "bar duty",
+    "ar": "نوبة البار",
+    "fr": "service au bar",
+    "zinnen": [
+      "d1kqfw8q"
+    ]
+  },
+  {
+    "nl": "beurt",
+    "article": "de",
+    "type": "noun",
+    "tr": "sıra",
+    "en": "turn",
+    "ar": "دور",
+    "fr": "tour",
+    "zinnen": [
+      "qc1vwrz6"
+    ]
+  },
+  {
+    "nl": "dienst",
+    "article": "de",
+    "type": "noun",
+    "tr": "hizmet, nöbet",
+    "en": "service, shift",
+    "ar": "خدمة، نوبة",
+    "fr": "service",
+    "zinnen": [
+      "enry0hfu"
+    ]
+  },
+  {
+    "nl": "herfst",
+    "article": "de",
+    "type": "noun",
+    "tr": "sonbahar",
+    "en": "autumn",
+    "ar": "خريف",
+    "fr": "automne",
+    "zinnen": [
+      "areyugyx",
+      "aix8knj9"
+    ]
+  },
+  {
+    "nl": "hierheen",
+    "type": "adv",
+    "tr": "buraya",
+    "en": "here (direction)",
+    "ar": "إلى هنا",
+    "fr": "ici (direction)",
+    "zinnen": [
+      "d1kqfw8q"
+    ]
+  },
+  {
+    "nl": "hoezo",
+    "type": "adv",
+    "tr": "nasıl yani, neden",
+    "en": "how come, why",
+    "ar": "كيف ذلك",
+    "fr": "comment ça",
+    "zinnen": [
+      "ti2s6jmo"
+    ]
+  },
+  {
+    "nl": "invallen",
+    "type": "verb",
+    "perfectum": "ingevallen",
+    "imperfectum": "viel in",
+    "tr": "yerine geçmek",
+    "en": "to fill in",
+    "ar": "يحل محل",
+    "fr": "remplacer",
+    "zinnen": [
+      "jr13r8b2"
+    ]
+  },
+  {
+    "nl": "juf",
+    "article": "de",
+    "type": "noun",
+    "tr": "öğretmen (kadın)",
+    "en": "teacher (female)",
+    "ar": "معلمة",
+    "fr": "maîtresse",
+    "zinnen": [
+      "0viiunsz"
+    ]
+  },
+  {
+    "nl": "kaartje",
+    "article": "het",
+    "type": "noun",
+    "tr": "bilet, kart",
+    "en": "ticket, card",
+    "ar": "تذكرة، بطاقة",
+    "fr": "billet, carte",
+    "zinnen": [
+      "yv1dpd1e"
+    ]
+  },
+  {
+    "nl": "kantine",
+    "article": "de",
+    "type": "noun",
+    "tr": "kantin",
+    "en": "canteen",
+    "ar": "مقصف",
+    "fr": "cantine",
+    "zinnen": [
+      "enry0hfu"
+    ]
+  },
+  {
+    "nl": "oom",
+    "article": "de",
+    "type": "noun",
+    "tr": "amca, dayı",
+    "en": "uncle",
+    "ar": "عم، خال",
+    "fr": "oncle",
+    "zinnen": [
+      "rkicdnur"
+    ]
+  },
+  {
+    "nl": "overnemen",
+    "type": "verb",
+    "perfectum": "overgenomen",
+    "imperfectum": "nam over",
+    "tr": "devralmak",
+    "en": "to take over",
+    "ar": "يتولى",
+    "fr": "reprendre",
+    "zinnen": [
+      "qc1vwrz6"
+    ]
+  },
+  {
+    "nl": "regen",
+    "article": "de",
+    "type": "noun",
+    "tr": "yağmur",
+    "en": "rain",
+    "ar": "مطر",
+    "fr": "pluie",
+    "zinnen": [
+      "pab638d2",
+      "tmnry67p"
+    ]
+  },
+  {
+    "nl": "rooster",
+    "article": "het",
+    "type": "noun",
+    "tr": "program, çizelge",
+    "en": "schedule",
+    "ar": "جدول",
+    "fr": "emploi du temps",
+    "zinnen": [
+      "vomq6cwt"
+    ]
+  },
+  {
+    "nl": "schoolplein",
+    "article": "het",
+    "type": "noun",
+    "tr": "okul bahçesi",
+    "en": "schoolyard",
+    "ar": "ساحة المدرسة",
+    "fr": "cour d'école",
+    "zinnen": [
+      "0viiunsz"
+    ]
+  },
+  {
+    "nl": "super",
+    "type": "adj",
+    "tr": "süper, harika",
+    "en": "super, great",
+    "ar": "رائع",
+    "fr": "super",
+    "zinnen": [
+      "mhqg59jn"
+    ]
+  },
+  {
+    "nl": "tante",
+    "article": "de",
+    "type": "noun",
+    "tr": "hala, teyze",
+    "en": "aunt",
+    "ar": "عمة، خالة",
+    "fr": "tante",
+    "zinnen": [
+      "rkicdnur"
+    ]
+  },
+  {
+    "nl": "tentoonstelling",
+    "article": "de",
+    "type": "noun",
+    "tr": "sergi",
+    "en": "exhibition",
+    "ar": "معرض",
+    "fr": "exposition",
+    "zinnen": [
+      "yv1dpd1e"
+    ]
+  },
+  {
+    "nl": "vereniging",
+    "article": "de",
+    "type": "noun",
+    "tr": "dernek, kulüp",
+    "en": "association, club",
+    "ar": "جمعية، نادي",
+    "fr": "association",
+    "zinnen": [
+      "o96exb4v"
+    ]
+  },
+  {
+    "nl": "vieren",
+    "type": "verb",
+    "perfectum": "gevierd",
+    "imperfectum": "vierde",
+    "tr": "kutlamak",
+    "en": "to celebrate",
+    "ar": "يحتفل",
+    "fr": "fêter, célébrer",
+    "zinnen": [
+      "hixhx61g"
+    ]
+  },
+  {
+    "nl": "vrijwilligerswerk",
+    "article": "het",
+    "type": "noun",
+    "tr": "gönüllü çalışma",
+    "en": "volunteer work",
+    "ar": "عمل تطوعي",
+    "fr": "bénévolat",
+    "zinnen": [
+      "iruglic3",
+      "p6dx0jdk"
+    ]
+  },
+  {
+    "nl": "wind",
+    "article": "de",
+    "type": "noun",
+    "tr": "rüzgar",
+    "en": "wind",
+    "ar": "رياح",
+    "fr": "vent",
+    "zinnen": [
+      "mhqg59jn"
+    ]
+  },
+  {
+    "nl": "zonde",
+    "type": "noun",
+    "tr": "yazık, günah",
+    "en": "pity, sin",
+    "ar": "خطيئة، يا للأسف",
+    "fr": "dommage, péché",
+    "zinnen": [
+      "w8s9kyo2"
+    ]
+  },
+  {
+    "nl": "aflopen",
+    "type": "verb",
+    "perfectum": "afgelopen",
+    "imperfectum": "liep af",
+    "tr": "sona ermek, bitmek",
+    "en": "to end",
+    "ar": "ينتهي",
+    "fr": "se terminer",
+    "zinnen": [
+      "e7mz5tni",
+      "zwzsqrz9"
+    ]
+  },
+  {
+    "nl": "bedrijf",
+    "article": "het",
+    "type": "noun",
+    "tr": "şirket, işletme",
+    "en": "company",
+    "ar": "شركة",
+    "fr": "entreprise",
+    "zinnen": [
+      "hrh9eil6",
+      "l0a94b2m",
+      "53f1g6mb",
+      "w52i5s5y",
+      "ea4oomb5"
+    ]
+  },
+  {
+    "nl": "behalve",
+    "type": "prep",
+    "tr": "hariç, dışında",
+    "en": "except",
+    "ar": "ما عدا",
+    "fr": "sauf, excepté",
+    "zinnen": [
+      "hrh9eil6"
+    ]
+  },
+  {
+    "nl": "christelijk",
+    "type": "adj",
+    "tr": "Hristiyan",
+    "en": "Christian",
+    "ar": "مسيحي",
+    "fr": "chrétien",
+    "zinnen": [
+      "at5o2s54"
+    ]
+  },
+  {
+    "nl": "datum",
+    "article": "de",
+    "type": "noun",
+    "tr": "tarih",
+    "en": "date",
+    "ar": "تاريخ",
+    "fr": "date",
+    "zinnen": [
+      "0n7fvtvo"
+    ]
+  },
+  {
+    "nl": "enzovoorts",
+    "type": "adv",
+    "tr": "vesaire, vb.",
+    "en": "etcetera",
+    "ar": "إلخ",
+    "fr": "et cetera",
+    "zinnen": [
+      "q51pp304",
+      "ur2wonb0"
+    ]
+  },
+  {
+    "nl": "Europees",
+    "type": "adj",
+    "tr": "Avrupalı",
+    "en": "European",
+    "ar": "أوروبي",
+    "fr": "européen",
+    "zinnen": [
+      "q51pp304"
+    ]
+  },
+  {
+    "nl": "Hemelvaart",
+    "type": "noun",
+    "tr": "Göğe Yükseliş",
+    "en": "Ascension Day",
+    "ar": "عيد الصعود",
+    "fr": "Ascension",
+    "zinnen": [
+      "olxm9ucs"
+    ]
+  },
+  {
+    "nl": "herdenken",
+    "type": "verb",
+    "perfectum": "herdacht",
+    "imperfectum": "herdacht",
+    "tr": "anmak",
+    "en": "to commemorate",
+    "ar": "يحيي ذكرى",
+    "fr": "commémorer",
+    "zinnen": [
+      "9gidv5th"
+    ]
+  },
+  {
+    "nl": "Kerstmis",
+    "type": "noun",
+    "tr": "Noel",
+    "en": "Christmas",
+    "ar": "عيد الميلاد",
+    "fr": "Noël",
+    "zinnen": [
+      "mqg0qe0c"
+    ]
+  },
+  {
+    "nl": "koning",
+    "article": "de",
+    "type": "noun",
+    "tr": "kral",
+    "en": "king",
+    "ar": "ملك",
+    "fr": "roi",
+    "zinnen": [
+      "dhj673sr"
+    ]
+  },
+  {
+    "nl": "Koningsdag",
+    "type": "noun",
+    "tr": "Kral Günü",
+    "en": "King's Day",
+    "ar": "يوم الملك",
+    "fr": "Jour du Roi",
+    "zinnen": [
+      "1iuta5nm"
+    ]
+  },
+  {
+    "nl": "midden",
+    "article": "het",
+    "type": "noun",
+    "tr": "orta",
+    "en": "middle",
+    "ar": "وسط",
+    "fr": "milieu",
+    "zinnen": [
+      "mqg0qe0c"
+    ]
+  },
+  {
+    "nl": "noorden",
+    "article": "het",
+    "type": "noun",
+    "tr": "kuzey",
+    "en": "north",
+    "ar": "شمال",
+    "fr": "nord",
+    "zinnen": [
+      "6qamqo0u"
+    ]
+  },
+  {
+    "nl": "officieel",
+    "type": "adj",
+    "tr": "resmi",
+    "en": "official",
+    "ar": "رسمي",
+    "fr": "officiel",
+    "zinnen": [
+      "olxm9ucs",
+      "j531r0vx"
+    ]
+  },
+  {
+    "nl": "oorlog",
+    "article": "de",
+    "type": "noun",
+    "tr": "savaş",
+    "en": "war",
+    "ar": "حرب",
+    "fr": "guerre",
+    "zinnen": [
+      "9gidv5th"
+    ]
+  },
+  {
+    "nl": "optreden",
+    "article": "het",
+    "type": "noun",
+    "tr": "gösteri, performans",
+    "en": "performance",
+    "ar": "عرض",
+    "fr": "représentation",
+    "zinnen": [
+      "o96exb4v",
+      "mqg0qe0c",
+      "e7mz5tni"
+    ]
+  },
+  {
+    "nl": "oranje",
+    "type": "adj",
+    "tr": "turuncu",
+    "en": "orange",
+    "ar": "برتقالي",
+    "fr": "orange",
+    "zinnen": [
+      "1iuta5nm"
+    ]
+  },
+  {
+    "nl": "oud en nieuw",
+    "type": "phrase",
+    "tr": "yılbaşı",
+    "en": "New Year's Eve",
+    "ar": "رأس السنة",
+    "fr": "réveillon du Nouvel An",
+    "zinnen": [
+      "4i3fntgj"
+    ]
+  },
+  {
+    "nl": "Pasen",
+    "type": "noun",
+    "tr": "Paskalya",
+    "en": "Easter",
+    "ar": "عيد الفصح",
+    "fr": "Pâques",
+    "zinnen": [
+      "248d1fcp",
+      "5zze6ypf"
+    ]
+  },
+  {
+    "nl": "Pinksteren",
+    "type": "noun",
+    "tr": "Pentekost",
+    "en": "Pentecost",
+    "ar": "عيد العنصرة",
+    "fr": "Pentecôte",
+    "zinnen": [
+      "at5o2s54"
+    ]
+  },
+  {
+    "nl": "regio",
+    "article": "de",
+    "type": "noun",
+    "tr": "bölge",
+    "en": "region",
+    "ar": "منطقة",
+    "fr": "région",
+    "zinnen": [
+      "0n7fvtvo",
+      "qtp7io4u"
+    ]
+  },
+  {
+    "nl": "respect",
+    "article": "het",
+    "type": "noun",
+    "tr": "saygı",
+    "en": "respect",
+    "ar": "احترام",
+    "fr": "respect",
+    "zinnen": [
+      "koex1hg1"
+    ]
+  },
+  {
+    "nl": "scholier",
+    "article": "de",
+    "type": "noun",
+    "tr": "öğrenci",
+    "en": "student",
+    "ar": "طالب",
+    "fr": "élève",
+    "zinnen": [
+      "5zze6ypf"
+    ]
+  },
+  {
+    "nl": "slachtoffer",
+    "article": "het",
+    "type": "noun",
+    "tr": "kurban",
+    "en": "victim",
+    "ar": "ضحية",
+    "fr": "victime",
+    "zinnen": [
+      "9gidv5th"
+    ]
+  },
+  {
+    "nl": "stil",
+    "type": "adj",
+    "tr": "sessiz",
+    "en": "quiet",
+    "ar": "هادئ",
+    "fr": "silencieux",
+    "zinnen": [
+      "yvsnwgv1"
+    ]
+  },
+  {
+    "nl": "traditie",
+    "article": "de",
+    "type": "noun",
+    "tr": "gelenek",
+    "en": "tradition",
+    "ar": "تقليد",
+    "fr": "tradition",
+    "zinnen": [
+      "j531r0vx"
+    ]
+  },
+  {
+    "nl": "voorjaar",
+    "article": "het",
+    "type": "noun",
+    "tr": "ilkbahar",
+    "en": "spring",
+    "ar": "ربيع",
+    "fr": "printemps",
+    "zinnen": [
+      "dz3ra35e",
+      "5h4jnuhf"
+    ]
+  },
+  {
+    "nl": "zuiden",
+    "article": "het",
+    "type": "noun",
+    "tr": "güney",
+    "en": "south",
+    "ar": "جنوب",
+    "fr": "sud",
+    "zinnen": [
+      "6qamqo0u"
+    ]
+  },
+  {
+    "nl": "aardrijkskunde",
+    "article": "de",
+    "type": "noun",
+    "tr": "coğrafya",
+    "en": "geography",
+    "ar": "جغرافيا",
+    "fr": "géographie",
+    "zinnen": [
+      "6km5ikvl"
+    ]
+  },
+  {
+    "nl": "bedrag",
+    "article": "het",
+    "type": "noun",
+    "tr": "miktar, tutar",
+    "en": "amount",
+    "ar": "مبلغ",
+    "fr": "montant",
+    "zinnen": [
+      "536w17jn"
+    ]
+  },
+  {
+    "nl": "biologie",
+    "article": "de",
+    "type": "noun",
+    "tr": "biyoloji",
+    "en": "biology",
+    "ar": "أحياء",
+    "fr": "biologie",
+    "zinnen": [
+      "6km5ikvl"
+    ]
+  },
+  {
+    "nl": "bouwen",
+    "type": "verb",
+    "perfectum": "gebouwd",
+    "imperfectum": "bouwde",
+    "tr": "inşa etmek",
+    "en": "to build",
+    "ar": "يبني",
+    "fr": "construire",
+    "zinnen": [
+      "80adc6pu"
+    ]
+  },
+  {
+    "nl": "eerder",
+    "type": "adv",
+    "tr": "daha önce",
+    "en": "earlier",
+    "ar": "سابقاً",
+    "fr": "plus tôt",
+    "zinnen": [
+      "2i1qw5b3",
+      "ucfn60u6"
+    ]
+  },
+  {
+    "nl": "engels",
+    "type": "adj",
+    "tr": "İngilizce",
+    "en": "English",
+    "ar": "إنجليزي",
+    "fr": "anglais",
+    "zinnen": [
+      "51yr96sm",
+      "mp345kdn",
+      "dv65pjb1"
+    ]
+  },
+  {
+    "nl": "geschiedenis",
+    "article": "de",
+    "type": "noun",
+    "tr": "tarih",
+    "en": "history",
+    "ar": "تاريخ",
+    "fr": "histoire",
+    "zinnen": [
+      "xxbsdyhv"
+    ]
+  },
+  {
+    "nl": "gymnastiek",
+    "article": "de",
+    "type": "noun",
+    "tr": "jimnastik",
+    "en": "gymnastics",
+    "ar": "جمباز",
+    "fr": "gymnastique",
+    "zinnen": [
+      "jy00fnue"
+    ]
+  },
+  {
+    "nl": "klas",
+    "article": "de",
+    "type": "noun",
+    "tr": "sınıf",
+    "en": "class",
+    "ar": "صف",
+    "fr": "classe",
+    "zinnen": [
+      "duoxjok3",
+      "aioeva53"
+    ]
+  },
+  {
+    "nl": "knutselen",
+    "type": "verb",
+    "perfectum": "geknutseld",
+    "imperfectum": "knutselde",
+    "tr": "el işi yapmak",
+    "en": "to do crafts",
+    "ar": "يصنع يدوياً",
+    "fr": "bricoler",
+    "zinnen": [
+      "az60bl33"
+    ]
+  },
+  {
+    "nl": "leerling",
+    "article": "de",
+    "type": "noun",
+    "tr": "öğrenci",
+    "en": "pupil",
+    "ar": "تلميذ",
+    "fr": "élève",
+    "zinnen": [
+      "duoxjok3",
+      "ialq0az3",
+      "aszmxw2s",
+      "9gyh79t6",
+      "s1hjif8s"
+    ]
+  },
+  {
+    "nl": "lokaal",
+    "article": "het",
+    "type": "noun",
+    "tr": "derslik",
+    "en": "classroom",
+    "ar": "فصل دراسي",
+    "fr": "salle de classe",
+    "zinnen": [
+      "s9i8lkds"
+    ]
+  },
+  {
+    "nl": "meester",
+    "article": "de",
+    "type": "noun",
+    "tr": "öğretmen (erkek)",
+    "en": "teacher (male)",
+    "ar": "معلم",
+    "fr": "maître",
+    "zinnen": [
+      "s9i8lkds"
+    ]
+  },
+  {
+    "nl": "omgaan met",
+    "type": "verb",
+    "perfectum": "omgegaan",
+    "imperfectum": "ging om",
+    "tr": "ilgilenmek, başa çıkmak",
+    "en": "to deal with",
+    "ar": "يتعامل مع",
+    "fr": "gérer, s'occuper de",
+    "zinnen": [
+      "ase2cp6j"
+    ]
+  },
+  {
+    "nl": "ontwikkeling",
+    "article": "de",
+    "type": "noun",
+    "tr": "gelişim",
+    "en": "development",
+    "ar": "تطور",
+    "fr": "développement",
+    "zinnen": [
+      "qcypp8jz"
+    ]
+  },
+  {
+    "nl": "pauze",
+    "article": "de",
+    "type": "noun",
+    "tr": "ara, mola",
+    "en": "break",
+    "ar": "استراحة",
+    "fr": "pause",
+    "zinnen": [
+      "az60bl33"
+    ]
+  },
+  {
+    "nl": "prestatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "başarı, performans",
+    "en": "achievement",
+    "ar": "إنجاز",
+    "fr": "performance",
+    "zinnen": [
+      "j3m0h2em"
+    ]
+  },
+  {
+    "nl": "rekenen",
+    "article": "het",
+    "type": "noun",
+    "tr": "matematik, hesap",
+    "en": "arithmetic",
+    "ar": "حساب",
+    "fr": "calcul",
+    "zinnen": [
+      "ne6zm9h5",
+      "2i1qw5b3"
+    ]
+  },
+  {
+    "nl": "religie",
+    "article": "de",
+    "type": "noun",
+    "tr": "din",
+    "en": "religion",
+    "ar": "دين",
+    "fr": "religion",
+    "zinnen": [
+      "15np70gb"
+    ]
+  },
+  {
+    "nl": "rennen",
+    "type": "verb",
+    "perfectum": "gerend",
+    "imperfectum": "rende",
+    "tr": "koşmak",
+    "en": "to run",
+    "ar": "يركض",
+    "fr": "courir",
+    "zinnen": [
+      "jy00fnue"
+    ]
+  },
+  {
+    "nl": "schoolreisje",
+    "article": "het",
+    "type": "noun",
+    "tr": "okul gezisi",
+    "en": "school trip",
+    "ar": "رحلة مدرسية",
+    "fr": "voyage scolaire",
+    "zinnen": [
+      "n9aks4yu"
+    ]
+  },
+  {
+    "nl": "uitstapje",
+    "article": "het",
+    "type": "noun",
+    "tr": "gezi",
+    "en": "outing",
+    "ar": "نزهة",
+    "fr": "excursion",
+    "zinnen": [
+      "n9aks4yu",
+      "bi9ctob5"
+    ]
+  },
+  {
+    "nl": "uniform",
+    "article": "het",
+    "type": "noun",
+    "tr": "üniforma",
+    "en": "uniform",
+    "ar": "زي موحد",
+    "fr": "uniforme",
+    "zinnen": [
+      "h6mo1ljo",
+      "yig12rz9"
+    ]
+  },
+  {
+    "nl": "vak",
+    "article": "het",
+    "type": "noun",
+    "tr": "ders, alan",
+    "en": "subject",
+    "ar": "مادة دراسية",
+    "fr": "matière",
+    "zinnen": [
+      "9c7x41o0"
+    ]
+  },
+  {
+    "nl": "verplicht",
+    "type": "adj",
+    "tr": "zorunlu",
+    "en": "mandatory",
+    "ar": "إلزامي",
+    "fr": "obligatoire",
+    "zinnen": [
+      "h6mo1ljo",
+      "yig12rz9"
+    ]
+  },
+  {
+    "nl": "advocaat",
+    "article": "de",
+    "type": "noun",
+    "tr": "avukat",
+    "en": "lawyer",
+    "ar": "محامي",
+    "fr": "avocat",
+    "zinnen": [
+      "v79toc3s"
+    ]
+  },
+  {
+    "nl": "automonteur",
+    "article": "de",
+    "type": "noun",
+    "tr": "oto tamircisi",
+    "en": "car mechanic",
+    "ar": "ميكانيكي سيارات",
+    "fr": "mécanicien auto",
+    "zinnen": [
+      "j4hq5qu1"
+    ]
+  },
+  {
+    "nl": "beroep",
+    "article": "het",
+    "type": "noun",
+    "tr": "meslek",
+    "en": "profession",
+    "ar": "مهنة",
+    "fr": "métier",
+    "zinnen": [
+      "i0r0414n"
+    ]
+  },
+  {
+    "nl": "beslissen",
+    "type": "verb",
+    "perfectum": "beslist",
+    "imperfectum": "besliste",
+    "tr": "karar vermek",
+    "en": "to decide",
+    "ar": "يقرر",
+    "fr": "décider",
+    "zinnen": [
+      "i0r0414n"
+    ]
+  },
+  {
+    "nl": "cijfer",
+    "article": "het",
+    "type": "noun",
+    "tr": "not, rakam",
+    "en": "grade, number",
+    "ar": "درجة، رقم",
+    "fr": "note, chiffre",
+    "zinnen": [
+      "txwnwa4c"
+    ]
+  },
+  {
+    "nl": "diploma",
+    "article": "het",
+    "type": "noun",
+    "tr": "diploma",
+    "en": "diploma",
+    "ar": "شهادة",
+    "fr": "diplôme",
+    "zinnen": [
+      "niz4mngo"
+    ]
+  },
+  {
+    "nl": "elektricien",
+    "article": "de",
+    "type": "noun",
+    "tr": "elektrikçi",
+    "en": "electrician",
+    "ar": "كهربائي",
+    "fr": "électricien",
+    "zinnen": [
+      "mgbtod01"
+    ]
+  },
+  {
+    "nl": "fysiotherapie",
+    "article": "de",
+    "type": "noun",
+    "tr": "fizyoterapi",
+    "en": "physiotherapy",
+    "ar": "علاج طبيعي",
+    "fr": "physiothérapie",
+    "zinnen": [
+      "v7ig6inx"
+    ]
+  },
+  {
+    "nl": "geneeskunde",
+    "article": "de",
+    "type": "noun",
+    "tr": "tıp",
+    "en": "medicine",
+    "ar": "طب",
+    "fr": "médecine",
+    "zinnen": [
+      "gq4fkdpr"
+    ]
+  },
+  {
+    "nl": "hbo",
+    "article": "het",
+    "type": "noun",
+    "tr": "yüksekokul",
+    "en": "university of applied sciences",
+    "ar": "كلية تطبيقية",
+    "fr": "école supérieure",
+    "zinnen": [
+      "w6c1j7ja",
+      "niz4mngo"
+    ]
+  },
+  {
+    "nl": "inschrijven",
+    "type": "verb",
+    "perfectum": "ingeschreven",
+    "imperfectum": "schreef in",
+    "tr": "kayıt olmak",
+    "en": "to register",
+    "ar": "يسجل",
+    "fr": "s'inscrire",
+    "zinnen": [
+      "w6c1j7ja"
+    ]
+  },
+  {
+    "nl": "interessant",
+    "type": "adj",
+    "tr": "ilginç",
+    "en": "interesting",
+    "ar": "مثير للاهتمام",
+    "fr": "intéressant",
+    "zinnen": [
+      "mgbtod01",
+      "ge3x26zg"
+    ]
+  },
+  {
+    "nl": "kapper",
+    "article": "de",
+    "type": "noun",
+    "tr": "kuaför",
+    "en": "hairdresser",
+    "ar": "حلاق",
+    "fr": "coiffeur",
+    "zinnen": [
+      "r8ybgum2",
+      "bozf5xry"
+    ]
+  },
+  {
+    "nl": "keuze",
+    "article": "de",
+    "type": "noun",
+    "tr": "seçim",
+    "en": "choice",
+    "ar": "اختيار",
+    "fr": "choix",
+    "zinnen": [
+      "ya1qanky",
+      "t831gosk"
+    ]
+  },
+  {
+    "nl": "middelbaar",
+    "type": "adj",
+    "tr": "orta (öğretim)",
+    "en": "secondary",
+    "ar": "ثانوي",
+    "fr": "secondaire",
+    "zinnen": [
+      "tjl4jvu4"
+    ]
+  },
+  {
+    "nl": "minimaal",
+    "type": "adj",
+    "tr": "en az",
+    "en": "minimum",
+    "ar": "الحد الأدنى",
+    "fr": "minimal",
+    "zinnen": [
+      "scm00xn9",
+      "oduw9bjm"
+    ]
+  },
+  {
+    "nl": "niveau",
+    "article": "het",
+    "type": "noun",
+    "tr": "seviye",
+    "en": "level",
+    "ar": "مستوى",
+    "fr": "niveau",
+    "zinnen": [
+      "136qmtct"
+    ]
+  },
+  {
+    "nl": "onderwijs",
+    "article": "het",
+    "type": "noun",
+    "tr": "eğitim",
+    "en": "education",
+    "ar": "تعليم",
+    "fr": "enseignement",
+    "zinnen": [
+      "bvjhssh2",
+      "e5ffmudl",
+      "yfwy8rh9",
+      "2cmyqh9r",
+      "he5u0mbl"
+    ]
+  },
+  {
+    "nl": "opleiding",
+    "article": "de",
+    "type": "noun",
+    "tr": "eğitim, öğrenim",
+    "en": "education, training",
+    "ar": "تعليم، تدريب",
+    "fr": "formation",
+    "zinnen": [
+      "tjl4jvu4",
+      "4c0srvqm"
+    ]
+  },
+  {
+    "nl": "praktisch",
+    "type": "adj",
+    "tr": "pratik",
+    "en": "practical",
+    "ar": "عملي",
+    "fr": "pratique",
+    "zinnen": [
+      "j4hq5qu1",
+      "136qmtct"
+    ]
+  },
+  {
+    "nl": "slagen",
+    "type": "verb",
+    "perfectum": "geslaagd",
+    "imperfectum": "slaagde",
+    "tr": "başarmak, geçmek",
+    "en": "to pass",
+    "ar": "ينجح",
+    "fr": "réussir",
+    "zinnen": [
+      "ayv6bxu5",
+      "eox8emvn"
+    ]
+  },
+  {
+    "nl": "theoretisch",
+    "type": "adj",
+    "tr": "teorik",
+    "en": "theoretical",
+    "ar": "نظري",
+    "fr": "théorique",
+    "zinnen": [
+      "seh1c1wx",
+      "136qmtct"
+    ]
+  },
+  {
+    "nl": "toekomst",
+    "article": "de",
+    "type": "noun",
+    "tr": "gelecek",
+    "en": "future",
+    "ar": "مستقبل",
+    "fr": "avenir",
+    "zinnen": [
+      "4vx0kzv9",
+      "2itlwpir",
+      "tr9zs7sa"
+    ]
+  },
+  {
+    "nl": "universiteit",
+    "article": "de",
+    "type": "noun",
+    "tr": "üniversite",
+    "en": "university",
+    "ar": "جامعة",
+    "fr": "université",
+    "zinnen": [
+      "scm00xn9",
+      "gq4fkdpr",
+      "g4hk3hm0",
+      "c7u575yn"
+    ]
+  },
+  {
+    "nl": "vroeger",
+    "type": "adv",
+    "tr": "eskiden",
+    "en": "in the past",
+    "ar": "في الماضي",
+    "fr": "autrefois",
+    "zinnen": [
+      "bvjhssh2"
+    ]
+  },
+  {
+    "nl": "wetenschappelijk",
+    "type": "adj",
+    "tr": "bilimsel",
+    "en": "scientific",
+    "ar": "علمي",
+    "fr": "scientifique",
+    "zinnen": [
+      "gietc76y"
+    ]
+  },
+  {
+    "nl": "zenuwachtig",
+    "type": "adj",
+    "tr": "gergin, sinirli",
+    "en": "nervous",
+    "ar": "متوتر",
+    "fr": "nerveux",
+    "zinnen": [
+      "z66z9bho"
+    ]
+  },
+  {
+    "nl": "aandacht",
+    "article": "de",
+    "type": "noun",
+    "tr": "dikkat",
+    "en": "attention",
+    "ar": "انتباه",
+    "fr": "attention",
+    "zinnen": [
+      "z98369ng"
+    ]
+  },
+  {
+    "nl": "actief",
+    "type": "adj",
+    "tr": "aktif",
+    "en": "active",
+    "ar": "نشيط",
+    "fr": "actif",
+    "zinnen": [
+      "qatzt67f",
+      "h1di8817"
+    ]
+  },
+  {
+    "nl": "bezoeken",
+    "type": "verb",
+    "perfectum": "bezocht",
+    "imperfectum": "bezocht",
+    "tr": "ziyaret etmek",
+    "en": "to visit",
+    "ar": "يزور",
+    "fr": "visiter",
+    "zinnen": [
+      "0bcb7d8s"
+    ]
+  },
+  {
+    "nl": "bijbaantje",
+    "article": "het",
+    "type": "noun",
+    "tr": "yarı zamanlı iş",
+    "en": "part-time job",
+    "ar": "عمل جزئي",
+    "fr": "petit boulot",
+    "zinnen": [
+      "v7ig6inx",
+      "hafax2kv"
+    ]
+  },
+  {
+    "nl": "bijles",
+    "article": "de",
+    "type": "noun",
+    "tr": "özel ders",
+    "en": "tutoring",
+    "ar": "دروس خصوصية",
+    "fr": "cours particulier",
+    "zinnen": [
+      "x6l2d5ww",
+      "4lqnc35e"
+    ]
+  },
+  {
+    "nl": "bijzonder",
+    "type": "adj",
+    "tr": "özel, olağanüstü",
+    "en": "special",
+    "ar": "خاص، استثنائي",
+    "fr": "particulier, spécial",
+    "zinnen": [
+      "x6l2d5ww",
+      "d2bqofpd"
+    ]
+  },
+  {
+    "nl": "campus",
+    "article": "de",
+    "type": "noun",
+    "tr": "kampüs",
+    "en": "campus",
+    "ar": "حرم جامعي",
+    "fr": "campus",
+    "zinnen": [
+      "v3p2hn9h"
+    ]
+  },
+  {
+    "nl": "Chinees",
+    "type": "adj",
+    "tr": "Çince",
+    "en": "Chinese",
+    "ar": "صيني",
+    "fr": "chinois",
+    "zinnen": [
+      "aqlo44fo",
+      "d2bqofpd",
+      "q7c2u1ok"
+    ]
+  },
+  {
+    "nl": "gemotiveerd",
+    "type": "adj",
+    "tr": "motive olmuş",
+    "en": "motivated",
+    "ar": "متحمس",
+    "fr": "motivé",
+    "zinnen": [
+      "q0tnt6ka",
+      "j90optci"
+    ]
+  },
+  {
+    "nl": "nauwelijks",
+    "type": "adv",
+    "tr": "neredeyse hiç",
+    "en": "hardly",
+    "ar": "بالكاد",
+    "fr": "à peine",
+    "zinnen": [
+      "walw3msb"
+    ]
+  },
+  {
+    "nl": "ontzettend",
+    "type": "adv",
+    "tr": "son derece",
+    "en": "extremely",
+    "ar": "للغاية",
+    "fr": "extrêmement",
+    "zinnen": [
+      "nqj3zqff",
+      "ndxnkwg5"
+    ]
+  },
+  {
+    "nl": "opvallen",
+    "type": "verb",
+    "perfectum": "opgevallen",
+    "imperfectum": "viel op",
+    "tr": "dikkat çekmek",
+    "en": "to stand out",
+    "ar": "يلفت الانتباه",
+    "fr": "se faire remarquer",
+    "zinnen": [
+      "walw3msb",
+      "s6te2512"
+    ]
+  },
+  {
+    "nl": "piano",
+    "article": "de",
+    "type": "noun",
+    "tr": "piyano",
+    "en": "piano",
+    "ar": "بيانو",
+    "fr": "piano",
+    "zinnen": [
+      "nqj3zqff"
+    ]
+  },
+  {
+    "nl": "positief",
+    "type": "adj",
+    "tr": "olumlu",
+    "en": "positive",
+    "ar": "إيجابي",
+    "fr": "positif",
+    "zinnen": [
+      "tyjecv74",
+      "6vhec0ur",
+      "h1di8817",
+      "2tnejtq3"
+    ]
+  },
+  {
+    "nl": "presentatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "sunum",
+    "en": "presentation",
+    "ar": "عرض تقديمي",
+    "fr": "présentation",
+    "zinnen": [
+      "q0tnt6ka"
+    ]
+  },
+  {
+    "nl": "presteren",
+    "type": "verb",
+    "perfectum": "gepresteerd",
+    "imperfectum": "presteerde",
+    "tr": "performans göstermek",
+    "en": "to perform",
+    "ar": "يؤدي",
+    "fr": "performer",
+    "zinnen": [
+      "z98369ng"
+    ]
+  },
+  {
+    "nl": "reis",
+    "article": "de",
+    "type": "noun",
+    "tr": "yolculuk, gezi",
+    "en": "trip",
+    "ar": "رحلة",
+    "fr": "voyage",
+    "zinnen": [
+      "lip2wgb7",
+      "0n1ggll8",
+      "pzsulw51"
+    ]
+  },
+  {
+    "nl": "samenwerken",
+    "type": "verb",
+    "perfectum": "samengewerkt",
+    "imperfectum": "werkte samen",
+    "tr": "birlikte çalışmak",
+    "en": "to cooperate",
+    "ar": "يتعاون",
+    "fr": "collaborer",
+    "zinnen": [
+      "ejnxc2qp",
+      "xatrmsxc"
+    ]
+  },
+  {
+    "nl": "sportclub",
+    "article": "de",
+    "type": "noun",
+    "tr": "spor kulübü",
+    "en": "sports club",
+    "ar": "نادي رياضي",
+    "fr": "club sportif",
+    "zinnen": [
+      "itlq7z6t"
+    ]
+  },
+  {
+    "nl": "toeristisch",
+    "type": "adj",
+    "tr": "turistik",
+    "en": "touristic",
+    "ar": "سياحي",
+    "fr": "touristique",
+    "zinnen": [
+      "0n1ggll8"
+    ]
+  },
+  {
+    "nl": "trouwens",
+    "type": "adv",
+    "tr": "bu arada",
+    "en": "by the way",
+    "ar": "بالمناسبة",
+    "fr": "d'ailleurs",
+    "zinnen": [
+      "qatzt67f",
+      "4lqnc35e"
+    ]
+  },
+  {
+    "nl": "volgen",
+    "type": "verb",
+    "perfectum": "gevolgd",
+    "imperfectum": "volgde",
+    "tr": "takip etmek",
+    "en": "to follow",
+    "ar": "يتبع",
+    "fr": "suivre",
+    "zinnen": [
+      "la4z6kiz"
+    ]
+  },
+  {
+    "nl": "workshop",
+    "article": "de",
+    "type": "noun",
+    "tr": "atölye",
+    "en": "workshop",
+    "ar": "ورشة عمل",
+    "fr": "atelier",
+    "zinnen": [
+      "itlq7z6t",
+      "6j5z9a0f"
+    ]
+  },
+  {
+    "nl": "afhangen van",
+    "type": "verb",
+    "perfectum": "afgehangen",
+    "imperfectum": "hing af",
+    "tr": "bağlı olmak",
+    "en": "to depend on",
+    "ar": "يعتمد على",
+    "fr": "dépendre de",
+    "zinnen": [
+      "lcnx71of"
+    ]
+  },
+  {
+    "nl": "Arabisch",
+    "type": "adj",
+    "tr": "Arapça",
+    "en": "Arabic",
+    "ar": "عربي",
+    "fr": "arabe",
+    "zinnen": [
+      "q7c2u1ok",
+      "xvj810v4"
+    ]
+  },
+  {
+    "nl": "bedoeling",
+    "article": "de",
+    "type": "noun",
+    "tr": "amaç, niyet",
+    "en": "intention",
+    "ar": "نية، قصد",
+    "fr": "intention",
+    "zinnen": [
+      "l9kfxbff"
+    ]
+  },
+  {
+    "nl": "bereiken",
+    "type": "verb",
+    "perfectum": "bereikt",
+    "imperfectum": "bereikte",
+    "tr": "ulaşmak",
+    "en": "to reach",
+    "ar": "يصل إلى",
+    "fr": "atteindre",
+    "zinnen": [
+      "w2irz016"
+    ]
+  },
+  {
+    "nl": "bestaan",
+    "type": "verb",
+    "perfectum": "bestaan",
+    "imperfectum": "bestond",
+    "tr": "var olmak",
+    "en": "to exist",
+    "ar": "يوجد",
+    "fr": "exister",
+    "zinnen": [
+      "5n3r9yw2"
+    ]
+  },
+  {
+    "nl": "besteden",
+    "type": "verb",
+    "perfectum": "besteed",
+    "imperfectum": "besteedde",
+    "tr": "harcamak",
+    "en": "to spend",
+    "ar": "ينفق",
+    "fr": "consacrer, dépenser",
+    "zinnen": [
+      "fhvj4x8q"
+    ]
+  },
+  {
+    "nl": "dichtbij",
+    "type": "adv",
+    "tr": "yakın",
+    "en": "nearby",
+    "ar": "قريب",
+    "fr": "près",
+    "zinnen": [
+      "23xemzet",
+      "8d70ultj"
+    ]
+  },
+  {
+    "nl": "doel",
+    "article": "het",
+    "type": "noun",
+    "tr": "hedef, amaç",
+    "en": "goal",
+    "ar": "هدف",
+    "fr": "but, objectif",
+    "zinnen": [
+      "4sg0qfyf",
+      "w2irz016"
+    ]
+  },
+  {
+    "nl": "doorgaan",
+    "type": "verb",
+    "perfectum": "doorgegaan",
+    "imperfectum": "ging door",
+    "tr": "devam etmek",
+    "en": "to continue",
+    "ar": "يستمر",
+    "fr": "continuer",
+    "zinnen": [
+      "35xn38ti",
+      "p46uhclq"
+    ]
+  },
+  {
+    "nl": "Duits",
+    "type": "adj",
+    "tr": "Almanca",
+    "en": "German",
+    "ar": "ألماني",
+    "fr": "allemand",
+    "zinnen": [
+      "aqlo44fo",
+      "xvj810v4"
+    ]
+  },
+  {
+    "nl": "gemakkelijk",
+    "type": "adj",
+    "tr": "kolay",
+    "en": "easy",
+    "ar": "سهل",
+    "fr": "facile",
+    "zinnen": [
+      "jxh74f3t"
+    ]
+  },
+  {
+    "nl": "grammatica",
+    "article": "de",
+    "type": "noun",
+    "tr": "dilbilgisi",
+    "en": "grammar",
+    "ar": "قواعد اللغة",
+    "fr": "grammaire",
+    "zinnen": [
+      "mavyiejh",
+      "fhvj4x8q"
+    ]
+  },
+  {
+    "nl": "interview",
+    "article": "het",
+    "type": "noun",
+    "tr": "mülakat",
+    "en": "interview",
+    "ar": "مقابلة",
+    "fr": "entretien",
+    "zinnen": [
+      "p46uhclq"
+    ]
+  },
+  {
+    "nl": "invloed",
+    "article": "de",
+    "type": "noun",
+    "tr": "etki",
+    "en": "influence",
+    "ar": "تأثير",
+    "fr": "influence",
+    "zinnen": [
+      "7zrcmi6o",
+      "xeyfbizp"
+    ]
+  },
+  {
+    "nl": "klank",
+    "article": "de",
+    "type": "noun",
+    "tr": "ses",
+    "en": "sound",
+    "ar": "صوت",
+    "fr": "son",
+    "zinnen": [
+      "syunr787"
+    ]
+  },
+  {
+    "nl": "lesmethode",
+    "article": "de",
+    "type": "noun",
+    "tr": "öğretim yöntemi",
+    "en": "teaching method",
+    "ar": "طريقة التدريس",
+    "fr": "méthode d'enseignement",
+    "zinnen": [
+      "jxh74f3t"
+    ]
+  },
+  {
+    "nl": "moedertaal",
+    "article": "de",
+    "type": "noun",
+    "tr": "anadil",
+    "en": "mother tongue",
+    "ar": "لغة أم",
+    "fr": "langue maternelle",
+    "zinnen": [
+      "hgj24hc3"
+    ]
+  },
+  {
+    "nl": "motivatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "motivasyon",
+    "en": "motivation",
+    "ar": "دافع",
+    "fr": "motivation",
+    "zinnen": [
+      "o8kps52v"
+    ]
+  },
+  {
+    "nl": "negatief",
+    "type": "adj",
+    "tr": "olumsuz",
+    "en": "negative",
+    "ar": "سلبي",
+    "fr": "négatif",
+    "zinnen": [
+      "p46uhclq"
+    ]
+  },
+  {
+    "nl": "onbekend",
+    "type": "adj",
+    "tr": "bilinmeyen",
+    "en": "unknown",
+    "ar": "مجهول",
+    "fr": "inconnu",
+    "zinnen": [
+      "jaavq8m3"
+    ]
+  },
+  {
+    "nl": "staatsexamen NT2",
+    "article": "het",
+    "type": "noun",
+    "tr": "devlet Hollandaca sınavı",
+    "en": "state Dutch exam",
+    "ar": "امتحان الدولة للهولندية",
+    "fr": "examen d'État de néerlandais",
+    "zinnen": [
+      "xcv4qxzg"
+    ]
+  },
+  {
+    "nl": "taalcontact",
+    "article": "het",
+    "type": "noun",
+    "tr": "dil teması",
+    "en": "language contact",
+    "ar": "اتصال لغوي",
+    "fr": "contact linguistique",
+    "zinnen": [
+      "rjl15m1b",
+      "81hhbuud"
+    ]
+  },
+  {
+    "nl": "uitspraak",
+    "article": "de",
+    "type": "noun",
+    "tr": "telaffuz",
+    "en": "pronunciation",
+    "ar": "نطق",
+    "fr": "prononciation",
+    "zinnen": [
+      "23duf0lf"
+    ]
+  },
+  {
+    "nl": "uitspreken",
+    "type": "verb",
+    "perfectum": "uitgesproken",
+    "imperfectum": "sprak uit",
+    "tr": "telaffuz etmek",
+    "en": "to pronounce",
+    "ar": "ينطق",
+    "fr": "prononcer",
+    "zinnen": [
+      "k3lxnk0o"
+    ]
+  },
+  {
+    "nl": "voordeel",
+    "article": "het",
+    "type": "noun",
+    "tr": "avantaj",
+    "en": "advantage",
+    "ar": "ميزة",
+    "fr": "avantage",
+    "zinnen": [
+      "81hhbuud"
+    ]
+  }
 ]

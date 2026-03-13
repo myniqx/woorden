@@ -6,7 +6,10 @@
     "tr": "pil",
     "en": "battery",
     "ar": "بطارية",
-    "fr": "batterie"
+    "fr": "batterie",
+    "zinnen": [
+      "sx8wlanq"
+    ]
   },
   {
     "nl": "beker",
@@ -15,7 +18,10 @@
     "tr": "bardak",
     "en": "cup",
     "ar": "كوب",
-    "fr": "gobelet"
+    "fr": "gobelet",
+    "zinnen": [
+      "pbl6g3oy"
+    ]
   },
   {
     "nl": "blik",
@@ -24,7 +30,10 @@
     "tr": "teneke kutu",
     "en": "can",
     "ar": "علبة",
-    "fr": "boîte de conserve"
+    "fr": "boîte de conserve",
+    "zinnen": [
+      "e30pacuq"
+    ]
   },
   {
     "nl": "chemisch",
@@ -32,7 +41,10 @@
     "tr": "kimyasal",
     "en": "chemical",
     "ar": "كيميائي",
-    "fr": "chimique"
+    "fr": "chimique",
+    "zinnen": [
+      "4ocl4mot"
+    ]
   },
   {
     "nl": "container",
@@ -41,7 +53,10 @@
     "tr": "konteyner",
     "en": "container",
     "ar": "حاوية",
-    "fr": "conteneur"
+    "fr": "conteneur",
+    "zinnen": [
+      "dmw4evm8"
+    ]
   },
   {
     "nl": "deel",
@@ -50,7 +65,10 @@
     "tr": "parça, bölüm",
     "en": "part",
     "ar": "جزء",
-    "fr": "partie"
+    "fr": "partie",
+    "zinnen": [
+      "4ocl4mot"
+    ]
   },
   {
     "nl": "gooien",
@@ -60,7 +78,10 @@
     "tr": "atmak",
     "en": "to throw",
     "ar": "يرمي",
-    "fr": "jeter"
+    "fr": "jeter",
+    "zinnen": [
+      "fvuu99oe"
+    ]
   },
   {
     "nl": "grofvuil",
@@ -69,7 +90,10 @@
     "tr": "iri çöp",
     "en": "bulky waste",
     "ar": "نفايات كبيرة",
-    "fr": "encombrants"
+    "fr": "encombrants",
+    "zinnen": [
+      "t2smnw72"
+    ]
   },
   {
     "nl": "helft",
@@ -78,7 +102,10 @@
     "tr": "yarısı",
     "en": "half",
     "ar": "نصف",
-    "fr": "moitié"
+    "fr": "moitié",
+    "zinnen": [
+      "71ruiht9"
+    ]
   },
   {
     "nl": "karton",
@@ -87,7 +114,10 @@
     "tr": "karton",
     "en": "cardboard",
     "ar": "كرتون",
-    "fr": "carton"
+    "fr": "carton",
+    "zinnen": [
+      "lc9lrvvj"
+    ]
   },
   {
     "nl": "krat",
@@ -96,7 +126,10 @@
     "tr": "kasa",
     "en": "crate",
     "ar": "صندوق",
-    "fr": "caisse"
+    "fr": "caisse",
+    "zinnen": [
+      "azty5h9k"
+    ]
   },
   {
     "nl": "matras",
@@ -105,7 +138,10 @@
     "tr": "yatak",
     "en": "mattress",
     "ar": "مرتبة",
-    "fr": "matelas"
+    "fr": "matelas",
+    "zinnen": [
+      "nw8bo68b"
+    ]
   },
   {
     "nl": "olie",
@@ -114,7 +150,10 @@
     "tr": "yağ",
     "en": "oil",
     "ar": "زيت",
-    "fr": "huile"
+    "fr": "huile",
+    "zinnen": [
+      "fvuu99oe"
+    ]
   },
   {
     "nl": "plastic",
@@ -123,7 +162,10 @@
     "tr": "plastik",
     "en": "plastic",
     "ar": "بلاستيك",
-    "fr": "plastique"
+    "fr": "plastique",
+    "zinnen": [
+      "lc9lrvvj"
+    ]
   },
   {
     "nl": "pot",
@@ -132,7 +174,10 @@
     "tr": "kavanoz",
     "en": "jar",
     "ar": "جرة",
-    "fr": "pot"
+    "fr": "pot",
+    "zinnen": [
+      "ksq6xge8"
+    ]
   },
   {
     "nl": "restje",
@@ -141,7 +186,11 @@
     "tr": "artık, kalan",
     "en": "leftover",
     "ar": "بقايا",
-    "fr": "reste"
+    "fr": "reste",
+    "zinnen": [
+      "te4xvfct",
+      "3yhhcz89"
+    ]
   },
   {
     "nl": "schadelijk",
@@ -149,7 +198,11 @@
     "tr": "zararlı",
     "en": "harmful",
     "ar": "ضار",
-    "fr": "nocif"
+    "fr": "nocif",
+    "zinnen": [
+      "te4xvfct",
+      "8z10f61t"
+    ]
   },
   {
     "nl": "schil",
@@ -158,7 +211,10 @@
     "tr": "kabuk",
     "en": "peel",
     "ar": "قشرة",
-    "fr": "pelure"
+    "fr": "pelure",
+    "zinnen": [
+      "7kqbcxqd"
+    ]
   },
   {
     "nl": "statiegeld",
@@ -167,7 +223,10 @@
     "tr": "depozito",
     "en": "deposit",
     "ar": "تأمين",
-    "fr": "consigne"
+    "fr": "consigne",
+    "zinnen": [
+      "ibdhou84"
+    ]
   },
   {
     "nl": "stof",
@@ -176,7 +235,14 @@
     "tr": "toz",
     "en": "dust",
     "ar": "غبار",
-    "fr": "poussière"
+    "fr": "poussière",
+    "zinnen": [
+      "8z10f61t",
+      "r0xy9k3k",
+      "3n0ik1f2",
+      "ul7yc2c4",
+      "3ni1qw5q"
+    ]
   },
   {
     "nl": "terechtkomen",
@@ -186,7 +252,11 @@
     "tr": "sonunda gitmek",
     "en": "to end up",
     "ar": "ينتهي به المطاف",
-    "fr": "aboutir"
+    "fr": "aboutir",
+    "zinnen": [
+      "ny0zn4ov",
+      "ny0zn4ov"
+    ]
   },
   {
     "nl": "terugbrengen",
@@ -196,7 +266,10 @@
     "tr": "geri götürmek",
     "en": "to bring back",
     "ar": "يعيد",
-    "fr": "rapporter"
+    "fr": "rapporter",
+    "zinnen": [
+      "nw8bo68b"
+    ]
   },
   {
     "nl": "verzamelen",
@@ -206,7 +279,10 @@
     "tr": "toplamak",
     "en": "to collect",
     "ar": "يجمع",
-    "fr": "collecter"
+    "fr": "collecter",
+    "zinnen": [
+      "sx8wlanq"
+    ]
   },
   {
     "nl": "vuilnis",
@@ -215,7 +291,10 @@
     "tr": "çöp",
     "en": "garbage",
     "ar": "قمامة",
-    "fr": "ordures"
+    "fr": "ordures",
+    "zinnen": [
+      "sku8c1i9"
+    ]
   },
   {
     "nl": "weggooien",
@@ -225,7 +304,10 @@
     "tr": "atmak",
     "en": "to throw away",
     "ar": "يرمي",
-    "fr": "jeter"
+    "fr": "jeter",
+    "zinnen": [
+      "jhxb9tc5"
+    ]
   },
   {
     "nl": "aangifte",
@@ -234,7 +316,11 @@
     "tr": "beyan, ihbar",
     "en": "declaration, report",
     "ar": "إقرار، بلاغ",
-    "fr": "déclaration"
+    "fr": "déclaration",
+    "zinnen": [
+      "fgpbo1aq",
+      "nc188ewq"
+    ]
   },
   {
     "nl": "aanvragen",
@@ -244,7 +330,10 @@
     "tr": "başvurmak",
     "en": "to apply for",
     "ar": "يتقدم بطلب",
-    "fr": "demander"
+    "fr": "demander",
+    "zinnen": [
+      "54twe285"
+    ]
   },
   {
     "nl": "aanwezig",
@@ -252,7 +341,10 @@
     "tr": "mevcut, hazır",
     "en": "present",
     "ar": "حاضر",
-    "fr": "présent"
+    "fr": "présent",
+    "zinnen": [
+      "buavrtdx"
+    ]
   },
   {
     "nl": "arts",
@@ -261,7 +353,10 @@
     "tr": "doktor",
     "en": "doctor",
     "ar": "طبيب",
-    "fr": "médecin"
+    "fr": "médecin",
+    "zinnen": [
+      "ki9eoyce"
+    ]
   },
   {
     "nl": "automatisch",
@@ -269,7 +364,10 @@
     "tr": "otomatik",
     "en": "automatic",
     "ar": "أوتوماتيكي",
-    "fr": "automatique"
+    "fr": "automatique",
+    "zinnen": [
+      "w20afkuy"
+    ]
   },
   {
     "nl": "beide",
@@ -277,7 +375,10 @@
     "tr": "her ikisi",
     "en": "both",
     "ar": "كلاهما",
-    "fr": "les deux"
+    "fr": "les deux",
+    "zinnen": [
+      "x8hid6yc"
+    ]
   },
   {
     "nl": "betaling",
@@ -286,7 +387,12 @@
     "tr": "ödeme",
     "en": "payment",
     "ar": "دفع",
-    "fr": "paiement"
+    "fr": "paiement",
+    "zinnen": [
+      "w20afkuy",
+      "cq7cvsgj",
+      "3as73r77"
+    ]
   },
   {
     "nl": "bevalling",
@@ -295,7 +401,10 @@
     "tr": "doğum",
     "en": "delivery, birth",
     "ar": "ولادة",
-    "fr": "accouchement"
+    "fr": "accouchement",
+    "zinnen": [
+      "1wyltxq5"
+    ]
   },
   {
     "nl": "bewijs",
@@ -304,7 +413,10 @@
     "tr": "kanıt, belge",
     "en": "proof",
     "ar": "دليل",
-    "fr": "preuve"
+    "fr": "preuve",
+    "zinnen": [
+      "wlr14eef"
+    ]
   },
   {
     "nl": "daarnaast",
@@ -312,7 +424,10 @@
     "tr": "bunun yanı sıra",
     "en": "besides",
     "ar": "بالإضافة إلى ذلك",
-    "fr": "en outre"
+    "fr": "en outre",
+    "zinnen": [
+      "uelr55kq"
+    ]
   },
   {
     "nl": "document",
@@ -321,7 +436,12 @@
     "tr": "belge",
     "en": "document",
     "ar": "وثيقة",
-    "fr": "document"
+    "fr": "document",
+    "zinnen": [
+      "ceynzwaf",
+      "uelr55kq",
+      "f64fvnh7"
+    ]
   },
   {
     "nl": "doorgeven",
@@ -331,7 +451,10 @@
     "tr": "iletmek",
     "en": "to pass on",
     "ar": "يمرر",
-    "fr": "transmettre"
+    "fr": "transmettre",
+    "zinnen": [
+      "1wyltxq5"
+    ]
   },
   {
     "nl": "familielid",
@@ -340,7 +463,10 @@
     "tr": "aile üyesi",
     "en": "family member",
     "ar": "فرد من العائلة",
-    "fr": "membre de la famille"
+    "fr": "membre de la famille",
+    "zinnen": [
+      "818s73kq"
+    ]
   },
   {
     "nl": "geboorte",
@@ -349,7 +475,10 @@
     "tr": "doğum",
     "en": "birth",
     "ar": "ولادة",
-    "fr": "naissance"
+    "fr": "naissance",
+    "zinnen": [
+      "ki9eoyce"
+    ]
   },
   {
     "nl": "geldig",
@@ -357,7 +486,10 @@
     "tr": "geçerli",
     "en": "valid",
     "ar": "صالح",
-    "fr": "valide"
+    "fr": "valide",
+    "zinnen": [
+      "wlr14eef"
+    ]
   },
   {
     "nl": "identiteitskaart",
@@ -366,7 +498,10 @@
     "tr": "kimlik kartı",
     "en": "identity card",
     "ar": "بطاقة هوية",
-    "fr": "carte d'identité"
+    "fr": "carte d'identité",
+    "zinnen": [
+      "54twe285"
+    ]
   },
   {
     "nl": "kwijtraken",
@@ -376,7 +511,10 @@
     "tr": "kaybetmek",
     "en": "to lose",
     "ar": "يفقد",
-    "fr": "perdre"
+    "fr": "perdre",
+    "zinnen": [
+      "fnmzl1um"
+    ]
   },
   {
     "nl": "legitimatie",
@@ -385,7 +523,10 @@
     "tr": "kimlik",
     "en": "identification",
     "ar": "هوية",
-    "fr": "identification"
+    "fr": "identification",
+    "zinnen": [
+      "uhv6nl1u"
+    ]
   },
   {
     "nl": "legitimatiebewijs",
@@ -394,7 +535,10 @@
     "tr": "kimlik belgesi",
     "en": "ID document",
     "ar": "وثيقة هوية",
-    "fr": "pièce d'identité"
+    "fr": "pièce d'identité",
+    "zinnen": [
+      "3f9e9vks"
+    ]
   },
   {
     "nl": "mailen",
@@ -404,7 +548,10 @@
     "tr": "e-posta göndermek",
     "en": "to email",
     "ar": "يرسل بريداً",
-    "fr": "envoyer un e-mail"
+    "fr": "envoyer un e-mail",
+    "zinnen": [
+      "3wo8so3z"
+    ]
   },
   {
     "nl": "ondertekenen",
@@ -414,7 +561,10 @@
     "tr": "imzalamak",
     "en": "to sign",
     "ar": "يوقع",
-    "fr": "signer"
+    "fr": "signer",
+    "zinnen": [
+      "ceynzwaf"
+    ]
   },
   {
     "nl": "opschrijven",
@@ -424,7 +574,10 @@
     "tr": "yazmak",
     "en": "to write down",
     "ar": "يكتب",
-    "fr": "noter"
+    "fr": "noter",
+    "zinnen": [
+      "p8xuvj9b"
+    ]
   },
   {
     "nl": "opsturen",
@@ -434,7 +587,11 @@
     "tr": "göndermek",
     "en": "to send",
     "ar": "يرسل",
-    "fr": "envoyer"
+    "fr": "envoyer",
+    "zinnen": [
+      "j9oqvhxx",
+      "dwgb3na7"
+    ]
   },
   {
     "nl": "pasfoto",
@@ -443,7 +600,10 @@
     "tr": "vesikalık fotoğraf",
     "en": "passport photo",
     "ar": "صورة جواز",
-    "fr": "photo d'identité"
+    "fr": "photo d'identité",
+    "zinnen": [
+      "3f9e9vks"
+    ]
   },
   {
     "nl": "paspoort",
@@ -452,7 +612,10 @@
     "tr": "pasaport",
     "en": "passport",
     "ar": "جواز سفر",
-    "fr": "passeport"
+    "fr": "passeport",
+    "zinnen": [
+      "zwzsqrz9"
+    ]
   },
   {
     "nl": "persoon",
@@ -461,7 +624,10 @@
     "tr": "kişi",
     "en": "person",
     "ar": "شخص",
-    "fr": "personne"
+    "fr": "personne",
+    "zinnen": [
+      "d27oog2a"
+    ]
   },
   {
     "nl": "verklaring",
@@ -470,7 +636,10 @@
     "tr": "açıklama, beyan",
     "en": "statement",
     "ar": "بيان",
-    "fr": "déclaration"
+    "fr": "déclaration",
+    "zinnen": [
+      "3wo8so3z"
+    ]
   },
   {
     "nl": "belasting",
@@ -479,7 +648,15 @@
     "tr": "vergi",
     "en": "tax",
     "ar": "ضريبة",
-    "fr": "impôt"
+    "fr": "impôt",
+    "zinnen": [
+      "0vy98klk",
+      "quccbege",
+      "fgpbo1aq",
+      "wyjfnd4w",
+      "ip85205h",
+      "unmw3koj"
+    ]
   },
   {
     "nl": "brief",
@@ -488,7 +665,10 @@
     "tr": "mektup",
     "en": "letter",
     "ar": "رسالة",
-    "fr": "lettre"
+    "fr": "lettre",
+    "zinnen": [
+      "p90dl27w"
+    ]
   },
   {
     "nl": "Burgerservicenummer",
@@ -497,7 +677,10 @@
     "tr": "vatandaşlık numarası",
     "en": "citizen service number",
     "ar": "رقم الخدمة المدنية",
-    "fr": "numéro de service citoyen"
+    "fr": "numéro de service citoyen",
+    "zinnen": [
+      "6v83cbgg"
+    ]
   },
   {
     "nl": "code",
@@ -506,7 +689,12 @@
     "tr": "kod",
     "en": "code",
     "ar": "رمز",
-    "fr": "code"
+    "fr": "code",
+    "zinnen": [
+      "4oyfemfr",
+      "f59xe9lb",
+      "qczjlzyp"
+    ]
   },
   {
     "nl": "dame",
@@ -515,7 +703,10 @@
     "tr": "bayan",
     "en": "lady",
     "ar": "سيدة",
-    "fr": "dame"
+    "fr": "dame",
+    "zinnen": [
+      "65u1w5m3"
+    ]
   },
   {
     "nl": "DigiD",
@@ -524,7 +715,10 @@
     "tr": "dijital kimlik",
     "en": "digital ID",
     "ar": "هوية رقمية",
-    "fr": "identité numérique"
+    "fr": "identité numérique",
+    "zinnen": [
+      "nynrn0dn"
+    ]
   },
   {
     "nl": "dom",
@@ -532,7 +726,10 @@
     "tr": "aptal",
     "en": "stupid",
     "ar": "غبي",
-    "fr": "stupide"
+    "fr": "stupide",
+    "zinnen": [
+      "qczjlzyp"
+    ]
   },
   {
     "nl": "gebruikersnaam",
@@ -541,7 +738,10 @@
     "tr": "kullanıcı adı",
     "en": "username",
     "ar": "اسم المستخدم",
-    "fr": "nom d'utilisateur"
+    "fr": "nom d'utilisateur",
+    "zinnen": [
+      "eyjt4mdb"
+    ]
   },
   {
     "nl": "hoofdletter",
@@ -550,7 +750,10 @@
     "tr": "büyük harf",
     "en": "capital letter",
     "ar": "حرف كبير",
-    "fr": "majuscule"
+    "fr": "majuscule",
+    "zinnen": [
+      "eyjt4mdb"
+    ]
   },
   {
     "nl": "leesteken",
@@ -559,7 +762,10 @@
     "tr": "noktalama işareti",
     "en": "punctuation mark",
     "ar": "علامة ترقيم",
-    "fr": "signe de ponctuation"
+    "fr": "signe de ponctuation",
+    "zinnen": [
+      "4oyfemfr"
+    ]
   },
   {
     "nl": "noteren",
@@ -569,7 +775,10 @@
     "tr": "not almak",
     "en": "to note",
     "ar": "يدون",
-    "fr": "noter"
+    "fr": "noter",
+    "zinnen": [
+      "6v83cbgg"
+    ]
   },
   {
     "nl": "onthouden",
@@ -579,7 +788,10 @@
     "tr": "hatırlamak",
     "en": "to remember",
     "ar": "يتذكر",
-    "fr": "retenir"
+    "fr": "retenir",
+    "zinnen": [
+      "f59xe9lb"
+    ]
   },
   {
     "nl": "overheid",
@@ -588,7 +800,10 @@
     "tr": "hükümet",
     "en": "government",
     "ar": "حكومة",
-    "fr": "gouvernement"
+    "fr": "gouvernement",
+    "zinnen": [
+      "p90dl27w"
+    ]
   },
   {
     "nl": "pensioen",
@@ -597,7 +812,12 @@
     "tr": "emeklilik",
     "en": "pension",
     "ar": "معاش",
-    "fr": "pension"
+    "fr": "pension",
+    "zinnen": [
+      "2e30q4qs",
+      "9ng67o5e",
+      "u74u42ng"
+    ]
   },
   {
     "nl": "persoonlijk",
@@ -605,7 +825,11 @@
     "tr": "kişisel",
     "en": "personal",
     "ar": "شخصي",
-    "fr": "personnel"
+    "fr": "personnel",
+    "zinnen": [
+      "f59xe9lb",
+      "fa3cimvl"
+    ]
   },
   {
     "nl": "post",
@@ -614,7 +838,10 @@
     "tr": "posta",
     "en": "mail",
     "ar": "بريد",
-    "fr": "courrier"
+    "fr": "courrier",
+    "zinnen": [
+      "bjgb45pg"
+    ]
   },
   {
     "nl": "tandarts",
@@ -623,7 +850,11 @@
     "tr": "diş hekimi",
     "en": "dentist",
     "ar": "طبيب أسنان",
-    "fr": "dentiste"
+    "fr": "dentiste",
+    "zinnen": [
+      "788an40f",
+      "ma873ja3"
+    ]
   },
   {
     "nl": "uitstekend",
@@ -631,7 +862,11 @@
     "tr": "mükemmel",
     "en": "excellent",
     "ar": "ممتاز",
-    "fr": "excellent"
+    "fr": "excellent",
+    "zinnen": [
+      "tx64vstx",
+      "cu0jy6kp"
+    ]
   },
   {
     "nl": "verbaasd",
@@ -639,7 +874,10 @@
     "tr": "şaşırmış",
     "en": "surprised",
     "ar": "متفاجئ",
-    "fr": "étonné"
+    "fr": "étonné",
+    "zinnen": [
+      "0vy98klk"
+    ]
   },
   {
     "nl": "verzekerd",
@@ -647,7 +885,10 @@
     "tr": "sigortalı",
     "en": "insured",
     "ar": "مؤمن عليه",
-    "fr": "assuré"
+    "fr": "assuré",
+    "zinnen": [
+      "6t3vmeea"
+    ]
   },
   {
     "nl": "verzekering",
@@ -656,7 +897,13 @@
     "tr": "sigorta",
     "en": "insurance",
     "ar": "تأمين",
-    "fr": "assurance"
+    "fr": "assurance",
+    "zinnen": [
+      "788an40f",
+      "aarvysbf",
+      "pg2zzqsm",
+      "jl4ppsdu"
+    ]
   },
   {
     "nl": "werkdag",
@@ -665,7 +912,10 @@
     "tr": "iş günü",
     "en": "working day",
     "ar": "يوم عمل",
-    "fr": "jour ouvrable"
+    "fr": "jour ouvrable",
+    "zinnen": [
+      "7kjlrph0"
+    ]
   },
   {
     "nl": "zorgverzekering",
@@ -674,7 +924,10 @@
     "tr": "sağlık sigortası",
     "en": "health insurance",
     "ar": "تأمين صحي",
-    "fr": "assurance maladie"
+    "fr": "assurance maladie",
+    "zinnen": [
+      "6t3vmeea"
+    ]
   },
   {
     "nl": "aanvullend",
@@ -682,7 +935,10 @@
     "tr": "ek, tamamlayıcı",
     "en": "additional",
     "ar": "إضافي",
-    "fr": "complémentaire"
+    "fr": "complémentaire",
+    "zinnen": [
+      "ma873ja3"
+    ]
   },
   {
     "nl": "basis",
@@ -691,7 +947,11 @@
     "tr": "temel",
     "en": "basis",
     "ar": "أساس",
-    "fr": "base"
+    "fr": "base",
+    "zinnen": [
+      "3118l8kf",
+      "fo3mytkm"
+    ]
   },
   {
     "nl": "behandeling",
@@ -700,7 +960,10 @@
     "tr": "tedavi",
     "en": "treatment",
     "ar": "علاج",
-    "fr": "traitement"
+    "fr": "traitement",
+    "zinnen": [
+      "yplsaysu"
+    ]
   },
   {
     "nl": "bepalen",
@@ -710,16 +973,10 @@
     "tr": "belirlemek",
     "en": "to determine",
     "ar": "يحدد",
-    "fr": "déterminer"
-  },
-  {
-    "nl": "bezoek",
-    "article": "het",
-    "type": "noun",
-    "tr": "ziyaret",
-    "en": "visit",
-    "ar": "زيارة",
-    "fr": "visite"
+    "fr": "déterminer",
+    "zinnen": [
+      "wryg6cmv"
+    ]
   },
   {
     "nl": "bloed",
@@ -728,7 +985,10 @@
     "tr": "kan",
     "en": "blood",
     "ar": "دم",
-    "fr": "sang"
+    "fr": "sang",
+    "zinnen": [
+      "7bvui6uw"
+    ]
   },
   {
     "nl": "halverwege",
@@ -736,7 +996,10 @@
     "tr": "yarı yolda",
     "en": "halfway",
     "ar": "في منتصف الطريق",
-    "fr": "à mi-chemin"
+    "fr": "à mi-chemin",
+    "zinnen": [
+      "myrvpklb"
+    ]
   },
   {
     "nl": "hoogte",
@@ -745,7 +1008,10 @@
     "tr": "yükseklik",
     "en": "height",
     "ar": "ارتفاع",
-    "fr": "hauteur"
+    "fr": "hauteur",
+    "zinnen": [
+      "uk6wklxl"
+    ]
   },
   {
     "nl": "kraamzorg",
@@ -754,7 +1020,10 @@
     "tr": "doğum sonrası bakım",
     "en": "maternity care",
     "ar": "رعاية ما بعد الولادة",
-    "fr": "soins postnatals"
+    "fr": "soins postnatals",
+    "zinnen": [
+      "oipl5wd7"
+    ]
   },
   {
     "nl": "medisch",
@@ -762,7 +1031,12 @@
     "tr": "tıbbi",
     "en": "medical",
     "ar": "طبي",
-    "fr": "médical"
+    "fr": "médical",
+    "zinnen": [
+      "3wgs0m8q",
+      "mrrlqjam",
+      "a6dybi51"
+    ]
   },
   {
     "nl": "noodzakelijk",
@@ -770,7 +1044,11 @@
     "tr": "gerekli",
     "en": "necessary",
     "ar": "ضروري",
-    "fr": "nécessaire"
+    "fr": "nécessaire",
+    "zinnen": [
+      "fo3mytkm",
+      "r4fukbig"
+    ]
   },
   {
     "nl": "opname",
@@ -779,7 +1057,10 @@
     "tr": "yatış, kayıt",
     "en": "admission",
     "ar": "دخول المستشفى",
-    "fr": "admission"
+    "fr": "admission",
+    "zinnen": [
+      "mrrlqjam"
+    ]
   },
   {
     "nl": "opzeggen",
@@ -789,7 +1070,10 @@
     "tr": "iptal etmek",
     "en": "to cancel",
     "ar": "يلغي",
-    "fr": "résilier"
+    "fr": "résilier",
+    "zinnen": [
+      "myrvpklb"
+    ]
   },
   {
     "nl": "overzicht",
@@ -798,7 +1082,10 @@
     "tr": "genel bakış",
     "en": "overview",
     "ar": "نظرة عامة",
-    "fr": "aperçu"
+    "fr": "aperçu",
+    "zinnen": [
+      "4lcv98ks"
+    ]
   },
   {
     "nl": "polis",
@@ -807,7 +1094,10 @@
     "tr": "poliçe",
     "en": "policy",
     "ar": "بوليصة",
-    "fr": "police"
+    "fr": "police",
+    "zinnen": [
+      "3118l8kf"
+    ]
   },
   {
     "nl": "premie",
@@ -816,7 +1106,11 @@
     "tr": "prim",
     "en": "premium",
     "ar": "قسط",
-    "fr": "prime"
+    "fr": "prime",
+    "zinnen": [
+      "gjoeo2pw",
+      "uk6wklxl"
+    ]
   },
   {
     "nl": "psychisch",
@@ -824,7 +1118,10 @@
     "tr": "psikolojik",
     "en": "psychological",
     "ar": "نفسي",
-    "fr": "psychologique"
+    "fr": "psychologique",
+    "zinnen": [
+      "3wgs0m8q"
+    ]
   },
   {
     "nl": "variëren",
@@ -834,7 +1131,10 @@
     "tr": "değişmek",
     "en": "to vary",
     "ar": "يتنوع",
-    "fr": "varier"
+    "fr": "varier",
+    "zinnen": [
+      "10hjohca"
+    ]
   },
   {
     "nl": "vergelijken",
@@ -844,7 +1144,10 @@
     "tr": "karşılaştırmak",
     "en": "to compare",
     "ar": "يقارن",
-    "fr": "comparer"
+    "fr": "comparer",
+    "zinnen": [
+      "a406qdit"
+    ]
   },
   {
     "nl": "vergoeden",
@@ -854,7 +1157,10 @@
     "tr": "geri ödemek",
     "en": "to reimburse",
     "ar": "يعوض",
-    "fr": "rembourser"
+    "fr": "rembourser",
+    "zinnen": [
+      "yplsaysu"
+    ]
   },
   {
     "nl": "verzekeren",
@@ -864,7 +1170,10 @@
     "tr": "sigortalamak",
     "en": "to insure",
     "ar": "يؤمن",
-    "fr": "assurer"
+    "fr": "assurer",
+    "zinnen": [
+      "fvxy10ru"
+    ]
   },
   {
     "nl": "zorgkosten",
@@ -873,7 +1182,11 @@
     "tr": "sağlık masrafları",
     "en": "healthcare costs",
     "ar": "تكاليف الرعاية الصحية",
-    "fr": "frais de santé"
+    "fr": "frais de santé",
+    "zinnen": [
+      "4lcv98ks",
+      "10hjohca"
+    ]
   },
   {
     "nl": "bloedheet",
@@ -881,7 +1194,10 @@
     "tr": "çok sıcak",
     "en": "boiling hot",
     "ar": "حار جداً",
-    "fr": "brûlant"
+    "fr": "brûlant",
+    "zinnen": [
+      "n3adv5d4"
+    ]
   },
   {
     "nl": "cadeau",
@@ -890,7 +1206,12 @@
     "tr": "hediye",
     "en": "gift",
     "ar": "هدية",
-    "fr": "cadeau"
+    "fr": "cadeau",
+    "zinnen": [
+      "676e2uz2",
+      "m6a8r4ro",
+      "6jktu8c9"
+    ]
   },
   {
     "nl": "extra",
@@ -898,7 +1219,10 @@
     "tr": "ekstra",
     "en": "extra",
     "ar": "إضافي",
-    "fr": "supplémentaire"
+    "fr": "supplémentaire",
+    "zinnen": [
+      "xu9469x9"
+    ]
   },
   {
     "nl": "hotel",
@@ -907,7 +1231,10 @@
     "tr": "otel",
     "en": "hotel",
     "ar": "فندق",
-    "fr": "hôtel"
+    "fr": "hôtel",
+    "zinnen": [
+      "hsv5xkfu"
+    ]
   },
   {
     "nl": "jaloers",
@@ -915,7 +1242,10 @@
     "tr": "kıskanç",
     "en": "jealous",
     "ar": "غيور",
-    "fr": "jaloux"
+    "fr": "jaloux",
+    "zinnen": [
+      "676e2uz2"
+    ]
   },
   {
     "nl": "jazeker",
@@ -923,7 +1253,10 @@
     "tr": "elbette",
     "en": "certainly",
     "ar": "بالتأكيد",
-    "fr": "certainement"
+    "fr": "certainement",
+    "zinnen": [
+      "ipidv7wp"
+    ]
   },
   {
     "nl": "klimaat",
@@ -932,7 +1265,11 @@
     "tr": "iklim",
     "en": "climate",
     "ar": "مناخ",
-    "fr": "climat"
+    "fr": "climat",
+    "zinnen": [
+      "l3jnjm2r",
+      "851k6sy5"
+    ]
   },
   {
     "nl": "laten zien",
@@ -942,7 +1279,10 @@
     "tr": "göstermek",
     "en": "to show",
     "ar": "يُري",
-    "fr": "montrer"
+    "fr": "montrer",
+    "zinnen": [
+      "2s35etgq"
+    ]
   },
   {
     "nl": "meemaken",
@@ -952,7 +1292,10 @@
     "tr": "deneyimlemek",
     "en": "to experience",
     "ar": "يختبر",
-    "fr": "vivre"
+    "fr": "vivre",
+    "zinnen": [
+      "7sxfu6nr"
+    ]
   },
   {
     "nl": "natuur",
@@ -961,7 +1304,11 @@
     "tr": "doğa",
     "en": "nature",
     "ar": "طبيعة",
-    "fr": "nature"
+    "fr": "nature",
+    "zinnen": [
+      "4apjycvp",
+      "nemq3hrt"
+    ]
   },
   {
     "nl": "nul",
@@ -969,7 +1316,10 @@
     "tr": "sıfır",
     "en": "zero",
     "ar": "صفر",
-    "fr": "zéro"
+    "fr": "zéro",
+    "zinnen": [
+      "4apjycvp"
+    ]
   },
   {
     "nl": "oma",
@@ -978,7 +1328,10 @@
     "tr": "büyükanne",
     "en": "grandmother",
     "ar": "جدة",
-    "fr": "grand-mère"
+    "fr": "grand-mère",
+    "zinnen": [
+      "7rye9czx"
+    ]
   },
   {
     "nl": "perfect",
@@ -986,7 +1339,10 @@
     "tr": "mükemmel",
     "en": "perfect",
     "ar": "مثالي",
-    "fr": "parfait"
+    "fr": "parfait",
+    "zinnen": [
+      "q19ofvn5"
+    ]
   },
   {
     "nl": "schijnen",
@@ -996,7 +1352,10 @@
     "tr": "parlamak, görünmek",
     "en": "to shine, to seem",
     "ar": "يلمع، يبدو",
-    "fr": "briller, sembler"
+    "fr": "briller, sembler",
+    "zinnen": [
+      "ool68ppt"
+    ]
   },
   {
     "nl": "tijdelijk",
@@ -1004,7 +1363,10 @@
     "tr": "geçici",
     "en": "temporary",
     "ar": "مؤقت",
-    "fr": "temporaire"
+    "fr": "temporaire",
+    "zinnen": [
+      "xu9469x9"
+    ]
   },
   {
     "nl": "uiteraard",
@@ -1012,7 +1374,10 @@
     "tr": "tabii ki",
     "en": "of course",
     "ar": "بالطبع",
-    "fr": "bien sûr"
+    "fr": "bien sûr",
+    "zinnen": [
+      "olkokt3q"
+    ]
   },
   {
     "nl": "uitgebreid",
@@ -1020,7 +1385,10 @@
     "tr": "geniş, kapsamlı",
     "en": "extensive",
     "ar": "واسع",
-    "fr": "étendu"
+    "fr": "étendu",
+    "zinnen": [
+      "olkokt3q"
+    ]
   },
   {
     "nl": "uitrusten",
@@ -1030,7 +1398,10 @@
     "tr": "dinlenmek",
     "en": "to rest",
     "ar": "يستريح",
-    "fr": "se reposer"
+    "fr": "se reposer",
+    "zinnen": [
+      "3s9mcl47"
+    ]
   },
   {
     "nl": "vliegen",
@@ -1040,7 +1411,10 @@
     "tr": "uçmak",
     "en": "to fly",
     "ar": "يطير",
-    "fr": "voler"
+    "fr": "voler",
+    "zinnen": [
+      "qu47nqc2"
+    ]
   },
   {
     "nl": "vliegticket",
@@ -1049,7 +1423,10 @@
     "tr": "uçak bileti",
     "en": "plane ticket",
     "ar": "تذكرة طيران",
-    "fr": "billet d'avion"
+    "fr": "billet d'avion",
+    "zinnen": [
+      "q19ofvn5"
+    ]
   },
   {
     "nl": "voet",
@@ -1058,7 +1435,10 @@
     "tr": "ayak",
     "en": "foot",
     "ar": "قدم",
-    "fr": "pied"
+    "fr": "pied",
+    "zinnen": [
+      "qpt8zppz"
+    ]
   },
   {
     "nl": "vriezen",
@@ -1068,7 +1448,10 @@
     "tr": "donmak",
     "en": "to freeze",
     "ar": "يتجمد",
-    "fr": "geler"
+    "fr": "geler",
+    "zinnen": [
+      "vqyi15p9"
+    ]
   },
   {
     "nl": "wereld",
@@ -1077,7 +1460,10 @@
     "tr": "dünya",
     "en": "world",
     "ar": "عالم",
-    "fr": "monde"
+    "fr": "monde",
+    "zinnen": [
+      "cfypj21o"
+    ]
   },
   {
     "nl": "zee",
@@ -1086,7 +1472,10 @@
     "tr": "deniz",
     "en": "sea",
     "ar": "بحر",
-    "fr": "mer"
+    "fr": "mer",
+    "zinnen": [
+      "3s9mcl47"
+    ]
   },
   {
     "nl": "afspreken",
@@ -1096,7 +1485,10 @@
     "tr": "buluşmak, anlaşmak",
     "en": "to meet, to agree",
     "ar": "يتفق، يلتقي",
-    "fr": "convenir"
+    "fr": "convenir",
+    "zinnen": [
+      "yt9gmnyu"
+    ]
   },
   {
     "nl": "alleenstaand",
@@ -1104,7 +1496,10 @@
     "tr": "bekar",
     "en": "single",
     "ar": "أعزب",
-    "fr": "célibataire"
+    "fr": "célibataire",
+    "zinnen": [
+      "ulnizuez"
+    ]
   },
   {
     "nl": "cultuur",
@@ -1113,7 +1508,10 @@
     "tr": "kültür",
     "en": "culture",
     "ar": "ثقافة",
-    "fr": "culture"
+    "fr": "culture",
+    "zinnen": [
+      "1g9hg0uv"
+    ]
   },
   {
     "nl": "dalen",
@@ -1123,7 +1521,12 @@
     "tr": "düşmek",
     "en": "to decrease",
     "ar": "ينخفض",
-    "fr": "baisser"
+    "fr": "baisser",
+    "zinnen": [
+      "h98dh6ze",
+      "0jv9zw0a",
+      "17ubr6q0"
+    ]
   },
   {
     "nl": "eindigen",
@@ -1133,7 +1536,10 @@
     "tr": "bitmek",
     "en": "to end",
     "ar": "ينتهي",
-    "fr": "terminer"
+    "fr": "terminer",
+    "zinnen": [
+      "g4p0o6kp"
+    ]
   },
   {
     "nl": "gemiddeld",
@@ -1141,7 +1547,11 @@
     "tr": "ortalama",
     "en": "average",
     "ar": "متوسط",
-    "fr": "moyen"
+    "fr": "moyen",
+    "zinnen": [
+      "0jv9zw0a",
+      "h98dh6ze"
+    ]
   },
   {
     "nl": "gescheiden",
@@ -1149,7 +1559,10 @@
     "tr": "boşanmış",
     "en": "divorced",
     "ar": "مطلق",
-    "fr": "divorcé"
+    "fr": "divorcé",
+    "zinnen": [
+      "ejoakib0"
+    ]
   },
   {
     "nl": "huwelijk",
@@ -1158,7 +1571,10 @@
     "tr": "evlilik",
     "en": "marriage",
     "ar": "زواج",
-    "fr": "mariage"
+    "fr": "mariage",
+    "zinnen": [
+      "py8pj881"
+    ]
   },
   {
     "nl": "ongetrouwd",
@@ -1166,7 +1582,10 @@
     "tr": "evlenmemiş",
     "en": "unmarried",
     "ar": "غير متزوج",
-    "fr": "non marié"
+    "fr": "non marié",
+    "zinnen": [
+      "o2fs1p7r"
+    ]
   },
   {
     "nl": "ontmoeting",
@@ -1175,7 +1594,11 @@
     "tr": "buluşma",
     "en": "meeting",
     "ar": "لقاء",
-    "fr": "rencontre"
+    "fr": "rencontre",
+    "zinnen": [
+      "3xgje0ib",
+      "3xgje0ib"
+    ]
   },
   {
     "nl": "opvoeding",
@@ -1184,7 +1607,12 @@
     "tr": "yetiştirme, eğitim",
     "en": "upbringing",
     "ar": "تربية",
-    "fr": "éducation"
+    "fr": "éducation",
+    "zinnen": [
+      "uptzbt2n",
+      "fy7x59ry",
+      "mtpb3lvi"
+    ]
   },
   {
     "nl": "partner",
@@ -1193,7 +1621,10 @@
     "tr": "partner, eş",
     "en": "partner",
     "ar": "شريك",
-    "fr": "partenaire"
+    "fr": "partenaire",
+    "zinnen": [
+      "eaao9nzk"
+    ]
   },
   {
     "nl": "populair",
@@ -1201,7 +1632,10 @@
     "tr": "popüler",
     "en": "popular",
     "ar": "شعبي",
-    "fr": "populaire"
+    "fr": "populaire",
+    "zinnen": [
+      "py8pj881"
+    ]
   },
   {
     "nl": "relatie",
@@ -1210,7 +1644,13 @@
     "tr": "ilişki",
     "en": "relationship",
     "ar": "علاقة",
-    "fr": "relation"
+    "fr": "relation",
+    "zinnen": [
+      "xxfdg123",
+      "6vjc0z67",
+      "48a8cled",
+      "89gz15vt"
+    ]
   },
   {
     "nl": "samenwonen",
@@ -1220,7 +1660,12 @@
     "tr": "birlikte yaşamak",
     "en": "to live together",
     "ar": "يعيش معاً",
-    "fr": "cohabiter"
+    "fr": "cohabiter",
+    "zinnen": [
+      "4cair1om",
+      "m1kwjqq7",
+      "afwsaipf"
+    ]
   },
   {
     "nl": "scheiden",
@@ -1230,7 +1675,10 @@
     "tr": "boşanmak",
     "en": "to divorce",
     "ar": "يطلق",
-    "fr": "divorcer"
+    "fr": "divorcer",
+    "zinnen": [
+      "nplx1x21"
+    ]
   },
   {
     "nl": "scheiding",
@@ -1239,7 +1687,10 @@
     "tr": "boşanma",
     "en": "divorce",
     "ar": "طلاق",
-    "fr": "divorce"
+    "fr": "divorce",
+    "zinnen": [
+      "nplx1x21"
+    ]
   },
   {
     "nl": "toenemen",
@@ -1249,7 +1700,11 @@
     "tr": "artmak",
     "en": "to increase",
     "ar": "يزداد",
-    "fr": "augmenter"
+    "fr": "augmenter",
+    "zinnen": [
+      "jx68sbjb",
+      "jx68sbjb"
+    ]
   },
   {
     "nl": "traditioneel",
@@ -1257,7 +1712,12 @@
     "tr": "geleneksel",
     "en": "traditional",
     "ar": "تقليدي",
-    "fr": "traditionnel"
+    "fr": "traditionnel",
+    "zinnen": [
+      "91x4t2g2",
+      "kpl4dxh2",
+      "7sptegj9"
+    ]
   },
   {
     "nl": "uitstellen",
@@ -1267,7 +1727,10 @@
     "tr": "ertelemek",
     "en": "to postpone",
     "ar": "يؤجل",
-    "fr": "reporter"
+    "fr": "reporter",
+    "zinnen": [
+      "afwsaipf"
+    ]
   },
   {
     "nl": "vanzelfsprekend",
@@ -1275,7 +1738,10 @@
     "tr": "doğal olarak",
     "en": "obvious",
     "ar": "بديهي",
-    "fr": "évident"
+    "fr": "évident",
+    "zinnen": [
+      "uptzbt2n"
+    ]
   },
   {
     "nl": "verliefd",
@@ -1283,7 +1749,10 @@
     "tr": "aşık",
     "en": "in love",
     "ar": "واقع في الحب",
-    "fr": "amoureux"
+    "fr": "amoureux",
+    "zinnen": [
+      "4cair1om"
+    ]
   },
   {
     "nl": "verwachting",
@@ -1292,7 +1761,10 @@
     "tr": "beklenti",
     "en": "expectation",
     "ar": "توقع",
-    "fr": "attente"
+    "fr": "attente",
+    "zinnen": [
+      "o2fs1p7r"
+    ]
   },
   {
     "nl": "zorg",
@@ -1301,7 +1773,11 @@
     "tr": "bakım, endişe",
     "en": "care, concern",
     "ar": "رعاية، قلق",
-    "fr": "soin"
+    "fr": "soin",
+    "zinnen": [
+      "wyk5fc9s",
+      "1ptypzpq"
+    ]
   },
   {
     "nl": "Azië",
@@ -1309,7 +1785,11 @@
     "tr": "Asya",
     "en": "Asia",
     "ar": "آسيا",
-    "fr": "Asie"
+    "fr": "Asie",
+    "zinnen": [
+      "qu47nqc2",
+      "riclse3j"
+    ]
   },
   {
     "nl": "bloem",
@@ -1318,7 +1798,10 @@
     "tr": "çiçek",
     "en": "flower",
     "ar": "زهرة",
-    "fr": "fleur"
+    "fr": "fleur",
+    "zinnen": [
+      "zeei7dta"
+    ]
   },
   {
     "nl": "bruidsboeket",
@@ -1327,7 +1810,10 @@
     "tr": "gelin buketi",
     "en": "bridal bouquet",
     "ar": "باقة العروس",
-    "fr": "bouquet de mariée"
+    "fr": "bouquet de mariée",
+    "zinnen": [
+      "zeei7dta"
+    ]
   },
   {
     "nl": "foto",
@@ -1336,7 +1822,10 @@
     "tr": "fotoğraf",
     "en": "photo",
     "ar": "صورة",
-    "fr": "photo"
+    "fr": "photo",
+    "zinnen": [
+      "idd8gs25"
+    ]
   },
   {
     "nl": "fotograaf",
@@ -1345,7 +1834,10 @@
     "tr": "fotoğrafçı",
     "en": "photographer",
     "ar": "مصور",
-    "fr": "photographe"
+    "fr": "photographe",
+    "zinnen": [
+      "idd8gs25"
+    ]
   },
   {
     "nl": "gast",
@@ -1354,7 +1846,10 @@
     "tr": "misafir",
     "en": "guest",
     "ar": "ضيف",
-    "fr": "invité"
+    "fr": "invité",
+    "zinnen": [
+      "ctw2hq6a"
+    ]
   },
   {
     "nl": "hartstikke",
@@ -1362,7 +1857,10 @@
     "tr": "çok, son derece",
     "en": "very",
     "ar": "جداً",
-    "fr": "très"
+    "fr": "très",
+    "zinnen": [
+      "w4chamzt"
+    ]
   },
   {
     "nl": "hopelijk",
@@ -1370,7 +1868,10 @@
     "tr": "umarım",
     "en": "hopefully",
     "ar": "نأمل",
-    "fr": "espérons"
+    "fr": "espérons",
+    "zinnen": [
+      "3724nex2"
+    ]
   },
   {
     "nl": "huwelijksreis",
@@ -1379,7 +1880,12 @@
     "tr": "balayı",
     "en": "honeymoon",
     "ar": "شهر العسل",
-    "fr": "lune de miel"
+    "fr": "lune de miel",
+    "zinnen": [
+      "qu47nqc2",
+      "u95l987m",
+      "riclse3j"
+    ]
   },
   {
     "nl": "nerveus",
@@ -1387,7 +1893,10 @@
     "tr": "sinirli, gergin",
     "en": "nervous",
     "ar": "متوتر",
-    "fr": "nerveux"
+    "fr": "nerveux",
+    "zinnen": [
+      "fepg1vy2"
+    ]
   },
   {
     "nl": "niemand",
@@ -1395,7 +1904,10 @@
     "tr": "hiç kimse",
     "en": "nobody",
     "ar": "لا أحد",
-    "fr": "personne"
+    "fr": "personne",
+    "zinnen": [
+      "33ws1xst"
+    ]
   },
   {
     "nl": "opa",
@@ -1404,7 +1916,11 @@
     "tr": "büyükbaba",
     "en": "grandfather",
     "ar": "جد",
-    "fr": "grand-père"
+    "fr": "grand-père",
+    "zinnen": [
+      "7rye9czx",
+      "vbsot2nd"
+    ]
   },
   {
     "nl": "papa",
@@ -1412,7 +1928,10 @@
     "tr": "baba",
     "en": "dad",
     "ar": "أبي",
-    "fr": "papa"
+    "fr": "papa",
+    "zinnen": [
+      "vbsot2nd"
+    ]
   },
   {
     "nl": "pech",
@@ -1421,7 +1940,10 @@
     "tr": "şanssızlık",
     "en": "bad luck",
     "ar": "سوء حظ",
-    "fr": "malchance"
+    "fr": "malchance",
+    "zinnen": [
+      "akw4bwge"
+    ]
   },
   {
     "nl": "regelen",
@@ -1431,7 +1953,11 @@
     "tr": "düzenlemek",
     "en": "to arrange",
     "ar": "ينظم",
-    "fr": "organiser"
+    "fr": "organiser",
+    "zinnen": [
+      "wwfgtdc2",
+      "3grij8ns"
+    ]
   },
   {
     "nl": "regenen",
@@ -1441,7 +1967,10 @@
     "tr": "yağmur yağmak",
     "en": "to rain",
     "ar": "تمطر",
-    "fr": "pleuvoir"
+    "fr": "pleuvoir",
+    "zinnen": [
+      "akw4bwge"
+    ]
   },
   {
     "nl": "ring",
@@ -1450,7 +1979,10 @@
     "tr": "yüzük",
     "en": "ring",
     "ar": "خاتم",
-    "fr": "bague"
+    "fr": "bague",
+    "zinnen": [
+      "33ws1xst"
+    ]
   },
   {
     "nl": "stadhuis",
@@ -1459,7 +1991,10 @@
     "tr": "belediye binası",
     "en": "city hall",
     "ar": "مبنى البلدية",
-    "fr": "hôtel de ville"
+    "fr": "hôtel de ville",
+    "zinnen": [
+      "2k6huvlj"
+    ]
   },
   {
     "nl": "taart",
@@ -1468,7 +2003,10 @@
     "tr": "pasta",
     "en": "cake",
     "ar": "كعكة",
-    "fr": "gâteau"
+    "fr": "gâteau",
+    "zinnen": [
+      "6qbkp0ux"
+    ]
   },
   {
     "nl": "trouwjurk",
@@ -1477,7 +2015,10 @@
     "tr": "gelinlik",
     "en": "wedding dress",
     "ar": "فستان زفاف",
-    "fr": "robe de mariée"
+    "fr": "robe de mariée",
+    "zinnen": [
+      "gw2eeg0m"
+    ]
   },
   {
     "nl": "uitzoeken",
@@ -1487,7 +2028,10 @@
     "tr": "seçmek",
     "en": "to choose",
     "ar": "يختار",
-    "fr": "choisir"
+    "fr": "choisir",
+    "zinnen": [
+      "56kgvyew"
+    ]
   },
   {
     "nl": "vergeten",
@@ -1497,7 +2041,10 @@
     "tr": "unutmak",
     "en": "to forget",
     "ar": "ينسى",
-    "fr": "oublier"
+    "fr": "oublier",
+    "zinnen": [
+      "lrvhezft"
+    ]
   },
   {
     "nl": "versturen",
@@ -1507,7 +2054,10 @@
     "tr": "göndermek",
     "en": "to send",
     "ar": "يرسل",
-    "fr": "envoyer"
+    "fr": "envoyer",
+    "zinnen": [
+      "9vuyi8u1"
+    ]
   },
   {
     "nl": "verwachten",
@@ -1517,7 +2067,10 @@
     "tr": "beklemek",
     "en": "to expect",
     "ar": "يتوقع",
-    "fr": "attendre"
+    "fr": "attendre",
+    "zinnen": [
+      "ctw2hq6a"
+    ]
   },
   {
     "nl": "aardig",
@@ -1525,7 +2078,10 @@
     "tr": "nazik, kibar",
     "en": "nice, kind",
     "ar": "لطيف",
-    "fr": "gentil"
+    "fr": "gentil",
+    "zinnen": [
+      "8cc17lr3"
+    ]
   },
   {
     "nl": "baard",
@@ -1534,7 +2090,11 @@
     "tr": "sakal",
     "en": "beard",
     "ar": "لحية",
-    "fr": "barbe"
+    "fr": "barbe",
+    "zinnen": [
+      "omh4qbv3",
+      "uaibx3jb"
+    ]
   },
   {
     "nl": "blond",
@@ -1542,7 +2102,10 @@
     "tr": "sarışın",
     "en": "blonde",
     "ar": "أشقر",
-    "fr": "blond"
+    "fr": "blond",
+    "zinnen": [
+      "3i13xp1w"
+    ]
   },
   {
     "nl": "bruin",
@@ -1550,7 +2113,11 @@
     "tr": "kahverengi",
     "en": "brown",
     "ar": "بني",
-    "fr": "brun"
+    "fr": "brun",
+    "zinnen": [
+      "uaibx3jb",
+      "9defm19o"
+    ]
   },
   {
     "nl": "eigenwijs",
@@ -1558,7 +2125,10 @@
     "tr": "inatçı",
     "en": "stubborn",
     "ar": "عنيد",
-    "fr": "têtu"
+    "fr": "têtu",
+    "zinnen": [
+      "7a3q3a2a"
+    ]
   },
   {
     "nl": "gecondoleerd",
@@ -1566,7 +2136,10 @@
     "tr": "başınız sağ olsun",
     "en": "my condolences",
     "ar": "تعازي",
-    "fr": "mes condoléances"
+    "fr": "mes condoléances",
+    "zinnen": [
+      "8r8cfvr9"
+    ]
   },
   {
     "nl": "grap",
@@ -1575,7 +2148,10 @@
     "tr": "şaka",
     "en": "joke",
     "ar": "نكتة",
-    "fr": "blague"
+    "fr": "blague",
+    "zinnen": [
+      "69c02yjp"
+    ]
   },
   {
     "nl": "grappig",
@@ -1583,7 +2159,12 @@
     "tr": "komik",
     "en": "funny",
     "ar": "مضحك",
-    "fr": "drôle"
+    "fr": "drôle",
+    "zinnen": [
+      "s38qt3ez",
+      "saqt15ym",
+      "zxwhlnxg"
+    ]
   },
   {
     "nl": "herinnering",
@@ -1592,7 +2173,10 @@
     "tr": "anı, hatıra",
     "en": "memory",
     "ar": "ذكرى",
-    "fr": "souvenir"
+    "fr": "souvenir",
+    "zinnen": [
+      "jrzgzdr3"
+    ]
   },
   {
     "nl": "herkennen",
@@ -1602,7 +2186,10 @@
     "tr": "tanımak",
     "en": "to recognize",
     "ar": "يتعرف على",
-    "fr": "reconnaître"
+    "fr": "reconnaître",
+    "zinnen": [
+      "8rf6n7xe"
+    ]
   },
   {
     "nl": "huid",
@@ -1611,7 +2198,10 @@
     "tr": "cilt, deri",
     "en": "skin",
     "ar": "جلد",
-    "fr": "peau"
+    "fr": "peau",
+    "zinnen": [
+      "nb5ej1zw"
+    ]
   },
   {
     "nl": "karakter",
@@ -1620,7 +2210,11 @@
     "tr": "karakter",
     "en": "character",
     "ar": "شخصية",
-    "fr": "caractère"
+    "fr": "caractère",
+    "zinnen": [
+      "ytqg4nrl",
+      "8rf6n7xe"
+    ]
   },
   {
     "nl": "krul",
@@ -1629,7 +2223,10 @@
     "tr": "bukle",
     "en": "curl",
     "ar": "تجعيدة",
-    "fr": "boucle"
+    "fr": "boucle",
+    "zinnen": [
+      "omh4qbv3"
+    ]
   },
   {
     "nl": "lengte",
@@ -1638,7 +2235,10 @@
     "tr": "boy, uzunluk",
     "en": "length, height",
     "ar": "طول",
-    "fr": "longueur"
+    "fr": "longueur",
+    "zinnen": [
+      "i35et05e"
+    ]
   },
   {
     "nl": "lijken op",
@@ -1648,7 +2248,10 @@
     "tr": "benzemek",
     "en": "to look like",
     "ar": "يشبه",
-    "fr": "ressembler à"
+    "fr": "ressembler à",
+    "zinnen": [
+      "pcjvn064"
+    ]
   },
   {
     "nl": "ongeduldig",
@@ -1656,7 +2259,10 @@
     "tr": "sabırsız",
     "en": "impatient",
     "ar": "غير صبور",
-    "fr": "impatient"
+    "fr": "impatient",
+    "zinnen": [
+      "35r7w9bx"
+    ]
   },
   {
     "nl": "oog",
@@ -1665,7 +2271,10 @@
     "tr": "göz",
     "en": "eye",
     "ar": "عين",
-    "fr": "œil"
+    "fr": "œil",
+    "zinnen": [
+      "nb5ej1zw"
+    ]
   },
   {
     "nl": "oor",
@@ -1674,7 +2283,10 @@
     "tr": "kulak",
     "en": "ear",
     "ar": "أذن",
-    "fr": "oreille"
+    "fr": "oreille",
+    "zinnen": [
+      "l9p03fgo"
+    ]
   },
   {
     "nl": "steil",
@@ -1682,7 +2294,11 @@
     "tr": "düz (saç)",
     "en": "straight (hair)",
     "ar": "أملس",
-    "fr": "raide"
+    "fr": "raide",
+    "zinnen": [
+      "rcrrdogc",
+      "3jnngk7k"
+    ]
   },
   {
     "nl": "tegenkomen",
@@ -1692,7 +2308,11 @@
     "tr": "rastlamak",
     "en": "to run into",
     "ar": "يصادف",
-    "fr": "rencontrer"
+    "fr": "rencontrer",
+    "zinnen": [
+      "8a3zm8aj",
+      "xv5irwgy"
+    ]
   },
   {
     "nl": "toevallig",
@@ -1700,7 +2320,11 @@
     "tr": "tesadüfen",
     "en": "by chance",
     "ar": "بالصدفة",
-    "fr": "par hasard"
+    "fr": "par hasard",
+    "zinnen": [
+      "3xgje0ib",
+      "8a3zm8aj"
+    ]
   },
   {
     "nl": "uiterlijk",
@@ -1709,7 +2333,13 @@
     "tr": "dış görünüş",
     "en": "appearance",
     "ar": "مظهر",
-    "fr": "apparence"
+    "fr": "apparence",
+    "zinnen": [
+      "6g2045hz",
+      "2xhgbs6f",
+      "n77iyc5j",
+      "s4mywugc"
+    ]
   },
   {
     "nl": "verdrietig",
@@ -1717,7 +2347,10 @@
     "tr": "üzgün",
     "en": "sad",
     "ar": "حزين",
-    "fr": "triste"
+    "fr": "triste",
+    "zinnen": [
+      "jk5l57xs"
+    ]
   },
   {
     "nl": "vrolijk",
@@ -1725,7 +2358,10 @@
     "tr": "neşeli",
     "en": "cheerful",
     "ar": "مرح",
-    "fr": "joyeux"
+    "fr": "joyeux",
+    "zinnen": [
+      "jk5l57xs"
+    ]
   },
   {
     "nl": "zich voelen",
@@ -1735,7 +2371,11 @@
     "tr": "hissetmek",
     "en": "to feel",
     "ar": "يشعر",
-    "fr": "se sentir"
+    "fr": "se sentir",
+    "zinnen": [
+      "0khiu376",
+      "9ukya2oo"
+    ]
   },
   {
     "nl": "zich herinneren",
@@ -1745,7 +2385,11 @@
     "tr": "hatırlamak",
     "en": "to remember",
     "ar": "يتذكر",
-    "fr": "se souvenir"
+    "fr": "se souvenir",
+    "zinnen": [
+      "oknvbh1t",
+      "mj55vwls"
+    ]
   },
   {
     "nl": "zich schamen",
@@ -1755,7 +2399,11 @@
     "tr": "utanmak",
     "en": "to be ashamed",
     "ar": "يخجل",
-    "fr": "avoir honte"
+    "fr": "avoir honte",
+    "zinnen": [
+      "1mijgb2u",
+      "q2w06xbp"
+    ]
   },
   {
     "nl": "zulk(e)",
@@ -1763,7 +2411,10 @@
     "tr": "böyle, öyle",
     "en": "such",
     "ar": "مثل هذا",
-    "fr": "tel"
+    "fr": "tel",
+    "zinnen": [
+      "qipmpqpm"
+    ]
   },
   {
     "nl": "behulpzaam",
@@ -1771,7 +2422,10 @@
     "tr": "yardımsever",
     "en": "helpful",
     "ar": "مساعد",
-    "fr": "serviable"
+    "fr": "serviable",
+    "zinnen": [
+      "8cc17lr3"
+    ]
   },
   {
     "nl": "beschrijven",
@@ -1781,7 +2435,10 @@
     "tr": "tanımlamak",
     "en": "to describe",
     "ar": "يصف",
-    "fr": "décrire"
+    "fr": "décrire",
+    "zinnen": [
+      "w7o3flrm"
+    ]
   },
   {
     "nl": "bezorger",
@@ -1790,6 +2447,9 @@
     "tr": "kurye",
     "en": "delivery person",
     "ar": "عامل توصيل",
-    "fr": "livreur"
+    "fr": "livreur",
+    "zinnen": [
+      "hafax2kv"
+    ]
   }
 ]

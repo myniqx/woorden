@@ -1,0 +1,49 @@
+.changelog-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: var(--spacing-md);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.changelog-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.changelog-entry {
+  border-left: 3px solid var(--color-primary);
+  padding-left: var(--spacing-md);
+}
+
+.changelog-date {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.changelog-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.changelog-item {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  padding-left: var(--spacing-sm);
+  position: relative;
+}
+
+.changelog-item::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--color-text-muted);
+}
