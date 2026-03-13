@@ -1,137 +1,218 @@
-# A1 batch 1 — ~100 words
-# stad, wonen, werken
-1|Zij 2|woont in een grote 3|stad.
-Ik 1|werk in de 2|stad.
+# ============================================================
+# BATCH 1 FIXES — capitalized/conjugated forms missed
+# ============================================================
 
-# winkel, uit, boodschappen
-Ik ga 1|uit de 2|winkel met mijn 3|boodschappen.
+# wonen, werken
+Ik 1|woon@wonen in een grote 2|stad.
+1|Ze@ze 2|werkt@werken in de 3|winkel.
 
-# achternaam, heten, voornaam
-Mijn 1|voornaam is Jan en mijn 2|achternaam is de Vries.
-1|Hoe 2|heet@heten jij?
+# hallo, goedemorgen
+1|Hallo@hallo, 2|goedemorgen@goedemorgen!
 
-# hallo, hoe, ja, oké
-1|Hallo, 2|hoe gaat het?
-1|Ja, dat is 2|oké.
+# ja, nee
+1|Ja@ja, dat klopt. 2|Nee@nee, dat klopt niet.
 
-# hebben, zijn, je, jij
-1|Jij 2|hebt@hebben een 3|huis.
+# je, jij, u
+Ben 1|jij@jij hier? Dit is voor 2|je@je.
+Kan ik 1|u@u helpen?
 
-# één, ook, wat
-Dit is 1|één ding dat ik 2|ook 3|wat wil.
+# ze, we
+1|We@we 2|eten samen.
+1|Ze@ze 3|kookt@koken voor 2|ons.
 
-# les, leuk, spellen
-De 1|les is 2|leuk.
-Kun je dit woord 1|spellen?
+# zullen, welkom, wie
+1|Zullen@zullen 2|we@we gaan?
+1|Welkom@welkom, 2|meneer!
+1|Wie@wie is dat?
 
-# hoelang, vandaan
-1|Hoelang ben jij hier?
-2|Waar kom jij 1|vandaan?
+# kopen, maken
+Ik 1|koop@kopen een 2|appel.
+Ik 1|maak@maken een 2|lijst.
 
-# kloppen, ze, al, en
-1|Klopt@kloppen dit 2|al?
-3|Ze 1|studeert 2|en werkt.
+# houden van
+Ik 1|houd@houden 1|van@houden mijn 2|hobby.
 
-# telefoonnummer, e-mailadres, formulier
-Mijn 1|telefoonnummer en 2|e-mailadres staan op het 3|formulier.
+# ============================================================
+# BATCH 2 — new words
+# ============================================================
 
-# adres, postcode, woonplaats
-Wat is uw 1|adres en 2|postcode?
-Uw 1|woonplaats staat op het 2|formulier.
+# tomaat, wortel, aardappel, groente
+Op de markt koop ik een 1|tomaat, een 2|wortel en een 3|aardappel.
 
-# april, geboortedatum, geboren
-Ik ben 1|geboren in 2|april.
-Mijn 1|geboortedatum staat op het 2|formulier.
+# vis, vlees, kip
+In de 1|winkel koop ik 2|vis of 3|vlees.
 
-# gemeente, gemeentehuis
-Het 1|gemeentehuis is in de 2|gemeente.
+# ei, kaas, brood
+Ik eet 1|brood met 2|kaas en een 3|ei.
 
-# goedemorgen, helpen, kunnen
-1|Goedemorgen, 2|kan@kunnen ik u 3|helpen?
+# alsjeblieft, alstublieft, mevrouw
+1|Alsjeblieft@alsjeblieft, 2|mevrouw.
+Hier is uw bestelling, 1|alstublieft@alstublieft.
 
-# invullen, nieuw
-Kunt u dit 1|nieuwe@nieuw 2|formulier 3|invullen?
+# anders, iets, nee
+Wil je nog 1|iets 2|anders?
 
-# man, meneer, vrouw, u, uw
-1|Meneer, is dit 2|uw 3|adres?
-De 1|man en de 2|vrouw 3|helpen@helpen u.
+# dag, fijn, goed
+1|Dag@dag, 2|fijn om 3|je te zien!
+Dat is 1|goed.
 
-# mobiel, nationaliteit, op
-Mijn 1|mobiel staat 2|op de 3|lijst.
-Wat is uw 1|nationaliteit?
+# dan, voor, ook
+1|Dan@dan doe ik dat 2|voor jou.
 
-# zullen
-1|Zullen we dat 2|invullen?
+# gram, kilo, hoeveel
+1|Hoeveel@hoeveel 2|gram wil je?
+Ik wil een 1|kilo 2|kaas, 3|alsjeblieft@alsjeblieft.
 
-# alleen, geen
-Ik woon 1|alleen en heb 2|geen buren.
+# jammer, fijn
+1|Jammer@jammer, de 2|winkel is 3|dicht@dicht.
 
-# appen, buren, buurvrouw
-Mijn 1|buurvrouw 2|appt@appen me.
-Ik 1|app@appen mijn 2|buren.
+# kijken, zien
+Ik 1|kijk@kijken naar de 2|markt.
+Ik 1|zie@zien de 2|winkel 3|daar.
 
-# getrouwd, jullie
-1|Zijn@zijn 2|jullie 3|getrouwd?
+# mogen, nemen, zeggen
+1|Mag@mogen ik een 2|brood 3|nemen@nemen?
+Wat 1|zeg@zeggen je?
 
-# graag, houden van, hobby
-Ik 1|houd van@houden van mijn 2|hobby.
-Ik doe dit 1|graag.
+# pinnen, verkoper
+De 1|verkoper vraagt: wilt u 2|pinnen@pinnen?
 
-# kind, koken, met
-Ik 1|kook 2|met mijn 3|kind.
+# gram, kilo extra
+Honderd 1|gram 2|kaas, 3|alstublieft@alstublieft.
 
-# nog, ontmoeten
-Wij 1|ontmoeten 2|nog een vriend.
+# altijd, soms, meestal
+Ik 1|eet 2|altijd 3|brood.
+1|Soms@soms eet ik 2|rijst, maar 3|meestal groente.
 
-# oud, poes
-De 1|poes is 2|oud.
+# bakker, buurt, straat
+De 1|bakker is in onze 2|buurt, op de 3|straat.
 
-# restaurant, week
-Deze 1|week gaan we naar een 2|restaurant.
+# dinsdag, zaterdag, maandag, wanneer
+1|Wanneer@wanneer ga je naar de 2|markt?
+Op 1|dinsdag en 2|zaterdag is er een 3|markt.
+Op 1|maandag werk ik.
 
-# sporten, weekend
-Ik 1|sport@sporten elk 2|weekend.
+# duur, goedkoop
+De 1|vis is 2|duur, maar de 3|kaas is 4|goedkoop.
 
-# welkom, huis
-1|Welkom in ons 2|huis!
+# halen, hier, ver
+Ik 1|haal@halen het 2|brood 3|hier.
+De 1|bakker is 2|ver van 3|hier.
 
-# wie, willen
-1|Wie 2|wil@willen dit weekend komen?
+# hoor, wel, toch
+Dat is 1|goed, 2|hoor@hoor.
 
-# ander, appel, banaan
-Ik koop een 1|appel en een 2|banaan.
-Heb je een 1|ander soort 2|fruit?
+# kennen, weten
+1|Ken@kennen jij die 2|bakker?
+Ik 1|weet@weten dat het 2|dichtbij is.
 
-# bijna
-De 1|boodschappen zijn 2|bijna klaar.
+# middag, ochtend, 's avonds, 's middags, 's morgens, 's nachts, 's ochtends
+1|'s ochtends@'s ochtends eet ik 2|brood.
+1|'s middags@'s middags ga ik naar de 2|markt.
+1|'s avonds@'s avonds kook ik 2|groente.
+1|'s morgens@'s morgens drink ik koffie.
+1|'s nachts@'s nachts slaap ik.
+In de 1|ochtend drink ik koffie.
+In de 1|middag ga ik 2|boodschappen doen.
 
-# doen, dus
-Wat 1|doe@doen jij vandaag?
-Ik ben klaar, 1|dus ik ga 2|eten.
+# natuurlijk, veel, ver
+1|Natuurlijk@natuurlijk, dat is 2|goed.
+Ik koop 1|veel 2|groente.
 
-# eten, fruit, groente
-We 1|eten 2|fruit en 3|groente.
+# vers, vragen
+De 1|vis is 2|vers.
+Ik 1|vraag@vragen de 2|verkoper om 3|vis.
 
-# kip, markt
-Op de 1|markt koop ik 2|kip.
+# welk
+1|Welk@welk 2|brood wil je?
 
-# kopen, lijst, maken
-Ik 1|maak een 2|lijst en 3|koop alles.
+# chips, zak
+Ik koop een 1|zak 2|chips.
 
-# meer, of
-Wil je 1|meer 2|groente 3|of fruit?
+# denken
+Ik 1|denk@denken dat het 2|goed is.
 
-# praten
-Wij 1|praten 2|meer thuis.
+# dicht, open, openingstijden
+De 1|winkel is 2|dicht op 3|maandag.
+De 1|openingstijden staan op de 2|deur.
+De 1|bakker is 2|open van 3|ochtend tot 4|middag.
 
-# rijst, supermarkt
-Ik koop 1|rijst in de 2|supermarkt.
+# fietsen, lopen, snel
+Ik 1|fiets@fietsen naar de 2|winkel.
+Zij 1|loopt@lopen 2|snel naar de 3|bakker.
 
-# thuis
-Ik ben 1|thuis.
+# half, uur, tot
+Het is 1|half drie, nog één 2|uur tot 3|sluitingstijd.
+De 1|winkel is 2|open 3|tot vijf uur.
 
-# mijn, pron
-Dit is 1|mijn huis.
+# internet
+Ik 1|kijk@kijken op het 2|internet naar de 3|openingstijden.
 
-# welkom extra
-1|Welkom, 2|meneer!
+# keuken, thuis
+Ik 1|kook in de 2|keuken.
+
+# laat, vroeg
+Het is 1|laat, de 2|winkel is al 3|dicht.
+
+# leeg
+De 1|zak is 2|leeg.
+
+# liggen
+De 1|appel 2|ligt@liggen op de 3|tafel.
+
+# weten
+Ik 1|weet@weten 2|waar de 3|bakker is.
+
+# alles
+Ik koop 1|alles op de 2|markt.
+
+# beterschap, ziek
+1|Beterschap@beterschap! Ben je 2|ziek@ziek?
+
+# bezig, druk
+Ik ben 1|bezig, het is 2|druk in de 3|winkel.
+
+# broer, moeder, vriendin, vriend
+Mijn 1|broer en mijn 2|moeder komen 3|morgen.
+Mijn 1|vriend en 2|vriendin komen 3|ook.
+
+# daar, hier
+De 1|bakker is 2|daar, niet 3|hier.
+
+# eindelijk, steeds, altijd
+1|Eindelijk@eindelijk is de 2|winkel 3|open!
+Het is 1|steeds 2|druk op 3|zaterdag.
+
+# groet, dag
+Met 1|vriendelijke 2|groeten@groet.
+
+# lekker, warm, vers
+Dit 1|brood is 2|lekker en 3|warm.
+
+# morgen, vandaag
+1|Morgen@morgen ga ik naar de 2|bakker.
+
+# paracetamol
+Ik neem een 1|paracetamol als ik 2|ziek ben.
+
+# prima
+Dat is 1|prima.
+
+# vervelend
+Dat is 1|vervelend.
+
+# waarom
+1|Waarom@waarom is de 2|winkel 3|dicht?
+
+# weer, worden
+Het 1|wordt@worden 2|warm 3|weer.
+
+# zo, dan
+Dat doe ik 1|zo@zo.
+
+# een (article/numeral)
+Ik koop 1|een 2|brood.
+
+# ============================================================
+# BATCH 3 — next 100 words
+# ============================================================
