@@ -216,14 +216,6 @@
     ]
   },
   {
-    "nl": "ruim",
-    "type": "adj",
-    "tr": "geniş, ferah",
-    "en": "spacious, roomy",
-    "ar": "فسيح، رحب",
-    "fr": "spacieux, vaste"
-  },
-  {
     "nl": "tapijt",
     "article": "het",
     "type": "noun",
@@ -956,7 +948,8 @@
     "ar": "يتعافى، يفيق",
     "fr": "reprendre ses esprits, se remettre",
     "zinnen": [
-      "libncghx"
+      "libncghx",
+      "ncnn3a6p"
     ]
   },
   {
@@ -1050,14 +1043,6 @@
       "45kpin1y",
       "agv5fgzn"
     ]
-  },
-  {
-    "nl": "gelijk",
-    "type": "adv",
-    "tr": "eşit olarak, hemen",
-    "en": "equally, immediately",
-    "ar": "بالتساوي، فوراً",
-    "fr": "également, immédiatement"
   },
   {
     "nl": "groei",
@@ -1174,7 +1159,16 @@
     "tr": "siyasi",
     "en": "political",
     "ar": "سياسي",
-    "fr": "politique"
+    "fr": "politique",
+    "zinnen": [
+      "us0b14hy",
+      "m7rykhrz",
+      "1idpss45",
+      "4zg8z4s1",
+      "jsa1esfj",
+      "p6q68gur",
+      "28y2sdg5"
+    ]
   },
   {
     "nl": "relatief",
