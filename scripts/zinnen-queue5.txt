@@ -1,0 +1,51 @@
+# A1 queue 5 — final fixes (capitalization + conjugation + multi-word bases)
+
+# Capitalized sentence-starters — always need @base
+Ik weet het 1|misschien@misschien.
+Ik ga er 1|vandaag@vandaag naartoe.
+Dat is 1|helaas@helaas zo.
+1|Zelfs@zelfs mijn broer weet het.
+Dat is 1|eigenlijk@eigenlijk simpel.
+Er zijn 1|sommige@sommige problemen.
+Ik kom er 1|vanaf@vanaf nu voor op.
+1|Ineens@ineens stopte de regen.
+1|Waarschijnlijk@waarschijnlijk regent het morgen.
+1|Namelijk@namelijk hij is er niet.
+1|Tegenwoordig@tegenwoordig doe ik alles online.
+1|Ondertussen@ondertussen kook ik de soep.
+Ik ben er 1|daarna@daarna.
+
+# Conjugated/inflected forms — need @base
+Dit zijn 1|verschillende@verschillend producten.
+Ik heb een 1|maximale@maximaal snelheid bereikt.
+Dat was de 1|laatste@laatst keer.
+1|Tijdens@tijdens de les zwijg je.
+Ik 1|leef@leven met weinig.
+Het 1|leven@leven is mooi.
+Ik wil 1|opschieten@opschieten_met 1|met@opschieten_met dit project.
+Het is 1|iedereen@iedereen duidelijk.
+Dit is 1|vandaag@vandaag mijn taak.
+Het product is 1|origineel@origineel.
+Wat zijn de 1|voorwaarden@voorwaarde?
+Dit is 1|centraal@centraal gelegen.
+Dat gaat 1|direct@direct van start.
+Ik doe het 1|tussendoor@tussendoor.
+1|Iedereen@iedereen helpt mee.
+Dat is 1|helaas@helaas niet mogelijk.
+Dit is 1|zelfs@zelfs voor kinderen.
+1|Eigenlijk@eigenlijk is dat goed.
+De 1|maximale@maximaal dosis is vier tabletten.
+De 1|laatste@laatst trein gaat om middernacht.
+Dat doe ik 1|tegelijk@tegelijk.
+
+# opschieten met (multi-word base)
+1|Schiet@opschieten_met 1|op@opschieten_met 1|met@opschieten_met dit werk.
+
+# weg (noun, de weg — different from adv weg)
+De 1|weg@weg loopt door het bos.
+
+# verschillend
+Er zijn veel 1|verschillende@verschillend soorten.
+
+# leven (het, noun)
+Het 1|leven@leven is kort.

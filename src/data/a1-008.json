@@ -6,7 +6,10 @@
     "tr": "bulaşık",
     "en": "dishes",
     "ar": "أطباق",
-    "fr": "vaisselle"
+    "fr": "vaisselle",
+    "zinnen": [
+      "bkhhfpy6"
+    ]
   },
   {
     "nl": "bewoner",
@@ -15,7 +18,10 @@
     "tr": "sakin, oturan",
     "en": "resident",
     "ar": "ساكن",
-    "fr": "résident"
+    "fr": "résident",
+    "zinnen": [
+      "3tjetbx4"
+    ]
   },
   {
     "nl": "boos",
@@ -23,7 +29,10 @@
     "tr": "kızgın, sinirli",
     "en": "angry",
     "ar": "غاضب",
-    "fr": "en colère"
+    "fr": "en colère",
+    "zinnen": [
+      "lqfxwdtr"
+    ]
   },
   {
     "nl": "eerlijk",
@@ -31,7 +40,10 @@
     "tr": "dürüst",
     "en": "honest",
     "ar": "صادق",
-    "fr": "honnête"
+    "fr": "honnête",
+    "zinnen": [
+      "hnh2k277"
+    ]
   },
   {
     "nl": "geluk",
@@ -40,7 +52,10 @@
     "tr": "şans, mutluluk",
     "en": "luck, happiness",
     "ar": "حظ، سعادة",
-    "fr": "chance, bonheur"
+    "fr": "chance, bonheur",
+    "zinnen": [
+      "7khqfso0"
+    ]
   },
   {
     "nl": "gewoonte",
@@ -49,7 +64,10 @@
     "tr": "alışkanlık",
     "en": "habit",
     "ar": "عادة",
-    "fr": "habitude"
+    "fr": "habitude",
+    "zinnen": [
+      "1u7cdas3"
+    ]
   },
   {
     "nl": "hetzelfde",
@@ -57,7 +75,10 @@
     "tr": "aynı",
     "en": "the same",
     "ar": "نفسه",
-    "fr": "le même"
+    "fr": "le même",
+    "zinnen": [
+      "09bc1vgo"
+    ]
   },
   {
     "nl": "huishouden",
@@ -66,7 +87,10 @@
     "tr": "ev işleri",
     "en": "household",
     "ar": "أعمال منزلية",
-    "fr": "ménage"
+    "fr": "ménage",
+    "zinnen": [
+      "gvskk2ni"
+    ]
   },
   {
     "nl": "ideaal",
@@ -74,7 +98,10 @@
     "tr": "ideal",
     "en": "ideal",
     "ar": "مثالي",
-    "fr": "idéal"
+    "fr": "idéal",
+    "zinnen": [
+      "h9kd60tq"
+    ]
   },
   {
     "nl": "leven",
@@ -83,7 +110,10 @@
     "tr": "hayat",
     "en": "life",
     "ar": "حياة",
-    "fr": "vie"
+    "fr": "vie",
+    "zinnen": [
+      "4vp26xun"
+    ]
   },
   {
     "nl": "muziek",
@@ -92,7 +122,10 @@
     "tr": "müzik",
     "en": "music",
     "ar": "موسيقى",
-    "fr": "musique"
+    "fr": "musique",
+    "zinnen": [
+      "xz4cztha"
+    ]
   },
   {
     "nl": "omgeving",
@@ -101,7 +134,10 @@
     "tr": "çevre, ortam",
     "en": "environment, surroundings",
     "ar": "محيط",
-    "fr": "environnement"
+    "fr": "environnement",
+    "zinnen": [
+      "6koh64wd"
+    ]
   },
   {
     "nl": "oplossen",
@@ -111,7 +147,10 @@
     "tr": "çözmek",
     "en": "to solve",
     "ar": "يحل",
-    "fr": "résoudre"
+    "fr": "résoudre",
+    "zinnen": [
+      "x0g51o80"
+    ]
   },
   {
     "nl": "opschieten met",
@@ -121,7 +160,10 @@
     "tr": "iyi geçinmek",
     "en": "to get along with",
     "ar": "ينسجم مع",
-    "fr": "bien s'entendre avec"
+    "fr": "bien s'entendre avec",
+    "zinnen": [
+      "e68v0zkf"
+    ]
   },
   {
     "nl": "overdag",
@@ -129,7 +171,10 @@
     "tr": "gündüz",
     "en": "during the day",
     "ar": "خلال النهار",
-    "fr": "pendant la journée"
+    "fr": "pendant la journée",
+    "zinnen": [
+      "xbp1m6l8"
+    ]
   },
   {
     "nl": "rest",
@@ -138,7 +183,10 @@
     "tr": "geri kalan",
     "en": "rest, remainder",
     "ar": "الباقي",
-    "fr": "reste"
+    "fr": "reste",
+    "zinnen": [
+      "k3oeq6w0"
+    ]
   },
   {
     "nl": "roken",
@@ -148,7 +196,10 @@
     "tr": "sigara içmek",
     "en": "to smoke",
     "ar": "يدخن",
-    "fr": "fumer"
+    "fr": "fumer",
+    "zinnen": [
+      "m32qb95m"
+    ]
   },
   {
     "nl": "ruzie",
@@ -157,7 +208,10 @@
     "tr": "kavga, tartışma",
     "en": "argument, quarrel",
     "ar": "شجار",
-    "fr": "dispute"
+    "fr": "dispute",
+    "zinnen": [
+      "l45ckowi"
+    ]
   },
   {
     "nl": "schoon",
@@ -165,7 +219,11 @@
     "tr": "temiz",
     "en": "clean",
     "ar": "نظيف",
-    "fr": "propre"
+    "fr": "propre",
+    "zinnen": [
+      "hysoc6ad",
+      "9t2v7x3j"
+    ]
   },
   {
     "nl": "serieus",
@@ -173,7 +231,10 @@
     "tr": "ciddi",
     "en": "serious",
     "ar": "جاد",
-    "fr": "sérieux"
+    "fr": "sérieux",
+    "zinnen": [
+      "2eqg8eqg"
+    ]
   },
   {
     "nl": "sinds",
@@ -181,7 +242,10 @@
     "tr": "-den beri",
     "en": "since",
     "ar": "منذ",
-    "fr": "depuis"
+    "fr": "depuis",
+    "zinnen": [
+      "va5b95ve"
+    ]
   },
   {
     "nl": "uitgaan",
@@ -191,7 +255,10 @@
     "tr": "eğlenmeye gitmek",
     "en": "to go out",
     "ar": "يخرج للتسلية",
-    "fr": "sortir"
+    "fr": "sortir",
+    "zinnen": [
+      "vbn8987n"
+    ]
   },
   {
     "nl": "verdelen",
@@ -201,7 +268,10 @@
     "tr": "bölmek, paylaştırmak",
     "en": "to divide",
     "ar": "يقسم",
-    "fr": "répartir"
+    "fr": "répartir",
+    "zinnen": [
+      "rbof85dj"
+    ]
   },
   {
     "nl": "vies",
@@ -209,7 +279,10 @@
     "tr": "pis, kirli",
     "en": "dirty",
     "ar": "وسخ",
-    "fr": "sale"
+    "fr": "sale",
+    "zinnen": [
+      "p6fd30vo"
+    ]
   },
   {
     "nl": "weleens",
@@ -217,7 +290,10 @@
     "tr": "bazen, ara sıra",
     "en": "sometimes",
     "ar": "أحيانا",
-    "fr": "parfois"
+    "fr": "parfois",
+    "zinnen": [
+      "aw1cizc7"
+    ]
   },
   {
     "nl": "activiteit",
@@ -226,7 +302,10 @@
     "tr": "etkinlik",
     "en": "activity",
     "ar": "نشاط",
-    "fr": "activité"
+    "fr": "activité",
+    "zinnen": [
+      "9sdfsjyi"
+    ]
   },
   {
     "nl": "begane grond",
@@ -235,7 +314,11 @@
     "tr": "zemin kat",
     "en": "ground floor",
     "ar": "الطابق الأرضي",
-    "fr": "rez-de-chaussée"
+    "fr": "rez-de-chaussée",
+    "zinnen": [
+      "8jhxsivs",
+      "qy1846d6"
+    ]
   },
   {
     "nl": "bibliotheek",
@@ -244,7 +327,10 @@
     "tr": "kütüphane",
     "en": "library",
     "ar": "مكتبة",
-    "fr": "bibliothèque"
+    "fr": "bibliothèque",
+    "zinnen": [
+      "bwy7inky"
+    ]
   },
   {
     "nl": "buurtcentrum",
@@ -253,7 +339,11 @@
     "tr": "mahalle merkezi",
     "en": "community center",
     "ar": "مركز الحي",
-    "fr": "centre communautaire"
+    "fr": "centre communautaire",
+    "zinnen": [
+      "ou37ycld",
+      "bslbmkkg"
+    ]
   },
   {
     "nl": "deelnemer",
@@ -262,7 +352,10 @@
     "tr": "katılımcı",
     "en": "participant",
     "ar": "مشارك",
-    "fr": "participant"
+    "fr": "participant",
+    "zinnen": [
+      "u775snb9"
+    ]
   },
   {
     "nl": "gebeuren",
@@ -272,7 +365,10 @@
     "tr": "olmak, meydana gelmek",
     "en": "to happen",
     "ar": "يحدث",
-    "fr": "se passer"
+    "fr": "se passer",
+    "zinnen": [
+      "x3unq66p"
+    ]
   },
   {
     "nl": "groep",
@@ -281,7 +377,10 @@
     "tr": "grup",
     "en": "group",
     "ar": "مجموعة",
-    "fr": "groupe"
+    "fr": "groupe",
+    "zinnen": [
+      "mxzgv21i"
+    ]
   },
   {
     "nl": "hoeven",
@@ -291,7 +390,10 @@
     "tr": "gerekmemek",
     "en": "to need (negative)",
     "ar": "لا يحتاج",
-    "fr": "ne pas avoir besoin"
+    "fr": "ne pas avoir besoin",
+    "zinnen": [
+      "m08mlpn9"
+    ]
   },
   {
     "nl": "iemand",
@@ -299,7 +401,10 @@
     "tr": "biri, birisi",
     "en": "someone",
     "ar": "شخص ما",
-    "fr": "quelqu'un"
+    "fr": "quelqu'un",
+    "zinnen": [
+      "mpo5idau"
+    ]
   },
   {
     "nl": "ingang",
@@ -308,7 +413,10 @@
     "tr": "giriş",
     "en": "entrance",
     "ar": "مدخل",
-    "fr": "entrée"
+    "fr": "entrée",
+    "zinnen": [
+      "99yv29qo"
+    ]
   },
   {
     "nl": "krant",
@@ -317,7 +425,10 @@
     "tr": "gazete",
     "en": "newspaper",
     "ar": "جريدة",
-    "fr": "journal"
+    "fr": "journal",
+    "zinnen": [
+      "hsxhctn1"
+    ]
   },
   {
     "nl": "medewerkster",
@@ -326,7 +437,10 @@
     "tr": "kadın çalışan",
     "en": "female employee",
     "ar": "موظفة",
-    "fr": "employée"
+    "fr": "employée",
+    "zinnen": [
+      "7rkjn8eu"
+    ]
   },
   {
     "nl": "oefenen",
@@ -336,7 +450,10 @@
     "tr": "pratik yapmak",
     "en": "to practice",
     "ar": "يتدرب",
-    "fr": "s'entraîner"
+    "fr": "s'entraîner",
+    "zinnen": [
+      "zm5gbis4"
+    ]
   },
   {
     "nl": "onderwerp",
@@ -345,7 +462,10 @@
     "tr": "konu",
     "en": "subject, topic",
     "ar": "موضوع",
-    "fr": "sujet"
+    "fr": "sujet",
+    "zinnen": [
+      "ntv4w0sx"
+    ]
   },
   {
     "nl": "organiseren",
@@ -355,7 +475,11 @@
     "tr": "organize etmek",
     "en": "to organize",
     "ar": "ينظم",
-    "fr": "organiser"
+    "fr": "organiser",
+    "zinnen": [
+      "js0a4dd0",
+      "a4b3758m"
+    ]
   },
   {
     "nl": "precies",
@@ -363,7 +487,10 @@
     "tr": "tam olarak",
     "en": "exactly",
     "ar": "بالضبط",
-    "fr": "exactement"
+    "fr": "exactement",
+    "zinnen": [
+      "dbbb34e8"
+    ]
   },
   {
     "nl": "spelletje",
@@ -372,7 +499,10 @@
     "tr": "oyun",
     "en": "game",
     "ar": "لعبة",
-    "fr": "jeu"
+    "fr": "jeu",
+    "zinnen": [
+      "18tk8lfq"
+    ]
   },
   {
     "nl": "taal",
@@ -381,7 +511,10 @@
     "tr": "dil",
     "en": "language",
     "ar": "لغة",
-    "fr": "langue"
+    "fr": "langue",
+    "zinnen": [
+      "ts3vd1r3"
+    ]
   },
   {
     "nl": "taalcafé",
@@ -390,7 +523,10 @@
     "tr": "dil kahvesi",
     "en": "language café",
     "ar": "مقهى اللغات",
-    "fr": "café des langues"
+    "fr": "café des langues",
+    "zinnen": [
+      "ynuljxvo"
+    ]
   },
   {
     "nl": "taalcoach",
@@ -399,7 +535,12 @@
     "tr": "dil koçu",
     "en": "language coach",
     "ar": "مدرب لغة",
-    "fr": "coach linguistique"
+    "fr": "coach linguistique",
+    "zinnen": [
+      "3ejd5mar",
+      "jte1qcnw",
+      "fu6v685k"
+    ]
   },
   {
     "nl": "vanaf",
@@ -407,7 +548,10 @@
     "tr": "-den itibaren",
     "en": "from, as of",
     "ar": "اعتبارا من",
-    "fr": "à partir de"
+    "fr": "à partir de",
+    "zinnen": [
+      "v35lstaa"
+    ]
   },
   {
     "nl": "verschillen",
@@ -417,7 +561,10 @@
     "tr": "farklı olmak",
     "en": "to differ",
     "ar": "يختلف",
-    "fr": "différer"
+    "fr": "différer",
+    "zinnen": [
+      "25cua175"
+    ]
   },
   {
     "nl": "voorbereiden",
@@ -427,7 +574,10 @@
     "tr": "hazırlamak",
     "en": "to prepare",
     "ar": "يستعد",
-    "fr": "préparer"
+    "fr": "préparer",
+    "zinnen": [
+      "2yze6oy0"
+    ]
   },
   {
     "nl": "vrijwilliger",
@@ -436,7 +586,10 @@
     "tr": "gönüllü",
     "en": "volunteer",
     "ar": "متطوع",
-    "fr": "bénévole"
+    "fr": "bénévole",
+    "zinnen": [
+      "k77e75jt"
+    ]
   },
   {
     "nl": "zich aanmelden",
@@ -446,7 +599,10 @@
     "tr": "kaydolmak",
     "en": "to register",
     "ar": "يسجل",
-    "fr": "s'inscrire"
+    "fr": "s'inscrire",
+    "zinnen": [
+      "l9bhhzs8"
+    ]
   },
   {
     "nl": "bioscoop",
@@ -455,7 +611,10 @@
     "tr": "sinema",
     "en": "cinema",
     "ar": "سينما",
-    "fr": "cinéma"
+    "fr": "cinéma",
+    "zinnen": [
+      "mkiii4jn"
+    ]
   },
   {
     "nl": "boom",
@@ -464,7 +623,10 @@
     "tr": "ağaç",
     "en": "tree",
     "ar": "شجرة",
-    "fr": "arbre"
+    "fr": "arbre",
+    "zinnen": [
+      "4k8hixy0"
+    ]
   },
   {
     "nl": "buitenland",
@@ -473,7 +635,10 @@
     "tr": "yurt dışı",
     "en": "abroad",
     "ar": "الخارج",
-    "fr": "étranger"
+    "fr": "étranger",
+    "zinnen": [
+      "o1nmsfo1"
+    ]
   },
   {
     "nl": "café",
@@ -482,7 +647,10 @@
     "tr": "bar, kafe",
     "en": "café, bar",
     "ar": "مقهى",
-    "fr": "café"
+    "fr": "café",
+    "zinnen": [
+      "8lu5drbb"
+    ]
   },
   {
     "nl": "elk",
@@ -490,7 +658,11 @@
     "tr": "her",
     "en": "each, every",
     "ar": "كل",
-    "fr": "chaque"
+    "fr": "chaque",
+    "zinnen": [
+      "3g9vje5e",
+      "obzwr0ns"
+    ]
   },
   {
     "nl": "film",
@@ -499,7 +671,10 @@
     "tr": "film",
     "en": "film, movie",
     "ar": "فيلم",
-    "fr": "film"
+    "fr": "film",
+    "zinnen": [
+      "z9t2srk5"
+    ]
   },
   {
     "nl": "gang",
@@ -508,7 +683,10 @@
     "tr": "koridor",
     "en": "hallway, corridor",
     "ar": "ممر",
-    "fr": "couloir"
+    "fr": "couloir",
+    "zinnen": [
+      "gd87s3g0"
+    ]
   },
   {
     "nl": "gebouw",
@@ -517,7 +695,10 @@
     "tr": "bina",
     "en": "building",
     "ar": "مبنى",
-    "fr": "bâtiment"
+    "fr": "bâtiment",
+    "zinnen": [
+      "8tggs67d"
+    ]
   },
   {
     "nl": "grasveld",
@@ -526,7 +707,10 @@
     "tr": "çimlik",
     "en": "lawn",
     "ar": "عشب",
-    "fr": "pelouse"
+    "fr": "pelouse",
+    "zinnen": [
+      "k71kbd1o"
+    ]
   },
   {
     "nl": "groen",
@@ -534,7 +718,10 @@
     "tr": "yeşil",
     "en": "green",
     "ar": "أخضر",
-    "fr": "vert"
+    "fr": "vert",
+    "zinnen": [
+      "j5wy3xr5"
+    ]
   },
   {
     "nl": "kletsen",
@@ -544,7 +731,10 @@
     "tr": "sohbet etmek",
     "en": "to chat",
     "ar": "يدردش",
-    "fr": "bavarder"
+    "fr": "bavarder",
+    "zinnen": [
+      "xnog25p7"
+    ]
   },
   {
     "nl": "lift",
@@ -553,7 +743,10 @@
     "tr": "asansör",
     "en": "elevator, lift",
     "ar": "مصعد",
-    "fr": "ascenseur"
+    "fr": "ascenseur",
+    "zinnen": [
+      "eu5dgjct"
+    ]
   },
   {
     "nl": "metro",
@@ -562,7 +755,11 @@
     "tr": "metro",
     "en": "metro, subway",
     "ar": "مترو",
-    "fr": "métro"
+    "fr": "métro",
+    "zinnen": [
+      "fiepo6aj",
+      "2hma79dy"
+    ]
   },
   {
     "nl": "missen",
@@ -572,7 +769,10 @@
     "tr": "özlemek, kaçırmak",
     "en": "to miss",
     "ar": "يفتقد",
-    "fr": "manquer"
+    "fr": "manquer",
+    "zinnen": [
+      "cbce6z9i"
+    ]
   },
   {
     "nl": "openbaar vervoer",
@@ -581,7 +781,12 @@
     "tr": "toplu taşıma",
     "en": "public transport",
     "ar": "نقل عام",
-    "fr": "transports publics"
+    "fr": "transports publics",
+    "zinnen": [
+      "ia89ao4k",
+      "falr4yc8",
+      "yum3q4e6"
+    ]
   },
   {
     "nl": "park",
@@ -590,7 +795,12 @@
     "tr": "park",
     "en": "park",
     "ar": "حديقة",
-    "fr": "parc"
+    "fr": "parc",
+    "zinnen": [
+      "n6a6bwmq",
+      "q38f4g3p",
+      "7512vxts"
+    ]
   },
   {
     "nl": "parkeerplaats",
@@ -599,7 +809,10 @@
     "tr": "otopark",
     "en": "parking lot",
     "ar": "موقف سيارات",
-    "fr": "parking"
+    "fr": "parking",
+    "zinnen": [
+      "t17vzqg8"
+    ]
   },
   {
     "nl": "regelmatig",
@@ -607,7 +820,10 @@
     "tr": "düzenli",
     "en": "regular",
     "ar": "منتظم",
-    "fr": "régulier"
+    "fr": "régulier",
+    "zinnen": [
+      "xgnltsid"
+    ]
   },
   {
     "nl": "speeltuin",
@@ -616,7 +832,10 @@
     "tr": "oyun parkı",
     "en": "playground",
     "ar": "ملعب",
-    "fr": "aire de jeux"
+    "fr": "aire de jeux",
+    "zinnen": [
+      "96iueuwf"
+    ]
   },
   {
     "nl": "spelen",
@@ -626,7 +845,11 @@
     "tr": "oynamak",
     "en": "to play",
     "ar": "يلعب",
-    "fr": "jouer"
+    "fr": "jouer",
+    "zinnen": [
+      "du424qsg",
+      "k35xxazb"
+    ]
   },
   {
     "nl": "struik",
@@ -635,7 +858,10 @@
     "tr": "çalı",
     "en": "bush, shrub",
     "ar": "شجيرة",
-    "fr": "buisson"
+    "fr": "buisson",
+    "zinnen": [
+      "kpcbxga6"
+    ]
   },
   {
     "nl": "tevreden",
@@ -643,7 +869,11 @@
     "tr": "memnun",
     "en": "satisfied",
     "ar": "راضٍ",
-    "fr": "satisfait"
+    "fr": "satisfait",
+    "zinnen": [
+      "wije0lmu",
+      "w7qli4j2"
+    ]
   },
   {
     "nl": "verkeer",
@@ -652,7 +882,10 @@
     "tr": "trafik",
     "en": "traffic",
     "ar": "حركة المرور",
-    "fr": "circulation"
+    "fr": "circulation",
+    "zinnen": [
+      "xose7c2d"
+    ]
   },
   {
     "nl": "voetballen",
@@ -662,7 +895,10 @@
     "tr": "futbol oynamak",
     "en": "to play football",
     "ar": "يلعب كرة القدم",
-    "fr": "jouer au football"
+    "fr": "jouer au football",
+    "zinnen": [
+      "nljtuecp"
+    ]
   },
   {
     "nl": "zoveel",
@@ -670,7 +906,10 @@
     "tr": "o kadar çok",
     "en": "so much, so many",
     "ar": "الكثير",
-    "fr": "autant"
+    "fr": "autant",
+    "zinnen": [
+      "enoafkz6"
+    ]
   },
   {
     "nl": "bang",
@@ -678,7 +917,10 @@
     "tr": "korkmuş",
     "en": "afraid, scared",
     "ar": "خائف",
-    "fr": "effrayé"
+    "fr": "effrayé",
+    "zinnen": [
+      "45c2oge1"
+    ]
   },
   {
     "nl": "blaffen",
@@ -688,7 +930,10 @@
     "tr": "havlamak",
     "en": "to bark",
     "ar": "ينبح",
-    "fr": "aboyer"
+    "fr": "aboyer",
+    "zinnen": [
+      "q6unnl3b"
+    ]
   },
   {
     "nl": "buurman",
@@ -697,7 +942,10 @@
     "tr": "erkek komşu",
     "en": "male neighbor",
     "ar": "جار",
-    "fr": "voisin"
+    "fr": "voisin",
+    "zinnen": [
+      "db2ummcw"
+    ]
   },
   {
     "nl": "gedrag",
@@ -706,7 +954,10 @@
     "tr": "davranış",
     "en": "behavior",
     "ar": "سلوك",
-    "fr": "comportement"
+    "fr": "comportement",
+    "zinnen": [
+      "cep00wgt"
+    ]
   },
   {
     "nl": "geluid",
@@ -715,7 +966,10 @@
     "tr": "ses",
     "en": "sound",
     "ar": "صوت",
-    "fr": "son"
+    "fr": "son",
+    "zinnen": [
+      "31hxm4y7"
+    ]
   },
   {
     "nl": "hond",
@@ -724,7 +978,10 @@
     "tr": "köpek",
     "en": "dog",
     "ar": "كلب",
-    "fr": "chien"
+    "fr": "chien",
+    "zinnen": [
+      "dktnvjd8"
+    ]
   },
   {
     "nl": "huisdier",
@@ -733,7 +990,10 @@
     "tr": "evcil hayvan",
     "en": "pet",
     "ar": "حيوان أليف",
-    "fr": "animal domestique"
+    "fr": "animal domestique",
+    "zinnen": [
+      "h1v8zxsl"
+    ]
   },
   {
     "nl": "ineens",
@@ -741,7 +1001,10 @@
     "tr": "aniden, birdenbire",
     "en": "suddenly",
     "ar": "فجأة",
-    "fr": "soudain"
+    "fr": "soudain",
+    "zinnen": [
+      "hfo0xh2e"
+    ]
   },
   {
     "nl": "klagen",
@@ -751,7 +1014,10 @@
     "tr": "şikayet etmek",
     "en": "to complain",
     "ar": "يشتكي",
-    "fr": "se plaindre"
+    "fr": "se plaindre",
+    "zinnen": [
+      "4a2s15k7"
+    ]
   },
   {
     "nl": "laten",
@@ -761,7 +1027,10 @@
     "tr": "bırakmak",
     "en": "to let, to leave",
     "ar": "يترك",
-    "fr": "laisser"
+    "fr": "laisser",
+    "zinnen": [
+      "8nap8b8d"
+    ]
   },
   {
     "nl": "oplossing",
@@ -770,7 +1039,10 @@
     "tr": "çözüm",
     "en": "solution",
     "ar": "حل",
-    "fr": "solution"
+    "fr": "solution",
+    "zinnen": [
+      "lfmv66tw"
+    ]
   },
   {
     "nl": "overlast",
@@ -779,7 +1051,10 @@
     "tr": "rahatsızlık",
     "en": "nuisance",
     "ar": "إزعاج",
-    "fr": "nuisance"
+    "fr": "nuisance",
+    "zinnen": [
+      "ap14g0gj"
+    ]
   },
   {
     "nl": "overleggen",
@@ -789,7 +1064,10 @@
     "tr": "danışmak, görüşmek",
     "en": "to consult",
     "ar": "يتشاور",
-    "fr": "discuter"
+    "fr": "discuter",
+    "zinnen": [
+      "wrp3rma6"
+    ]
   },
   {
     "nl": "schuld",
@@ -798,7 +1076,10 @@
     "tr": "suç, borç",
     "en": "fault, debt",
     "ar": "ذنب، دين",
-    "fr": "faute, dette"
+    "fr": "faute, dette",
+    "zinnen": [
+      "w1vvgteu"
+    ]
   },
   {
     "nl": "situatie",
@@ -807,7 +1088,10 @@
     "tr": "durum",
     "en": "situation",
     "ar": "وضع",
-    "fr": "situation"
+    "fr": "situation",
+    "zinnen": [
+      "icaz4d1b"
+    ]
   },
   {
     "nl": "stinken",
@@ -817,7 +1101,10 @@
     "tr": "kötü kokmak",
     "en": "to stink",
     "ar": "ينتن",
-    "fr": "puer"
+    "fr": "puer",
+    "zinnen": [
+      "7anduj4k"
+    ]
   },
   {
     "nl": "trap",
@@ -826,7 +1113,10 @@
     "tr": "merdiven",
     "en": "stairs",
     "ar": "درج",
-    "fr": "escalier"
+    "fr": "escalier",
+    "zinnen": [
+      "mufnha19"
+    ]
   },
   {
     "nl": "uitlaten",
@@ -836,7 +1126,10 @@
     "tr": "gezdirmek (köpek)",
     "en": "to walk (dog)",
     "ar": "يمشي الكلب",
-    "fr": "promener"
+    "fr": "promener",
+    "zinnen": [
+      "b2v0uj40"
+    ]
   },
   {
     "nl": "veroorzaken",
@@ -846,7 +1139,10 @@
     "tr": "neden olmak",
     "en": "to cause",
     "ar": "يتسبب",
-    "fr": "causer"
+    "fr": "causer",
+    "zinnen": [
+      "gbmtpb42"
+    ]
   },
   {
     "nl": "vuilniszak",
@@ -855,7 +1151,10 @@
     "tr": "çöp torbası",
     "en": "garbage bag",
     "ar": "كيس قمامة",
-    "fr": "sac poubelle"
+    "fr": "sac poubelle",
+    "zinnen": [
+      "58wz22xs"
+    ]
   },
   {
     "nl": "waarschijnlijk",
@@ -863,7 +1162,10 @@
     "tr": "muhtemelen",
     "en": "probably",
     "ar": "على الأرجح",
-    "fr": "probablement"
+    "fr": "probablement",
+    "zinnen": [
+      "pni8yqyu"
+    ]
   },
   {
     "nl": "wennen",
@@ -873,7 +1175,10 @@
     "tr": "alışmak",
     "en": "to get used to",
     "ar": "يعتاد",
-    "fr": "s'habituer"
+    "fr": "s'habituer",
+    "zinnen": [
+      "ztz1lpvm"
+    ]
   },
   {
     "nl": "woningbouwvereniging",
@@ -882,7 +1187,10 @@
     "tr": "konut kooperatifi",
     "en": "housing association",
     "ar": "جمعية إسكان",
-    "fr": "société de logement"
+    "fr": "société de logement",
+    "zinnen": [
+      "i1o9x9di"
+    ]
   },
   {
     "nl": "zielig",
@@ -890,7 +1198,11 @@
     "tr": "zavallı",
     "en": "pitiful",
     "ar": "مسكين",
-    "fr": "pitoyable"
+    "fr": "pitoyable",
+    "zinnen": [
+      "wn9virsi",
+      "1tx6d2w5"
+    ]
   },
   {
     "nl": "zomaar",
@@ -898,6 +1210,9 @@
     "tr": "öylesine, sebepsiz",
     "en": "just like that",
     "ar": "هكذا",
-    "fr": "comme ça"
+    "fr": "comme ça",
+    "zinnen": [
+      "i87iff8d"
+    ]
   }
 ]

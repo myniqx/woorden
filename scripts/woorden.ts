@@ -80,12 +80,17 @@ function loadAllWords(): Map<string, WordInPack[]> {
   return packMap;
 }
 
-function findWordEntry(nl: string, allWords: Map<string, WordInPack[]>): WordInPack | null {
+function findWordEntry(nl: string, allWords: Map<string, WordInPack[]>, limit?: number): WordInPack | null {
+  let firstMatch: WordInPack | null = null;
   for (const words of allWords.values()) {
-    const found = words.find(wp => wp.word.nl === nl);
-    if (found) return found;
+    const matches = words.filter(wp => wp.word.nl === nl);
+    for (const found of matches) {
+      if (!firstMatch) firstMatch = found;
+      // If a limit is given, prefer entries not yet at the limit
+      if (limit !== undefined && (found.word.zinnen?.length ?? 0) < limit) return found;
+    }
   }
-  return null;
+  return firstMatch;
 }
 
 // ─── Duplicate logic ──────────────────────────────────────────────────────────
@@ -192,7 +197,9 @@ function parseMarked(marked: string): {
     if (m) {
       const num = parseInt(m[1]);
       const display = m[2];
-      const explicitBase = m[3];
+      // Underscores in @base encode spaces: @houden_van → "houden van"
+      // Also strip trailing punctuation from explicit base (same as default base)
+      const explicitBase = m[3]?.replace(/_/g, ' ').replace(/[.,?!;:]+$/, '');
       // Strip trailing punctuation from display when deriving default base
       const defaultBase = display.replace(/[.,?!;:]+$/, '');
       if (!groups.has(num)) {
@@ -423,7 +430,7 @@ function cmdAddZin(args: string[]) {
 
   for (const num of sortedNums) {
     const { base } = groups.get(num)!;
-    const wp = findWordEntry(base, allWords);
+    const wp = findWordEntry(base, allWords, limit);
     const zinCount = wp?.word.zinnen?.length ?? 0;
     const atLimit = zinCount >= limit;
     results.push({ base, wp, zinCount, atLimit });

@@ -1,0 +1,61 @@
+# A1 queue 4 — final 44 words
+
+# TIME EXPRESSIONS (dual-token for multi-word)
+Ik drink 1|'s@'s_avonds 1|avonds@'s_avonds thee.
+Ik eet 1|'s@'s_middags 1|middags@'s_middags een broodje.
+Hij loopt 1|'s@'s_morgens 1|morgens@'s_morgens vroeg.
+Het is 1|'s@'s_nachts 1|nachts@'s_nachts koud.
+Ik sta 1|'s@'s_ochtends 1|ochtends@'s_ochtends vroeg op.
+
+# MULTI-WORD PHRASES (dual-token)
+Ik wil 1|een@een_beetje 1|beetje@een_beetje suiker.
+Dat is 1|een@een_paar 1|paar@een_paar euro meer.
+Ik heb 1|een@een_heleboel 1|heleboel@een_heleboel werk vandaag.
+Ik neem het 1|openbaar@openbaar_vervoer 1|vervoer@openbaar_vervoer.
+Het is vijftig 1|vierkante@vierkante_meter 1|meter@vierkante_meter.
+
+# SEPARABLE VERBS (fresh phrasing)
+Jij 1|ziet@eruitzien er moe 1|uit@eruitzien.
+Ze 1|huilt@huilen van blijdschap.
+Hij 1|lacht@lachen hard.
+1|Schiet@opschieten 1|op@opschieten anders missen we de bus.
+
+# FIXED EXPRESSIONS
+Dit is 1|afgesproken.
+Heel 1|gefeliciteerd met je nieuwe baan.
+Kom je ook? 1|Misschien.
+Ik kom 1|vanavond langs.
+1|Vandaag regent het.
+
+# ADV/ADJ (fresh wording)
+Eet 1|tussendoor een stuk fruit.
+Ik ga niet mee, 1|daarom bel ik.
+Dit zijn 1|verschillende kleuren.
+1|Iedereen is welkom op het feest.
+Dit is 1|vooral voor beginners.
+Dat is 1|centraal gelegen.
+Dat gaat 1|direct van start.
+1|Helaas kan ik niet komen.
+1|Zelfs de kinderen doen mee.
+Er zijn 1|sommige problemen.
+1|Eigenlijk is dit makkelijk.
+Dit is de 1|maximale snelheid.
+Dat was de 1|laatste keer.
+1|Tijdens de les zwijg je.
+Ik 1|leef@leven van dag tot dag.
+1|Vanaf morgen begin ik.
+1|Ineens was het stil.
+1|Waarschijnlijk regent het morgen.
+1|Namelijk hij is er niet.
+Dit is het 1|originele product.
+Wat zijn de 1|voorwaarden?
+1|Tegenwoordig werkt iedereen online.
+1|Ondertussen zet ik thee.
+Ik ben er 1|daarna.
+
+# COMPLEX PHRASES (over ... heen / om ... heen — both parts same group)
+Ik spring 1|over@over_..._heen de sloot 1|heen@over_..._heen.
+Wij lopen 1|om@om_..._heen het gebouw 1|heen@om_..._heen.
+
+# DE WEG (noun)
+De 1|weg naar Amsterdam is lang.

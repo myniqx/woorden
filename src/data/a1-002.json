@@ -19,7 +19,9 @@
     "ar": "تفاحة",
     "fr": "pomme",
     "zinnen": [
-      "97bon1uq"
+      "97bon1uq",
+      "vq0uzuzg",
+      "748u5od2"
     ]
   },
   {
@@ -55,7 +57,8 @@
     "fr": "courses",
     "zinnen": [
       "n9syr148",
-      "px6olnkp"
+      "px6olnkp",
+      "zukpqhct"
     ]
   },
   {
@@ -93,7 +96,8 @@
     "fr": "manger",
     "zinnen": [
       "gweu17bn",
-      "cdb55ja7"
+      "cdb55ja7",
+      "qir1pb1r"
     ]
   },
   {
@@ -119,7 +123,9 @@
     "fr": "légume",
     "zinnen": [
       "cdb55ja7",
-      "4p4vjfc0"
+      "4p4vjfc0",
+      "97rvh9x0",
+      "tvd0po5x"
     ]
   },
   {
@@ -142,7 +148,11 @@
     "tr": "satın almak",
     "en": "to buy",
     "ar": "يشتري",
-    "fr": "acheter"
+    "fr": "acheter",
+    "zinnen": [
+      "vq0uzuzg",
+      "zxchfht8"
+    ]
   },
   {
     "nl": "lijst",
@@ -155,7 +165,8 @@
     "fr": "liste",
     "zinnen": [
       "bos1yo7r",
-      "8g3bi5hg"
+      "8g3bi5hg",
+      "dqy7b8qm"
     ]
   },
   {
@@ -166,7 +177,11 @@
     "tr": "yapmak, hazırlamak",
     "en": "to make",
     "ar": "يصنع",
-    "fr": "faire"
+    "fr": "faire",
+    "zinnen": [
+      "dqy7b8qm",
+      "w5vnzpxw"
+    ]
   },
   {
     "nl": "markt",
@@ -177,7 +192,11 @@
     "ar": "سوق",
     "fr": "marché",
     "zinnen": [
-      "i1tj87kg"
+      "i1tj87kg",
+      "42t0wwg2",
+      "s4197o2c",
+      "vrgt5i6x",
+      "fyt83j07"
     ]
   },
   {
@@ -225,7 +244,8 @@
     "ar": "أرز",
     "fr": "riz",
     "zinnen": [
-      "dnukjep9"
+      "dnukjep9",
+      "ezll54rf"
     ]
   },
   {
@@ -258,7 +278,11 @@
     "tr": "domates",
     "en": "tomato",
     "ar": "طماطم",
-    "fr": "tomate"
+    "fr": "tomate",
+    "zinnen": [
+      "xg76udfo",
+      "o95y1wxw"
+    ]
   },
   {
     "nl": "vis",
@@ -267,7 +291,14 @@
     "tr": "balık",
     "en": "fish",
     "ar": "سمك",
-    "fr": "poisson"
+    "fr": "poisson",
+    "zinnen": [
+      "qzfnkjgc",
+      "wpwgtxx8",
+      "m8lqxusk",
+      "687mevyv",
+      "ibg2726b"
+    ]
   },
   {
     "nl": "vlees",
@@ -276,7 +307,11 @@
     "tr": "et",
     "en": "meat",
     "ar": "لحم",
-    "fr": "viande"
+    "fr": "viande",
+    "zinnen": [
+      "qzfnkjgc",
+      "p69qls36"
+    ]
   },
   {
     "nl": "we",
@@ -284,7 +319,11 @@
     "tr": "biz",
     "en": "we",
     "ar": "نحن",
-    "fr": "nous"
+    "fr": "nous",
+    "zinnen": [
+      "qir1pb1r",
+      "8i8b6nre"
+    ]
   },
   {
     "nl": "wortel",
@@ -293,7 +332,11 @@
     "tr": "havuç",
     "en": "carrot",
     "ar": "جزر",
-    "fr": "carotte"
+    "fr": "carotte",
+    "zinnen": [
+      "xg76udfo",
+      "w9e19n1u"
+    ]
   },
   {
     "nl": "aardappel",
@@ -302,7 +345,10 @@
     "tr": "patates",
     "en": "potato",
     "ar": "بطاطس",
-    "fr": "pomme de terre"
+    "fr": "pomme de terre",
+    "zinnen": [
+      "xg76udfo"
+    ]
   },
   {
     "nl": "alsjeblieft",
@@ -310,7 +356,10 @@
     "tr": "lütfen (sen), buyur",
     "en": "please (informal), here you go",
     "ar": "من فضلك",
-    "fr": "s'il te plaît"
+    "fr": "s'il te plaît",
+    "zinnen": [
+      "b5lyyuls"
+    ]
   },
   {
     "nl": "alstublieft",
@@ -318,7 +367,10 @@
     "tr": "lütfen (siz), buyurun",
     "en": "please (formal), here you go",
     "ar": "من فضلك (رسمي)",
-    "fr": "s'il vous plaît"
+    "fr": "s'il vous plaît",
+    "zinnen": [
+      "tklebci0"
+    ]
   },
   {
     "nl": "anders",
@@ -326,7 +378,10 @@
     "tr": "başka, farklı, yoksa",
     "en": "else, otherwise",
     "ar": "غير ذلك",
-    "fr": "autrement"
+    "fr": "autrement",
+    "zinnen": [
+      "oh5za47p"
+    ]
   },
   {
     "nl": "dag",
@@ -335,7 +390,10 @@
     "tr": "gün",
     "en": "day",
     "ar": "يوم",
-    "fr": "jour"
+    "fr": "jour",
+    "zinnen": [
+      "qq85pu9u"
+    ]
   },
   {
     "nl": "dan",
@@ -343,7 +401,10 @@
     "tr": "o zaman, öyleyse",
     "en": "then",
     "ar": "إذن، ثم",
-    "fr": "alors"
+    "fr": "alors",
+    "zinnen": [
+      "8f74m0wb"
+    ]
   },
   {
     "nl": "ei",
@@ -352,7 +413,11 @@
     "tr": "yumurta",
     "en": "egg",
     "ar": "بيضة",
-    "fr": "œuf"
+    "fr": "œuf",
+    "zinnen": [
+      "rrjhqjm6",
+      "ditfag4u"
+    ]
   },
   {
     "nl": "fijn",
@@ -360,7 +425,10 @@
     "tr": "güzel, hoş, iyi",
     "en": "nice, fine",
     "ar": "لطيف",
-    "fr": "bien, agréable"
+    "fr": "bien, agréable",
+    "zinnen": [
+      "5f0f96y0"
+    ]
   },
   {
     "nl": "goed",
@@ -368,7 +436,13 @@
     "tr": "iyi",
     "en": "good",
     "ar": "جيد",
-    "fr": "bon"
+    "fr": "bon",
+    "zinnen": [
+      "1tkx1wq1",
+      "xq2rqvo4",
+      "6icfh67q",
+      "ga757a9h"
+    ]
   },
   {
     "nl": "gram",
@@ -377,7 +451,12 @@
     "tr": "gram",
     "en": "gram",
     "ar": "غرام",
-    "fr": "gramme"
+    "fr": "gramme",
+    "zinnen": [
+      "vbu85e38",
+      "6lcnzo3t",
+      "ya04o840"
+    ]
   },
   {
     "nl": "hoeveel",
@@ -385,7 +464,10 @@
     "tr": "kaç, ne kadar",
     "en": "how much, how many",
     "ar": "كم",
-    "fr": "combien"
+    "fr": "combien",
+    "zinnen": [
+      "vbu85e38"
+    ]
   },
   {
     "nl": "iets",
@@ -393,7 +475,10 @@
     "tr": "bir şey",
     "en": "something",
     "ar": "شيء ما",
-    "fr": "quelque chose"
+    "fr": "quelque chose",
+    "zinnen": [
+      "oh5za47p"
+    ]
   },
   {
     "nl": "jammer",
@@ -401,7 +486,10 @@
     "tr": "yazık, üzücü",
     "en": "too bad, unfortunate",
     "ar": "للأسف",
-    "fr": "dommage"
+    "fr": "dommage",
+    "zinnen": [
+      "8681e9hf"
+    ]
   },
   {
     "nl": "kaas",
@@ -410,7 +498,14 @@
     "tr": "peynir",
     "en": "cheese",
     "ar": "جبن",
-    "fr": "fromage"
+    "fr": "fromage",
+    "zinnen": [
+      "rrjhqjm6",
+      "sctcljf7",
+      "6lcnzo3t",
+      "wpwgtxx8",
+      "hp5zdxpo"
+    ]
   },
   {
     "nl": "kijken",
@@ -420,7 +515,11 @@
     "tr": "bakmak",
     "en": "to look, to watch",
     "ar": "ينظر",
-    "fr": "regarder"
+    "fr": "regarder",
+    "zinnen": [
+      "42t0wwg2",
+      "1ijd89d1"
+    ]
   },
   {
     "nl": "kilo",
@@ -429,7 +528,10 @@
     "tr": "kilo",
     "en": "kilo",
     "ar": "كيلو",
-    "fr": "kilo"
+    "fr": "kilo",
+    "zinnen": [
+      "sctcljf7"
+    ]
   },
   {
     "nl": "mevrouw",
@@ -438,7 +540,11 @@
     "tr": "bayan, hanımefendi",
     "en": "mrs, madam",
     "ar": "سيدة",
-    "fr": "madame"
+    "fr": "madame",
+    "zinnen": [
+      "v7wv4e3a",
+      "xgjy9y47"
+    ]
   },
   {
     "nl": "mogen",
@@ -448,7 +554,10 @@
     "tr": "izin almak, -ebilmek",
     "en": "may, to be allowed to",
     "ar": "يجوز",
-    "fr": "pouvoir"
+    "fr": "pouvoir",
+    "zinnen": [
+      "402o8pvs"
+    ]
   },
   {
     "nl": "nee",
@@ -456,7 +565,10 @@
     "tr": "hayır",
     "en": "no",
     "ar": "لا",
-    "fr": "non"
+    "fr": "non",
+    "zinnen": [
+      "n47jodyc"
+    ]
   },
   {
     "nl": "nemen",
@@ -466,7 +578,10 @@
     "tr": "almak",
     "en": "to take",
     "ar": "يأخذ",
-    "fr": "prendre"
+    "fr": "prendre",
+    "zinnen": [
+      "eo67wac0"
+    ]
   },
   {
     "nl": "pinnen",
@@ -476,7 +591,10 @@
     "tr": "kartla ödemek",
     "en": "to pay by card",
     "ar": "يدفع بالبطاقة",
-    "fr": "payer par carte"
+    "fr": "payer par carte",
+    "zinnen": [
+      "a4mivm1l"
+    ]
   },
   {
     "nl": "verkoper",
@@ -485,7 +603,13 @@
     "tr": "satıcı",
     "en": "seller, salesperson",
     "ar": "بائع",
-    "fr": "vendeur"
+    "fr": "vendeur",
+    "zinnen": [
+      "u72kimlq",
+      "687mevyv",
+      "948k68dx",
+      "tt4ojrqd"
+    ]
   },
   {
     "nl": "voor",
@@ -493,7 +617,10 @@
     "tr": "için, önünde",
     "en": "for, in front of",
     "ar": "لـ، أمام",
-    "fr": "pour, devant"
+    "fr": "pour, devant",
+    "zinnen": [
+      "8f74m0wb"
+    ]
   },
   {
     "nl": "zeggen",
@@ -503,7 +630,10 @@
     "tr": "söylemek, demek",
     "en": "to say",
     "ar": "يقول",
-    "fr": "dire"
+    "fr": "dire",
+    "zinnen": [
+      "s3ksxogw"
+    ]
   },
   {
     "nl": "altijd",
@@ -511,7 +641,11 @@
     "tr": "her zaman, daima",
     "en": "always",
     "ar": "دائما",
-    "fr": "toujours"
+    "fr": "toujours",
+    "zinnen": [
+      "67pemx4i",
+      "ycfnxy3u"
+    ]
   },
   {
     "nl": "bakker",
@@ -520,7 +654,14 @@
     "tr": "fırıncı",
     "en": "baker",
     "ar": "خباز",
-    "fr": "boulanger"
+    "fr": "boulanger",
+    "zinnen": [
+      "o75p897d",
+      "ekqmcbma",
+      "bepmo4kk",
+      "3v6nf6bi",
+      "rrh56hii"
+    ]
   },
   {
     "nl": "brood",
@@ -529,7 +670,14 @@
     "tr": "ekmek",
     "en": "bread",
     "ar": "خبز",
-    "fr": "pain"
+    "fr": "pain",
+    "zinnen": [
+      "rrjhqjm6",
+      "402o8pvs",
+      "67pemx4i",
+      "llj0dnd3",
+      "nz5etplr"
+    ]
   },
   {
     "nl": "buurt",
@@ -538,7 +686,10 @@
     "tr": "mahalle, çevre",
     "en": "neighborhood",
     "ar": "حي",
-    "fr": "quartier"
+    "fr": "quartier",
+    "zinnen": [
+      "o75p897d"
+    ]
   },
   {
     "nl": "dinsdag",
@@ -547,7 +698,11 @@
     "tr": "salı",
     "en": "Tuesday",
     "ar": "الثلاثاء",
-    "fr": "mardi"
+    "fr": "mardi",
+    "zinnen": [
+      "vrgt5i6x",
+      "32aasao4"
+    ]
   },
   {
     "nl": "duur",
@@ -555,7 +710,11 @@
     "tr": "pahalı",
     "en": "expensive",
     "ar": "غالي",
-    "fr": "cher"
+    "fr": "cher",
+    "zinnen": [
+      "wpwgtxx8",
+      "1jat6l3b"
+    ]
   },
   {
     "nl": "goedkoop",
@@ -563,7 +722,11 @@
     "tr": "ucuz",
     "en": "cheap",
     "ar": "رخيص",
-    "fr": "bon marché"
+    "fr": "bon marché",
+    "zinnen": [
+      "wpwgtxx8",
+      "b2i57af4"
+    ]
   },
   {
     "nl": "halen",
@@ -573,7 +736,10 @@
     "tr": "almak, getirmek",
     "en": "to get, to fetch",
     "ar": "يجلب",
-    "fr": "chercher"
+    "fr": "chercher",
+    "zinnen": [
+      "llj0dnd3"
+    ]
   },
   {
     "nl": "hier",
@@ -581,7 +747,13 @@
     "tr": "burada",
     "en": "here",
     "ar": "هنا",
-    "fr": "ici"
+    "fr": "ici",
+    "zinnen": [
+      "llj0dnd3",
+      "ekqmcbma",
+      "z2d06lx9",
+      "ghwikukb"
+    ]
   },
   {
     "nl": "hoor",
@@ -589,7 +761,10 @@
     "tr": "(vurgulama edatı)",
     "en": "(emphasis particle)",
     "ar": "(للتأكيد)",
-    "fr": "(particule d'emphase)"
+    "fr": "(particule d'emphase)",
+    "zinnen": [
+      "fl31w6he"
+    ]
   },
   {
     "nl": "kennen",
@@ -599,7 +774,10 @@
     "tr": "tanımak, bilmek",
     "en": "to know (person/place)",
     "ar": "يعرف",
-    "fr": "connaître"
+    "fr": "connaître",
+    "zinnen": [
+      "bepmo4kk"
+    ]
   },
   {
     "nl": "meestal",
@@ -607,7 +785,11 @@
     "tr": "çoğunlukla, genellikle",
     "en": "usually, mostly",
     "ar": "عادة",
-    "fr": "généralement"
+    "fr": "généralement",
+    "zinnen": [
+      "ezll54rf",
+      "3bo907z0"
+    ]
   },
   {
     "nl": "middag",
@@ -616,7 +798,11 @@
     "tr": "öğle, öğleden sonra",
     "en": "afternoon",
     "ar": "بعد الظهر",
-    "fr": "après-midi"
+    "fr": "après-midi",
+    "zinnen": [
+      "zukpqhct",
+      "3v6nf6bi"
+    ]
   },
   {
     "nl": "natuurlijk",
@@ -624,7 +810,10 @@
     "tr": "tabii ki, elbette",
     "en": "of course, naturally",
     "ar": "بالطبع",
-    "fr": "bien sûr"
+    "fr": "bien sûr",
+    "zinnen": [
+      "k2n3ufjg"
+    ]
   },
   {
     "nl": "ochtend",
@@ -633,7 +822,11 @@
     "tr": "sabah",
     "en": "morning",
     "ar": "صباح",
-    "fr": "matin"
+    "fr": "matin",
+    "zinnen": [
+      "9sxkmehc",
+      "3v6nf6bi"
+    ]
   },
   {
     "nl": "soms",
@@ -641,7 +834,10 @@
     "tr": "bazen",
     "en": "sometimes",
     "ar": "أحيانا",
-    "fr": "parfois"
+    "fr": "parfois",
+    "zinnen": [
+      "ezll54rf"
+    ]
   },
   {
     "nl": "straat",
@@ -650,7 +846,10 @@
     "tr": "sokak, cadde",
     "en": "street",
     "ar": "شارع",
-    "fr": "rue"
+    "fr": "rue",
+    "zinnen": [
+      "o75p897d"
+    ]
   },
   {
     "nl": "veel",
@@ -658,7 +857,10 @@
     "tr": "çok",
     "en": "much, many",
     "ar": "كثير",
-    "fr": "beaucoup"
+    "fr": "beaucoup",
+    "zinnen": [
+      "tvd0po5x"
+    ]
   },
   {
     "nl": "ver",
@@ -666,7 +868,10 @@
     "tr": "uzak",
     "en": "far",
     "ar": "بعيد",
-    "fr": "loin"
+    "fr": "loin",
+    "zinnen": [
+      "ekqmcbma"
+    ]
   },
   {
     "nl": "vers",
@@ -674,7 +879,11 @@
     "tr": "taze",
     "en": "fresh",
     "ar": "طازج",
-    "fr": "frais"
+    "fr": "frais",
+    "zinnen": [
+      "m8lqxusk",
+      "wi82j8zm"
+    ]
   },
   {
     "nl": "vragen",
@@ -684,7 +893,10 @@
     "tr": "sormak, istemek",
     "en": "to ask",
     "ar": "يسأل",
-    "fr": "demander"
+    "fr": "demander",
+    "zinnen": [
+      "687mevyv"
+    ]
   },
   {
     "nl": "wanneer",
@@ -692,7 +904,10 @@
     "tr": "ne zaman",
     "en": "when",
     "ar": "متى",
-    "fr": "quand"
+    "fr": "quand",
+    "zinnen": [
+      "s4197o2c"
+    ]
   },
   {
     "nl": "wel",
@@ -700,7 +915,10 @@
     "tr": "evet (olumsuzluğa karşı)",
     "en": "indeed, actually",
     "ar": "بالفعل",
-    "fr": "bien, quand même"
+    "fr": "bien, quand même",
+    "zinnen": [
+      "ivwu08e1"
+    ]
   },
   {
     "nl": "welk",
@@ -708,7 +926,10 @@
     "tr": "hangi",
     "en": "which",
     "ar": "أي",
-    "fr": "quel"
+    "fr": "quel",
+    "zinnen": [
+      "wlixqe2a"
+    ]
   },
   {
     "nl": "zaterdag",
@@ -717,7 +938,12 @@
     "tr": "cumartesi",
     "en": "Saturday",
     "ar": "السبت",
-    "fr": "samedi"
+    "fr": "samedi",
+    "zinnen": [
+      "vrgt5i6x",
+      "pn8x5kmv",
+      "zhyc80c8"
+    ]
   },
   {
     "nl": "zien",
@@ -727,7 +953,10 @@
     "tr": "görmek",
     "en": "to see",
     "ar": "يرى",
-    "fr": "voir"
+    "fr": "voir",
+    "zinnen": [
+      "lfsj2qm1"
+    ]
   },
   {
     "nl": "chips",
@@ -736,7 +965,10 @@
     "tr": "cips",
     "en": "chips, crisps",
     "ar": "رقائق",
-    "fr": "chips"
+    "fr": "chips",
+    "zinnen": [
+      "6wb1ozgr"
+    ]
   },
   {
     "nl": "denken",
@@ -746,7 +978,10 @@
     "tr": "düşünmek, sanmak",
     "en": "to think",
     "ar": "يفكر",
-    "fr": "penser"
+    "fr": "penser",
+    "zinnen": [
+      "ga757a9h"
+    ]
   },
   {
     "nl": "dicht",
@@ -754,7 +989,12 @@
     "tr": "kapalı",
     "en": "closed",
     "ar": "مغلق",
-    "fr": "fermé"
+    "fr": "fermé",
+    "zinnen": [
+      "9y1dldyf",
+      "8ctnxlre",
+      "hwu38bpn"
+    ]
   },
   {
     "nl": "fietsen",
@@ -764,7 +1004,10 @@
     "tr": "bisiklet sürmek",
     "en": "to cycle",
     "ar": "يركب الدراجة",
-    "fr": "faire du vélo"
+    "fr": "faire du vélo",
+    "zinnen": [
+      "81qw15u4"
+    ]
   },
   {
     "nl": "half",
@@ -772,7 +1015,10 @@
     "tr": "yarım, buçuk",
     "en": "half",
     "ar": "نصف",
-    "fr": "demi"
+    "fr": "demi",
+    "zinnen": [
+      "9hbuyufi"
+    ]
   },
   {
     "nl": "internet",
@@ -781,7 +1027,10 @@
     "tr": "internet",
     "en": "internet",
     "ar": "إنترنت",
-    "fr": "internet"
+    "fr": "internet",
+    "zinnen": [
+      "1ijd89d1"
+    ]
   },
   {
     "nl": "keuken",
@@ -790,7 +1039,10 @@
     "tr": "mutfak",
     "en": "kitchen",
     "ar": "مطبخ",
-    "fr": "cuisine"
+    "fr": "cuisine",
+    "zinnen": [
+      "top1j1ox"
+    ]
   },
   {
     "nl": "laat",
@@ -798,7 +1050,11 @@
     "tr": "geç",
     "en": "late",
     "ar": "متأخر",
-    "fr": "tard"
+    "fr": "tard",
+    "zinnen": [
+      "8ctnxlre",
+      "3yweun9b"
+    ]
   },
   {
     "nl": "leeg",
@@ -806,7 +1062,11 @@
     "tr": "boş",
     "en": "empty",
     "ar": "فارغ",
-    "fr": "vide"
+    "fr": "vide",
+    "zinnen": [
+      "0if83mxy",
+      "1mp8lips"
+    ]
   },
   {
     "nl": "liggen",
@@ -816,7 +1076,10 @@
     "tr": "yatmak, bulunmak",
     "en": "to lie, to be located",
     "ar": "يقع، يستلقي",
-    "fr": "être situé, être couché"
+    "fr": "être situé, être couché",
+    "zinnen": [
+      "748u5od2"
+    ]
   },
   {
     "nl": "maandag",
@@ -825,7 +1088,12 @@
     "tr": "pazartesi",
     "en": "Monday",
     "ar": "الاثنين",
-    "fr": "lundi"
+    "fr": "lundi",
+    "zinnen": [
+      "luzyefzl",
+      "9y1dldyf",
+      "tkqpvc79"
+    ]
   },
   {
     "nl": "open",
@@ -833,7 +1101,12 @@
     "tr": "açık",
     "en": "open",
     "ar": "مفتوح",
-    "fr": "ouvert"
+    "fr": "ouvert",
+    "zinnen": [
+      "3v6nf6bi",
+      "67i4ttb2",
+      "seqlf923"
+    ]
   },
   {
     "nl": "openingstijden",
@@ -842,7 +1115,11 @@
     "tr": "açılış saatleri",
     "en": "opening hours",
     "ar": "ساعات العمل",
-    "fr": "heures d'ouverture"
+    "fr": "heures d'ouverture",
+    "zinnen": [
+      "v1a0wmq4",
+      "1ijd89d1"
+    ]
   },
   {
     "nl": "'s avonds",
@@ -850,7 +1127,11 @@
     "tr": "akşamları",
     "en": "in the evening",
     "ar": "في المساء",
-    "fr": "le soir"
+    "fr": "le soir",
+    "zinnen": [
+      "h700ser9",
+      "tt08xexx"
+    ]
   },
   {
     "nl": "'s middags",
@@ -858,7 +1139,10 @@
     "tr": "öğleden sonraları",
     "en": "in the afternoon",
     "ar": "بعد الظهر",
-    "fr": "l'après-midi"
+    "fr": "l'après-midi",
+    "zinnen": [
+      "38db9hlt"
+    ]
   },
   {
     "nl": "'s morgens",
@@ -866,7 +1150,10 @@
     "tr": "sabahları",
     "en": "in the morning",
     "ar": "في الصباح",
-    "fr": "le matin"
+    "fr": "le matin",
+    "zinnen": [
+      "1gj8alff"
+    ]
   },
   {
     "nl": "'s nachts",
@@ -874,7 +1161,10 @@
     "tr": "geceleri",
     "en": "at night",
     "ar": "في الليل",
-    "fr": "la nuit"
+    "fr": "la nuit",
+    "zinnen": [
+      "flyd1s9k"
+    ]
   },
   {
     "nl": "'s ochtends",
@@ -882,7 +1172,10 @@
     "tr": "sabahları",
     "en": "in the morning",
     "ar": "في الصباح",
-    "fr": "le matin"
+    "fr": "le matin",
+    "zinnen": [
+      "9xf7c9ss"
+    ]
   },
   {
     "nl": "snel",
@@ -890,7 +1183,10 @@
     "tr": "hızlı, çabuk",
     "en": "fast, quick",
     "ar": "سريع",
-    "fr": "rapide"
+    "fr": "rapide",
+    "zinnen": [
+      "rrh56hii"
+    ]
   },
   {
     "nl": "tot",
@@ -898,7 +1194,10 @@
     "tr": "-e kadar",
     "en": "until, to",
     "ar": "حتى",
-    "fr": "jusqu'à"
+    "fr": "jusqu'à",
+    "zinnen": [
+      "67i4ttb2"
+    ]
   },
   {
     "nl": "uur",
@@ -907,7 +1206,10 @@
     "tr": "saat",
     "en": "hour, o'clock",
     "ar": "ساعة",
-    "fr": "heure"
+    "fr": "heure",
+    "zinnen": [
+      "9hbuyufi"
+    ]
   },
   {
     "nl": "weten",
@@ -917,7 +1219,11 @@
     "tr": "bilmek",
     "en": "to know (fact)",
     "ar": "يعرف",
-    "fr": "savoir"
+    "fr": "savoir",
+    "zinnen": [
+      "23xemzet",
+      "hxyrdq3t"
+    ]
   },
   {
     "nl": "zak",
@@ -926,6 +1232,10 @@
     "tr": "torba, çanta, cep",
     "en": "bag, pocket",
     "ar": "كيس، جيب",
-    "fr": "sac, poche"
+    "fr": "sac, poche",
+    "zinnen": [
+      "6wb1ozgr",
+      "0if83mxy"
+    ]
   }
 ]
