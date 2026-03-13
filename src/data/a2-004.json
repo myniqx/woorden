@@ -103,7 +103,9 @@
     "fr": "connaissance",
     "zinnen": [
       "owm97i6x",
-      "leliyl6y"
+      "leliyl6y",
+      "pkq9a92e",
+      "40jipcz7"
     ]
   },
   {
@@ -188,7 +190,8 @@
     "fr": "social",
     "zinnen": [
       "731kejom",
-      "spyrvqmn"
+      "spyrvqmn",
+      "uyrex9cj"
     ]
   },
   {
@@ -224,7 +227,9 @@
     "ar": "رياضيات",
     "fr": "mathématiques",
     "zinnen": [
-      "la4z6kiz"
+      "la4z6kiz",
+      "p5ajcmwk",
+      "dy9lxhl3"
     ]
   },
   {
@@ -260,7 +265,10 @@
     "tr": "başlangıç",
     "en": "beginning",
     "ar": "بداية",
-    "fr": "début"
+    "fr": "début",
+    "zinnen": [
+      "j9n9j7nz"
+    ]
   },
   {
     "nl": "belang",
@@ -342,7 +350,10 @@
     "tr": "eski",
     "en": "ex-",
     "ar": "سابق",
-    "fr": "ex-"
+    "fr": "ex-",
+    "zinnen": [
+      "8z9jbsq7"
+    ]
   },
   {
     "nl": "interviewen",
@@ -352,7 +363,10 @@
     "tr": "mülakat yapmak",
     "en": "to interview",
     "ar": "يجري مقابلة",
-    "fr": "interviewer"
+    "fr": "interviewer",
+    "zinnen": [
+      "gtng8998"
+    ]
   },
   {
     "nl": "leidinggevende",
@@ -398,7 +412,10 @@
     "tr": "tarafsız",
     "en": "neutral",
     "ar": "محايد",
-    "fr": "neutre"
+    "fr": "neutre",
+    "zinnen": [
+      "u0crgyc8"
+    ]
   },
   {
     "nl": "nuttig",
@@ -418,7 +435,10 @@
     "tr": "sonuç",
     "en": "result",
     "ar": "نتيجة",
-    "fr": "résultat"
+    "fr": "résultat",
+    "zinnen": [
+      "88cd8k3g"
+    ]
   },
   {
     "nl": "uitbreiden",
@@ -562,7 +582,10 @@
     "tr": "cevaplamak",
     "en": "to answer",
     "ar": "يجيب",
-    "fr": "répondre"
+    "fr": "répondre",
+    "zinnen": [
+      "eqfwzdd6"
+    ]
   },
   {
     "nl": "bereid",
@@ -748,7 +771,10 @@
     "tr": "otoyol",
     "en": "highway",
     "ar": "طريق سريع",
-    "fr": "autoroute"
+    "fr": "autoroute",
+    "zinnen": [
+      "yay5axko"
+    ]
   },
   {
     "nl": "sollicitatiebrief",
@@ -889,7 +915,10 @@
     "tr": "yarı zamanlı iş",
     "en": "side job",
     "ar": "عمل جانبي",
-    "fr": "petit boulot"
+    "fr": "petit boulot",
+    "zinnen": [
+      "y0umah5e"
+    ]
   },
   {
     "nl": "boekwinkel",
@@ -1066,7 +1095,9 @@
     "ar": "نوع",
     "fr": "sorte",
     "zinnen": [
-      "umnk2hie"
+      "umnk2hie",
+      "3jem9pxk",
+      "sakeluu6"
     ]
   },
   {
@@ -1136,7 +1167,10 @@
     "tr": "içeride kalmak",
     "en": "to stay inside",
     "ar": "يبقى في الداخل",
-    "fr": "rester à l'intérieur"
+    "fr": "rester à l'intérieur",
+    "zinnen": [
+      "m1caw2us"
+    ]
   },
   {
     "nl": "bui",
@@ -1405,7 +1439,10 @@
     "tr": "dünya, toprak",
     "en": "earth",
     "ar": "أرض",
-    "fr": "terre"
+    "fr": "terre",
+    "zinnen": [
+      "qs7mx382"
+    ]
   },
   {
     "nl": "beschermen",
@@ -1415,7 +1452,10 @@
     "tr": "korumak",
     "en": "to protect",
     "ar": "يحمي",
-    "fr": "protéger"
+    "fr": "protéger",
+    "zinnen": [
+      "qw96rh7e"
+    ]
   },
   {
     "nl": "daardoor",
@@ -1458,7 +1498,10 @@
     "tr": "ile, tarafından",
     "en": "through, by",
     "ar": "من خلال",
-    "fr": "par"
+    "fr": "par",
+    "zinnen": [
+      "p4notk1b"
+    ]
   },
   {
     "nl": "gevolg",
@@ -1589,7 +1632,10 @@
     "tr": "dönem",
     "en": "period",
     "ar": "فترة",
-    "fr": "période"
+    "fr": "période",
+    "zinnen": [
+      "tixlm39e"
+    ]
   },
   {
     "nl": "rivier",
@@ -2118,15 +2164,6 @@
     ]
   },
   {
-    "nl": "meer",
-    "article": "het",
-    "type": "noun",
-    "tr": "göl",
-    "en": "lake",
-    "ar": "بحيرة",
-    "fr": "lac"
-  },
-  {
     "nl": "miljoen",
     "article": "het",
     "type": "noun",
@@ -2191,7 +2228,10 @@
     "tr": "zengin",
     "en": "rich",
     "ar": "غني",
-    "fr": "riche"
+    "fr": "riche",
+    "zinnen": [
+      "ig8byun7"
+    ]
   },
   {
     "nl": "schaap",

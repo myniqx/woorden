@@ -144,6 +144,18 @@ Dat is een 1|speciale@speciaal dag.
 
 **Reflexive pronouns** (`zich`, `me`, `je`) that are part of a reflexive verb construction are **plain text** in the sentence — do NOT mark them with a group number.
 
+**Edge cases to watch out for:**
+
+| Situation | Problem | Fix |
+|-----------|---------|-----|
+| Inflected adjective, no `@base` | `"uitstekende" not found in any pack` | Always add `@base`: `1\|uitstekende@uitstekend` |
+| Multi-word `nl` key with spaces | `"oppassen" not found` or wrong base | Use underscores: `@oppassen_op` |
+| Proper noun with spaces ("Europese Unie") | Parser splits at space | Mark first word only: `1\|Europese@Europese_Unie Unie` |
+| `nl` key ends with period ("etc.") | Period stripped → "etc" not found | Remove period from `nl` key in JSON, or skip the word |
+| Word exists in both A1 and A2 | Sentence always links to A1 entry | Remove the duplicate from A2 with `npm run woorden -- remove A2 <word>` |
+| Word appears twice in same pack | Second entry stays unlinked | Run `npm run woorden -- remove A2 <word>`, choose which copy to remove (pick the one without zinnen) |
+| Capitalized token that equals base | `"Engels" not found` (base "Engels" ≠ nl "engels") | Use `@base` with correct case: `1\|Engels@engels` |
+
 ## Step 4 — Add each sentence via the CLI
 
 For every sentence, run:
