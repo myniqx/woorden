@@ -81,25 +81,27 @@ function loadAllWords(): Map<string, WordInPack[]> {
 }
 
 function findWordEntry(nl: string, allWords: Map<string, WordInPack[]>, limit?: number): WordInPack | null {
+  const all = findAllWordEntries(nl, allWords);
+  if (all.length === 0) return null;
+  if (limit !== undefined) {
+    const underLimit = all.find(wp => (wp.word.zinnen?.length ?? 0) < limit);
+    if (underLimit) return underLimit;
+  }
+  return all[0];
+}
+
+function findAllWordEntries(nl: string, allWords: Map<string, WordInPack[]>): WordInPack[] {
   const nlLower = nl.toLowerCase();
-  let firstMatch: WordInPack | null = null;
-  let firstCaseInsensitive: WordInPack | null = null;
+  const exact: WordInPack[] = [];
+  const caseInsensitive: WordInPack[] = [];
 
   for (const words of allWords.values()) {
     for (const found of words) {
-      const exact = found.word.nl === nl;
-      const caseInsensitive = !exact && found.word.nl.toLowerCase() === nlLower;
-      if (!exact && !caseInsensitive) continue;
-
-      if (exact) {
-        if (!firstMatch) firstMatch = found;
-        if (limit !== undefined && (found.word.zinnen?.length ?? 0) < limit) return found;
-      } else {
-        if (!firstCaseInsensitive) firstCaseInsensitive = found;
-      }
+      if (found.word.nl === nl) exact.push(found);
+      else if (found.word.nl.toLowerCase() === nlLower) caseInsensitive.push(found);
     }
   }
-  return firstMatch ?? firstCaseInsensitive;
+  return exact.length > 0 ? exact : caseInsensitive;
 }
 
 // ─── Duplicate logic ──────────────────────────────────────────────────────────
@@ -154,13 +156,22 @@ function saveZinFile(file: string, data: ZinFile): void {
   writeFileSync(join(DATA_DIR, file), JSON.stringify(data, null, 2) + '\n', 'utf-8');
 }
 
-function loadAllZins(): Map<string, { marked: string; file: string }> {
-  const result = new Map<string, { marked: string; file: string }>();
+function loadAllZins(): Map<string, { marked: string; file: string; line: number }> {
+  const result = new Map<string, { marked: string; file: string; line: number }>();
   for (const file of getZinFiles()) {
     const data = loadZinFile(file);
-    for (const [id, marked] of Object.entries(data)) result.set(id, { marked, file });
+    const lines = readFileSync(join(DATA_DIR, file), 'utf-8').split('\n');
+    for (const [id, marked] of Object.entries(data)) {
+      const line = lines.findIndex(l => l.includes(`"${id}"`)) + 1;
+      result.set(id, { marked, file, line });
+    }
   }
   return result;
+}
+
+/** Returns a VSCode-clickable location string: src/data/zin-001.json:12 */
+function zinLocation(entry: { file: string; line: number }): string {
+  return DIM(`src/data/${entry.file}:${entry.line}`);
 }
 
 function getActiveZinFile(): { file: string; data: ZinFile } {
@@ -434,27 +445,33 @@ function cmdAddZin(args: string[]) {
   // Look up words and check limits
   const allWords = loadAllWords();
 
-  type WordResult = { base: string; wp: WordInPack | null; zinCount: number; atLimit: boolean };
+  type EntryResult = { wp: WordInPack; zinCount: number; atLimit: boolean };
+  type WordResult = { base: string; entries: EntryResult[] };
   const results: WordResult[] = [];
 
   for (const num of sortedNums) {
     const { base } = groups.get(num)!;
-    const wp = findWordEntry(base, allWords, limit);
-    const zinCount = wp?.word.zinnen?.length ?? 0;
-    const atLimit = zinCount >= limit;
-    results.push({ base, wp, zinCount, atLimit });
+    const wps = findAllWordEntries(base, allWords);
+    const entries: EntryResult[] = wps.map(wp => {
+      const zinCount = wp.word.zinnen?.length ?? 0;
+      const atLimit = zinCount >= limit;
+      return { wp, zinCount, atLimit };
+    });
+    results.push({ base, entries });
 
-    if (!wp) {
+    if (entries.length === 0) {
       console.log(`  ${RED('✗')} "${base}" not found in any pack`);
     } else {
-      const limitTag = atLimit ? RED(' ← at limit') : '';
-      console.log(`  ${atLimit ? AMBER('~') : GREEN('✓')} ${base.padEnd(20)} ${wp.pack}  ${DIM(wp.file)}  zinnen: ${zinCount}/${limit}${limitTag}`);
+      for (const { wp, zinCount, atLimit } of entries) {
+        const limitTag = atLimit ? RED(' ← at limit') : '';
+        console.log(`  ${atLimit ? AMBER('~') : GREEN('✓')} ${base.padEnd(20)} ${wp.pack}  ${DIM(wp.file)}  zinnen: ${zinCount}/${limit}${limitTag}`);
+      }
     }
   }
 
   // All found words are at limit → error
-  const foundResults = results.filter(r => r.wp !== null);
-  if (foundResults.length > 0 && foundResults.every(r => r.atLimit)) {
+  const allEntries = results.flatMap(r => r.entries);
+  if (allEntries.length > 0 && allEntries.every(e => e.atLimit)) {
     console.log(`\n  ${RED('✗')} All words are at limit (${limit}). Zin not added.\n`);
     process.exit(1);
   }
@@ -476,21 +493,23 @@ function cmdAddZin(args: string[]) {
   saveZinFile(zinFile, zinData);
   console.log(`\n  ${GREEN('✓')} Added ${BOLD(id)} → ${DIM(zinFile)}`);
 
-  // Add ID to word files (skip words at limit or not found)
-  for (const { base, wp, atLimit } of results) {
-    if (!wp) continue;
-    if (atLimit) {
-      console.log(`  ${AMBER('~')} ${base} skipped (at limit ${limit})`);
-      continue;
-    }
-    const path = join(DATA_DIR, wp.file);
-    const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
-    const idx = words.findIndex(w => w.nl === wp.word.nl && w.type === wp.word.type);
-    if (idx !== -1) {
-      if (!words[idx].zinnen) words[idx].zinnen = [];
-      words[idx].zinnen!.push(id);
-      writeFileSync(path, JSON.stringify(words, null, 2) + '\n', 'utf-8');
-      console.log(`  ${GREEN('✓')} ${base}  ${DIM(wp.file)}`);
+  // Add ID to word files (skip entries at limit or not found)
+  for (const { base, entries } of results) {
+    if (entries.length === 0) continue;
+    for (const { wp, atLimit } of entries) {
+      if (atLimit) {
+        console.log(`  ${AMBER('~')} ${base} skipped (at limit ${limit})  ${DIM(wp.file)}`);
+        continue;
+      }
+      const path = join(DATA_DIR, wp.file);
+      const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
+      const idx = words.findIndex(w => w.nl === wp.word.nl && w.type === wp.word.type);
+      if (idx !== -1) {
+        if (!words[idx].zinnen) words[idx].zinnen = [];
+        words[idx].zinnen!.push(id);
+        writeFileSync(path, JSON.stringify(words, null, 2) + '\n', 'utf-8');
+        console.log(`  ${GREEN('✓')} ${base}  ${DIM(wp.file)}`);
+      }
     }
   }
   console.log('');
@@ -606,53 +625,79 @@ function cmdCheckVanWoord(args: string[]) {
 
   let totalWords = 0;
   let totalIds = 0;
-  let problems = 0;
+  let badCount = 0;
+  let missingCount = 0;
   let removed = 0;
+  let added = 0;
+
+  // Build reverse index: base nl → zin IDs that reference it
+  const zinsByBase = new Map<string, string[]>();
+  for (const [id, { marked }] of allZins.entries()) {
+    const { groups } = parseMarked(marked);
+    for (const { base } of groups.values()) {
+      const key = base.toLowerCase();
+      if (!zinsByBase.has(key)) zinsByBase.set(key, []);
+      zinsByBase.get(key)!.push(id);
+    }
+  }
 
   for (const words of allWords.values()) {
     for (const { word, file } of words) {
-      if (!word.zinnen?.length) continue;
       totalWords++;
-
+      const currentZinnen = word.zinnen ?? [];
       const badIds: string[] = [];
 
-      for (const id of word.zinnen) {
+      // Check existing references for validity
+      for (const id of currentZinnen) {
         totalIds++;
         const zinEntry = allZins.get(id);
 
-        // ID has no matching sentence
         if (!zinEntry) {
           badIds.push(id);
-          problems++;
-          console.log(`${word.nl}  ${id}(no-sentence)`);
+          badCount++;
+          console.log(`  ${RED('✗')} ${word.nl}  ${id}(no-sentence)`);
           continue;
         }
 
-        // Sentence exists but word's nl not referenced in it
         const { groups } = parseMarked(zinEntry.marked);
         const bases = [...groups.values()].map(g => g.base.toLowerCase());
         if (!bases.includes(word.nl.toLowerCase())) {
           badIds.push(id);
-          problems++;
-          console.log(`${word.nl}  ${id}(not-in-sentence)   >> ${zinEntry.marked}`);
+          badCount++;
+          console.log(`  ${RED('✗')} ${word.nl}  ${id}(not-in-sentence) >> ${zinEntry.marked} > ${zinLocation(zinEntry)}`);
         }
       }
 
-      if (fix && badIds.length > 0) {
+      // Find zin IDs that reference this word but are missing from zinnen
+      const referencingIds = zinsByBase.get(word.nl.toLowerCase()) ?? [];
+      const missingIds = referencingIds.filter(id => !currentZinnen.includes(id) && !badIds.includes(id));
+
+      for (const id of missingIds) {
+        missingCount++;
+        const zinEntry = allZins.get(id)!;
+        console.log(`  ${AMBER('+')} ${word.nl}  ${id}(missing) >> ${zinEntry.marked} > ${zinLocation(zinEntry)}`);
+      }
+
+      if (fix && (badIds.length > 0 || missingIds.length > 0)) {
         const path = join(DATA_DIR, file);
         const fileWords: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
         const idx = fileWords.findIndex(w => w.nl === word.nl && w.type === word.type);
         if (idx !== -1) {
-          fileWords[idx].zinnen = (fileWords[idx].zinnen ?? []).filter(id => !badIds.includes(id));
+          const cleaned = (fileWords[idx].zinnen ?? []).filter(id => !badIds.includes(id));
+          fileWords[idx].zinnen = [...cleaned, ...missingIds];
           writeFileSync(path, JSON.stringify(fileWords, null, 2) + '\n', 'utf-8');
           removed += badIds.length;
+          added += missingIds.length;
         }
       }
     }
   }
 
-  if (fix && removed > 0) console.log(`\n  ${GREEN('✓')} Removed ${removed} bad reference(s)`);
-  console.log(`\n  ${totalWords} words checked, ${totalIds} zinnen refs, ${problems} problems${fix ? ' fixed' : ' found'}`);
+  if (fix) {
+    if (removed > 0) console.log(`\n  ${GREEN('✓')} Removed ${removed} bad reference(s)`);
+    if (added > 0) console.log(`  ${GREEN('✓')} Added ${added} missing reference(s)`);
+  }
+  console.log(`\n  ${totalWords} words checked, ${totalIds} zinnen refs, ${badCount} bad, ${missingCount} missing${fix ? ' — fixed' : ''}\n`);
 }
 
 function cmdCheck(args: string[]) {
@@ -668,7 +713,7 @@ function cmdCheck(args: string[]) {
   let ok = 0;
   let fixed = 0;
 
-  for (const [id, { marked }] of allZins.entries()) {
+  for (const [id, { marked, file, line }] of allZins.entries()) {
     total++;
     const { groups } = parseMarked(marked);
     if (groups.size === 0) continue;
@@ -676,25 +721,27 @@ function cmdCheck(args: string[]) {
     const problems: string[] = [];
 
     for (const [, { base }] of groups.entries()) {
-      const wp = findWordEntry(base, allWords);
-      if (!wp) {
+      const wps = findAllWordEntries(base, allWords);
+      if (wps.length === 0) {
         if (!hideNotFound) problems.push(`${base}(not-found)`);
         continue;
       }
-      const attached = wp.word.zinnen?.includes(id) ?? false;
-      if (!attached) {
-        if (fix) {
-          const path = join(DATA_DIR, wp.file);
-          const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
-          const idx = words.findIndex(w => w.nl === wp.word.nl && w.type === wp.word.type);
-          if (idx !== -1) {
-            if (!words[idx].zinnen) words[idx].zinnen = [];
-            words[idx].zinnen!.push(id);
-            writeFileSync(path, JSON.stringify(words, null, 2) + '\n', 'utf-8');
-            fixed++;
+      for (const wp of wps) {
+        const attached = wp.word.zinnen?.includes(id) ?? false;
+        if (!attached) {
+          if (fix) {
+            const path = join(DATA_DIR, wp.file);
+            const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
+            const idx = words.findIndex(w => w.nl === wp.word.nl && w.type === wp.word.type);
+            if (idx !== -1) {
+              if (!words[idx].zinnen) words[idx].zinnen = [];
+              words[idx].zinnen!.push(id);
+              writeFileSync(path, JSON.stringify(words, null, 2) + '\n', 'utf-8');
+              fixed++;
+            }
+          } else {
+            problems.push(`${base}(not-attached:${wp.pack})`);
           }
-        } else {
-          problems.push(`${base}(not-attached)`);
         }
       }
     }
@@ -702,7 +749,7 @@ function cmdCheck(args: string[]) {
     if (problems.length === 0) {
       ok++;
     } else {
-      console.log(`${id}: ${problems.join(' ')}   >> ${marked}`);
+      console.log(`${id}: ${problems.join(' ')} >> ${marked} > ${zinLocation({ file, line })} `);
     }
   }
 

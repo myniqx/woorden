@@ -20,7 +20,10 @@
     "tr": "rüya görmek",
     "en": "to dream",
     "ar": "يحلم",
-    "fr": "rêver"
+    "fr": "rêver",
+    "zinnen": [
+      "byfn6arz"
+    ]
   },
   {
     "nl": "hechten",
@@ -68,7 +71,10 @@
     "tr": "tembel",
     "en": "lazy",
     "ar": "كسول",
-    "fr": "paresseux"
+    "fr": "paresseux",
+    "zinnen": [
+      "byfn6arz"
+    ]
   },
   {
     "nl": "maatschappij",
@@ -204,7 +210,10 @@
     "tr": "şımartmak",
     "en": "to spoil",
     "ar": "يدلل",
-    "fr": "gâter"
+    "fr": "gâter",
+    "zinnen": [
+      "me7vdw90"
+    ]
   },
   {
     "nl": "voldoening",
@@ -572,15 +581,6 @@
     "zinnen": [
       "hk0p453r"
     ]
-  },
-  {
-    "nl": "vuil",
-    "article": "het",
-    "type": "noun",
-    "tr": "kirlilik, pislik",
-    "en": "dirt, filth",
-    "ar": "وسخ، قذارة",
-    "fr": "saleté"
   },
   {
     "nl": "zich bemoeien",

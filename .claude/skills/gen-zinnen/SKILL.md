@@ -13,10 +13,10 @@ Generate example sentences for Dutch vocabulary words that don't have any yet.
 
 ## Step 1 — Fetch words without zinnen
 
-Run the following command to get 8 words from the pack that have no example sentences yet:
+Run the following command to get 20 words from the pack that have no example sentences yet:
 
 ```bash
-npm run woorden -- get-no-zin ${ARGUMENTS:-A1} 8
+npm run woorden -- get-no-zin ${ARGUMENTS:-A1} 20
 ```
 
 The output shows: `type  nl  [article/perfectum/imperfectum]`
@@ -25,11 +25,11 @@ The output shows: `type  nl  [article/perfectum/imperfectum]`
 
 ### Sentence count
 
-You do **not** need exactly 8 sentences. Combine 2–3 words per sentence when they fit together naturally — this reduces the total sentence count and makes each sentence more useful. Every word from the list must appear in at least one sentence.
+You do **not** need exactly 20 sentences. Combine 2–3 words per sentence when they fit together naturally — this reduces the total sentence count and makes each sentence more useful. Every word from the list must appear in at least one sentence.
 
 - **Allowed:** 2–3 words from the list in one sentence
 - **Avoid:** putting 4+ list words in a single sentence (over-crowded, unnatural)
-- **Result:** typically 3–5 sentences cover all 8 words
+- **Result:** typically 7–10 sentences cover all 20 words
 
 ### Sentence difficulty
 
@@ -98,12 +98,8 @@ The first occurrence of group N defines `@base`. Later parts of the same group (
 "De 1|kinderen@kind spelen buiten."
 →  group 1 base: kind  (surface: kinderen)
 
-# Capitalised subject or start of sentence
-"1|Hij@hij 2|werkt@werken elke dag."
-→  @hij needed because surface form is capitalised
-
 # Two vocab words in one sentence
-"1|Ik@ik 2|woon@wonen in 3|Nederland."
+"1|Ik 2|woon@wonen in 3|Nederland."
 →  group 1: ik, group 2: wonen, group 3: Nederland
 ```
 
@@ -113,19 +109,19 @@ The first occurrence of group N defines `@base`. Later parts of the same group (
 
 ```
 # nl key: "oppassen op"  (separable verb + preposition)
-Ze 1|paste@oppassen_op op de kinderen 1|op@oppassen_op.
+Ze 1|paste@oppassen_op op de kinderen 1|op.
 → base: oppassen op  (tokens: paste, op)
 
 # nl key: "afhangen van"
-Dat 1|hangt@afhangen_van van de situatie 1|af@afhangen_van.
+Dat 1|hangt@afhangen_van van de situatie 1|af.
 → base: afhangen van  (tokens: hangt, af)
 
-# nl key: "zich scheren"  (reflexive verb — mark finite verb only; "zich" is plain text)
-Ze 1|scheert@zich_scheren zich elke ochtend.
+# nl key: "zich scheren"  (reflexive verb — mark finite verb and zich)
+Ze 1|scheert@zich_scheren 1|zich elke ochtend.
 → base: zich scheren  (token: scheert)
 
-# nl key: "Europese Unie"  (proper noun — mark first word, rest plain text)
-De 1|Europese@Europese_Unie Unie heeft veel leden.
+# nl key: "Europese Unie"  (proper noun)
+De 1|Europese@Europese_Unie 1|Unie heeft veel leden.
 → base: Europese Unie
 ```
 
@@ -142,7 +138,7 @@ Dat is een 1|financiële@financieel probleem.
 Dat is een 1|speciale@speciaal dag.
 ```
 
-**Reflexive pronouns** (`zich`, `me`, `je`) that are part of a reflexive verb construction are **plain text** in the sentence — do NOT mark them with a group number.
+**Reflexive pronouns** (`zich`, `me`, `je`) that are part of a reflexive verb construction must be marked them with same group number with the verb.
 
 **Edge cases and troubleshooting:**
 
@@ -158,10 +154,7 @@ After running `add-zin`, the CLI prints `✗ "word" not found in any pack` for e
 → Multi-word nl key, spaces not encoded. Fix: @oppassen_op (underscores for spaces)
 
 ✗ "Europese" not found in any pack
-→ Proper noun split at space. Fix: 1|Europese@Europese_Unie Unie (mark first word only)
-
-✗ "Engels" not found in any pack
-→ Token capitalized but nl key is lowercase. Fix: 1|Engels@engels
+→ Proper noun split at space. Fix: 1|Europese@Europese_Unie 1|Unie 
 
 ✗ "etc" not found in any pack
 → nl key is "etc." (with period), period is stripped from base → no match.
@@ -170,8 +163,8 @@ After running `add-zin`, the CLI prints `✗ "word" not found in any pack` for e
 ✗ "zich" not found in any pack
 → Reflexive pronoun marked as a group token. Fix: only mark the verb form,
   leave "zich" / "me" / "je" as plain text.
-  Wrong: Ze 1|scheert@zich_scheren 1|zich@zich_scheren elke ochtend.
-  Right: Ze 1|scheert@zich_scheren zich elke ochtend.
+  Wrong: Ze 1|scheert@zich_scheren zich elke ochtend.
+  Right: Ze 1|scheert@zich_scheren 1|zich elke ochtend.
 ```
 
 **After fixing:** run `npm run woorden -- get-no-zin <PACK> 999` and check if the word still appears. If yes, add a new corrected sentence.
@@ -209,17 +202,16 @@ The CLI will:
 - Report zinnen counts per word (default limit: 5 per word)
 - Write the sentence to `src/data/zin-001.json` and add its ID to each word file
 
-## Example full run
+## Example (for 8 words) full run
 
-`get-no-zin A1 8` returns: `leren, maand, naar, Nederland, Nederlandss, niet, nu, school`
+`get-no-zin A1 20` returns: `leren, maand, naar, Nederland, Nederlandss, niet, nu, school, ...`
 
-Planned sentences (A1 grammar throughout):
+> just print planned sentences 
 
-| Marked sentence | Words covered |
-|----------------|--------------|
-| `"1|Ik@ik 2|leer@leren 3|Nederlands@Nederlands op 4|school."` | leren, Nederlands, school |
-| `"1|Nederland@nederland is een mooi 2|land."` | Nederland |
-| `"1|Ik@ik ga 2|nu@nu 3|niet@niet 4|naar@naar huis."` | nu, niet, naar |
-| `"Elke 1|maand@maand doe ik iets nieuws."` | maand |
+ `"1|Ik@ik 2|leer@leren 3|Nederlands@Nederlands op 4|school."` >>  leren, Nederlands, school 
+ `"1|Nederland@nederland is een mooi 2|land."` >> Nederland 
+ `"1|Ik@ik ga 2|nu@nu 3|niet@niet 4|naar@naar huis."` >> nu, niet, naar 
+ `"Elke 1|maand doe ik iets nieuws."` >> maand 
+ ...
 
-4 sentences cover all 8 words. Then run `add-zin` for each.
+7-10 sentences cover all 20 words. Then run `add-zin` for each.
