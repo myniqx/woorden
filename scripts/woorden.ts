@@ -81,16 +81,25 @@ function loadAllWords(): Map<string, WordInPack[]> {
 }
 
 function findWordEntry(nl: string, allWords: Map<string, WordInPack[]>, limit?: number): WordInPack | null {
+  const nlLower = nl.toLowerCase();
   let firstMatch: WordInPack | null = null;
+  let firstCaseInsensitive: WordInPack | null = null;
+
   for (const words of allWords.values()) {
-    const matches = words.filter(wp => wp.word.nl === nl);
-    for (const found of matches) {
-      if (!firstMatch) firstMatch = found;
-      // If a limit is given, prefer entries not yet at the limit
-      if (limit !== undefined && (found.word.zinnen?.length ?? 0) < limit) return found;
+    for (const found of words) {
+      const exact = found.word.nl === nl;
+      const caseInsensitive = !exact && found.word.nl.toLowerCase() === nlLower;
+      if (!exact && !caseInsensitive) continue;
+
+      if (exact) {
+        if (!firstMatch) firstMatch = found;
+        if (limit !== undefined && (found.word.zinnen?.length ?? 0) < limit) return found;
+      } else {
+        if (!firstCaseInsensitive) firstCaseInsensitive = found;
+      }
     }
   }
-  return firstMatch;
+  return firstMatch ?? firstCaseInsensitive;
 }
 
 // ─── Duplicate logic ──────────────────────────────────────────────────────────
@@ -590,12 +599,16 @@ function cmdGetNoZin(args: string[]) {
 
 // ─── Check ────────────────────────────────────────────────────────────────────
 
-function cmdCheck() {
+function cmdCheck(args: string[]) {
+  const hideNotFound = args.includes('--hide-not-found');
+  const fix = args.includes('--fix');
+
   const allZins = loadAllZins();
   const allWords = loadAllWords();
 
   let total = 0;
   let ok = 0;
+  let fixed = 0;
 
   for (const [id, { marked }] of allZins.entries()) {
     total++;
@@ -607,11 +620,25 @@ function cmdCheck() {
     for (const [, { base }] of groups.entries()) {
       const wp = findWordEntry(base, allWords);
       if (!wp) {
-        problems.push(`${base}(not-found)`);
+        if (!hideNotFound) problems.push(`${base}(not-found)`);
         continue;
       }
       const attached = wp.word.zinnen?.includes(id) ?? false;
-      if (!attached) problems.push(`${base}(not-attached)`);
+      if (!attached) {
+        if (fix) {
+          const path = join(DATA_DIR, wp.file);
+          const words: WordEntry[] = JSON.parse(readFileSync(path, 'utf-8'));
+          const idx = words.findIndex(w => w.nl === wp.word.nl && w.type === wp.word.type);
+          if (idx !== -1) {
+            if (!words[idx].zinnen) words[idx].zinnen = [];
+            words[idx].zinnen!.push(id);
+            writeFileSync(path, JSON.stringify(words, null, 2) + '\n', 'utf-8');
+            fixed++;
+          }
+        } else {
+          problems.push(`${base}(not-attached)`);
+        }
+      }
     }
 
     if (problems.length === 0) {
@@ -621,7 +648,8 @@ function cmdCheck() {
     }
   }
 
-  console.log(`\n  ${total} zinnen, ${ok} ok, ${total - ok} with problems`);
+  if (fix && fixed > 0) console.log(`\n  ${GREEN('✓')} Fixed ${fixed} attachment(s)`);
+  console.log(`\n  ${total} zinnen, ${ok + (fix ? fixed : 0)} ok, ${total - ok - (fix ? fixed : 0)} with problems`);
 }
 
 // ─── Entry point ──────────────────────────────────────────────────────────────
@@ -645,7 +673,7 @@ switch (command) {
     cmdGetNoZin(rest);
     break;
   case 'check':
-    cmdCheck();
+    cmdCheck(rest);
     break;
   default:
     console.log(`
@@ -657,7 +685,7 @@ switch (command) {
     add-zin "<marked>" [--limit N]             Add an example sentence (default limit: 5 per word)
     remove-zin <id>                            Remove a sentence and clean up word references
     get-no-zin <PACK> [count]                  List words without example sentences (default: 5)
-    check                                      Check all zinnen for broken word references
+    check [--hide-not-found] [--fix]           Check all zinnen for broken word references
 
   Packs:  A1  A2  A2+
 
