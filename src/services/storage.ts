@@ -1,9 +1,43 @@
 import type { Language, WordStats, AllWordStats, WordProgress, AllWordProgress, SkillProgress, SkillType, HistoryEntry } from '../types';
 import { words } from './words';
 
+import { pushProgress } from './sync';
+import type { User } from './auth';
+
 const STORAGE_KEY = 'woorden_app_data';
 const MAX_HISTORY_LENGTH = 20;
 const MASTERY_STREAK = 3;
+
+let currentUser: User | null = null;
+let pushDebounceTimer: ReturnType<typeof setTimeout> | null = null;
+const PUSH_DEBOUNCE_MS = 10_000;
+const UID_KEY = 'woorden_auth_uid';
+
+export function getStoredUid(): string | null {
+  return localStorage.getItem(UID_KEY);
+}
+
+export function setStoredUid(uid: string): void {
+  localStorage.setItem(UID_KEY, uid);
+}
+
+export function clearStoredUid(): void {
+  localStorage.removeItem(UID_KEY);
+}
+
+export function setCurrentUser(user: User | null): void {
+  currentUser = user;
+}
+
+function schedulePush(data: AppData): void {
+  if (!currentUser) return;
+  if (pushDebounceTimer) clearTimeout(pushDebounceTimer);
+  const user = currentUser;
+  pushDebounceTimer = setTimeout(() => {
+    pushProgress(user, data).catch(() => {});
+    pushDebounceTimer = null;
+  }, PUSH_DEBOUNCE_MS);
+}
 
 interface DailyStats {
   practiced: number;
@@ -153,6 +187,7 @@ function loadData(): AppData {
 function saveData(data: AppData): void {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    schedulePush(data);
   } catch (e) {
     console.error('Error saving data:', e);
   }
@@ -526,6 +561,101 @@ export function importData(jsonString: string): { success: boolean; message: str
   } catch (e) {
     return { success: false, message: 'Invalid JSON format' };
   }
+}
+
+function mergeSkill(local: SkillProgress, remote: SkillProgress): SkillProgress {
+  const history = local.seen >= remote.seen ? local.history : remote.history;
+  return {
+    seen: local.seen + remote.seen,
+    correct: local.correct + remote.correct,
+    wrong: local.wrong + remote.wrong,
+    streak: Math.max(local.streak, remote.streak),
+    lastResult: (local.seen >= remote.seen ? local.lastResult : remote.lastResult),
+    masteredAt: local.masteredAt ?? remote.masteredAt,
+    history: history.slice(-MAX_HISTORY_LENGTH),
+  };
+}
+
+function mergeWordProgress(local: WordProgress, remote: WordProgress): WordProgress {
+  const allSkills = new Set([
+    ...Object.keys(local.skills),
+    ...Object.keys(remote.skills),
+  ]) as Set<SkillType>;
+
+  const mergedSkills: WordProgress['skills'] = {};
+  for (const skill of allSkills) {
+    const l = local.skills[skill];
+    const r = remote.skills[skill];
+    if (l && r) mergedSkills[skill] = mergeSkill(l, r);
+    else mergedSkills[skill] = l ?? r;
+  }
+
+  return {
+    firstSeen: Math.min(local.firstSeen, remote.firstSeen),
+    lastSeen: local.lastSeen && remote.lastSeen
+      ? Math.max(local.lastSeen, remote.lastSeen)
+      : (local.lastSeen ?? remote.lastSeen),
+    skills: mergedSkills,
+  };
+}
+
+function mergeAppData(local: AppData, remote: AppData): AppData {
+  const allWords = new Set([
+    ...Object.keys(local.wordProgress),
+    ...Object.keys(remote.wordProgress),
+  ]);
+
+  const mergedWordProgress: AllWordProgress = {};
+  for (const word of allWords) {
+    const l = local.wordProgress[word];
+    const r = remote.wordProgress[word];
+    if (l && r) mergedWordProgress[word] = mergeWordProgress(l, r);
+    else mergedWordProgress[word] = l ?? r;
+  }
+
+  // Merge dailyStats by summing each day
+  const allDays = new Set([
+    ...Object.keys(local.dailyStats),
+    ...Object.keys(remote.dailyStats),
+  ]);
+  const mergedDailyStats: Record<string, { practiced: number; correct: number }> = {};
+  for (const day of allDays) {
+    const l = local.dailyStats[day] ?? { practiced: 0, correct: 0 };
+    const r = remote.dailyStats[day] ?? { practiced: 0, correct: 0 };
+    mergedDailyStats[day] = {
+      practiced: Math.max(l.practiced, r.practiced),
+      correct: Math.max(l.correct, r.correct),
+    };
+  }
+
+  return {
+    ...local,
+    wordProgress: mergedWordProgress,
+    dailyStats: mergedDailyStats,
+    streak: Math.max(local.streak, remote.streak),
+    bestDaily: Math.max(local.bestDaily, remote.bestDaily),
+    lastPracticeDate: local.lastPracticeDate && remote.lastPracticeDate
+      ? (local.lastPracticeDate > remote.lastPracticeDate ? local.lastPracticeDate : remote.lastPracticeDate)
+      : (local.lastPracticeDate ?? remote.lastPracticeDate),
+  };
+}
+
+// Merge remote Supabase data into local data (senaryo 2)
+export function mergeRemoteData(remoteData: object): void {
+  const remote = { ...defaultData, ...(remoteData as Partial<AppData>) };
+  appData = mergeAppData(appData, remote);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
+}
+
+// Replace local data with remote (senaryo 3: farklı kullanıcı)
+export function loadRemoteData(remoteData: object): void {
+  appData = { ...defaultData, ...(remoteData as Partial<AppData>) };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
+}
+
+// Return current app data for pushing to Supabase
+export function getExportData(): object {
+  return appData;
 }
 
 // Word pack management - hierarchical structure

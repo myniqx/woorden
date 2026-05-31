@@ -10,6 +10,10 @@ import { SettingsModal } from './components/SettingsModal';
 import { EditorPage } from './pages/EditorPage';
 import { ChangelogScreen, CHANGELOG_STORAGE_KEY } from './components/ChangelogScreen';
 import { latestDate } from './data/changelog';
+import { signInWithGoogle, signOut, onAuthStateChange } from './services/auth';
+import type { User } from './services/auth';
+import { setCurrentUser, loadRemoteData, mergeRemoteData, getExportData, getStoredUid, setStoredUid } from './services/storage';
+import { pullProgress, pushProgress } from './services/sync';
 
 const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
 import type { QuizType, QuizMode, Screen } from './types';
@@ -50,8 +54,52 @@ export function App() {
   const [statsVersion, setStatsVersion] = useState(0);
   const [showSettings, setShowSettings] = useState(false);
   const [visitorCount, setVisitorCount] = useState<number | null>(null);
+  const [user, setUser] = useState<User | null>(null);
   const hasNewChangelog = (localStorage.getItem(CHANGELOG_STORAGE_KEY) ?? '') < latestDate;
   const visitorTracked = useRef(false);
+
+  useEffect(() => {
+    return onAuthStateChange(async (u) => {
+      setUser(u);
+      setCurrentUser(u);
+
+      if (!u) return;
+
+      const storedUid = getStoredUid();
+      const remote = await pullProgress(u);
+
+      if (!storedUid) {
+        // Eski kullanıcı veya ilk giriş
+        if (!remote) {
+          // Senaryo 1: Supabase boş → local'i push et
+          setStoredUid(u.id);
+          await pushProgress(u, getExportData());
+        } else {
+          // Senaryo 2: Supabase'de veri var → merge et
+          setStoredUid(u.id);
+          mergeRemoteData(remote);
+          await pushProgress(u, getExportData());
+          setStatsVersion(v => v + 1);
+        }
+      } else if (storedUid !== u.id) {
+        // Senaryo 3: Farklı kullanıcı → local'i ez
+        setStoredUid(u.id);
+        if (remote) {
+          loadRemoteData(remote);
+          setStatsVersion(v => v + 1);
+        }
+      } else {
+        // Senaryo 4: Aynı kullanıcı → her yeni sayfa açılışında bir kez merge et
+        const syncedThisSession = sessionStorage.getItem('woorden_synced');
+        if (!syncedThisSession && remote) {
+          sessionStorage.setItem('woorden_synced', '1');
+          mergeRemoteData(remote);
+          await pushProgress(u, getExportData());
+          setStatsVersion(v => v + 1);
+        }
+      }
+    });
+  }, []);
 
   useEffect(() => {
     if (import.meta.env.DEV) return;
@@ -115,6 +163,9 @@ export function App() {
         showBackButton={screen === 'quiz' || screen === 'changelog'}
         onBack={screen === 'changelog' ? () => setScreen('menu') : exitQuiz}
         onSettingsClick={() => setShowSettings(true)}
+        user={user}
+        onSignIn={signInWithGoogle}
+        onSignOut={signOut}
       />
 
       <main class="main">
@@ -171,6 +222,9 @@ export function App() {
         theme={theme}
         onToggleTheme={toggleTheme}
         visitorCount={visitorCount}
+        user={user}
+        onSignIn={signInWithGoogle}
+        onSignOut={signOut}
       />
     </div>
   );

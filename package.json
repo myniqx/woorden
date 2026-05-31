@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@preact/preset-vite": "^2.10.3",
+    "@supabase/supabase-js": "^2.106.2",
     "lucide-preact": "^0.574.0",
     "preact": "^10.28.3",
     "typescript": "^5.9.3",

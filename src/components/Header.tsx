@@ -2,6 +2,8 @@ import { useState, useEffect } from 'preact/hooks';
 import { ChevronLeft, Settings, Flame, Zap, Star, Crown } from 'lucide-preact';
 import type { Language } from '../types';
 import { getDailyStats, getDailyLevel } from '../services/storage';
+import { AuthButton } from './AuthButton';
+import type { User } from '../services/auth';
 import './Header.css';
 
 interface HeaderProps {
@@ -10,6 +12,9 @@ interface HeaderProps {
   showBackButton?: boolean;
   onBack?: () => void;
   onSettingsClick?: () => void;
+  user: User | null;
+  onSignIn: () => void;
+  onSignOut: () => void;
 }
 
 const languages: { code: Language; name: string; flag: string }[] = [
@@ -25,6 +30,9 @@ export function Header({
   showBackButton = false,
   onBack,
   onSettingsClick,
+  user,
+  onSignIn,
+  onSignOut,
 }: HeaderProps) {
   const currentLang = languages.find(l => l.code === language);
   const dailyStats = getDailyStats();
@@ -124,6 +132,8 @@ export function Header({
             ))}
           </div>
         </div>
+
+        <AuthButton user={user} onSignIn={onSignIn} onSignOut={onSignOut} />
 
         <button class="header-btn settings-btn" onClick={onSettingsClick} aria-label="Settings">
           <Settings size={20} />

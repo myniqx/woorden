@@ -1,6 +1,7 @@
 import { useRef } from 'preact/hooks';
-import { X, Download, Upload, Sun, Moon, Users } from 'lucide-preact';
+import { X, Download, Upload, Sun, Moon, Users, LogIn, LogOut } from 'lucide-preact';
 import { exportData, importData } from '../services/storage';
+import type { User } from '../services/auth';
 import './SettingsModal.css';
 
 interface SettingsModalProps {
@@ -11,9 +12,12 @@ interface SettingsModalProps {
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
   visitorCount: number | null;
+  user: User | null;
+  onSignIn: () => void;
+  onSignOut: () => void;
 }
 
-export function SettingsModal({ isOpen, onClose, onDataImported, theme, onToggleTheme, visitorCount }: SettingsModalProps) {
+export function SettingsModal({ isOpen, onClose, onDataImported, theme, onToggleTheme, visitorCount, user, onSignIn, onSignOut }: SettingsModalProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   if (!isOpen) return null;
@@ -94,6 +98,27 @@ export function SettingsModal({ isOpen, onClose, onDataImported, theme, onToggle
                 Dark
               </button>
             </div>
+          </section>
+
+          <section class="settings-section">
+            <h3>
+              <LogIn size={18} />
+              Account
+            </h3>
+            {user ? (
+              <div class="auth-row">
+                <span class="auth-email">{user.email}</span>
+                <button class="data-btn auth-btn" onClick={onSignOut}>
+                  <LogOut size={16} />
+                  Sign out
+                </button>
+              </div>
+            ) : (
+              <button class="data-btn auth-btn-full" onClick={onSignIn}>
+                <LogIn size={16} />
+                Sign in with Google
+              </button>
+            )}
           </section>
 
           <section class="settings-section">
