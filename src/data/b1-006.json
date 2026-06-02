@@ -1,0 +1,893 @@
+[
+  {
+    "nl": "aanhef",
+    "type": "noun",
+    "article": "de",
+    "tr": "hitap, selamlama (mektup başlığı)",
+    "en": "salutation, opening address",
+    "ar": "تحية، مقدمة الرسالة",
+    "fr": "formule d'appel, en-tête"
+  },
+  {
+    "nl": "beledigen",
+    "type": "verb",
+    "perfectum": "beledigd",
+    "imperfectum": "beledigde",
+    "tr": "hakaret etmek",
+    "en": "to insult, to offend",
+    "ar": "يُهين، يُسيء إلى",
+    "fr": "insulter, offenser"
+  },
+  {
+    "nl": "benaderen",
+    "type": "verb",
+    "perfectum": "benaderd",
+    "imperfectum": "benaderde",
+    "tr": "yaklaşmak, başvurmak",
+    "en": "to approach, to contact",
+    "ar": "يقترب، يتواصل مع",
+    "fr": "approcher, contacter"
+  },
+  {
+    "nl": "bevriend",
+    "type": "adj",
+    "tr": "arkadaş olan, dostane",
+    "en": "friendly, on friendly terms",
+    "ar": "صديق",
+    "fr": "ami, lié d'amitié"
+  },
+  {
+    "nl": "concurrent",
+    "type": "noun",
+    "article": "de",
+    "tr": "rakip",
+    "en": "competitor, rival",
+    "ar": "منافس",
+    "fr": "concurrent, rival"
+  },
+  {
+    "nl": "consultant",
+    "type": "noun",
+    "article": "de",
+    "tr": "danışman, müşavir",
+    "en": "consultant",
+    "ar": "مستشار",
+    "fr": "consultant, conseiller"
+  },
+  {
+    "nl": "desondanks",
+    "type": "adv",
+    "tr": "buna rağmen, yine de",
+    "en": "despite this, nevertheless",
+    "ar": "على الرغم من ذلك",
+    "fr": "malgré cela, néanmoins"
+  },
+  {
+    "nl": "gastvrij",
+    "type": "adj",
+    "tr": "misafirperver",
+    "en": "hospitable",
+    "ar": "مضياف، كريم",
+    "fr": "hospitalier, accueillant"
+  },
+  {
+    "nl": "gepast",
+    "type": "adj",
+    "tr": "uygun, yerinde",
+    "en": "appropriate, fitting",
+    "ar": "مناسب، لائق",
+    "fr": "approprié, convenable"
+  },
+  {
+    "nl": "gunnen",
+    "type": "verb",
+    "perfectum": "gegund",
+    "imperfectum": "gunde",
+    "tr": "layık görmek, hak ettiğini kabul etmek",
+    "en": "to grant, to allow (someone to have something)",
+    "ar": "يمنح، يرى شخصاً جديراً بشيء",
+    "fr": "accorder, ne pas envier"
+  },
+  {
+    "nl": "hiërarchisch",
+    "type": "adj",
+    "tr": "hiyerarşik",
+    "en": "hierarchical",
+    "ar": "هرمي",
+    "fr": "hiérarchique"
+  },
+  {
+    "nl": "hiervoor",
+    "type": "adv",
+    "tr": "bunun için / bundan önce",
+    "en": "for this / before this",
+    "ar": "لهذا / قبل هذا",
+    "fr": "pour cela / avant cela"
+  },
+  {
+    "nl": "hoofd",
+    "type": "noun",
+    "article": "het",
+    "tr": "baş, kafa / şef",
+    "en": "head / chief",
+    "ar": "رأس / رئيس",
+    "fr": "tête / chef"
+  },
+  {
+    "nl": "inleiding",
+    "type": "noun",
+    "article": "de",
+    "tr": "giriş, önsöz",
+    "en": "introduction",
+    "ar": "مقدمة",
+    "fr": "introduction"
+  },
+  {
+    "nl": "kritiek",
+    "type": "noun",
+    "article": "de",
+    "tr": "eleştiri",
+    "en": "criticism, critique",
+    "ar": "نقد",
+    "fr": "critique"
+  },
+  {
+    "nl": "kwetsend",
+    "type": "adj",
+    "tr": "incitici, kırıcı",
+    "en": "hurtful, offensive",
+    "ar": "مؤذٍ، جارح",
+    "fr": "blessant, offensant"
+  },
+  {
+    "nl": "nuance",
+    "type": "noun",
+    "article": "de",
+    "tr": "nüans, ince fark",
+    "en": "nuance",
+    "ar": "فارق دقيق",
+    "fr": "nuance"
+  },
+  {
+    "nl": "onbegrijpelijk",
+    "type": "adj",
+    "tr": "anlaşılmaz",
+    "en": "incomprehensible",
+    "ar": "غير مفهوم",
+    "fr": "incompréhensible"
+  },
+  {
+    "nl": "onbewust",
+    "type": "adj",
+    "tr": "bilinçsiz, farkında olmadan",
+    "en": "unconscious, unaware",
+    "ar": "غير واعٍ، لا شعوري",
+    "fr": "inconscient, sans le savoir"
+  },
+  {
+    "nl": "personeelsuitje",
+    "type": "noun",
+    "article": "het",
+    "tr": "şirket gezisi, personel etkinliği",
+    "en": "staff outing, team activity",
+    "ar": "رحلة الموظفين",
+    "fr": "sortie du personnel"
+  },
+  {
+    "nl": "sarcasme",
+    "type": "noun",
+    "article": "het",
+    "tr": "sarkasm, alaycılık",
+    "en": "sarcasm",
+    "ar": "سخرية، استهزاء",
+    "fr": "sarcasme"
+  },
+  {
+    "nl": "transparant",
+    "type": "adj",
+    "tr": "şeffaf",
+    "en": "transparent",
+    "ar": "شفاف",
+    "fr": "transparent"
+  },
+  {
+    "nl": "transport",
+    "type": "noun",
+    "article": "het",
+    "tr": "nakliye, ulaşım",
+    "en": "transport",
+    "ar": "نقل",
+    "fr": "transport"
+  },
+  {
+    "nl": "uiten",
+    "type": "verb",
+    "perfectum": "geuit",
+    "imperfectum": "uitte",
+    "tr": "ifade etmek, dile getirmek",
+    "en": "to express, to voice",
+    "ar": "يُعبّر عن",
+    "fr": "exprimer"
+  },
+  {
+    "nl": "vakbond",
+    "type": "noun",
+    "article": "de",
+    "tr": "sendika",
+    "en": "trade union",
+    "ar": "نقابة عمالية",
+    "fr": "syndicat"
+  },
+  {
+    "nl": "vergaderen",
+    "type": "verb",
+    "perfectum": "vergaderd",
+    "imperfectum": "vergaderde",
+    "tr": "toplantı yapmak",
+    "en": "to have a meeting, to meet",
+    "ar": "يعقد اجتماعاً",
+    "fr": "tenir une réunion, se réunir"
+  },
+  {
+    "nl": "voortdurend",
+    "type": "adv",
+    "tr": "sürekli, durmadan",
+    "en": "continuously, constantly",
+    "ar": "باستمرار",
+    "fr": "continuellement, sans cesse"
+  },
+  {
+    "nl": "zich verheugen op",
+    "type": "verb",
+    "perfectum": "zich verheugd op",
+    "imperfectum": "verheugde zich op",
+    "tr": "dört gözle beklemek",
+    "en": "to look forward to",
+    "ar": "يتطلع بشوق إلى",
+    "fr": "se réjouir de, avoir hâte de"
+  },
+  {
+    "nl": "betrokken",
+    "type": "adj",
+    "tr": "ilgili, dahil olan",
+    "en": "involved, concerned",
+    "ar": "معني، متورط",
+    "fr": "concerné, impliqué"
+  },
+  {
+    "nl": "correct",
+    "type": "adj",
+    "tr": "doğru, düzgün",
+    "en": "correct, proper",
+    "ar": "صحيح، لائق",
+    "fr": "correct"
+  },
+  {
+    "nl": "corrigeren",
+    "type": "verb",
+    "perfectum": "gecorrigeerd",
+    "imperfectum": "corrigeerde",
+    "tr": "düzeltmek",
+    "en": "to correct",
+    "ar": "يُصحّح",
+    "fr": "corriger"
+  },
+  {
+    "nl": "doorwerken",
+    "type": "verb",
+    "perfectum": "doorgewerkt",
+    "imperfectum": "werkte door",
+    "tr": "çalışmaya devam etmek",
+    "en": "to keep working, to work through",
+    "ar": "يواصل العمل",
+    "fr": "continuer à travailler"
+  },
+  {
+    "nl": "evalueren",
+    "type": "verb",
+    "perfectum": "geëvalueerd",
+    "imperfectum": "evalueerde",
+    "tr": "değerlendirmek",
+    "en": "to evaluate",
+    "ar": "يُقيّم",
+    "fr": "évaluer"
+  },
+  {
+    "nl": "feedback",
+    "type": "noun",
+    "article": "de",
+    "tr": "geri bildirim",
+    "en": "feedback",
+    "ar": "تغذية راجعة",
+    "fr": "retour, feedback"
+  },
+  {
+    "nl": "georganiseerd",
+    "type": "adj",
+    "tr": "düzenli, organize",
+    "en": "organised",
+    "ar": "منظّم",
+    "fr": "organisé"
+  },
+  {
+    "nl": "getal",
+    "type": "noun",
+    "article": "het",
+    "tr": "sayı, rakam",
+    "en": "number",
+    "ar": "عدد، رقم",
+    "fr": "nombre, chiffre"
+  },
+  {
+    "nl": "houding",
+    "type": "noun",
+    "article": "de",
+    "tr": "tavır, duruş",
+    "en": "attitude, posture",
+    "ar": "موقف، وضعية",
+    "fr": "attitude, posture"
+  },
+  {
+    "nl": "krap",
+    "type": "adj",
+    "tr": "dar, sıkışık",
+    "en": "tight, cramped",
+    "ar": "ضيق",
+    "fr": "serré, limité"
+  },
+  {
+    "nl": "namens",
+    "type": "prep",
+    "tr": "adına, namına",
+    "en": "on behalf of",
+    "ar": "نيابةً عن، باسم",
+    "fr": "au nom de"
+  },
+  {
+    "nl": "ontevreden",
+    "type": "adj",
+    "tr": "memnuniyetsiz",
+    "en": "dissatisfied, unhappy",
+    "ar": "غير راضٍ",
+    "fr": "mécontent, insatisfait"
+  },
+  {
+    "nl": "ontkennen",
+    "type": "verb",
+    "perfectum": "ontkend",
+    "imperfectum": "ontkende",
+    "tr": "inkâr etmek",
+    "en": "to deny",
+    "ar": "ينفي، يُنكر",
+    "fr": "nier"
+  },
+  {
+    "nl": "opengaan",
+    "type": "verb",
+    "perfectum": "opengegaan",
+    "imperfectum": "ging open",
+    "tr": "açılmak",
+    "en": "to open (up)",
+    "ar": "يفتح، ينفتح",
+    "fr": "s'ouvrir"
+  },
+  {
+    "nl": "serveerster",
+    "type": "noun",
+    "article": "de",
+    "tr": "kadın garson",
+    "en": "waitress",
+    "ar": "نادلة",
+    "fr": "serveuse"
+  },
+  {
+    "nl": "spelfout",
+    "type": "noun",
+    "article": "de",
+    "tr": "yazım hatası",
+    "en": "spelling mistake",
+    "ar": "خطأ إملائي",
+    "fr": "faute d'orthographe"
+  },
+  {
+    "nl": "spelling",
+    "type": "noun",
+    "article": "de",
+    "tr": "yazım, imla",
+    "en": "spelling",
+    "ar": "إملاء",
+    "fr": "orthographe"
+  },
+  {
+    "nl": "tempo",
+    "type": "noun",
+    "article": "het",
+    "tr": "tempo, hız",
+    "en": "pace, tempo",
+    "ar": "إيقاع، وتيرة",
+    "fr": "tempo, rythme"
+  },
+  {
+    "nl": "terecht",
+    "type": "adv",
+    "tr": "haklı olarak, yerinde",
+    "en": "rightly, justifiably",
+    "ar": "بحق، بشكل مبرر",
+    "fr": "à juste titre, avec raison"
+  },
+  {
+    "nl": "vandaar",
+    "type": "adv",
+    "tr": "bundan dolayı, işte bu yüzden",
+    "en": "that's why, hence",
+    "ar": "لذا، من هنا",
+    "fr": "c'est pourquoi, d'où"
+  },
+  {
+    "nl": "verbeterpunt",
+    "type": "noun",
+    "article": "het",
+    "tr": "geliştirilmesi gereken nokta",
+    "en": "point of improvement",
+    "ar": "نقطة تحتاج إلى تحسين",
+    "fr": "point à améliorer"
+  },
+  {
+    "nl": "verslag",
+    "type": "noun",
+    "article": "het",
+    "tr": "rapor, tutanak",
+    "en": "report, account",
+    "ar": "تقرير",
+    "fr": "rapport, compte rendu"
+  },
+  {
+    "nl": "verwisselen",
+    "type": "verb",
+    "perfectum": "verwisseld",
+    "imperfectum": "verwisselde",
+    "tr": "değiştirmek, karıştırmak",
+    "en": "to swap, to mix up",
+    "ar": "يُبدّل، يُخلط",
+    "fr": "échanger, confondre"
+  },
+  {
+    "nl": "wijzen",
+    "type": "verb",
+    "perfectum": "gewezen",
+    "imperfectum": "wees",
+    "tr": "işaret etmek, göstermek",
+    "en": "to point, to indicate",
+    "ar": "يُشير إلى",
+    "fr": "indiquer, montrer"
+  },
+  {
+    "nl": "zich vergissen",
+    "type": "verb",
+    "perfectum": "zich vergist",
+    "imperfectum": "vergiste zich",
+    "tr": "yanılmak, hata yapmak",
+    "en": "to be mistaken, to make an error",
+    "ar": "يُخطئ، يُخطئ في الحكم",
+    "fr": "se tromper"
+  },
+  {
+    "nl": "zorgvuldig",
+    "type": "adj",
+    "tr": "titiz, özenli",
+    "en": "careful, thorough",
+    "ar": "دقيق، عناية",
+    "fr": "soigneux, méticuleux"
+  },
+  {
+    "nl": "accountant",
+    "type": "noun",
+    "article": "de",
+    "tr": "muhasebeci, denetçi",
+    "en": "accountant, auditor",
+    "ar": "محاسب",
+    "fr": "comptable, expert-comptable"
+  },
+  {
+    "nl": "afwijken",
+    "type": "verb",
+    "perfectum": "afgeweken",
+    "imperfectum": "week af",
+    "tr": "sapmak, ayrılmak",
+    "en": "to deviate, to differ",
+    "ar": "ينحرف، يختلف",
+    "fr": "dévier, s'écarter"
+  },
+  {
+    "nl": "beloning",
+    "type": "noun",
+    "article": "de",
+    "tr": "ödül, mükâfat",
+    "en": "reward",
+    "ar": "مكافأة",
+    "fr": "récompense"
+  },
+  {
+    "nl": "bewijzen",
+    "type": "verb",
+    "perfectum": "bewezen",
+    "imperfectum": "bewees",
+    "tr": "kanıtlamak, ispatlamak",
+    "en": "to prove, to demonstrate",
+    "ar": "يُثبت، يبرهن",
+    "fr": "prouver, démontrer"
+  },
+  {
+    "nl": "compenseren",
+    "type": "verb",
+    "perfectum": "gecompenseerd",
+    "imperfectum": "compenseerde",
+    "tr": "telafi etmek",
+    "en": "to compensate",
+    "ar": "يُعوّض",
+    "fr": "compenser"
+  },
+  {
+    "nl": "compromis",
+    "type": "noun",
+    "article": "het",
+    "tr": "uzlaşma, orta yol",
+    "en": "compromise",
+    "ar": "حل وسط",
+    "fr": "compromis"
+  },
+  {
+    "nl": "effectief",
+    "type": "adj",
+    "tr": "etkin, etkili",
+    "en": "effective",
+    "ar": "فعّال",
+    "fr": "efficace"
+  },
+  {
+    "nl": "exclusief",
+    "type": "adj",
+    "tr": "hariç, özel",
+    "en": "exclusive, excluding",
+    "ar": "حصري، باستثناء",
+    "fr": "exclusif, hors"
+  },
+  {
+    "nl": "fenomeen",
+    "type": "noun",
+    "article": "het",
+    "tr": "fenomen, olay",
+    "en": "phenomenon",
+    "ar": "ظاهرة",
+    "fr": "phénomène"
+  },
+  {
+    "nl": "geconcentreerd",
+    "type": "adj",
+    "tr": "odaklanmış, konsantre",
+    "en": "concentrated, focused",
+    "ar": "مركّز، منتبه",
+    "fr": "concentré"
+  },
+  {
+    "nl": "indienen",
+    "type": "verb",
+    "perfectum": "ingediend",
+    "imperfectum": "diende in",
+    "tr": "sunmak, başvurmak",
+    "en": "to submit, to file",
+    "ar": "يُقدّم، يتقدم بطلب",
+    "fr": "soumettre, déposer"
+  },
+  {
+    "nl": "motiveren",
+    "type": "verb",
+    "perfectum": "gemotiveerd",
+    "imperfectum": "motiveerde",
+    "tr": "motive etmek, gerekçelendirmek",
+    "en": "to motivate, to justify",
+    "ar": "يُحفّز، يُبرّر",
+    "fr": "motiver, justifier"
+  },
+  {
+    "nl": "norm",
+    "type": "noun",
+    "article": "de",
+    "tr": "norm, kural",
+    "en": "norm, standard",
+    "ar": "معيار، قاعدة",
+    "fr": "norme"
+  },
+  {
+    "nl": "overuren",
+    "type": "noun",
+    "article": "de",
+    "tr": "fazla mesai",
+    "en": "overtime",
+    "ar": "ساعات عمل إضافية",
+    "fr": "heures supplémentaires"
+  },
+  {
+    "nl": "per se",
+    "type": "adv",
+    "tr": "illa ki, mutlaka",
+    "en": "per se, necessarily",
+    "ar": "بالضرورة، حتماً",
+    "fr": "en soi, nécessairement"
+  },
+  {
+    "nl": "personeel",
+    "type": "noun",
+    "article": "het",
+    "tr": "personel, çalışanlar",
+    "en": "staff, personnel",
+    "ar": "موظفون، طاقم",
+    "fr": "personnel"
+  },
+  {
+    "nl": "raadplegen",
+    "type": "verb",
+    "perfectum": "geraadpleegd",
+    "imperfectum": "raadpleegde",
+    "tr": "danışmak, başvurmak",
+    "en": "to consult",
+    "ar": "يستشير، يرجع إلى",
+    "fr": "consulter"
+  },
+  {
+    "nl": "reclamebureau",
+    "type": "noun",
+    "article": "het",
+    "tr": "reklam ajansı",
+    "en": "advertising agency",
+    "ar": "وكالة إعلانية",
+    "fr": "agence de publicité"
+  },
+  {
+    "nl": "standaard",
+    "type": "noun",
+    "article": "de",
+    "tr": "standart",
+    "en": "standard",
+    "ar": "معيار، مستوى",
+    "fr": "standard, norme"
+  },
+  {
+    "nl": "thuiswerken",
+    "type": "verb",
+    "perfectum": "thuisgewerkt",
+    "imperfectum": "werkte thuis",
+    "tr": "evden çalışmak",
+    "en": "to work from home",
+    "ar": "يعمل من المنزل",
+    "fr": "travailler à domicile"
+  },
+  {
+    "nl": "uitbetalen",
+    "type": "verb",
+    "perfectum": "uitbetaald",
+    "imperfectum": "betaalde uit",
+    "tr": "ödemek, maaş vermek",
+    "en": "to pay out",
+    "ar": "يدفع، يصرف",
+    "fr": "payer, verser"
+  },
+  {
+    "nl": "wekelijks",
+    "type": "adv",
+    "tr": "haftalık, her hafta",
+    "en": "weekly",
+    "ar": "أسبوعياً",
+    "fr": "hebdomadaire, chaque semaine"
+  },
+  {
+    "nl": "wetenschapper",
+    "type": "noun",
+    "article": "de",
+    "tr": "bilim insanı",
+    "en": "scientist, researcher",
+    "ar": "عالم",
+    "fr": "scientifique, chercheur"
+  },
+  {
+    "nl": "afleiding",
+    "type": "noun",
+    "article": "de",
+    "tr": "dikkat dağıtma, oyalama",
+    "en": "distraction",
+    "ar": "تشتيت الانتباه",
+    "fr": "distraction"
+  },
+  {
+    "nl": "bloot",
+    "type": "adj",
+    "tr": "çıplak",
+    "en": "bare, naked",
+    "ar": "عارٍ",
+    "fr": "nu, dénudé"
+  },
+  {
+    "nl": "braaf",
+    "type": "adj",
+    "tr": "uslu, itaatkâr",
+    "en": "well-behaved, obedient",
+    "ar": "مؤدّب، مطيع",
+    "fr": "sage, obéissant"
+  },
+  {
+    "nl": "combineren",
+    "type": "verb",
+    "perfectum": "gecombineerd",
+    "imperfectum": "combineerde",
+    "tr": "birleştirmek, kombine etmek",
+    "en": "to combine",
+    "ar": "يجمع، يدمج",
+    "fr": "combiner"
+  },
+  {
+    "nl": "drank",
+    "type": "noun",
+    "article": "de",
+    "tr": "içki, içecek",
+    "en": "drink, beverage",
+    "ar": "مشروب",
+    "fr": "boisson"
+  },
+  {
+    "nl": "dreigen",
+    "type": "verb",
+    "perfectum": "gedreigd",
+    "imperfectum": "dreigde",
+    "tr": "tehdit etmek / tehlike arz etmek",
+    "en": "to threaten / to be at risk",
+    "ar": "يهدد / يكون على وشك",
+    "fr": "menacer / risquer"
+  },
+  {
+    "nl": "geheimzinnig",
+    "type": "adj",
+    "tr": "gizemli, esrarengiz",
+    "en": "mysterious, secretive",
+    "ar": "غامض",
+    "fr": "mystérieux, secret"
+  },
+  {
+    "nl": "gemeenschappelijk",
+    "type": "adj",
+    "tr": "ortak, müşterek",
+    "en": "common, shared",
+    "ar": "مشترك",
+    "fr": "commun, partagé"
+  },
+  {
+    "nl": "gerucht",
+    "type": "noun",
+    "article": "het",
+    "tr": "söylenti, rivayet",
+    "en": "rumour",
+    "ar": "إشاعة",
+    "fr": "rumeur"
+  },
+  {
+    "nl": "gezelligheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "sıcak ortam, birliktelik hissi",
+    "en": "cosiness, conviviality",
+    "ar": "أجواء مريحة ودافئة",
+    "fr": "convivialité, ambiance chaleureuse"
+  },
+  {
+    "nl": "hoera",
+    "type": "phrase",
+    "tr": "yaşasın, hurra",
+    "en": "hooray, hurrah",
+    "ar": "هورا",
+    "fr": "hourra"
+  },
+  {
+    "nl": "meerderheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "çoğunluk",
+    "en": "majority",
+    "ar": "أغلبية",
+    "fr": "majorité"
+  },
+  {
+    "nl": "mond",
+    "type": "noun",
+    "article": "de",
+    "tr": "ağız",
+    "en": "mouth",
+    "ar": "فم",
+    "fr": "bouche"
+  },
+  {
+    "nl": "nuchter",
+    "type": "adj",
+    "tr": "ayık / aç karnına",
+    "en": "sober / on an empty stomach",
+    "ar": "صاحٍ / صائم",
+    "fr": "sobre / à jeun"
+  },
+  {
+    "nl": "opvatting",
+    "type": "noun",
+    "article": "de",
+    "tr": "görüş, kanı",
+    "en": "opinion, view",
+    "ar": "رأي، وجهة نظر",
+    "fr": "opinion, point de vue"
+  },
+  {
+    "nl": "recentelijk",
+    "type": "adv",
+    "tr": "yakın zamanda, geçenlerde",
+    "en": "recently",
+    "ar": "مؤخراً",
+    "fr": "récemment"
+  },
+  {
+    "nl": "roddel",
+    "type": "noun",
+    "article": "de",
+    "tr": "dedikodu",
+    "en": "gossip",
+    "ar": "نميمة، ثرثرة",
+    "fr": "commérages, ragot"
+  },
+  {
+    "nl": "schijnen",
+    "type": "verb",
+    "perfectum": "geschenen",
+    "imperfectum": "scheen",
+    "tr": "görünmek / parlamak",
+    "en": "to seem, to appear / to shine",
+    "ar": "يبدو / يُضيء",
+    "fr": "sembler, paraître / briller"
+  },
+  {
+    "nl": "tegenstelling",
+    "type": "noun",
+    "article": "de",
+    "tr": "karşıtlık, zıtlık",
+    "en": "contrast, contradiction",
+    "ar": "تناقض، تضاد",
+    "fr": "contraste, contradiction"
+  },
+  {
+    "nl": "tunnel",
+    "type": "noun",
+    "article": "de",
+    "tr": "tünel",
+    "en": "tunnel",
+    "ar": "نفق",
+    "fr": "tunnel"
+  },
+  {
+    "nl": "verlof",
+    "type": "noun",
+    "article": "het",
+    "tr": "izin, tatil",
+    "en": "leave, permission",
+    "ar": "إجازة، إذن",
+    "fr": "congé, permission"
+  },
+  {
+    "nl": "vertrouwelijk",
+    "type": "adj",
+    "tr": "gizli, güvenilir",
+    "en": "confidential, trustworthy",
+    "ar": "سري، موثوق",
+    "fr": "confidentiel, de confiance"
+  },
+  {
+    "nl": "vredig",
+    "type": "adj",
+    "tr": "huzurlu, sakin",
+    "en": "peaceful, tranquil",
+    "ar": "هادئ، سلمي",
+    "fr": "paisible, tranquille"
+  }
+]

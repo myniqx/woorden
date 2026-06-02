@@ -1,0 +1,909 @@
+[
+  {
+    "nl": "aanraken",
+    "type": "verb",
+    "perfectum": "aangeraakt",
+    "imperfectum": "raakte aan",
+    "tr": "dokunmak",
+    "en": "to touch",
+    "ar": "يلمس",
+    "fr": "toucher"
+  },
+  {
+    "nl": "alternatief",
+    "type": "noun",
+    "article": "het",
+    "tr": "alternatif, seçenek",
+    "en": "alternative",
+    "ar": "بديل",
+    "fr": "alternative"
+  },
+  {
+    "nl": "belangstelling",
+    "type": "noun",
+    "article": "de",
+    "tr": "merak, ilgi",
+    "en": "interest",
+    "ar": "اهتمام",
+    "fr": "intérêt"
+  },
+  {
+    "nl": "bijhouden",
+    "type": "verb",
+    "perfectum": "bijgehouden",
+    "imperfectum": "hield bij",
+    "tr": "takip etmek, güncel tutmak",
+    "en": "to keep up with, to track",
+    "ar": "يتابع، يُحدّث",
+    "fr": "suivre, tenir à jour"
+  },
+  {
+    "nl": "conservatief",
+    "type": "adj",
+    "tr": "tutucu, muhafazakâr",
+    "en": "conservative",
+    "ar": "محافظ",
+    "fr": "conservateur"
+  },
+  {
+    "nl": "cynisch",
+    "type": "adj",
+    "tr": "alaycı, kuşkucu",
+    "en": "cynical",
+    "ar": "متشكك، ساخر",
+    "fr": "cynique"
+  },
+  {
+    "nl": "daten",
+    "type": "verb",
+    "perfectum": "gedatet",
+    "imperfectum": "datete",
+    "tr": "flört etmek, çıkmak",
+    "en": "to date",
+    "ar": "يواعد",
+    "fr": "sortir avec quelqu'un"
+  },
+  {
+    "nl": "doorsturen",
+    "type": "verb",
+    "perfectum": "doorgestuurd",
+    "imperfectum": "stuurde door",
+    "tr": "iletmek, yönlendirmek",
+    "en": "to forward, to redirect",
+    "ar": "يُعيد إرسال، يُحيل",
+    "fr": "transférer, faire suivre"
+  },
+  {
+    "nl": "gebruiksvriendelijk",
+    "type": "adj",
+    "tr": "kullanıcı dostu, kullanışlı",
+    "en": "user-friendly",
+    "ar": "سهل الاستخدام",
+    "fr": "convivial, facile à utiliser"
+  },
+  {
+    "nl": "geregeld",
+    "type": "adv",
+    "tr": "düzenli olarak, sıklıkla",
+    "en": "regularly, frequently",
+    "ar": "بانتظام، بشكل متكرر",
+    "fr": "régulièrement, souvent"
+  },
+  {
+    "nl": "grafiek",
+    "type": "noun",
+    "article": "de",
+    "tr": "grafik",
+    "en": "graph, chart",
+    "ar": "رسم بياني",
+    "fr": "graphique"
+  },
+  {
+    "nl": "instellen",
+    "type": "verb",
+    "perfectum": "ingesteld",
+    "imperfectum": "stelde in",
+    "tr": "ayarlamak, kurmak",
+    "en": "to set up, to configure",
+    "ar": "يضبط، يُعدّ",
+    "fr": "configurer, régler"
+  },
+  {
+    "nl": "kaart",
+    "type": "noun",
+    "article": "de",
+    "tr": "harita / kart",
+    "en": "map / card",
+    "ar": "خريطة / بطاقة",
+    "fr": "carte"
+  },
+  {
+    "nl": "meten",
+    "type": "verb",
+    "perfectum": "gemeten",
+    "imperfectum": "mat",
+    "tr": "ölçmek",
+    "en": "to measure",
+    "ar": "يقيس",
+    "fr": "mesurer"
+  },
+  {
+    "nl": "navigatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "navigasyon, yön bulma",
+    "en": "navigation",
+    "ar": "ملاحة، توجيه",
+    "fr": "navigation"
+  },
+  {
+    "nl": "nostalgisch",
+    "type": "adj",
+    "tr": "nostaljik",
+    "en": "nostalgic",
+    "ar": "حنيني",
+    "fr": "nostalgique"
+  },
+  {
+    "nl": "nut",
+    "type": "noun",
+    "article": "het",
+    "tr": "yarar, fayda",
+    "en": "use, benefit",
+    "ar": "فائدة، نفع",
+    "fr": "utilité, avantage"
+  },
+  {
+    "nl": "opname",
+    "type": "noun",
+    "article": "de",
+    "tr": "çekim, kayıt / hastaneye yatış",
+    "en": "recording / admission (hospital)",
+    "ar": "تسجيل / قبول (في المستشفى)",
+    "fr": "enregistrement / admission (hôpital)"
+  },
+  {
+    "nl": "scherp",
+    "type": "adj",
+    "tr": "keskin, net",
+    "en": "sharp, clear",
+    "ar": "حاد، واضح",
+    "fr": "tranchant, net"
+  },
+  {
+    "nl": "staren",
+    "type": "verb",
+    "perfectum": "gestaard",
+    "imperfectum": "staarde",
+    "tr": "dik dik bakmak",
+    "en": "to stare",
+    "ar": "يحدّق",
+    "fr": "fixer du regard"
+  },
+  {
+    "nl": "testen",
+    "type": "verb",
+    "perfectum": "getest",
+    "imperfectum": "testte",
+    "tr": "test etmek, denemek",
+    "en": "to test",
+    "ar": "يختبر",
+    "fr": "tester"
+  },
+  {
+    "nl": "toegeven",
+    "type": "verb",
+    "perfectum": "toegegeven",
+    "imperfectum": "gaf toe",
+    "tr": "itiraf etmek, kabullenmek",
+    "en": "to admit, to concede",
+    "ar": "يعترف، يُقرّ",
+    "fr": "admettre, concéder"
+  },
+  {
+    "nl": "toestel",
+    "type": "noun",
+    "article": "het",
+    "tr": "cihaz, alet",
+    "en": "device, appliance",
+    "ar": "جهاز",
+    "fr": "appareil, dispositif"
+  },
+  {
+    "nl": "vernieuwing",
+    "type": "noun",
+    "article": "de",
+    "tr": "yenilik, yenileme",
+    "en": "renewal, innovation",
+    "ar": "تجديد، ابتكار",
+    "fr": "renouveau, innovation"
+  },
+  {
+    "nl": "wantrouwen",
+    "type": "noun",
+    "article": "het",
+    "tr": "güvensizlik, şüphe",
+    "en": "distrust, suspicion",
+    "ar": "عدم ثقة، شك",
+    "fr": "méfiance, suspicion"
+  },
+  {
+    "nl": "afzender",
+    "type": "noun",
+    "article": "de",
+    "tr": "gönderen",
+    "en": "sender",
+    "ar": "مُرسِل",
+    "fr": "expéditeur"
+  },
+  {
+    "nl": "besmetten",
+    "type": "verb",
+    "perfectum": "besmet",
+    "imperfectum": "besmette",
+    "tr": "bulaştırmak, enfekte etmek",
+    "en": "to infect, to contaminate",
+    "ar": "يُعدي، يُلوّث",
+    "fr": "contaminer, infecter"
+  },
+  {
+    "nl": "bevatten",
+    "type": "verb",
+    "perfectum": "bevat",
+    "imperfectum": "bevatte",
+    "tr": "içermek, kapsamak",
+    "en": "to contain, to include",
+    "ar": "يحتوي على",
+    "fr": "contenir, inclure"
+  },
+  {
+    "nl": "bijlage",
+    "type": "noun",
+    "article": "de",
+    "tr": "ek, ilişik",
+    "en": "attachment, appendix",
+    "ar": "مرفق، ملحق",
+    "fr": "pièce jointe, annexe"
+  },
+  {
+    "nl": "filter",
+    "type": "noun",
+    "article": "de",
+    "tr": "filtre",
+    "en": "filter",
+    "ar": "فلتر، مرشّح",
+    "fr": "filtre"
+  },
+  {
+    "nl": "fraude",
+    "type": "noun",
+    "article": "de",
+    "tr": "dolandırıcılık, hile",
+    "en": "fraud",
+    "ar": "احتيال",
+    "fr": "fraude"
+  },
+  {
+    "nl": "gebruikmaken van",
+    "type": "verb",
+    "perfectum": "gebruikgemaakt van",
+    "imperfectum": "maakte gebruik van",
+    "tr": "yararlanmak, kullanmak",
+    "en": "to make use of, to utilize",
+    "ar": "يستفيد من، يستخدم",
+    "fr": "profiter de, utiliser"
+  },
+  {
+    "nl": "gewelddadig",
+    "type": "adj",
+    "tr": "şiddet içeren",
+    "en": "violent",
+    "ar": "عنيف",
+    "fr": "violent"
+  },
+  {
+    "nl": "invoeren",
+    "type": "verb",
+    "perfectum": "ingevoerd",
+    "imperfectum": "voerde in",
+    "tr": "giriş yapmak / uygulamaya koymak",
+    "en": "to enter (data) / to introduce (a policy)",
+    "ar": "يُدخل / يُطبّق",
+    "fr": "saisir / introduire"
+  },
+  {
+    "nl": "minderjarig",
+    "type": "adj",
+    "tr": "reşit olmayan, küçük",
+    "en": "underage, minor",
+    "ar": "قاصر",
+    "fr": "mineur"
+  },
+  {
+    "nl": "misbruiken",
+    "type": "verb",
+    "perfectum": "misbruikt",
+    "imperfectum": "misbruikte",
+    "tr": "kötüye kullanmak, istismar etmek",
+    "en": "to abuse, to misuse",
+    "ar": "يُسيء الاستخدام، يستغل",
+    "fr": "abuser de, utiliser à mauvais escient"
+  },
+  {
+    "nl": "nep",
+    "type": "adj",
+    "tr": "sahte, taklit",
+    "en": "fake, counterfeit",
+    "ar": "مزيف، وهمي",
+    "fr": "faux, factice"
+  },
+  {
+    "nl": "ongepast",
+    "type": "adj",
+    "tr": "uygunsuz, yakışıksız",
+    "en": "inappropriate",
+    "ar": "غير لائق",
+    "fr": "inapproprié, déplacé"
+  },
+  {
+    "nl": "plegen",
+    "type": "verb",
+    "perfectum": "gepleegd",
+    "imperfectum": "pleegde",
+    "tr": "işlemek (suç)",
+    "en": "to commit (a crime)",
+    "ar": "يرتكب (جريمة)",
+    "fr": "commettre (un crime)"
+  },
+  {
+    "nl": "raadplegen",
+    "type": "verb",
+    "perfectum": "geraadpleegd",
+    "imperfectum": "raadpleegde",
+    "tr": "danışmak, başvurmak",
+    "en": "to consult",
+    "ar": "يستشير، يرجع إلى",
+    "fr": "consulter"
+  },
+  {
+    "nl": "stichting",
+    "type": "noun",
+    "article": "de",
+    "tr": "vakıf, dernek",
+    "en": "foundation, charity",
+    "ar": "مؤسسة، جمعية خيرية",
+    "fr": "fondation, association"
+  },
+  {
+    "nl": "teken",
+    "type": "noun",
+    "article": "het",
+    "tr": "işaret, sembol",
+    "en": "sign, symbol",
+    "ar": "علامة، رمز",
+    "fr": "signe, symbole"
+  },
+  {
+    "nl": "uitloggen",
+    "type": "verb",
+    "perfectum": "uitgelogd",
+    "imperfectum": "logde uit",
+    "tr": "oturumu kapatmak",
+    "en": "to log out",
+    "ar": "يُسجّل الخروج",
+    "fr": "se déconnecter"
+  },
+  {
+    "nl": "vals",
+    "type": "adj",
+    "tr": "sahte, yanlış",
+    "en": "false, fake",
+    "ar": "مزيف، كاذب",
+    "fr": "faux"
+  },
+  {
+    "nl": "variatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "çeşitlilik, değişiklik",
+    "en": "variation, variety",
+    "ar": "تنوع، اختلاف",
+    "fr": "variation, variété"
+  },
+  {
+    "nl": "vermijden",
+    "type": "verb",
+    "perfectum": "vermeden",
+    "imperfectum": "vermeed",
+    "tr": "kaçınmak",
+    "en": "to avoid",
+    "ar": "يتجنب",
+    "fr": "éviter"
+  },
+  {
+    "nl": "verwijderen",
+    "type": "verb",
+    "perfectum": "verwijderd",
+    "imperfectum": "verwijderde",
+    "tr": "silmek, kaldırmak",
+    "en": "to delete, to remove",
+    "ar": "يحذف، يُزيل",
+    "fr": "supprimer, retirer"
+  },
+  {
+    "nl": "virus",
+    "type": "noun",
+    "article": "het",
+    "tr": "virüs",
+    "en": "virus",
+    "ar": "فيروس",
+    "fr": "virus"
+  },
+  {
+    "nl": "voorlichting",
+    "type": "noun",
+    "article": "de",
+    "tr": "bilgilendirme, bilinçlendirme",
+    "en": "information, awareness",
+    "ar": "توعية، إعلام",
+    "fr": "information, sensibilisation"
+  },
+  {
+    "nl": "zoekmachine",
+    "type": "noun",
+    "article": "de",
+    "tr": "arama motoru",
+    "en": "search engine",
+    "ar": "محرك بحث",
+    "fr": "moteur de recherche"
+  },
+  {
+    "nl": "zolang",
+    "type": "conj",
+    "tr": "-diği sürece",
+    "en": "as long as",
+    "ar": "طالما، ما دام",
+    "fr": "tant que"
+  },
+  {
+    "nl": "aangezien",
+    "type": "conj",
+    "tr": "-diğinden, zira",
+    "en": "since, because",
+    "ar": "بما أن، إذ",
+    "fr": "puisque, étant donné que"
+  },
+  {
+    "nl": "balie",
+    "type": "noun",
+    "article": "de",
+    "tr": "gişe, ön büro",
+    "en": "counter, reception desk",
+    "ar": "مكتب الاستقبال، شباك",
+    "fr": "guichet, comptoir"
+  },
+  {
+    "nl": "beleid",
+    "type": "noun",
+    "article": "het",
+    "tr": "politika, strateji",
+    "en": "policy",
+    "ar": "سياسة",
+    "fr": "politique (stratégie)"
+  },
+  {
+    "nl": "bijwonen",
+    "type": "verb",
+    "perfectum": "bijgewoond",
+    "imperfectum": "woonde bij",
+    "tr": "katılmak, hazır bulunmak",
+    "en": "to attend",
+    "ar": "يحضر",
+    "fr": "assister à"
+  },
+  {
+    "nl": "directie",
+    "type": "noun",
+    "article": "de",
+    "tr": "yönetim, müdüriyet",
+    "en": "management, board of directors",
+    "ar": "إدارة، مديرية",
+    "fr": "direction"
+  },
+  {
+    "nl": "dringend",
+    "type": "adj",
+    "tr": "acil, ivedi",
+    "en": "urgent",
+    "ar": "عاجل",
+    "fr": "urgent"
+  },
+  {
+    "nl": "foutmelding",
+    "type": "noun",
+    "article": "de",
+    "tr": "hata mesajı",
+    "en": "error message",
+    "ar": "رسالة خطأ",
+    "fr": "message d'erreur"
+  },
+  {
+    "nl": "frustrerend",
+    "type": "adj",
+    "tr": "sinir bozucu, can sıkıcı",
+    "en": "frustrating",
+    "ar": "محبط، مُزعج",
+    "fr": "frustrant"
+  },
+  {
+    "nl": "gezeur",
+    "type": "noun",
+    "article": "het",
+    "tr": "dırdır, sızlanma",
+    "en": "nagging, whining",
+    "ar": "تذمّر، إزعاج",
+    "fr": "pleurnicheries, jérémiades"
+  },
+  {
+    "nl": "handleiding",
+    "type": "noun",
+    "article": "de",
+    "tr": "kullanım kılavuzu",
+    "en": "manual, instruction guide",
+    "ar": "دليل الاستخدام",
+    "fr": "manuel, guide d'utilisation"
+  },
+  {
+    "nl": "herstellen",
+    "type": "verb",
+    "perfectum": "hersteld",
+    "imperfectum": "herstelde",
+    "tr": "onarmak, iyileşmek",
+    "en": "to repair, to recover",
+    "ar": "يُصلح، يتعافى",
+    "fr": "réparer, se rétablir"
+  },
+  {
+    "nl": "onjuist",
+    "type": "adj",
+    "tr": "yanlış, hatalı",
+    "en": "incorrect, wrong",
+    "ar": "خاطئ، غير صحيح",
+    "fr": "incorrect, faux"
+  },
+  {
+    "nl": "ontbreken",
+    "type": "verb",
+    "perfectum": "ontbroken",
+    "imperfectum": "ontbrak",
+    "tr": "eksik olmak",
+    "en": "to be missing, to lack",
+    "ar": "يغيب، ينقص",
+    "fr": "manquer, faire défaut"
+  },
+  {
+    "nl": "opstarten",
+    "type": "verb",
+    "perfectum": "opgestart",
+    "imperfectum": "startte op",
+    "tr": "başlatmak, açmak",
+    "en": "to start up, to boot",
+    "ar": "يُشغّل، يبدأ",
+    "fr": "démarrer, lancer"
+  },
+  {
+    "nl": "poging",
+    "type": "noun",
+    "article": "de",
+    "tr": "deneme, girişim",
+    "en": "attempt",
+    "ar": "محاولة",
+    "fr": "tentative"
+  },
+  {
+    "nl": "puur",
+    "type": "adj",
+    "tr": "saf, tam, sadece",
+    "en": "pure, purely",
+    "ar": "خالص، بحت",
+    "fr": "pur, purement"
+  },
+  {
+    "nl": "recent",
+    "type": "adj",
+    "tr": "yakın zamana ait, son",
+    "en": "recent",
+    "ar": "حديث، أخير",
+    "fr": "récent"
+  },
+  {
+    "nl": "sessie",
+    "type": "noun",
+    "article": "de",
+    "tr": "oturum, seans",
+    "en": "session",
+    "ar": "جلسة",
+    "fr": "session, séance"
+  },
+  {
+    "nl": "standaard",
+    "type": "adv",
+    "tr": "standart olarak, varsayılan",
+    "en": "by default, standard",
+    "ar": "افتراضياً، بشكل قياسي",
+    "fr": "par défaut, standard"
+  },
+  {
+    "nl": "uitleg",
+    "type": "noun",
+    "article": "de",
+    "tr": "açıklama, izah",
+    "en": "explanation",
+    "ar": "شرح، توضيح",
+    "fr": "explication"
+  },
+  {
+    "nl": "vereist",
+    "type": "adj",
+    "tr": "gerekli, zorunlu",
+    "en": "required, necessary",
+    "ar": "مطلوب، ضروري",
+    "fr": "requis, nécessaire"
+  },
+  {
+    "nl": "verschijnen",
+    "type": "verb",
+    "perfectum": "verschenen",
+    "imperfectum": "verscheen",
+    "tr": "görünmek, ortaya çıkmak",
+    "en": "to appear, to show up",
+    "ar": "يظهر",
+    "fr": "apparaître, paraître"
+  },
+  {
+    "nl": "verspilling",
+    "type": "noun",
+    "article": "de",
+    "tr": "israf, savurganlık",
+    "en": "waste",
+    "ar": "هدر، تبذير",
+    "fr": "gaspillage"
+  },
+  {
+    "nl": "vlug",
+    "type": "adj",
+    "tr": "çabuk, hızlı",
+    "en": "quick, fast",
+    "ar": "سريع",
+    "fr": "rapide, vite"
+  },
+  {
+    "nl": "vooruit",
+    "type": "adv",
+    "tr": "ileri, öne",
+    "en": "forward, ahead",
+    "ar": "للأمام",
+    "fr": "en avant"
+  },
+  {
+    "nl": "afname",
+    "type": "noun",
+    "article": "de",
+    "tr": "azalma, düşüş",
+    "en": "decrease, decline",
+    "ar": "انخفاض، تراجع",
+    "fr": "diminution, baisse"
+  },
+  {
+    "nl": "arm",
+    "type": "adj",
+    "tr": "fakir, yoksul",
+    "en": "poor",
+    "ar": "فقير",
+    "fr": "pauvre"
+  },
+  {
+    "nl": "armoede",
+    "type": "noun",
+    "article": "de",
+    "tr": "yoksulluk, fakirlik",
+    "en": "poverty",
+    "ar": "فقر",
+    "fr": "pauvreté"
+  },
+  {
+    "nl": "bedreiging",
+    "type": "noun",
+    "article": "de",
+    "tr": "tehdit",
+    "en": "threat",
+    "ar": "تهديد",
+    "fr": "menace"
+  },
+  {
+    "nl": "beïnvloeden",
+    "type": "verb",
+    "perfectum": "beïnvloed",
+    "imperfectum": "beïnvloedde",
+    "tr": "etkilemek",
+    "en": "to influence, to affect",
+    "ar": "يُؤثّر على",
+    "fr": "influencer, affecter"
+  },
+  {
+    "nl": "conclusie",
+    "type": "noun",
+    "article": "de",
+    "tr": "sonuç, vardığımız nokta",
+    "en": "conclusion",
+    "ar": "استنتاج",
+    "fr": "conclusion"
+  },
+  {
+    "nl": "eigenschap",
+    "type": "noun",
+    "article": "de",
+    "tr": "özellik, nitelik",
+    "en": "characteristic, property",
+    "ar": "خاصية، صفة",
+    "fr": "propriété, caractéristique"
+  },
+  {
+    "nl": "fabriek",
+    "type": "noun",
+    "article": "de",
+    "tr": "fabrika",
+    "en": "factory",
+    "ar": "مصنع",
+    "fr": "usine, fabrique"
+  },
+  {
+    "nl": "intelligent",
+    "type": "adj",
+    "tr": "zeki, akıllı",
+    "en": "intelligent",
+    "ar": "ذكي",
+    "fr": "intelligent"
+  },
+  {
+    "nl": "kunstmatig",
+    "type": "adj",
+    "tr": "yapay, suni",
+    "en": "artificial",
+    "ar": "اصطناعي",
+    "fr": "artificiel"
+  },
+  {
+    "nl": "landbouw",
+    "type": "noun",
+    "article": "de",
+    "tr": "tarım, ziraat",
+    "en": "agriculture, farming",
+    "ar": "زراعة",
+    "fr": "agriculture"
+  },
+  {
+    "nl": "lever",
+    "type": "noun",
+    "article": "de",
+    "tr": "karaciğer",
+    "en": "liver",
+    "ar": "كبد",
+    "fr": "foie"
+  },
+  {
+    "nl": "menselijk",
+    "type": "adj",
+    "tr": "insani, insan",
+    "en": "human",
+    "ar": "إنساني، بشري",
+    "fr": "humain"
+  },
+  {
+    "nl": "nier",
+    "type": "noun",
+    "article": "de",
+    "tr": "böbrek",
+    "en": "kidney",
+    "ar": "كلية",
+    "fr": "rein"
+  },
+  {
+    "nl": "orgaan",
+    "type": "noun",
+    "article": "het",
+    "tr": "organ",
+    "en": "organ",
+    "ar": "عضو",
+    "fr": "organe"
+  },
+  {
+    "nl": "produceren",
+    "type": "verb",
+    "perfectum": "geproduceerd",
+    "imperfectum": "produceerde",
+    "tr": "üretmek",
+    "en": "to produce",
+    "ar": "ينتج",
+    "fr": "produire"
+  },
+  {
+    "nl": "productie",
+    "type": "noun",
+    "article": "de",
+    "tr": "üretim",
+    "en": "production",
+    "ar": "إنتاج",
+    "fr": "production"
+  },
+  {
+    "nl": "robot",
+    "type": "noun",
+    "article": "de",
+    "tr": "robot",
+    "en": "robot",
+    "ar": "روبوت",
+    "fr": "robot"
+  },
+  {
+    "nl": "solidariteit",
+    "type": "noun",
+    "article": "de",
+    "tr": "dayanışma",
+    "en": "solidarity",
+    "ar": "تضامن",
+    "fr": "solidarité"
+  },
+  {
+    "nl": "technologisch",
+    "type": "adj",
+    "tr": "teknolojik",
+    "en": "technological",
+    "ar": "تكنولوجي",
+    "fr": "technologique"
+  },
+  {
+    "nl": "tekort",
+    "type": "noun",
+    "article": "het",
+    "tr": "kıtlık, eksiklik",
+    "en": "shortage, deficit",
+    "ar": "نقص، عجز",
+    "fr": "pénurie, manque"
+  },
+  {
+    "nl": "toekomstig",
+    "type": "adj",
+    "tr": "gelecekteki",
+    "en": "future",
+    "ar": "مستقبلي",
+    "fr": "futur"
+  },
+  {
+    "nl": "tolerantie",
+    "type": "noun",
+    "article": "de",
+    "tr": "hoşgörü, tolerans",
+    "en": "tolerance",
+    "ar": "تسامح",
+    "fr": "tolérance"
+  },
+  {
+    "nl": "uitvinding",
+    "type": "noun",
+    "article": "de",
+    "tr": "icat, buluş",
+    "en": "invention",
+    "ar": "اختراع",
+    "fr": "invention"
+  },
+  {
+    "nl": "voedsel",
+    "type": "noun",
+    "article": "het",
+    "tr": "gıda, yiyecek",
+    "en": "food",
+    "ar": "غذاء، طعام",
+    "fr": "nourriture, aliment"
+  }
+]

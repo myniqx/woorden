@@ -1,0 +1,897 @@
+[
+  {
+    "nl": "andersom",
+    "type": "adv",
+    "tr": "tersine, tam tersi",
+    "en": "the other way around",
+    "ar": "بالعكس، في الاتجاه المعاكس",
+    "fr": "à l'envers, dans l'autre sens"
+  },
+  {
+    "nl": "anderzijds",
+    "type": "adv",
+    "tr": "öte yandan, diğer taraftan",
+    "en": "on the other hand",
+    "ar": "من ناحية أخرى",
+    "fr": "d'un autre côté"
+  },
+  {
+    "nl": "besturen",
+    "type": "verb",
+    "perfectum": "bestuurd",
+    "imperfectum": "bestuurde",
+    "tr": "yönetmek, idare etmek",
+    "en": "to govern, to manage",
+    "ar": "يدير، يحكم",
+    "fr": "gérer, diriger"
+  },
+  {
+    "nl": "commissie",
+    "type": "noun",
+    "article": "de",
+    "tr": "komisyon, komite",
+    "en": "committee, commission",
+    "ar": "لجنة",
+    "fr": "commission, comité"
+  },
+  {
+    "nl": "contributie",
+    "type": "noun",
+    "article": "de",
+    "tr": "üyelik aidatı",
+    "en": "membership fee, subscription",
+    "ar": "رسوم العضوية",
+    "fr": "cotisation"
+  },
+  {
+    "nl": "deelnemen",
+    "type": "verb",
+    "perfectum": "deelgenomen",
+    "imperfectum": "nam deel",
+    "tr": "katılmak",
+    "en": "to participate, to take part",
+    "ar": "يشارك",
+    "fr": "participer"
+  },
+  {
+    "nl": "ellende",
+    "type": "noun",
+    "article": "de",
+    "tr": "sefalet, acı",
+    "en": "misery, suffering",
+    "ar": "بؤس، شقاء",
+    "fr": "misère, souffrance"
+  },
+  {
+    "nl": "enerzijds",
+    "type": "adv",
+    "tr": "bir taraftan, bir yandan",
+    "en": "on the one hand",
+    "ar": "من ناحية",
+    "fr": "d'un côté, d'une part"
+  },
+  {
+    "nl": "fanatiek",
+    "type": "adj",
+    "tr": "fanatik, tutkulu",
+    "en": "fanatical, passionate",
+    "ar": "متعصب، متحمس",
+    "fr": "fanatique, passionné"
+  },
+  {
+    "nl": "financiën",
+    "type": "noun",
+    "article": "de",
+    "tr": "mali işler, finans",
+    "en": "finances, financial matters",
+    "ar": "الشؤون المالية",
+    "fr": "finances"
+  },
+  {
+    "nl": "hartelijk",
+    "type": "adj",
+    "tr": "cana yakın, içten",
+    "en": "warm, cordial",
+    "ar": "دافئ، ودي",
+    "fr": "chaleureux, cordial"
+  },
+  {
+    "nl": "inhouden",
+    "type": "verb",
+    "perfectum": "ingehouden",
+    "imperfectum": "hield in",
+    "tr": "kapsamak, içermek",
+    "en": "to contain, to mean",
+    "ar": "يتضمن، يعني",
+    "fr": "contenir, signifier"
+  },
+  {
+    "nl": "onderhoud",
+    "type": "noun",
+    "article": "het",
+    "tr": "bakım, onarım",
+    "en": "maintenance",
+    "ar": "صيانة",
+    "fr": "entretien, maintenance"
+  },
+  {
+    "nl": "organisatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "organizasyon, kuruluş",
+    "en": "organisation",
+    "ar": "منظمة، تنظيم",
+    "fr": "organisation"
+  },
+  {
+    "nl": "start",
+    "type": "noun",
+    "article": "de",
+    "tr": "başlangıç",
+    "en": "start, beginning",
+    "ar": "بداية، انطلاق",
+    "fr": "départ, début"
+  },
+  {
+    "nl": "tennis",
+    "type": "noun",
+    "article": "het",
+    "tr": "tenis",
+    "en": "tennis",
+    "ar": "التنس",
+    "fr": "tennis"
+  },
+  {
+    "nl": "tennissen",
+    "type": "verb",
+    "perfectum": "getennist",
+    "imperfectum": "tenniste",
+    "tr": "tenis oynamak",
+    "en": "to play tennis",
+    "ar": "يلعب التنس",
+    "fr": "jouer au tennis"
+  },
+  {
+    "nl": "trouw",
+    "type": "adj",
+    "tr": "sadık, vefalı",
+    "en": "loyal, faithful",
+    "ar": "مخلص، وفي",
+    "fr": "fidèle, loyal"
+  },
+  {
+    "nl": "uitgaan van",
+    "type": "verb",
+    "perfectum": "uitgegaan van",
+    "imperfectum": "ging uit van",
+    "tr": "varsaymak, hareket noktası olarak almak",
+    "en": "to assume, to proceed from",
+    "ar": "يفترض، ينطلق من",
+    "fr": "partir de, supposer"
+  },
+  {
+    "nl": "verwerken",
+    "type": "verb",
+    "perfectum": "verwerkt",
+    "imperfectum": "verwerkte",
+    "tr": "işlemek, sindirmek",
+    "en": "to process, to cope with",
+    "ar": "يعالج، يهضم",
+    "fr": "traiter, assimiler"
+  },
+  {
+    "nl": "vrijblijvend",
+    "type": "adj",
+    "tr": "bağlayıcı olmayan, şartsız",
+    "en": "non-committal, without obligation",
+    "ar": "غير ملزم",
+    "fr": "sans engagement, non contraignant"
+  },
+  {
+    "nl": "wegblijven",
+    "type": "verb",
+    "perfectum": "weggebleven",
+    "imperfectum": "bleef weg",
+    "tr": "gelmemek, ortada görünmemek",
+    "en": "to stay away, to not come",
+    "ar": "يغيب، لا يحضر",
+    "fr": "rester absent, ne pas venir"
+  },
+  {
+    "nl": "werven",
+    "type": "verb",
+    "perfectum": "geworven",
+    "imperfectum": "wierf",
+    "tr": "işe almak, kazanmak",
+    "en": "to recruit, to attract",
+    "ar": "يجنّد، يستقطب",
+    "fr": "recruter, attirer"
+  },
+  {
+    "nl": "zich inzetten",
+    "type": "verb",
+    "perfectum": "zich ingezet",
+    "imperfectum": "zette zich in",
+    "tr": "çaba göstermek, gayret etmek",
+    "en": "to commit oneself, to make an effort",
+    "ar": "يبذل جهداً، يلتزم",
+    "fr": "s'investir, s'engager"
+  },
+  {
+    "nl": "aankijken",
+    "type": "verb",
+    "perfectum": "aangekeken",
+    "imperfectum": "keek aan",
+    "tr": "bakmak, gözlerine bakmak",
+    "en": "to look at, to eye",
+    "ar": "ينظر إلى، يحدّق في",
+    "fr": "regarder, fixer des yeux"
+  },
+  {
+    "nl": "agressief",
+    "type": "adj",
+    "tr": "agresif, saldırgan",
+    "en": "aggressive",
+    "ar": "عدواني",
+    "fr": "agressif"
+  },
+  {
+    "nl": "arrogant",
+    "type": "adj",
+    "tr": "kibirli, küstah",
+    "en": "arrogant",
+    "ar": "متعجرف، متغطرس",
+    "fr": "arrogant"
+  },
+  {
+    "nl": "artiest",
+    "type": "noun",
+    "article": "de",
+    "tr": "sanatçı, artist",
+    "en": "artist, performer",
+    "ar": "فنان",
+    "fr": "artiste"
+  },
+  {
+    "nl": "bewonderen",
+    "type": "verb",
+    "perfectum": "bewonderd",
+    "imperfectum": "bewonderde",
+    "tr": "hayran olmak",
+    "en": "to admire",
+    "ar": "يُعجب بـ، يُكبّر",
+    "fr": "admirer"
+  },
+  {
+    "nl": "destijds",
+    "type": "adv",
+    "tr": "o zamanlar, o dönemde",
+    "en": "at that time, back then",
+    "ar": "في ذلك الوقت",
+    "fr": "à l'époque, en ce temps-là"
+  },
+  {
+    "nl": "held",
+    "type": "noun",
+    "article": "de",
+    "tr": "kahraman",
+    "en": "hero",
+    "ar": "بطل",
+    "fr": "héros"
+  },
+  {
+    "nl": "idool",
+    "type": "noun",
+    "article": "het",
+    "tr": "idol, ikon",
+    "en": "idol",
+    "ar": "مثل أعلى، أيقونة",
+    "fr": "idole"
+  },
+  {
+    "nl": "incident",
+    "type": "noun",
+    "article": "het",
+    "tr": "olay, hadise",
+    "en": "incident",
+    "ar": "حادثة",
+    "fr": "incident"
+  },
+  {
+    "nl": "klimmen",
+    "type": "verb",
+    "perfectum": "geklommen",
+    "imperfectum": "klom",
+    "tr": "tırmanmak",
+    "en": "to climb",
+    "ar": "يتسلق",
+    "fr": "grimper, escalader"
+  },
+  {
+    "nl": "koningin",
+    "type": "noun",
+    "article": "de",
+    "tr": "kraliçe",
+    "en": "queen",
+    "ar": "ملكة",
+    "fr": "reine"
+  },
+  {
+    "nl": "kunstenaar",
+    "type": "noun",
+    "article": "de",
+    "tr": "sanatçı",
+    "en": "artist",
+    "ar": "فنان",
+    "fr": "artiste"
+  },
+  {
+    "nl": "meezingen",
+    "type": "verb",
+    "perfectum": "meegezongen",
+    "imperfectum": "zong mee",
+    "tr": "birlikte şarkı söylemek",
+    "en": "to sing along",
+    "ar": "يُرافق في الغناء",
+    "fr": "chanter avec"
+  },
+  {
+    "nl": "mislukken",
+    "type": "verb",
+    "perfectum": "mislukt",
+    "imperfectum": "mislukte",
+    "tr": "başarısız olmak",
+    "en": "to fail, to go wrong",
+    "ar": "يفشل",
+    "fr": "échouer, rater"
+  },
+  {
+    "nl": "omhelzen",
+    "type": "verb",
+    "perfectum": "omhelsd",
+    "imperfectum": "omhelsde",
+    "tr": "kucaklamak, sarılmak",
+    "en": "to embrace, to hug",
+    "ar": "يعانق",
+    "fr": "embrasser, étreindre"
+  },
+  {
+    "nl": "onderarm",
+    "type": "noun",
+    "article": "de",
+    "tr": "ön kol",
+    "en": "forearm",
+    "ar": "ساعد",
+    "fr": "avant-bras"
+  },
+  {
+    "nl": "speler",
+    "type": "noun",
+    "article": "de",
+    "tr": "oyuncu",
+    "en": "player",
+    "ar": "لاعب",
+    "fr": "joueur"
+  },
+  {
+    "nl": "sporter",
+    "type": "noun",
+    "article": "de",
+    "tr": "sporcu",
+    "en": "sportsperson, athlete",
+    "ar": "رياضي",
+    "fr": "sportif"
+  },
+  {
+    "nl": "stadion",
+    "type": "noun",
+    "article": "het",
+    "tr": "stadyum",
+    "en": "stadium",
+    "ar": "ملعب، استاد",
+    "fr": "stade"
+  },
+  {
+    "nl": "status",
+    "type": "noun",
+    "article": "de",
+    "tr": "statü, konum",
+    "en": "status",
+    "ar": "مكانة، وضع",
+    "fr": "statut"
+  },
+  {
+    "nl": "symbool",
+    "type": "noun",
+    "article": "het",
+    "tr": "sembol",
+    "en": "symbol",
+    "ar": "رمز",
+    "fr": "symbole"
+  },
+  {
+    "nl": "verdienen",
+    "type": "verb",
+    "perfectum": "verdiend",
+    "imperfectum": "verdiende",
+    "tr": "kazanmak / hak etmek",
+    "en": "to earn / to deserve",
+    "ar": "يكسب / يستحق",
+    "fr": "gagner / mériter"
+  },
+  {
+    "nl": "verlangen",
+    "type": "noun",
+    "article": "het",
+    "tr": "özlem, arzu",
+    "en": "longing, desire",
+    "ar": "شوق، رغبة",
+    "fr": "désir, nostalgie"
+  },
+  {
+    "nl": "verward",
+    "type": "adj",
+    "tr": "şaşkın, kafası karışmış",
+    "en": "confused, bewildered",
+    "ar": "محتار، مرتبك",
+    "fr": "confus, perdu"
+  },
+  {
+    "nl": "voetballer",
+    "type": "noun",
+    "article": "de",
+    "tr": "futbolcu",
+    "en": "football player",
+    "ar": "لاعب كرة قدم",
+    "fr": "footballeur"
+  },
+  {
+    "nl": "zangeres",
+    "type": "noun",
+    "article": "de",
+    "tr": "kadın şarkıcı",
+    "en": "female singer",
+    "ar": "مغنية",
+    "fr": "chanteuse"
+  },
+  {
+    "nl": "zenuwen",
+    "type": "noun",
+    "article": "de",
+    "tr": "sinirler, gerginlik",
+    "en": "nerves",
+    "ar": "أعصاب",
+    "fr": "nerfs"
+  },
+  {
+    "nl": "Afrikaans",
+    "type": "adj",
+    "tr": "Afrikalı / Afrikaans dili",
+    "en": "African / Afrikaans (language)",
+    "ar": "أفريقي / الأفريكانية",
+    "fr": "africain / afrikaans"
+  },
+  {
+    "nl": "afschuwelijk",
+    "type": "adj",
+    "tr": "iğrenç, korkunç",
+    "en": "horrible, awful",
+    "ar": "فظيع، مقيت",
+    "fr": "horrible, affreux"
+  },
+  {
+    "nl": "afspelen",
+    "type": "verb",
+    "perfectum": "afgespeeld",
+    "imperfectum": "speelde af",
+    "tr": "çalmak, oynatmak",
+    "en": "to play (audio/video)",
+    "ar": "يُشغّل (مقطع صوتي أو مرئي)",
+    "fr": "lire, diffuser"
+  },
+  {
+    "nl": "box",
+    "type": "noun",
+    "article": "de",
+    "tr": "hoparlör",
+    "en": "speaker",
+    "ar": "مكبّر صوت",
+    "fr": "haut-parleur, enceinte"
+  },
+  {
+    "nl": "dans",
+    "type": "noun",
+    "article": "de",
+    "tr": "dans",
+    "en": "dance",
+    "ar": "رقص",
+    "fr": "danse"
+  },
+  {
+    "nl": "elektronisch",
+    "type": "adj",
+    "tr": "elektronik",
+    "en": "electronic",
+    "ar": "إلكتروني",
+    "fr": "électronique"
+  },
+  {
+    "nl": "fluit",
+    "type": "noun",
+    "article": "de",
+    "tr": "flüt, düdük",
+    "en": "flute, whistle",
+    "ar": "ناي، صافرة",
+    "fr": "flûte, sifflet"
+  },
+  {
+    "nl": "genre",
+    "type": "noun",
+    "article": "het",
+    "tr": "tür, genre",
+    "en": "genre",
+    "ar": "نوع، جنس",
+    "fr": "genre"
+  },
+  {
+    "nl": "instrument",
+    "type": "noun",
+    "article": "het",
+    "tr": "enstrüman, alet",
+    "en": "instrument",
+    "ar": "آلة موسيقية",
+    "fr": "instrument"
+  },
+  {
+    "nl": "klassiek",
+    "type": "adj",
+    "tr": "klasik",
+    "en": "classical, classic",
+    "ar": "كلاسيكي",
+    "fr": "classique"
+  },
+  {
+    "nl": "koptelefoon",
+    "type": "noun",
+    "article": "de",
+    "tr": "kulaklık (kafaüstü)",
+    "en": "headphones",
+    "ar": "سماعات رأس",
+    "fr": "casque audio"
+  },
+  {
+    "nl": "muzikaal",
+    "type": "adj",
+    "tr": "müziğe yetenekli, müzikal",
+    "en": "musical, talented in music",
+    "ar": "موسيقي، موهوب في الموسيقى",
+    "fr": "musical, doué pour la musique"
+  },
+  {
+    "nl": "muzikant",
+    "type": "noun",
+    "article": "de",
+    "tr": "müzisyen",
+    "en": "musician",
+    "ar": "موسيقي",
+    "fr": "musicien"
+  },
+  {
+    "nl": "oordopje",
+    "type": "noun",
+    "article": "het",
+    "diminutive": "oordopje",
+    "tr": "kulak içi kulaklık",
+    "en": "earphone, earbud",
+    "ar": "سماعة أذن صغيرة",
+    "fr": "écouteur"
+  },
+  {
+    "nl": "orkest",
+    "type": "noun",
+    "article": "het",
+    "tr": "orkestra",
+    "en": "orchestra",
+    "ar": "أوركسترا",
+    "fr": "orchestre"
+  },
+  {
+    "nl": "ritme",
+    "type": "noun",
+    "article": "het",
+    "tr": "ritim",
+    "en": "rhythm",
+    "ar": "إيقاع",
+    "fr": "rythme"
+  },
+  {
+    "nl": "smaak",
+    "type": "noun",
+    "article": "de",
+    "tr": "tat / zevk",
+    "en": "taste / flavour",
+    "ar": "طعم / ذوق",
+    "fr": "goût / saveur"
+  },
+  {
+    "nl": "stilte",
+    "type": "noun",
+    "article": "de",
+    "tr": "sessizlik, sükûnet",
+    "en": "silence, quiet",
+    "ar": "صمت، هدوء",
+    "fr": "silence"
+  },
+  {
+    "nl": "trommel",
+    "type": "noun",
+    "article": "de",
+    "tr": "davul, kutu",
+    "en": "drum / tin",
+    "ar": "طبل / علبة",
+    "fr": "tambour / boîte"
+  },
+  {
+    "nl": "verpesten",
+    "type": "verb",
+    "perfectum": "verpest",
+    "imperfectum": "verpestte",
+    "tr": "mahvetmek, bozmak",
+    "en": "to ruin, to spoil",
+    "ar": "يُفسد",
+    "fr": "gâcher, ruiner"
+  },
+  {
+    "nl": "viool",
+    "type": "noun",
+    "article": "de",
+    "tr": "keman",
+    "en": "violin",
+    "ar": "كمان",
+    "fr": "violon"
+  },
+  {
+    "nl": "volks",
+    "type": "adj",
+    "tr": "halk müziğine ait, folklorik",
+    "en": "folk, popular",
+    "ar": "شعبي، فولكلوري",
+    "fr": "folklorique, populaire"
+  },
+  {
+    "nl": "zang",
+    "type": "noun",
+    "article": "de",
+    "tr": "vokal, şarkı söyleme",
+    "en": "singing, vocals",
+    "ar": "غناء",
+    "fr": "chant"
+  },
+  {
+    "nl": "zanger",
+    "type": "noun",
+    "article": "de",
+    "tr": "şarkıcı",
+    "en": "singer",
+    "ar": "مغنٍ",
+    "fr": "chanteur"
+  },
+  {
+    "nl": "band",
+    "type": "noun",
+    "article": "de",
+    "tr": "grup (müzik) / bant / lastik",
+    "en": "band / tape / tyre",
+    "ar": "فرقة موسيقية / شريط / إطار",
+    "fr": "groupe (musique) / bande / pneu"
+  },
+  {
+    "nl": "alsmaar",
+    "type": "adv",
+    "tr": "hep, sürekli",
+    "en": "continuously, always",
+    "ar": "باستمرار، دائماً",
+    "fr": "sans cesse, toujours"
+  },
+  {
+    "nl": "benodigd",
+    "type": "adj",
+    "tr": "gerekli, ihtiyaç duyulan",
+    "en": "required, needed",
+    "ar": "مطلوب، ضروري",
+    "fr": "nécessaire, requis"
+  },
+  {
+    "nl": "cultureel",
+    "type": "adj",
+    "tr": "kültürel",
+    "en": "cultural",
+    "ar": "ثقافي",
+    "fr": "culturel"
+  },
+  {
+    "nl": "dweilen",
+    "type": "verb",
+    "perfectum": "gedweild",
+    "imperfectum": "dweilde",
+    "tr": "paspaslamak, ıslak bezle silmek",
+    "en": "to mop",
+    "ar": "يمسح بالممسحة",
+    "fr": "passer la serpillière"
+  },
+  {
+    "nl": "eenmaal",
+    "type": "adv",
+    "tr": "bir kez / bir zamanlar",
+    "en": "once / one day",
+    "ar": "مرة واحدة / ذات مرة",
+    "fr": "une fois / un jour"
+  },
+  {
+    "nl": "fotografie",
+    "type": "noun",
+    "article": "de",
+    "tr": "fotoğrafçılık",
+    "en": "photography",
+    "ar": "تصوير فوتوغرافي",
+    "fr": "photographie"
+  },
+  {
+    "nl": "handelen",
+    "type": "verb",
+    "perfectum": "gehandeld",
+    "imperfectum": "handelde",
+    "tr": "harekete geçmek, davranmak",
+    "en": "to act, to deal",
+    "ar": "يتصرف، يعمل",
+    "fr": "agir, traiter"
+  },
+  {
+    "nl": "herkenbaar",
+    "type": "adj",
+    "tr": "tanınabilir, ayırt edilebilir",
+    "en": "recognisable",
+    "ar": "يمكن التعرف عليه",
+    "fr": "reconnaissable"
+  },
+  {
+    "nl": "indeling",
+    "type": "noun",
+    "article": "de",
+    "tr": "düzenleme, bölümlendirme",
+    "en": "arrangement, layout",
+    "ar": "تقسيم، ترتيب",
+    "fr": "disposition, organisation"
+  },
+  {
+    "nl": "langdurig",
+    "type": "adj",
+    "tr": "uzun süreli",
+    "en": "long-lasting, prolonged",
+    "ar": "طويل الأمد",
+    "fr": "prolongé, durable"
+  },
+  {
+    "nl": "lezer",
+    "type": "noun",
+    "article": "de",
+    "tr": "okuyucu, okur",
+    "en": "reader",
+    "ar": "قارئ",
+    "fr": "lecteur"
+  },
+  {
+    "nl": "maaien",
+    "type": "verb",
+    "perfectum": "gemaaid",
+    "imperfectum": "maaide",
+    "tr": "biçmek, çimleri biçmek",
+    "en": "to mow, to cut",
+    "ar": "يحصد، يجزّ",
+    "fr": "faucher, tondre"
+  },
+  {
+    "nl": "marathon",
+    "type": "noun",
+    "article": "de",
+    "tr": "maraton",
+    "en": "marathon",
+    "ar": "ماراثون",
+    "fr": "marathon"
+  },
+  {
+    "nl": "opvouwen",
+    "type": "verb",
+    "perfectum": "opgevouwen",
+    "imperfectum": "vouwde op",
+    "tr": "katlamak",
+    "en": "to fold up",
+    "ar": "يطوي",
+    "fr": "plier"
+  },
+  {
+    "nl": "overblijven",
+    "type": "verb",
+    "perfectum": "overgebleven",
+    "imperfectum": "bleef over",
+    "tr": "artmak, fazla kalmak",
+    "en": "to remain, to be left over",
+    "ar": "يبقى، يتبقى",
+    "fr": "rester, subsister"
+  },
+  {
+    "nl": "plas",
+    "type": "noun",
+    "article": "de",
+    "tr": "su birikintisi",
+    "en": "puddle, pool",
+    "ar": "بركة ماء",
+    "fr": "flaque d'eau"
+  },
+  {
+    "nl": "schatten",
+    "type": "verb",
+    "perfectum": "geschat",
+    "imperfectum": "schatte",
+    "tr": "tahmin etmek",
+    "en": "to estimate, to guess",
+    "ar": "يُقدّر، يخمّن",
+    "fr": "estimer, évaluer"
+  },
+  {
+    "nl": "simpelweg",
+    "type": "adv",
+    "tr": "basitçe, sadece",
+    "en": "simply, just",
+    "ar": "ببساطة",
+    "fr": "simplement, tout simplement"
+  },
+  {
+    "nl": "stofzuigen",
+    "type": "verb",
+    "perfectum": "gestofzuigd",
+    "imperfectum": "stofzuigde",
+    "tr": "elektrikli süpürgeyle süpürmek",
+    "en": "to vacuum, to hoover",
+    "ar": "يكنس بالمكنسة الكهربائية",
+    "fr": "passer l'aspirateur"
+  },
+  {
+    "nl": "toekomen aan",
+    "type": "verb",
+    "perfectum": "toegekomen aan",
+    "imperfectum": "kwam toe aan",
+    "tr": "vakit bulmak, fırsatını bulmak",
+    "en": "to get around to, to find time for",
+    "ar": "يجد وقتاً لـ",
+    "fr": "trouver le temps de"
+  },
+  {
+    "nl": "uitspraak",
+    "type": "noun",
+    "article": "de",
+    "tr": "söylem, beyan / telaffuz",
+    "en": "statement / pronunciation",
+    "ar": "تصريح / نطق",
+    "fr": "déclaration / prononciation"
+  },
+  {
+    "nl": "verplichting",
+    "type": "noun",
+    "article": "de",
+    "tr": "yükümlülük, sorumluluk",
+    "en": "obligation, commitment",
+    "ar": "التزام، واجب",
+    "fr": "obligation, engagement"
+  },
+  {
+    "nl": "verwaarlozen",
+    "type": "verb",
+    "perfectum": "verwaarloosd",
+    "imperfectum": "verwaarloosde",
+    "tr": "ihmal etmek",
+    "en": "to neglect",
+    "ar": "يُهمل",
+    "fr": "négliger"
+  }
+]

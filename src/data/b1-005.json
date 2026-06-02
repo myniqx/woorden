@@ -1,0 +1,910 @@
+[
+  {
+    "nl": "aanspreken",
+    "type": "verb",
+    "perfectum": "aangesproken",
+    "imperfectum": "sprak aan",
+    "tr": "hitap etmek",
+    "en": "to address, to speak to",
+    "ar": "يخاطب، يتحدث إلى",
+    "fr": "adresser la parole à, interpeller"
+  },
+  {
+    "nl": "begeleider",
+    "type": "noun",
+    "article": "de",
+    "tr": "rehber, refakatçi",
+    "en": "guide, supervisor",
+    "ar": "مرشد، مشرف",
+    "fr": "accompagnateur, encadrant"
+  },
+  {
+    "nl": "begeleiding",
+    "type": "noun",
+    "article": "de",
+    "tr": "rehberlik, destek",
+    "en": "guidance, support",
+    "ar": "إرشاد، دعم",
+    "fr": "accompagnement, encadrement"
+  },
+  {
+    "nl": "beginnend",
+    "type": "adj",
+    "tr": "başlangıç seviyesinde, acemi",
+    "en": "beginning, starting",
+    "ar": "مبتدئ",
+    "fr": "débutant"
+  },
+  {
+    "nl": "beheersen",
+    "type": "verb",
+    "perfectum": "beheerst",
+    "imperfectum": "beheerste",
+    "tr": "hakimiyetini sürdürmek, ustalaşmak",
+    "en": "to master, to control",
+    "ar": "يتقن، يسيطر على",
+    "fr": "maîtriser, contrôler"
+  },
+  {
+    "nl": "beschikken over",
+    "type": "verb",
+    "perfectum": "beschikt over",
+    "imperfectum": "beschikte over",
+    "tr": "sahip olmak",
+    "en": "to have, to dispose of",
+    "ar": "يملك، يتوفر على",
+    "fr": "disposer de, avoir"
+  },
+  {
+    "nl": "beschrijving",
+    "type": "noun",
+    "article": "de",
+    "tr": "açıklama, tanım",
+    "en": "description",
+    "ar": "وصف",
+    "fr": "description"
+  },
+  {
+    "nl": "bijvoegen",
+    "type": "verb",
+    "perfectum": "bijgevoegd",
+    "imperfectum": "voegde bij",
+    "tr": "eklemek, iliştirmek",
+    "en": "to add, to attach",
+    "ar": "يُضيف، يُرفق",
+    "fr": "ajouter, joindre"
+  },
+  {
+    "nl": "competentie",
+    "type": "noun",
+    "article": "de",
+    "tr": "yetkinlik, yetenek",
+    "en": "competence, skill",
+    "ar": "كفاءة",
+    "fr": "compétence"
+  },
+  {
+    "nl": "enthousiasme",
+    "type": "noun",
+    "article": "het",
+    "tr": "heves, coşku",
+    "en": "enthusiasm",
+    "ar": "حماس",
+    "fr": "enthousiasme"
+  },
+  {
+    "nl": "flexibiliteit",
+    "type": "noun",
+    "article": "de",
+    "tr": "esneklik",
+    "en": "flexibility",
+    "ar": "مرونة",
+    "fr": "flexibilité"
+  },
+  {
+    "nl": "gedurende",
+    "type": "prep",
+    "tr": "boyunca, süresince",
+    "en": "during, throughout",
+    "ar": "خلال، طوال",
+    "fr": "pendant, durant"
+  },
+  {
+    "nl": "gelegenheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "fırsat, vesile",
+    "en": "opportunity, occasion",
+    "ar": "فرصة، مناسبة",
+    "fr": "occasion, opportunité"
+  },
+  {
+    "nl": "humor",
+    "type": "noun",
+    "article": "de",
+    "tr": "espri, mizah",
+    "en": "humour",
+    "ar": "فكاهة، روح الدعابة",
+    "fr": "humour"
+  },
+  {
+    "nl": "inclusief",
+    "type": "prep",
+    "tr": "dahil",
+    "en": "including, inclusive of",
+    "ar": "شاملاً",
+    "fr": "inclus, y compris"
+  },
+  {
+    "nl": "natuurkunde",
+    "type": "noun",
+    "article": "de",
+    "tr": "fizik",
+    "en": "physics",
+    "ar": "فيزياء",
+    "fr": "physique"
+  },
+  {
+    "nl": "onderbouw",
+    "type": "noun",
+    "article": "de",
+    "tr": "alt sınıflar (lise)",
+    "en": "lower school years",
+    "ar": "الصفوف الدراسية الأدنى",
+    "fr": "petites classes"
+  },
+  {
+    "nl": "onderbreken",
+    "type": "verb",
+    "perfectum": "onderbroken",
+    "imperfectum": "onderbrak",
+    "tr": "kesmek, kesintiye uğratmak",
+    "en": "to interrupt, to break off",
+    "ar": "يقاطع، يُوقف",
+    "fr": "interrompre"
+  },
+  {
+    "nl": "opzetten",
+    "type": "verb",
+    "perfectum": "opgezet",
+    "imperfectum": "zette op",
+    "tr": "düzenlemek, kurmak",
+    "en": "to set up, to establish",
+    "ar": "يُنشئ، يُنظّم",
+    "fr": "mettre en place, établir"
+  },
+  {
+    "nl": "overdragen",
+    "type": "verb",
+    "perfectum": "overgedragen",
+    "imperfectum": "droeg over",
+    "tr": "aktarmak, devretmek",
+    "en": "to transfer, to hand over",
+    "ar": "ينقل، يُحوّل",
+    "fr": "transmettre, céder"
+  },
+  {
+    "nl": "persoonlijkheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "kişilik",
+    "en": "personality",
+    "ar": "شخصية",
+    "fr": "personnalité"
+  },
+  {
+    "nl": "project",
+    "type": "noun",
+    "article": "het",
+    "tr": "proje",
+    "en": "project",
+    "ar": "مشروع",
+    "fr": "projet"
+  },
+  {
+    "nl": "relevant",
+    "type": "adj",
+    "tr": "ilgili, alakalı",
+    "en": "relevant",
+    "ar": "ذو صلة",
+    "fr": "pertinent"
+  },
+  {
+    "nl": "toelichten",
+    "type": "verb",
+    "perfectum": "toegelicht",
+    "imperfectum": "lichtte toe",
+    "tr": "açıklamak, aydınlatmak",
+    "en": "to explain, to clarify",
+    "ar": "يوضّح، يشرح",
+    "fr": "expliquer, clarifier"
+  },
+  {
+    "nl": "voortzetten",
+    "type": "verb",
+    "perfectum": "voortgezet",
+    "imperfectum": "zette voort",
+    "tr": "devam ettirmek, sürdürmek",
+    "en": "to continue, to pursue",
+    "ar": "يواصل، يستمر",
+    "fr": "poursuivre, continuer"
+  },
+  {
+    "nl": "wijze",
+    "type": "noun",
+    "article": "de",
+    "tr": "tarz, yöntem",
+    "en": "manner, way",
+    "ar": "أسلوب، طريقة",
+    "fr": "manière, façon"
+  },
+  {
+    "nl": "wo",
+    "type": "noun",
+    "article": "het",
+    "tr": "akademik yükseköğretim (WO)",
+    "en": "university education (academic)",
+    "ar": "التعليم الجامعي الأكاديمي",
+    "fr": "enseignement universitaire académique"
+  },
+  {
+    "nl": "zich inleven",
+    "type": "verb",
+    "perfectum": "zich ingeleefd",
+    "imperfectum": "leefde zich in",
+    "tr": "kendini başkasının yerine koymak, empati kurmak",
+    "en": "to empathize, to put oneself in someone's shoes",
+    "ar": "يتعاطف، يضع نفسه مكان الآخر",
+    "fr": "s'identifier à, faire preuve d'empathie"
+  },
+  {
+    "nl": "aangenaam",
+    "type": "adj",
+    "tr": "hoş, memnuniyet verici",
+    "en": "pleasant, nice to meet you",
+    "ar": "ممتع، تشرّفت",
+    "fr": "agréable, enchanté"
+  },
+  {
+    "nl": "administratief",
+    "type": "adj",
+    "tr": "idari",
+    "en": "administrative",
+    "ar": "إداري",
+    "fr": "administratif"
+  },
+  {
+    "nl": "begrijpelijk",
+    "type": "adj",
+    "tr": "anlaşılır",
+    "en": "understandable, comprehensible",
+    "ar": "مفهوم",
+    "fr": "compréhensible"
+  },
+  {
+    "nl": "brugklas",
+    "type": "noun",
+    "article": "de",
+    "tr": "lisenin ilk sınıfı (geçiş yılı)",
+    "en": "first year of secondary school (bridge class)",
+    "ar": "السنة الأولى من المرحلة الثانوية",
+    "fr": "première année du secondaire"
+  },
+  {
+    "nl": "concreet",
+    "type": "adj",
+    "tr": "somut, belirli",
+    "en": "concrete, specific",
+    "ar": "ملموس، محدد",
+    "fr": "concret, précis"
+  },
+  {
+    "nl": "coördinator",
+    "type": "noun",
+    "article": "de",
+    "tr": "koordinatör",
+    "en": "coordinator",
+    "ar": "منسّق",
+    "fr": "coordinateur"
+  },
+  {
+    "nl": "creëren",
+    "type": "verb",
+    "perfectum": "gecreëerd",
+    "imperfectum": "creëerde",
+    "tr": "yaratmak, oluşturmak",
+    "en": "to create",
+    "ar": "يخلق، يُنشئ",
+    "fr": "créer"
+  },
+  {
+    "nl": "grotendeels",
+    "type": "adv",
+    "tr": "büyük ölçüde, çoğunlukla",
+    "en": "largely, mostly",
+    "ar": "إلى حد بعيد، في معظمه",
+    "fr": "en grande partie, pour l'essentiel"
+  },
+  {
+    "nl": "inlichten",
+    "type": "verb",
+    "perfectum": "ingelicht",
+    "imperfectum": "lichtte in",
+    "tr": "bilgilendirmek, haberdar etmek",
+    "en": "to inform, to notify",
+    "ar": "يُعلم، يُخطر",
+    "fr": "informer, avertir"
+  },
+  {
+    "nl": "kandidaat",
+    "type": "noun",
+    "article": "de",
+    "tr": "aday",
+    "en": "candidate",
+    "ar": "مرشح",
+    "fr": "candidat"
+  },
+  {
+    "nl": "kennismaken",
+    "type": "verb",
+    "perfectum": "kennisgemaakt",
+    "imperfectum": "maakte kennis",
+    "tr": "tanışmak",
+    "en": "to get acquainted, to meet",
+    "ar": "يتعرف على، يلتقي بـ",
+    "fr": "faire connaissance"
+  },
+  {
+    "nl": "komst",
+    "type": "noun",
+    "article": "de",
+    "tr": "geliş, varış",
+    "en": "arrival, coming",
+    "ar": "قدوم، وصول",
+    "fr": "arrivée, venue"
+  },
+  {
+    "nl": "leider",
+    "type": "noun",
+    "article": "de",
+    "tr": "lider",
+    "en": "leader",
+    "ar": "قائد",
+    "fr": "dirigeant, chef"
+  },
+  {
+    "nl": "nadat",
+    "type": "conj",
+    "tr": "-den sonra",
+    "en": "after",
+    "ar": "بعد أن",
+    "fr": "après que"
+  },
+  {
+    "nl": "natuurlijk",
+    "type": "adv",
+    "tr": "doğal olarak, tabii ki",
+    "en": "naturally, of course",
+    "ar": "بطبيعة الحال، طبعاً",
+    "fr": "naturellement, bien sûr"
+  },
+  {
+    "nl": "opstellen",
+    "type": "verb",
+    "perfectum": "opgesteld",
+    "imperfectum": "stelde op",
+    "tr": "hazırlamak, oluşturmak",
+    "en": "to draw up, to compose",
+    "ar": "يُعدّ، يُصيغ",
+    "fr": "rédiger, élaborer"
+  },
+  {
+    "nl": "orde",
+    "type": "noun",
+    "article": "de",
+    "tr": "düzen, sıra",
+    "en": "order",
+    "ar": "نظام، ترتيب",
+    "fr": "ordre"
+  },
+  {
+    "nl": "overeenkomen",
+    "type": "verb",
+    "perfectum": "overeengekomen",
+    "imperfectum": "kwam overeen",
+    "tr": "uyuşmak, mutabık olmak",
+    "en": "to agree, to correspond",
+    "ar": "يتفق، يتطابق",
+    "fr": "s'accorder, correspondre"
+  },
+  {
+    "nl": "procedure",
+    "type": "noun",
+    "article": "de",
+    "tr": "prosedür, işlem",
+    "en": "procedure",
+    "ar": "إجراء",
+    "fr": "procédure"
+  },
+  {
+    "nl": "scheikunde",
+    "type": "noun",
+    "article": "de",
+    "tr": "kimya",
+    "en": "chemistry",
+    "ar": "كيمياء",
+    "fr": "chimie"
+  },
+  {
+    "nl": "uitkomst",
+    "type": "noun",
+    "article": "de",
+    "tr": "sonuç, çözüm",
+    "en": "outcome, result",
+    "ar": "نتيجة",
+    "fr": "résultat, issue"
+  },
+  {
+    "nl": "voorafgaand",
+    "type": "adj",
+    "tr": "önceki, önceden",
+    "en": "preceding, prior",
+    "ar": "سابق",
+    "fr": "préalable, précédent"
+  },
+  {
+    "nl": "wellicht",
+    "type": "adv",
+    "tr": "belki, muhtemelen",
+    "en": "perhaps, possibly",
+    "ar": "ربما، من المحتمل",
+    "fr": "peut-être, possiblement"
+  },
+  {
+    "nl": "zwak",
+    "type": "adj",
+    "tr": "zayıf",
+    "en": "weak",
+    "ar": "ضعيف",
+    "fr": "faible"
+  },
+  {
+    "nl": "aankondiging",
+    "type": "noun",
+    "article": "de",
+    "tr": "duyuru, ilan",
+    "en": "announcement",
+    "ar": "إعلان",
+    "fr": "annonce"
+  },
+  {
+    "nl": "aanwezigheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "varlık, katılım",
+    "en": "presence, attendance",
+    "ar": "حضور",
+    "fr": "présence"
+  },
+  {
+    "nl": "aarzelen",
+    "type": "verb",
+    "perfectum": "geaarzeld",
+    "imperfectum": "aarzelde",
+    "tr": "tereddüt etmek, çekinmek",
+    "en": "to hesitate",
+    "ar": "يتردد",
+    "fr": "hésiter"
+  },
+  {
+    "nl": "achterin",
+    "type": "adv",
+    "tr": "arkada, arka kısımda",
+    "en": "at the back, in the rear",
+    "ar": "في الخلف",
+    "fr": "à l'arrière"
+  },
+  {
+    "nl": "bevallen",
+    "type": "verb",
+    "perfectum": "bevallen",
+    "imperfectum": "beviel",
+    "tr": "hoşuna gitmek, beğenmek",
+    "en": "to please, to appeal to",
+    "ar": "يُعجب، يروق لـ",
+    "fr": "plaire à"
+  },
+  {
+    "nl": "dossier",
+    "type": "noun",
+    "article": "het",
+    "tr": "dosya",
+    "en": "file, dossier",
+    "ar": "ملف",
+    "fr": "dossier"
+  },
+  {
+    "nl": "etage",
+    "type": "noun",
+    "article": "de",
+    "tr": "kat",
+    "en": "floor, storey",
+    "ar": "طابق",
+    "fr": "étage"
+  },
+  {
+    "nl": "exact",
+    "type": "adj",
+    "tr": "tam, kesin",
+    "en": "exact, precise",
+    "ar": "دقيق، تماماً",
+    "fr": "exact, précis"
+  },
+  {
+    "nl": "indelen",
+    "type": "verb",
+    "perfectum": "ingedeeld",
+    "imperfectum": "deelde in",
+    "tr": "bölümlere ayırmak, sınıflandırmak",
+    "en": "to divide, to classify",
+    "ar": "يُقسّم، يُصنّف",
+    "fr": "diviser, classer"
+  },
+  {
+    "nl": "kapstok",
+    "type": "noun",
+    "article": "de",
+    "tr": "askılık",
+    "en": "coat rack, hat stand",
+    "ar": "علاّقة ملابس",
+    "fr": "porte-manteau"
+  },
+  {
+    "nl": "kopiëren",
+    "type": "verb",
+    "perfectum": "gekopieerd",
+    "imperfectum": "kopieerde",
+    "tr": "kopyalamak, fotokopi çekmek",
+    "en": "to copy, to photocopy",
+    "ar": "ينسخ",
+    "fr": "copier, photocopier"
+  },
+  {
+    "nl": "opbergen",
+    "type": "verb",
+    "perfectum": "opgeborgen",
+    "imperfectum": "borg op",
+    "tr": "kaldırmak, saklamak",
+    "en": "to put away, to store",
+    "ar": "يُخزّن، يضع في مكانه",
+    "fr": "ranger, mettre de côté"
+  },
+  {
+    "nl": "printen",
+    "type": "verb",
+    "perfectum": "geprint",
+    "imperfectum": "printte",
+    "tr": "yazdırmak, çıktı almak",
+    "en": "to print",
+    "ar": "يطبع",
+    "fr": "imprimer"
+  },
+  {
+    "nl": "printer",
+    "type": "noun",
+    "article": "de",
+    "tr": "yazıcı",
+    "en": "printer",
+    "ar": "طابعة",
+    "fr": "imprimante"
+  },
+  {
+    "nl": "schoolbord",
+    "type": "noun",
+    "article": "het",
+    "tr": "tahta, okul tahtası",
+    "en": "blackboard, whiteboard",
+    "ar": "سبورة",
+    "fr": "tableau"
+  },
+  {
+    "nl": "schuiven",
+    "type": "verb",
+    "perfectum": "geschoven",
+    "imperfectum": "schoof",
+    "tr": "kaydırmak, itmek",
+    "en": "to slide, to push",
+    "ar": "يُزحزح، يُدفع",
+    "fr": "glisser, pousser"
+  },
+  {
+    "nl": "uitkijken naar",
+    "type": "verb",
+    "perfectum": "uitgekeken naar",
+    "imperfectum": "keek uit naar",
+    "tr": "sabırsızlıkla beklemek",
+    "en": "to look forward to",
+    "ar": "يتطلع إلى",
+    "fr": "avoir hâte de, attendre avec impatience"
+  },
+  {
+    "nl": "verderop",
+    "type": "adv",
+    "tr": "ileride, biraz daha ötede",
+    "en": "further on, ahead",
+    "ar": "أبعد، في مكان أبعد",
+    "fr": "plus loin"
+  },
+  {
+    "nl": "voorin",
+    "type": "adv",
+    "tr": "önde, ön kısımda",
+    "en": "at the front, in the front",
+    "ar": "في الأمام",
+    "fr": "à l'avant"
+  },
+  {
+    "nl": "voorstellen",
+    "type": "verb",
+    "perfectum": "voorgesteld",
+    "imperfectum": "stelde voor",
+    "tr": "tanıtmak / önermek",
+    "en": "to introduce / to suggest",
+    "ar": "يُقدّم / يقترح",
+    "fr": "présenter / proposer"
+  },
+  {
+    "nl": "afkeer",
+    "type": "noun",
+    "article": "de",
+    "tr": "tiksinti, nefret",
+    "en": "aversion, dislike",
+    "ar": "نفور، كراهية",
+    "fr": "aversion, dégoût"
+  },
+  {
+    "nl": "doorgaans",
+    "type": "adv",
+    "tr": "genellikle, çoğunlukla",
+    "en": "usually, generally",
+    "ar": "عادةً، في الغالب",
+    "fr": "généralement, d'ordinaire"
+  },
+  {
+    "nl": "gekoeld",
+    "type": "adj",
+    "tr": "soğutulmuş",
+    "en": "chilled, refrigerated",
+    "ar": "مبرّد",
+    "fr": "réfrigéré, refroidi"
+  },
+  {
+    "nl": "handel",
+    "type": "noun",
+    "article": "de",
+    "tr": "ticaret",
+    "en": "trade, commerce",
+    "ar": "تجارة",
+    "fr": "commerce"
+  },
+  {
+    "nl": "importeren",
+    "type": "verb",
+    "perfectum": "geïmporteerd",
+    "imperfectum": "importeerde",
+    "tr": "ithal etmek",
+    "en": "to import",
+    "ar": "يستورد",
+    "fr": "importer"
+  },
+  {
+    "nl": "industrie",
+    "type": "noun",
+    "article": "de",
+    "tr": "endüstri, sanayi",
+    "en": "industry",
+    "ar": "صناعة",
+    "fr": "industrie"
+  },
+  {
+    "nl": "industrieterrein",
+    "type": "noun",
+    "article": "het",
+    "tr": "sanayi bölgesi",
+    "en": "industrial estate, business park",
+    "ar": "منطقة صناعية",
+    "fr": "zone industrielle"
+  },
+  {
+    "nl": "investeren",
+    "type": "verb",
+    "perfectum": "geïnvesteerd",
+    "imperfectum": "investeerde",
+    "tr": "yatırım yapmak",
+    "en": "to invest",
+    "ar": "يستثمر",
+    "fr": "investir"
+  },
+  {
+    "nl": "kracht",
+    "type": "noun",
+    "article": "de",
+    "tr": "güç, kuvvet",
+    "en": "strength, force",
+    "ar": "قوة",
+    "fr": "force, puissance"
+  },
+  {
+    "nl": "kruid",
+    "type": "noun",
+    "article": "het",
+    "tr": "ot, bitki / baharat",
+    "en": "herb, plant",
+    "ar": "عشبة، نبات",
+    "fr": "herbe, plante aromatique"
+  },
+  {
+    "nl": "langzamerhand",
+    "type": "adv",
+    "tr": "yavaş yavaş, giderek",
+    "en": "gradually, little by little",
+    "ar": "تدريجياً، رويداً رويداً",
+    "fr": "progressivement, peu à peu"
+  },
+  {
+    "nl": "omzet",
+    "type": "noun",
+    "article": "de",
+    "tr": "ciro, satış hasılatı",
+    "en": "turnover, revenue",
+    "ar": "حجم المبيعات، إيرادات",
+    "fr": "chiffre d'affaires"
+  },
+  {
+    "nl": "onderneming",
+    "type": "noun",
+    "article": "de",
+    "tr": "şirket, girişim",
+    "en": "company, enterprise",
+    "ar": "مشروع، شركة",
+    "fr": "entreprise"
+  },
+  {
+    "nl": "oprichten",
+    "type": "verb",
+    "perfectum": "opgericht",
+    "imperfectum": "richtte op",
+    "tr": "kurmak, tesis etmek",
+    "en": "to found, to establish",
+    "ar": "يُأسّس، يُنشئ",
+    "fr": "fonder, établir"
+  },
+  {
+    "nl": "pand",
+    "type": "noun",
+    "article": "het",
+    "tr": "bina, mülk",
+    "en": "building, premises",
+    "ar": "مبنى، عقار",
+    "fr": "bâtiment, local"
+  },
+  {
+    "nl": "rondlopen",
+    "type": "verb",
+    "perfectum": "rondgelopen",
+    "imperfectum": "liep rond",
+    "tr": "dolaşmak, gezinmek",
+    "en": "to walk around, to roam",
+    "ar": "يتجول",
+    "fr": "se promener, déambuler"
+  },
+  {
+    "nl": "sector",
+    "type": "noun",
+    "article": "de",
+    "tr": "sektör",
+    "en": "sector",
+    "ar": "قطاع",
+    "fr": "secteur"
+  },
+  {
+    "nl": "slachten",
+    "type": "verb",
+    "perfectum": "geslacht",
+    "imperfectum": "slachtte",
+    "tr": "kesmek (hayvan)",
+    "en": "to slaughter, to butcher",
+    "ar": "يذبح",
+    "fr": "abattre, tuer"
+  },
+  {
+    "nl": "slachthuis",
+    "type": "noun",
+    "article": "het",
+    "tr": "mezbaha, kesimhane",
+    "en": "slaughterhouse, abattoir",
+    "ar": "مسلخ، مجزرة",
+    "fr": "abattoir"
+  },
+  {
+    "nl": "slagerij",
+    "type": "noun",
+    "article": "de",
+    "tr": "kasap dükkanı",
+    "en": "butcher's shop",
+    "ar": "محل جزارة",
+    "fr": "boucherie"
+  },
+  {
+    "nl": "subsidie",
+    "type": "noun",
+    "article": "de",
+    "tr": "sübvansiyon, hibe",
+    "en": "subsidy, grant",
+    "ar": "دعم مالي، إعانة",
+    "fr": "subvention"
+  },
+  {
+    "nl": "telefoontje",
+    "type": "noun",
+    "article": "het",
+    "tr": "telefon görüşmesi",
+    "en": "phone call",
+    "ar": "مكالمة هاتفية",
+    "fr": "coup de téléphone"
+  },
+  {
+    "nl": "vel",
+    "type": "noun",
+    "article": "het",
+    "tr": "deri, cilt / kağıt yaprağı",
+    "en": "skin, hide / sheet of paper",
+    "ar": "جلد / ورقة",
+    "fr": "peau / feuille"
+  },
+  {
+    "nl": "verslaving",
+    "type": "noun",
+    "article": "de",
+    "tr": "bağımlılık",
+    "en": "addiction",
+    "ar": "إدمان",
+    "fr": "dépendance, addiction"
+  },
+  {
+    "nl": "waarmaken",
+    "type": "verb",
+    "perfectum": "waargemaakt",
+    "imperfectum": "maakte waar",
+    "tr": "gerçekleştirmek, yerine getirmek",
+    "en": "to fulfil, to live up to",
+    "ar": "يُحقق، يُنفّذ",
+    "fr": "réaliser, tenir (une promesse)"
+  },
+  {
+    "nl": "winst",
+    "type": "noun",
+    "article": "de",
+    "tr": "kâr, kazanç",
+    "en": "profit, gain",
+    "ar": "ربح",
+    "fr": "bénéfice, profit"
+  },
+  {
+    "nl": "woedend",
+    "type": "adj",
+    "tr": "öfkeli, çok kızgın",
+    "en": "furious, enraged",
+    "ar": "غاضب جداً",
+    "fr": "furieux, enragé"
+  },
+  {
+    "nl": "zonsopgang",
+    "type": "noun",
+    "article": "de",
+    "tr": "gün doğumu",
+    "en": "sunrise",
+    "ar": "شروق الشمس",
+    "fr": "lever du soleil"
+  }
+]

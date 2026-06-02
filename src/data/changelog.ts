@@ -11,6 +11,12 @@ export interface ChangelogEntry {
 
 export const changelog: ChangelogEntry[] = [
   {
+    date: '2026-06-02',
+    items: [
+      'B1 word pack expanded: all 8 files completed with full translations (EN, AR, FR), word types, and verb forms',
+    ],
+  },
+  {
     date: '2026-03-13',
     items: [
       '~2700 example sentences added across A1, A2, and A2+ word packs',

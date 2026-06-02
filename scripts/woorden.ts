@@ -53,7 +53,7 @@ type ZinFile = Record<string, string>;
 // ─── Pack helpers ─────────────────────────────────────────────────────────────
 
 function filenameToPack(filename: string): string {
-  const m = filename.match(/^(a\d+p?)-\d+\.json$/);
+  const m = filename.match(/^(a\d+p?|b\d+)-\d+\.json$/);
   if (!m) return '';
   return m[1] === 'a2p' ? 'A2+' : m[1].toUpperCase();
 }
@@ -61,7 +61,7 @@ function filenameToPack(filename: string): string {
 function normalizePack(arg: string): string {
   const lower = arg.toLowerCase().replace('+', 'p');
   if (lower === 'a2p') return 'A2+';
-  return lower.replace('a', 'A');
+  return lower.toUpperCase();
 }
 
 // ─── Word data ────────────────────────────────────────────────────────────────
@@ -110,7 +110,7 @@ function dupKey(w: WordEntry): string {
   return `${w.nl}::${w.type}`;
 }
 
-const PACK_ORDER = ['A1', 'A2', 'A2+'];
+const PACK_ORDER = ['A1', 'A2', 'A2+', 'B1'];
 
 function higherPacks(targetPack: string): string[] {
   const idx = PACK_ORDER.indexOf(targetPack);
@@ -793,7 +793,7 @@ switch (command) {
     check [--hide-not-found] [--fix]           Check all zinnen for broken word references
     check --van-woord [--fix]                  Check all words' zinnen refs (no-sentence / not-in-sentence)
 
-  Packs:  A1  A2  A2+
+  Packs:  A1  A2  A2+  B1
 
   Zin notation:
     N|token@base   — mark word, embed base form (N = group number)

@@ -1,0 +1,918 @@
+[
+  {
+    "nl": "achterlaten",
+    "type": "verb",
+    "perfectum": "achtergelaten",
+    "imperfectum": "liet achter",
+    "tr": "bırakmak",
+    "en": "to leave behind",
+    "ar": "يترك",
+    "fr": "laisser derrière"
+  },
+  {
+    "nl": "afzeggen",
+    "type": "verb",
+    "perfectum": "afgezegd",
+    "imperfectum": "zegde af",
+    "tr": "iptal etmek",
+    "en": "to cancel",
+    "ar": "يلغي",
+    "fr": "annuler"
+  },
+  {
+    "nl": "beëindigen",
+    "type": "verb",
+    "perfectum": "beëindigd",
+    "imperfectum": "beëindigde",
+    "tr": "bitirmek",
+    "en": "to end, conclude",
+    "ar": "ينهي",
+    "fr": "terminer"
+  },
+  {
+    "nl": "benadrukken",
+    "type": "verb",
+    "perfectum": "benadrukt",
+    "imperfectum": "benadrukte",
+    "tr": "vurgulamak",
+    "en": "to emphasize",
+    "ar": "يؤكد",
+    "fr": "souligner"
+  },
+  {
+    "nl": "beperking",
+    "article": "de",
+    "type": "noun",
+    "tr": "kısıtlama",
+    "en": "restriction, limitation",
+    "ar": "تقييد",
+    "fr": "limitation"
+  },
+  {
+    "nl": "bevestiging",
+    "article": "de",
+    "type": "noun",
+    "tr": "onay",
+    "en": "confirmation",
+    "ar": "تأكيد",
+    "fr": "confirmation"
+  },
+  {
+    "nl": "blokkeren",
+    "type": "verb",
+    "perfectum": "geblokkeerd",
+    "imperfectum": "blokkeerde",
+    "tr": "bloke etmek, engellemek",
+    "en": "to block",
+    "ar": "يحظر",
+    "fr": "bloquer"
+  },
+  {
+    "nl": "boodschap",
+    "article": "de",
+    "type": "noun",
+    "tr": "mesaj",
+    "en": "message",
+    "ar": "رسالة",
+    "fr": "message"
+  },
+  {
+    "nl": "context",
+    "article": "de",
+    "type": "noun",
+    "tr": "bağlam",
+    "en": "context",
+    "ar": "سياق",
+    "fr": "contexte"
+  },
+  {
+    "nl": "efficiënt",
+    "type": "adj",
+    "tr": "etkili",
+    "en": "efficient",
+    "ar": "فعال",
+    "fr": "efficace"
+  },
+  {
+    "nl": "generatie",
+    "article": "de",
+    "type": "noun",
+    "tr": "nesil",
+    "en": "generation",
+    "ar": "جيل",
+    "fr": "génération"
+  },
+  {
+    "nl": "instantie",
+    "article": "de",
+    "type": "noun",
+    "tr": "makam",
+    "en": "instance, authority",
+    "ar": "هيئة",
+    "fr": "instance"
+  },
+  {
+    "nl": "inzicht",
+    "article": "het",
+    "type": "noun",
+    "tr": "farkındalık / bilinç",
+    "en": "insight, realization",
+    "ar": "تبصّر",
+    "fr": "aperçu"
+  },
+  {
+    "nl": "medeleven",
+    "article": "het",
+    "type": "noun",
+    "tr": "merhamet / empati",
+    "en": "sympathy, compassion",
+    "ar": "تعاطف",
+    "fr": "empathie"
+  },
+  {
+    "nl": "mondeling",
+    "type": "adv",
+    "tr": "sözlü",
+    "en": "oral",
+    "ar": "شفوي",
+    "fr": "oral"
+  },
+  {
+    "nl": "onrustig",
+    "type": "adj",
+    "tr": "tedirgin",
+    "en": "restless, anxious",
+    "ar": "قلق",
+    "fr": "agité"
+  },
+  {
+    "nl": "ontslaan",
+    "type": "verb",
+    "perfectum": "ontslagen",
+    "imperfectum": "ontsloeg",
+    "tr": "işten çıkarmak",
+    "en": "to dismiss, lay off",
+    "ar": "يطرد من العمل",
+    "fr": "renvoyer"
+  },
+  {
+    "nl": "ontvanger",
+    "article": "de",
+    "type": "noun",
+    "tr": "alıcı",
+    "en": "receiver",
+    "ar": "المستقبل",
+    "fr": "récepteur"
+  },
+  {
+    "nl": "oproep",
+    "article": "de",
+    "type": "noun",
+    "tr": "arama / çağrı",
+    "en": "call, summons",
+    "ar": "استدعاء",
+    "fr": "appel"
+  },
+  {
+    "nl": "reageren",
+    "type": "verb",
+    "perfectum": "gereageerd",
+    "imperfectum": "reageerde",
+    "tr": "karşılık vermek",
+    "en": "to react, respond",
+    "ar": "يتفاعل",
+    "fr": "réagir"
+  },
+  {
+    "nl": "spontaan",
+    "type": "adj",
+    "tr": "spontan",
+    "en": "spontaneous",
+    "ar": "عفوي",
+    "fr": "spontané"
+  },
+  {
+    "nl": "storen",
+    "type": "verb",
+    "perfectum": "gestoord",
+    "imperfectum": "stoorde",
+    "tr": "rahatsız etmek",
+    "en": "to disturb",
+    "ar": "يزعج",
+    "fr": "déranger"
+  },
+  {
+    "nl": "toon",
+    "article": "de",
+    "type": "noun",
+    "tr": "ton (ses)",
+    "en": "pitch, tone",
+    "ar": "نبرة",
+    "fr": "ton"
+  },
+  {
+    "nl": "uitdrukken",
+    "type": "verb",
+    "perfectum": "uitgedrukt",
+    "imperfectum": "drukte uit",
+    "tr": "ifade etmek",
+    "en": "to express",
+    "ar": "يعبر",
+    "fr": "exprimer"
+  },
+  {
+    "nl": "volume",
+    "article": "het",
+    "type": "noun",
+    "tr": "hacim (ses)",
+    "en": "volume",
+    "ar": "حجم",
+    "fr": "volume"
+  },
+  {
+    "nl": "waardevol",
+    "type": "adj",
+    "tr": "değerli",
+    "en": "valuable",
+    "ar": "قيّم",
+    "fr": "précieux"
+  },
+  {
+    "nl": "zich verontschuldigen",
+    "type": "verb",
+    "perfectum": "zich verontschuldigd",
+    "imperfectum": "verontschuldigde zich",
+    "tr": "özür dilemek",
+    "en": "to apologize",
+    "ar": "يعتذر",
+    "fr": "s'excuser"
+  },
+  {
+    "nl": "aanleiding",
+    "article": "de",
+    "type": "noun",
+    "tr": "gerekçe / neden",
+    "en": "occasion, reason",
+    "ar": "سبب",
+    "fr": "occasion"
+  },
+  {
+    "nl": "aanpassen",
+    "type": "verb",
+    "perfectum": "aangepast",
+    "imperfectum": "paste aan",
+    "tr": "uyarlamak",
+    "en": "to adapt, adjust",
+    "ar": "يتكيف",
+    "fr": "adapter"
+  },
+  {
+    "nl": "asociaal",
+    "type": "adj",
+    "tr": "asosyal",
+    "en": "unsocial",
+    "ar": "غير اجتماعي",
+    "fr": "antisocial"
+  },
+  {
+    "nl": "barbecue",
+    "article": "de",
+    "type": "noun",
+    "tr": "mangal",
+    "en": "barbecue",
+    "ar": "شواء",
+    "fr": "barbecue"
+  },
+  {
+    "nl": "beperkt",
+    "type": "adj",
+    "tr": "kısıtlı",
+    "en": "limited",
+    "ar": "محدود",
+    "fr": "limité"
+  },
+  {
+    "nl": "betreffen",
+    "type": "verb",
+    "perfectum": "betreft",
+    "imperfectum": "betrof",
+    "tr": "ilgili olmak",
+    "en": "to concern, relate to",
+    "ar": "يتعلق بـ",
+    "fr": "concerner"
+  },
+  {
+    "nl": "essentieel",
+    "type": "adj",
+    "tr": "son derece önemli",
+    "en": "essential",
+    "ar": "ضروري",
+    "fr": "essentiel"
+  },
+  {
+    "nl": "fluisteren",
+    "type": "verb",
+    "perfectum": "gefluisterd",
+    "imperfectum": "fluisterde",
+    "tr": "fısıldamak",
+    "en": "to whisper",
+    "ar": "يهمس",
+    "fr": "chuchoter"
+  },
+  {
+    "nl": "gehorig",
+    "type": "adj",
+    "tr": "sesli, gürültülü (genellikle ses geçiren anlamında)",
+    "en": "noisy, resonant",
+    "ar": "صاخب",
+    "fr": "bruyant"
+  },
+  {
+    "nl": "herinneren aan",
+    "type": "verb",
+    "perfectum": "geherinnerd aan",
+    "imperfectum": "herinnerde aan",
+    "tr": "hatırlatmak",
+    "en": "to remind of",
+    "ar": "يذكّر بـ",
+    "fr": "rappeler"
+  },
+  {
+    "nl": "huurder",
+    "article": "de",
+    "type": "noun",
+    "tr": "kiracı",
+    "en": "tenant",
+    "ar": "المستأجر",
+    "fr": "locataire"
+  },
+  {
+    "nl": "luid",
+    "type": "adj",
+    "tr": "yüksek sesli",
+    "en": "loud",
+    "ar": "صاخب",
+    "fr": "bruyant"
+  },
+  {
+    "nl": "maatregel",
+    "article": "de",
+    "type": "noun",
+    "tr": "tedbir / önlem",
+    "en": "measure",
+    "ar": "إجراء",
+    "fr": "mesure"
+  },
+  {
+    "nl": "omstandigheid",
+    "article": "de",
+    "type": "noun",
+    "tr": "durum / koşul",
+    "en": "circumstance",
+    "ar": "ظرف",
+    "fr": "circonstance"
+  },
+  {
+    "nl": "onvoldoende",
+    "type": "adj",
+    "tr": "yetersiz",
+    "en": "insufficient",
+    "ar": "غير كافٍ",
+    "fr": "insuffisant"
+  },
+  {
+    "nl": "oppervlakte",
+    "article": "de",
+    "type": "noun",
+    "tr": "yüzölçümü",
+    "en": "surface area",
+    "ar": "مساحة السطح",
+    "fr": "superficie"
+  },
+  {
+    "nl": "overtreden",
+    "type": "verb",
+    "perfectum": "overtreden",
+    "imperfectum": "overtrad",
+    "tr": "ihlal etmek",
+    "en": "to violate, transgress",
+    "ar": "ينتهك",
+    "fr": "violer"
+  },
+  {
+    "nl": "reglement",
+    "article": "het",
+    "type": "noun",
+    "tr": "yönetmelik",
+    "en": "regulation, rulebook",
+    "ar": "لائحة",
+    "fr": "règlement"
+  },
+  {
+    "nl": "rook",
+    "article": "de",
+    "type": "noun",
+    "tr": "duman",
+    "en": "smoke",
+    "ar": "دخان",
+    "fr": "fumée"
+  },
+  {
+    "nl": "schreeuwen",
+    "type": "verb",
+    "perfectum": "geschreeuwd",
+    "imperfectum": "schreeuwde",
+    "tr": "bağırmak",
+    "en": "to shout",
+    "ar": "يصرخ",
+    "fr": "crier"
+  },
+  {
+    "nl": "stank",
+    "article": "de",
+    "type": "noun",
+    "tr": "(kötü) koku",
+    "en": "smell, stench",
+    "ar": "رائحة كريهة",
+    "fr": "mauvaise odeur"
+  },
+  {
+    "nl": "verbazen",
+    "type": "verb",
+    "perfectum": "verbaasd",
+    "imperfectum": "verbaasde",
+    "tr": "şaşırtmak",
+    "en": "to surprise",
+    "ar": "يفاجئ",
+    "fr": "surprendre"
+  },
+  {
+    "nl": "verboden",
+    "type": "adj",
+    "tr": "yasak",
+    "en": "forbidden",
+    "ar": "محظور",
+    "fr": "interdit"
+  },
+  {
+    "nl": "verzoeken",
+    "type": "verb",
+    "perfectum": "verzocht",
+    "imperfectum": "verzocht",
+    "tr": "rica etmek",
+    "en": "to request",
+    "ar": "يطلب",
+    "fr": "demander"
+  },
+  {
+    "nl": "voorstellen",
+    "type": "verb",
+    "perfectum": "voorgesteld",
+    "imperfectum": "stelde voor",
+    "tr": "tavsiye etmek / sunmak",
+    "en": "to suggest, present",
+    "ar": "يقترح",
+    "fr": "suggérer"
+  },
+  {
+    "nl": "voorzitter",
+    "article": "de",
+    "type": "noun",
+    "tr": "başkan / başkanlık eden kişi",
+    "en": "chairman, chairperson",
+    "ar": "رئيس",
+    "fr": "président(e)"
+  },
+  {
+    "nl": "waarschuwing",
+    "article": "de",
+    "type": "noun",
+    "tr": "uyarı",
+    "en": "warning",
+    "ar": "تحذير",
+    "fr": "avertissement"
+  },
+  {
+    "nl": "aannemen",
+    "type": "verb",
+    "perfectum": "aangenomen",
+    "imperfectum": "nam aan",
+    "tr": "teslim almak / varsaymak",
+    "en": "to assume, take over",
+    "ar": "يفترض/يستلم",
+    "fr": "supposer"
+  },
+  {
+    "nl": "aansluiting",
+    "article": "de",
+    "type": "noun",
+    "tr": "bağlantı",
+    "en": "connection, attachment",
+    "ar": "وصلة",
+    "fr": "connexion"
+  },
+  {
+    "nl": "begrip",
+    "article": "het",
+    "type": "noun",
+    "tr": "anlayış / kavrayış",
+    "en": "understanding",
+    "ar": "فهم",
+    "fr": "compréhension"
+  },
+  {
+    "nl": "bestaand",
+    "type": "adj",
+    "tr": "mevcut, var olan",
+    "en": "existing, available",
+    "ar": "موجود",
+    "fr": "existant"
+  },
+  {
+    "nl": "eisen",
+    "type": "verb",
+    "perfectum": "geëist",
+    "imperfectum": "eiste",
+    "tr": "talep etmek / istemek",
+    "en": "to demand, require",
+    "ar": "يطلب",
+    "fr": "exiger"
+  },
+  {
+    "nl": "flink",
+    "type": "adj",
+    "tr": "epeyce büyük / başarılı",
+    "en": "quite big, capable",
+    "ar": "كبير نوعاً ما",
+    "fr": "assez grand"
+  },
+  {
+    "nl": "gebruiksaanwijzing",
+    "article": "de",
+    "type": "noun",
+    "tr": "kullanım kılavuzu",
+    "en": "user manual",
+    "ar": "دليل المستخدم",
+    "fr": "mode d'emploi"
+  },
+  {
+    "nl": "helpdesk",
+    "article": "de",
+    "type": "noun",
+    "tr": "yardım masası",
+    "en": "help desk",
+    "ar": "مكتب المساعدة",
+    "fr": "service d'assistance"
+  },
+  {
+    "nl": "instelling",
+    "article": "de",
+    "type": "noun",
+    "tr": "ayarlama / kurum",
+    "en": "institution, setting",
+    "ar": "مؤسسة/إعداد",
+    "fr": "établissement"
+  },
+  {
+    "nl": "keuzemenu",
+    "article": "het",
+    "type": "noun",
+    "tr": "seçim menüsü",
+    "en": "menu",
+    "ar": "قائمة الاختيار",
+    "fr": "menu de sélection"
+  },
+  {
+    "nl": "logisch",
+    "type": "adj",
+    "tr": "mantıklı",
+    "en": "logical",
+    "ar": "منطقي",
+    "fr": "logique"
+  },
+  {
+    "nl": "modem",
+    "article": "de",
+    "type": "noun",
+    "tr": "modem",
+    "en": "modem",
+    "ar": "مودم",
+    "fr": "modem"
+  },
+  {
+    "nl": "momenteel",
+    "type": "adv",
+    "tr": "şuan / şu anda",
+    "en": "currently",
+    "ar": "حالياً",
+    "fr": "actuellement"
+  },
+  {
+    "nl": "onbeperkt",
+    "type": "adj",
+    "tr": "sınırsız",
+    "en": "unlimited",
+    "ar": "غير محدود",
+    "fr": "illimité"
+  },
+  {
+    "nl": "ongemak",
+    "article": "het",
+    "type": "noun",
+    "tr": "rahatsızlık",
+    "en": "discomfort, inconvenience",
+    "ar": "إزعاج",
+    "fr": "inconvénient"
+  },
+  {
+    "nl": "overig",
+    "type": "adj",
+    "tr": "diğer / çeşitli",
+    "en": "other",
+    "ar": "آخر",
+    "fr": "autre"
+  },
+  {
+    "nl": "slordig",
+    "type": "adj",
+    "tr": "savsak, dağınık",
+    "en": "sloppy, messy",
+    "ar": "مهمل",
+    "fr": "néglégé"
+  },
+  {
+    "nl": "tegelijkertijd",
+    "type": "adv",
+    "tr": "aynı zamanda",
+    "en": "simultaneously",
+    "ar": "في نفس الوقت",
+    "fr": "simultanément"
+  },
+  {
+    "nl": "uitpakken",
+    "type": "verb",
+    "perfectum": "uitgepakt",
+    "imperfectum": "pakte uit",
+    "tr": "(ambalajdan) çıkarmak",
+    "en": "to unpack",
+    "ar": "يفرغ محتوياته",
+    "fr": "déballer"
+  },
+  {
+    "nl": "verbinden",
+    "type": "verb",
+    "perfectum": "verbonden",
+    "imperfectum": "verbond",
+    "tr": "bağlamak",
+    "en": "to connect, bind",
+    "ar": "يربط",
+    "fr": "connecter"
+  },
+  {
+    "nl": "wifi",
+    "article": "de",
+    "type": "noun",
+    "tr": "Wi-Fi sinyali",
+    "en": "Wi-Fi signal",
+    "ar": "واي فاي",
+    "fr": "réseau Wi-Fi"
+  },
+  {
+    "nl": "wijzigen",
+    "type": "verb",
+    "perfectum": "gewijzigd",
+    "imperfectum": "wijzigde",
+    "tr": "değiştirmek",
+    "en": "to change, modify",
+    "ar": "يُعدّل",
+    "fr": "modifier"
+  },
+  {
+    "nl": "wijziging",
+    "article": "de",
+    "type": "noun",
+    "tr": "değişiklik",
+    "en": "change, modification",
+    "ar": "تغيير",
+    "fr": "modification"
+  },
+  {
+    "nl": "afwijzen",
+    "type": "verb",
+    "perfectum": "afgewezen",
+    "imperfectum": "wees af",
+    "tr": "reddetmek",
+    "en": "to reject, refuse",
+    "ar": "يرفض",
+    "fr": "rejeter"
+  },
+  {
+    "nl": "bagage",
+    "article": "de",
+    "type": "noun",
+    "tr": "bagaj",
+    "en": "luggage, baggage",
+    "ar": "الأمتعة",
+    "fr": "bagages"
+  },
+  {
+    "nl": "beschuldigen",
+    "type": "verb",
+    "perfectum": "beschuldigd",
+    "imperfectum": "beschuldigde",
+    "tr": "suçlamak",
+    "en": "to accuse",
+    "ar": "يتهم",
+    "fr": "accuser"
+  },
+  {
+    "nl": "expliciet",
+    "type": "adj",
+    "tr": "açık biçimde, açıkça belirtilmiş",
+    "en": "explicit",
+    "ar": "صريح",
+    "fr": "explicite"
+  },
+  {
+    "nl": "expres",
+    "type": "adv",
+    "tr": "kasıtlı olarak, bilerek",
+    "en": "on purpose, deliberately",
+    "ar": "عن قصد، بشكل متعمد",
+    "fr": "exprès, intentionnellement"
+  },
+  {
+    "nl": "garage",
+    "article": "de",
+    "type": "noun",
+    "tr": "garaj",
+    "en": "garage",
+    "ar": "مرآب",
+    "fr": "garage"
+  },
+  {
+    "nl": "gemeen",
+    "type": "adj",
+    "tr": "kötü niyetli, aşağılık / ortak",
+    "en": "mean, nasty / common",
+    "ar": "خسيس، حقير / مشترك",
+    "fr": "méchant, mesquin / commun"
+  },
+  {
+    "nl": "hal",
+    "article": "de",
+    "type": "noun",
+    "tr": "terminal (yolculuk)",
+    "en": "hall, terminal",
+    "ar": "صالة الوصول/المغادرة",
+    "fr": "hall"
+  },
+  {
+    "nl": "impliciet",
+    "type": "adj",
+    "tr": "örtülü / dolaylı",
+    "en": "implicit",
+    "ar": "ضمني",
+    "fr": "implicite"
+  },
+  {
+    "nl": "koffer",
+    "article": "de",
+    "type": "noun",
+    "tr": "bavul",
+    "en": "suitcase, trunk",
+    "ar": "حقيبة سفر",
+    "fr": "valise"
+  },
+  {
+    "nl": "landen",
+    "type": "verb",
+    "perfectum": "geland",
+    "imperfectum": "landde",
+    "tr": "inmek (araçtan)",
+    "en": "to disembark, land",
+    "ar": "ينزل",
+    "fr": "débarquer"
+  },
+  {
+    "nl": "onterecht",
+    "type": "adv",
+    "tr": "haksız yere",
+    "en": "unjustly, wrongly",
+    "ar": "بشكل غير عادل",
+    "fr": "sans droit"
+  },
+  {
+    "nl": "onzin",
+    "article": "de",
+    "type": "noun",
+    "tr": "saçma / anlamsızlık",
+    "en": "nonsense, rubbish",
+    "ar": "هراء",
+    "fr": "bêtises"
+  },
+  {
+    "nl": "rekenen op",
+    "type": "verb",
+    "perfectum": "gerekend op",
+    "imperfectum": "rekende op",
+    "tr": "hesaba katmak / güvenmek",
+    "en": "to count on, rely on",
+    "ar": "يعتمد على",
+    "fr": "compter sur"
+  },
+  {
+    "nl": "springen",
+    "type": "verb",
+    "perfectum": "gesprongen",
+    "imperfectum": "sprong",
+    "tr": "atlamak / zıplamak",
+    "en": "to jump",
+    "ar": "يقفز",
+    "fr": "sauter"
+  },
+  {
+    "nl": "teleurstelling",
+    "article": "de",
+    "type": "noun",
+    "tr": "hayal kırıklığı",
+    "en": "disappointment",
+    "ar": "خيبة أمل",
+    "fr": "déception"
+  },
+  {
+    "nl": "terrein",
+    "article": "het",
+    "type": "noun",
+    "tr": "alan / arazi",
+    "en": "terrain, area",
+    "ar": "الأرض",
+    "fr": "terrain"
+  },
+  {
+    "nl": "vastleggen",
+    "type": "verb",
+    "perfectum": "vastgelegd",
+    "imperfectum": "legde vast",
+    "tr": "sabitleştirmek / kaydetmek",
+    "en": "to record, fixate",
+    "ar": "يسجل",
+    "fr": "enregistrer"
+  },
+  {
+    "nl": "verdedigen",
+    "type": "verb",
+    "perfectum": "verdedigd",
+    "imperfectum": "verdedigde",
+    "tr": "savunmak",
+    "en": "to defend",
+    "ar": "يدافع عن",
+    "fr": "défendre"
+  },
+  {
+    "nl": "verlopen",
+    "type": "verb",
+    "perfectum": "verlopen",
+    "imperfectum": "verliep",
+    "tr": "geçmek (zaman)",
+    "en": "to pass (time)",
+    "ar": "يمر",
+    "fr": "passer"
+  },
+  {
+    "nl": "verwarrend",
+    "type": "adj",
+    "tr": "kafa karıştırıcı",
+    "en": "confusing",
+    "ar": "مربك",
+    "fr": "déroutant"
+  },
+  {
+    "nl": "verwijten",
+    "type": "verb",
+    "perfectum": "verweten",
+    "imperfectum": "verweet",
+    "tr": "kınamak, ayıplamak",
+    "en": "to reproach, to blame",
+    "ar": "يتهم بـ",
+    "fr": "accuser de"
+  },
+  {
+    "nl": "zich realiseren",
+    "type": "verb",
+    "perfectum": "zich gerealiseerd",
+    "imperfectum": "realiseerde zich",
+    "tr": "farkında olmak / idrak etmek",
+    "en": "to realize oneself, become aware",
+    "ar": "يُدرك",
+    "fr": "réaliser"
+  },
+  {
+    "nl": "zojuist",
+    "type": "adv",
+    "tr": "demin (çok az önce)",
+    "en": "just now",
+    "ar": "منذ لحظات",
+    "fr": "vient de"
+  }
+]
