@@ -14,6 +14,7 @@ export const changelog: ChangelogEntry[] = [
     date: '2026-06-02',
     items: [
       'B1 word pack expanded: all 8 files completed with full translations (EN, AR, FR), word types, and verb forms',
+      'Example sentences added for all words across all packs (A1, A2, A2+, B1)',
     ],
   },
   {

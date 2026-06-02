@@ -7,7 +7,10 @@
     "tr": "incitmek, yaralamak",
     "en": "to injure, to hurt",
     "ar": "يجرح، يؤلم",
-    "fr": "blesser, faire mal"
+    "fr": "blesser, faire mal",
+    "zinnen": [
+      "nruk8u7o"
+    ]
   },
   {
     "nl": "binnenkant",
@@ -16,7 +19,10 @@
     "tr": "iç taraf",
     "en": "inside, inner side",
     "ar": "الجانب الداخلي",
-    "fr": "intérieur, côté intérieur"
+    "fr": "intérieur, côté intérieur",
+    "zinnen": [
+      "80kb6mqa"
+    ]
   },
   {
     "nl": "blessure",
@@ -25,7 +31,12 @@
     "tr": "yaralanma, sakatlık",
     "en": "injury",
     "ar": "إصابة",
-    "fr": "blessure"
+    "fr": "blessure",
+    "zinnen": [
+      "9pmnslo7",
+      "nruk8u7o",
+      "rtny5gzk"
+    ]
   },
   {
     "nl": "buigen",
@@ -35,7 +46,10 @@
     "tr": "bükmek, eğmek",
     "en": "to bend, to bow",
     "ar": "يثني، ينحني",
-    "fr": "plier, courber"
+    "fr": "plier, courber",
+    "zinnen": [
+      "3yl8ozxz"
+    ]
   },
   {
     "nl": "diagnose",
@@ -44,7 +58,10 @@
     "tr": "teşhis",
     "en": "diagnosis",
     "ar": "تشخيص",
-    "fr": "diagnostic"
+    "fr": "diagnostic",
+    "zinnen": [
+      "72wkpt2x"
+    ]
   },
   {
     "nl": "fysiotherapeut",
@@ -53,7 +70,11 @@
     "tr": "fizyoterapist",
     "en": "physiotherapist",
     "ar": "معالج فيزيائي",
-    "fr": "kinésithérapeute"
+    "fr": "kinésithérapeute",
+    "zinnen": [
+      "3yl8ozxz",
+      "72wkpt2x"
+    ]
   },
   {
     "nl": "gezwollen",
@@ -61,7 +82,10 @@
     "tr": "şişmiş",
     "en": "swollen",
     "ar": "متورم",
-    "fr": "enflé, gonflé"
+    "fr": "enflé, gonflé",
+    "zinnen": [
+      "80kb6mqa"
+    ]
   },
   {
     "nl": "kneuzen",
@@ -71,7 +95,10 @@
     "tr": "burkmak, çürütmek",
     "en": "to bruise, to sprain",
     "ar": "يكدم، يلوي",
-    "fr": "contusionner, fouler"
+    "fr": "contusionner, fouler",
+    "zinnen": [
+      "m7o6g0b3"
+    ]
   },
   {
     "nl": "leunen",
@@ -81,7 +108,10 @@
     "tr": "yaslanmak, dayanmak",
     "en": "to lean",
     "ar": "يتكئ، يستند",
-    "fr": "s'appuyer, se pencher"
+    "fr": "s'appuyer, se pencher",
+    "zinnen": [
+      "m7o6g0b3"
+    ]
   },
   {
     "nl": "nader",
@@ -89,7 +119,10 @@
     "tr": "daha yakın, daha fazla (bilgi)",
     "en": "further, more detailed",
     "ar": "أقرب، أكثر تفصيلاً",
-    "fr": "plus proche, plus détaillé"
+    "fr": "plus proche, plus détaillé",
+    "zinnen": [
+      "m7o6g0b3"
+    ]
   },
   {
     "nl": "oefening",
@@ -98,7 +131,10 @@
     "tr": "egzersiz, alıştırma",
     "en": "exercise, practice",
     "ar": "تمرين",
-    "fr": "exercice"
+    "fr": "exercice",
+    "zinnen": [
+      "3yl8ozxz"
+    ]
   },
   {
     "nl": "pijnlijk",
@@ -106,7 +142,10 @@
     "tr": "acı veren, ağrılı",
     "en": "painful",
     "ar": "مؤلم",
-    "fr": "douloureux"
+    "fr": "douloureux",
+    "zinnen": [
+      "nruk8u7o"
+    ]
   },
   {
     "nl": "plannen",
@@ -116,7 +155,10 @@
     "tr": "planlamak",
     "en": "to plan, to schedule",
     "ar": "يخطط",
-    "fr": "planifier"
+    "fr": "planifier",
+    "zinnen": [
+      "w22fuons"
+    ]
   },
   {
     "nl": "rusten",
@@ -126,7 +168,10 @@
     "tr": "dinlenmek",
     "en": "to rest",
     "ar": "يستريح",
-    "fr": "se reposer"
+    "fr": "se reposer",
+    "zinnen": [
+      "w22fuons"
+    ]
   },
   {
     "nl": "strekken",
@@ -136,7 +181,10 @@
     "tr": "uzatmak, germek",
     "en": "to stretch, to extend",
     "ar": "يمد، يمط",
-    "fr": "étirer, tendre"
+    "fr": "étirer, tendre",
+    "zinnen": [
+      "3yl8ozxz"
+    ]
   },
   {
     "nl": "verbetering",
@@ -145,7 +193,10 @@
     "tr": "iyileşme, gelişme",
     "en": "improvement",
     "ar": "تحسّن",
-    "fr": "amélioration"
+    "fr": "amélioration",
+    "zinnen": [
+      "w22fuons"
+    ]
   },
   {
     "nl": "verminderen",
@@ -155,7 +206,10 @@
     "tr": "azalmak, azaltmak",
     "en": "to reduce, to decrease",
     "ar": "يقلّل، يخفّض",
-    "fr": "diminuer, réduire"
+    "fr": "diminuer, réduire",
+    "zinnen": [
+      "efe1m3o3"
+    ]
   },
   {
     "nl": "verwijzen",
@@ -165,7 +219,10 @@
     "tr": "sevk etmek, yönlendirmek",
     "en": "to refer, to direct",
     "ar": "يُحيل، يُوجّه",
-    "fr": "référer, orienter"
+    "fr": "référer, orienter",
+    "zinnen": [
+      "72wkpt2x"
+    ]
   },
   {
     "nl": "vocht",
@@ -174,7 +231,11 @@
     "tr": "sıvı, nem",
     "en": "fluid, moisture",
     "ar": "سائل، رطوبة",
-    "fr": "liquide, humidité"
+    "fr": "liquide, humidité",
+    "zinnen": [
+      "80kb6mqa",
+      "efe1m3o3"
+    ]
   },
   {
     "nl": "voorschrijven",
@@ -184,7 +245,10 @@
     "tr": "reçete yazmak, önermek",
     "en": "to prescribe",
     "ar": "يصف (دواء)",
-    "fr": "prescrire"
+    "fr": "prescrire",
+    "zinnen": [
+      "efe1m3o3"
+    ]
   },
   {
     "nl": "zich verplaatsen",
@@ -194,7 +258,11 @@
     "tr": "yer değiştirmek, hareket etmek",
     "en": "to move, to travel",
     "ar": "يتنقل، ينتقل",
-    "fr": "se déplacer"
+    "fr": "se déplacer",
+    "zinnen": [
+      "9pmnslo7",
+      "rtny5gzk"
+    ]
   },
   {
     "nl": "afkomen van",
@@ -204,7 +272,11 @@
     "tr": "kurtulmak, vazgeçmek",
     "en": "to get rid of, to break free from",
     "ar": "يتخلص من",
-    "fr": "se débarrasser de"
+    "fr": "se débarrasser de",
+    "zinnen": [
+      "9prqdjaj",
+      "rft41jwy"
+    ]
   },
   {
     "nl": "balans",
@@ -213,7 +285,11 @@
     "tr": "denge",
     "en": "balance",
     "ar": "توازن",
-    "fr": "équilibre, balance"
+    "fr": "équilibre, balance",
+    "zinnen": [
+      "9prqdjaj",
+      "rft41jwy"
+    ]
   },
   {
     "nl": "beschouwen",
@@ -223,7 +299,10 @@
     "tr": "saymak, değerlendirmek",
     "en": "to consider, to regard",
     "ar": "يعتبر، ينظر إلى",
-    "fr": "considérer, regarder"
+    "fr": "considérer, regarder",
+    "zinnen": [
+      "8bt4jiex"
+    ]
   },
   {
     "nl": "combinatie",
@@ -232,7 +311,10 @@
     "tr": "kombinasyon, birleşim",
     "en": "combination",
     "ar": "تركيبة، مزيج",
-    "fr": "combinaison"
+    "fr": "combinaison",
+    "zinnen": [
+      "8bt4jiex"
+    ]
   },
   {
     "nl": "concentratie",
@@ -241,7 +323,10 @@
     "tr": "konsantrasyon, dikkat",
     "en": "concentration",
     "ar": "تركيز",
-    "fr": "concentration"
+    "fr": "concentration",
+    "zinnen": [
+      "8bt4jiex"
+    ]
   },
   {
     "nl": "crisis",
@@ -250,7 +335,11 @@
     "tr": "kriz",
     "en": "crisis",
     "ar": "أزمة",
-    "fr": "crise"
+    "fr": "crise",
+    "zinnen": [
+      "9prqdjaj",
+      "rft41jwy"
+    ]
   },
   {
     "nl": "definitie",
@@ -259,7 +348,10 @@
     "tr": "tanım",
     "en": "definition",
     "ar": "تعريف",
-    "fr": "définition"
+    "fr": "définition",
+    "zinnen": [
+      "azxjsduh"
+    ]
   },
   {
     "nl": "depressief",
@@ -267,7 +359,10 @@
     "tr": "depresif",
     "en": "depressed",
     "ar": "مكتئب",
-    "fr": "déprimé"
+    "fr": "déprimé",
+    "zinnen": [
+      "idrmgz8p"
+    ]
   },
   {
     "nl": "enkel",
@@ -275,7 +370,10 @@
     "tr": "birkaç, tek bir",
     "en": "a few, single",
     "ar": "بضعة، مفرد",
-    "fr": "quelques, simple"
+    "fr": "quelques, simple",
+    "zinnen": [
+      "glog4cxi"
+    ]
   },
   {
     "nl": "erfelijkheid",
@@ -284,7 +382,10 @@
     "tr": "kalıtım",
     "en": "heredity, genetics",
     "ar": "وراثة",
-    "fr": "hérédité"
+    "fr": "hérédité",
+    "zinnen": [
+      "azxjsduh"
+    ]
   },
   {
     "nl": "factor",
@@ -293,7 +394,10 @@
     "tr": "etken, faktör",
     "en": "factor",
     "ar": "عامل",
-    "fr": "facteur"
+    "fr": "facteur",
+    "zinnen": [
+      "azxjsduh"
+    ]
   },
   {
     "nl": "frequent",
@@ -301,7 +405,10 @@
     "tr": "sık görülen, yaygın",
     "en": "frequent",
     "ar": "متكرر",
-    "fr": "fréquent"
+    "fr": "fréquent",
+    "zinnen": [
+      "glog4cxi"
+    ]
   },
   {
     "nl": "gebrek",
@@ -310,7 +417,10 @@
     "tr": "eksiklik, yetersizlik",
     "en": "lack, deficiency",
     "ar": "نقص",
-    "fr": "manque, carence"
+    "fr": "manque, carence",
+    "zinnen": [
+      "glog4cxi"
+    ]
   },
   {
     "nl": "hoop",
@@ -319,7 +429,10 @@
     "tr": "umut",
     "en": "hope",
     "ar": "أمل",
-    "fr": "espoir"
+    "fr": "espoir",
+    "zinnen": [
+      "giopwmkr"
+    ]
   },
   {
     "nl": "ingrijpend",
@@ -327,7 +440,10 @@
     "tr": "köklü, derin etkili",
     "en": "drastic, far-reaching",
     "ar": "جذري، بالغ الأثر",
-    "fr": "radical, profond"
+    "fr": "radical, profond",
+    "zinnen": [
+      "giopwmkr"
+    ]
   },
   {
     "nl": "levensstijl",
@@ -336,7 +452,11 @@
     "tr": "yaşam tarzı",
     "en": "lifestyle",
     "ar": "أسلوب حياة",
-    "fr": "style de vie"
+    "fr": "style de vie",
+    "zinnen": [
+      "89fmdu87",
+      "ax6yvlca"
+    ]
   },
   {
     "nl": "oordeel",
@@ -345,7 +465,10 @@
     "tr": "yargı, değerlendirme",
     "en": "judgement, opinion",
     "ar": "حكم، رأي",
-    "fr": "jugement, avis"
+    "fr": "jugement, avis",
+    "zinnen": [
+      "8j95hlah"
+    ]
   },
   {
     "nl": "overkomen",
@@ -355,7 +478,10 @@
     "tr": "başına gelmek",
     "en": "to happen to, to befall",
     "ar": "يحدث لـ، يصيب",
-    "fr": "arriver à, survenir"
+    "fr": "arriver à, survenir",
+    "zinnen": [
+      "giopwmkr"
+    ]
   },
   {
     "nl": "relativeren",
@@ -365,7 +491,10 @@
     "tr": "göreceleştirmek, önemsizleştirmek",
     "en": "to put into perspective, to relativize",
     "ar": "يضع في سياق، يُنسبي",
-    "fr": "relativiser"
+    "fr": "relativiser",
+    "zinnen": [
+      "8j95hlah"
+    ]
   },
   {
     "nl": "rouw",
@@ -374,7 +503,10 @@
     "tr": "yas",
     "en": "grief, mourning",
     "ar": "حزن، حداد",
-    "fr": "deuil"
+    "fr": "deuil",
+    "zinnen": [
+      "ddamgxm3"
+    ]
   },
   {
     "nl": "schaamte",
@@ -383,7 +515,10 @@
     "tr": "utanç",
     "en": "shame",
     "ar": "خجل، عار",
-    "fr": "honte"
+    "fr": "honte",
+    "zinnen": [
+      "8j95hlah"
+    ]
   },
   {
     "nl": "slapeloosheid",
@@ -392,7 +527,10 @@
     "tr": "uykusuzluk",
     "en": "insomnia, sleeplessness",
     "ar": "أرق",
-    "fr": "insomnie"
+    "fr": "insomnie",
+    "zinnen": [
+      "idrmgz8p"
+    ]
   },
   {
     "nl": "stoornis",
@@ -401,7 +539,10 @@
     "tr": "bozukluk, rahatsızlık",
     "en": "disorder, condition",
     "ar": "اضطراب",
-    "fr": "trouble"
+    "fr": "trouble",
+    "zinnen": [
+      "idrmgz8p"
+    ]
   },
   {
     "nl": "symptoom",
@@ -410,7 +551,10 @@
     "tr": "semptom, belirti",
     "en": "symptom",
     "ar": "عَرَض",
-    "fr": "symptôme"
+    "fr": "symptôme",
+    "zinnen": [
+      "idrmgz8p"
+    ]
   },
   {
     "nl": "traumatisch",
@@ -418,7 +562,10 @@
     "tr": "travmatik",
     "en": "traumatic",
     "ar": "صادم",
-    "fr": "traumatisant"
+    "fr": "traumatisant",
+    "zinnen": [
+      "ddamgxm3"
+    ]
   },
   {
     "nl": "voeding",
@@ -427,7 +574,10 @@
     "tr": "beslenme, gıda",
     "en": "nutrition, food",
     "ar": "تغذية، غذاء",
-    "fr": "alimentation, nourriture"
+    "fr": "alimentation, nourriture",
+    "zinnen": [
+      "89fmdu87"
+    ]
   },
   {
     "nl": "volop",
@@ -435,7 +585,10 @@
     "tr": "bol bol, yoğun şekilde",
     "en": "abundantly, fully",
     "ar": "بوفرة",
-    "fr": "abondamment, à profusion"
+    "fr": "abondamment, à profusion",
+    "zinnen": [
+      "89fmdu87"
+    ]
   },
   {
     "nl": "werkelijkheid",
@@ -444,7 +597,10 @@
     "tr": "gerçeklik",
     "en": "reality",
     "ar": "واقع، حقيقة",
-    "fr": "réalité"
+    "fr": "réalité",
+    "zinnen": [
+      "ddamgxm3"
+    ]
   },
   {
     "nl": "essentieel",
@@ -452,7 +608,10 @@
     "tr": "temel, vazgeçilmez",
     "en": "essential",
     "ar": "أساسي، جوهري",
-    "fr": "essentiel"
+    "fr": "essentiel",
+    "zinnen": [
+      "5q0ptt6b"
+    ]
   },
   {
     "nl": "bacterie",
@@ -461,7 +620,10 @@
     "tr": "bakteri",
     "en": "bacterium",
     "ar": "بكتيريا",
-    "fr": "bactérie"
+    "fr": "bactérie",
+    "zinnen": [
+      "tz70ng90"
+    ]
   },
   {
     "nl": "beoordelen",
@@ -471,7 +633,10 @@
     "tr": "değerlendirmek, yargılamak",
     "en": "to assess, to evaluate",
     "ar": "يُقيّم، يحكم على",
-    "fr": "évaluer, juger"
+    "fr": "évaluer, juger",
+    "zinnen": [
+      "gvswl7w7"
+    ]
   },
   {
     "nl": "beugel",
@@ -480,7 +645,10 @@
     "tr": "diş teli, braket",
     "en": "brace, bracket",
     "ar": "تقويم الأسنان",
-    "fr": "appareil dentaire"
+    "fr": "appareil dentaire",
+    "zinnen": [
+      "gvswl7w7"
+    ]
   },
   {
     "nl": "bloeden",
@@ -490,7 +658,10 @@
     "tr": "kanamak",
     "en": "to bleed",
     "ar": "ينزف",
-    "fr": "saigner"
+    "fr": "saigner",
+    "zinnen": [
+      "4g74j53c"
+    ]
   },
   {
     "nl": "chirurg",
@@ -499,7 +670,10 @@
     "tr": "cerrah",
     "en": "surgeon",
     "ar": "جرّاح",
-    "fr": "chirurgien"
+    "fr": "chirurgien",
+    "zinnen": [
+      "4g74j53c"
+    ]
   },
   {
     "nl": "gebit",
@@ -508,7 +682,10 @@
     "tr": "dişler, diş seti",
     "en": "teeth, dentition",
     "ar": "أسنان",
-    "fr": "dentition, dents"
+    "fr": "dentition, dents",
+    "zinnen": [
+      "wrj0t2ai"
+    ]
   },
   {
     "nl": "jarenlang",
@@ -516,7 +693,10 @@
     "tr": "yıllarca",
     "en": "for years",
     "ar": "لسنوات",
-    "fr": "pendant des années"
+    "fr": "pendant des années",
+    "zinnen": [
+      "wrj0t2ai"
+    ]
   },
   {
     "nl": "kaak",
@@ -525,7 +705,10 @@
     "tr": "çene",
     "en": "jaw",
     "ar": "فك",
-    "fr": "mâchoire"
+    "fr": "mâchoire",
+    "zinnen": [
+      "z7iqmb7p"
+    ]
   },
   {
     "nl": "kies",
@@ -534,7 +717,10 @@
     "tr": "azı dişi",
     "en": "molar",
     "ar": "ضرس",
-    "fr": "molaire"
+    "fr": "molaire",
+    "zinnen": [
+      "z7iqmb7p"
+    ]
   },
   {
     "nl": "mondhygiënist",
@@ -543,7 +729,10 @@
     "tr": "diş hijyenisti",
     "en": "dental hygienist",
     "ar": "أخصائي صحة الفم",
-    "fr": "hygiéniste dentaire"
+    "fr": "hygiéniste dentaire",
+    "zinnen": [
+      "kz879gss"
+    ]
   },
   {
     "nl": "naar",
@@ -551,7 +740,11 @@
     "tr": "tatsız, acı verici",
     "en": "unpleasant, nasty",
     "ar": "كريه، مؤلم",
-    "fr": "désagréable, pénible"
+    "fr": "désagréable, pénible",
+    "zinnen": [
+      "x158essd",
+      "ojmxgaua"
+    ]
   },
   {
     "nl": "ontsteking",
@@ -560,7 +753,10 @@
     "tr": "iltihap, yangı",
     "en": "inflammation, infection",
     "ar": "التهاب",
-    "fr": "inflammation, infection"
+    "fr": "inflammation, infection",
+    "zinnen": [
+      "tz70ng90"
+    ]
   },
   {
     "nl": "ontstoken",
@@ -568,7 +764,10 @@
     "tr": "iltihaplı",
     "en": "inflamed, infected",
     "ar": "ملتهب",
-    "fr": "enflammé, infecté"
+    "fr": "enflammé, infecté",
+    "zinnen": [
+      "tz70ng90"
+    ]
   },
   {
     "nl": "opereren",
@@ -578,7 +777,10 @@
     "tr": "ameliyat etmek",
     "en": "to operate, to perform surgery",
     "ar": "يُجري عملية جراحية",
-    "fr": "opérer"
+    "fr": "opérer",
+    "zinnen": [
+      "4g74j53c"
+    ]
   },
   {
     "nl": "orthodontist",
@@ -587,7 +789,10 @@
     "tr": "ortodontist",
     "en": "orthodontist",
     "ar": "طبيب تقويم الأسنان",
-    "fr": "orthodontiste"
+    "fr": "orthodontiste",
+    "zinnen": [
+      "gvswl7w7"
+    ]
   },
   {
     "nl": "schuin",
@@ -595,7 +800,10 @@
     "tr": "eğri, çapraz",
     "en": "slanted, diagonal",
     "ar": "مائل",
-    "fr": "incliné, en diagonale"
+    "fr": "incliné, en diagonale",
+    "zinnen": [
+      "rbqfl3cb"
+    ]
   },
   {
     "nl": "tandenstoker",
@@ -604,7 +812,10 @@
     "tr": "kürdan",
     "en": "toothpick",
     "ar": "عود الأسنان",
-    "fr": "cure-dent"
+    "fr": "cure-dent",
+    "zinnen": [
+      "kz879gss"
+    ]
   },
   {
     "nl": "tandpasta",
@@ -613,7 +824,10 @@
     "tr": "diş macunu",
     "en": "toothpaste",
     "ar": "معجون أسنان",
-    "fr": "dentifrice"
+    "fr": "dentifrice",
+    "zinnen": [
+      "kz879gss"
+    ]
   },
   {
     "nl": "tandsteen",
@@ -622,7 +836,10 @@
     "tr": "diş taşı, tartar",
     "en": "tartar, dental calculus",
     "ar": "جير الأسنان",
-    "fr": "tartre dentaire"
+    "fr": "tartre dentaire",
+    "zinnen": [
+      "wrj0t2ai"
+    ]
   },
   {
     "nl": "tandvlees",
@@ -631,7 +848,10 @@
     "tr": "diş eti",
     "en": "gums",
     "ar": "لثة",
-    "fr": "gencive"
+    "fr": "gencive",
+    "zinnen": [
+      "x158essd"
+    ]
   },
   {
     "nl": "tenzij",
@@ -639,7 +859,10 @@
     "tr": "-madığı sürece, meğer ki",
     "en": "unless",
     "ar": "إلا إذا، ما لم",
-    "fr": "à moins que"
+    "fr": "à moins que",
+    "zinnen": [
+      "x158essd"
+    ]
   },
   {
     "nl": "trauma",
@@ -648,7 +871,10 @@
     "tr": "travma",
     "en": "trauma",
     "ar": "صدمة",
-    "fr": "traumatisme"
+    "fr": "traumatisme",
+    "zinnen": [
+      "59htlrho"
+    ]
   },
   {
     "nl": "trekken",
@@ -658,7 +884,10 @@
     "tr": "çekmek",
     "en": "to pull, to draw",
     "ar": "يسحب",
-    "fr": "tirer"
+    "fr": "tirer",
+    "zinnen": [
+      "z7iqmb7p"
+    ]
   },
   {
     "nl": "verstandskies",
@@ -667,7 +896,10 @@
     "tr": "yirmi yaş dişi",
     "en": "wisdom tooth",
     "ar": "ضرس العقل",
-    "fr": "dent de sagesse"
+    "fr": "dent de sagesse",
+    "zinnen": [
+      "rbqfl3cb"
+    ]
   },
   {
     "nl": "verwijsbrief",
@@ -676,7 +908,10 @@
     "tr": "sevk mektubu",
     "en": "referral letter",
     "ar": "خطاب إحالة",
-    "fr": "lettre de référence"
+    "fr": "lettre de référence",
+    "zinnen": [
+      "rbqfl3cb"
+    ]
   },
   {
     "nl": "atleet",
@@ -685,7 +920,10 @@
     "tr": "atlet, sporcu",
     "en": "athlete",
     "ar": "رياضي",
-    "fr": "athlète"
+    "fr": "athlète",
+    "zinnen": [
+      "jw9660wd"
+    ]
   },
   {
     "nl": "calorie",
@@ -694,7 +932,10 @@
     "tr": "kalori",
     "en": "calorie",
     "ar": "سعرة حرارية",
-    "fr": "calorie"
+    "fr": "calorie",
+    "zinnen": [
+      "jw9660wd"
+    ]
   },
   {
     "nl": "cruciaal",
@@ -702,7 +943,10 @@
     "tr": "çok önemli, kritik",
     "en": "crucial",
     "ar": "بالغ الأهمية، حاسم",
-    "fr": "crucial"
+    "fr": "crucial",
+    "zinnen": [
+      "j3ok19ix"
+    ]
   },
   {
     "nl": "daadwerkelijk",
@@ -710,7 +954,10 @@
     "tr": "gerçekten, fiilen",
     "en": "actually, truly",
     "ar": "فعلياً، حقاً",
-    "fr": "réellement, effectivement"
+    "fr": "réellement, effectivement",
+    "zinnen": [
+      "j3ok19ix"
+    ]
   },
   {
     "nl": "dieet",
@@ -719,7 +966,10 @@
     "tr": "diyet",
     "en": "diet",
     "ar": "حمية، نظام غذائي",
-    "fr": "régime"
+    "fr": "régime",
+    "zinnen": [
+      "jw9660wd"
+    ]
   },
   {
     "nl": "diëtist",
@@ -728,7 +978,10 @@
     "tr": "diyetisyen",
     "en": "dietitian",
     "ar": "أخصائي تغذية",
-    "fr": "diététicien"
+    "fr": "diététicien",
+    "zinnen": [
+      "ch7umj4m"
+    ]
   },
   {
     "nl": "energiek",
@@ -736,7 +989,10 @@
     "tr": "enerjik",
     "en": "energetic",
     "ar": "نشيط، حيوي",
-    "fr": "énergique"
+    "fr": "énergique",
+    "zinnen": [
+      "ch7umj4m"
+    ]
   },
   {
     "nl": "functioneren",
@@ -746,7 +1002,10 @@
     "tr": "işlev görmek, çalışmak",
     "en": "to function, to work",
     "ar": "يعمل، يؤدي وظيفته",
-    "fr": "fonctionner"
+    "fr": "fonctionner",
+    "zinnen": [
+      "j3ok19ix"
+    ]
   },
   {
     "nl": "geobsedeerd",
@@ -754,7 +1013,10 @@
     "tr": "takıntılı",
     "en": "obsessed",
     "ar": "مهووس",
-    "fr": "obsédé"
+    "fr": "obsédé",
+    "zinnen": [
+      "y6xyg5zg"
+    ]
   },
   {
     "nl": "gestrest",
@@ -762,7 +1024,10 @@
     "tr": "stresli",
     "en": "stressed",
     "ar": "متوتر",
-    "fr": "stressé"
+    "fr": "stressé",
+    "zinnen": [
+      "8kkm434e"
+    ]
   },
   {
     "nl": "kwestie",
@@ -771,7 +1036,10 @@
     "tr": "mesele, konu",
     "en": "issue, matter",
     "ar": "مسألة، أمر",
-    "fr": "question, affaire"
+    "fr": "question, affaire",
+    "zinnen": [
+      "y0n375j8"
+    ]
   },
   {
     "nl": "meditatie",
@@ -780,7 +1048,10 @@
     "tr": "meditasyon",
     "en": "meditation",
     "ar": "تأمل",
-    "fr": "méditation"
+    "fr": "méditation",
+    "zinnen": [
+      "y6xyg5zg"
+    ]
   },
   {
     "nl": "obsessie",
@@ -789,7 +1060,10 @@
     "tr": "takıntı, saplantı",
     "en": "obsession",
     "ar": "هواس، وسواس",
-    "fr": "obsession"
+    "fr": "obsession",
+    "zinnen": [
+      "y6xyg5zg"
+    ]
   },
   {
     "nl": "opleveren",
@@ -799,7 +1073,10 @@
     "tr": "sağlamak, ortaya çıkarmak",
     "en": "to yield, to produce",
     "ar": "يُنتج، يُسفر عن",
-    "fr": "produire, générer"
+    "fr": "produire, générer",
+    "zinnen": [
+      "y0n375j8"
+    ]
   },
   {
     "nl": "overgewicht",
@@ -808,7 +1085,10 @@
     "tr": "fazla kilo",
     "en": "overweight",
     "ar": "زيادة الوزن",
-    "fr": "surpoids"
+    "fr": "surpoids",
+    "zinnen": [
+      "ch7umj4m"
+    ]
   },
   {
     "nl": "productief",
@@ -816,7 +1096,11 @@
     "tr": "üretken, verimli",
     "en": "productive",
     "ar": "منتج",
-    "fr": "productif"
+    "fr": "productif",
+    "zinnen": [
+      "y0n375j8",
+      "xpox2b5w"
+    ]
   },
   {
     "nl": "recept",
@@ -825,7 +1109,12 @@
     "tr": "yemek tarifi / reçete",
     "en": "recipe / prescription",
     "ar": "وصفة (طبخ أو طبية)",
-    "fr": "recette / ordonnance"
+    "fr": "recette / ordonnance",
+    "zinnen": [
+      "ryso4yt3",
+      "9e1n6qru",
+      "8l2hsh0i"
+    ]
   },
   {
     "nl": "samenvatten",
@@ -835,7 +1124,11 @@
     "tr": "özetlemek",
     "en": "to summarize",
     "ar": "يلخّص",
-    "fr": "résumer"
+    "fr": "résumer",
+    "zinnen": [
+      "h83z8yta",
+      "6lq49cl5"
+    ]
   },
   {
     "nl": "suf",
@@ -843,17 +1136,10 @@
     "tr": "uyuşuk, halsiz",
     "en": "drowsy, sluggish",
     "ar": "خامل، ناعس",
-    "fr": "somnolent, léthargique"
-  },
-  {
-    "nl": "tellen",
-    "type": "verb",
-    "perfectum": "geteld",
-    "imperfectum": "telde",
-    "tr": "saymak",
-    "en": "to count",
-    "ar": "يعدّ",
-    "fr": "compter"
+    "fr": "somnolent, léthargique",
+    "zinnen": [
+      "8kkm434e"
+    ]
   },
   {
     "nl": "vitamine",
@@ -862,7 +1148,10 @@
     "tr": "vitamin",
     "en": "vitamin",
     "ar": "فيتامين",
-    "fr": "vitamine"
+    "fr": "vitamine",
+    "zinnen": [
+      "ryso4yt3"
+    ]
   },
   {
     "nl": "zich afvragen",
@@ -872,7 +1161,11 @@
     "tr": "merak etmek, kendi kendine sormak",
     "en": "to wonder, to ask oneself",
     "ar": "يتساءل",
-    "fr": "se demander"
+    "fr": "se demander",
+    "zinnen": [
+      "h83z8yta",
+      "6lq49cl5"
+    ]
   },
   {
     "nl": "zich bezighouden",
@@ -882,7 +1175,10 @@
     "tr": "uğraşmak, ilgilenmek",
     "en": "to occupy oneself, to deal with",
     "ar": "يشتغل بـ، يهتم بـ",
-    "fr": "s'occuper de, se consacrer à"
+    "fr": "s'occuper de, se consacrer à",
+    "zinnen": [
+      "ax6yvlca"
+    ]
   },
   {
     "nl": "zich ontspannen",
@@ -892,6 +1188,9 @@
     "tr": "dinlenmek, rahatlamak",
     "en": "to relax",
     "ar": "يسترخي",
-    "fr": "se détendre, se relaxer"
+    "fr": "se détendre, se relaxer",
+    "zinnen": [
+      "8kkm434e"
+    ]
   }
 ]

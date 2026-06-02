@@ -7,7 +7,11 @@
     "tr": "bırakmak",
     "en": "to leave behind",
     "ar": "يترك",
-    "fr": "laisser derrière"
+    "fr": "laisser derrière",
+    "zinnen": [
+      "8guobj0n",
+      "ldi065d7"
+    ]
   },
   {
     "nl": "afzeggen",
@@ -17,7 +21,11 @@
     "tr": "iptal etmek",
     "en": "to cancel",
     "ar": "يلغي",
-    "fr": "annuler"
+    "fr": "annuler",
+    "zinnen": [
+      "v67l1sfc",
+      "ofqzb5z8"
+    ]
   },
   {
     "nl": "beëindigen",
@@ -27,7 +35,10 @@
     "tr": "bitirmek",
     "en": "to end, conclude",
     "ar": "ينهي",
-    "fr": "terminer"
+    "fr": "terminer",
+    "zinnen": [
+      "qszshpxe"
+    ]
   },
   {
     "nl": "benadrukken",
@@ -37,7 +48,10 @@
     "tr": "vurgulamak",
     "en": "to emphasize",
     "ar": "يؤكد",
-    "fr": "souligner"
+    "fr": "souligner",
+    "zinnen": [
+      "1dveiajs"
+    ]
   },
   {
     "nl": "beperking",
@@ -46,7 +60,10 @@
     "tr": "kısıtlama",
     "en": "restriction, limitation",
     "ar": "تقييد",
-    "fr": "limitation"
+    "fr": "limitation",
+    "zinnen": [
+      "trw5dupk"
+    ]
   },
   {
     "nl": "bevestiging",
@@ -55,7 +72,10 @@
     "tr": "onay",
     "en": "confirmation",
     "ar": "تأكيد",
-    "fr": "confirmation"
+    "fr": "confirmation",
+    "zinnen": [
+      "sp04n9zw"
+    ]
   },
   {
     "nl": "blokkeren",
@@ -65,7 +85,10 @@
     "tr": "bloke etmek, engellemek",
     "en": "to block",
     "ar": "يحظر",
-    "fr": "bloquer"
+    "fr": "bloquer",
+    "zinnen": [
+      "whldnrcz"
+    ]
   },
   {
     "nl": "boodschap",
@@ -74,7 +97,11 @@
     "tr": "mesaj",
     "en": "message",
     "ar": "رسالة",
-    "fr": "message"
+    "fr": "message",
+    "zinnen": [
+      "8guobj0n",
+      "ldi065d7"
+    ]
   },
   {
     "nl": "context",
@@ -83,7 +110,10 @@
     "tr": "bağlam",
     "en": "context",
     "ar": "سياق",
-    "fr": "contexte"
+    "fr": "contexte",
+    "zinnen": [
+      "7eq20hgq"
+    ]
   },
   {
     "nl": "efficiënt",
@@ -91,7 +121,10 @@
     "tr": "etkili",
     "en": "efficient",
     "ar": "فعال",
-    "fr": "efficace"
+    "fr": "efficace",
+    "zinnen": [
+      "5q0ptt6b"
+    ]
   },
   {
     "nl": "generatie",
@@ -100,7 +133,11 @@
     "tr": "nesil",
     "en": "generation",
     "ar": "جيل",
-    "fr": "génération"
+    "fr": "génération",
+    "zinnen": [
+      "bf2v2mdz",
+      "rl7zr4r6"
+    ]
   },
   {
     "nl": "instantie",
@@ -109,7 +146,10 @@
     "tr": "makam",
     "en": "instance, authority",
     "ar": "هيئة",
-    "fr": "instance"
+    "fr": "instance",
+    "zinnen": [
+      "jpxt6yxe"
+    ]
   },
   {
     "nl": "inzicht",
@@ -118,7 +158,12 @@
     "tr": "farkındalık / bilinç",
     "en": "insight, realization",
     "ar": "تبصّر",
-    "fr": "aperçu"
+    "fr": "aperçu",
+    "zinnen": [
+      "1dveiajs",
+      "mxpaty3l",
+      "jtvx18o0"
+    ]
   },
   {
     "nl": "medeleven",
@@ -127,7 +172,10 @@
     "tr": "merhamet / empati",
     "en": "sympathy, compassion",
     "ar": "تعاطف",
-    "fr": "empathie"
+    "fr": "empathie",
+    "zinnen": [
+      "wym7527k"
+    ]
   },
   {
     "nl": "mondeling",
@@ -135,7 +183,10 @@
     "tr": "sözlü",
     "en": "oral",
     "ar": "شفوي",
-    "fr": "oral"
+    "fr": "oral",
+    "zinnen": [
+      "letm4wrt"
+    ]
   },
   {
     "nl": "onrustig",
@@ -143,7 +194,10 @@
     "tr": "tedirgin",
     "en": "restless, anxious",
     "ar": "قلق",
-    "fr": "agité"
+    "fr": "agité",
+    "zinnen": [
+      "46vlaznk"
+    ]
   },
   {
     "nl": "ontslaan",
@@ -153,7 +207,10 @@
     "tr": "işten çıkarmak",
     "en": "to dismiss, lay off",
     "ar": "يطرد من العمل",
-    "fr": "renvoyer"
+    "fr": "renvoyer",
+    "zinnen": [
+      "aj2icoww"
+    ]
   },
   {
     "nl": "ontvanger",
@@ -162,7 +219,11 @@
     "tr": "alıcı",
     "en": "receiver",
     "ar": "المستقبل",
-    "fr": "récepteur"
+    "fr": "récepteur",
+    "zinnen": [
+      "8guobj0n",
+      "ldi065d7"
+    ]
   },
   {
     "nl": "oproep",
@@ -171,7 +232,11 @@
     "tr": "arama / çağrı",
     "en": "call, summons",
     "ar": "استدعاء",
-    "fr": "appel"
+    "fr": "appel",
+    "zinnen": [
+      "hzqunjv4",
+      "3tvtbqly"
+    ]
   },
   {
     "nl": "reageren",
@@ -181,7 +246,11 @@
     "tr": "karşılık vermek",
     "en": "to react, respond",
     "ar": "يتفاعل",
-    "fr": "réagir"
+    "fr": "réagir",
+    "zinnen": [
+      "hzqunjv4",
+      "3tvtbqly"
+    ]
   },
   {
     "nl": "spontaan",
@@ -189,7 +258,10 @@
     "tr": "spontan",
     "en": "spontaneous",
     "ar": "عفوي",
-    "fr": "spontané"
+    "fr": "spontané",
+    "zinnen": [
+      "wym7527k"
+    ]
   },
   {
     "nl": "storen",
@@ -199,7 +271,10 @@
     "tr": "rahatsız etmek",
     "en": "to disturb",
     "ar": "يزعج",
-    "fr": "déranger"
+    "fr": "déranger",
+    "zinnen": [
+      "6ucyrqou"
+    ]
   },
   {
     "nl": "toon",
@@ -208,7 +283,12 @@
     "tr": "ton (ses)",
     "en": "pitch, tone",
     "ar": "نبرة",
-    "fr": "ton"
+    "fr": "ton",
+    "zinnen": [
+      "t27b0rjo",
+      "qszshpxe",
+      "zod5dimi"
+    ]
   },
   {
     "nl": "uitdrukken",
@@ -218,7 +298,10 @@
     "tr": "ifade etmek",
     "en": "to express",
     "ar": "يعبر",
-    "fr": "exprimer"
+    "fr": "exprimer",
+    "zinnen": [
+      "letm4wrt"
+    ]
   },
   {
     "nl": "volume",
@@ -227,7 +310,10 @@
     "tr": "hacim (ses)",
     "en": "volume",
     "ar": "حجم",
-    "fr": "volume"
+    "fr": "volume",
+    "zinnen": [
+      "tgxwgr3e"
+    ]
   },
   {
     "nl": "waardevol",
@@ -235,7 +321,10 @@
     "tr": "değerli",
     "en": "valuable",
     "ar": "قيّم",
-    "fr": "précieux"
+    "fr": "précieux",
+    "zinnen": [
+      "u062bheq"
+    ]
   },
   {
     "nl": "zich verontschuldigen",
@@ -245,7 +334,11 @@
     "tr": "özür dilemek",
     "en": "to apologize",
     "ar": "يعتذر",
-    "fr": "s'excuser"
+    "fr": "s'excuser",
+    "zinnen": [
+      "t27b0rjo",
+      "zod5dimi"
+    ]
   },
   {
     "nl": "aanleiding",
@@ -254,7 +347,11 @@
     "tr": "gerekçe / neden",
     "en": "occasion, reason",
     "ar": "سبب",
-    "fr": "occasion"
+    "fr": "occasion",
+    "zinnen": [
+      "v67l1sfc",
+      "ofqzb5z8"
+    ]
   },
   {
     "nl": "aanpassen",
@@ -264,7 +361,10 @@
     "tr": "uyarlamak",
     "en": "to adapt, adjust",
     "ar": "يتكيف",
-    "fr": "adapter"
+    "fr": "adapter",
+    "zinnen": [
+      "s24macys"
+    ]
   },
   {
     "nl": "asociaal",
@@ -272,7 +372,10 @@
     "tr": "asosyal",
     "en": "unsocial",
     "ar": "غير اجتماعي",
-    "fr": "antisocial"
+    "fr": "antisocial",
+    "zinnen": [
+      "idmh6i3e"
+    ]
   },
   {
     "nl": "barbecue",
@@ -281,7 +384,10 @@
     "tr": "mangal",
     "en": "barbecue",
     "ar": "شواء",
-    "fr": "barbecue"
+    "fr": "barbecue",
+    "zinnen": [
+      "utsfheph"
+    ]
   },
   {
     "nl": "beperkt",
@@ -289,7 +395,10 @@
     "tr": "kısıtlı",
     "en": "limited",
     "ar": "محدود",
-    "fr": "limité"
+    "fr": "limité",
+    "zinnen": [
+      "wra0lrmx"
+    ]
   },
   {
     "nl": "betreffen",
@@ -299,7 +408,10 @@
     "tr": "ilgili olmak",
     "en": "to concern, relate to",
     "ar": "يتعلق بـ",
-    "fr": "concerner"
+    "fr": "concerner",
+    "zinnen": [
+      "eb1r1ffo"
+    ]
   },
   {
     "nl": "essentieel",
@@ -307,7 +419,10 @@
     "tr": "son derece önemli",
     "en": "essential",
     "ar": "ضروري",
-    "fr": "essentiel"
+    "fr": "essentiel",
+    "zinnen": [
+      "5q0ptt6b"
+    ]
   },
   {
     "nl": "fluisteren",
@@ -317,7 +432,10 @@
     "tr": "fısıldamak",
     "en": "to whisper",
     "ar": "يهمس",
-    "fr": "chuchoter"
+    "fr": "chuchoter",
+    "zinnen": [
+      "cc5y6b56"
+    ]
   },
   {
     "nl": "gehorig",
@@ -325,7 +443,10 @@
     "tr": "sesli, gürültülü (genellikle ses geçiren anlamında)",
     "en": "noisy, resonant",
     "ar": "صاخب",
-    "fr": "bruyant"
+    "fr": "bruyant",
+    "zinnen": [
+      "idmh6i3e"
+    ]
   },
   {
     "nl": "herinneren aan",
@@ -335,7 +456,11 @@
     "tr": "hatırlatmak",
     "en": "to remind of",
     "ar": "يذكّر بـ",
-    "fr": "rappeler"
+    "fr": "rappeler",
+    "zinnen": [
+      "i5tzf3n6",
+      "luznqc3d"
+    ]
   },
   {
     "nl": "huurder",
@@ -344,7 +469,10 @@
     "tr": "kiracı",
     "en": "tenant",
     "ar": "المستأجر",
-    "fr": "locataire"
+    "fr": "locataire",
+    "zinnen": [
+      "sf6h2tms"
+    ]
   },
   {
     "nl": "luid",
@@ -352,7 +480,10 @@
     "tr": "yüksek sesli",
     "en": "loud",
     "ar": "صاخب",
-    "fr": "bruyant"
+    "fr": "bruyant",
+    "zinnen": [
+      "idmh6i3e"
+    ]
   },
   {
     "nl": "maatregel",
@@ -361,7 +492,10 @@
     "tr": "tedbir / önlem",
     "en": "measure",
     "ar": "إجراء",
-    "fr": "mesure"
+    "fr": "mesure",
+    "zinnen": [
+      "aj2icoww"
+    ]
   },
   {
     "nl": "omstandigheid",
@@ -370,7 +504,10 @@
     "tr": "durum / koşul",
     "en": "circumstance",
     "ar": "ظرف",
-    "fr": "circonstance"
+    "fr": "circonstance",
+    "zinnen": [
+      "s24macys"
+    ]
   },
   {
     "nl": "onvoldoende",
@@ -378,7 +515,10 @@
     "tr": "yetersiz",
     "en": "insufficient",
     "ar": "غير كافٍ",
-    "fr": "insuffisant"
+    "fr": "insuffisant",
+    "zinnen": [
+      "trw5dupk"
+    ]
   },
   {
     "nl": "oppervlakte",
@@ -387,7 +527,10 @@
     "tr": "yüzölçümü",
     "en": "surface area",
     "ar": "مساحة السطح",
-    "fr": "superficie"
+    "fr": "superficie",
+    "zinnen": [
+      "wv0oc49m"
+    ]
   },
   {
     "nl": "overtreden",
@@ -397,7 +540,10 @@
     "tr": "ihlal etmek",
     "en": "to violate, transgress",
     "ar": "ينتهك",
-    "fr": "violer"
+    "fr": "violer",
+    "zinnen": [
+      "lufmhgnn"
+    ]
   },
   {
     "nl": "reglement",
@@ -406,7 +552,10 @@
     "tr": "yönetmelik",
     "en": "regulation, rulebook",
     "ar": "لائحة",
-    "fr": "règlement"
+    "fr": "règlement",
+    "zinnen": [
+      "jpxt6yxe"
+    ]
   },
   {
     "nl": "rook",
@@ -415,7 +564,11 @@
     "tr": "duman",
     "en": "smoke",
     "ar": "دخان",
-    "fr": "fumée"
+    "fr": "fumée",
+    "zinnen": [
+      "46vlaznk",
+      "utsfheph"
+    ]
   },
   {
     "nl": "schreeuwen",
@@ -425,7 +578,10 @@
     "tr": "bağırmak",
     "en": "to shout",
     "ar": "يصرخ",
-    "fr": "crier"
+    "fr": "crier",
+    "zinnen": [
+      "6ucyrqou"
+    ]
   },
   {
     "nl": "stank",
@@ -434,7 +590,10 @@
     "tr": "(kötü) koku",
     "en": "smell, stench",
     "ar": "رائحة كريهة",
-    "fr": "mauvaise odeur"
+    "fr": "mauvaise odeur",
+    "zinnen": [
+      "46vlaznk"
+    ]
   },
   {
     "nl": "verbazen",
@@ -444,7 +603,10 @@
     "tr": "şaşırtmak",
     "en": "to surprise",
     "ar": "يفاجئ",
-    "fr": "surprendre"
+    "fr": "surprendre",
+    "zinnen": [
+      "u062bheq"
+    ]
   },
   {
     "nl": "verboden",
@@ -452,7 +614,10 @@
     "tr": "yasak",
     "en": "forbidden",
     "ar": "محظور",
-    "fr": "interdit"
+    "fr": "interdit",
+    "zinnen": [
+      "lufmhgnn"
+    ]
   },
   {
     "nl": "verzoeken",
@@ -462,7 +627,10 @@
     "tr": "rica etmek",
     "en": "to request",
     "ar": "يطلب",
-    "fr": "demander"
+    "fr": "demander",
+    "zinnen": [
+      "sp04n9zw"
+    ]
   },
   {
     "nl": "voorstellen",
@@ -472,7 +640,10 @@
     "tr": "tavsiye etmek / sunmak",
     "en": "to suggest, present",
     "ar": "يقترح",
-    "fr": "suggérer"
+    "fr": "suggérer",
+    "zinnen": [
+      "b4flnjhf"
+    ]
   },
   {
     "nl": "voorzitter",
@@ -481,7 +652,11 @@
     "tr": "başkan / başkanlık eden kişi",
     "en": "chairman, chairperson",
     "ar": "رئيس",
-    "fr": "président(e)"
+    "fr": "président(e)",
+    "zinnen": [
+      "qszshpxe",
+      "b4flnjhf"
+    ]
   },
   {
     "nl": "waarschuwing",
@@ -490,7 +665,10 @@
     "tr": "uyarı",
     "en": "warning",
     "ar": "تحذير",
-    "fr": "avertissement"
+    "fr": "avertissement",
+    "zinnen": [
+      "whldnrcz"
+    ]
   },
   {
     "nl": "aannemen",
@@ -500,7 +678,13 @@
     "tr": "teslim almak / varsaymak",
     "en": "to assume, take over",
     "ar": "يفترض/يستلم",
-    "fr": "supposer"
+    "fr": "supposer",
+    "zinnen": [
+      "f5tqowkx",
+      "yhh23v7w",
+      "aa345giz",
+      "s4mywugc"
+    ]
   },
   {
     "nl": "aansluiting",
@@ -509,7 +693,10 @@
     "tr": "bağlantı",
     "en": "connection, attachment",
     "ar": "وصلة",
-    "fr": "connexion"
+    "fr": "connexion",
+    "zinnen": [
+      "9r16pvph"
+    ]
   },
   {
     "nl": "begrip",
@@ -518,7 +705,10 @@
     "tr": "anlayış / kavrayış",
     "en": "understanding",
     "ar": "فهم",
-    "fr": "compréhension"
+    "fr": "compréhension",
+    "zinnen": [
+      "f5tqowkx"
+    ]
   },
   {
     "nl": "bestaand",
@@ -526,7 +716,10 @@
     "tr": "mevcut, var olan",
     "en": "existing, available",
     "ar": "موجود",
-    "fr": "existant"
+    "fr": "existant",
+    "zinnen": [
+      "rl7zr4r6"
+    ]
   },
   {
     "nl": "eisen",
@@ -536,7 +729,10 @@
     "tr": "talep etmek / istemek",
     "en": "to demand, require",
     "ar": "يطلب",
-    "fr": "exiger"
+    "fr": "exiger",
+    "zinnen": [
+      "2rux7226"
+    ]
   },
   {
     "nl": "flink",
@@ -544,7 +740,11 @@
     "tr": "epeyce büyük / başarılı",
     "en": "quite big, capable",
     "ar": "كبير نوعاً ما",
-    "fr": "assez grand"
+    "fr": "assez grand",
+    "zinnen": [
+      "n2pd00oz",
+      "2rux7226"
+    ]
   },
   {
     "nl": "gebruiksaanwijzing",
@@ -553,7 +753,10 @@
     "tr": "kullanım kılavuzu",
     "en": "user manual",
     "ar": "دليل المستخدم",
-    "fr": "mode d'emploi"
+    "fr": "mode d'emploi",
+    "zinnen": [
+      "eb1r1ffo"
+    ]
   },
   {
     "nl": "helpdesk",
@@ -562,7 +765,11 @@
     "tr": "yardım masası",
     "en": "help desk",
     "ar": "مكتب المساعدة",
-    "fr": "service d'assistance"
+    "fr": "service d'assistance",
+    "zinnen": [
+      "9r16pvph",
+      "ldsbfj2g"
+    ]
   },
   {
     "nl": "instelling",
@@ -571,7 +778,12 @@
     "tr": "ayarlama / kurum",
     "en": "institution, setting",
     "ar": "مؤسسة/إعداد",
-    "fr": "établissement"
+    "fr": "établissement",
+    "zinnen": [
+      "wv0oc49m",
+      "hfpw0tg9",
+      "8asa7e3g"
+    ]
   },
   {
     "nl": "keuzemenu",
@@ -580,7 +792,10 @@
     "tr": "seçim menüsü",
     "en": "menu",
     "ar": "قائمة الاختيار",
-    "fr": "menu de sélection"
+    "fr": "menu de sélection",
+    "zinnen": [
+      "ldsbfj2g"
+    ]
   },
   {
     "nl": "logisch",
@@ -588,7 +803,10 @@
     "tr": "mantıklı",
     "en": "logical",
     "ar": "منطقي",
-    "fr": "logique"
+    "fr": "logique",
+    "zinnen": [
+      "7eq20hgq"
+    ]
   },
   {
     "nl": "modem",
@@ -597,7 +815,10 @@
     "tr": "modem",
     "en": "modem",
     "ar": "مودم",
-    "fr": "modem"
+    "fr": "modem",
+    "zinnen": [
+      "953hvb0k"
+    ]
   },
   {
     "nl": "momenteel",
@@ -605,7 +826,10 @@
     "tr": "şuan / şu anda",
     "en": "currently",
     "ar": "حالياً",
-    "fr": "actuellement"
+    "fr": "actuellement",
+    "zinnen": [
+      "h1woqedo"
+    ]
   },
   {
     "nl": "onbeperkt",
@@ -613,7 +837,10 @@
     "tr": "sınırsız",
     "en": "unlimited",
     "ar": "غير محدود",
-    "fr": "illimité"
+    "fr": "illimité",
+    "zinnen": [
+      "wra0lrmx"
+    ]
   },
   {
     "nl": "ongemak",
@@ -622,7 +849,10 @@
     "tr": "rahatsızlık",
     "en": "discomfort, inconvenience",
     "ar": "إزعاج",
-    "fr": "inconvénient"
+    "fr": "inconvénient",
+    "zinnen": [
+      "ldsbfj2g"
+    ]
   },
   {
     "nl": "overig",
@@ -630,7 +860,10 @@
     "tr": "diğer / çeşitli",
     "en": "other",
     "ar": "آخر",
-    "fr": "autre"
+    "fr": "autre",
+    "zinnen": [
+      "ezosgidn"
+    ]
   },
   {
     "nl": "slordig",
@@ -638,7 +871,11 @@
     "tr": "savsak, dağınık",
     "en": "sloppy, messy",
     "ar": "مهمل",
-    "fr": "néglégé"
+    "fr": "néglégé",
+    "zinnen": [
+      "ibfuurvx",
+      "ezosgidn"
+    ]
   },
   {
     "nl": "tegelijkertijd",
@@ -646,7 +883,10 @@
     "tr": "aynı zamanda",
     "en": "simultaneously",
     "ar": "في نفس الوقت",
-    "fr": "simultanément"
+    "fr": "simultanément",
+    "zinnen": [
+      "h1woqedo"
+    ]
   },
   {
     "nl": "uitpakken",
@@ -656,7 +896,10 @@
     "tr": "(ambalajdan) çıkarmak",
     "en": "to unpack",
     "ar": "يفرغ محتوياته",
-    "fr": "déballer"
+    "fr": "déballer",
+    "zinnen": [
+      "ty1kixve"
+    ]
   },
   {
     "nl": "verbinden",
@@ -666,7 +909,10 @@
     "tr": "bağlamak",
     "en": "to connect, bind",
     "ar": "يربط",
-    "fr": "connecter"
+    "fr": "connecter",
+    "zinnen": [
+      "953hvb0k"
+    ]
   },
   {
     "nl": "wifi",
@@ -675,7 +921,10 @@
     "tr": "Wi-Fi sinyali",
     "en": "Wi-Fi signal",
     "ar": "واي فاي",
-    "fr": "réseau Wi-Fi"
+    "fr": "réseau Wi-Fi",
+    "zinnen": [
+      "953hvb0k"
+    ]
   },
   {
     "nl": "wijzigen",
@@ -685,7 +934,10 @@
     "tr": "değiştirmek",
     "en": "to change, modify",
     "ar": "يُعدّل",
-    "fr": "modifier"
+    "fr": "modifier",
+    "zinnen": [
+      "9vsi0t5s"
+    ]
   },
   {
     "nl": "wijziging",
@@ -694,7 +946,10 @@
     "tr": "değişiklik",
     "en": "change, modification",
     "ar": "تغيير",
-    "fr": "modification"
+    "fr": "modification",
+    "zinnen": [
+      "9vsi0t5s"
+    ]
   },
   {
     "nl": "afwijzen",
@@ -704,7 +959,10 @@
     "tr": "reddetmek",
     "en": "to reject, refuse",
     "ar": "يرفض",
-    "fr": "rejeter"
+    "fr": "rejeter",
+    "zinnen": [
+      "sockjh18"
+    ]
   },
   {
     "nl": "bagage",
@@ -713,7 +971,10 @@
     "tr": "bagaj",
     "en": "luggage, baggage",
     "ar": "الأمتعة",
-    "fr": "bagages"
+    "fr": "bagages",
+    "zinnen": [
+      "mqmdlgd5"
+    ]
   },
   {
     "nl": "beschuldigen",
@@ -723,7 +984,10 @@
     "tr": "suçlamak",
     "en": "to accuse",
     "ar": "يتهم",
-    "fr": "accuser"
+    "fr": "accuser",
+    "zinnen": [
+      "9wxivq52"
+    ]
   },
   {
     "nl": "expliciet",
@@ -731,7 +995,10 @@
     "tr": "açık biçimde, açıkça belirtilmiş",
     "en": "explicit",
     "ar": "صريح",
-    "fr": "explicite"
+    "fr": "explicite",
+    "zinnen": [
+      "w6jmpj2o"
+    ]
   },
   {
     "nl": "expres",
@@ -739,7 +1006,10 @@
     "tr": "kasıtlı olarak, bilerek",
     "en": "on purpose, deliberately",
     "ar": "عن قصد، بشكل متعمد",
-    "fr": "exprès, intentionnellement"
+    "fr": "exprès, intentionnellement",
+    "zinnen": [
+      "9wxivq52"
+    ]
   },
   {
     "nl": "garage",
@@ -748,7 +1018,10 @@
     "tr": "garaj",
     "en": "garage",
     "ar": "مرآب",
-    "fr": "garage"
+    "fr": "garage",
+    "zinnen": [
+      "mqmdlgd5"
+    ]
   },
   {
     "nl": "gemeen",
@@ -756,7 +1029,10 @@
     "tr": "kötü niyetli, aşağılık / ortak",
     "en": "mean, nasty / common",
     "ar": "خسيس، حقير / مشترك",
-    "fr": "méchant, mesquin / commun"
+    "fr": "méchant, mesquin / commun",
+    "zinnen": [
+      "k4dismae"
+    ]
   },
   {
     "nl": "hal",
@@ -765,7 +1041,12 @@
     "tr": "terminal (yolculuk)",
     "en": "hall, terminal",
     "ar": "صالة الوصول/المغادرة",
-    "fr": "hall"
+    "fr": "hall",
+    "zinnen": [
+      "mqmdlgd5",
+      "igja8wq4",
+      "667whz7t"
+    ]
   },
   {
     "nl": "impliciet",
@@ -773,7 +1054,10 @@
     "tr": "örtülü / dolaylı",
     "en": "implicit",
     "ar": "ضمني",
-    "fr": "implicite"
+    "fr": "implicite",
+    "zinnen": [
+      "w6jmpj2o"
+    ]
   },
   {
     "nl": "koffer",
@@ -782,7 +1066,10 @@
     "tr": "bavul",
     "en": "suitcase, trunk",
     "ar": "حقيبة سفر",
-    "fr": "valise"
+    "fr": "valise",
+    "zinnen": [
+      "ty1kixve"
+    ]
   },
   {
     "nl": "landen",
@@ -792,7 +1079,10 @@
     "tr": "inmek (araçtan)",
     "en": "to disembark, land",
     "ar": "ينزل",
-    "fr": "débarquer"
+    "fr": "débarquer",
+    "zinnen": [
+      "sxweeeua"
+    ]
   },
   {
     "nl": "onterecht",
@@ -800,7 +1090,10 @@
     "tr": "haksız yere",
     "en": "unjustly, wrongly",
     "ar": "بشكل غير عادل",
-    "fr": "sans droit"
+    "fr": "sans droit",
+    "zinnen": [
+      "9wxivq52"
+    ]
   },
   {
     "nl": "onzin",
@@ -809,7 +1102,10 @@
     "tr": "saçma / anlamsızlık",
     "en": "nonsense, rubbish",
     "ar": "هراء",
-    "fr": "bêtises"
+    "fr": "bêtises",
+    "zinnen": [
+      "6brs4idg"
+    ]
   },
   {
     "nl": "rekenen op",
@@ -819,7 +1115,11 @@
     "tr": "hesaba katmak / güvenmek",
     "en": "to count on, rely on",
     "ar": "يعتمد على",
-    "fr": "compter sur"
+    "fr": "compter sur",
+    "zinnen": [
+      "99yxgkdi",
+      "0ny872jt"
+    ]
   },
   {
     "nl": "springen",
@@ -829,7 +1129,10 @@
     "tr": "atlamak / zıplamak",
     "en": "to jump",
     "ar": "يقفز",
-    "fr": "sauter"
+    "fr": "sauter",
+    "zinnen": [
+      "ikz5p8r9"
+    ]
   },
   {
     "nl": "teleurstelling",
@@ -838,7 +1141,10 @@
     "tr": "hayal kırıklığı",
     "en": "disappointment",
     "ar": "خيبة أمل",
-    "fr": "déception"
+    "fr": "déception",
+    "zinnen": [
+      "sockjh18"
+    ]
   },
   {
     "nl": "terrein",
@@ -847,7 +1153,10 @@
     "tr": "alan / arazi",
     "en": "terrain, area",
     "ar": "الأرض",
-    "fr": "terrain"
+    "fr": "terrain",
+    "zinnen": [
+      "sxweeeua"
+    ]
   },
   {
     "nl": "vastleggen",
@@ -857,7 +1166,10 @@
     "tr": "sabitleştirmek / kaydetmek",
     "en": "to record, fixate",
     "ar": "يسجل",
-    "fr": "enregistrer"
+    "fr": "enregistrer",
+    "zinnen": [
+      "6brs4idg"
+    ]
   },
   {
     "nl": "verdedigen",
@@ -867,7 +1179,11 @@
     "tr": "savunmak",
     "en": "to defend",
     "ar": "يدافع عن",
-    "fr": "défendre"
+    "fr": "défendre",
+    "zinnen": [
+      "99yxgkdi",
+      "0ny872jt"
+    ]
   },
   {
     "nl": "verlopen",
@@ -877,7 +1193,10 @@
     "tr": "geçmek (zaman)",
     "en": "to pass (time)",
     "ar": "يمر",
-    "fr": "passer"
+    "fr": "passer",
+    "zinnen": [
+      "ikz5p8r9"
+    ]
   },
   {
     "nl": "verwarrend",
@@ -885,7 +1204,10 @@
     "tr": "kafa karıştırıcı",
     "en": "confusing",
     "ar": "مربك",
-    "fr": "déroutant"
+    "fr": "déroutant",
+    "zinnen": [
+      "n2pd00oz"
+    ]
   },
   {
     "nl": "verwijten",
@@ -895,7 +1217,10 @@
     "tr": "kınamak, ayıplamak",
     "en": "to reproach, to blame",
     "ar": "يتهم بـ",
-    "fr": "accuser de"
+    "fr": "accuser de",
+    "zinnen": [
+      "k4dismae"
+    ]
   },
   {
     "nl": "zich realiseren",
@@ -905,7 +1230,10 @@
     "tr": "farkında olmak / idrak etmek",
     "en": "to realize oneself, become aware",
     "ar": "يُدرك",
-    "fr": "réaliser"
+    "fr": "réaliser",
+    "zinnen": [
+      "k4w0l4xc"
+    ]
   },
   {
     "nl": "zojuist",
@@ -913,6 +1241,9 @@
     "tr": "demin (çok az önce)",
     "en": "just now",
     "ar": "منذ لحظات",
-    "fr": "vient de"
+    "fr": "vient de",
+    "zinnen": [
+      "zf2zh5e7"
+    ]
   }
 ]

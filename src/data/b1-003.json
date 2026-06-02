@@ -7,7 +7,10 @@
     "tr": "dokunmak",
     "en": "to touch",
     "ar": "يلمس",
-    "fr": "toucher"
+    "fr": "toucher",
+    "zinnen": [
+      "vtxfnmba"
+    ]
   },
   {
     "nl": "alternatief",
@@ -16,7 +19,10 @@
     "tr": "alternatif, seçenek",
     "en": "alternative",
     "ar": "بديل",
-    "fr": "alternative"
+    "fr": "alternative",
+    "zinnen": [
+      "sb7b59j2"
+    ]
   },
   {
     "nl": "belangstelling",
@@ -25,7 +31,10 @@
     "tr": "merak, ilgi",
     "en": "interest",
     "ar": "اهتمام",
-    "fr": "intérêt"
+    "fr": "intérêt",
+    "zinnen": [
+      "vtxfnmba"
+    ]
   },
   {
     "nl": "bijhouden",
@@ -35,7 +44,10 @@
     "tr": "takip etmek, güncel tutmak",
     "en": "to keep up with, to track",
     "ar": "يتابع، يُحدّث",
-    "fr": "suivre, tenir à jour"
+    "fr": "suivre, tenir à jour",
+    "zinnen": [
+      "97olydtl"
+    ]
   },
   {
     "nl": "conservatief",
@@ -43,7 +55,10 @@
     "tr": "tutucu, muhafazakâr",
     "en": "conservative",
     "ar": "محافظ",
-    "fr": "conservateur"
+    "fr": "conservateur",
+    "zinnen": [
+      "sb7b59j2"
+    ]
   },
   {
     "nl": "cynisch",
@@ -51,7 +66,10 @@
     "tr": "alaycı, kuşkucu",
     "en": "cynical",
     "ar": "متشكك، ساخر",
-    "fr": "cynique"
+    "fr": "cynique",
+    "zinnen": [
+      "sb7b59j2"
+    ]
   },
   {
     "nl": "daten",
@@ -61,7 +79,10 @@
     "tr": "flört etmek, çıkmak",
     "en": "to date",
     "ar": "يواعد",
-    "fr": "sortir avec quelqu'un"
+    "fr": "sortir avec quelqu'un",
+    "zinnen": [
+      "1ina64rd"
+    ]
   },
   {
     "nl": "doorsturen",
@@ -71,7 +92,10 @@
     "tr": "iletmek, yönlendirmek",
     "en": "to forward, to redirect",
     "ar": "يُعيد إرسال، يُحيل",
-    "fr": "transférer, faire suivre"
+    "fr": "transférer, faire suivre",
+    "zinnen": [
+      "a1zrs8y2"
+    ]
   },
   {
     "nl": "gebruiksvriendelijk",
@@ -79,7 +103,11 @@
     "tr": "kullanıcı dostu, kullanışlı",
     "en": "user-friendly",
     "ar": "سهل الاستخدام",
-    "fr": "convivial, facile à utiliser"
+    "fr": "convivial, facile à utiliser",
+    "zinnen": [
+      "4fyi7ylk",
+      "q2lvw2mx"
+    ]
   },
   {
     "nl": "geregeld",
@@ -87,7 +115,10 @@
     "tr": "düzenli olarak, sıklıkla",
     "en": "regularly, frequently",
     "ar": "بانتظام، بشكل متكرر",
-    "fr": "régulièrement, souvent"
+    "fr": "régulièrement, souvent",
+    "zinnen": [
+      "1ina64rd"
+    ]
   },
   {
     "nl": "grafiek",
@@ -96,7 +127,10 @@
     "tr": "grafik",
     "en": "graph, chart",
     "ar": "رسم بياني",
-    "fr": "graphique"
+    "fr": "graphique",
+    "zinnen": [
+      "97olydtl"
+    ]
   },
   {
     "nl": "instellen",
@@ -106,16 +140,10 @@
     "tr": "ayarlamak, kurmak",
     "en": "to set up, to configure",
     "ar": "يضبط، يُعدّ",
-    "fr": "configurer, régler"
-  },
-  {
-    "nl": "kaart",
-    "type": "noun",
-    "article": "de",
-    "tr": "harita / kart",
-    "en": "map / card",
-    "ar": "خريطة / بطاقة",
-    "fr": "carte"
+    "fr": "configurer, régler",
+    "zinnen": [
+      "ucghurrt"
+    ]
   },
   {
     "nl": "meten",
@@ -125,7 +153,10 @@
     "tr": "ölçmek",
     "en": "to measure",
     "ar": "يقيس",
-    "fr": "mesurer"
+    "fr": "mesurer",
+    "zinnen": [
+      "97olydtl"
+    ]
   },
   {
     "nl": "navigatie",
@@ -134,7 +165,10 @@
     "tr": "navigasyon, yön bulma",
     "en": "navigation",
     "ar": "ملاحة، توجيه",
-    "fr": "navigation"
+    "fr": "navigation",
+    "zinnen": [
+      "4fyi7ylk"
+    ]
   },
   {
     "nl": "nostalgisch",
@@ -142,7 +176,10 @@
     "tr": "nostaljik",
     "en": "nostalgic",
     "ar": "حنيني",
-    "fr": "nostalgique"
+    "fr": "nostalgique",
+    "zinnen": [
+      "1ina64rd"
+    ]
   },
   {
     "nl": "nut",
@@ -151,7 +188,10 @@
     "tr": "yarar, fayda",
     "en": "use, benefit",
     "ar": "فائدة، نفع",
-    "fr": "utilité, avantage"
+    "fr": "utilité, avantage",
+    "zinnen": [
+      "ucghurrt"
+    ]
   },
   {
     "nl": "opname",
@@ -160,7 +200,11 @@
     "tr": "çekim, kayıt / hastaneye yatış",
     "en": "recording / admission (hospital)",
     "ar": "تسجيل / قبول (في المستشفى)",
-    "fr": "enregistrement / admission (hôpital)"
+    "fr": "enregistrement / admission (hôpital)",
+    "zinnen": [
+      "qpo41xrj",
+      "mrrlqjam"
+    ]
   },
   {
     "nl": "scherp",
@@ -168,7 +212,10 @@
     "tr": "keskin, net",
     "en": "sharp, clear",
     "ar": "حاد، واضح",
-    "fr": "tranchant, net"
+    "fr": "tranchant, net",
+    "zinnen": [
+      "qpo41xrj"
+    ]
   },
   {
     "nl": "staren",
@@ -178,7 +225,10 @@
     "tr": "dik dik bakmak",
     "en": "to stare",
     "ar": "يحدّق",
-    "fr": "fixer du regard"
+    "fr": "fixer du regard",
+    "zinnen": [
+      "vtxfnmba"
+    ]
   },
   {
     "nl": "testen",
@@ -188,7 +238,10 @@
     "tr": "test etmek, denemek",
     "en": "to test",
     "ar": "يختبر",
-    "fr": "tester"
+    "fr": "tester",
+    "zinnen": [
+      "qpo41xrj"
+    ]
   },
   {
     "nl": "toegeven",
@@ -198,7 +251,10 @@
     "tr": "itiraf etmek, kabullenmek",
     "en": "to admit, to concede",
     "ar": "يعترف، يُقرّ",
-    "fr": "admettre, concéder"
+    "fr": "admettre, concéder",
+    "zinnen": [
+      "x2z3pty5"
+    ]
   },
   {
     "nl": "toestel",
@@ -207,7 +263,10 @@
     "tr": "cihaz, alet",
     "en": "device, appliance",
     "ar": "جهاز",
-    "fr": "appareil, dispositif"
+    "fr": "appareil, dispositif",
+    "zinnen": [
+      "4fyi7ylk"
+    ]
   },
   {
     "nl": "vernieuwing",
@@ -216,7 +275,10 @@
     "tr": "yenilik, yenileme",
     "en": "renewal, innovation",
     "ar": "تجديد، ابتكار",
-    "fr": "renouveau, innovation"
+    "fr": "renouveau, innovation",
+    "zinnen": [
+      "q2lvw2mx"
+    ]
   },
   {
     "nl": "wantrouwen",
@@ -225,7 +287,10 @@
     "tr": "güvensizlik, şüphe",
     "en": "distrust, suspicion",
     "ar": "عدم ثقة، شك",
-    "fr": "méfiance, suspicion"
+    "fr": "méfiance, suspicion",
+    "zinnen": [
+      "x2z3pty5"
+    ]
   },
   {
     "nl": "afzender",
@@ -234,7 +299,10 @@
     "tr": "gönderen",
     "en": "sender",
     "ar": "مُرسِل",
-    "fr": "expéditeur"
+    "fr": "expéditeur",
+    "zinnen": [
+      "a1zrs8y2"
+    ]
   },
   {
     "nl": "besmetten",
@@ -244,7 +312,10 @@
     "tr": "bulaştırmak, enfekte etmek",
     "en": "to infect, to contaminate",
     "ar": "يُعدي، يُلوّث",
-    "fr": "contaminer, infecter"
+    "fr": "contaminer, infecter",
+    "zinnen": [
+      "ee6htw30"
+    ]
   },
   {
     "nl": "bevatten",
@@ -254,7 +325,10 @@
     "tr": "içermek, kapsamak",
     "en": "to contain, to include",
     "ar": "يحتوي على",
-    "fr": "contenir, inclure"
+    "fr": "contenir, inclure",
+    "zinnen": [
+      "e39ifwbt"
+    ]
   },
   {
     "nl": "bijlage",
@@ -263,7 +337,12 @@
     "tr": "ek, ilişik",
     "en": "attachment, appendix",
     "ar": "مرفق، ملحق",
-    "fr": "pièce jointe, annexe"
+    "fr": "pièce jointe, annexe",
+    "zinnen": [
+      "a1zrs8y2",
+      "e39ifwbt",
+      "ydjcy4sp"
+    ]
   },
   {
     "nl": "filter",
@@ -272,7 +351,10 @@
     "tr": "filtre",
     "en": "filter",
     "ar": "فلتر، مرشّح",
-    "fr": "filtre"
+    "fr": "filtre",
+    "zinnen": [
+      "ee6htw30"
+    ]
   },
   {
     "nl": "fraude",
@@ -281,7 +363,10 @@
     "tr": "dolandırıcılık, hile",
     "en": "fraud",
     "ar": "احتيال",
-    "fr": "fraude"
+    "fr": "fraude",
+    "zinnen": [
+      "e39ifwbt"
+    ]
   },
   {
     "nl": "gebruikmaken van",
@@ -291,7 +376,11 @@
     "tr": "yararlanmak, kullanmak",
     "en": "to make use of, to utilize",
     "ar": "يستفيد من، يستخدم",
-    "fr": "profiter de, utiliser"
+    "fr": "profiter de, utiliser",
+    "zinnen": [
+      "rgzvqlch",
+      "ykzzpv1t"
+    ]
   },
   {
     "nl": "gewelddadig",
@@ -299,7 +388,10 @@
     "tr": "şiddet içeren",
     "en": "violent",
     "ar": "عنيف",
-    "fr": "violent"
+    "fr": "violent",
+    "zinnen": [
+      "vmqkh5cq"
+    ]
   },
   {
     "nl": "invoeren",
@@ -309,7 +401,10 @@
     "tr": "giriş yapmak / uygulamaya koymak",
     "en": "to enter (data) / to introduce (a policy)",
     "ar": "يُدخل / يُطبّق",
-    "fr": "saisir / introduire"
+    "fr": "saisir / introduire",
+    "zinnen": [
+      "iyxpnrye"
+    ]
   },
   {
     "nl": "minderjarig",
@@ -317,7 +412,10 @@
     "tr": "reşit olmayan, küçük",
     "en": "underage, minor",
     "ar": "قاصر",
-    "fr": "mineur"
+    "fr": "mineur",
+    "zinnen": [
+      "9cjoidza"
+    ]
   },
   {
     "nl": "misbruiken",
@@ -327,7 +425,10 @@
     "tr": "kötüye kullanmak, istismar etmek",
     "en": "to abuse, to misuse",
     "ar": "يُسيء الاستخدام، يستغل",
-    "fr": "abuser de, utiliser à mauvais escient"
+    "fr": "abuser de, utiliser à mauvais escient",
+    "zinnen": [
+      "9cjoidza"
+    ]
   },
   {
     "nl": "nep",
@@ -335,7 +436,10 @@
     "tr": "sahte, taklit",
     "en": "fake, counterfeit",
     "ar": "مزيف، وهمي",
-    "fr": "faux, factice"
+    "fr": "faux, factice",
+    "zinnen": [
+      "iyxpnrye"
+    ]
   },
   {
     "nl": "ongepast",
@@ -343,7 +447,11 @@
     "tr": "uygunsuz, yakışıksız",
     "en": "inappropriate",
     "ar": "غير لائق",
-    "fr": "inapproprié, déplacé"
+    "fr": "inapproprié, déplacé",
+    "zinnen": [
+      "9v3f7xnr",
+      "plms1xtc"
+    ]
   },
   {
     "nl": "plegen",
@@ -353,7 +461,10 @@
     "tr": "işlemek (suç)",
     "en": "to commit (a crime)",
     "ar": "يرتكب (جريمة)",
-    "fr": "commettre (un crime)"
+    "fr": "commettre (un crime)",
+    "zinnen": [
+      "vmqkh5cq"
+    ]
   },
   {
     "nl": "raadplegen",
@@ -363,7 +474,11 @@
     "tr": "danışmak, başvurmak",
     "en": "to consult",
     "ar": "يستشير، يرجع إلى",
-    "fr": "consulter"
+    "fr": "consulter",
+    "zinnen": [
+      "rgzvqlch",
+      "ykzzpv1t"
+    ]
   },
   {
     "nl": "stichting",
@@ -372,7 +487,10 @@
     "tr": "vakıf, dernek",
     "en": "foundation, charity",
     "ar": "مؤسسة، جمعية خيرية",
-    "fr": "fondation, association"
+    "fr": "fondation, association",
+    "zinnen": [
+      "9cjoidza"
+    ]
   },
   {
     "nl": "teken",
@@ -381,7 +499,10 @@
     "tr": "işaret, sembol",
     "en": "sign, symbol",
     "ar": "علامة، رمز",
-    "fr": "signe, symbole"
+    "fr": "signe, symbole",
+    "zinnen": [
+      "9v3f7xnr"
+    ]
   },
   {
     "nl": "uitloggen",
@@ -391,7 +512,10 @@
     "tr": "oturumu kapatmak",
     "en": "to log out",
     "ar": "يُسجّل الخروج",
-    "fr": "se déconnecter"
+    "fr": "se déconnecter",
+    "zinnen": [
+      "p1hga06o"
+    ]
   },
   {
     "nl": "vals",
@@ -399,7 +523,11 @@
     "tr": "sahte, yanlış",
     "en": "false, fake",
     "ar": "مزيف، كاذب",
-    "fr": "faux"
+    "fr": "faux",
+    "zinnen": [
+      "iyxpnrye",
+      "jfuqi93w"
+    ]
   },
   {
     "nl": "variatie",
@@ -408,7 +536,10 @@
     "tr": "çeşitlilik, değişiklik",
     "en": "variation, variety",
     "ar": "تنوع، اختلاف",
-    "fr": "variation, variété"
+    "fr": "variation, variété",
+    "zinnen": [
+      "jfuqi93w"
+    ]
   },
   {
     "nl": "vermijden",
@@ -418,7 +549,10 @@
     "tr": "kaçınmak",
     "en": "to avoid",
     "ar": "يتجنب",
-    "fr": "éviter"
+    "fr": "éviter",
+    "zinnen": [
+      "p1hga06o"
+    ]
   },
   {
     "nl": "verwijderen",
@@ -428,7 +562,10 @@
     "tr": "silmek, kaldırmak",
     "en": "to delete, to remove",
     "ar": "يحذف، يُزيل",
-    "fr": "supprimer, retirer"
+    "fr": "supprimer, retirer",
+    "zinnen": [
+      "p1hga06o"
+    ]
   },
   {
     "nl": "virus",
@@ -437,7 +574,10 @@
     "tr": "virüs",
     "en": "virus",
     "ar": "فيروس",
-    "fr": "virus"
+    "fr": "virus",
+    "zinnen": [
+      "ee6htw30"
+    ]
   },
   {
     "nl": "voorlichting",
@@ -446,7 +586,10 @@
     "tr": "bilgilendirme, bilinçlendirme",
     "en": "information, awareness",
     "ar": "توعية، إعلام",
-    "fr": "information, sensibilisation"
+    "fr": "information, sensibilisation",
+    "zinnen": [
+      "9v3f7xnr"
+    ]
   },
   {
     "nl": "zoekmachine",
@@ -455,7 +598,11 @@
     "tr": "arama motoru",
     "en": "search engine",
     "ar": "محرك بحث",
-    "fr": "moteur de recherche"
+    "fr": "moteur de recherche",
+    "zinnen": [
+      "rgzvqlch",
+      "ykzzpv1t"
+    ]
   },
   {
     "nl": "zolang",
@@ -463,7 +610,10 @@
     "tr": "-diği sürece",
     "en": "as long as",
     "ar": "طالما، ما دام",
-    "fr": "tant que"
+    "fr": "tant que",
+    "zinnen": [
+      "jfuqi93w"
+    ]
   },
   {
     "nl": "aangezien",
@@ -471,7 +621,10 @@
     "tr": "-diğinden, zira",
     "en": "since, because",
     "ar": "بما أن، إذ",
-    "fr": "puisque, étant donné que"
+    "fr": "puisque, étant donné que",
+    "zinnen": [
+      "v0t8p7fr"
+    ]
   },
   {
     "nl": "balie",
@@ -480,7 +633,10 @@
     "tr": "gişe, ön büro",
     "en": "counter, reception desk",
     "ar": "مكتب الاستقبال، شباك",
-    "fr": "guichet, comptoir"
+    "fr": "guichet, comptoir",
+    "zinnen": [
+      "v0t8p7fr"
+    ]
   },
   {
     "nl": "beleid",
@@ -489,7 +645,10 @@
     "tr": "politika, strateji",
     "en": "policy",
     "ar": "سياسة",
-    "fr": "politique (stratégie)"
+    "fr": "politique (stratégie)",
+    "zinnen": [
+      "v0t8p7fr"
+    ]
   },
   {
     "nl": "bijwonen",
@@ -499,7 +658,10 @@
     "tr": "katılmak, hazır bulunmak",
     "en": "to attend",
     "ar": "يحضر",
-    "fr": "assister à"
+    "fr": "assister à",
+    "zinnen": [
+      "yg052dp6"
+    ]
   },
   {
     "nl": "directie",
@@ -508,7 +670,10 @@
     "tr": "yönetim, müdüriyet",
     "en": "management, board of directors",
     "ar": "إدارة، مديرية",
-    "fr": "direction"
+    "fr": "direction",
+    "zinnen": [
+      "yg052dp6"
+    ]
   },
   {
     "nl": "dringend",
@@ -516,7 +681,10 @@
     "tr": "acil, ivedi",
     "en": "urgent",
     "ar": "عاجل",
-    "fr": "urgent"
+    "fr": "urgent",
+    "zinnen": [
+      "yg052dp6"
+    ]
   },
   {
     "nl": "foutmelding",
@@ -525,7 +693,10 @@
     "tr": "hata mesajı",
     "en": "error message",
     "ar": "رسالة خطأ",
-    "fr": "message d'erreur"
+    "fr": "message d'erreur",
+    "zinnen": [
+      "e9o36517"
+    ]
   },
   {
     "nl": "frustrerend",
@@ -533,7 +704,10 @@
     "tr": "sinir bozucu, can sıkıcı",
     "en": "frustrating",
     "ar": "محبط، مُزعج",
-    "fr": "frustrant"
+    "fr": "frustrant",
+    "zinnen": [
+      "w3yox8jz"
+    ]
   },
   {
     "nl": "gezeur",
@@ -542,7 +716,10 @@
     "tr": "dırdır, sızlanma",
     "en": "nagging, whining",
     "ar": "تذمّر، إزعاج",
-    "fr": "pleurnicheries, jérémiades"
+    "fr": "pleurnicheries, jérémiades",
+    "zinnen": [
+      "w3yox8jz"
+    ]
   },
   {
     "nl": "handleiding",
@@ -551,7 +728,10 @@
     "tr": "kullanım kılavuzu",
     "en": "manual, instruction guide",
     "ar": "دليل الاستخدام",
-    "fr": "manuel, guide d'utilisation"
+    "fr": "manuel, guide d'utilisation",
+    "zinnen": [
+      "basp1ozw"
+    ]
   },
   {
     "nl": "herstellen",
@@ -561,7 +741,10 @@
     "tr": "onarmak, iyileşmek",
     "en": "to repair, to recover",
     "ar": "يُصلح، يتعافى",
-    "fr": "réparer, se rétablir"
+    "fr": "réparer, se rétablir",
+    "zinnen": [
+      "e9o36517"
+    ]
   },
   {
     "nl": "onjuist",
@@ -569,7 +752,10 @@
     "tr": "yanlış, hatalı",
     "en": "incorrect, wrong",
     "ar": "خاطئ، غير صحيح",
-    "fr": "incorrect, faux"
+    "fr": "incorrect, faux",
+    "zinnen": [
+      "w3yox8jz"
+    ]
   },
   {
     "nl": "ontbreken",
@@ -579,7 +765,10 @@
     "tr": "eksik olmak",
     "en": "to be missing, to lack",
     "ar": "يغيب، ينقص",
-    "fr": "manquer, faire défaut"
+    "fr": "manquer, faire défaut",
+    "zinnen": [
+      "basp1ozw"
+    ]
   },
   {
     "nl": "opstarten",
@@ -589,7 +778,10 @@
     "tr": "başlatmak, açmak",
     "en": "to start up, to boot",
     "ar": "يُشغّل، يبدأ",
-    "fr": "démarrer, lancer"
+    "fr": "démarrer, lancer",
+    "zinnen": [
+      "e9o36517"
+    ]
   },
   {
     "nl": "poging",
@@ -598,7 +790,10 @@
     "tr": "deneme, girişim",
     "en": "attempt",
     "ar": "محاولة",
-    "fr": "tentative"
+    "fr": "tentative",
+    "zinnen": [
+      "vcvp9w12"
+    ]
   },
   {
     "nl": "puur",
@@ -606,7 +801,10 @@
     "tr": "saf, tam, sadece",
     "en": "pure, purely",
     "ar": "خالص، بحت",
-    "fr": "pur, purement"
+    "fr": "pur, purement",
+    "zinnen": [
+      "yaygh0o1"
+    ]
   },
   {
     "nl": "recent",
@@ -614,7 +812,10 @@
     "tr": "yakın zamana ait, son",
     "en": "recent",
     "ar": "حديث، أخير",
-    "fr": "récent"
+    "fr": "récent",
+    "zinnen": [
+      "yaygh0o1"
+    ]
   },
   {
     "nl": "sessie",
@@ -623,7 +824,10 @@
     "tr": "oturum, seans",
     "en": "session",
     "ar": "جلسة",
-    "fr": "session, séance"
+    "fr": "session, séance",
+    "zinnen": [
+      "vcvp9w12"
+    ]
   },
   {
     "nl": "standaard",
@@ -631,7 +835,10 @@
     "tr": "standart olarak, varsayılan",
     "en": "by default, standard",
     "ar": "افتراضياً، بشكل قياسي",
-    "fr": "par défaut, standard"
+    "fr": "par défaut, standard",
+    "zinnen": [
+      "vcvp9w12"
+    ]
   },
   {
     "nl": "uitleg",
@@ -640,7 +847,10 @@
     "tr": "açıklama, izah",
     "en": "explanation",
     "ar": "شرح، توضيح",
-    "fr": "explication"
+    "fr": "explication",
+    "zinnen": [
+      "basp1ozw"
+    ]
   },
   {
     "nl": "vereist",
@@ -648,7 +858,10 @@
     "tr": "gerekli, zorunlu",
     "en": "required, necessary",
     "ar": "مطلوب، ضروري",
-    "fr": "requis, nécessaire"
+    "fr": "requis, nécessaire",
+    "zinnen": [
+      "yaygh0o1"
+    ]
   },
   {
     "nl": "verschijnen",
@@ -658,7 +871,10 @@
     "tr": "görünmek, ortaya çıkmak",
     "en": "to appear, to show up",
     "ar": "يظهر",
-    "fr": "apparaître, paraître"
+    "fr": "apparaître, paraître",
+    "zinnen": [
+      "kg2jtihc"
+    ]
   },
   {
     "nl": "verspilling",
@@ -667,7 +883,10 @@
     "tr": "israf, savurganlık",
     "en": "waste",
     "ar": "هدر، تبذير",
-    "fr": "gaspillage"
+    "fr": "gaspillage",
+    "zinnen": [
+      "kg2jtihc"
+    ]
   },
   {
     "nl": "vlug",
@@ -675,7 +894,10 @@
     "tr": "çabuk, hızlı",
     "en": "quick, fast",
     "ar": "سريع",
-    "fr": "rapide, vite"
+    "fr": "rapide, vite",
+    "zinnen": [
+      "kg2jtihc"
+    ]
   },
   {
     "nl": "vooruit",
@@ -683,7 +905,10 @@
     "tr": "ileri, öne",
     "en": "forward, ahead",
     "ar": "للأمام",
-    "fr": "en avant"
+    "fr": "en avant",
+    "zinnen": [
+      "thxghz9o"
+    ]
   },
   {
     "nl": "afname",
@@ -692,7 +917,10 @@
     "tr": "azalma, düşüş",
     "en": "decrease, decline",
     "ar": "انخفاض، تراجع",
-    "fr": "diminution, baisse"
+    "fr": "diminution, baisse",
+    "zinnen": [
+      "w1mcyqei"
+    ]
   },
   {
     "nl": "arm",
@@ -700,7 +928,11 @@
     "tr": "fakir, yoksul",
     "en": "poor",
     "ar": "فقير",
-    "fr": "pauvre"
+    "fr": "pauvre",
+    "zinnen": [
+      "w1mcyqei",
+      "7x1bszrd"
+    ]
   },
   {
     "nl": "armoede",
@@ -709,7 +941,10 @@
     "tr": "yoksulluk, fakirlik",
     "en": "poverty",
     "ar": "فقر",
-    "fr": "pauvreté"
+    "fr": "pauvreté",
+    "zinnen": [
+      "w1mcyqei"
+    ]
   },
   {
     "nl": "bedreiging",
@@ -718,7 +953,10 @@
     "tr": "tehdit",
     "en": "threat",
     "ar": "تهديد",
-    "fr": "menace"
+    "fr": "menace",
+    "zinnen": [
+      "3a3vjsvg"
+    ]
   },
   {
     "nl": "beïnvloeden",
@@ -728,7 +966,10 @@
     "tr": "etkilemek",
     "en": "to influence, to affect",
     "ar": "يُؤثّر على",
-    "fr": "influencer, affecter"
+    "fr": "influencer, affecter",
+    "zinnen": [
+      "3a3vjsvg"
+    ]
   },
   {
     "nl": "conclusie",
@@ -737,7 +978,10 @@
     "tr": "sonuç, vardığımız nokta",
     "en": "conclusion",
     "ar": "استنتاج",
-    "fr": "conclusion"
+    "fr": "conclusion",
+    "zinnen": [
+      "o725fi2v"
+    ]
   },
   {
     "nl": "eigenschap",
@@ -746,7 +990,10 @@
     "tr": "özellik, nitelik",
     "en": "characteristic, property",
     "ar": "خاصية، صفة",
-    "fr": "propriété, caractéristique"
+    "fr": "propriété, caractéristique",
+    "zinnen": [
+      "o725fi2v"
+    ]
   },
   {
     "nl": "fabriek",
@@ -755,7 +1002,10 @@
     "tr": "fabrika",
     "en": "factory",
     "ar": "مصنع",
-    "fr": "usine, fabrique"
+    "fr": "usine, fabrique",
+    "zinnen": [
+      "b5kzul1i"
+    ]
   },
   {
     "nl": "intelligent",
@@ -763,7 +1013,10 @@
     "tr": "zeki, akıllı",
     "en": "intelligent",
     "ar": "ذكي",
-    "fr": "intelligent"
+    "fr": "intelligent",
+    "zinnen": [
+      "o725fi2v"
+    ]
   },
   {
     "nl": "kunstmatig",
@@ -771,7 +1024,10 @@
     "tr": "yapay, suni",
     "en": "artificial",
     "ar": "اصطناعي",
-    "fr": "artificiel"
+    "fr": "artificiel",
+    "zinnen": [
+      "iiymsvg8"
+    ]
   },
   {
     "nl": "landbouw",
@@ -780,7 +1036,10 @@
     "tr": "tarım, ziraat",
     "en": "agriculture, farming",
     "ar": "زراعة",
-    "fr": "agriculture"
+    "fr": "agriculture",
+    "zinnen": [
+      "34b9gx08"
+    ]
   },
   {
     "nl": "lever",
@@ -789,7 +1048,10 @@
     "tr": "karaciğer",
     "en": "liver",
     "ar": "كبد",
-    "fr": "foie"
+    "fr": "foie",
+    "zinnen": [
+      "c53atpuv"
+    ]
   },
   {
     "nl": "menselijk",
@@ -797,7 +1059,10 @@
     "tr": "insani, insan",
     "en": "human",
     "ar": "إنساني، بشري",
-    "fr": "humain"
+    "fr": "humain",
+    "zinnen": [
+      "aekplacj"
+    ]
   },
   {
     "nl": "nier",
@@ -806,7 +1071,10 @@
     "tr": "böbrek",
     "en": "kidney",
     "ar": "كلية",
-    "fr": "rein"
+    "fr": "rein",
+    "zinnen": [
+      "c53atpuv"
+    ]
   },
   {
     "nl": "orgaan",
@@ -815,7 +1083,10 @@
     "tr": "organ",
     "en": "organ",
     "ar": "عضو",
-    "fr": "organe"
+    "fr": "organe",
+    "zinnen": [
+      "c53atpuv"
+    ]
   },
   {
     "nl": "produceren",
@@ -825,7 +1096,10 @@
     "tr": "üretmek",
     "en": "to produce",
     "ar": "ينتج",
-    "fr": "produire"
+    "fr": "produire",
+    "zinnen": [
+      "b5kzul1i"
+    ]
   },
   {
     "nl": "productie",
@@ -834,7 +1108,10 @@
     "tr": "üretim",
     "en": "production",
     "ar": "إنتاج",
-    "fr": "production"
+    "fr": "production",
+    "zinnen": [
+      "b5kzul1i"
+    ]
   },
   {
     "nl": "robot",
@@ -843,7 +1120,10 @@
     "tr": "robot",
     "en": "robot",
     "ar": "روبوت",
-    "fr": "robot"
+    "fr": "robot",
+    "zinnen": [
+      "iiymsvg8"
+    ]
   },
   {
     "nl": "solidariteit",
@@ -852,7 +1132,10 @@
     "tr": "dayanışma",
     "en": "solidarity",
     "ar": "تضامن",
-    "fr": "solidarité"
+    "fr": "solidarité",
+    "zinnen": [
+      "3a3vjsvg"
+    ]
   },
   {
     "nl": "technologisch",
@@ -860,7 +1143,10 @@
     "tr": "teknolojik",
     "en": "technological",
     "ar": "تكنولوجي",
-    "fr": "technologique"
+    "fr": "technologique",
+    "zinnen": [
+      "iiymsvg8"
+    ]
   },
   {
     "nl": "tekort",
@@ -869,7 +1155,10 @@
     "tr": "kıtlık, eksiklik",
     "en": "shortage, deficit",
     "ar": "نقص، عجز",
-    "fr": "pénurie, manque"
+    "fr": "pénurie, manque",
+    "zinnen": [
+      "34b9gx08"
+    ]
   },
   {
     "nl": "toekomstig",
@@ -877,7 +1166,10 @@
     "tr": "gelecekteki",
     "en": "future",
     "ar": "مستقبلي",
-    "fr": "futur"
+    "fr": "futur",
+    "zinnen": [
+      "34b9gx08"
+    ]
   },
   {
     "nl": "tolerantie",
@@ -886,7 +1178,10 @@
     "tr": "hoşgörü, tolerans",
     "en": "tolerance",
     "ar": "تسامح",
-    "fr": "tolérance"
+    "fr": "tolérance",
+    "zinnen": [
+      "aekplacj"
+    ]
   },
   {
     "nl": "uitvinding",
@@ -895,7 +1190,10 @@
     "tr": "icat, buluş",
     "en": "invention",
     "ar": "اختراع",
-    "fr": "invention"
+    "fr": "invention",
+    "zinnen": [
+      "56h7j2rl"
+    ]
   },
   {
     "nl": "voedsel",
@@ -904,6 +1202,9 @@
     "tr": "gıda, yiyecek",
     "en": "food",
     "ar": "غذاء، طعام",
-    "fr": "nourriture, aliment"
+    "fr": "nourriture, aliment",
+    "zinnen": [
+      "56h7j2rl"
+    ]
   }
 ]

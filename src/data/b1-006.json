@@ -6,7 +6,10 @@
     "tr": "hitap, selamlama (mektup başlığı)",
     "en": "salutation, opening address",
     "ar": "تحية، مقدمة الرسالة",
-    "fr": "formule d'appel, en-tête"
+    "fr": "formule d'appel, en-tête",
+    "zinnen": [
+      "uzx8t38h"
+    ]
   },
   {
     "nl": "beledigen",
@@ -16,7 +19,10 @@
     "tr": "hakaret etmek",
     "en": "to insult, to offend",
     "ar": "يُهين، يُسيء إلى",
-    "fr": "insulter, offenser"
+    "fr": "insulter, offenser",
+    "zinnen": [
+      "z4xsgs0o"
+    ]
   },
   {
     "nl": "benaderen",
@@ -26,7 +32,10 @@
     "tr": "yaklaşmak, başvurmak",
     "en": "to approach, to contact",
     "ar": "يقترب، يتواصل مع",
-    "fr": "approcher, contacter"
+    "fr": "approcher, contacter",
+    "zinnen": [
+      "3bc5blul"
+    ]
   },
   {
     "nl": "bevriend",
@@ -34,7 +43,10 @@
     "tr": "arkadaş olan, dostane",
     "en": "friendly, on friendly terms",
     "ar": "صديق",
-    "fr": "ami, lié d'amitié"
+    "fr": "ami, lié d'amitié",
+    "zinnen": [
+      "syem10e5"
+    ]
   },
   {
     "nl": "concurrent",
@@ -43,7 +55,10 @@
     "tr": "rakip",
     "en": "competitor, rival",
     "ar": "منافس",
-    "fr": "concurrent, rival"
+    "fr": "concurrent, rival",
+    "zinnen": [
+      "syem10e5"
+    ]
   },
   {
     "nl": "consultant",
@@ -52,7 +67,10 @@
     "tr": "danışman, müşavir",
     "en": "consultant",
     "ar": "مستشار",
-    "fr": "consultant, conseiller"
+    "fr": "consultant, conseiller",
+    "zinnen": [
+      "8qnjf6sj"
+    ]
   },
   {
     "nl": "desondanks",
@@ -60,7 +78,10 @@
     "tr": "buna rağmen, yine de",
     "en": "despite this, nevertheless",
     "ar": "على الرغم من ذلك",
-    "fr": "malgré cela, néanmoins"
+    "fr": "malgré cela, néanmoins",
+    "zinnen": [
+      "r7ae8nuy"
+    ]
   },
   {
     "nl": "gastvrij",
@@ -68,7 +89,10 @@
     "tr": "misafirperver",
     "en": "hospitable",
     "ar": "مضياف، كريم",
-    "fr": "hospitalier, accueillant"
+    "fr": "hospitalier, accueillant",
+    "zinnen": [
+      "3bc5blul"
+    ]
   },
   {
     "nl": "gepast",
@@ -76,7 +100,10 @@
     "tr": "uygun, yerinde",
     "en": "appropriate, fitting",
     "ar": "مناسب، لائق",
-    "fr": "approprié, convenable"
+    "fr": "approprié, convenable",
+    "zinnen": [
+      "3bc5blul"
+    ]
   },
   {
     "nl": "gunnen",
@@ -86,7 +113,10 @@
     "tr": "layık görmek, hak ettiğini kabul etmek",
     "en": "to grant, to allow (someone to have something)",
     "ar": "يمنح، يرى شخصاً جديراً بشيء",
-    "fr": "accorder, ne pas envier"
+    "fr": "accorder, ne pas envier",
+    "zinnen": [
+      "syem10e5"
+    ]
   },
   {
     "nl": "hiërarchisch",
@@ -94,7 +124,10 @@
     "tr": "hiyerarşik",
     "en": "hierarchical",
     "ar": "هرمي",
-    "fr": "hiérarchique"
+    "fr": "hiérarchique",
+    "zinnen": [
+      "8qnjf6sj"
+    ]
   },
   {
     "nl": "hiervoor",
@@ -102,7 +135,10 @@
     "tr": "bunun için / bundan önce",
     "en": "for this / before this",
     "ar": "لهذا / قبل هذا",
-    "fr": "pour cela / avant cela"
+    "fr": "pour cela / avant cela",
+    "zinnen": [
+      "ck9eegji"
+    ]
   },
   {
     "nl": "hoofd",
@@ -111,7 +147,11 @@
     "tr": "baş, kafa / şef",
     "en": "head / chief",
     "ar": "رأس / رئيس",
-    "fr": "tête / chef"
+    "fr": "tête / chef",
+    "zinnen": [
+      "dpbfh66y",
+      "y7vavbm8"
+    ]
   },
   {
     "nl": "inleiding",
@@ -120,7 +160,10 @@
     "tr": "giriş, önsöz",
     "en": "introduction",
     "ar": "مقدمة",
-    "fr": "introduction"
+    "fr": "introduction",
+    "zinnen": [
+      "ck9eegji"
+    ]
   },
   {
     "nl": "kritiek",
@@ -129,7 +172,10 @@
     "tr": "eleştiri",
     "en": "criticism, critique",
     "ar": "نقد",
-    "fr": "critique"
+    "fr": "critique",
+    "zinnen": [
+      "r7ae8nuy"
+    ]
   },
   {
     "nl": "kwetsend",
@@ -137,7 +183,10 @@
     "tr": "incitici, kırıcı",
     "en": "hurtful, offensive",
     "ar": "مؤذٍ، جارح",
-    "fr": "blessant, offensant"
+    "fr": "blessant, offensant",
+    "zinnen": [
+      "z4xsgs0o"
+    ]
   },
   {
     "nl": "nuance",
@@ -146,7 +195,10 @@
     "tr": "nüans, ince fark",
     "en": "nuance",
     "ar": "فارق دقيق",
-    "fr": "nuance"
+    "fr": "nuance",
+    "zinnen": [
+      "r7ae8nuy"
+    ]
   },
   {
     "nl": "onbegrijpelijk",
@@ -154,7 +206,10 @@
     "tr": "anlaşılmaz",
     "en": "incomprehensible",
     "ar": "غير مفهوم",
-    "fr": "incompréhensible"
+    "fr": "incompréhensible",
+    "zinnen": [
+      "dpbfh66y"
+    ]
   },
   {
     "nl": "onbewust",
@@ -162,7 +217,10 @@
     "tr": "bilinçsiz, farkında olmadan",
     "en": "unconscious, unaware",
     "ar": "غير واعٍ، لا شعوري",
-    "fr": "inconscient, sans le savoir"
+    "fr": "inconscient, sans le savoir",
+    "zinnen": [
+      "dpbfh66y"
+    ]
   },
   {
     "nl": "personeelsuitje",
@@ -171,7 +229,11 @@
     "tr": "şirket gezisi, personel etkinliği",
     "en": "staff outing, team activity",
     "ar": "رحلة الموظفين",
-    "fr": "sortie du personnel"
+    "fr": "sortie du personnel",
+    "zinnen": [
+      "vpt7h0i0",
+      "ukgmrqs2"
+    ]
   },
   {
     "nl": "sarcasme",
@@ -180,7 +242,10 @@
     "tr": "sarkasm, alaycılık",
     "en": "sarcasm",
     "ar": "سخرية، استهزاء",
-    "fr": "sarcasme"
+    "fr": "sarcasme",
+    "zinnen": [
+      "z4xsgs0o"
+    ]
   },
   {
     "nl": "transparant",
@@ -188,7 +253,10 @@
     "tr": "şeffaf",
     "en": "transparent",
     "ar": "شفاف",
-    "fr": "transparent"
+    "fr": "transparent",
+    "zinnen": [
+      "8qnjf6sj"
+    ]
   },
   {
     "nl": "transport",
@@ -197,7 +265,10 @@
     "tr": "nakliye, ulaşım",
     "en": "transport",
     "ar": "نقل",
-    "fr": "transport"
+    "fr": "transport",
+    "zinnen": [
+      "mvw7vj7i"
+    ]
   },
   {
     "nl": "uiten",
@@ -207,7 +278,10 @@
     "tr": "ifade etmek, dile getirmek",
     "en": "to express, to voice",
     "ar": "يُعبّر عن",
-    "fr": "exprimer"
+    "fr": "exprimer",
+    "zinnen": [
+      "ck9eegji"
+    ]
   },
   {
     "nl": "vakbond",
@@ -216,7 +290,12 @@
     "tr": "sendika",
     "en": "trade union",
     "ar": "نقابة عمالية",
-    "fr": "syndicat"
+    "fr": "syndicat",
+    "zinnen": [
+      "vpt7h0i0",
+      "ukgmrqs2",
+      "krf82bs6"
+    ]
   },
   {
     "nl": "vergaderen",
@@ -226,7 +305,10 @@
     "tr": "toplantı yapmak",
     "en": "to have a meeting, to meet",
     "ar": "يعقد اجتماعاً",
-    "fr": "tenir une réunion, se réunir"
+    "fr": "tenir une réunion, se réunir",
+    "zinnen": [
+      "tj0jktg1"
+    ]
   },
   {
     "nl": "voortdurend",
@@ -234,7 +316,10 @@
     "tr": "sürekli, durmadan",
     "en": "continuously, constantly",
     "ar": "باستمرار",
-    "fr": "continuellement, sans cesse"
+    "fr": "continuellement, sans cesse",
+    "zinnen": [
+      "tj0jktg1"
+    ]
   },
   {
     "nl": "zich verheugen op",
@@ -244,7 +329,11 @@
     "tr": "dört gözle beklemek",
     "en": "to look forward to",
     "ar": "يتطلع بشوق إلى",
-    "fr": "se réjouir de, avoir hâte de"
+    "fr": "se réjouir de, avoir hâte de",
+    "zinnen": [
+      "vpt7h0i0",
+      "ukgmrqs2"
+    ]
   },
   {
     "nl": "betrokken",
@@ -252,7 +341,10 @@
     "tr": "ilgili, dahil olan",
     "en": "involved, concerned",
     "ar": "معني، متورط",
-    "fr": "concerné, impliqué"
+    "fr": "concerné, impliqué",
+    "zinnen": [
+      "tj0jktg1"
+    ]
   },
   {
     "nl": "correct",
@@ -260,7 +352,10 @@
     "tr": "doğru, düzgün",
     "en": "correct, proper",
     "ar": "صحيح، لائق",
-    "fr": "correct"
+    "fr": "correct",
+    "zinnen": [
+      "qn1cojax"
+    ]
   },
   {
     "nl": "corrigeren",
@@ -270,7 +365,10 @@
     "tr": "düzeltmek",
     "en": "to correct",
     "ar": "يُصحّح",
-    "fr": "corriger"
+    "fr": "corriger",
+    "zinnen": [
+      "qn1cojax"
+    ]
   },
   {
     "nl": "doorwerken",
@@ -280,7 +378,10 @@
     "tr": "çalışmaya devam etmek",
     "en": "to keep working, to work through",
     "ar": "يواصل العمل",
-    "fr": "continuer à travailler"
+    "fr": "continuer à travailler",
+    "zinnen": [
+      "e48zl3ua"
+    ]
   },
   {
     "nl": "evalueren",
@@ -290,7 +391,10 @@
     "tr": "değerlendirmek",
     "en": "to evaluate",
     "ar": "يُقيّم",
-    "fr": "évaluer"
+    "fr": "évaluer",
+    "zinnen": [
+      "elblpcon"
+    ]
   },
   {
     "nl": "feedback",
@@ -299,7 +403,10 @@
     "tr": "geri bildirim",
     "en": "feedback",
     "ar": "تغذية راجعة",
-    "fr": "retour, feedback"
+    "fr": "retour, feedback",
+    "zinnen": [
+      "elblpcon"
+    ]
   },
   {
     "nl": "georganiseerd",
@@ -307,7 +414,10 @@
     "tr": "düzenli, organize",
     "en": "organised",
     "ar": "منظّم",
-    "fr": "organisé"
+    "fr": "organisé",
+    "zinnen": [
+      "m8yrvcot"
+    ]
   },
   {
     "nl": "getal",
@@ -316,7 +426,10 @@
     "tr": "sayı, rakam",
     "en": "number",
     "ar": "عدد، رقم",
-    "fr": "nombre, chiffre"
+    "fr": "nombre, chiffre",
+    "zinnen": [
+      "hnnps6ke"
+    ]
   },
   {
     "nl": "houding",
@@ -325,7 +438,10 @@
     "tr": "tavır, duruş",
     "en": "attitude, posture",
     "ar": "موقف، وضعية",
-    "fr": "attitude, posture"
+    "fr": "attitude, posture",
+    "zinnen": [
+      "m8yrvcot"
+    ]
   },
   {
     "nl": "krap",
@@ -333,7 +449,11 @@
     "tr": "dar, sıkışık",
     "en": "tight, cramped",
     "ar": "ضيق",
-    "fr": "serré, limité"
+    "fr": "serré, limité",
+    "zinnen": [
+      "e48zl3ua",
+      "cwjwlzbg"
+    ]
   },
   {
     "nl": "namens",
@@ -341,7 +461,10 @@
     "tr": "adına, namına",
     "en": "on behalf of",
     "ar": "نيابةً عن، باسم",
-    "fr": "au nom de"
+    "fr": "au nom de",
+    "zinnen": [
+      "mvw7vj7i"
+    ]
   },
   {
     "nl": "ontevreden",
@@ -349,7 +472,10 @@
     "tr": "memnuniyetsiz",
     "en": "dissatisfied, unhappy",
     "ar": "غير راضٍ",
-    "fr": "mécontent, insatisfait"
+    "fr": "mécontent, insatisfait",
+    "zinnen": [
+      "clqlxmlh"
+    ]
   },
   {
     "nl": "ontkennen",
@@ -359,7 +485,10 @@
     "tr": "inkâr etmek",
     "en": "to deny",
     "ar": "ينفي، يُنكر",
-    "fr": "nier"
+    "fr": "nier",
+    "zinnen": [
+      "cwjwlzbg"
+    ]
   },
   {
     "nl": "opengaan",
@@ -369,7 +498,10 @@
     "tr": "açılmak",
     "en": "to open (up)",
     "ar": "يفتح، ينفتح",
-    "fr": "s'ouvrir"
+    "fr": "s'ouvrir",
+    "zinnen": [
+      "22il0xv5"
+    ]
   },
   {
     "nl": "serveerster",
@@ -378,7 +510,10 @@
     "tr": "kadın garson",
     "en": "waitress",
     "ar": "نادلة",
-    "fr": "serveuse"
+    "fr": "serveuse",
+    "zinnen": [
+      "22il0xv5"
+    ]
   },
   {
     "nl": "spelfout",
@@ -387,7 +522,11 @@
     "tr": "yazım hatası",
     "en": "spelling mistake",
     "ar": "خطأ إملائي",
-    "fr": "faute d'orthographe"
+    "fr": "faute d'orthographe",
+    "zinnen": [
+      "qn1cojax",
+      "hnnps6ke"
+    ]
   },
   {
     "nl": "spelling",
@@ -396,7 +535,10 @@
     "tr": "yazım, imla",
     "en": "spelling",
     "ar": "إملاء",
-    "fr": "orthographe"
+    "fr": "orthographe",
+    "zinnen": [
+      "qn1cojax"
+    ]
   },
   {
     "nl": "tempo",
@@ -405,7 +547,10 @@
     "tr": "tempo, hız",
     "en": "pace, tempo",
     "ar": "إيقاع، وتيرة",
-    "fr": "tempo, rythme"
+    "fr": "tempo, rythme",
+    "zinnen": [
+      "m8yrvcot"
+    ]
   },
   {
     "nl": "terecht",
@@ -413,7 +558,10 @@
     "tr": "haklı olarak, yerinde",
     "en": "rightly, justifiably",
     "ar": "بحق، بشكل مبرر",
-    "fr": "à juste titre, avec raison"
+    "fr": "à juste titre, avec raison",
+    "zinnen": [
+      "82i3ill7"
+    ]
   },
   {
     "nl": "vandaar",
@@ -421,7 +569,10 @@
     "tr": "bundan dolayı, işte bu yüzden",
     "en": "that's why, hence",
     "ar": "لذا، من هنا",
-    "fr": "c'est pourquoi, d'où"
+    "fr": "c'est pourquoi, d'où",
+    "zinnen": [
+      "22il0xv5"
+    ]
   },
   {
     "nl": "verbeterpunt",
@@ -430,7 +581,10 @@
     "tr": "geliştirilmesi gereken nokta",
     "en": "point of improvement",
     "ar": "نقطة تحتاج إلى تحسين",
-    "fr": "point à améliorer"
+    "fr": "point à améliorer",
+    "zinnen": [
+      "elblpcon"
+    ]
   },
   {
     "nl": "verslag",
@@ -439,7 +593,10 @@
     "tr": "rapor, tutanak",
     "en": "report, account",
     "ar": "تقرير",
-    "fr": "rapport, compte rendu"
+    "fr": "rapport, compte rendu",
+    "zinnen": [
+      "82i3ill7"
+    ]
   },
   {
     "nl": "verwisselen",
@@ -449,7 +606,11 @@
     "tr": "değiştirmek, karıştırmak",
     "en": "to swap, to mix up",
     "ar": "يُبدّل، يُخلط",
-    "fr": "échanger, confondre"
+    "fr": "échanger, confondre",
+    "zinnen": [
+      "iugwf8ss",
+      "m1fdq3br"
+    ]
   },
   {
     "nl": "wijzen",
@@ -459,7 +620,11 @@
     "tr": "işaret etmek, göstermek",
     "en": "to point, to indicate",
     "ar": "يُشير إلى",
-    "fr": "indiquer, montrer"
+    "fr": "indiquer, montrer",
+    "zinnen": [
+      "iugwf8ss",
+      "m1fdq3br"
+    ]
   },
   {
     "nl": "zich vergissen",
@@ -469,7 +634,11 @@
     "tr": "yanılmak, hata yapmak",
     "en": "to be mistaken, to make an error",
     "ar": "يُخطئ، يُخطئ في الحكم",
-    "fr": "se tromper"
+    "fr": "se tromper",
+    "zinnen": [
+      "iugwf8ss",
+      "m1fdq3br"
+    ]
   },
   {
     "nl": "zorgvuldig",
@@ -477,7 +646,10 @@
     "tr": "titiz, özenli",
     "en": "careful, thorough",
     "ar": "دقيق، عناية",
-    "fr": "soigneux, méticuleux"
+    "fr": "soigneux, méticuleux",
+    "zinnen": [
+      "82i3ill7"
+    ]
   },
   {
     "nl": "accountant",
@@ -486,7 +658,10 @@
     "tr": "muhasebeci, denetçi",
     "en": "accountant, auditor",
     "ar": "محاسب",
-    "fr": "comptable, expert-comptable"
+    "fr": "comptable, expert-comptable",
+    "zinnen": [
+      "gwpmb3mf"
+    ]
   },
   {
     "nl": "afwijken",
@@ -496,7 +671,10 @@
     "tr": "sapmak, ayrılmak",
     "en": "to deviate, to differ",
     "ar": "ينحرف، يختلف",
-    "fr": "dévier, s'écarter"
+    "fr": "dévier, s'écarter",
+    "zinnen": [
+      "gwpmb3mf"
+    ]
   },
   {
     "nl": "beloning",
@@ -505,7 +683,10 @@
     "tr": "ödül, mükâfat",
     "en": "reward",
     "ar": "مكافأة",
-    "fr": "récompense"
+    "fr": "récompense",
+    "zinnen": [
+      "jhsvpno4"
+    ]
   },
   {
     "nl": "bewijzen",
@@ -515,7 +696,10 @@
     "tr": "kanıtlamak, ispatlamak",
     "en": "to prove, to demonstrate",
     "ar": "يُثبت، يبرهن",
-    "fr": "prouver, démontrer"
+    "fr": "prouver, démontrer",
+    "zinnen": [
+      "n8k77pzd"
+    ]
   },
   {
     "nl": "compenseren",
@@ -525,7 +709,10 @@
     "tr": "telafi etmek",
     "en": "to compensate",
     "ar": "يُعوّض",
-    "fr": "compenser"
+    "fr": "compenser",
+    "zinnen": [
+      "jhsvpno4"
+    ]
   },
   {
     "nl": "compromis",
@@ -534,7 +721,10 @@
     "tr": "uzlaşma, orta yol",
     "en": "compromise",
     "ar": "حل وسط",
-    "fr": "compromis"
+    "fr": "compromis",
+    "zinnen": [
+      "n8k77pzd"
+    ]
   },
   {
     "nl": "effectief",
@@ -542,7 +732,10 @@
     "tr": "etkin, etkili",
     "en": "effective",
     "ar": "فعّال",
-    "fr": "efficace"
+    "fr": "efficace",
+    "zinnen": [
+      "jhsvpno4"
+    ]
   },
   {
     "nl": "exclusief",
@@ -550,7 +743,10 @@
     "tr": "hariç, özel",
     "en": "exclusive, excluding",
     "ar": "حصري، باستثناء",
-    "fr": "exclusif, hors"
+    "fr": "exclusif, hors",
+    "zinnen": [
+      "gabb50to"
+    ]
   },
   {
     "nl": "fenomeen",
@@ -559,7 +755,10 @@
     "tr": "fenomen, olay",
     "en": "phenomenon",
     "ar": "ظاهرة",
-    "fr": "phénomène"
+    "fr": "phénomène",
+    "zinnen": [
+      "gabb50to"
+    ]
   },
   {
     "nl": "geconcentreerd",
@@ -567,7 +766,10 @@
     "tr": "odaklanmış, konsantre",
     "en": "concentrated, focused",
     "ar": "مركّز، منتبه",
-    "fr": "concentré"
+    "fr": "concentré",
+    "zinnen": [
+      "gabb50to"
+    ]
   },
   {
     "nl": "indienen",
@@ -577,7 +779,10 @@
     "tr": "sunmak, başvurmak",
     "en": "to submit, to file",
     "ar": "يُقدّم، يتقدم بطلب",
-    "fr": "soumettre, déposer"
+    "fr": "soumettre, déposer",
+    "zinnen": [
+      "gp8kzmth"
+    ]
   },
   {
     "nl": "motiveren",
@@ -587,7 +792,12 @@
     "tr": "motive etmek, gerekçelendirmek",
     "en": "to motivate, to justify",
     "ar": "يُحفّز، يُبرّر",
-    "fr": "motiver, justifier"
+    "fr": "motiver, justifier",
+    "zinnen": [
+      "n8k77pzd",
+      "qe4a0h1h",
+      "gk23i2y6"
+    ]
   },
   {
     "nl": "norm",
@@ -596,7 +806,10 @@
     "tr": "norm, kural",
     "en": "norm, standard",
     "ar": "معيار، قاعدة",
-    "fr": "norme"
+    "fr": "norme",
+    "zinnen": [
+      "gwpmb3mf"
+    ]
   },
   {
     "nl": "overuren",
@@ -605,7 +818,10 @@
     "tr": "fazla mesai",
     "en": "overtime",
     "ar": "ساعات عمل إضافية",
-    "fr": "heures supplémentaires"
+    "fr": "heures supplémentaires",
+    "zinnen": [
+      "e48zl3ua"
+    ]
   },
   {
     "nl": "per se",
@@ -613,7 +829,10 @@
     "tr": "illa ki, mutlaka",
     "en": "per se, necessarily",
     "ar": "بالضرورة، حتماً",
-    "fr": "en soi, nécessairement"
+    "fr": "en soi, nécessairement",
+    "zinnen": [
+      "qzir6std"
+    ]
   },
   {
     "nl": "personeel",
@@ -622,7 +841,11 @@
     "tr": "personel, çalışanlar",
     "en": "staff, personnel",
     "ar": "موظفون، طاقم",
-    "fr": "personnel"
+    "fr": "personnel",
+    "zinnen": [
+      "e48zl3ua",
+      "xmowzclu"
+    ]
   },
   {
     "nl": "raadplegen",
@@ -632,7 +855,11 @@
     "tr": "danışmak, başvurmak",
     "en": "to consult",
     "ar": "يستشير، يرجع إلى",
-    "fr": "consulter"
+    "fr": "consulter",
+    "zinnen": [
+      "rgzvqlch",
+      "ykzzpv1t"
+    ]
   },
   {
     "nl": "reclamebureau",
@@ -641,7 +868,10 @@
     "tr": "reklam ajansı",
     "en": "advertising agency",
     "ar": "وكالة إعلانية",
-    "fr": "agence de publicité"
+    "fr": "agence de publicité",
+    "zinnen": [
+      "gp8kzmth"
+    ]
   },
   {
     "nl": "standaard",
@@ -650,7 +880,10 @@
     "tr": "standart",
     "en": "standard",
     "ar": "معيار، مستوى",
-    "fr": "standard, norme"
+    "fr": "standard, norme",
+    "zinnen": [
+      "vcvp9w12"
+    ]
   },
   {
     "nl": "thuiswerken",
@@ -660,7 +893,10 @@
     "tr": "evden çalışmak",
     "en": "to work from home",
     "ar": "يعمل من المنزل",
-    "fr": "travailler à domicile"
+    "fr": "travailler à domicile",
+    "zinnen": [
+      "xmowzclu"
+    ]
   },
   {
     "nl": "uitbetalen",
@@ -670,7 +906,10 @@
     "tr": "ödemek, maaş vermek",
     "en": "to pay out",
     "ar": "يدفع، يصرف",
-    "fr": "payer, verser"
+    "fr": "payer, verser",
+    "zinnen": [
+      "xmowzclu"
+    ]
   },
   {
     "nl": "wekelijks",
@@ -678,7 +917,10 @@
     "tr": "haftalık, her hafta",
     "en": "weekly",
     "ar": "أسبوعياً",
-    "fr": "hebdomadaire, chaque semaine"
+    "fr": "hebdomadaire, chaque semaine",
+    "zinnen": [
+      "xmowzclu"
+    ]
   },
   {
     "nl": "wetenschapper",
@@ -687,7 +929,10 @@
     "tr": "bilim insanı",
     "en": "scientist, researcher",
     "ar": "عالم",
-    "fr": "scientifique, chercheur"
+    "fr": "scientifique, chercheur",
+    "zinnen": [
+      "l7fv39vu"
+    ]
   },
   {
     "nl": "afleiding",
@@ -696,7 +941,10 @@
     "tr": "dikkat dağıtma, oyalama",
     "en": "distraction",
     "ar": "تشتيت الانتباه",
-    "fr": "distraction"
+    "fr": "distraction",
+    "zinnen": [
+      "l7fv39vu"
+    ]
   },
   {
     "nl": "bloot",
@@ -704,7 +952,10 @@
     "tr": "çıplak",
     "en": "bare, naked",
     "ar": "عارٍ",
-    "fr": "nu, dénudé"
+    "fr": "nu, dénudé",
+    "zinnen": [
+      "83r7dy5z"
+    ]
   },
   {
     "nl": "braaf",
@@ -712,7 +963,10 @@
     "tr": "uslu, itaatkâr",
     "en": "well-behaved, obedient",
     "ar": "مؤدّب، مطيع",
-    "fr": "sage, obéissant"
+    "fr": "sage, obéissant",
+    "zinnen": [
+      "ypkzt3nl"
+    ]
   },
   {
     "nl": "combineren",
@@ -722,7 +976,10 @@
     "tr": "birleştirmek, kombine etmek",
     "en": "to combine",
     "ar": "يجمع، يدمج",
-    "fr": "combiner"
+    "fr": "combiner",
+    "zinnen": [
+      "l7fv39vu"
+    ]
   },
   {
     "nl": "drank",
@@ -731,7 +988,10 @@
     "tr": "içki, içecek",
     "en": "drink, beverage",
     "ar": "مشروب",
-    "fr": "boisson"
+    "fr": "boisson",
+    "zinnen": [
+      "ypkzt3nl"
+    ]
   },
   {
     "nl": "dreigen",
@@ -741,7 +1001,10 @@
     "tr": "tehdit etmek / tehlike arz etmek",
     "en": "to threaten / to be at risk",
     "ar": "يهدد / يكون على وشك",
-    "fr": "menacer / risquer"
+    "fr": "menacer / risquer",
+    "zinnen": [
+      "ezncgw3w"
+    ]
   },
   {
     "nl": "geheimzinnig",
@@ -749,7 +1012,10 @@
     "tr": "gizemli, esrarengiz",
     "en": "mysterious, secretive",
     "ar": "غامض",
-    "fr": "mystérieux, secret"
+    "fr": "mystérieux, secret",
+    "zinnen": [
+      "ezncgw3w"
+    ]
   },
   {
     "nl": "gemeenschappelijk",
@@ -757,7 +1023,10 @@
     "tr": "ortak, müşterek",
     "en": "common, shared",
     "ar": "مشترك",
-    "fr": "commun, partagé"
+    "fr": "commun, partagé",
+    "zinnen": [
+      "baq06k0x"
+    ]
   },
   {
     "nl": "gerucht",
@@ -766,7 +1035,10 @@
     "tr": "söylenti, rivayet",
     "en": "rumour",
     "ar": "إشاعة",
-    "fr": "rumeur"
+    "fr": "rumeur",
+    "zinnen": [
+      "ezncgw3w"
+    ]
   },
   {
     "nl": "gezelligheid",
@@ -775,7 +1047,10 @@
     "tr": "sıcak ortam, birliktelik hissi",
     "en": "cosiness, conviviality",
     "ar": "أجواء مريحة ودافئة",
-    "fr": "convivialité, ambiance chaleureuse"
+    "fr": "convivialité, ambiance chaleureuse",
+    "zinnen": [
+      "baq06k0x"
+    ]
   },
   {
     "nl": "hoera",
@@ -783,7 +1058,10 @@
     "tr": "yaşasın, hurra",
     "en": "hooray, hurrah",
     "ar": "هورا",
-    "fr": "hourra"
+    "fr": "hourra",
+    "zinnen": [
+      "baq06k0x"
+    ]
   },
   {
     "nl": "meerderheid",
@@ -792,7 +1070,10 @@
     "tr": "çoğunluk",
     "en": "majority",
     "ar": "أغلبية",
-    "fr": "majorité"
+    "fr": "majorité",
+    "zinnen": [
+      "tj1d28lu"
+    ]
   },
   {
     "nl": "mond",
@@ -801,7 +1082,10 @@
     "tr": "ağız",
     "en": "mouth",
     "ar": "فم",
-    "fr": "bouche"
+    "fr": "bouche",
+    "zinnen": [
+      "oi9tjyvz"
+    ]
   },
   {
     "nl": "nuchter",
@@ -809,7 +1093,10 @@
     "tr": "ayık / aç karnına",
     "en": "sober / on an empty stomach",
     "ar": "صاحٍ / صائم",
-    "fr": "sobre / à jeun"
+    "fr": "sobre / à jeun",
+    "zinnen": [
+      "ypkzt3nl"
+    ]
   },
   {
     "nl": "opvatting",
@@ -818,7 +1105,10 @@
     "tr": "görüş, kanı",
     "en": "opinion, view",
     "ar": "رأي، وجهة نظر",
-    "fr": "opinion, point de vue"
+    "fr": "opinion, point de vue",
+    "zinnen": [
+      "tj1d28lu"
+    ]
   },
   {
     "nl": "recentelijk",
@@ -826,7 +1116,10 @@
     "tr": "yakın zamanda, geçenlerde",
     "en": "recently",
     "ar": "مؤخراً",
-    "fr": "récemment"
+    "fr": "récemment",
+    "zinnen": [
+      "oi9tjyvz"
+    ]
   },
   {
     "nl": "roddel",
@@ -835,7 +1128,10 @@
     "tr": "dedikodu",
     "en": "gossip",
     "ar": "نميمة، ثرثرة",
-    "fr": "commérages, ragot"
+    "fr": "commérages, ragot",
+    "zinnen": [
+      "oi9tjyvz"
+    ]
   },
   {
     "nl": "schijnen",
@@ -845,7 +1141,11 @@
     "tr": "görünmek / parlamak",
     "en": "to seem, to appear / to shine",
     "ar": "يبدو / يُضيء",
-    "fr": "sembler, paraître / briller"
+    "fr": "sembler, paraître / briller",
+    "zinnen": [
+      "xfs1x8e8",
+      "ool68ppt"
+    ]
   },
   {
     "nl": "tegenstelling",
@@ -854,7 +1154,10 @@
     "tr": "karşıtlık, zıtlık",
     "en": "contrast, contradiction",
     "ar": "تناقض، تضاد",
-    "fr": "contraste, contradiction"
+    "fr": "contraste, contradiction",
+    "zinnen": [
+      "tj1d28lu"
+    ]
   },
   {
     "nl": "tunnel",
@@ -863,7 +1166,10 @@
     "tr": "tünel",
     "en": "tunnel",
     "ar": "نفق",
-    "fr": "tunnel"
+    "fr": "tunnel",
+    "zinnen": [
+      "xfs1x8e8"
+    ]
   },
   {
     "nl": "verlof",
@@ -872,7 +1178,10 @@
     "tr": "izin, tatil",
     "en": "leave, permission",
     "ar": "إجازة، إذن",
-    "fr": "congé, permission"
+    "fr": "congé, permission",
+    "zinnen": [
+      "83r7dy5z"
+    ]
   },
   {
     "nl": "vertrouwelijk",
@@ -880,7 +1189,10 @@
     "tr": "gizli, güvenilir",
     "en": "confidential, trustworthy",
     "ar": "سري، موثوق",
-    "fr": "confidentiel, de confiance"
+    "fr": "confidentiel, de confiance",
+    "zinnen": [
+      "83r7dy5z"
+    ]
   },
   {
     "nl": "vredig",
@@ -888,6 +1200,9 @@
     "tr": "huzurlu, sakin",
     "en": "peaceful, tranquil",
     "ar": "هادئ، سلمي",
-    "fr": "paisible, tranquille"
+    "fr": "paisible, tranquille",
+    "zinnen": [
+      "xfs1x8e8"
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 ---
 name: gen-zinnen
-description: Generate Dutch example sentences for words that have no zinnen yet. Fetches 8 words from a pack, writes natural sentences, and adds them via the CLI.
+description: Generate Dutch example sentences for words that have no zinnen yet. Fetches 200 words from a pack, writes sentences into zinnen-queue.txt, and the user runs add-zinnen.sh to add them all at once.
 allowed-tools: Bash
 argument-hint: <PACK>
 ---
@@ -9,14 +9,24 @@ argument-hint: <PACK>
 
 Generate example sentences for Dutch vocabulary words that don't have any yet.
 
-**Pack argument:** `$ARGUMENTS` (e.g. `A1`, `A2`, `A2+`). Defaults to `A1` if omitted.
+**Pack argument:** `$ARGUMENTS` (e.g. `A1`, `A2`, `A2+`, `B1`). Defaults to `A1` if omitted.
+
+## Workflow overview
+
+1. Fetch 200 words without zinnen
+2. Write all sentences into `scripts/zinnen-queue.txt`
+3. Test a handful of tricky sentences manually
+4. Tell the user to run `bash scripts/add-zinnen.sh`
+5. The script logs errors; failed words reappear in the next `get-no-zin` run — **no need to fix them now**
+
+**Error policy:** If `add-zin` prints `✗ "word" not found in any pack`, the sentence is still saved but that word stays unlinked. Do NOT stop to fix it — the word will show up again in the next batch. Only fix errors you catch *before* writing the queue file.
 
 ## Step 1 — Fetch words without zinnen
 
-Run the following command to get 20 words from the pack that have no example sentences yet:
+Run the following command to get 200 words from the pack that have no example sentences yet:
 
 ```bash
-npm run woorden -- get-no-zin ${ARGUMENTS:-A1} 20
+npm run woorden -- get-no-zin ${ARGUMENTS:-A1} 200
 ```
 
 The output shows: `type  nl  [article/perfectum/imperfectum]`
@@ -40,6 +50,7 @@ The sentence's grammar and overall vocabulary must match the **pack level**, not
 | A1 | A1 | Simple SVO, present tense, basic pronouns. No subordinate clauses, no passive, no complex modals. |
 | A2 | A2 | Simple past, basic modal verbs (kunnen, willen, moeten), one subordinate clause with `dat` or `omdat` is OK. |
 | A2+ | A2–B1 | Compound sentences, common tense combinations, but still no complex passive or subjunctive. |
+| B1 | B1 | Full range of grammar, including passive voice, subjunctive, multiple subordinate clauses, etc. |
 
 **Examples of level discipline:**
 
@@ -188,30 +199,91 @@ npm run woorden -- remove A2 soort
 # CLI asks [1-2]: pick the number of the copy without zinnen
 ```
 
-## Step 4 — Add each sentence via the CLI
+## Step 4 — Write sentences to queue file
 
-For every sentence, run:
+Write all sentences into `scripts/zinnen-queue.txt`. Lines starting with `#` are comments (use them to group words). The script skips already-processed lines using `scripts/zinnen-queue.done`.
 
-```bash
-npm run woorden -- add-zin "<marked sentence>"
+```
+# achterlaten + boodschap + ontvanger
+Hij 1|liet@achterlaten een 2|boodschap achter voor de 3|ontvanger.
+
+# reageren + oproep
+Ze 1|reageerde@reageren niet op de 2|oproep.
 ```
 
-The CLI will:
-- Print the clean sentence and which base form each group resolves to
-- Look up each base in the word packs (error if not found — check `@base` spelling)
-- Report zinnen counts per word (default limit: 5 per word)
-- Write the sentence to `src/data/zin-001.json` and add its ID to each word file
+## Step 5 — Test critical sentences before handing off
 
-## Example (for 8 words) full run
+Before telling the user to run the script, manually test a few sentences that have tricky notation (multi-word bases, separable verbs, reflexive verbs, multi-word proper nouns). Run:
 
-`get-no-zin A1 20` returns: `leren, maand, naar, Nederland, Nederlandss, niet, nu, school, ...`
+```bash
+npm run woorden -- add-zin "<sentence>"
+```
 
-> just print planned sentences 
+Fix any errors you find at this stage. Once the queue looks clean, stop — do not run the full script yourself.
 
- `"1|Ik@ik 2|leer@leren 3|Nederlands@Nederlands op 4|school."` >>  leren, Nederlands, school 
- `"1|Nederland@nederland is een mooi 2|land."` >> Nederland 
- `"1|Ik@ik ga 2|nu@nu 3|niet@niet 4|naar@naar huis."` >> nu, niet, naar 
- `"Elke 1|maand doe ik iets nieuws."` >> maand 
- ...
+## Step 6 — Hand off to user
 
-7-10 sentences cover all 20 words. Then run `add-zin` for each.
+Tell the user to run:
+
+```bash
+bash scripts/add-zinnen.sh
+```
+
+The script processes every unprocessed line in `zinnen-queue.txt`, logs errors, and tracks done lines in `zinnen-queue.done`. When the user says "bitti" (done), check how many words remain and proceed with the next batch.
+
+## Common notation traps (learned from B1 batch)
+
+**Multi-word `nl` keys with spaces** — encode spaces as underscores in `@base`, and mark each token with the same group number:
+
+```
+# nl key: "per se"
+Ze wilde 1|per@per_se 1|se geen kritiek geven.
+
+# nl key: "Tweede Kamer"
+De 1|Tweede@Tweede_Kamer 1|Kamer debatteert over nieuwe wetten.
+
+# nl key: "rekenen op"
+Je kunt op mij 1|rekenen@rekenen_op als je hulp nodig hebt.
+
+# nl key: "zich verheugen op"
+Ze 1|verheugde@zich_verheugen_op 1|zich 1|op het feest.
+
+# nl key: "uitgaan van"
+Ze 1|ging@uitgaan_van 1|uit 1|van de feiten.
+```
+
+**Reflexive verbs** — mark the finite verb AND `zich` with the same group number. Do NOT leave `zich` as plain text:
+
+```
+# nl key: "zich verontschuldigen"
+Hij 1|verontschuldigde@zich_verontschuldigen 1|zich voor zijn gedrag.
+
+# nl key: "zich aansluiten"  — zich is part of the group
+Hij 1|sloot@zich_aansluiten zich 1|aan bij de groep.   ← WRONG: zich not marked
+Hij 1|sloot@zich_aansluiten 1|zich 1|aan bij de groep. ← WRONG: adds "zich" to pack lookup
+```
+
+Wait — the CLI does NOT look up `zich` in the pack; it only resolves group tokens to base forms. The correct form is:
+
+```
+Hij 1|sloot@zich_aansluiten zich 1|aan bij de groep.
+```
+
+The `zich` is plain text here; only `sloot` and `aan` carry the group annotation.
+
+**Plural nouns and inflected adjectives** — always add `@base`:
+
+```
+2|tegenstanders@tegenstander   ✓
+2|tegenstanders                ✗  (plural not in pack)
+
+1|ceremoniële@ceremonieel      ✓
+1|ceremoniële                  ✗  (inflected form not in pack)
+```
+
+**`EHBO` and similar abbreviations used in compound words** — use the word alone, not in a compound:
+
+```
+2|EHBO certificaat   ✓  (EHBO is the nl key, space separates it naturally)
+2|EHBO-diploma       ✗  (hyphenated compound → "EHBO-diploma" not found)
+```

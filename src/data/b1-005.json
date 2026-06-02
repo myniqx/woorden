@@ -7,7 +7,10 @@
     "tr": "hitap etmek",
     "en": "to address, to speak to",
     "ar": "يخاطب، يتحدث إلى",
-    "fr": "adresser la parole à, interpeller"
+    "fr": "adresser la parole à, interpeller",
+    "zinnen": [
+      "api64v2t"
+    ]
   },
   {
     "nl": "begeleider",
@@ -16,7 +19,10 @@
     "tr": "rehber, refakatçi",
     "en": "guide, supervisor",
     "ar": "مرشد، مشرف",
-    "fr": "accompagnateur, encadrant"
+    "fr": "accompagnateur, encadrant",
+    "zinnen": [
+      "36bvzl2i"
+    ]
   },
   {
     "nl": "begeleiding",
@@ -25,7 +31,10 @@
     "tr": "rehberlik, destek",
     "en": "guidance, support",
     "ar": "إرشاد، دعم",
-    "fr": "accompagnement, encadrement"
+    "fr": "accompagnement, encadrement",
+    "zinnen": [
+      "36bvzl2i"
+    ]
   },
   {
     "nl": "beginnend",
@@ -33,7 +42,10 @@
     "tr": "başlangıç seviyesinde, acemi",
     "en": "beginning, starting",
     "ar": "مبتدئ",
-    "fr": "débutant"
+    "fr": "débutant",
+    "zinnen": [
+      "36bvzl2i"
+    ]
   },
   {
     "nl": "beheersen",
@@ -43,7 +55,10 @@
     "tr": "hakimiyetini sürdürmek, ustalaşmak",
     "en": "to master, to control",
     "ar": "يتقن، يسيطر على",
-    "fr": "maîtriser, contrôler"
+    "fr": "maîtriser, contrôler",
+    "zinnen": [
+      "cc7un3gc"
+    ]
   },
   {
     "nl": "beschikken over",
@@ -53,7 +68,10 @@
     "tr": "sahip olmak",
     "en": "to have, to dispose of",
     "ar": "يملك، يتوفر على",
-    "fr": "disposer de, avoir"
+    "fr": "disposer de, avoir",
+    "zinnen": [
+      "cc7un3gc"
+    ]
   },
   {
     "nl": "beschrijving",
@@ -62,7 +80,10 @@
     "tr": "açıklama, tanım",
     "en": "description",
     "ar": "وصف",
-    "fr": "description"
+    "fr": "description",
+    "zinnen": [
+      "ydjcy4sp"
+    ]
   },
   {
     "nl": "bijvoegen",
@@ -72,7 +93,10 @@
     "tr": "eklemek, iliştirmek",
     "en": "to add, to attach",
     "ar": "يُضيف، يُرفق",
-    "fr": "ajouter, joindre"
+    "fr": "ajouter, joindre",
+    "zinnen": [
+      "ydjcy4sp"
+    ]
   },
   {
     "nl": "competentie",
@@ -81,7 +105,10 @@
     "tr": "yetkinlik, yetenek",
     "en": "competence, skill",
     "ar": "كفاءة",
-    "fr": "compétence"
+    "fr": "compétence",
+    "zinnen": [
+      "cc7un3gc"
+    ]
   },
   {
     "nl": "enthousiasme",
@@ -90,7 +117,11 @@
     "tr": "heves, coşku",
     "en": "enthusiasm",
     "ar": "حماس",
-    "fr": "enthousiasme"
+    "fr": "enthousiasme",
+    "zinnen": [
+      "yp886y8w",
+      "lxeybkaf"
+    ]
   },
   {
     "nl": "flexibiliteit",
@@ -99,7 +130,10 @@
     "tr": "esneklik",
     "en": "flexibility",
     "ar": "مرونة",
-    "fr": "flexibilité"
+    "fr": "flexibilité",
+    "zinnen": [
+      "yp886y8w"
+    ]
   },
   {
     "nl": "gedurende",
@@ -107,7 +141,10 @@
     "tr": "boyunca, süresince",
     "en": "during, throughout",
     "ar": "خلال، طوال",
-    "fr": "pendant, durant"
+    "fr": "pendant, durant",
+    "zinnen": [
+      "cznrfvcm"
+    ]
   },
   {
     "nl": "gelegenheid",
@@ -116,7 +153,10 @@
     "tr": "fırsat, vesile",
     "en": "opportunity, occasion",
     "ar": "فرصة، مناسبة",
-    "fr": "occasion, opportunité"
+    "fr": "occasion, opportunité",
+    "zinnen": [
+      "cznrfvcm"
+    ]
   },
   {
     "nl": "humor",
@@ -125,7 +165,10 @@
     "tr": "espri, mizah",
     "en": "humour",
     "ar": "فكاهة، روح الدعابة",
-    "fr": "humour"
+    "fr": "humour",
+    "zinnen": [
+      "yp886y8w"
+    ]
   },
   {
     "nl": "inclusief",
@@ -133,7 +176,10 @@
     "tr": "dahil",
     "en": "including, inclusive of",
     "ar": "شاملاً",
-    "fr": "inclus, y compris"
+    "fr": "inclus, y compris",
+    "zinnen": [
+      "jsep0f72"
+    ]
   },
   {
     "nl": "natuurkunde",
@@ -142,7 +188,10 @@
     "tr": "fizik",
     "en": "physics",
     "ar": "فيزياء",
-    "fr": "physique"
+    "fr": "physique",
+    "zinnen": [
+      "cznrfvcm"
+    ]
   },
   {
     "nl": "onderbouw",
@@ -151,7 +200,10 @@
     "tr": "alt sınıflar (lise)",
     "en": "lower school years",
     "ar": "الصفوف الدراسية الأدنى",
-    "fr": "petites classes"
+    "fr": "petites classes",
+    "zinnen": [
+      "jsep0f72"
+    ]
   },
   {
     "nl": "onderbreken",
@@ -161,7 +213,10 @@
     "tr": "kesmek, kesintiye uğratmak",
     "en": "to interrupt, to break off",
     "ar": "يقاطع، يُوقف",
-    "fr": "interrompre"
+    "fr": "interrompre",
+    "zinnen": [
+      "zyp0s0me"
+    ]
   },
   {
     "nl": "opzetten",
@@ -171,7 +226,10 @@
     "tr": "düzenlemek, kurmak",
     "en": "to set up, to establish",
     "ar": "يُنشئ، يُنظّم",
-    "fr": "mettre en place, établir"
+    "fr": "mettre en place, établir",
+    "zinnen": [
+      "zyp0s0me"
+    ]
   },
   {
     "nl": "overdragen",
@@ -181,7 +239,10 @@
     "tr": "aktarmak, devretmek",
     "en": "to transfer, to hand over",
     "ar": "ينقل، يُحوّل",
-    "fr": "transmettre, céder"
+    "fr": "transmettre, céder",
+    "zinnen": [
+      "zyp0s0me"
+    ]
   },
   {
     "nl": "persoonlijkheid",
@@ -190,7 +251,10 @@
     "tr": "kişilik",
     "en": "personality",
     "ar": "شخصية",
-    "fr": "personnalité"
+    "fr": "personnalité",
+    "zinnen": [
+      "so9ghdl4"
+    ]
   },
   {
     "nl": "project",
@@ -199,7 +263,11 @@
     "tr": "proje",
     "en": "project",
     "ar": "مشروع",
-    "fr": "projet"
+    "fr": "projet",
+    "zinnen": [
+      "jsep0f72",
+      "yhhiz7mr"
+    ]
   },
   {
     "nl": "relevant",
@@ -207,7 +275,10 @@
     "tr": "ilgili, alakalı",
     "en": "relevant",
     "ar": "ذو صلة",
-    "fr": "pertinent"
+    "fr": "pertinent",
+    "zinnen": [
+      "so9ghdl4"
+    ]
   },
   {
     "nl": "toelichten",
@@ -217,7 +288,10 @@
     "tr": "açıklamak, aydınlatmak",
     "en": "to explain, to clarify",
     "ar": "يوضّح، يشرح",
-    "fr": "expliquer, clarifier"
+    "fr": "expliquer, clarifier",
+    "zinnen": [
+      "so9ghdl4"
+    ]
   },
   {
     "nl": "voortzetten",
@@ -227,7 +301,10 @@
     "tr": "devam ettirmek, sürdürmek",
     "en": "to continue, to pursue",
     "ar": "يواصل، يستمر",
-    "fr": "poursuivre, continuer"
+    "fr": "poursuivre, continuer",
+    "zinnen": [
+      "kqupbes8"
+    ]
   },
   {
     "nl": "wijze",
@@ -236,7 +313,10 @@
     "tr": "tarz, yöntem",
     "en": "manner, way",
     "ar": "أسلوب، طريقة",
-    "fr": "manière, façon"
+    "fr": "manière, façon",
+    "zinnen": [
+      "kqupbes8"
+    ]
   },
   {
     "nl": "wo",
@@ -245,7 +325,10 @@
     "tr": "akademik yükseköğretim (WO)",
     "en": "university education (academic)",
     "ar": "التعليم الجامعي الأكاديمي",
-    "fr": "enseignement universitaire académique"
+    "fr": "enseignement universitaire académique",
+    "zinnen": [
+      "bqoykbhh"
+    ]
   },
   {
     "nl": "zich inleven",
@@ -255,7 +338,10 @@
     "tr": "kendini başkasının yerine koymak, empati kurmak",
     "en": "to empathize, to put oneself in someone's shoes",
     "ar": "يتعاطف، يضع نفسه مكان الآخر",
-    "fr": "s'identifier à, faire preuve d'empathie"
+    "fr": "s'identifier à, faire preuve d'empathie",
+    "zinnen": [
+      "cbhr3ach"
+    ]
   },
   {
     "nl": "aangenaam",
@@ -263,7 +349,10 @@
     "tr": "hoş, memnuniyet verici",
     "en": "pleasant, nice to meet you",
     "ar": "ممتع، تشرّفت",
-    "fr": "agréable, enchanté"
+    "fr": "agréable, enchanté",
+    "zinnen": [
+      "cbhr3ach"
+    ]
   },
   {
     "nl": "administratief",
@@ -271,7 +360,10 @@
     "tr": "idari",
     "en": "administrative",
     "ar": "إداري",
-    "fr": "administratif"
+    "fr": "administratif",
+    "zinnen": [
+      "3oebwrq1"
+    ]
   },
   {
     "nl": "begrijpelijk",
@@ -279,7 +371,10 @@
     "tr": "anlaşılır",
     "en": "understandable, comprehensible",
     "ar": "مفهوم",
-    "fr": "compréhensible"
+    "fr": "compréhensible",
+    "zinnen": [
+      "3oebwrq1"
+    ]
   },
   {
     "nl": "brugklas",
@@ -288,7 +383,10 @@
     "tr": "lisenin ilk sınıfı (geçiş yılı)",
     "en": "first year of secondary school (bridge class)",
     "ar": "السنة الأولى من المرحلة الثانوية",
-    "fr": "première année du secondaire"
+    "fr": "première année du secondaire",
+    "zinnen": [
+      "j8s29l8o"
+    ]
   },
   {
     "nl": "concreet",
@@ -296,7 +394,10 @@
     "tr": "somut, belirli",
     "en": "concrete, specific",
     "ar": "ملموس، محدد",
-    "fr": "concret, précis"
+    "fr": "concret, précis",
+    "zinnen": [
+      "3oebwrq1"
+    ]
   },
   {
     "nl": "coördinator",
@@ -305,7 +406,10 @@
     "tr": "koordinatör",
     "en": "coordinator",
     "ar": "منسّق",
-    "fr": "coordinateur"
+    "fr": "coordinateur",
+    "zinnen": [
+      "j8s29l8o"
+    ]
   },
   {
     "nl": "creëren",
@@ -315,7 +419,10 @@
     "tr": "yaratmak, oluşturmak",
     "en": "to create",
     "ar": "يخلق، يُنشئ",
-    "fr": "créer"
+    "fr": "créer",
+    "zinnen": [
+      "rcaql4bs"
+    ]
   },
   {
     "nl": "grotendeels",
@@ -323,7 +430,10 @@
     "tr": "büyük ölçüde, çoğunlukla",
     "en": "largely, mostly",
     "ar": "إلى حد بعيد، في معظمه",
-    "fr": "en grande partie, pour l'essentiel"
+    "fr": "en grande partie, pour l'essentiel",
+    "zinnen": [
+      "rcaql4bs"
+    ]
   },
   {
     "nl": "inlichten",
@@ -333,7 +443,10 @@
     "tr": "bilgilendirmek, haberdar etmek",
     "en": "to inform, to notify",
     "ar": "يُعلم، يُخطر",
-    "fr": "informer, avertir"
+    "fr": "informer, avertir",
+    "zinnen": [
+      "rcaql4bs"
+    ]
   },
   {
     "nl": "kandidaat",
@@ -342,7 +455,10 @@
     "tr": "aday",
     "en": "candidate",
     "ar": "مرشح",
-    "fr": "candidat"
+    "fr": "candidat",
+    "zinnen": [
+      "wur2ryp1"
+    ]
   },
   {
     "nl": "kennismaken",
@@ -352,7 +468,10 @@
     "tr": "tanışmak",
     "en": "to get acquainted, to meet",
     "ar": "يتعرف على، يلتقي بـ",
-    "fr": "faire connaissance"
+    "fr": "faire connaissance",
+    "zinnen": [
+      "j8s29l8o"
+    ]
   },
   {
     "nl": "komst",
@@ -361,7 +480,10 @@
     "tr": "geliş, varış",
     "en": "arrival, coming",
     "ar": "قدوم، وصول",
-    "fr": "arrivée, venue"
+    "fr": "arrivée, venue",
+    "zinnen": [
+      "wur2ryp1"
+    ]
   },
   {
     "nl": "leider",
@@ -370,7 +492,10 @@
     "tr": "lider",
     "en": "leader",
     "ar": "قائد",
-    "fr": "dirigeant, chef"
+    "fr": "dirigeant, chef",
+    "zinnen": [
+      "wur2ryp1"
+    ]
   },
   {
     "nl": "nadat",
@@ -378,7 +503,10 @@
     "tr": "-den sonra",
     "en": "after",
     "ar": "بعد أن",
-    "fr": "après que"
+    "fr": "après que",
+    "zinnen": [
+      "xbh1hbju"
+    ]
   },
   {
     "nl": "natuurlijk",
@@ -386,7 +514,12 @@
     "tr": "doğal olarak, tabii ki",
     "en": "naturally, of course",
     "ar": "بطبيعة الحال، طبعاً",
-    "fr": "naturellement, bien sûr"
+    "fr": "naturellement, bien sûr",
+    "zinnen": [
+      "xbh1hbju",
+      "6icfh67q",
+      "k2n3ufjg"
+    ]
   },
   {
     "nl": "opstellen",
@@ -396,7 +529,10 @@
     "tr": "hazırlamak, oluşturmak",
     "en": "to draw up, to compose",
     "ar": "يُعدّ، يُصيغ",
-    "fr": "rédiger, élaborer"
+    "fr": "rédiger, élaborer",
+    "zinnen": [
+      "xbh1hbju"
+    ]
   },
   {
     "nl": "orde",
@@ -405,7 +541,10 @@
     "tr": "düzen, sıra",
     "en": "order",
     "ar": "نظام، ترتيب",
-    "fr": "ordre"
+    "fr": "ordre",
+    "zinnen": [
+      "jlpbxjtk"
+    ]
   },
   {
     "nl": "overeenkomen",
@@ -415,7 +554,10 @@
     "tr": "uyuşmak, mutabık olmak",
     "en": "to agree, to correspond",
     "ar": "يتفق، يتطابق",
-    "fr": "s'accorder, correspondre"
+    "fr": "s'accorder, correspondre",
+    "zinnen": [
+      "jlpbxjtk"
+    ]
   },
   {
     "nl": "procedure",
@@ -424,7 +566,10 @@
     "tr": "prosedür, işlem",
     "en": "procedure",
     "ar": "إجراء",
-    "fr": "procédure"
+    "fr": "procédure",
+    "zinnen": [
+      "jlpbxjtk"
+    ]
   },
   {
     "nl": "scheikunde",
@@ -433,7 +578,10 @@
     "tr": "kimya",
     "en": "chemistry",
     "ar": "كيمياء",
-    "fr": "chimie"
+    "fr": "chimie",
+    "zinnen": [
+      "bqoykbhh"
+    ]
   },
   {
     "nl": "uitkomst",
@@ -442,7 +590,10 @@
     "tr": "sonuç, çözüm",
     "en": "outcome, result",
     "ar": "نتيجة",
-    "fr": "résultat, issue"
+    "fr": "résultat, issue",
+    "zinnen": [
+      "roc9il2l"
+    ]
   },
   {
     "nl": "voorafgaand",
@@ -450,7 +601,10 @@
     "tr": "önceki, önceden",
     "en": "preceding, prior",
     "ar": "سابق",
-    "fr": "préalable, précédent"
+    "fr": "préalable, précédent",
+    "zinnen": [
+      "roc9il2l"
+    ]
   },
   {
     "nl": "wellicht",
@@ -458,7 +612,10 @@
     "tr": "belki, muhtemelen",
     "en": "perhaps, possibly",
     "ar": "ربما، من المحتمل",
-    "fr": "peut-être, possiblement"
+    "fr": "peut-être, possiblement",
+    "zinnen": [
+      "vgexkvyz"
+    ]
   },
   {
     "nl": "zwak",
@@ -466,7 +623,11 @@
     "tr": "zayıf",
     "en": "weak",
     "ar": "ضعيف",
-    "fr": "faible"
+    "fr": "faible",
+    "zinnen": [
+      "vgexkvyz",
+      "0derxp56"
+    ]
   },
   {
     "nl": "aankondiging",
@@ -475,7 +636,10 @@
     "tr": "duyuru, ilan",
     "en": "announcement",
     "ar": "إعلان",
-    "fr": "annonce"
+    "fr": "annonce",
+    "zinnen": [
+      "syzfj668"
+    ]
   },
   {
     "nl": "aanwezigheid",
@@ -484,7 +648,10 @@
     "tr": "varlık, katılım",
     "en": "presence, attendance",
     "ar": "حضور",
-    "fr": "présence"
+    "fr": "présence",
+    "zinnen": [
+      "syzfj668"
+    ]
   },
   {
     "nl": "aarzelen",
@@ -494,7 +661,10 @@
     "tr": "tereddüt etmek, çekinmek",
     "en": "to hesitate",
     "ar": "يتردد",
-    "fr": "hésiter"
+    "fr": "hésiter",
+    "zinnen": [
+      "vgexkvyz"
+    ]
   },
   {
     "nl": "achterin",
@@ -502,7 +672,10 @@
     "tr": "arkada, arka kısımda",
     "en": "at the back, in the rear",
     "ar": "في الخلف",
-    "fr": "à l'arrière"
+    "fr": "à l'arrière",
+    "zinnen": [
+      "8yyigs98"
+    ]
   },
   {
     "nl": "bevallen",
@@ -512,7 +685,11 @@
     "tr": "hoşuna gitmek, beğenmek",
     "en": "to please, to appeal to",
     "ar": "يُعجب، يروق لـ",
-    "fr": "plaire à"
+    "fr": "plaire à",
+    "zinnen": [
+      "8yyigs98",
+      "jsqj2oxr"
+    ]
   },
   {
     "nl": "dossier",
@@ -521,7 +698,10 @@
     "tr": "dosya",
     "en": "file, dossier",
     "ar": "ملف",
-    "fr": "dossier"
+    "fr": "dossier",
+    "zinnen": [
+      "syzfj668"
+    ]
   },
   {
     "nl": "etage",
@@ -530,7 +710,10 @@
     "tr": "kat",
     "en": "floor, storey",
     "ar": "طابق",
-    "fr": "étage"
+    "fr": "étage",
+    "zinnen": [
+      "8yyigs98"
+    ]
   },
   {
     "nl": "exact",
@@ -538,7 +721,10 @@
     "tr": "tam, kesin",
     "en": "exact, precise",
     "ar": "دقيق، تماماً",
-    "fr": "exact, précis"
+    "fr": "exact, précis",
+    "zinnen": [
+      "5of9xe3m"
+    ]
   },
   {
     "nl": "indelen",
@@ -548,7 +734,10 @@
     "tr": "bölümlere ayırmak, sınıflandırmak",
     "en": "to divide, to classify",
     "ar": "يُقسّم، يُصنّف",
-    "fr": "diviser, classer"
+    "fr": "diviser, classer",
+    "zinnen": [
+      "5of9xe3m"
+    ]
   },
   {
     "nl": "kapstok",
@@ -557,7 +746,10 @@
     "tr": "askılık",
     "en": "coat rack, hat stand",
     "ar": "علاّقة ملابس",
-    "fr": "porte-manteau"
+    "fr": "porte-manteau",
+    "zinnen": [
+      "5of9xe3m"
+    ]
   },
   {
     "nl": "kopiëren",
@@ -567,7 +759,10 @@
     "tr": "kopyalamak, fotokopi çekmek",
     "en": "to copy, to photocopy",
     "ar": "ينسخ",
-    "fr": "copier, photocopier"
+    "fr": "copier, photocopier",
+    "zinnen": [
+      "aril2jsh"
+    ]
   },
   {
     "nl": "opbergen",
@@ -577,7 +772,10 @@
     "tr": "kaldırmak, saklamak",
     "en": "to put away, to store",
     "ar": "يُخزّن، يضع في مكانه",
-    "fr": "ranger, mettre de côté"
+    "fr": "ranger, mettre de côté",
+    "zinnen": [
+      "aril2jsh"
+    ]
   },
   {
     "nl": "printen",
@@ -587,7 +785,10 @@
     "tr": "yazdırmak, çıktı almak",
     "en": "to print",
     "ar": "يطبع",
-    "fr": "imprimer"
+    "fr": "imprimer",
+    "zinnen": [
+      "g0igj6ec"
+    ]
   },
   {
     "nl": "printer",
@@ -596,7 +797,10 @@
     "tr": "yazıcı",
     "en": "printer",
     "ar": "طابعة",
-    "fr": "imprimante"
+    "fr": "imprimante",
+    "zinnen": [
+      "aril2jsh"
+    ]
   },
   {
     "nl": "schoolbord",
@@ -605,7 +809,10 @@
     "tr": "tahta, okul tahtası",
     "en": "blackboard, whiteboard",
     "ar": "سبورة",
-    "fr": "tableau"
+    "fr": "tableau",
+    "zinnen": [
+      "g0igj6ec"
+    ]
   },
   {
     "nl": "schuiven",
@@ -615,7 +822,10 @@
     "tr": "kaydırmak, itmek",
     "en": "to slide, to push",
     "ar": "يُزحزح، يُدفع",
-    "fr": "glisser, pousser"
+    "fr": "glisser, pousser",
+    "zinnen": [
+      "g0igj6ec"
+    ]
   },
   {
     "nl": "uitkijken naar",
@@ -625,7 +835,11 @@
     "tr": "sabırsızlıkla beklemek",
     "en": "to look forward to",
     "ar": "يتطلع إلى",
-    "fr": "avoir hâte de, attendre avec impatience"
+    "fr": "avoir hâte de, attendre avec impatience",
+    "zinnen": [
+      "4c2xy6h1",
+      "mfpylajl"
+    ]
   },
   {
     "nl": "verderop",
@@ -633,7 +847,11 @@
     "tr": "ileride, biraz daha ötede",
     "en": "further on, ahead",
     "ar": "أبعد، في مكان أبعد",
-    "fr": "plus loin"
+    "fr": "plus loin",
+    "zinnen": [
+      "4c2xy6h1",
+      "mfpylajl"
+    ]
   },
   {
     "nl": "voorin",
@@ -641,7 +859,10 @@
     "tr": "önde, ön kısımda",
     "en": "at the front, in the front",
     "ar": "في الأمام",
-    "fr": "à l'avant"
+    "fr": "à l'avant",
+    "zinnen": [
+      "mfpylajl"
+    ]
   },
   {
     "nl": "voorstellen",
@@ -651,7 +872,10 @@
     "tr": "tanıtmak / önermek",
     "en": "to introduce / to suggest",
     "ar": "يُقدّم / يقترح",
-    "fr": "présenter / proposer"
+    "fr": "présenter / proposer",
+    "zinnen": [
+      "b4flnjhf"
+    ]
   },
   {
     "nl": "afkeer",
@@ -660,7 +884,10 @@
     "tr": "tiksinti, nefret",
     "en": "aversion, dislike",
     "ar": "نفور، كراهية",
-    "fr": "aversion, dégoût"
+    "fr": "aversion, dégoût",
+    "zinnen": [
+      "oyzh4t09"
+    ]
   },
   {
     "nl": "doorgaans",
@@ -668,7 +895,10 @@
     "tr": "genellikle, çoğunlukla",
     "en": "usually, generally",
     "ar": "عادةً، في الغالب",
-    "fr": "généralement, d'ordinaire"
+    "fr": "généralement, d'ordinaire",
+    "zinnen": [
+      "oyzh4t09"
+    ]
   },
   {
     "nl": "gekoeld",
@@ -676,7 +906,10 @@
     "tr": "soğutulmuş",
     "en": "chilled, refrigerated",
     "ar": "مبرّد",
-    "fr": "réfrigéré, refroidi"
+    "fr": "réfrigéré, refroidi",
+    "zinnen": [
+      "oyzh4t09"
+    ]
   },
   {
     "nl": "handel",
@@ -685,7 +918,10 @@
     "tr": "ticaret",
     "en": "trade, commerce",
     "ar": "تجارة",
-    "fr": "commerce"
+    "fr": "commerce",
+    "zinnen": [
+      "sh7zv439"
+    ]
   },
   {
     "nl": "importeren",
@@ -695,7 +931,10 @@
     "tr": "ithal etmek",
     "en": "to import",
     "ar": "يستورد",
-    "fr": "importer"
+    "fr": "importer",
+    "zinnen": [
+      "sh7zv439"
+    ]
   },
   {
     "nl": "industrie",
@@ -704,7 +943,10 @@
     "tr": "endüstri, sanayi",
     "en": "industry",
     "ar": "صناعة",
-    "fr": "industrie"
+    "fr": "industrie",
+    "zinnen": [
+      "sh7zv439"
+    ]
   },
   {
     "nl": "industrieterrein",
@@ -713,7 +955,10 @@
     "tr": "sanayi bölgesi",
     "en": "industrial estate, business park",
     "ar": "منطقة صناعية",
-    "fr": "zone industrielle"
+    "fr": "zone industrielle",
+    "zinnen": [
+      "26r4698o"
+    ]
   },
   {
     "nl": "investeren",
@@ -723,7 +968,10 @@
     "tr": "yatırım yapmak",
     "en": "to invest",
     "ar": "يستثمر",
-    "fr": "investir"
+    "fr": "investir",
+    "zinnen": [
+      "26r4698o"
+    ]
   },
   {
     "nl": "kracht",
@@ -732,7 +980,10 @@
     "tr": "güç, kuvvet",
     "en": "strength, force",
     "ar": "قوة",
-    "fr": "force, puissance"
+    "fr": "force, puissance",
+    "zinnen": [
+      "6gi11rmg"
+    ]
   },
   {
     "nl": "kruid",
@@ -741,7 +992,10 @@
     "tr": "ot, bitki / baharat",
     "en": "herb, plant",
     "ar": "عشبة، نبات",
-    "fr": "herbe, plante aromatique"
+    "fr": "herbe, plante aromatique",
+    "zinnen": [
+      "3b4rpff2"
+    ]
   },
   {
     "nl": "langzamerhand",
@@ -749,7 +1003,10 @@
     "tr": "yavaş yavaş, giderek",
     "en": "gradually, little by little",
     "ar": "تدريجياً، رويداً رويداً",
-    "fr": "progressivement, peu à peu"
+    "fr": "progressivement, peu à peu",
+    "zinnen": [
+      "6gi11rmg"
+    ]
   },
   {
     "nl": "omzet",
@@ -758,7 +1015,10 @@
     "tr": "ciro, satış hasılatı",
     "en": "turnover, revenue",
     "ar": "حجم المبيعات، إيرادات",
-    "fr": "chiffre d'affaires"
+    "fr": "chiffre d'affaires",
+    "zinnen": [
+      "6gi11rmg"
+    ]
   },
   {
     "nl": "onderneming",
@@ -767,7 +1027,10 @@
     "tr": "şirket, girişim",
     "en": "company, enterprise",
     "ar": "مشروع، شركة",
-    "fr": "entreprise"
+    "fr": "entreprise",
+    "zinnen": [
+      "26r4698o"
+    ]
   },
   {
     "nl": "oprichten",
@@ -777,7 +1040,10 @@
     "tr": "kurmak, tesis etmek",
     "en": "to found, to establish",
     "ar": "يُأسّس، يُنشئ",
-    "fr": "fonder, établir"
+    "fr": "fonder, établir",
+    "zinnen": [
+      "3b4rpff2"
+    ]
   },
   {
     "nl": "pand",
@@ -786,7 +1052,10 @@
     "tr": "bina, mülk",
     "en": "building, premises",
     "ar": "مبنى، عقار",
-    "fr": "bâtiment, local"
+    "fr": "bâtiment, local",
+    "zinnen": [
+      "dcu0cshw"
+    ]
   },
   {
     "nl": "rondlopen",
@@ -796,7 +1065,10 @@
     "tr": "dolaşmak, gezinmek",
     "en": "to walk around, to roam",
     "ar": "يتجول",
-    "fr": "se promener, déambuler"
+    "fr": "se promener, déambuler",
+    "zinnen": [
+      "dcu0cshw"
+    ]
   },
   {
     "nl": "sector",
@@ -805,7 +1077,10 @@
     "tr": "sektör",
     "en": "sector",
     "ar": "قطاع",
-    "fr": "secteur"
+    "fr": "secteur",
+    "zinnen": [
+      "dcu0cshw"
+    ]
   },
   {
     "nl": "slachten",
@@ -815,7 +1090,10 @@
     "tr": "kesmek (hayvan)",
     "en": "to slaughter, to butcher",
     "ar": "يذبح",
-    "fr": "abattre, tuer"
+    "fr": "abattre, tuer",
+    "zinnen": [
+      "eivspg8m"
+    ]
   },
   {
     "nl": "slachthuis",
@@ -824,7 +1102,10 @@
     "tr": "mezbaha, kesimhane",
     "en": "slaughterhouse, abattoir",
     "ar": "مسلخ، مجزرة",
-    "fr": "abattoir"
+    "fr": "abattoir",
+    "zinnen": [
+      "eivspg8m"
+    ]
   },
   {
     "nl": "slagerij",
@@ -833,7 +1114,10 @@
     "tr": "kasap dükkanı",
     "en": "butcher's shop",
     "ar": "محل جزارة",
-    "fr": "boucherie"
+    "fr": "boucherie",
+    "zinnen": [
+      "3b4rpff2"
+    ]
   },
   {
     "nl": "subsidie",
@@ -842,7 +1126,10 @@
     "tr": "sübvansiyon, hibe",
     "en": "subsidy, grant",
     "ar": "دعم مالي، إعانة",
-    "fr": "subvention"
+    "fr": "subvention",
+    "zinnen": [
+      "r1ytikz9"
+    ]
   },
   {
     "nl": "telefoontje",
@@ -851,7 +1138,10 @@
     "tr": "telefon görüşmesi",
     "en": "phone call",
     "ar": "مكالمة هاتفية",
-    "fr": "coup de téléphone"
+    "fr": "coup de téléphone",
+    "zinnen": [
+      "2xnz8lyx"
+    ]
   },
   {
     "nl": "vel",
@@ -860,7 +1150,10 @@
     "tr": "deri, cilt / kağıt yaprağı",
     "en": "skin, hide / sheet of paper",
     "ar": "جلد / ورقة",
-    "fr": "peau / feuille"
+    "fr": "peau / feuille",
+    "zinnen": [
+      "eivspg8m"
+    ]
   },
   {
     "nl": "verslaving",
@@ -869,7 +1162,10 @@
     "tr": "bağımlılık",
     "en": "addiction",
     "ar": "إدمان",
-    "fr": "dépendance, addiction"
+    "fr": "dépendance, addiction",
+    "zinnen": [
+      "2xnz8lyx"
+    ]
   },
   {
     "nl": "waarmaken",
@@ -879,7 +1175,10 @@
     "tr": "gerçekleştirmek, yerine getirmek",
     "en": "to fulfil, to live up to",
     "ar": "يُحقق، يُنفّذ",
-    "fr": "réaliser, tenir (une promesse)"
+    "fr": "réaliser, tenir (une promesse)",
+    "zinnen": [
+      "r1ytikz9"
+    ]
   },
   {
     "nl": "winst",
@@ -888,7 +1187,10 @@
     "tr": "kâr, kazanç",
     "en": "profit, gain",
     "ar": "ربح",
-    "fr": "bénéfice, profit"
+    "fr": "bénéfice, profit",
+    "zinnen": [
+      "r1ytikz9"
+    ]
   },
   {
     "nl": "woedend",
@@ -896,7 +1198,10 @@
     "tr": "öfkeli, çok kızgın",
     "en": "furious, enraged",
     "ar": "غاضب جداً",
-    "fr": "furieux, enragé"
+    "fr": "furieux, enragé",
+    "zinnen": [
+      "2xnz8lyx"
+    ]
   },
   {
     "nl": "zonsopgang",
@@ -905,6 +1210,9 @@
     "tr": "gün doğumu",
     "en": "sunrise",
     "ar": "شروق الشمس",
-    "fr": "lever du soleil"
+    "fr": "lever du soleil",
+    "zinnen": [
+      "uzx8t38h"
+    ]
   }
 ]
