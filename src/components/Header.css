@@ -207,6 +207,26 @@
   color: var(--color-primary);
 }
 
+.profile-btn {
+  border-radius: var(--radius-full);
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid transparent;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.profile-btn--logged-in {
+  border-color: var(--color-primary);
+}
+
+.profile-btn-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: block;
+}
+
 /* Mobile adjustments */
 @media (max-width: 480px) {
   .logo-text {

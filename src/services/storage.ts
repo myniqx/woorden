@@ -1,16 +1,10 @@
 import type { Language, WordStats, AllWordStats, WordProgress, AllWordProgress, SkillProgress, SkillType, HistoryEntry } from '../types';
 import { words } from './words';
 
-import { pushProgress } from './sync';
-import type { User } from './auth';
-
 const STORAGE_KEY = 'woorden_app_data';
 const MAX_HISTORY_LENGTH = 20;
 const MASTERY_STREAK = 3;
 
-let currentUser: User | null = null;
-let pushDebounceTimer: ReturnType<typeof setTimeout> | null = null;
-const PUSH_DEBOUNCE_MS = 10_000;
 const UID_KEY = 'woorden_auth_uid';
 
 export function getStoredUid(): string | null {
@@ -23,20 +17,6 @@ export function setStoredUid(uid: string): void {
 
 export function clearStoredUid(): void {
   localStorage.removeItem(UID_KEY);
-}
-
-export function setCurrentUser(user: User | null): void {
-  currentUser = user;
-}
-
-function schedulePush(data: AppData): void {
-  if (!currentUser) return;
-  if (pushDebounceTimer) clearTimeout(pushDebounceTimer);
-  const user = currentUser;
-  pushDebounceTimer = setTimeout(() => {
-    pushProgress(user, data).catch(() => {});
-    pushDebounceTimer = null;
-  }, PUSH_DEBOUNCE_MS);
 }
 
 interface DailyStats {
@@ -62,6 +42,8 @@ interface AppData {
   bestDaily: number;
   enabledPacks: EnabledPacks; // Hierarchical word pack config
   pinnedWords: PinnedWords; // Pinned words per quiz type
+  username: string;
+  avatarIndex: number;
 }
 
 const defaultData: AppData = {
@@ -71,8 +53,10 @@ const defaultData: AppData = {
   streak: 0,
   lastPracticeDate: null,
   bestDaily: 0,
-  enabledPacks: {}, // empty = all enabled by default
-  pinnedWords: {}, // empty = no pinned words
+  enabledPacks: {},
+  pinnedWords: {},
+  username: '',
+  avatarIndex: 0,
 };
 
 // Migration helpers
@@ -187,7 +171,6 @@ function loadData(): AppData {
 function saveData(data: AppData): void {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-    schedulePush(data);
   } catch (e) {
     console.error('Error saving data:', e);
   }
@@ -563,6 +546,24 @@ export function importData(jsonString: string): { success: boolean; message: str
   }
 }
 
+export function getUsername(): string {
+  return appData.username;
+}
+
+export function setUsername(name: string): void {
+  appData.username = name;
+  saveData(appData);
+}
+
+export function getAvatarIndex(): number {
+  return appData.avatarIndex;
+}
+
+export function setAvatarIndex(index: number): void {
+  appData.avatarIndex = index;
+  saveData(appData);
+}
+
 function mergeSkill(local: SkillProgress, remote: SkillProgress): SkillProgress {
   const history = local.seen >= remote.seen ? local.history : remote.history;
   return {
@@ -655,7 +656,14 @@ export function loadRemoteData(remoteData: object): void {
 
 // Return current app data for pushing to Supabase
 export function getExportData(): object {
-  return appData;
+  return {
+    wordProgress: appData.wordProgress,
+    pinnedWords: appData.pinnedWords,
+    enabledPacks: appData.enabledPacks,
+    streak: appData.streak,
+    lastPracticeDate: appData.lastPracticeDate,
+    bestDaily: appData.bestDaily,
+  };
 }
 
 // Word pack management - hierarchical structure
