@@ -6,6 +6,8 @@ import type { User as AuthUser } from '../services/auth';
 import { pushProfile, pullProfile, updateMyData, downloadData, fetchLeaderboard, UsernameConflictError } from '../services/sync';
 import type { LeaderboardEntry } from '../services/sync';
 import { Avatar, AvatarPicker } from './AvatarPicker';
+import { t } from '../data/translations';
+import type { Language } from '../types';
 import './ProfileScreen.css';
 
 interface ProfileScreenProps {
@@ -17,6 +19,7 @@ interface ProfileScreenProps {
   onSignOut: () => void;
   onDataImported?: () => void;
   onPacksChanged?: () => void;
+  language: Language;
 }
 
 type Tab = 'leaderboard' | 'profile' | 'settings';
@@ -29,7 +32,9 @@ export function ProfileScreen({
   onSignIn,
   onSignOut,
   onDataImported,
+  language,
 }: ProfileScreenProps) {
+  const tr = (key: string, replacements?: Record<string, string | number>) => t(key, language, replacements);
   const [activeTab, setActiveTab] = useState<Tab>(user ? 'leaderboard' : 'profile');
   const [username, setUsernameState] = useState(getUsername);
   const [avatarIndex, setAvatarIndexState] = useState(getAvatarIndex);
@@ -207,9 +212,9 @@ export function ProfileScreen({
   };
 
   const tabs: { id: Tab; icon: typeof Trophy; label: string }[] = [
-    { id: 'leaderboard', icon: Trophy, label: 'Leaderboard' },
-    { id: 'profile', icon: User, label: 'Profile' },
-    { id: 'settings', icon: Settings, label: 'Settings' },
+    { id: 'leaderboard', icon: Trophy, label: tr('tab_leaderboard') },
+    { id: 'profile', icon: User, label: tr('tab_profile') },
+    { id: 'settings', icon: Settings, label: tr('tab_settings') },
   ];
 
   return (
@@ -247,7 +252,8 @@ export function ProfileScreen({
             const d = new Date();
             d.setMinutes(5, 0, 0);
             if (d.getTime() <= Date.now()) d.setHours(d.getHours() + 1);
-            return d.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
+            const localeMap: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', ar: 'ar-SA', fr: 'fr-FR' };
+            return d.toLocaleTimeString(localeMap[language] ?? 'en-GB', { hour: '2-digit', minute: '2-digit' });
           })();
 
           const RankIcon = ({ rank }: { rank: number }) => {
@@ -266,14 +272,14 @@ export function ProfileScreen({
                     class={`leaderboard-tab${leaderboardTab === t ? ' active' : ''}`}
                     onClick={() => setLeaderboardTab(t)}
                   >
-                    {t === 'daily' ? 'Bugün' : t === 'last7' ? '7 Gün' : '30 Gün'}
+                    {t === 'daily' ? tr('lb_today') : t === 'last7' ? tr('lb_7days') : tr('lb_30days')}
                   </button>
                 ))}
               </div>
               {leaderboard === null ? (
-                <p class="leaderboard-loading">Yükleniyor...</p>
+                <p class="leaderboard-loading">{tr('lb_loading')}</p>
               ) : sorted.length === 0 ? (
-                <p class="leaderboard-empty">Henüz veri yok.</p>
+                <p class="leaderboard-empty">{tr('lb_empty')}</p>
               ) : (
                 <div class="leaderboard-list">
                   {sorted.map((entry, i) => {
@@ -297,7 +303,7 @@ export function ProfileScreen({
                   })}
                 </div>
               )}
-              <p class="leaderboard-update-note">Saat başı +5 dk. güncellenir · Sonraki: {nextUpdateStr}</p>
+              <p class="leaderboard-update-note">{tr('lb_update_note', { time: nextUpdateStr })}</p>
             </div>
           );
 
@@ -306,10 +312,10 @@ export function ProfileScreen({
               <div class="leaderboard-wrap">
                 <div class="leaderboard-blur">{listContent}</div>
                 <div class="leaderboard-gate">
-                  <p>Sıralamayı görmek için giriş yapın</p>
+                  <p>{tr('lb_gate_text')}</p>
                   <button class="profile-btn profile-btn--primary" onClick={onSignIn}>
                     <LogIn size={16} />
-                    Sign in with Google
+                    {tr('lb_signin_google')}
                   </button>
                 </div>
               </div>
@@ -325,16 +331,16 @@ export function ProfileScreen({
               <section class="profile-section">
                 <h3>
                   <User size={16} />
-                  Account
+                  {tr('profile_account')}
                 </h3>
                 <div class="profile-signin-prompt">
                   <ul class="profile-signin-reasons">
-                    <li>Verilerinizi online yedeklemek için</li>
-                    <li>Leaderboard'da yerinizi görmek için</li>
+                    <li>{tr('profile_signin_reason1')}</li>
+                    <li>{tr('profile_signin_reason2')}</li>
                   </ul>
                   <button class="profile-btn profile-btn--full" onClick={onSignIn}>
                     <LogIn size={16} />
-                    Sign in with Google
+                    {tr('lb_signin_google')}
                   </button>
                 </div>
               </section>
@@ -351,7 +357,7 @@ export function ProfileScreen({
                         class="profile-btn profile-btn--sm"
                         onClick={() => setShowAvatarPicker(v => !v)}
                       >
-                        {showAvatarPicker ? 'Kapat' : 'Değiştir'}
+                        {showAvatarPicker ? tr('profile_avatar_close') : tr('profile_avatar_change')}
                       </button>
                     </div>
                   </div>
@@ -364,12 +370,12 @@ export function ProfileScreen({
                 </section>
 
                 <section class="profile-section">
-                  <h3>Kullanıcı Adı</h3>
+                  <h3>{tr('profile_username')}</h3>
                   <div class="profile-username-row">
                     <input
                       class={`profile-username-input${saveState === 'conflict' ? ' profile-username-input--error' : ''}`}
                       type="text"
-                      placeholder="Kullanıcı adınız"
+                      placeholder={tr('profile_username_placeholder')}
                       value={username}
                       onInput={(e) => { setUsernameState((e.target as HTMLInputElement).value); setSaveState('idle'); }}
                       onBlur={handleUsernameBlur}
@@ -384,7 +390,7 @@ export function ProfileScreen({
                     </button>
                   </div>
                   {saveState === 'conflict' && (
-                    <p class="profile-input-error">Bu kullanıcı adı zaten alınmış.</p>
+                    <p class="profile-input-error">{tr('profile_username_taken')}</p>
                   )}
                 </section>
 
@@ -395,102 +401,94 @@ export function ProfileScreen({
                     disabled={saveState === 'saving' || !username.trim()}
                   >
                     <Save size={16} />
-                    {saveState === 'saving' ? 'Kaydediliyor...' : saveState === 'saved' ? 'Kaydedildi' : saveState === 'error' ? 'Bir hata oluştu' : 'Kaydet'}
+                    {saveState === 'saving' ? tr('profile_saving') : saveState === 'saved' ? tr('profile_saved') : saveState === 'error' ? tr('profile_error') : tr('profile_save')}
                   </button>
                 </section>
 
                 {lastSync && (
                   <p class="profile-last-sync">
-                    Son yedek: {new Date(lastSync).toLocaleString('tr-TR')}
+                    {tr('profile_last_sync', { date: new Date(lastSync).toLocaleString() })}
                   </p>
                 )}
 
                 {syncCooldown > 0 && (
                   <p class="profile-sync-cooldown">
-                    Sonraki işlem için: {Math.floor(syncCooldown / 60)}:{String(syncCooldown % 60).padStart(2, '0')}
+                    {tr('profile_next_action', { time: `${Math.floor(syncCooldown / 60)}:${String(syncCooldown % 60).padStart(2, '0')}` })}
                   </p>
                 )}
 
                 <section class="profile-section">
                   <h3>
                     <RefreshCw size={16} />
-                    Sync Data
+                    {tr('profile_sync_data')}
                   </h3>
-                  <p class="profile-action-desc">
-                    Sunucudaki veriyi çeker, yerel veriyle birleştirir ve tekrar yükler. Her iki taraf da aynı veriye sahip olur.
-                  </p>
+                  <p class="profile-action-desc">{tr('profile_sync_desc')}</p>
                   <button
                     class={`profile-btn profile-btn--full${syncState === 'error' ? ' profile-btn--danger' : ''}`}
                     onClick={() => handleSyncAction(() => updateMyData(user!, 'merge'))}
                     disabled={syncState === 'busy' || syncCooldown > 0}
                   >
                     <RefreshCw size={16} />
-                    {syncState === 'busy' ? 'İşleniyor...' : syncState === 'done' ? 'Tamamlandı' : syncState === 'error' ? 'Hata oluştu' : 'Sync Data'}
+                    {syncState === 'busy' ? tr('profile_processing') : syncState === 'done' ? tr('profile_done') : syncState === 'error' ? tr('profile_action_error') : tr('profile_sync_data')}
                   </button>
                 </section>
 
                 <section class="profile-section">
                   <h3>
                     <CloudDownload size={16} />
-                    Get Data
+                    {tr('profile_get_data')}
                   </h3>
-                  <p class="profile-action-desc">
-                    Sunucudaki veriyi çeker ve yerel verinin üzerine yazar. Yerel değişiklikler kaybolur.
-                  </p>
+                  <p class="profile-action-desc">{tr('profile_get_desc')}</p>
                   <button
                     class={`profile-btn profile-btn--full${syncState === 'error' ? ' profile-btn--danger' : ''}`}
                     onClick={() => handleSyncAction(() => downloadData(user!, 'override'))}
                     disabled={syncState === 'busy' || syncCooldown > 0}
                   >
                     <CloudDownload size={16} />
-                    {syncState === 'busy' ? 'İşleniyor...' : syncState === 'done' ? 'Tamamlandı' : syncState === 'error' ? 'Hata oluştu' : 'Get Data'}
+                    {syncState === 'busy' ? tr('profile_processing') : syncState === 'done' ? tr('profile_done') : syncState === 'error' ? tr('profile_action_error') : tr('profile_get_data')}
                   </button>
                 </section>
 
                 <section class="profile-section">
                   <h3>
                     <CloudUpload size={16} />
-                    Upload Data
+                    {tr('profile_upload_data')}
                   </h3>
-                  <p class="profile-action-desc">
-                    Yerel veriyi sunucuya yükler ve sunucudaki verinin üzerine yazar.
-                  </p>
+                  <p class="profile-action-desc">{tr('profile_upload_desc')}</p>
                   <button
                     class={`profile-btn profile-btn--full${syncState === 'error' ? ' profile-btn--danger' : ''}`}
                     onClick={() => handleSyncAction(() => updateMyData(user!, 'override'))}
                     disabled={syncState === 'busy' || syncCooldown > 0}
                   >
                     <CloudUpload size={16} />
-                    {syncState === 'busy' ? 'İşleniyor...' : syncState === 'done' ? 'Tamamlandı' : syncState === 'error' ? 'Hata oluştu' : 'Upload Data'}
+                    {syncState === 'busy' ? tr('profile_processing') : syncState === 'done' ? tr('profile_done') : syncState === 'error' ? tr('profile_action_error') : tr('profile_upload_data')}
                   </button>
                 </section>
 
                 <section class="profile-section">
                   <h3>
                     <Trash2 size={16} />
-                    Tüm İlerlemeyi Sil
+                    {tr('profile_delete_all')}
                   </h3>
-                  <p class="profile-action-desc">
-                    Tüm kelime ilerlemesi, istatistikler ve seri bilgisi silinir. Bu işlem geri alınamaz.
-                  </p>
+                  <p class="profile-action-desc">{tr('profile_delete_desc')}</p>
                   <button
                     class="profile-btn profile-btn--full profile-btn--danger"
                     onClick={() => {
-                      if (confirm('Tüm ilerleme silinecek. Emin misiniz?')) {
+                      if (confirm(tr('profile_delete_confirm'))) {
                         resetData();
                         onDataImported?.();
                       }
                     }}
                   >
                     <Trash2 size={16} />
-                    Tüm İlerlemeyi Sil
+                    {tr('profile_delete_all')}
                   </button>
                 </section>
 
                 <section class="profile-section">
                   <button class="profile-btn profile-btn--full profile-btn--danger" onClick={onSignOut}>
                     <LogOut size={16} />
-                    Sign out
+                    {tr('profile_signout')}
                   </button>
                 </section>
               </>
@@ -503,7 +501,7 @@ export function ProfileScreen({
             <section class="profile-section">
               <h3>
                 {theme === 'dark' ? <Moon size={16} /> : <Sun size={16} />}
-                Theme
+                {tr('settings_theme')}
               </h3>
               <div class="profile-theme-toggle">
                 <button
@@ -511,14 +509,14 @@ export function ProfileScreen({
                   onClick={() => theme === 'dark' && onToggleTheme()}
                 >
                   <Sun size={16} />
-                  Light
+                  {tr('settings_light')}
                 </button>
                 <button
                   class={`profile-theme-option ${theme === 'dark' ? 'active' : ''}`}
                   onClick={() => theme === 'light' && onToggleTheme()}
                 >
                   <Moon size={16} />
-                  Dark
+                  {tr('settings_dark')}
                 </button>
               </div>
             </section>
@@ -526,16 +524,16 @@ export function ProfileScreen({
             <section class="profile-section">
               <h3>
                 <Download size={16} />
-                Data
+                {tr('settings_data')}
               </h3>
               <div class="profile-data-actions">
                 <button class="profile-btn" onClick={handleExport}>
                   <Download size={16} />
-                  Export
+                  {tr('settings_export')}
                 </button>
                 <button class="profile-btn" onClick={handleImportClick}>
                   <Upload size={16} />
-                  Import
+                  {tr('settings_import')}
                 </button>
               </div>
             </section>
@@ -543,7 +541,7 @@ export function ProfileScreen({
             <div class="profile-visitor-footer">
               <Users size={13} />
               {visitorCount !== null
-                ? <span>{visitorCount.toLocaleString()} {visitorCount === 1 ? 'visitor' : 'visitors'}</span>
+                ? <span>{visitorCount.toLocaleString()} {visitorCount === 1 ? tr('settings_visitor') : tr('settings_visitors')}</span>
                 : <span class="visitor-loading">···</span>
               }
             </div>

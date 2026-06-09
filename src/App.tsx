@@ -13,6 +13,8 @@ import { signInWithGoogle, signOut, onAuthStateChange } from './services/auth';
 import type { User } from './services/auth';
 import { pushStats } from './services/sync';
 import { ProfileScreen } from './components/ProfileScreen';
+import { AlertBanner } from './components/AlertBanner';
+import type { AlertAction } from './components/AlertBanner';
 
 const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
 import type { QuizType, QuizMode, Screen } from './types';
@@ -48,6 +50,7 @@ export function App() {
     updateServiceWorker,
   } = useRegisterSW();
   const [screen, setScreen] = useState<Screen>('menu');
+  const [alertKey, setAlertKey] = useState(0);
   const [currentQuizType, setCurrentQuizType] = useState<QuizType | null>(null);
   const [currentQuizMode, setCurrentQuizMode] = useState<QuizMode>('normal');
   const [statsVersion, setStatsVersion] = useState(0);
@@ -129,6 +132,20 @@ export function App() {
 
       <main class="main">
         {screen === 'menu' && (
+          <AlertBanner
+            key={alertKey}
+            language={language}
+            onAction={(action: AlertAction) => {
+              setAlertKey(k => k + 1);
+              if (action === 'goToProfile' || action === 'signIn') {
+                history.pushState({ screen: 'profile' }, '');
+                setScreen('profile');
+              }
+            }}
+          />
+        )}
+
+        {screen === 'menu' && (
           <MainMenu
             onStartQuiz={startQuiz}
             onOpenChangelog={() => {
@@ -153,6 +170,7 @@ export function App() {
             onSignIn={signInWithGoogle}
             onSignOut={signOut}
             onDataImported={onStatsUpdate}
+            language={language}
           />
         )}
 
