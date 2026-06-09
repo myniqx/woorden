@@ -139,6 +139,44 @@ export async function pushStats(user: User): Promise<void> {
   localStorage.setItem(LAST_STATS_PUSH_KEY, signature);
 }
 
+export interface LeaderboardEntry {
+  username: string;
+  avatarIndex: number;
+  daily: number;
+  dailyCorrect: number;
+  last7: number;
+  last7Correct: number;
+  last30: number;
+  last30Correct: number;
+}
+
+export async function fetchLeaderboard(): Promise<LeaderboardEntry[]> {
+  const { data, error } = await supabase
+    .from('cache')
+    .select('value')
+    .eq('key', 'leaderboard')
+    .single();
+
+  if (error || !data?.value) return [];
+
+  return data.value
+    .split('\n')
+    .filter((line: string) => line.trim())
+    .map((line: string) => {
+      const [username, avatarIndex, daily, dailyCorrect, last7, last7Correct, last30, last30Correct] = line.split(',');
+      return {
+        username,
+        avatarIndex: Number(avatarIndex),
+        daily: Number(daily),
+        dailyCorrect: Number(dailyCorrect),
+        last7: Number(last7),
+        last7Correct: Number(last7Correct),
+        last30: Number(last30),
+        last30Correct: Number(last30Correct),
+      };
+    });
+}
+
 // Remote → Local: Supabase'den çek, local'e yaz
 export async function downloadData(user: User, mode: 'override' | 'merge'): Promise<void> {
   const remote = await pullProgress(user);

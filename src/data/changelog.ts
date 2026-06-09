@@ -11,6 +11,14 @@ export interface ChangelogEntry {
 
 export const changelog: ChangelogEntry[] = [
   {
+    date: '2026-06-09',
+    items: [
+      'Leaderboard added: daily, 7-day, and 30-day rankings with correct answer percentage',
+      'Google sign-in added for cross-device sync and leaderboard participation',
+      'Profile page: set a username and avatar to appear on the leaderboard',
+    ],
+  },
+  {
     date: '2026-03-13',
     items: [
       '~2700 example sentences added across A1, A2, and A2+ word packs',

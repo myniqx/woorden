@@ -1,8 +1,10 @@
 import { useRef, useState, useEffect } from 'preact/hooks';
-import { Trophy, User, Settings, Sun, Moon, Download, Upload, Users, LogIn, LogOut, RefreshCw, CloudDownload, CloudUpload, Save, Trash2 } from 'lucide-preact';
+import { Trophy, User, Settings, Sun, Moon, Download, Upload, Users, LogIn, LogOut, RefreshCw, CloudDownload, CloudUpload, Save, Trash2, Shuffle, Crown, Star, Zap } from 'lucide-preact';
 import { exportData, importData, getUsername, setUsername, getAvatarIndex, setAvatarIndex, resetData } from '../services/storage';
+import { getRandomUsername } from '../data/username-words';
 import type { User as AuthUser } from '../services/auth';
-import { pushProfile, pullProfile, updateMyData, downloadData, UsernameConflictError } from '../services/sync';
+import { pushProfile, pullProfile, updateMyData, downloadData, fetchLeaderboard, UsernameConflictError } from '../services/sync';
+import type { LeaderboardEntry } from '../services/sync';
 import { Avatar, AvatarPicker } from './AvatarPicker';
 import './ProfileScreen.css';
 
@@ -28,7 +30,7 @@ export function ProfileScreen({
   onSignOut,
   onDataImported,
 }: ProfileScreenProps) {
-  const [activeTab, setActiveTab] = useState<Tab>('profile');
+  const [activeTab, setActiveTab] = useState<Tab>(user ? 'leaderboard' : 'profile');
   const [username, setUsernameState] = useState(getUsername);
   const [avatarIndex, setAvatarIndexState] = useState(getAvatarIndex);
   const [showAvatarPicker, setShowAvatarPicker] = useState(false);
@@ -36,6 +38,10 @@ export function ProfileScreen({
   const [lastSync, setLastSync] = useState<string | null>(null);
   const [syncState, setSyncState] = useState<'idle' | 'busy' | 'done' | 'error'>('idle');
   const [syncCooldown, setSyncCooldown] = useState<number>(0);
+  const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[] | null>(null);
+  const [leaderboardTab, setLeaderboardTab] = useState<'daily' | 'last7' | 'last30'>('daily');
+  const leaderboardFetched = useRef(false);
+  const leaderboardTabOpened = useRef(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const profileFetched = useRef(false);
   const cooldownTimer = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -82,6 +88,42 @@ export function ProfileScreen({
       setTimeout(() => setSyncState('idle'), 3000);
     }
   };
+
+  const LEADERBOARD_CACHE_KEY = 'woorden_leaderboard_cache';
+  const LEADERBOARD_CACHE_TS_KEY = 'woorden_leaderboard_ts';
+
+  const loadLeaderboard = () => {
+    if (leaderboardFetched.current) return;
+    leaderboardFetched.current = true;
+
+    // Saat başı + 5 dakika sonra güncellenir, o zamana kadar cache geçerli
+    const cached = localStorage.getItem(LEADERBOARD_CACHE_KEY);
+    const cachedTs = Number(localStorage.getItem(LEADERBOARD_CACHE_TS_KEY) ?? 0);
+    const now = Date.now();
+    const nextUpdate = (() => {
+      const d = new Date();
+      d.setMinutes(5, 0, 0);
+      if (d.getTime() <= now) d.setHours(d.getHours() + 1);
+      return d.getTime();
+    })();
+
+    if (cached && cachedTs > 0 && now < nextUpdate) {
+      try { setLeaderboard(JSON.parse(cached)); return; } catch { /* fall through */ }
+    }
+
+    fetchLeaderboard().then((data) => {
+      setLeaderboard(data);
+      localStorage.setItem(LEADERBOARD_CACHE_KEY, JSON.stringify(data));
+      localStorage.setItem(LEADERBOARD_CACHE_TS_KEY, String(Date.now()));
+    }).catch(() => setLeaderboard([]));
+  };
+
+  useEffect(() => {
+    if (activeTab === 'leaderboard' && user && !leaderboardTabOpened.current) {
+      leaderboardTabOpened.current = true;
+      loadLeaderboard();
+    }
+  }, [activeTab, user]);
 
   useEffect(() => {
     if (!user || profileFetched.current) return;
@@ -186,12 +228,96 @@ export function ProfileScreen({
       </div>
 
       <div class="profile-tab-content">
-        {activeTab === 'leaderboard' && (
-          <div class="profile-placeholder">
-            <Trophy size={48} />
-            <p>Leaderboard coming soon</p>
-          </div>
-        )}
+        {activeTab === 'leaderboard' && (() => {
+          const scoreKey = leaderboardTab === 'daily' ? 'daily' : leaderboardTab === 'last7' ? 'last7' : 'last30';
+          const correctKey = leaderboardTab === 'daily' ? 'dailyCorrect' : leaderboardTab === 'last7' ? 'last7Correct' : 'last30Correct';
+          const myUsername = getUsername();
+          const allSorted = leaderboard
+            ? [...leaderboard].sort((a, b) => b[scoreKey] - a[scoreKey])
+            : [];
+          const myRank = allSorted.findIndex((e) => e.username === myUsername);
+          // Top 20, but always include the current user at position 20 if they fall outside
+          const top20 = allSorted.slice(0, 20);
+          const meInTop20 = myRank === -1 || myRank < 20;
+          const sorted = meInTop20
+            ? top20
+            : [...top20.slice(0, 19), allSorted[myRank]];
+
+          const nextUpdateStr = (() => {
+            const d = new Date();
+            d.setMinutes(5, 0, 0);
+            if (d.getTime() <= Date.now()) d.setHours(d.getHours() + 1);
+            return d.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
+          })();
+
+          const RankIcon = ({ rank }: { rank: number }) => {
+            if (rank === 0) return <Crown size={18} style="color:#f5a623" />;
+            if (rank === 1) return <Star size={16} style="color:#9c27b0" />;
+            if (rank === 2) return <Zap size={15} style="color:#2196f3" />;
+            return <span class="leaderboard-rank-num">{rank + 1}</span>;
+          };
+
+          const listContent = (
+            <div>
+              <div class="leaderboard-tabs">
+                {(['daily', 'last7', 'last30'] as const).map((t) => (
+                  <button
+                    key={t}
+                    class={`leaderboard-tab${leaderboardTab === t ? ' active' : ''}`}
+                    onClick={() => setLeaderboardTab(t)}
+                  >
+                    {t === 'daily' ? 'Bugün' : t === 'last7' ? '7 Gün' : '30 Gün'}
+                  </button>
+                ))}
+              </div>
+              {leaderboard === null ? (
+                <p class="leaderboard-loading">Yükleniyor...</p>
+              ) : sorted.length === 0 ? (
+                <p class="leaderboard-empty">Henüz veri yok.</p>
+              ) : (
+                <div class="leaderboard-list">
+                  {sorted.map((entry, i) => {
+                    const realRank = allSorted.findIndex((e) => e.username === entry.username);
+                    const score = entry[scoreKey];
+                    const correct = entry[correctKey];
+                    const pct = score > 0 ? Math.round((correct / score) * 100) : 0;
+                    const isMe = entry.username === myUsername;
+                    const rowClass = realRank === 0 ? 'leaderboard-row--gold' : realRank === 1 ? 'leaderboard-row--silver' : realRank === 2 ? 'leaderboard-row--bronze' : '';
+                    return (
+                      <div key={entry.username} class={`leaderboard-row ${rowClass}`}>
+                        <span class="leaderboard-rank"><RankIcon rank={realRank} /></span>
+                        <span class="leaderboard-avatar"><Avatar index={entry.avatarIndex} size={i < 3 ? 36 : 30} /></span>
+                        <span class={`leaderboard-username${isMe ? ' leaderboard-username--me' : ''}`}>{entry.username}</span>
+                        <span class="leaderboard-score-wrap">
+                          <span class="leaderboard-score">{score}</span>
+                          <span class="leaderboard-correct">{correct} <span class="leaderboard-pct">%{pct}</span></span>
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+              <p class="leaderboard-update-note">Saat başı +5 dk. güncellenir · Sonraki: {nextUpdateStr}</p>
+            </div>
+          );
+
+          if (!user) {
+            return (
+              <div class="leaderboard-wrap">
+                <div class="leaderboard-blur">{listContent}</div>
+                <div class="leaderboard-gate">
+                  <p>Sıralamayı görmek için giriş yapın</p>
+                  <button class="profile-btn profile-btn--primary" onClick={onSignIn}>
+                    <LogIn size={16} />
+                    Sign in with Google
+                  </button>
+                </div>
+              </div>
+            );
+          }
+
+          return listContent;
+        })()}
 
         {activeTab === 'profile' && (
           <div class="profile-section-list">
@@ -239,15 +365,24 @@ export function ProfileScreen({
 
                 <section class="profile-section">
                   <h3>Kullanıcı Adı</h3>
-                  <input
-                    class={`profile-username-input${saveState === 'conflict' ? ' profile-username-input--error' : ''}`}
-                    type="text"
-                    placeholder="Kullanıcı adınız"
-                    value={username}
-                    onInput={(e) => { setUsernameState((e.target as HTMLInputElement).value); setSaveState('idle'); }}
-                    onBlur={handleUsernameBlur}
-                    maxLength={24}
-                  />
+                  <div class="profile-username-row">
+                    <input
+                      class={`profile-username-input${saveState === 'conflict' ? ' profile-username-input--error' : ''}`}
+                      type="text"
+                      placeholder="Kullanıcı adınız"
+                      value={username}
+                      onInput={(e) => { setUsernameState((e.target as HTMLInputElement).value); setSaveState('idle'); }}
+                      onBlur={handleUsernameBlur}
+                      maxLength={24}
+                    />
+                    <button
+                      class="profile-btn profile-btn--sm"
+                      onClick={() => { const name = getRandomUsername(); setUsernameState(name); setUsername(name); setSaveState('idle'); }}
+                      title="Rastgele kullanıcı adı üret"
+                    >
+                      <Shuffle size={14} />
+                    </button>
+                  </div>
                   {saveState === 'conflict' && (
                     <p class="profile-input-error">Bu kullanıcı adı zaten alınmış.</p>
                   )}
