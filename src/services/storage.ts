@@ -600,7 +600,16 @@ function mergeWordProgress(local: WordProgress, remote: WordProgress): WordProgr
   };
 }
 
-function mergeAppData(local: AppData, remote: AppData): AppData {
+interface RemoteSyncData {
+  wordProgress: AllWordProgress;
+  pinnedWords: PinnedWords;
+  enabledPacks: EnabledPacks;
+  streak: number;
+  lastPracticeDate: string | null;
+  bestDaily: number;
+}
+
+function mergeAppData(local: AppData, remote: RemoteSyncData): AppData {
   const allWords = new Set([
     ...Object.keys(local.wordProgress),
     ...Object.keys(remote.wordProgress),
@@ -614,43 +623,38 @@ function mergeAppData(local: AppData, remote: AppData): AppData {
     else mergedWordProgress[word] = l ?? r;
   }
 
-  // Merge dailyStats by summing each day
-  const allDays = new Set([
-    ...Object.keys(local.dailyStats),
-    ...Object.keys(remote.dailyStats),
-  ]);
-  const mergedDailyStats: Record<string, { practiced: number; correct: number }> = {};
-  for (const day of allDays) {
-    const l = local.dailyStats[day] ?? { practiced: 0, correct: 0 };
-    const r = remote.dailyStats[day] ?? { practiced: 0, correct: 0 };
-    mergedDailyStats[day] = {
-      practiced: Math.max(l.practiced, r.practiced),
-      correct: Math.max(l.correct, r.correct),
-    };
-  }
+  const lastPracticeDate = local.lastPracticeDate && remote.lastPracticeDate
+    ? (local.lastPracticeDate > remote.lastPracticeDate ? local.lastPracticeDate : remote.lastPracticeDate)
+    : (local.lastPracticeDate ?? remote.lastPracticeDate);
 
   return {
     ...local,
     wordProgress: mergedWordProgress,
-    dailyStats: mergedDailyStats,
+    pinnedWords: { ...remote.pinnedWords, ...local.pinnedWords },
+    enabledPacks: { ...remote.enabledPacks, ...local.enabledPacks },
     streak: Math.max(local.streak, remote.streak),
     bestDaily: Math.max(local.bestDaily, remote.bestDaily),
-    lastPracticeDate: local.lastPracticeDate && remote.lastPracticeDate
-      ? (local.lastPracticeDate > remote.lastPracticeDate ? local.lastPracticeDate : remote.lastPracticeDate)
-      : (local.lastPracticeDate ?? remote.lastPracticeDate),
+    lastPracticeDate,
   };
 }
 
-// Merge remote Supabase data into local data (senaryo 2)
 export function mergeRemoteData(remoteData: object): void {
-  const remote = { ...defaultData, ...(remoteData as Partial<AppData>) };
+  const remote = remoteData as RemoteSyncData;
   appData = mergeAppData(appData, remote);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
 }
 
-// Replace local data with remote (senaryo 3: farklı kullanıcı)
 export function loadRemoteData(remoteData: object): void {
-  appData = { ...defaultData, ...(remoteData as Partial<AppData>) };
+  const remote = remoteData as RemoteSyncData;
+  appData = {
+    ...appData,
+    wordProgress: remote.wordProgress ?? {},
+    pinnedWords: remote.pinnedWords ?? {},
+    enabledPacks: remote.enabledPacks ?? {},
+    streak: remote.streak ?? 0,
+    lastPracticeDate: remote.lastPracticeDate ?? null,
+    bestDaily: remote.bestDaily ?? 0,
+  };
   localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
 }
 

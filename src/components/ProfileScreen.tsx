@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from 'preact/hooks';
 import { Trophy, User, Settings, Sun, Moon, Download, Upload, Users, LogIn, LogOut, RefreshCw, CloudDownload, CloudUpload, Save, Trash2 } from 'lucide-preact';
 import { exportData, importData, getUsername, setUsername, getAvatarIndex, setAvatarIndex, resetData } from '../services/storage';
 import type { User as AuthUser } from '../services/auth';
-import { pushProfile, pullProfile, UsernameConflictError } from '../services/sync';
+import { pushProfile, pullProfile, updateMyData, downloadData, UsernameConflictError } from '../services/sync';
 import { Avatar, AvatarPicker } from './AvatarPicker';
 import './ProfileScreen.css';
 
@@ -34,8 +34,54 @@ export function ProfileScreen({
   const [showAvatarPicker, setShowAvatarPicker] = useState(false);
   const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved' | 'error' | 'conflict'>('idle');
   const [lastSync, setLastSync] = useState<string | null>(null);
+  const [syncState, setSyncState] = useState<'idle' | 'busy' | 'done' | 'error'>('idle');
+  const [syncCooldown, setSyncCooldown] = useState<number>(0);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const profileFetched = useRef(false);
+  const cooldownTimer = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const SYNC_COOLDOWN_MS = 15 * 60 * 1000;
+  const LAST_SYNC_KEY = 'woorden_last_sync';
+
+  useEffect(() => {
+    const stored = localStorage.getItem(LAST_SYNC_KEY);
+    if (!stored) return;
+    const elapsed = Date.now() - Number(stored);
+    if (elapsed < SYNC_COOLDOWN_MS) {
+      startCooldown(Math.ceil((SYNC_COOLDOWN_MS - elapsed) / 1000));
+    }
+  }, []);
+
+  const startCooldown = (seconds: number) => {
+    setSyncCooldown(seconds);
+    if (cooldownTimer.current) clearInterval(cooldownTimer.current);
+    cooldownTimer.current = setInterval(() => {
+      setSyncCooldown(prev => {
+        if (prev <= 1) {
+          clearInterval(cooldownTimer.current!);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+  };
+
+  const handleSyncAction = async (action: () => Promise<void>) => {
+    if (!user || syncState === 'busy' || syncCooldown > 0) return;
+    setSyncState('busy');
+    try {
+      await action();
+      const now = Date.now().toString();
+      localStorage.setItem(LAST_SYNC_KEY, now);
+      setLastSync(new Date().toISOString());
+      setSyncState('done');
+      startCooldown(SYNC_COOLDOWN_MS / 1000);
+      setTimeout(() => setSyncState('idle'), 2000);
+    } catch {
+      setSyncState('error');
+      setTimeout(() => setSyncState('idle'), 3000);
+    }
+  };
 
   useEffect(() => {
     if (!user || profileFetched.current) return;
@@ -224,6 +270,12 @@ export function ProfileScreen({
                   </p>
                 )}
 
+                {syncCooldown > 0 && (
+                  <p class="profile-sync-cooldown">
+                    Sonraki işlem için: {Math.floor(syncCooldown / 60)}:{String(syncCooldown % 60).padStart(2, '0')}
+                  </p>
+                )}
+
                 <section class="profile-section">
                   <h3>
                     <RefreshCw size={16} />
@@ -232,9 +284,13 @@ export function ProfileScreen({
                   <p class="profile-action-desc">
                     Sunucudaki veriyi çeker, yerel veriyle birleştirir ve tekrar yükler. Her iki taraf da aynı veriye sahip olur.
                   </p>
-                  <button class="profile-btn profile-btn--full">
+                  <button
+                    class={`profile-btn profile-btn--full${syncState === 'error' ? ' profile-btn--danger' : ''}`}
+                    onClick={() => handleSyncAction(() => updateMyData(user!, 'merge'))}
+                    disabled={syncState === 'busy' || syncCooldown > 0}
+                  >
                     <RefreshCw size={16} />
-                    Sync Data
+                    {syncState === 'busy' ? 'İşleniyor...' : syncState === 'done' ? 'Tamamlandı' : syncState === 'error' ? 'Hata oluştu' : 'Sync Data'}
                   </button>
                 </section>
 
@@ -246,9 +302,13 @@ export function ProfileScreen({
                   <p class="profile-action-desc">
                     Sunucudaki veriyi çeker ve yerel verinin üzerine yazar. Yerel değişiklikler kaybolur.
                   </p>
-                  <button class="profile-btn profile-btn--full">
+                  <button
+                    class={`profile-btn profile-btn--full${syncState === 'error' ? ' profile-btn--danger' : ''}`}
+                    onClick={() => handleSyncAction(() => downloadData(user!, 'override'))}
+                    disabled={syncState === 'busy' || syncCooldown > 0}
+                  >
                     <CloudDownload size={16} />
-                    Get Data
+                    {syncState === 'busy' ? 'İşleniyor...' : syncState === 'done' ? 'Tamamlandı' : syncState === 'error' ? 'Hata oluştu' : 'Get Data'}
                   </button>
                 </section>
 
@@ -260,9 +320,13 @@ export function ProfileScreen({
                   <p class="profile-action-desc">
                     Yerel veriyi sunucuya yükler ve sunucudaki verinin üzerine yazar.
                   </p>
-                  <button class="profile-btn profile-btn--full">
+                  <button
+                    class={`profile-btn profile-btn--full${syncState === 'error' ? ' profile-btn--danger' : ''}`}
+                    onClick={() => handleSyncAction(() => updateMyData(user!, 'override'))}
+                    disabled={syncState === 'busy' || syncCooldown > 0}
+                  >
                     <CloudUpload size={16} />
-                    Upload Data
+                    {syncState === 'busy' ? 'İşleniyor...' : syncState === 'done' ? 'Tamamlandı' : syncState === 'error' ? 'Hata oluştu' : 'Upload Data'}
                   </button>
                 </section>
 
