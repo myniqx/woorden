@@ -5,6 +5,20 @@ const STORAGE_KEY = 'woorden_app_data';
 const MAX_HISTORY_LENGTH = 20;
 const MASTERY_STREAK = 3;
 
+const UID_KEY = 'woorden_auth_uid';
+
+export function getStoredUid(): string | null {
+  return localStorage.getItem(UID_KEY);
+}
+
+export function setStoredUid(uid: string): void {
+  localStorage.setItem(UID_KEY, uid);
+}
+
+export function clearStoredUid(): void {
+  localStorage.removeItem(UID_KEY);
+}
+
 interface DailyStats {
   practiced: number;
   correct: number;
@@ -28,6 +42,8 @@ interface AppData {
   bestDaily: number;
   enabledPacks: EnabledPacks; // Hierarchical word pack config
   pinnedWords: PinnedWords; // Pinned words per quiz type
+  username: string;
+  avatarIndex: number;
 }
 
 const defaultData: AppData = {
@@ -37,8 +53,10 @@ const defaultData: AppData = {
   streak: 0,
   lastPracticeDate: null,
   bestDaily: 0,
-  enabledPacks: {}, // empty = all enabled by default
-  pinnedWords: {}, // empty = no pinned words
+  enabledPacks: {},
+  pinnedWords: {},
+  username: '',
+  avatarIndex: 0,
 };
 
 // Migration helpers
@@ -526,6 +544,130 @@ export function importData(jsonString: string): { success: boolean; message: str
   } catch (e) {
     return { success: false, message: 'Invalid JSON format' };
   }
+}
+
+export function getUsername(): string {
+  return appData.username;
+}
+
+export function setUsername(name: string): void {
+  appData.username = name;
+  saveData(appData);
+}
+
+export function getAvatarIndex(): number {
+  return appData.avatarIndex;
+}
+
+export function setAvatarIndex(index: number): void {
+  appData.avatarIndex = index;
+  saveData(appData);
+}
+
+function mergeSkill(local: SkillProgress, remote: SkillProgress): SkillProgress {
+  const history = local.seen >= remote.seen ? local.history : remote.history;
+  return {
+    seen: local.seen + remote.seen,
+    correct: local.correct + remote.correct,
+    wrong: local.wrong + remote.wrong,
+    streak: Math.max(local.streak, remote.streak),
+    lastResult: (local.seen >= remote.seen ? local.lastResult : remote.lastResult),
+    masteredAt: local.masteredAt ?? remote.masteredAt,
+    history: history.slice(-MAX_HISTORY_LENGTH),
+  };
+}
+
+function mergeWordProgress(local: WordProgress, remote: WordProgress): WordProgress {
+  const allSkills = new Set([
+    ...Object.keys(local.skills),
+    ...Object.keys(remote.skills),
+  ]) as Set<SkillType>;
+
+  const mergedSkills: WordProgress['skills'] = {};
+  for (const skill of allSkills) {
+    const l = local.skills[skill];
+    const r = remote.skills[skill];
+    if (l && r) mergedSkills[skill] = mergeSkill(l, r);
+    else mergedSkills[skill] = l ?? r;
+  }
+
+  return {
+    firstSeen: Math.min(local.firstSeen, remote.firstSeen),
+    lastSeen: local.lastSeen && remote.lastSeen
+      ? Math.max(local.lastSeen, remote.lastSeen)
+      : (local.lastSeen ?? remote.lastSeen),
+    skills: mergedSkills,
+  };
+}
+
+interface RemoteSyncData {
+  wordProgress: AllWordProgress;
+  pinnedWords: PinnedWords;
+  enabledPacks: EnabledPacks;
+  streak: number;
+  lastPracticeDate: string | null;
+  bestDaily: number;
+}
+
+function mergeAppData(local: AppData, remote: RemoteSyncData): AppData {
+  const allWords = new Set([
+    ...Object.keys(local.wordProgress),
+    ...Object.keys(remote.wordProgress),
+  ]);
+
+  const mergedWordProgress: AllWordProgress = {};
+  for (const word of allWords) {
+    const l = local.wordProgress[word];
+    const r = remote.wordProgress[word];
+    if (l && r) mergedWordProgress[word] = mergeWordProgress(l, r);
+    else mergedWordProgress[word] = l ?? r;
+  }
+
+  const lastPracticeDate = local.lastPracticeDate && remote.lastPracticeDate
+    ? (local.lastPracticeDate > remote.lastPracticeDate ? local.lastPracticeDate : remote.lastPracticeDate)
+    : (local.lastPracticeDate ?? remote.lastPracticeDate);
+
+  return {
+    ...local,
+    wordProgress: mergedWordProgress,
+    pinnedWords: { ...remote.pinnedWords, ...local.pinnedWords },
+    enabledPacks: { ...remote.enabledPacks, ...local.enabledPacks },
+    streak: Math.max(local.streak, remote.streak),
+    bestDaily: Math.max(local.bestDaily, remote.bestDaily),
+    lastPracticeDate,
+  };
+}
+
+export function mergeRemoteData(remoteData: object): void {
+  const remote = remoteData as RemoteSyncData;
+  appData = mergeAppData(appData, remote);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
+}
+
+export function loadRemoteData(remoteData: object): void {
+  const remote = remoteData as RemoteSyncData;
+  appData = {
+    ...appData,
+    wordProgress: remote.wordProgress ?? {},
+    pinnedWords: remote.pinnedWords ?? {},
+    enabledPacks: remote.enabledPacks ?? {},
+    streak: remote.streak ?? 0,
+    lastPracticeDate: remote.lastPracticeDate ?? null,
+    bestDaily: remote.bestDaily ?? 0,
+  };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
+}
+
+// Return current app data for pushing to Supabase
+export function getExportData(): object {
+  return {
+    wordProgress: appData.wordProgress,
+    pinnedWords: appData.pinnedWords,
+    enabledPacks: appData.enabledPacks,
+    streak: appData.streak,
+    lastPracticeDate: appData.lastPracticeDate,
+    bestDaily: appData.bestDaily,
+  };
 }
 
 // Word pack management - hierarchical structure

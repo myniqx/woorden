@@ -6,10 +6,15 @@ import { MainMenu } from './components/MainMenu';
 import { QuizScreen } from './components/QuizScreen';
 import { InputQuizScreen } from './components/InputQuizScreen';
 import { StatsFooter } from './components/StatsFooter';
-import { SettingsModal } from './components/SettingsModal';
 import { EditorPage } from './pages/EditorPage';
 import { ChangelogScreen, CHANGELOG_STORAGE_KEY } from './components/ChangelogScreen';
 import { latestDate } from './data/changelog';
+import { signInWithGoogle, signOut, onAuthStateChange } from './services/auth';
+import type { User } from './services/auth';
+import { pushStats } from './services/sync';
+import { ProfileScreen } from './components/ProfileScreen';
+import { AlertBanner } from './components/AlertBanner';
+import type { AlertAction } from './components/AlertBanner';
 
 const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
 import type { QuizType, QuizMode, Screen } from './types';
@@ -45,13 +50,20 @@ export function App() {
     updateServiceWorker,
   } = useRegisterSW();
   const [screen, setScreen] = useState<Screen>('menu');
+  const [alertKey, setAlertKey] = useState(0);
   const [currentQuizType, setCurrentQuizType] = useState<QuizType | null>(null);
   const [currentQuizMode, setCurrentQuizMode] = useState<QuizMode>('normal');
   const [statsVersion, setStatsVersion] = useState(0);
-  const [showSettings, setShowSettings] = useState(false);
   const [visitorCount, setVisitorCount] = useState<number | null>(null);
+  const [user, setUser] = useState<User | null>(null);
   const hasNewChangelog = (localStorage.getItem(CHANGELOG_STORAGE_KEY) ?? '') < latestDate;
   const visitorTracked = useRef(false);
+
+  useEffect(() => {
+    return onAuthStateChange((u) => {
+      setUser(u);
+    });
+  }, []);
 
   useEffect(() => {
     if (import.meta.env.DEV) return;
@@ -84,7 +96,6 @@ export function App() {
     const handlePopState = () => {
       setCurrentQuizType(null);
       setScreen('menu');
-      setShowSettings(false);
     };
 
     window.addEventListener('popstate', handlePopState);
@@ -99,6 +110,7 @@ export function App() {
   };
 
   const exitQuiz = () => {
+    if (user) pushStats(user).catch(() => {});
     history.back();
   };
 
@@ -112,12 +124,27 @@ export function App() {
         key={`header-${statsVersion}`}
         language={language}
         onLanguageChange={setLanguage}
-        showBackButton={screen === 'quiz' || screen === 'changelog'}
-        onBack={screen === 'changelog' ? () => setScreen('menu') : exitQuiz}
-        onSettingsClick={() => setShowSettings(true)}
+        showBackButton={screen === 'quiz' || screen === 'changelog' || screen === 'profile'}
+        onBack={screen === 'changelog' || screen === 'profile' ? () => setScreen('menu') : exitQuiz}
+        onProfileClick={() => { history.pushState({ screen: 'profile' }, ''); setScreen('profile'); }}
+        user={user}
       />
 
       <main class="main">
+        {screen === 'menu' && (
+          <AlertBanner
+            key={alertKey}
+            language={language}
+            onAction={(action: AlertAction) => {
+              setAlertKey(k => k + 1);
+              if (action === 'goToProfile' || action === 'signIn') {
+                history.pushState({ screen: 'profile' }, '');
+                setScreen('profile');
+              }
+            }}
+          />
+        )}
+
         {screen === 'menu' && (
           <MainMenu
             onStartQuiz={startQuiz}
@@ -132,6 +159,19 @@ export function App() {
 
         {screen === 'changelog' && (
           <ChangelogScreen />
+        )}
+
+        {screen === 'profile' && (
+          <ProfileScreen
+            theme={theme}
+            onToggleTheme={toggleTheme}
+            visitorCount={visitorCount}
+            user={user}
+            onSignIn={signInWithGoogle}
+            onSignOut={signOut}
+            onDataImported={onStatsUpdate}
+            language={language}
+          />
         )}
 
         {screen === 'quiz' && currentQuizType && (
@@ -163,15 +203,6 @@ export function App() {
         onUpdate={() => updateServiceWorker(true)}
       />
 
-      <SettingsModal
-        isOpen={showSettings}
-        onClose={() => setShowSettings(false)}
-        onDataImported={onStatsUpdate}
-        onPacksChanged={onStatsUpdate}
-        theme={theme}
-        onToggleTheme={toggleTheme}
-        visitorCount={visitorCount}
-      />
     </div>
   );
 }

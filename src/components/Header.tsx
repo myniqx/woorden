@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'preact/hooks';
-import { ChevronLeft, Settings, Flame, Zap, Star, Crown } from 'lucide-preact';
+import { ChevronLeft, Flame, Zap, Star, Crown, User } from 'lucide-preact';
 import type { Language } from '../types';
 import { getDailyStats, getDailyLevel } from '../services/storage';
+import type { User as AuthUser } from '../services/auth';
 import './Header.css';
 
 interface HeaderProps {
@@ -9,7 +10,8 @@ interface HeaderProps {
   onLanguageChange: (lang: Language) => void;
   showBackButton?: boolean;
   onBack?: () => void;
-  onSettingsClick?: () => void;
+  onProfileClick?: () => void;
+  user: AuthUser | null;
 }
 
 const languages: { code: Language; name: string; flag: string }[] = [
@@ -24,7 +26,8 @@ export function Header({
   onLanguageChange,
   showBackButton = false,
   onBack,
-  onSettingsClick,
+  onProfileClick,
+  user,
 }: HeaderProps) {
   const currentLang = languages.find(l => l.code === language);
   const dailyStats = getDailyStats();
@@ -125,8 +128,15 @@ export function Header({
           </div>
         </div>
 
-        <button class="header-btn settings-btn" onClick={onSettingsClick} aria-label="Settings">
-          <Settings size={20} />
+        <button
+          class={`header-btn profile-btn ${user ? 'profile-btn--logged-in' : ''}`}
+          onClick={onProfileClick}
+          aria-label="Profile"
+        >
+          {user?.user_metadata?.avatar_url
+            ? <img src={user.user_metadata.avatar_url} class="profile-btn-avatar" alt="avatar" />
+            : <User size={20} />
+          }
         </button>
       </div>
     </header>
