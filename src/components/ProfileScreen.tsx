@@ -6,6 +6,7 @@ import type { User as AuthUser } from '../services/auth';
 import { pushProfile, pullProfile, updateMyData, downloadData, fetchLeaderboard, UsernameConflictError } from '../services/sync';
 import type { LeaderboardEntry } from '../services/sync';
 import { Avatar, AvatarPicker } from './AvatarPicker';
+import { APP_URL } from '../data/constants';
 import { t } from '../data/translations';
 import type { Language } from '../types';
 import './ProfileScreen.css';
@@ -134,7 +135,16 @@ export function ProfileScreen({
     if (!user || profileFetched.current) return;
     profileFetched.current = true;
     pullProfile(user).then((remote) => {
-      if (!remote) return;
+      if (!remote) {
+        const name = getRandomUsername();
+        const avatar = Math.floor(Math.random() * 16);
+        setUsernameState(name);
+        setUsername(name);
+        setAvatarIndexState(avatar);
+        setAvatarIndex(avatar);
+        pushProfile(user, name, avatar).catch(() => {});
+        return;
+      }
       if (remote.username) { setUsernameState(remote.username); setUsername(remote.username); }
       if (remote.avatarIndex) { setAvatarIndexState(remote.avatarIndex); setAvatarIndex(remote.avatarIndex); }
       setLastSync(remote.lastSync);
@@ -544,6 +554,14 @@ export function ProfileScreen({
                 ? <span>{visitorCount.toLocaleString()} {visitorCount === 1 ? tr('settings_visitor') : tr('settings_visitors')}</span>
                 : <span class="visitor-loading">···</span>
               }
+            </div>
+
+            <div class="profile-legal-links">
+              <a href="/privacy" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/privacy'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Privacy Policy</a>
+              <span class="profile-legal-sep">·</span>
+              <a href="/terms" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/terms'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Terms of Service</a>
+              <span class="profile-legal-sep">·</span>
+              <a href={APP_URL} target="_blank" rel="noopener noreferrer">myniqx.dev</a>
             </div>
           </div>
         )}

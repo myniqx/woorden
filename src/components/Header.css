@@ -227,6 +227,12 @@
   display: block;
 }
 
+.profile-btn svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
 /* Mobile adjustments */
 @media (max-width: 480px) {
   .logo-text {

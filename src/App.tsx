@@ -7,6 +7,8 @@ import { QuizScreen } from './components/QuizScreen';
 import { InputQuizScreen } from './components/InputQuizScreen';
 import { StatsFooter } from './components/StatsFooter';
 import { EditorPage } from './pages/EditorPage';
+import { PrivacyPage } from './pages/PrivacyPage';
+import { TermsPage } from './pages/TermsPage';
 import { ChangelogScreen, CHANGELOG_STORAGE_KEY } from './components/ChangelogScreen';
 import { latestDate } from './data/changelog';
 import { signInWithGoogle, signOut, onAuthStateChange } from './services/auth';
@@ -22,24 +24,32 @@ import './styles/theme.css';
 import './styles/app.css';
 
 export function App() {
-  // Check if we're on /editor route (dev only)
-  const [isEditorRoute, setIsEditorRoute] = useState(false);
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
   useEffect(() => {
-    const checkRoute = () => {
-      const isEditor = window.location.pathname === '/editor';
-      const isDev = import.meta.env.DEV;
-      setIsEditorRoute(isEditor && isDev);
-    };
-
-    checkRoute();
-    window.addEventListener('popstate', checkRoute);
-    return () => window.removeEventListener('popstate', checkRoute);
+    const handleRoute = () => setCurrentPath(window.location.pathname);
+    window.addEventListener('popstate', handleRoute);
+    return () => window.removeEventListener('popstate', handleRoute);
   }, []);
 
-  // Show editor page in dev mode
-  if (isEditorRoute) {
+  if (currentPath === '/editor' && import.meta.env.DEV) {
     return <EditorPage />;
+  }
+
+  if (currentPath === '/privacy') {
+    return (
+      <div class="app">
+        <main class="main"><PrivacyPage /></main>
+      </div>
+    );
+  }
+
+  if (currentPath === '/terms') {
+    return (
+      <div class="app">
+        <main class="main"><TermsPage /></main>
+      </div>
+    );
   }
 
   const { theme, toggleTheme } = useTheme();

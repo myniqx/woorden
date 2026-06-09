@@ -525,3 +525,25 @@
 .visitor-loading {
   letter-spacing: 2px;
 }
+
+.profile-legal-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  font-size: var(--text-xs);
+}
+
+.profile-legal-links a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.profile-legal-links a:hover {
+  color: var(--color-primary);
+}
+
+.profile-legal-sep {
+  color: var(--color-border);
+}
