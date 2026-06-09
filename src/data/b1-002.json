@@ -1,0 +1,1217 @@
+[
+  {
+    "nl": "aanspreken",
+    "type": "verb",
+    "perfectum": "aangesproken",
+    "imperfectum": "sprak aan",
+    "tr": "hitap etmek",
+    "en": "to address, to speak to",
+    "ar": "يخاطب، يتحدث إلى",
+    "fr": "adresser la parole à, interpeller",
+    "zinnen": [
+      "api64v2t"
+    ]
+  },
+  {
+    "nl": "alarm",
+    "type": "noun",
+    "article": "het",
+    "tr": "alarm",
+    "en": "alarm",
+    "ar": "إنذار",
+    "fr": "alarme",
+    "zinnen": [
+      "zf2zh5e7"
+    ]
+  },
+  {
+    "nl": "beheer",
+    "type": "noun",
+    "article": "het",
+    "tr": "yönetim, idare",
+    "en": "management, administration",
+    "ar": "إدارة",
+    "fr": "gestion, administration",
+    "zinnen": [
+      "21ryvgog"
+    ]
+  },
+  {
+    "nl": "beveiligen",
+    "type": "verb",
+    "perfectum": "beveiligd",
+    "imperfectum": "beveiligde",
+    "tr": "güvence altına almak, korumak",
+    "en": "to secure, to protect",
+    "ar": "يؤمّن، يحمي",
+    "fr": "sécuriser, protéger",
+    "zinnen": [
+      "21ryvgog"
+    ]
+  },
+  {
+    "nl": "beveiliger",
+    "type": "noun",
+    "article": "de",
+    "tr": "güvenlik görevlisi",
+    "en": "security guard",
+    "ar": "حارس أمن",
+    "fr": "agent de sécurité",
+    "zinnen": [
+      "de3wb554"
+    ]
+  },
+  {
+    "nl": "beveiliging",
+    "type": "noun",
+    "article": "de",
+    "tr": "güvenlik",
+    "en": "security",
+    "ar": "أمن",
+    "fr": "sécurité",
+    "zinnen": [
+      "21ryvgog"
+    ]
+  },
+  {
+    "nl": "bewaken",
+    "type": "verb",
+    "perfectum": "bewaakt",
+    "imperfectum": "bewaakte",
+    "tr": "gözetlemek, korumak",
+    "en": "to guard, to watch over",
+    "ar": "يحرس، يراقب",
+    "fr": "surveiller, garder",
+    "zinnen": [
+      "de3wb554"
+    ]
+  },
+  {
+    "nl": "bezoeker",
+    "type": "noun",
+    "article": "de",
+    "tr": "ziyaretçi",
+    "en": "visitor",
+    "ar": "زائر",
+    "fr": "visiteur",
+    "zinnen": [
+      "djm5az5k"
+    ]
+  },
+  {
+    "nl": "bord",
+    "type": "noun",
+    "article": "het",
+    "tr": "tabela, levha",
+    "en": "sign, board",
+    "ar": "لوحة",
+    "fr": "panneau, tableau",
+    "zinnen": [
+      "djm5az5k",
+      "dlx4gm7x",
+      "evh37odr"
+    ]
+  },
+  {
+    "nl": "discriminatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "ayrımcılık",
+    "en": "discrimination",
+    "ar": "تمييز",
+    "fr": "discrimination",
+    "zinnen": [
+      "nm5l1zn3"
+    ]
+  },
+  {
+    "nl": "goedkeuring",
+    "type": "noun",
+    "article": "de",
+    "tr": "onay",
+    "en": "approval",
+    "ar": "موافقة",
+    "fr": "approbation",
+    "zinnen": [
+      "wxxo0zmt"
+    ]
+  },
+  {
+    "nl": "hulpverlener",
+    "type": "noun",
+    "article": "de",
+    "tr": "yardım görevlisi",
+    "en": "aid worker, emergency responder",
+    "ar": "مقدّم المساعدة",
+    "fr": "intervenant, secouriste",
+    "zinnen": [
+      "m5lfhzc3"
+    ]
+  },
+  {
+    "nl": "intimidatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "yıldırma, gözdağı verme",
+    "en": "intimidation",
+    "ar": "ترهيب",
+    "fr": "intimidation",
+    "zinnen": [
+      "nm5l1zn3"
+    ]
+  },
+  {
+    "nl": "kalm",
+    "type": "adj",
+    "tr": "sakin",
+    "en": "calm",
+    "ar": "هادئ",
+    "fr": "calme",
+    "zinnen": [
+      "m5lfhzc3"
+    ]
+  },
+  {
+    "nl": "nood",
+    "type": "noun",
+    "article": "de",
+    "tr": "acil durum, ihtiyaç",
+    "en": "emergency, need",
+    "ar": "طوارئ، حاجة",
+    "fr": "urgence, besoin",
+    "zinnen": [
+      "m5lfhzc3"
+    ]
+  },
+  {
+    "nl": "omgangsvorm",
+    "type": "noun",
+    "article": "de",
+    "tr": "davranış biçimi",
+    "en": "manner, social conduct",
+    "ar": "أسلوب تعامل",
+    "fr": "manière, comportement social",
+    "zinnen": [
+      "api64v2t"
+    ]
+  },
+  {
+    "nl": "ongewenst",
+    "type": "adj",
+    "tr": "istenmeyen",
+    "en": "unwanted, undesired",
+    "ar": "غير مرغوب فيه",
+    "fr": "indésirable",
+    "zinnen": [
+      "nm5l1zn3"
+    ]
+  },
+  {
+    "nl": "opslaan",
+    "type": "verb",
+    "perfectum": "opgeslagen",
+    "imperfectum": "sloeg op",
+    "tr": "kaydetmek, depolamak",
+    "en": "to save, to store",
+    "ar": "يحفظ، يخزّن",
+    "fr": "sauvegarder, stocker",
+    "zinnen": [
+      "zf2zh5e7"
+    ]
+  },
+  {
+    "nl": "pesten",
+    "type": "verb",
+    "perfectum": "gepest",
+    "imperfectum": "pestte",
+    "tr": "zorbalık yapmak, takılmak",
+    "en": "to bully, to pester",
+    "ar": "يتنمّر، يضايق",
+    "fr": "harceler, intimider",
+    "zinnen": [
+      "s46upsjt"
+    ]
+  },
+  {
+    "nl": "protocol",
+    "type": "noun",
+    "article": "het",
+    "tr": "protokol",
+    "en": "protocol",
+    "ar": "بروتوكول",
+    "fr": "protocole",
+    "zinnen": [
+      "api64v2t",
+      "wxxo0zmt"
+    ]
+  },
+  {
+    "nl": "seksueel",
+    "type": "adj",
+    "tr": "cinsel",
+    "en": "sexual",
+    "ar": "جنسي",
+    "fr": "sexuel",
+    "zinnen": [
+      "nm5l1zn3"
+    ]
+  },
+  {
+    "nl": "toegankelijk",
+    "type": "adj",
+    "tr": "erişilebilir, girilebilir",
+    "en": "accessible",
+    "ar": "متاح",
+    "fr": "accessible",
+    "zinnen": [
+      "djm5az5k"
+    ]
+  },
+  {
+    "nl": "toezicht",
+    "type": "noun",
+    "article": "het",
+    "tr": "denetim, gözetim",
+    "en": "supervision, oversight",
+    "ar": "إشراف، رقابة",
+    "fr": "surveillance, contrôle",
+    "zinnen": [
+      "de3wb554"
+    ]
+  },
+  {
+    "nl": "uitsluitend",
+    "type": "adv",
+    "tr": "yalnızca, sırf",
+    "en": "exclusively, only",
+    "ar": "حصراً، فقط",
+    "fr": "exclusivement, uniquement",
+    "zinnen": [
+      "wxxo0zmt"
+    ]
+  },
+  {
+    "nl": "verdacht",
+    "type": "adj",
+    "tr": "şüpheli",
+    "en": "suspicious, suspect",
+    "ar": "مشبوه",
+    "fr": "suspect, louche",
+    "zinnen": [
+      "v1zo5f14"
+    ]
+  },
+  {
+    "nl": "verlies",
+    "type": "noun",
+    "article": "het",
+    "tr": "kayıp",
+    "en": "loss",
+    "ar": "خسارة",
+    "fr": "perte",
+    "zinnen": [
+      "v1zo5f14"
+    ]
+  },
+  {
+    "nl": "vertrouwenspersoon",
+    "type": "noun",
+    "article": "de",
+    "tr": "güvenilir kişi, sırdaş",
+    "en": "confidant, trusted person",
+    "ar": "شخص موثوق",
+    "fr": "personne de confiance",
+    "zinnen": [
+      "v1zo5f14"
+    ]
+  },
+  {
+    "nl": "buurtpreventie",
+    "type": "noun",
+    "article": "de",
+    "tr": "mahalle güvenlik önlemi",
+    "en": "neighbourhood watch, community prevention",
+    "ar": "الوقاية المجتمعية",
+    "fr": "prévention de quartier",
+    "zinnen": [
+      "nfttx45o"
+    ]
+  },
+  {
+    "nl": "alert",
+    "type": "adj",
+    "tr": "uyanık, tetikte",
+    "en": "alert, vigilant",
+    "ar": "يقظ",
+    "fr": "alerte, vigilant",
+    "zinnen": [
+      "nfttx45o"
+    ]
+  },
+  {
+    "nl": "bedreigen",
+    "type": "verb",
+    "perfectum": "bedreigd",
+    "imperfectum": "bedreigde",
+    "tr": "tehdit etmek",
+    "en": "to threaten",
+    "ar": "يهدّد",
+    "fr": "menacer",
+    "zinnen": [
+      "n5eny1se"
+    ]
+  },
+  {
+    "nl": "beroven",
+    "type": "verb",
+    "perfectum": "beroofd",
+    "imperfectum": "beroofde",
+    "tr": "soymak",
+    "en": "to rob",
+    "ar": "يسطو، يسرق",
+    "fr": "voler, dévaliser",
+    "zinnen": [
+      "0mwhus1y"
+    ]
+  },
+  {
+    "nl": "criminaliteit",
+    "type": "noun",
+    "article": "de",
+    "tr": "suç, suçluluk",
+    "en": "crime, criminality",
+    "ar": "جريمة، إجرام",
+    "fr": "criminalité",
+    "zinnen": [
+      "nfttx45o"
+    ]
+  },
+  {
+    "nl": "crimineel",
+    "type": "noun",
+    "article": "de",
+    "tr": "suçlu",
+    "en": "criminal",
+    "ar": "مجرم",
+    "fr": "criminel",
+    "zinnen": [
+      "cv2yvllx"
+    ]
+  },
+  {
+    "nl": "dader",
+    "type": "noun",
+    "article": "de",
+    "tr": "fail, suç işleyen",
+    "en": "perpetrator, offender",
+    "ar": "جانٍ، مرتكب الجريمة",
+    "fr": "auteur, coupable",
+    "zinnen": [
+      "n5eny1se"
+    ]
+  },
+  {
+    "nl": "dierbaar",
+    "type": "adj",
+    "tr": "sevgili, değerli",
+    "en": "dear, precious",
+    "ar": "عزيز",
+    "fr": "cher, précieux",
+    "zinnen": [
+      "56h7j2rl"
+    ]
+  },
+  {
+    "nl": "drugs",
+    "type": "noun",
+    "article": "de",
+    "tr": "uyuşturucu",
+    "en": "drugs",
+    "ar": "مخدرات",
+    "fr": "drogues",
+    "zinnen": [
+      "cv2yvllx"
+    ]
+  },
+  {
+    "nl": "dwingen",
+    "type": "verb",
+    "perfectum": "gedwongen",
+    "imperfectum": "dwong",
+    "tr": "zorlamak",
+    "en": "to force, to compel",
+    "ar": "يُجبر، يُكره",
+    "fr": "forcer, contraindre",
+    "zinnen": [
+      "s46upsjt"
+    ]
+  },
+  {
+    "nl": "hangjongeren",
+    "type": "noun",
+    "article": "de",
+    "tr": "sokak gençleri (takılıp duran)",
+    "en": "loitering youth, street youth",
+    "ar": "شباب يتسكعون في الشوارع",
+    "fr": "jeunes qui traînent",
+    "zinnen": [
+      "s46upsjt"
+    ]
+  },
+  {
+    "nl": "inbreken",
+    "type": "verb",
+    "perfectum": "ingebroken",
+    "imperfectum": "brak in",
+    "tr": "eve girmek (zorla), hırsızlık yapmak",
+    "en": "to break in, to burglarize",
+    "ar": "يسطو، يقتحم",
+    "fr": "cambrioler",
+    "zinnen": [
+      "cv2yvllx"
+    ]
+  },
+  {
+    "nl": "juwelier",
+    "type": "noun",
+    "article": "de",
+    "tr": "kuyumcu",
+    "en": "jeweller",
+    "ar": "صائغ، بائع مجوهرات",
+    "fr": "bijoutier",
+    "zinnen": [
+      "2hgp0dhh"
+    ]
+  },
+  {
+    "nl": "misdrijf",
+    "type": "noun",
+    "article": "het",
+    "tr": "suç (ciddi)",
+    "en": "crime, criminal offence",
+    "ar": "جريمة",
+    "fr": "crime, délit",
+    "zinnen": [
+      "n5eny1se"
+    ]
+  },
+  {
+    "nl": "onschuldig",
+    "type": "adj",
+    "tr": "masum",
+    "en": "innocent",
+    "ar": "بريء",
+    "fr": "innocent",
+    "zinnen": [
+      "a6f4icl0"
+    ]
+  },
+  {
+    "nl": "overval",
+    "type": "noun",
+    "article": "de",
+    "tr": "soygun, baskın",
+    "en": "robbery, raid",
+    "ar": "سطو، غارة",
+    "fr": "braquage, attaque",
+    "zinnen": [
+      "0mwhus1y"
+    ]
+  },
+  {
+    "nl": "pistool",
+    "type": "noun",
+    "article": "het",
+    "tr": "tabanca",
+    "en": "pistol, gun",
+    "ar": "مسدس",
+    "fr": "pistolet",
+    "zinnen": [
+      "0mwhus1y"
+    ]
+  },
+  {
+    "nl": "puinhoop",
+    "type": "noun",
+    "article": "de",
+    "tr": "büyük dağınıklık, enkaz",
+    "en": "mess, shambles",
+    "ar": "فوضى",
+    "fr": "désordre, pagaille",
+    "zinnen": [
+      "2hgp0dhh"
+    ]
+  },
+  {
+    "nl": "steen",
+    "type": "noun",
+    "article": "de",
+    "tr": "taş",
+    "en": "stone, brick",
+    "ar": "حجر",
+    "fr": "pierre",
+    "zinnen": [
+      "2hgp0dhh"
+    ]
+  },
+  {
+    "nl": "tak",
+    "type": "noun",
+    "article": "de",
+    "tr": "dal",
+    "en": "branch",
+    "ar": "غصن",
+    "fr": "branche",
+    "zinnen": [
+      "5mi7k008",
+      "1zbkuopr",
+      "j1datf8s"
+    ]
+  },
+  {
+    "nl": "vernieling",
+    "type": "noun",
+    "article": "de",
+    "tr": "tahrip, vandalizm",
+    "en": "vandalism, destruction",
+    "ar": "تخريب",
+    "fr": "vandalisme, destruction",
+    "zinnen": [
+      "a6f4icl0"
+    ]
+  },
+  {
+    "nl": "zich aansluiten",
+    "type": "verb",
+    "perfectum": "zich aangesloten",
+    "imperfectum": "sloot zich aan",
+    "tr": "katılmak, üye olmak",
+    "en": "to join, to become a member",
+    "ar": "ينضم، ينتسب",
+    "fr": "rejoindre, adhérer",
+    "zinnen": [
+      "5mi7k008",
+      "1zbkuopr",
+      "j1datf8s"
+    ]
+  },
+  {
+    "nl": "zonnebril",
+    "type": "noun",
+    "article": "de",
+    "tr": "güneş gözlüğü",
+    "en": "sunglasses",
+    "ar": "نظارة شمسية",
+    "fr": "lunettes de soleil",
+    "zinnen": [
+      "1zbkuopr",
+      "j1datf8s"
+    ]
+  },
+  {
+    "nl": "aanrijding",
+    "type": "noun",
+    "article": "de",
+    "tr": "çarpışma, trafik kazası",
+    "en": "collision, traffic accident",
+    "ar": "تصادم",
+    "fr": "collision, accident de la route",
+    "zinnen": [
+      "r8mtqcu3"
+    ]
+  },
+  {
+    "nl": "afslag",
+    "type": "noun",
+    "article": "de",
+    "tr": "çıkış, yol ayrımı",
+    "en": "exit, turn-off",
+    "ar": "مخرج، منعطف",
+    "fr": "sortie, embranchement",
+    "zinnen": [
+      "uf0h5f17"
+    ]
+  },
+  {
+    "nl": "automobilist",
+    "type": "noun",
+    "article": "de",
+    "tr": "otomobil sürücüsü",
+    "en": "motorist, car driver",
+    "ar": "سائق سيارة",
+    "fr": "automobiliste",
+    "zinnen": [
+      "r8mtqcu3"
+    ]
+  },
+  {
+    "nl": "breed",
+    "type": "adj",
+    "tr": "geniş",
+    "en": "wide, broad",
+    "ar": "عريض",
+    "fr": "large",
+    "zinnen": [
+      "df28067a"
+    ]
+  },
+  {
+    "nl": "brug",
+    "type": "noun",
+    "article": "de",
+    "tr": "köprü",
+    "en": "bridge",
+    "ar": "جسر",
+    "fr": "pont",
+    "zinnen": [
+      "df28067a",
+      "ph81hxi2"
+    ]
+  },
+  {
+    "nl": "chauffeur",
+    "type": "noun",
+    "article": "de",
+    "tr": "şoför",
+    "en": "driver, chauffeur",
+    "ar": "سائق",
+    "fr": "chauffeur",
+    "zinnen": [
+      "r8mtqcu3"
+    ]
+  },
+  {
+    "nl": "gas geven",
+    "type": "phrase",
+    "tr": "gaza basmak",
+    "en": "to accelerate, to step on the gas",
+    "ar": "يضغط على دواسة الوقود",
+    "fr": "accélérer, appuyer sur le gaz",
+    "zinnen": [
+      "zp5v0n51",
+      "pyuup4ou"
+    ]
+  },
+  {
+    "nl": "gevaar",
+    "type": "noun",
+    "article": "het",
+    "tr": "tehlike",
+    "en": "danger",
+    "ar": "خطر",
+    "fr": "danger",
+    "zinnen": [
+      "f0nwtesu"
+    ]
+  },
+  {
+    "nl": "gordel",
+    "type": "noun",
+    "article": "de",
+    "tr": "kemer (emniyet kemeri)",
+    "en": "belt, seatbelt",
+    "ar": "حزام",
+    "fr": "ceinture",
+    "zinnen": [
+      "f0nwtesu"
+    ]
+  },
+  {
+    "nl": "instructeur",
+    "type": "noun",
+    "article": "de",
+    "tr": "eğitmen",
+    "en": "instructor",
+    "ar": "مدرّب",
+    "fr": "instructeur",
+    "zinnen": [
+      "94ettnwv"
+    ]
+  },
+  {
+    "nl": "maximum",
+    "type": "noun",
+    "article": "het",
+    "tr": "azami, maksimum",
+    "en": "maximum",
+    "ar": "حد أقصى",
+    "fr": "maximum",
+    "zinnen": [
+      "2771qzpb"
+    ]
+  },
+  {
+    "nl": "oppassen",
+    "type": "verb",
+    "perfectum": "opgepast",
+    "imperfectum": "paste op",
+    "tr": "dikkat etmek",
+    "en": "to be careful, to watch out",
+    "ar": "يحذر، ينتبه",
+    "fr": "faire attention",
+    "zinnen": [
+      "f0nwtesu"
+    ]
+  },
+  {
+    "nl": "remmen",
+    "type": "verb",
+    "perfectum": "geremd",
+    "imperfectum": "remde",
+    "tr": "frenlenmek",
+    "en": "to brake",
+    "ar": "يكبح، يفرمل",
+    "fr": "freiner",
+    "zinnen": [
+      "zp5v0n51",
+      "pyuup4ou"
+    ]
+  },
+  {
+    "nl": "rotonde",
+    "type": "noun",
+    "article": "de",
+    "tr": "dönel kavşak",
+    "en": "roundabout",
+    "ar": "دوّار",
+    "fr": "rond-point",
+    "zinnen": [
+      "uf0h5f17"
+    ]
+  },
+  {
+    "nl": "schakelen",
+    "type": "verb",
+    "perfectum": "geschakeld",
+    "imperfectum": "schakelde",
+    "tr": "vites değiştirmek",
+    "en": "to change gear, to switch",
+    "ar": "ينقل التروس",
+    "fr": "changer de vitesse",
+    "zinnen": [
+      "2771qzpb"
+    ]
+  },
+  {
+    "nl": "smal",
+    "type": "adj",
+    "tr": "dar",
+    "en": "narrow",
+    "ar": "ضيق",
+    "fr": "étroit",
+    "zinnen": [
+      "df28067a",
+      "ph81hxi2"
+    ]
+  },
+  {
+    "nl": "stuur",
+    "type": "noun",
+    "article": "het",
+    "tr": "direksiyon",
+    "en": "steering wheel",
+    "ar": "مقود",
+    "fr": "volant",
+    "zinnen": [
+      "zp5v0n51",
+      "pyuup4ou"
+    ]
+  },
+  {
+    "nl": "tanken",
+    "type": "verb",
+    "perfectum": "getankt",
+    "imperfectum": "tankte",
+    "tr": "yakıt doldurmak",
+    "en": "to fill up with fuel",
+    "ar": "يملأ الوقود",
+    "fr": "faire le plein",
+    "zinnen": [
+      "thxghz9o"
+    ]
+  },
+  {
+    "nl": "tankstation",
+    "type": "noun",
+    "article": "het",
+    "tr": "benzin istasyonu",
+    "en": "petrol station, gas station",
+    "ar": "محطة وقود",
+    "fr": "station-service",
+    "zinnen": [
+      "thxghz9o"
+    ]
+  },
+  {
+    "nl": "theorie",
+    "type": "noun",
+    "article": "de",
+    "tr": "teori",
+    "en": "theory",
+    "ar": "نظرية",
+    "fr": "théorie",
+    "zinnen": [
+      "94ettnwv"
+    ]
+  },
+  {
+    "nl": "uitdelen",
+    "type": "verb",
+    "perfectum": "uitgedeeld",
+    "imperfectum": "deelde uit",
+    "tr": "dağıtmak, paylaştırmak",
+    "en": "to hand out, to distribute",
+    "ar": "يوزّع",
+    "fr": "distribuer, remettre",
+    "zinnen": [
+      "sob58z2g"
+    ]
+  },
+  {
+    "nl": "versnelling",
+    "type": "noun",
+    "article": "de",
+    "tr": "vites, hızlanma",
+    "en": "gear, acceleration",
+    "ar": "تروس، تسارع",
+    "fr": "vitesse, accélération",
+    "zinnen": [
+      "2771qzpb"
+    ]
+  },
+  {
+    "nl": "voorgaan",
+    "type": "verb",
+    "perfectum": "voorgegaan",
+    "imperfectum": "ging voor",
+    "tr": "önce gitmek, örnek olmak",
+    "en": "to go first, to lead the way",
+    "ar": "يتقدم، يذهب أولاً",
+    "fr": "passer en premier, montrer l'exemple",
+    "zinnen": [
+      "sob58z2g"
+    ]
+  },
+  {
+    "nl": "voorrang",
+    "type": "noun",
+    "article": "de",
+    "tr": "öncelik, geçiş hakkı",
+    "en": "priority, right of way",
+    "ar": "أولوية المرور",
+    "fr": "priorité",
+    "zinnen": [
+      "uf0h5f17"
+    ]
+  },
+  {
+    "nl": "vooruit",
+    "type": "adv",
+    "tr": "ileri, öne",
+    "en": "forward, ahead",
+    "ar": "للأمام",
+    "fr": "en avant",
+    "zinnen": [
+      "thxghz9o"
+    ]
+  },
+  {
+    "nl": "vrachtwagen",
+    "type": "noun",
+    "article": "de",
+    "tr": "kamyon",
+    "en": "truck, lorry",
+    "ar": "شاحنة",
+    "fr": "camion",
+    "zinnen": [
+      "ph81hxi2"
+    ]
+  },
+  {
+    "nl": "besluit",
+    "type": "noun",
+    "article": "het",
+    "tr": "karar",
+    "en": "decision, resolution",
+    "ar": "قرار",
+    "fr": "décision",
+    "zinnen": [
+      "lmss8gdu"
+    ]
+  },
+  {
+    "nl": "diep",
+    "type": "adj",
+    "tr": "derin",
+    "en": "deep",
+    "ar": "عميق",
+    "fr": "profond",
+    "zinnen": [
+      "vtz7v91k"
+    ]
+  },
+  {
+    "nl": "EHBO",
+    "type": "noun",
+    "article": "de",
+    "tr": "ilk yardım",
+    "en": "first aid",
+    "ar": "إسعافات أولية",
+    "fr": "premiers secours",
+    "zinnen": [
+      "mqw3cwb1",
+      "3kyccerv"
+    ]
+  },
+  {
+    "nl": "gedeelte",
+    "type": "noun",
+    "article": "het",
+    "tr": "bölüm, kısım",
+    "en": "part, section",
+    "ar": "جزء، قسم",
+    "fr": "partie, section",
+    "zinnen": [
+      "onc3645z"
+    ]
+  },
+  {
+    "nl": "gigantisch",
+    "type": "adj",
+    "tr": "devasa, muazzam",
+    "en": "gigantic, enormous",
+    "ar": "ضخم، هائل",
+    "fr": "gigantesque, énorme",
+    "zinnen": [
+      "onc3645z"
+    ]
+  },
+  {
+    "nl": "herkomst",
+    "type": "noun",
+    "article": "de",
+    "tr": "köken, menşei",
+    "en": "origin, provenance",
+    "ar": "أصل، منشأ",
+    "fr": "origine, provenance",
+    "zinnen": [
+      "lmss8gdu"
+    ]
+  },
+  {
+    "nl": "informeren",
+    "type": "verb",
+    "perfectum": "geïnformeerd",
+    "imperfectum": "informeerde",
+    "tr": "bilgilendirmek",
+    "en": "to inform",
+    "ar": "يُعلم، يُخبر",
+    "fr": "informer",
+    "zinnen": [
+      "lmss8gdu"
+    ]
+  },
+  {
+    "nl": "oceaan",
+    "type": "noun",
+    "article": "de",
+    "tr": "okyanus",
+    "en": "ocean",
+    "ar": "محيط",
+    "fr": "océan",
+    "zinnen": [
+      "vtz7v91k"
+    ]
+  },
+  {
+    "nl": "ontspanning",
+    "type": "noun",
+    "article": "de",
+    "tr": "rahatlama, dinlenme",
+    "en": "relaxation",
+    "ar": "استرخاء",
+    "fr": "détente, relaxation",
+    "zinnen": [
+      "oi4xvdml"
+    ]
+  },
+  {
+    "nl": "redden",
+    "type": "verb",
+    "perfectum": "gered",
+    "imperfectum": "redde",
+    "tr": "kurtarmak",
+    "en": "to save, to rescue",
+    "ar": "ينقذ",
+    "fr": "sauver, secourir",
+    "zinnen": [
+      "bmtawvk1",
+      "mqw3cwb1",
+      "3kyccerv",
+      "krf82bs6",
+      "u5wwrbc4"
+    ]
+  },
+  {
+    "nl": "schitterend",
+    "type": "adj",
+    "tr": "harika, muhteşem",
+    "en": "magnificent, splendid",
+    "ar": "رائع، باهر",
+    "fr": "magnifique, splendide",
+    "zinnen": [
+      "onc3645z"
+    ]
+  },
+  {
+    "nl": "strandwacht",
+    "type": "noun",
+    "article": "de",
+    "tr": "cankurtaran",
+    "en": "lifeguard",
+    "ar": "منقذ الشاطئ",
+    "fr": "maître-nageur sauveteur",
+    "zinnen": [
+      "bmtawvk1",
+      "mqw3cwb1",
+      "3kyccerv",
+      "1w40sj9l"
+    ]
+  },
+  {
+    "nl": "stressvol",
+    "type": "adj",
+    "tr": "stresli",
+    "en": "stressful",
+    "ar": "مجهد",
+    "fr": "stressant",
+    "zinnen": [
+      "oi4xvdml"
+    ]
+  },
+  {
+    "nl": "stroming",
+    "type": "noun",
+    "article": "de",
+    "tr": "akıntı",
+    "en": "current, flow",
+    "ar": "تيار",
+    "fr": "courant",
+    "zinnen": [
+      "vtz7v91k"
+    ]
+  },
+  {
+    "nl": "surfen",
+    "type": "verb",
+    "perfectum": "gesurft",
+    "imperfectum": "surfte",
+    "tr": "sörf yapmak",
+    "en": "to surf",
+    "ar": "يمارس ركوب الأمواج",
+    "fr": "surfer",
+    "zinnen": [
+      "5px9egl6"
+    ]
+  },
+  {
+    "nl": "verdrinken",
+    "type": "verb",
+    "perfectum": "verdronken",
+    "imperfectum": "verdronk",
+    "tr": "boğulmak",
+    "en": "to drown",
+    "ar": "يغرق",
+    "fr": "se noyer",
+    "zinnen": [
+      "bmtawvk1",
+      "mqw3cwb1",
+      "3kyccerv"
+    ]
+  },
+  {
+    "nl": "vermist",
+    "type": "adj",
+    "tr": "kayıp",
+    "en": "missing",
+    "ar": "مفقود",
+    "fr": "disparu",
+    "zinnen": [
+      "1w40sj9l"
+    ]
+  },
+  {
+    "nl": "vijand",
+    "type": "noun",
+    "article": "de",
+    "tr": "düşman",
+    "en": "enemy",
+    "ar": "عدو",
+    "fr": "ennemi",
+    "zinnen": [
+      "1w40sj9l"
+    ]
+  },
+  {
+    "nl": "vijver",
+    "type": "noun",
+    "article": "de",
+    "tr": "gölet",
+    "en": "pond",
+    "ar": "بركة",
+    "fr": "étang",
+    "zinnen": [
+      "5px9egl6"
+    ]
+  },
+  {
+    "nl": "zeilen",
+    "type": "verb",
+    "perfectum": "gezeild",
+    "imperfectum": "zeilde",
+    "tr": "yelkenliyle gitmek, yelken açmak",
+    "en": "to sail",
+    "ar": "يبحر بالشراع",
+    "fr": "naviguer à la voile",
+    "zinnen": [
+      "oi4xvdml"
+    ]
+  },
+  {
+    "nl": "zich gedragen",
+    "type": "verb",
+    "perfectum": "zich gedragen",
+    "imperfectum": "gedroeg zich",
+    "tr": "davranmak",
+    "en": "to behave",
+    "ar": "يتصرف، يسلك",
+    "fr": "se comporter",
+    "zinnen": [
+      "aotr5xug"
+    ]
+  },
+  {
+    "nl": "zwemdiploma",
+    "type": "noun",
+    "article": "het",
+    "tr": "yüzme belgesi",
+    "en": "swimming certificate",
+    "ar": "شهادة السباحة",
+    "fr": "brevet de natation",
+    "zinnen": [
+      "aotr5xug"
+    ]
+  },
+  {
+    "nl": "zwemles",
+    "type": "noun",
+    "article": "de",
+    "tr": "yüzme dersi",
+    "en": "swimming lesson",
+    "ar": "درس السباحة",
+    "fr": "leçon de natation",
+    "zinnen": [
+      "5px9egl6"
+    ]
+  }
+]

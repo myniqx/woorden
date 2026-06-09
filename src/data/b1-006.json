@@ -1,0 +1,1208 @@
+[
+  {
+    "nl": "aanhef",
+    "type": "noun",
+    "article": "de",
+    "tr": "hitap, selamlama (mektup başlığı)",
+    "en": "salutation, opening address",
+    "ar": "تحية، مقدمة الرسالة",
+    "fr": "formule d'appel, en-tête",
+    "zinnen": [
+      "uzx8t38h"
+    ]
+  },
+  {
+    "nl": "beledigen",
+    "type": "verb",
+    "perfectum": "beledigd",
+    "imperfectum": "beledigde",
+    "tr": "hakaret etmek",
+    "en": "to insult, to offend",
+    "ar": "يُهين، يُسيء إلى",
+    "fr": "insulter, offenser",
+    "zinnen": [
+      "z4xsgs0o"
+    ]
+  },
+  {
+    "nl": "benaderen",
+    "type": "verb",
+    "perfectum": "benaderd",
+    "imperfectum": "benaderde",
+    "tr": "yaklaşmak, başvurmak",
+    "en": "to approach, to contact",
+    "ar": "يقترب، يتواصل مع",
+    "fr": "approcher, contacter",
+    "zinnen": [
+      "3bc5blul"
+    ]
+  },
+  {
+    "nl": "bevriend",
+    "type": "adj",
+    "tr": "arkadaş olan, dostane",
+    "en": "friendly, on friendly terms",
+    "ar": "صديق",
+    "fr": "ami, lié d'amitié",
+    "zinnen": [
+      "syem10e5"
+    ]
+  },
+  {
+    "nl": "concurrent",
+    "type": "noun",
+    "article": "de",
+    "tr": "rakip",
+    "en": "competitor, rival",
+    "ar": "منافس",
+    "fr": "concurrent, rival",
+    "zinnen": [
+      "syem10e5"
+    ]
+  },
+  {
+    "nl": "consultant",
+    "type": "noun",
+    "article": "de",
+    "tr": "danışman, müşavir",
+    "en": "consultant",
+    "ar": "مستشار",
+    "fr": "consultant, conseiller",
+    "zinnen": [
+      "8qnjf6sj"
+    ]
+  },
+  {
+    "nl": "desondanks",
+    "type": "adv",
+    "tr": "buna rağmen, yine de",
+    "en": "despite this, nevertheless",
+    "ar": "على الرغم من ذلك",
+    "fr": "malgré cela, néanmoins",
+    "zinnen": [
+      "r7ae8nuy"
+    ]
+  },
+  {
+    "nl": "gastvrij",
+    "type": "adj",
+    "tr": "misafirperver",
+    "en": "hospitable",
+    "ar": "مضياف، كريم",
+    "fr": "hospitalier, accueillant",
+    "zinnen": [
+      "3bc5blul"
+    ]
+  },
+  {
+    "nl": "gepast",
+    "type": "adj",
+    "tr": "uygun, yerinde",
+    "en": "appropriate, fitting",
+    "ar": "مناسب، لائق",
+    "fr": "approprié, convenable",
+    "zinnen": [
+      "3bc5blul"
+    ]
+  },
+  {
+    "nl": "gunnen",
+    "type": "verb",
+    "perfectum": "gegund",
+    "imperfectum": "gunde",
+    "tr": "layık görmek, hak ettiğini kabul etmek",
+    "en": "to grant, to allow (someone to have something)",
+    "ar": "يمنح، يرى شخصاً جديراً بشيء",
+    "fr": "accorder, ne pas envier",
+    "zinnen": [
+      "syem10e5"
+    ]
+  },
+  {
+    "nl": "hiërarchisch",
+    "type": "adj",
+    "tr": "hiyerarşik",
+    "en": "hierarchical",
+    "ar": "هرمي",
+    "fr": "hiérarchique",
+    "zinnen": [
+      "8qnjf6sj"
+    ]
+  },
+  {
+    "nl": "hiervoor",
+    "type": "adv",
+    "tr": "bunun için / bundan önce",
+    "en": "for this / before this",
+    "ar": "لهذا / قبل هذا",
+    "fr": "pour cela / avant cela",
+    "zinnen": [
+      "ck9eegji"
+    ]
+  },
+  {
+    "nl": "hoofd",
+    "type": "noun",
+    "article": "het",
+    "tr": "baş, kafa / şef",
+    "en": "head / chief",
+    "ar": "رأس / رئيس",
+    "fr": "tête / chef",
+    "zinnen": [
+      "dpbfh66y",
+      "y7vavbm8"
+    ]
+  },
+  {
+    "nl": "inleiding",
+    "type": "noun",
+    "article": "de",
+    "tr": "giriş, önsöz",
+    "en": "introduction",
+    "ar": "مقدمة",
+    "fr": "introduction",
+    "zinnen": [
+      "ck9eegji"
+    ]
+  },
+  {
+    "nl": "kritiek",
+    "type": "noun",
+    "article": "de",
+    "tr": "eleştiri",
+    "en": "criticism, critique",
+    "ar": "نقد",
+    "fr": "critique",
+    "zinnen": [
+      "r7ae8nuy"
+    ]
+  },
+  {
+    "nl": "kwetsend",
+    "type": "adj",
+    "tr": "incitici, kırıcı",
+    "en": "hurtful, offensive",
+    "ar": "مؤذٍ، جارح",
+    "fr": "blessant, offensant",
+    "zinnen": [
+      "z4xsgs0o"
+    ]
+  },
+  {
+    "nl": "nuance",
+    "type": "noun",
+    "article": "de",
+    "tr": "nüans, ince fark",
+    "en": "nuance",
+    "ar": "فارق دقيق",
+    "fr": "nuance",
+    "zinnen": [
+      "r7ae8nuy"
+    ]
+  },
+  {
+    "nl": "onbegrijpelijk",
+    "type": "adj",
+    "tr": "anlaşılmaz",
+    "en": "incomprehensible",
+    "ar": "غير مفهوم",
+    "fr": "incompréhensible",
+    "zinnen": [
+      "dpbfh66y"
+    ]
+  },
+  {
+    "nl": "onbewust",
+    "type": "adj",
+    "tr": "bilinçsiz, farkında olmadan",
+    "en": "unconscious, unaware",
+    "ar": "غير واعٍ، لا شعوري",
+    "fr": "inconscient, sans le savoir",
+    "zinnen": [
+      "dpbfh66y"
+    ]
+  },
+  {
+    "nl": "personeelsuitje",
+    "type": "noun",
+    "article": "het",
+    "tr": "şirket gezisi, personel etkinliği",
+    "en": "staff outing, team activity",
+    "ar": "رحلة الموظفين",
+    "fr": "sortie du personnel",
+    "zinnen": [
+      "vpt7h0i0",
+      "ukgmrqs2"
+    ]
+  },
+  {
+    "nl": "sarcasme",
+    "type": "noun",
+    "article": "het",
+    "tr": "sarkasm, alaycılık",
+    "en": "sarcasm",
+    "ar": "سخرية، استهزاء",
+    "fr": "sarcasme",
+    "zinnen": [
+      "z4xsgs0o"
+    ]
+  },
+  {
+    "nl": "transparant",
+    "type": "adj",
+    "tr": "şeffaf",
+    "en": "transparent",
+    "ar": "شفاف",
+    "fr": "transparent",
+    "zinnen": [
+      "8qnjf6sj"
+    ]
+  },
+  {
+    "nl": "transport",
+    "type": "noun",
+    "article": "het",
+    "tr": "nakliye, ulaşım",
+    "en": "transport",
+    "ar": "نقل",
+    "fr": "transport",
+    "zinnen": [
+      "mvw7vj7i"
+    ]
+  },
+  {
+    "nl": "uiten",
+    "type": "verb",
+    "perfectum": "geuit",
+    "imperfectum": "uitte",
+    "tr": "ifade etmek, dile getirmek",
+    "en": "to express, to voice",
+    "ar": "يُعبّر عن",
+    "fr": "exprimer",
+    "zinnen": [
+      "ck9eegji"
+    ]
+  },
+  {
+    "nl": "vakbond",
+    "type": "noun",
+    "article": "de",
+    "tr": "sendika",
+    "en": "trade union",
+    "ar": "نقابة عمالية",
+    "fr": "syndicat",
+    "zinnen": [
+      "vpt7h0i0",
+      "ukgmrqs2",
+      "krf82bs6"
+    ]
+  },
+  {
+    "nl": "vergaderen",
+    "type": "verb",
+    "perfectum": "vergaderd",
+    "imperfectum": "vergaderde",
+    "tr": "toplantı yapmak",
+    "en": "to have a meeting, to meet",
+    "ar": "يعقد اجتماعاً",
+    "fr": "tenir une réunion, se réunir",
+    "zinnen": [
+      "tj0jktg1"
+    ]
+  },
+  {
+    "nl": "voortdurend",
+    "type": "adv",
+    "tr": "sürekli, durmadan",
+    "en": "continuously, constantly",
+    "ar": "باستمرار",
+    "fr": "continuellement, sans cesse",
+    "zinnen": [
+      "tj0jktg1"
+    ]
+  },
+  {
+    "nl": "zich verheugen op",
+    "type": "verb",
+    "perfectum": "zich verheugd op",
+    "imperfectum": "verheugde zich op",
+    "tr": "dört gözle beklemek",
+    "en": "to look forward to",
+    "ar": "يتطلع بشوق إلى",
+    "fr": "se réjouir de, avoir hâte de",
+    "zinnen": [
+      "vpt7h0i0",
+      "ukgmrqs2"
+    ]
+  },
+  {
+    "nl": "betrokken",
+    "type": "adj",
+    "tr": "ilgili, dahil olan",
+    "en": "involved, concerned",
+    "ar": "معني، متورط",
+    "fr": "concerné, impliqué",
+    "zinnen": [
+      "tj0jktg1"
+    ]
+  },
+  {
+    "nl": "correct",
+    "type": "adj",
+    "tr": "doğru, düzgün",
+    "en": "correct, proper",
+    "ar": "صحيح، لائق",
+    "fr": "correct",
+    "zinnen": [
+      "qn1cojax"
+    ]
+  },
+  {
+    "nl": "corrigeren",
+    "type": "verb",
+    "perfectum": "gecorrigeerd",
+    "imperfectum": "corrigeerde",
+    "tr": "düzeltmek",
+    "en": "to correct",
+    "ar": "يُصحّح",
+    "fr": "corriger",
+    "zinnen": [
+      "qn1cojax"
+    ]
+  },
+  {
+    "nl": "doorwerken",
+    "type": "verb",
+    "perfectum": "doorgewerkt",
+    "imperfectum": "werkte door",
+    "tr": "çalışmaya devam etmek",
+    "en": "to keep working, to work through",
+    "ar": "يواصل العمل",
+    "fr": "continuer à travailler",
+    "zinnen": [
+      "e48zl3ua"
+    ]
+  },
+  {
+    "nl": "evalueren",
+    "type": "verb",
+    "perfectum": "geëvalueerd",
+    "imperfectum": "evalueerde",
+    "tr": "değerlendirmek",
+    "en": "to evaluate",
+    "ar": "يُقيّم",
+    "fr": "évaluer",
+    "zinnen": [
+      "elblpcon"
+    ]
+  },
+  {
+    "nl": "feedback",
+    "type": "noun",
+    "article": "de",
+    "tr": "geri bildirim",
+    "en": "feedback",
+    "ar": "تغذية راجعة",
+    "fr": "retour, feedback",
+    "zinnen": [
+      "elblpcon"
+    ]
+  },
+  {
+    "nl": "georganiseerd",
+    "type": "adj",
+    "tr": "düzenli, organize",
+    "en": "organised",
+    "ar": "منظّم",
+    "fr": "organisé",
+    "zinnen": [
+      "m8yrvcot"
+    ]
+  },
+  {
+    "nl": "getal",
+    "type": "noun",
+    "article": "het",
+    "tr": "sayı, rakam",
+    "en": "number",
+    "ar": "عدد، رقم",
+    "fr": "nombre, chiffre",
+    "zinnen": [
+      "hnnps6ke"
+    ]
+  },
+  {
+    "nl": "houding",
+    "type": "noun",
+    "article": "de",
+    "tr": "tavır, duruş",
+    "en": "attitude, posture",
+    "ar": "موقف، وضعية",
+    "fr": "attitude, posture",
+    "zinnen": [
+      "m8yrvcot"
+    ]
+  },
+  {
+    "nl": "krap",
+    "type": "adj",
+    "tr": "dar, sıkışık",
+    "en": "tight, cramped",
+    "ar": "ضيق",
+    "fr": "serré, limité",
+    "zinnen": [
+      "e48zl3ua",
+      "cwjwlzbg"
+    ]
+  },
+  {
+    "nl": "namens",
+    "type": "prep",
+    "tr": "adına, namına",
+    "en": "on behalf of",
+    "ar": "نيابةً عن، باسم",
+    "fr": "au nom de",
+    "zinnen": [
+      "mvw7vj7i"
+    ]
+  },
+  {
+    "nl": "ontevreden",
+    "type": "adj",
+    "tr": "memnuniyetsiz",
+    "en": "dissatisfied, unhappy",
+    "ar": "غير راضٍ",
+    "fr": "mécontent, insatisfait",
+    "zinnen": [
+      "clqlxmlh"
+    ]
+  },
+  {
+    "nl": "ontkennen",
+    "type": "verb",
+    "perfectum": "ontkend",
+    "imperfectum": "ontkende",
+    "tr": "inkâr etmek",
+    "en": "to deny",
+    "ar": "ينفي، يُنكر",
+    "fr": "nier",
+    "zinnen": [
+      "cwjwlzbg"
+    ]
+  },
+  {
+    "nl": "opengaan",
+    "type": "verb",
+    "perfectum": "opengegaan",
+    "imperfectum": "ging open",
+    "tr": "açılmak",
+    "en": "to open (up)",
+    "ar": "يفتح، ينفتح",
+    "fr": "s'ouvrir",
+    "zinnen": [
+      "22il0xv5"
+    ]
+  },
+  {
+    "nl": "serveerster",
+    "type": "noun",
+    "article": "de",
+    "tr": "kadın garson",
+    "en": "waitress",
+    "ar": "نادلة",
+    "fr": "serveuse",
+    "zinnen": [
+      "22il0xv5"
+    ]
+  },
+  {
+    "nl": "spelfout",
+    "type": "noun",
+    "article": "de",
+    "tr": "yazım hatası",
+    "en": "spelling mistake",
+    "ar": "خطأ إملائي",
+    "fr": "faute d'orthographe",
+    "zinnen": [
+      "qn1cojax",
+      "hnnps6ke"
+    ]
+  },
+  {
+    "nl": "spelling",
+    "type": "noun",
+    "article": "de",
+    "tr": "yazım, imla",
+    "en": "spelling",
+    "ar": "إملاء",
+    "fr": "orthographe",
+    "zinnen": [
+      "qn1cojax"
+    ]
+  },
+  {
+    "nl": "tempo",
+    "type": "noun",
+    "article": "het",
+    "tr": "tempo, hız",
+    "en": "pace, tempo",
+    "ar": "إيقاع، وتيرة",
+    "fr": "tempo, rythme",
+    "zinnen": [
+      "m8yrvcot"
+    ]
+  },
+  {
+    "nl": "terecht",
+    "type": "adv",
+    "tr": "haklı olarak, yerinde",
+    "en": "rightly, justifiably",
+    "ar": "بحق، بشكل مبرر",
+    "fr": "à juste titre, avec raison",
+    "zinnen": [
+      "82i3ill7"
+    ]
+  },
+  {
+    "nl": "vandaar",
+    "type": "adv",
+    "tr": "bundan dolayı, işte bu yüzden",
+    "en": "that's why, hence",
+    "ar": "لذا، من هنا",
+    "fr": "c'est pourquoi, d'où",
+    "zinnen": [
+      "22il0xv5"
+    ]
+  },
+  {
+    "nl": "verbeterpunt",
+    "type": "noun",
+    "article": "het",
+    "tr": "geliştirilmesi gereken nokta",
+    "en": "point of improvement",
+    "ar": "نقطة تحتاج إلى تحسين",
+    "fr": "point à améliorer",
+    "zinnen": [
+      "elblpcon"
+    ]
+  },
+  {
+    "nl": "verslag",
+    "type": "noun",
+    "article": "het",
+    "tr": "rapor, tutanak",
+    "en": "report, account",
+    "ar": "تقرير",
+    "fr": "rapport, compte rendu",
+    "zinnen": [
+      "82i3ill7"
+    ]
+  },
+  {
+    "nl": "verwisselen",
+    "type": "verb",
+    "perfectum": "verwisseld",
+    "imperfectum": "verwisselde",
+    "tr": "değiştirmek, karıştırmak",
+    "en": "to swap, to mix up",
+    "ar": "يُبدّل، يُخلط",
+    "fr": "échanger, confondre",
+    "zinnen": [
+      "iugwf8ss",
+      "m1fdq3br"
+    ]
+  },
+  {
+    "nl": "wijzen",
+    "type": "verb",
+    "perfectum": "gewezen",
+    "imperfectum": "wees",
+    "tr": "işaret etmek, göstermek",
+    "en": "to point, to indicate",
+    "ar": "يُشير إلى",
+    "fr": "indiquer, montrer",
+    "zinnen": [
+      "iugwf8ss",
+      "m1fdq3br"
+    ]
+  },
+  {
+    "nl": "zich vergissen",
+    "type": "verb",
+    "perfectum": "zich vergist",
+    "imperfectum": "vergiste zich",
+    "tr": "yanılmak, hata yapmak",
+    "en": "to be mistaken, to make an error",
+    "ar": "يُخطئ، يُخطئ في الحكم",
+    "fr": "se tromper",
+    "zinnen": [
+      "iugwf8ss",
+      "m1fdq3br"
+    ]
+  },
+  {
+    "nl": "zorgvuldig",
+    "type": "adj",
+    "tr": "titiz, özenli",
+    "en": "careful, thorough",
+    "ar": "دقيق، عناية",
+    "fr": "soigneux, méticuleux",
+    "zinnen": [
+      "82i3ill7"
+    ]
+  },
+  {
+    "nl": "accountant",
+    "type": "noun",
+    "article": "de",
+    "tr": "muhasebeci, denetçi",
+    "en": "accountant, auditor",
+    "ar": "محاسب",
+    "fr": "comptable, expert-comptable",
+    "zinnen": [
+      "gwpmb3mf"
+    ]
+  },
+  {
+    "nl": "afwijken",
+    "type": "verb",
+    "perfectum": "afgeweken",
+    "imperfectum": "week af",
+    "tr": "sapmak, ayrılmak",
+    "en": "to deviate, to differ",
+    "ar": "ينحرف، يختلف",
+    "fr": "dévier, s'écarter",
+    "zinnen": [
+      "gwpmb3mf"
+    ]
+  },
+  {
+    "nl": "beloning",
+    "type": "noun",
+    "article": "de",
+    "tr": "ödül, mükâfat",
+    "en": "reward",
+    "ar": "مكافأة",
+    "fr": "récompense",
+    "zinnen": [
+      "jhsvpno4"
+    ]
+  },
+  {
+    "nl": "bewijzen",
+    "type": "verb",
+    "perfectum": "bewezen",
+    "imperfectum": "bewees",
+    "tr": "kanıtlamak, ispatlamak",
+    "en": "to prove, to demonstrate",
+    "ar": "يُثبت، يبرهن",
+    "fr": "prouver, démontrer",
+    "zinnen": [
+      "n8k77pzd"
+    ]
+  },
+  {
+    "nl": "compenseren",
+    "type": "verb",
+    "perfectum": "gecompenseerd",
+    "imperfectum": "compenseerde",
+    "tr": "telafi etmek",
+    "en": "to compensate",
+    "ar": "يُعوّض",
+    "fr": "compenser",
+    "zinnen": [
+      "jhsvpno4"
+    ]
+  },
+  {
+    "nl": "compromis",
+    "type": "noun",
+    "article": "het",
+    "tr": "uzlaşma, orta yol",
+    "en": "compromise",
+    "ar": "حل وسط",
+    "fr": "compromis",
+    "zinnen": [
+      "n8k77pzd"
+    ]
+  },
+  {
+    "nl": "effectief",
+    "type": "adj",
+    "tr": "etkin, etkili",
+    "en": "effective",
+    "ar": "فعّال",
+    "fr": "efficace",
+    "zinnen": [
+      "jhsvpno4"
+    ]
+  },
+  {
+    "nl": "exclusief",
+    "type": "adj",
+    "tr": "hariç, özel",
+    "en": "exclusive, excluding",
+    "ar": "حصري، باستثناء",
+    "fr": "exclusif, hors",
+    "zinnen": [
+      "gabb50to"
+    ]
+  },
+  {
+    "nl": "fenomeen",
+    "type": "noun",
+    "article": "het",
+    "tr": "fenomen, olay",
+    "en": "phenomenon",
+    "ar": "ظاهرة",
+    "fr": "phénomène",
+    "zinnen": [
+      "gabb50to"
+    ]
+  },
+  {
+    "nl": "geconcentreerd",
+    "type": "adj",
+    "tr": "odaklanmış, konsantre",
+    "en": "concentrated, focused",
+    "ar": "مركّز، منتبه",
+    "fr": "concentré",
+    "zinnen": [
+      "gabb50to"
+    ]
+  },
+  {
+    "nl": "indienen",
+    "type": "verb",
+    "perfectum": "ingediend",
+    "imperfectum": "diende in",
+    "tr": "sunmak, başvurmak",
+    "en": "to submit, to file",
+    "ar": "يُقدّم، يتقدم بطلب",
+    "fr": "soumettre, déposer",
+    "zinnen": [
+      "gp8kzmth"
+    ]
+  },
+  {
+    "nl": "motiveren",
+    "type": "verb",
+    "perfectum": "gemotiveerd",
+    "imperfectum": "motiveerde",
+    "tr": "motive etmek, gerekçelendirmek",
+    "en": "to motivate, to justify",
+    "ar": "يُحفّز، يُبرّر",
+    "fr": "motiver, justifier",
+    "zinnen": [
+      "n8k77pzd",
+      "qe4a0h1h",
+      "gk23i2y6"
+    ]
+  },
+  {
+    "nl": "norm",
+    "type": "noun",
+    "article": "de",
+    "tr": "norm, kural",
+    "en": "norm, standard",
+    "ar": "معيار، قاعدة",
+    "fr": "norme",
+    "zinnen": [
+      "gwpmb3mf"
+    ]
+  },
+  {
+    "nl": "overuren",
+    "type": "noun",
+    "article": "de",
+    "tr": "fazla mesai",
+    "en": "overtime",
+    "ar": "ساعات عمل إضافية",
+    "fr": "heures supplémentaires",
+    "zinnen": [
+      "e48zl3ua"
+    ]
+  },
+  {
+    "nl": "per se",
+    "type": "adv",
+    "tr": "illa ki, mutlaka",
+    "en": "per se, necessarily",
+    "ar": "بالضرورة، حتماً",
+    "fr": "en soi, nécessairement",
+    "zinnen": [
+      "qzir6std"
+    ]
+  },
+  {
+    "nl": "personeel",
+    "type": "noun",
+    "article": "het",
+    "tr": "personel, çalışanlar",
+    "en": "staff, personnel",
+    "ar": "موظفون، طاقم",
+    "fr": "personnel",
+    "zinnen": [
+      "e48zl3ua",
+      "xmowzclu"
+    ]
+  },
+  {
+    "nl": "raadplegen",
+    "type": "verb",
+    "perfectum": "geraadpleegd",
+    "imperfectum": "raadpleegde",
+    "tr": "danışmak, başvurmak",
+    "en": "to consult",
+    "ar": "يستشير، يرجع إلى",
+    "fr": "consulter",
+    "zinnen": [
+      "rgzvqlch",
+      "ykzzpv1t"
+    ]
+  },
+  {
+    "nl": "reclamebureau",
+    "type": "noun",
+    "article": "het",
+    "tr": "reklam ajansı",
+    "en": "advertising agency",
+    "ar": "وكالة إعلانية",
+    "fr": "agence de publicité",
+    "zinnen": [
+      "gp8kzmth"
+    ]
+  },
+  {
+    "nl": "standaard",
+    "type": "noun",
+    "article": "de",
+    "tr": "standart",
+    "en": "standard",
+    "ar": "معيار، مستوى",
+    "fr": "standard, norme",
+    "zinnen": [
+      "vcvp9w12"
+    ]
+  },
+  {
+    "nl": "thuiswerken",
+    "type": "verb",
+    "perfectum": "thuisgewerkt",
+    "imperfectum": "werkte thuis",
+    "tr": "evden çalışmak",
+    "en": "to work from home",
+    "ar": "يعمل من المنزل",
+    "fr": "travailler à domicile",
+    "zinnen": [
+      "xmowzclu"
+    ]
+  },
+  {
+    "nl": "uitbetalen",
+    "type": "verb",
+    "perfectum": "uitbetaald",
+    "imperfectum": "betaalde uit",
+    "tr": "ödemek, maaş vermek",
+    "en": "to pay out",
+    "ar": "يدفع، يصرف",
+    "fr": "payer, verser",
+    "zinnen": [
+      "xmowzclu"
+    ]
+  },
+  {
+    "nl": "wekelijks",
+    "type": "adv",
+    "tr": "haftalık, her hafta",
+    "en": "weekly",
+    "ar": "أسبوعياً",
+    "fr": "hebdomadaire, chaque semaine",
+    "zinnen": [
+      "xmowzclu"
+    ]
+  },
+  {
+    "nl": "wetenschapper",
+    "type": "noun",
+    "article": "de",
+    "tr": "bilim insanı",
+    "en": "scientist, researcher",
+    "ar": "عالم",
+    "fr": "scientifique, chercheur",
+    "zinnen": [
+      "l7fv39vu"
+    ]
+  },
+  {
+    "nl": "afleiding",
+    "type": "noun",
+    "article": "de",
+    "tr": "dikkat dağıtma, oyalama",
+    "en": "distraction",
+    "ar": "تشتيت الانتباه",
+    "fr": "distraction",
+    "zinnen": [
+      "l7fv39vu"
+    ]
+  },
+  {
+    "nl": "bloot",
+    "type": "adj",
+    "tr": "çıplak",
+    "en": "bare, naked",
+    "ar": "عارٍ",
+    "fr": "nu, dénudé",
+    "zinnen": [
+      "83r7dy5z"
+    ]
+  },
+  {
+    "nl": "braaf",
+    "type": "adj",
+    "tr": "uslu, itaatkâr",
+    "en": "well-behaved, obedient",
+    "ar": "مؤدّب، مطيع",
+    "fr": "sage, obéissant",
+    "zinnen": [
+      "ypkzt3nl"
+    ]
+  },
+  {
+    "nl": "combineren",
+    "type": "verb",
+    "perfectum": "gecombineerd",
+    "imperfectum": "combineerde",
+    "tr": "birleştirmek, kombine etmek",
+    "en": "to combine",
+    "ar": "يجمع، يدمج",
+    "fr": "combiner",
+    "zinnen": [
+      "l7fv39vu"
+    ]
+  },
+  {
+    "nl": "drank",
+    "type": "noun",
+    "article": "de",
+    "tr": "içki, içecek",
+    "en": "drink, beverage",
+    "ar": "مشروب",
+    "fr": "boisson",
+    "zinnen": [
+      "ypkzt3nl"
+    ]
+  },
+  {
+    "nl": "dreigen",
+    "type": "verb",
+    "perfectum": "gedreigd",
+    "imperfectum": "dreigde",
+    "tr": "tehdit etmek / tehlike arz etmek",
+    "en": "to threaten / to be at risk",
+    "ar": "يهدد / يكون على وشك",
+    "fr": "menacer / risquer",
+    "zinnen": [
+      "ezncgw3w"
+    ]
+  },
+  {
+    "nl": "geheimzinnig",
+    "type": "adj",
+    "tr": "gizemli, esrarengiz",
+    "en": "mysterious, secretive",
+    "ar": "غامض",
+    "fr": "mystérieux, secret",
+    "zinnen": [
+      "ezncgw3w"
+    ]
+  },
+  {
+    "nl": "gemeenschappelijk",
+    "type": "adj",
+    "tr": "ortak, müşterek",
+    "en": "common, shared",
+    "ar": "مشترك",
+    "fr": "commun, partagé",
+    "zinnen": [
+      "baq06k0x"
+    ]
+  },
+  {
+    "nl": "gerucht",
+    "type": "noun",
+    "article": "het",
+    "tr": "söylenti, rivayet",
+    "en": "rumour",
+    "ar": "إشاعة",
+    "fr": "rumeur",
+    "zinnen": [
+      "ezncgw3w"
+    ]
+  },
+  {
+    "nl": "gezelligheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "sıcak ortam, birliktelik hissi",
+    "en": "cosiness, conviviality",
+    "ar": "أجواء مريحة ودافئة",
+    "fr": "convivialité, ambiance chaleureuse",
+    "zinnen": [
+      "baq06k0x"
+    ]
+  },
+  {
+    "nl": "hoera",
+    "type": "phrase",
+    "tr": "yaşasın, hurra",
+    "en": "hooray, hurrah",
+    "ar": "هورا",
+    "fr": "hourra",
+    "zinnen": [
+      "baq06k0x"
+    ]
+  },
+  {
+    "nl": "meerderheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "çoğunluk",
+    "en": "majority",
+    "ar": "أغلبية",
+    "fr": "majorité",
+    "zinnen": [
+      "tj1d28lu"
+    ]
+  },
+  {
+    "nl": "mond",
+    "type": "noun",
+    "article": "de",
+    "tr": "ağız",
+    "en": "mouth",
+    "ar": "فم",
+    "fr": "bouche",
+    "zinnen": [
+      "oi9tjyvz"
+    ]
+  },
+  {
+    "nl": "nuchter",
+    "type": "adj",
+    "tr": "ayık / aç karnına",
+    "en": "sober / on an empty stomach",
+    "ar": "صاحٍ / صائم",
+    "fr": "sobre / à jeun",
+    "zinnen": [
+      "ypkzt3nl"
+    ]
+  },
+  {
+    "nl": "opvatting",
+    "type": "noun",
+    "article": "de",
+    "tr": "görüş, kanı",
+    "en": "opinion, view",
+    "ar": "رأي، وجهة نظر",
+    "fr": "opinion, point de vue",
+    "zinnen": [
+      "tj1d28lu"
+    ]
+  },
+  {
+    "nl": "recentelijk",
+    "type": "adv",
+    "tr": "yakın zamanda, geçenlerde",
+    "en": "recently",
+    "ar": "مؤخراً",
+    "fr": "récemment",
+    "zinnen": [
+      "oi9tjyvz"
+    ]
+  },
+  {
+    "nl": "roddel",
+    "type": "noun",
+    "article": "de",
+    "tr": "dedikodu",
+    "en": "gossip",
+    "ar": "نميمة، ثرثرة",
+    "fr": "commérages, ragot",
+    "zinnen": [
+      "oi9tjyvz"
+    ]
+  },
+  {
+    "nl": "schijnen",
+    "type": "verb",
+    "perfectum": "geschenen",
+    "imperfectum": "scheen",
+    "tr": "görünmek / parlamak",
+    "en": "to seem, to appear / to shine",
+    "ar": "يبدو / يُضيء",
+    "fr": "sembler, paraître / briller",
+    "zinnen": [
+      "xfs1x8e8",
+      "ool68ppt"
+    ]
+  },
+  {
+    "nl": "tegenstelling",
+    "type": "noun",
+    "article": "de",
+    "tr": "karşıtlık, zıtlık",
+    "en": "contrast, contradiction",
+    "ar": "تناقض، تضاد",
+    "fr": "contraste, contradiction",
+    "zinnen": [
+      "tj1d28lu"
+    ]
+  },
+  {
+    "nl": "tunnel",
+    "type": "noun",
+    "article": "de",
+    "tr": "tünel",
+    "en": "tunnel",
+    "ar": "نفق",
+    "fr": "tunnel",
+    "zinnen": [
+      "xfs1x8e8"
+    ]
+  },
+  {
+    "nl": "verlof",
+    "type": "noun",
+    "article": "het",
+    "tr": "izin, tatil",
+    "en": "leave, permission",
+    "ar": "إجازة، إذن",
+    "fr": "congé, permission",
+    "zinnen": [
+      "83r7dy5z"
+    ]
+  },
+  {
+    "nl": "vertrouwelijk",
+    "type": "adj",
+    "tr": "gizli, güvenilir",
+    "en": "confidential, trustworthy",
+    "ar": "سري، موثوق",
+    "fr": "confidentiel, de confiance",
+    "zinnen": [
+      "83r7dy5z"
+    ]
+  },
+  {
+    "nl": "vredig",
+    "type": "adj",
+    "tr": "huzurlu, sakin",
+    "en": "peaceful, tranquil",
+    "ar": "هادئ، سلمي",
+    "fr": "paisible, tranquille",
+    "zinnen": [
+      "xfs1x8e8"
+    ]
+  }
+]

@@ -1,0 +1,1197 @@
+[
+  {
+    "nl": "bekendmaken",
+    "type": "verb",
+    "perfectum": "bekendgemaakt",
+    "imperfectum": "maakte bekend",
+    "tr": "ilan etmek, duyurmak",
+    "en": "to announce, to make known",
+    "ar": "يُعلن، يُخبر",
+    "fr": "annoncer, faire connaître",
+    "zinnen": [
+      "pwlz1sc4"
+    ]
+  },
+  {
+    "nl": "betrokkenheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "katılım, bağlılık",
+    "en": "involvement, engagement",
+    "ar": "انخراط، مشاركة",
+    "fr": "implication, engagement",
+    "zinnen": [
+      "pwlz1sc4"
+    ]
+  },
+  {
+    "nl": "ceremonieel",
+    "type": "adj",
+    "tr": "törensel",
+    "en": "ceremonial",
+    "ar": "احتفالي، رسمي",
+    "fr": "cérémoniel",
+    "zinnen": [
+      "t0qlauar",
+      "e7w3x4p0"
+    ]
+  },
+  {
+    "nl": "debat",
+    "type": "noun",
+    "article": "het",
+    "tr": "tartışma, münazara",
+    "en": "debate",
+    "ar": "نقاش، مناظرة",
+    "fr": "débat",
+    "zinnen": [
+      "fyw6cvg4"
+    ]
+  },
+  {
+    "nl": "democratie",
+    "type": "noun",
+    "article": "de",
+    "tr": "demokrasi",
+    "en": "democracy",
+    "ar": "ديمقراطية",
+    "fr": "démocratie",
+    "zinnen": [
+      "fyw6cvg4"
+    ]
+  },
+  {
+    "nl": "democratisch",
+    "type": "adj",
+    "tr": "demokratik",
+    "en": "democratic",
+    "ar": "ديمقراطي",
+    "fr": "démocratique",
+    "zinnen": [
+      "fyw6cvg4"
+    ]
+  },
+  {
+    "nl": "erven",
+    "type": "verb",
+    "perfectum": "geërfd",
+    "imperfectum": "erfde",
+    "tr": "miras almak",
+    "en": "to inherit",
+    "ar": "يرث",
+    "fr": "hériter",
+    "zinnen": [
+      "hcp21joo"
+    ]
+  },
+  {
+    "nl": "financieren",
+    "type": "verb",
+    "perfectum": "gefinancierd",
+    "imperfectum": "financierde",
+    "tr": "finanse etmek",
+    "en": "to finance, to fund",
+    "ar": "يُموّل",
+    "fr": "financer",
+    "zinnen": [
+      "tewc4hq6"
+    ]
+  },
+  {
+    "nl": "grondwet",
+    "type": "noun",
+    "article": "de",
+    "tr": "anayasa",
+    "en": "constitution",
+    "ar": "دستور",
+    "fr": "constitution",
+    "zinnen": [
+      "hcp21joo"
+    ]
+  },
+  {
+    "nl": "koningshuis",
+    "type": "noun",
+    "article": "het",
+    "tr": "kraliyet hanedanı",
+    "en": "royal family, royal house",
+    "ar": "الأسرة الملكية",
+    "fr": "maison royale",
+    "zinnen": [
+      "t0qlauar",
+      "e7w3x4p0"
+    ]
+  },
+  {
+    "nl": "macht",
+    "type": "noun",
+    "article": "de",
+    "tr": "iktidar, güç",
+    "en": "power, authority",
+    "ar": "سلطة، قوة",
+    "fr": "pouvoir, autorité",
+    "zinnen": [
+      "tewc4hq6"
+    ]
+  },
+  {
+    "nl": "meedelen",
+    "type": "verb",
+    "perfectum": "medegedeeld",
+    "imperfectum": "deelde mee",
+    "tr": "bildirmek, haber vermek",
+    "en": "to inform, to communicate",
+    "ar": "يُبلّغ، يُخبر",
+    "fr": "communiquer, informer",
+    "zinnen": [
+      "9y3wf4sz"
+    ]
+  },
+  {
+    "nl": "minister",
+    "type": "noun",
+    "article": "de",
+    "tr": "bakan",
+    "en": "minister",
+    "ar": "وزير",
+    "fr": "ministre",
+    "zinnen": [
+      "tewc4hq6"
+    ]
+  },
+  {
+    "nl": "minister-president",
+    "type": "noun",
+    "article": "de",
+    "tr": "başbakan",
+    "en": "prime minister",
+    "ar": "رئيس الوزراء",
+    "fr": "premier ministre",
+    "zinnen": [
+      "9y3wf4sz"
+    ]
+  },
+  {
+    "nl": "monarchie",
+    "type": "noun",
+    "article": "de",
+    "tr": "monarşi",
+    "en": "monarchy",
+    "ar": "ملكية",
+    "fr": "monarchie",
+    "zinnen": [
+      "hcp21joo"
+    ]
+  },
+  {
+    "nl": "nationaal",
+    "type": "adj",
+    "tr": "ulusal, milli",
+    "en": "national",
+    "ar": "وطني، قومي",
+    "fr": "national",
+    "zinnen": [
+      "9y3wf4sz"
+    ]
+  },
+  {
+    "nl": "opvolgen",
+    "type": "verb",
+    "perfectum": "opgevolgd",
+    "imperfectum": "volgde op",
+    "tr": "yerine geçmek, takip etmek",
+    "en": "to succeed, to follow up",
+    "ar": "يخلف، يتبع",
+    "fr": "succéder à, suivre",
+    "zinnen": [
+      "i444359q"
+    ]
+  },
+  {
+    "nl": "paleis",
+    "type": "noun",
+    "article": "het",
+    "tr": "saray",
+    "en": "palace",
+    "ar": "قصر",
+    "fr": "palais",
+    "zinnen": [
+      "t0qlauar",
+      "e7w3x4p0"
+    ]
+  },
+  {
+    "nl": "positie",
+    "type": "noun",
+    "article": "de",
+    "tr": "konum, pozisyon",
+    "en": "position",
+    "ar": "موضع، مكانة",
+    "fr": "position",
+    "zinnen": [
+      "i444359q"
+    ]
+  },
+  {
+    "nl": "prinses",
+    "type": "noun",
+    "article": "de",
+    "tr": "prenses",
+    "en": "princess",
+    "ar": "أميرة",
+    "fr": "princesse",
+    "zinnen": [
+      "i444359q"
+    ]
+  },
+  {
+    "nl": "Prinsjesdag",
+    "type": "noun",
+    "article": "de",
+    "tr": "Prinsjesdag (yıllık devlet bütçesinin sunulduğu tören günü)",
+    "en": "Budget Day (annual ceremony presenting the state budget)",
+    "ar": "يوم الميزانية الهولندي السنوي",
+    "fr": "Prinsjesdag (journée annuelle de présentation du budget)",
+    "zinnen": [
+      "t0qlauar",
+      "e7w3x4p0",
+      "ytpf52xz"
+    ]
+  },
+  {
+    "nl": "ramp",
+    "type": "noun",
+    "article": "de",
+    "tr": "felaket, afet",
+    "en": "disaster, catastrophe",
+    "ar": "كارثة",
+    "fr": "catastrophe, désastre",
+    "zinnen": [
+      "32i0287r"
+    ]
+  },
+  {
+    "nl": "republiek",
+    "type": "noun",
+    "article": "de",
+    "tr": "cumhuriyet",
+    "en": "republic",
+    "ar": "جمهورية",
+    "fr": "république",
+    "zinnen": [
+      "qjkkisq0"
+    ]
+  },
+  {
+    "nl": "staatshoofd",
+    "type": "noun",
+    "article": "het",
+    "tr": "devlet başkanı",
+    "en": "head of state",
+    "ar": "رئيس الدولة",
+    "fr": "chef d'État",
+    "zinnen": [
+      "i444359q"
+    ]
+  },
+  {
+    "nl": "tegenstander",
+    "type": "noun",
+    "article": "de",
+    "tr": "muhalif, karşı olan kişi",
+    "en": "opponent, adversary",
+    "ar": "معارض، خصم",
+    "fr": "adversaire, opposant",
+    "zinnen": [
+      "akksmx9t"
+    ]
+  },
+  {
+    "nl": "vertegenwoordigen",
+    "type": "verb",
+    "perfectum": "vertegenwoordigd",
+    "imperfectum": "vertegenwoordigde",
+    "tr": "temsil etmek",
+    "en": "to represent",
+    "ar": "يُمثّل",
+    "fr": "représenter",
+    "zinnen": [
+      "qjkkisq0"
+    ]
+  },
+  {
+    "nl": "volk",
+    "type": "noun",
+    "article": "het",
+    "tr": "halk, millet",
+    "en": "people, nation",
+    "ar": "شعب",
+    "fr": "peuple, nation",
+    "zinnen": [
+      "qjkkisq0"
+    ]
+  },
+  {
+    "nl": "voorlezen",
+    "type": "verb",
+    "perfectum": "voorgelezen",
+    "imperfectum": "las voor",
+    "tr": "yüksek sesle okumak",
+    "en": "to read aloud",
+    "ar": "يقرأ بصوت عالٍ",
+    "fr": "lire à voix haute",
+    "zinnen": [
+      "ytpf52xz"
+    ]
+  },
+  {
+    "nl": "voorstander",
+    "type": "noun",
+    "article": "de",
+    "tr": "destekçi, taraftar",
+    "en": "supporter, advocate",
+    "ar": "مؤيد، داعم",
+    "fr": "partisan, défenseur",
+    "zinnen": [
+      "akksmx9t"
+    ]
+  },
+  {
+    "nl": "zakendoen",
+    "type": "verb",
+    "perfectum": "zaken gedaan",
+    "imperfectum": "deed zaken",
+    "tr": "iş yapmak",
+    "en": "to do business",
+    "ar": "يعمل في التجارة",
+    "fr": "faire des affaires",
+    "zinnen": [
+      "qvj1i9d4"
+    ]
+  },
+  {
+    "nl": "betaalbaar",
+    "type": "adj",
+    "tr": "uygun fiyatlı, karşılanabilir",
+    "en": "affordable",
+    "ar": "بأسعار معقولة",
+    "fr": "abordable",
+    "zinnen": [
+      "qvj1i9d4"
+    ]
+  },
+  {
+    "nl": "burger",
+    "type": "noun",
+    "article": "de",
+    "tr": "vatandaş",
+    "en": "citizen",
+    "ar": "مواطن",
+    "fr": "citoyen",
+    "zinnen": [
+      "qvj1i9d4"
+    ]
+  },
+  {
+    "nl": "demonstreren",
+    "type": "verb",
+    "perfectum": "gedemonstreerd",
+    "imperfectum": "demonstreerde",
+    "tr": "protesto gösterisine katılmak / göstermek",
+    "en": "to demonstrate / to protest",
+    "ar": "يحتج / يُظاهر",
+    "fr": "manifester / démontrer",
+    "zinnen": [
+      "wgshy56c"
+    ]
+  },
+  {
+    "nl": "detail",
+    "type": "noun",
+    "article": "het",
+    "tr": "ayrıntı, detay",
+    "en": "detail",
+    "ar": "تفصيل، تفاصيل",
+    "fr": "détail",
+    "zinnen": [
+      "wvddczu1"
+    ]
+  },
+  {
+    "nl": "duurzaamheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "sürdürülebilirlik",
+    "en": "sustainability",
+    "ar": "استدامة",
+    "fr": "durabilité",
+    "zinnen": [
+      "wgshy56c"
+    ]
+  },
+  {
+    "nl": "fietsenstalling",
+    "type": "noun",
+    "article": "de",
+    "tr": "bisiklet park yeri",
+    "en": "bicycle parking",
+    "ar": "موقف للدراجات",
+    "fr": "parking à vélos",
+    "zinnen": [
+      "wvddczu1"
+    ]
+  },
+  {
+    "nl": "gelijkheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "eşitlik",
+    "en": "equality",
+    "ar": "مساواة",
+    "fr": "égalité",
+    "zinnen": [
+      "wgshy56c"
+    ]
+  },
+  {
+    "nl": "gemeenteraad",
+    "type": "noun",
+    "article": "de",
+    "tr": "belediye meclisi",
+    "en": "municipal council, city council",
+    "ar": "مجلس البلدية",
+    "fr": "conseil municipal",
+    "zinnen": [
+      "wvddczu1"
+    ]
+  },
+  {
+    "nl": "kwetsbaar",
+    "type": "adj",
+    "tr": "kırılgan, hassas",
+    "en": "vulnerable",
+    "ar": "هش، ضعيف",
+    "fr": "vulnérable",
+    "zinnen": [
+      "jy2exi1h"
+    ]
+  },
+  {
+    "nl": "overtuiging",
+    "type": "noun",
+    "article": "de",
+    "tr": "inanç, kanaat",
+    "en": "conviction, belief",
+    "ar": "قناعة، اعتقاد",
+    "fr": "conviction, croyance",
+    "zinnen": [
+      "jy2exi1h"
+    ]
+  },
+  {
+    "nl": "partij",
+    "type": "noun",
+    "article": "de",
+    "tr": "parti, taraf",
+    "en": "party",
+    "ar": "حزب، طرف",
+    "fr": "parti",
+    "zinnen": [
+      "jy2exi1h"
+    ]
+  },
+  {
+    "nl": "planeet",
+    "type": "noun",
+    "article": "de",
+    "tr": "gezegen",
+    "en": "planet",
+    "ar": "كوكب",
+    "fr": "planète",
+    "zinnen": [
+      "exbeugj9"
+    ]
+  },
+  {
+    "nl": "politicus",
+    "type": "noun",
+    "article": "de",
+    "tr": "siyasetçi",
+    "en": "politician",
+    "ar": "سياسي",
+    "fr": "politicien",
+    "zinnen": [
+      "exbeugj9"
+    ]
+  },
+  {
+    "nl": "protesteren",
+    "type": "verb",
+    "perfectum": "geprotesteerd",
+    "imperfectum": "protesteerde",
+    "tr": "protesto etmek",
+    "en": "to protest",
+    "ar": "يحتج، يعترض",
+    "fr": "protester",
+    "zinnen": [
+      "zwg0fs6n"
+    ]
+  },
+  {
+    "nl": "provinciaal",
+    "type": "adj",
+    "tr": "il düzeyinde, taşra",
+    "en": "provincial",
+    "ar": "إقليمي",
+    "fr": "provincial",
+    "zinnen": [
+      "exbeugj9"
+    ]
+  },
+  {
+    "nl": "standpunt",
+    "type": "noun",
+    "article": "het",
+    "tr": "tutum, bakış açısı",
+    "en": "standpoint, position",
+    "ar": "موقف، وجهة نظر",
+    "fr": "point de vue, position",
+    "zinnen": [
+      "zwg0fs6n"
+    ]
+  },
+  {
+    "nl": "stemmen",
+    "type": "verb",
+    "perfectum": "gestemd",
+    "imperfectum": "stemde",
+    "tr": "oy vermek",
+    "en": "to vote",
+    "ar": "يصوّت",
+    "fr": "voter",
+    "zinnen": [
+      "zwg0fs6n"
+    ]
+  },
+  {
+    "nl": "stemrecht",
+    "type": "noun",
+    "article": "het",
+    "tr": "oy hakkı",
+    "en": "right to vote, suffrage",
+    "ar": "حق التصويت",
+    "fr": "droit de vote",
+    "zinnen": [
+      "hlt6sumt"
+    ]
+  },
+  {
+    "nl": "strijden",
+    "type": "verb",
+    "perfectum": "gestreden",
+    "imperfectum": "streed",
+    "tr": "mücadele etmek, savaşmak",
+    "en": "to fight, to struggle",
+    "ar": "يناضل، يقاتل",
+    "fr": "lutter, combattre",
+    "zinnen": [
+      "hlt6sumt"
+    ]
+  },
+  {
+    "nl": "Tweede Kamer",
+    "type": "noun",
+    "article": "de",
+    "tr": "Hollanda Parlamentosu Alt Meclisi",
+    "en": "House of Representatives (Dutch lower chamber)",
+    "ar": "مجلس النواب الهولندي",
+    "fr": "Chambre des représentants (Parlement néerlandais)",
+    "zinnen": [
+      "tahy1abb"
+    ]
+  },
+  {
+    "nl": "vaag",
+    "type": "adj",
+    "tr": "belirsiz, muğlak",
+    "en": "vague, unclear",
+    "ar": "غامض، مبهم",
+    "fr": "vague, flou",
+    "zinnen": [
+      "5gwlg16t"
+    ]
+  },
+  {
+    "nl": "verkiezing",
+    "type": "noun",
+    "article": "de",
+    "tr": "seçim",
+    "en": "election",
+    "ar": "انتخاب",
+    "fr": "élection",
+    "zinnen": [
+      "5gwlg16t"
+    ]
+  },
+  {
+    "nl": "visie",
+    "type": "noun",
+    "article": "de",
+    "tr": "vizyon, bakış açısı",
+    "en": "vision, view",
+    "ar": "رؤية",
+    "fr": "vision",
+    "zinnen": [
+      "5gwlg16t"
+    ]
+  },
+  {
+    "nl": "zetel",
+    "type": "noun",
+    "article": "de",
+    "tr": "meclis sandalyesi, koltuk",
+    "en": "seat (in parliament)",
+    "ar": "مقعد (برلماني)",
+    "fr": "siège (parlementaire)",
+    "zinnen": [
+      "gvdycp7j",
+      "jjsbiiyw"
+    ]
+  },
+  {
+    "nl": "zich verdiepen",
+    "type": "verb",
+    "perfectum": "zich verdiept",
+    "imperfectum": "verdiepte zich",
+    "tr": "derinlemesine araştırmak, dalmak",
+    "en": "to delve into, to study in depth",
+    "ar": "يتعمق في، يبحث بعمق",
+    "fr": "approfondir, se plonger dans",
+    "zinnen": [
+      "gvdycp7j",
+      "jjsbiiyw"
+    ]
+  },
+  {
+    "nl": "afkomst",
+    "type": "noun",
+    "article": "de",
+    "tr": "köken, asıl",
+    "en": "origin, descent",
+    "ar": "أصل، منشأ",
+    "fr": "origine, ascendance",
+    "zinnen": [
+      "j31vllmf"
+    ]
+  },
+  {
+    "nl": "afwijkend",
+    "type": "adj",
+    "tr": "farklı, sapkın",
+    "en": "deviant, different",
+    "ar": "منحرف، مختلف",
+    "fr": "déviant, différent",
+    "zinnen": [
+      "j31vllmf"
+    ]
+  },
+  {
+    "nl": "boer",
+    "type": "noun",
+    "article": "de",
+    "tr": "çiftçi",
+    "en": "farmer",
+    "ar": "مزارع",
+    "fr": "agriculteur, fermier",
+    "zinnen": [
+      "e1sng324"
+    ]
+  },
+  {
+    "nl": "complex",
+    "type": "adj",
+    "tr": "karmaşık",
+    "en": "complex",
+    "ar": "معقد",
+    "fr": "complexe",
+    "zinnen": [
+      "w5jbqqtf"
+    ]
+  },
+  {
+    "nl": "dierlijk",
+    "type": "adj",
+    "tr": "hayvansal",
+    "en": "animal (of animal origin)",
+    "ar": "حيواني",
+    "fr": "animal, d'origine animale",
+    "zinnen": [
+      "e1sng324"
+    ]
+  },
+  {
+    "nl": "echtgenoot",
+    "type": "noun",
+    "article": "de",
+    "tr": "eş, koca",
+    "en": "spouse, husband",
+    "ar": "زوج",
+    "fr": "époux, conjoint",
+    "zinnen": [
+      "w5jbqqtf"
+    ]
+  },
+  {
+    "nl": "eeuwenlang",
+    "type": "adv",
+    "tr": "yüzyıllarca",
+    "en": "for centuries",
+    "ar": "لقرون",
+    "fr": "pendant des siècles",
+    "zinnen": [
+      "z6qhww1a"
+    ]
+  },
+  {
+    "nl": "gehandicapt",
+    "type": "adj",
+    "tr": "engelli",
+    "en": "disabled, handicapped",
+    "ar": "معاق",
+    "fr": "handicapé",
+    "zinnen": [
+      "7ngy5cyf"
+    ]
+  },
+  {
+    "nl": "gezamenlijk",
+    "type": "adj",
+    "tr": "ortak, birlikte",
+    "en": "joint, shared",
+    "ar": "مشترك، جماعي",
+    "fr": "commun, conjoint",
+    "zinnen": [
+      "w5jbqqtf"
+    ]
+  },
+  {
+    "nl": "grootvader",
+    "type": "noun",
+    "article": "de",
+    "tr": "büyükbaba",
+    "en": "grandfather",
+    "ar": "جد",
+    "fr": "grand-père",
+    "zinnen": [
+      "twx6p9b2"
+    ]
+  },
+  {
+    "nl": "handicap",
+    "type": "noun",
+    "article": "de",
+    "tr": "engellilik, handikap",
+    "en": "disability, handicap",
+    "ar": "إعاقة",
+    "fr": "handicap",
+    "zinnen": [
+      "7ngy5cyf"
+    ]
+  },
+  {
+    "nl": "hap",
+    "type": "noun",
+    "article": "de",
+    "tr": "lokma, ısırık",
+    "en": "bite, mouthful",
+    "ar": "لقمة",
+    "fr": "bouchée",
+    "zinnen": [
+      "twx6p9b2"
+    ]
+  },
+  {
+    "nl": "heer",
+    "type": "noun",
+    "article": "de",
+    "tr": "bay, efendi",
+    "en": "gentleman, sir",
+    "ar": "سيد",
+    "fr": "monsieur, seigneur",
+    "zinnen": [
+      "twx6p9b2"
+    ]
+  },
+  {
+    "nl": "ideologie",
+    "type": "noun",
+    "article": "de",
+    "tr": "ideoloji",
+    "en": "ideology",
+    "ar": "أيديولوجية",
+    "fr": "idéologie",
+    "zinnen": [
+      "z6qhww1a"
+    ]
+  },
+  {
+    "nl": "islamitisch",
+    "type": "adj",
+    "tr": "İslami",
+    "en": "Islamic, Muslim",
+    "ar": "إسلامي",
+    "fr": "islamique, musulman",
+    "zinnen": [
+      "9qjywt4t"
+    ]
+  },
+  {
+    "nl": "katholiek",
+    "type": "adj",
+    "tr": "Katolik",
+    "en": "Catholic",
+    "ar": "كاثوليكي",
+    "fr": "catholique",
+    "zinnen": [
+      "9qjywt4t"
+    ]
+  },
+  {
+    "nl": "kenmerk",
+    "type": "noun",
+    "article": "het",
+    "tr": "özellik, ayırt edici nitelik",
+    "en": "characteristic, feature",
+    "ar": "سمة مميزة",
+    "fr": "caractéristique, trait",
+    "zinnen": [
+      "56k12fnp"
+    ]
+  },
+  {
+    "nl": "mentaliteit",
+    "type": "noun",
+    "article": "de",
+    "tr": "zihniyet, mentalite",
+    "en": "mentality, mindset",
+    "ar": "عقلية",
+    "fr": "mentalité",
+    "zinnen": [
+      "z6qhww1a"
+    ]
+  },
+  {
+    "nl": "multicultureel",
+    "type": "adj",
+    "tr": "çok kültürlü",
+    "en": "multicultural",
+    "ar": "متعدد الثقافات",
+    "fr": "multiculturel",
+    "zinnen": [
+      "j31vllmf"
+    ]
+  },
+  {
+    "nl": "Offerfeest",
+    "type": "noun",
+    "article": "het",
+    "tr": "Kurban Bayramı",
+    "en": "Eid al-Adha, Feast of Sacrifice",
+    "ar": "عيد الأضحى",
+    "fr": "Aïd al-Adha, fête du sacrifice",
+    "zinnen": [
+      "9qjywt4t"
+    ]
+  },
+  {
+    "nl": "rolstoel",
+    "type": "noun",
+    "article": "de",
+    "tr": "tekerlekli sandalye",
+    "en": "wheelchair",
+    "ar": "كرسي متحرك",
+    "fr": "fauteuil roulant",
+    "zinnen": [
+      "7ngy5cyf"
+    ]
+  },
+  {
+    "nl": "sindsdien",
+    "type": "adv",
+    "tr": "o günden beri",
+    "en": "since then",
+    "ar": "منذ ذلك الحين",
+    "fr": "depuis lors",
+    "zinnen": [
+      "56k12fnp"
+    ]
+  },
+  {
+    "nl": "vee",
+    "type": "noun",
+    "article": "het",
+    "tr": "büyükbaş hayvanlar, çiftlik hayvanları",
+    "en": "livestock, cattle",
+    "ar": "ماشية",
+    "fr": "bétail",
+    "zinnen": [
+      "e1sng324"
+    ]
+  },
+  {
+    "nl": "veganistisch",
+    "type": "adj",
+    "tr": "vegan",
+    "en": "vegan",
+    "ar": "نباتي صارم",
+    "fr": "végétalien",
+    "zinnen": [
+      "56k12fnp"
+    ]
+  },
+  {
+    "nl": "verrassend",
+    "type": "adj",
+    "tr": "şaşırtıcı",
+    "en": "surprising",
+    "ar": "مفاجئ",
+    "fr": "surprenant",
+    "zinnen": [
+      "ftqooghh"
+    ]
+  },
+  {
+    "nl": "belastingaangifte",
+    "type": "noun",
+    "article": "de",
+    "tr": "vergi beyannamesi",
+    "en": "tax return",
+    "ar": "إقرار ضريبي",
+    "fr": "déclaration fiscale",
+    "zinnen": [
+      "9wcd4m7b"
+    ]
+  },
+  {
+    "nl": "buitenlander",
+    "type": "noun",
+    "article": "de",
+    "tr": "yabancı, ecnebi",
+    "en": "foreigner",
+    "ar": "أجنبي",
+    "fr": "étranger",
+    "zinnen": [
+      "aws16y4t"
+    ]
+  },
+  {
+    "nl": "fase",
+    "type": "noun",
+    "article": "de",
+    "tr": "aşama, evre",
+    "en": "phase, stage",
+    "ar": "مرحلة",
+    "fr": "phase, étape",
+    "zinnen": [
+      "9wcd4m7b"
+    ]
+  },
+  {
+    "nl": "gefrustreerd",
+    "type": "adj",
+    "tr": "sinirlenmiş, hayal kırıklığına uğramış",
+    "en": "frustrated",
+    "ar": "محبط، متضايق",
+    "fr": "frustré",
+    "zinnen": [
+      "9wcd4m7b"
+    ]
+  },
+  {
+    "nl": "gemeenschap",
+    "type": "noun",
+    "article": "de",
+    "tr": "topluluk, cemaat",
+    "en": "community",
+    "ar": "مجتمع، جماعة",
+    "fr": "communauté",
+    "zinnen": [
+      "aws16y4t"
+    ]
+  },
+  {
+    "nl": "gemengd",
+    "type": "adj",
+    "tr": "karma, karışık",
+    "en": "mixed",
+    "ar": "مختلط",
+    "fr": "mixte, mélangé",
+    "zinnen": [
+      "asl378lq"
+    ]
+  },
+  {
+    "nl": "heimwee",
+    "type": "noun",
+    "article": "het",
+    "tr": "sıla özlemi, hasret",
+    "en": "homesickness",
+    "ar": "حنين إلى الوطن",
+    "fr": "nostalgie, mal du pays",
+    "zinnen": [
+      "asl378lq"
+    ]
+  },
+  {
+    "nl": "integreren",
+    "type": "verb",
+    "perfectum": "geïntegreerd",
+    "imperfectum": "integreerde",
+    "tr": "entegre olmak, bütünleşmek",
+    "en": "to integrate",
+    "ar": "يندمج، يتكامل",
+    "fr": "intégrer, s'intégrer",
+    "zinnen": [
+      "aws16y4t"
+    ]
+  },
+  {
+    "nl": "medelijden",
+    "type": "noun",
+    "article": "het",
+    "tr": "acıma, sempati",
+    "en": "pity, compassion",
+    "ar": "شفقة، تعاطف",
+    "fr": "pitié, compassion",
+    "zinnen": [
+      "7bpawmm2"
+    ]
+  },
+  {
+    "nl": "overwinnen",
+    "type": "verb",
+    "perfectum": "overwonnen",
+    "imperfectum": "overwon",
+    "tr": "üstesinden gelmek, yenmek",
+    "en": "to overcome, to conquer",
+    "ar": "يتغلب على، يقهر",
+    "fr": "surmonter, vaincre",
+    "zinnen": [
+      "7bpawmm2"
+    ]
+  },
+  {
+    "nl": "perspectief",
+    "type": "noun",
+    "article": "het",
+    "tr": "perspektif, bakış açısı",
+    "en": "perspective",
+    "ar": "منظور، رؤية",
+    "fr": "perspective",
+    "zinnen": [
+      "asl378lq"
+    ]
+  },
+  {
+    "nl": "selecteren",
+    "type": "verb",
+    "perfectum": "geselecteerd",
+    "imperfectum": "selecteerde",
+    "tr": "seçmek, elemek",
+    "en": "to select",
+    "ar": "يختار، ينتقي",
+    "fr": "sélectionner",
+    "zinnen": [
+      "9lbbc7ms",
+      "v4isjab3"
+    ]
+  },
+  {
+    "nl": "studiegenoot",
+    "type": "noun",
+    "article": "de",
+    "tr": "sınıf arkadaşı, okul arkadaşı",
+    "en": "fellow student, classmate",
+    "ar": "زميل في الدراسة",
+    "fr": "camarade d'études",
+    "zinnen": [
+      "9lbbc7ms",
+      "v4isjab3"
+    ]
+  },
+  {
+    "nl": "tegenslag",
+    "type": "noun",
+    "article": "de",
+    "tr": "ters giden şey, engel",
+    "en": "setback, adversity",
+    "ar": "نكسة، عقبة",
+    "fr": "revers, coup dur",
+    "zinnen": [
+      "7bpawmm2"
+    ]
+  },
+  {
+    "nl": "tegenzitten",
+    "type": "verb",
+    "perfectum": "tegengezeten",
+    "imperfectum": "zat tegen",
+    "tr": "ters gitmek, istediği gibi olmamak",
+    "en": "to go wrong, to not work out",
+    "ar": "يسير بشكل خاطئ",
+    "fr": "mal tourner, ne pas se passer comme prévu",
+    "zinnen": [
+      "9bqfa5xp"
+    ]
+  },
+  {
+    "nl": "toewijzen",
+    "type": "verb",
+    "perfectum": "toegewezen",
+    "imperfectum": "wees toe",
+    "tr": "tahsis etmek, atamak",
+    "en": "to assign, to allocate",
+    "ar": "يُخصص، يُعيّن",
+    "fr": "attribuer, affecter",
+    "zinnen": [
+      "9lbbc7ms",
+      "v4isjab3"
+    ]
+  },
+  {
+    "nl": "vooroordeel",
+    "type": "noun",
+    "article": "het",
+    "tr": "önyargı",
+    "en": "prejudice, bias",
+    "ar": "تحيّز، حكم مسبق",
+    "fr": "préjugé",
+    "zinnen": [
+      "9bqfa5xp"
+    ]
+  },
+  {
+    "nl": "vormen",
+    "type": "verb",
+    "perfectum": "gevormd",
+    "imperfectum": "vormde",
+    "tr": "oluşturmak, şekil vermek",
+    "en": "to form, to shape",
+    "ar": "يُشكّل",
+    "fr": "former, constituer",
+    "zinnen": [
+      "9bqfa5xp"
+    ]
+  },
+  {
+    "nl": "zeldzaam",
+    "type": "adj",
+    "tr": "nadir",
+    "en": "rare",
+    "ar": "نادر",
+    "fr": "rare",
+    "zinnen": [
+      "ftqooghh"
+    ]
+  }
+]

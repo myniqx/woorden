@@ -1,0 +1,1196 @@
+[
+  {
+    "nl": "bezeren",
+    "type": "verb",
+    "perfectum": "bezeerd",
+    "imperfectum": "bezeerde",
+    "tr": "incitmek, yaralamak",
+    "en": "to injure, to hurt",
+    "ar": "يجرح، يؤلم",
+    "fr": "blesser, faire mal",
+    "zinnen": [
+      "nruk8u7o"
+    ]
+  },
+  {
+    "nl": "binnenkant",
+    "type": "noun",
+    "article": "de",
+    "tr": "iç taraf",
+    "en": "inside, inner side",
+    "ar": "الجانب الداخلي",
+    "fr": "intérieur, côté intérieur",
+    "zinnen": [
+      "80kb6mqa"
+    ]
+  },
+  {
+    "nl": "blessure",
+    "type": "noun",
+    "article": "de",
+    "tr": "yaralanma, sakatlık",
+    "en": "injury",
+    "ar": "إصابة",
+    "fr": "blessure",
+    "zinnen": [
+      "9pmnslo7",
+      "nruk8u7o",
+      "rtny5gzk"
+    ]
+  },
+  {
+    "nl": "buigen",
+    "type": "verb",
+    "perfectum": "gebogen",
+    "imperfectum": "boog",
+    "tr": "bükmek, eğmek",
+    "en": "to bend, to bow",
+    "ar": "يثني، ينحني",
+    "fr": "plier, courber",
+    "zinnen": [
+      "3yl8ozxz"
+    ]
+  },
+  {
+    "nl": "diagnose",
+    "type": "noun",
+    "article": "de",
+    "tr": "teşhis",
+    "en": "diagnosis",
+    "ar": "تشخيص",
+    "fr": "diagnostic",
+    "zinnen": [
+      "72wkpt2x"
+    ]
+  },
+  {
+    "nl": "fysiotherapeut",
+    "type": "noun",
+    "article": "de",
+    "tr": "fizyoterapist",
+    "en": "physiotherapist",
+    "ar": "معالج فيزيائي",
+    "fr": "kinésithérapeute",
+    "zinnen": [
+      "3yl8ozxz",
+      "72wkpt2x"
+    ]
+  },
+  {
+    "nl": "gezwollen",
+    "type": "adj",
+    "tr": "şişmiş",
+    "en": "swollen",
+    "ar": "متورم",
+    "fr": "enflé, gonflé",
+    "zinnen": [
+      "80kb6mqa"
+    ]
+  },
+  {
+    "nl": "kneuzen",
+    "type": "verb",
+    "perfectum": "gekneusd",
+    "imperfectum": "kneusde",
+    "tr": "burkmak, çürütmek",
+    "en": "to bruise, to sprain",
+    "ar": "يكدم، يلوي",
+    "fr": "contusionner, fouler",
+    "zinnen": [
+      "m7o6g0b3"
+    ]
+  },
+  {
+    "nl": "leunen",
+    "type": "verb",
+    "perfectum": "geleund",
+    "imperfectum": "leunde",
+    "tr": "yaslanmak, dayanmak",
+    "en": "to lean",
+    "ar": "يتكئ، يستند",
+    "fr": "s'appuyer, se pencher",
+    "zinnen": [
+      "m7o6g0b3"
+    ]
+  },
+  {
+    "nl": "nader",
+    "type": "adj",
+    "tr": "daha yakın, daha fazla (bilgi)",
+    "en": "further, more detailed",
+    "ar": "أقرب، أكثر تفصيلاً",
+    "fr": "plus proche, plus détaillé",
+    "zinnen": [
+      "m7o6g0b3"
+    ]
+  },
+  {
+    "nl": "oefening",
+    "type": "noun",
+    "article": "de",
+    "tr": "egzersiz, alıştırma",
+    "en": "exercise, practice",
+    "ar": "تمرين",
+    "fr": "exercice",
+    "zinnen": [
+      "3yl8ozxz"
+    ]
+  },
+  {
+    "nl": "pijnlijk",
+    "type": "adj",
+    "tr": "acı veren, ağrılı",
+    "en": "painful",
+    "ar": "مؤلم",
+    "fr": "douloureux",
+    "zinnen": [
+      "nruk8u7o"
+    ]
+  },
+  {
+    "nl": "plannen",
+    "type": "verb",
+    "perfectum": "gepland",
+    "imperfectum": "plande",
+    "tr": "planlamak",
+    "en": "to plan, to schedule",
+    "ar": "يخطط",
+    "fr": "planifier",
+    "zinnen": [
+      "w22fuons"
+    ]
+  },
+  {
+    "nl": "rusten",
+    "type": "verb",
+    "perfectum": "gerust",
+    "imperfectum": "rustte",
+    "tr": "dinlenmek",
+    "en": "to rest",
+    "ar": "يستريح",
+    "fr": "se reposer",
+    "zinnen": [
+      "w22fuons"
+    ]
+  },
+  {
+    "nl": "strekken",
+    "type": "verb",
+    "perfectum": "gestrekt",
+    "imperfectum": "strekte",
+    "tr": "uzatmak, germek",
+    "en": "to stretch, to extend",
+    "ar": "يمد، يمط",
+    "fr": "étirer, tendre",
+    "zinnen": [
+      "3yl8ozxz"
+    ]
+  },
+  {
+    "nl": "verbetering",
+    "type": "noun",
+    "article": "de",
+    "tr": "iyileşme, gelişme",
+    "en": "improvement",
+    "ar": "تحسّن",
+    "fr": "amélioration",
+    "zinnen": [
+      "w22fuons"
+    ]
+  },
+  {
+    "nl": "verminderen",
+    "type": "verb",
+    "perfectum": "verminderd",
+    "imperfectum": "verminderde",
+    "tr": "azalmak, azaltmak",
+    "en": "to reduce, to decrease",
+    "ar": "يقلّل، يخفّض",
+    "fr": "diminuer, réduire",
+    "zinnen": [
+      "efe1m3o3"
+    ]
+  },
+  {
+    "nl": "verwijzen",
+    "type": "verb",
+    "perfectum": "verwezen",
+    "imperfectum": "verwees",
+    "tr": "sevk etmek, yönlendirmek",
+    "en": "to refer, to direct",
+    "ar": "يُحيل، يُوجّه",
+    "fr": "référer, orienter",
+    "zinnen": [
+      "72wkpt2x"
+    ]
+  },
+  {
+    "nl": "vocht",
+    "type": "noun",
+    "article": "het",
+    "tr": "sıvı, nem",
+    "en": "fluid, moisture",
+    "ar": "سائل، رطوبة",
+    "fr": "liquide, humidité",
+    "zinnen": [
+      "80kb6mqa",
+      "efe1m3o3"
+    ]
+  },
+  {
+    "nl": "voorschrijven",
+    "type": "verb",
+    "perfectum": "voorgeschreven",
+    "imperfectum": "schreef voor",
+    "tr": "reçete yazmak, önermek",
+    "en": "to prescribe",
+    "ar": "يصف (دواء)",
+    "fr": "prescrire",
+    "zinnen": [
+      "efe1m3o3"
+    ]
+  },
+  {
+    "nl": "zich verplaatsen",
+    "type": "verb",
+    "perfectum": "zich verplaatst",
+    "imperfectum": "verplaatste zich",
+    "tr": "yer değiştirmek, hareket etmek",
+    "en": "to move, to travel",
+    "ar": "يتنقل، ينتقل",
+    "fr": "se déplacer",
+    "zinnen": [
+      "9pmnslo7",
+      "rtny5gzk"
+    ]
+  },
+  {
+    "nl": "afkomen van",
+    "type": "verb",
+    "perfectum": "afgekomen van",
+    "imperfectum": "kwam af van",
+    "tr": "kurtulmak, vazgeçmek",
+    "en": "to get rid of, to break free from",
+    "ar": "يتخلص من",
+    "fr": "se débarrasser de",
+    "zinnen": [
+      "9prqdjaj",
+      "rft41jwy"
+    ]
+  },
+  {
+    "nl": "balans",
+    "type": "noun",
+    "article": "de",
+    "tr": "denge",
+    "en": "balance",
+    "ar": "توازن",
+    "fr": "équilibre, balance",
+    "zinnen": [
+      "9prqdjaj",
+      "rft41jwy"
+    ]
+  },
+  {
+    "nl": "beschouwen",
+    "type": "verb",
+    "perfectum": "beschouwd",
+    "imperfectum": "beschouwde",
+    "tr": "saymak, değerlendirmek",
+    "en": "to consider, to regard",
+    "ar": "يعتبر، ينظر إلى",
+    "fr": "considérer, regarder",
+    "zinnen": [
+      "8bt4jiex"
+    ]
+  },
+  {
+    "nl": "combinatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "kombinasyon, birleşim",
+    "en": "combination",
+    "ar": "تركيبة، مزيج",
+    "fr": "combinaison",
+    "zinnen": [
+      "8bt4jiex"
+    ]
+  },
+  {
+    "nl": "concentratie",
+    "type": "noun",
+    "article": "de",
+    "tr": "konsantrasyon, dikkat",
+    "en": "concentration",
+    "ar": "تركيز",
+    "fr": "concentration",
+    "zinnen": [
+      "8bt4jiex"
+    ]
+  },
+  {
+    "nl": "crisis",
+    "type": "noun",
+    "article": "de",
+    "tr": "kriz",
+    "en": "crisis",
+    "ar": "أزمة",
+    "fr": "crise",
+    "zinnen": [
+      "9prqdjaj",
+      "rft41jwy"
+    ]
+  },
+  {
+    "nl": "definitie",
+    "type": "noun",
+    "article": "de",
+    "tr": "tanım",
+    "en": "definition",
+    "ar": "تعريف",
+    "fr": "définition",
+    "zinnen": [
+      "azxjsduh"
+    ]
+  },
+  {
+    "nl": "depressief",
+    "type": "adj",
+    "tr": "depresif",
+    "en": "depressed",
+    "ar": "مكتئب",
+    "fr": "déprimé",
+    "zinnen": [
+      "idrmgz8p"
+    ]
+  },
+  {
+    "nl": "enkel",
+    "type": "adj",
+    "tr": "birkaç, tek bir",
+    "en": "a few, single",
+    "ar": "بضعة، مفرد",
+    "fr": "quelques, simple",
+    "zinnen": [
+      "glog4cxi"
+    ]
+  },
+  {
+    "nl": "erfelijkheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "kalıtım",
+    "en": "heredity, genetics",
+    "ar": "وراثة",
+    "fr": "hérédité",
+    "zinnen": [
+      "azxjsduh"
+    ]
+  },
+  {
+    "nl": "factor",
+    "type": "noun",
+    "article": "de",
+    "tr": "etken, faktör",
+    "en": "factor",
+    "ar": "عامل",
+    "fr": "facteur",
+    "zinnen": [
+      "azxjsduh"
+    ]
+  },
+  {
+    "nl": "frequent",
+    "type": "adj",
+    "tr": "sık görülen, yaygın",
+    "en": "frequent",
+    "ar": "متكرر",
+    "fr": "fréquent",
+    "zinnen": [
+      "glog4cxi"
+    ]
+  },
+  {
+    "nl": "gebrek",
+    "type": "noun",
+    "article": "het",
+    "tr": "eksiklik, yetersizlik",
+    "en": "lack, deficiency",
+    "ar": "نقص",
+    "fr": "manque, carence",
+    "zinnen": [
+      "glog4cxi"
+    ]
+  },
+  {
+    "nl": "hoop",
+    "type": "noun",
+    "article": "de",
+    "tr": "umut",
+    "en": "hope",
+    "ar": "أمل",
+    "fr": "espoir",
+    "zinnen": [
+      "giopwmkr"
+    ]
+  },
+  {
+    "nl": "ingrijpend",
+    "type": "adj",
+    "tr": "köklü, derin etkili",
+    "en": "drastic, far-reaching",
+    "ar": "جذري، بالغ الأثر",
+    "fr": "radical, profond",
+    "zinnen": [
+      "giopwmkr"
+    ]
+  },
+  {
+    "nl": "levensstijl",
+    "type": "noun",
+    "article": "de",
+    "tr": "yaşam tarzı",
+    "en": "lifestyle",
+    "ar": "أسلوب حياة",
+    "fr": "style de vie",
+    "zinnen": [
+      "89fmdu87",
+      "ax6yvlca"
+    ]
+  },
+  {
+    "nl": "oordeel",
+    "type": "noun",
+    "article": "het",
+    "tr": "yargı, değerlendirme",
+    "en": "judgement, opinion",
+    "ar": "حكم، رأي",
+    "fr": "jugement, avis",
+    "zinnen": [
+      "8j95hlah"
+    ]
+  },
+  {
+    "nl": "overkomen",
+    "type": "verb",
+    "perfectum": "overkomen",
+    "imperfectum": "overkwam",
+    "tr": "başına gelmek",
+    "en": "to happen to, to befall",
+    "ar": "يحدث لـ، يصيب",
+    "fr": "arriver à, survenir",
+    "zinnen": [
+      "giopwmkr"
+    ]
+  },
+  {
+    "nl": "relativeren",
+    "type": "verb",
+    "perfectum": "gerelativeerd",
+    "imperfectum": "relativeerde",
+    "tr": "göreceleştirmek, önemsizleştirmek",
+    "en": "to put into perspective, to relativize",
+    "ar": "يضع في سياق، يُنسبي",
+    "fr": "relativiser",
+    "zinnen": [
+      "8j95hlah"
+    ]
+  },
+  {
+    "nl": "rouw",
+    "type": "noun",
+    "article": "de",
+    "tr": "yas",
+    "en": "grief, mourning",
+    "ar": "حزن، حداد",
+    "fr": "deuil",
+    "zinnen": [
+      "ddamgxm3"
+    ]
+  },
+  {
+    "nl": "schaamte",
+    "type": "noun",
+    "article": "de",
+    "tr": "utanç",
+    "en": "shame",
+    "ar": "خجل، عار",
+    "fr": "honte",
+    "zinnen": [
+      "8j95hlah"
+    ]
+  },
+  {
+    "nl": "slapeloosheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "uykusuzluk",
+    "en": "insomnia, sleeplessness",
+    "ar": "أرق",
+    "fr": "insomnie",
+    "zinnen": [
+      "idrmgz8p"
+    ]
+  },
+  {
+    "nl": "stoornis",
+    "type": "noun",
+    "article": "de",
+    "tr": "bozukluk, rahatsızlık",
+    "en": "disorder, condition",
+    "ar": "اضطراب",
+    "fr": "trouble",
+    "zinnen": [
+      "idrmgz8p"
+    ]
+  },
+  {
+    "nl": "symptoom",
+    "type": "noun",
+    "article": "het",
+    "tr": "semptom, belirti",
+    "en": "symptom",
+    "ar": "عَرَض",
+    "fr": "symptôme",
+    "zinnen": [
+      "idrmgz8p"
+    ]
+  },
+  {
+    "nl": "traumatisch",
+    "type": "adj",
+    "tr": "travmatik",
+    "en": "traumatic",
+    "ar": "صادم",
+    "fr": "traumatisant",
+    "zinnen": [
+      "ddamgxm3"
+    ]
+  },
+  {
+    "nl": "voeding",
+    "type": "noun",
+    "article": "de",
+    "tr": "beslenme, gıda",
+    "en": "nutrition, food",
+    "ar": "تغذية، غذاء",
+    "fr": "alimentation, nourriture",
+    "zinnen": [
+      "89fmdu87"
+    ]
+  },
+  {
+    "nl": "volop",
+    "type": "adv",
+    "tr": "bol bol, yoğun şekilde",
+    "en": "abundantly, fully",
+    "ar": "بوفرة",
+    "fr": "abondamment, à profusion",
+    "zinnen": [
+      "89fmdu87"
+    ]
+  },
+  {
+    "nl": "werkelijkheid",
+    "type": "noun",
+    "article": "de",
+    "tr": "gerçeklik",
+    "en": "reality",
+    "ar": "واقع، حقيقة",
+    "fr": "réalité",
+    "zinnen": [
+      "ddamgxm3"
+    ]
+  },
+  {
+    "nl": "essentieel",
+    "type": "adj",
+    "tr": "temel, vazgeçilmez",
+    "en": "essential",
+    "ar": "أساسي، جوهري",
+    "fr": "essentiel",
+    "zinnen": [
+      "5q0ptt6b"
+    ]
+  },
+  {
+    "nl": "bacterie",
+    "type": "noun",
+    "article": "de",
+    "tr": "bakteri",
+    "en": "bacterium",
+    "ar": "بكتيريا",
+    "fr": "bactérie",
+    "zinnen": [
+      "tz70ng90"
+    ]
+  },
+  {
+    "nl": "beoordelen",
+    "type": "verb",
+    "perfectum": "beoordeeld",
+    "imperfectum": "beoordeelde",
+    "tr": "değerlendirmek, yargılamak",
+    "en": "to assess, to evaluate",
+    "ar": "يُقيّم، يحكم على",
+    "fr": "évaluer, juger",
+    "zinnen": [
+      "gvswl7w7"
+    ]
+  },
+  {
+    "nl": "beugel",
+    "type": "noun",
+    "article": "de",
+    "tr": "diş teli, braket",
+    "en": "brace, bracket",
+    "ar": "تقويم الأسنان",
+    "fr": "appareil dentaire",
+    "zinnen": [
+      "gvswl7w7"
+    ]
+  },
+  {
+    "nl": "bloeden",
+    "type": "verb",
+    "perfectum": "gebloed",
+    "imperfectum": "bloedde",
+    "tr": "kanamak",
+    "en": "to bleed",
+    "ar": "ينزف",
+    "fr": "saigner",
+    "zinnen": [
+      "4g74j53c"
+    ]
+  },
+  {
+    "nl": "chirurg",
+    "type": "noun",
+    "article": "de",
+    "tr": "cerrah",
+    "en": "surgeon",
+    "ar": "جرّاح",
+    "fr": "chirurgien",
+    "zinnen": [
+      "4g74j53c"
+    ]
+  },
+  {
+    "nl": "gebit",
+    "type": "noun",
+    "article": "het",
+    "tr": "dişler, diş seti",
+    "en": "teeth, dentition",
+    "ar": "أسنان",
+    "fr": "dentition, dents",
+    "zinnen": [
+      "wrj0t2ai"
+    ]
+  },
+  {
+    "nl": "jarenlang",
+    "type": "adv",
+    "tr": "yıllarca",
+    "en": "for years",
+    "ar": "لسنوات",
+    "fr": "pendant des années",
+    "zinnen": [
+      "wrj0t2ai"
+    ]
+  },
+  {
+    "nl": "kaak",
+    "type": "noun",
+    "article": "de",
+    "tr": "çene",
+    "en": "jaw",
+    "ar": "فك",
+    "fr": "mâchoire",
+    "zinnen": [
+      "z7iqmb7p"
+    ]
+  },
+  {
+    "nl": "kies",
+    "type": "noun",
+    "article": "de",
+    "tr": "azı dişi",
+    "en": "molar",
+    "ar": "ضرس",
+    "fr": "molaire",
+    "zinnen": [
+      "z7iqmb7p"
+    ]
+  },
+  {
+    "nl": "mondhygiënist",
+    "type": "noun",
+    "article": "de",
+    "tr": "diş hijyenisti",
+    "en": "dental hygienist",
+    "ar": "أخصائي صحة الفم",
+    "fr": "hygiéniste dentaire",
+    "zinnen": [
+      "kz879gss"
+    ]
+  },
+  {
+    "nl": "naar",
+    "type": "adj",
+    "tr": "tatsız, acı verici",
+    "en": "unpleasant, nasty",
+    "ar": "كريه، مؤلم",
+    "fr": "désagréable, pénible",
+    "zinnen": [
+      "x158essd",
+      "ojmxgaua"
+    ]
+  },
+  {
+    "nl": "ontsteking",
+    "type": "noun",
+    "article": "de",
+    "tr": "iltihap, yangı",
+    "en": "inflammation, infection",
+    "ar": "التهاب",
+    "fr": "inflammation, infection",
+    "zinnen": [
+      "tz70ng90"
+    ]
+  },
+  {
+    "nl": "ontstoken",
+    "type": "adj",
+    "tr": "iltihaplı",
+    "en": "inflamed, infected",
+    "ar": "ملتهب",
+    "fr": "enflammé, infecté",
+    "zinnen": [
+      "tz70ng90"
+    ]
+  },
+  {
+    "nl": "opereren",
+    "type": "verb",
+    "perfectum": "geopereerd",
+    "imperfectum": "opereerde",
+    "tr": "ameliyat etmek",
+    "en": "to operate, to perform surgery",
+    "ar": "يُجري عملية جراحية",
+    "fr": "opérer",
+    "zinnen": [
+      "4g74j53c"
+    ]
+  },
+  {
+    "nl": "orthodontist",
+    "type": "noun",
+    "article": "de",
+    "tr": "ortodontist",
+    "en": "orthodontist",
+    "ar": "طبيب تقويم الأسنان",
+    "fr": "orthodontiste",
+    "zinnen": [
+      "gvswl7w7"
+    ]
+  },
+  {
+    "nl": "schuin",
+    "type": "adj",
+    "tr": "eğri, çapraz",
+    "en": "slanted, diagonal",
+    "ar": "مائل",
+    "fr": "incliné, en diagonale",
+    "zinnen": [
+      "rbqfl3cb"
+    ]
+  },
+  {
+    "nl": "tandenstoker",
+    "type": "noun",
+    "article": "de",
+    "tr": "kürdan",
+    "en": "toothpick",
+    "ar": "عود الأسنان",
+    "fr": "cure-dent",
+    "zinnen": [
+      "kz879gss"
+    ]
+  },
+  {
+    "nl": "tandpasta",
+    "type": "noun",
+    "article": "de",
+    "tr": "diş macunu",
+    "en": "toothpaste",
+    "ar": "معجون أسنان",
+    "fr": "dentifrice",
+    "zinnen": [
+      "kz879gss"
+    ]
+  },
+  {
+    "nl": "tandsteen",
+    "type": "noun",
+    "article": "het",
+    "tr": "diş taşı, tartar",
+    "en": "tartar, dental calculus",
+    "ar": "جير الأسنان",
+    "fr": "tartre dentaire",
+    "zinnen": [
+      "wrj0t2ai"
+    ]
+  },
+  {
+    "nl": "tandvlees",
+    "type": "noun",
+    "article": "het",
+    "tr": "diş eti",
+    "en": "gums",
+    "ar": "لثة",
+    "fr": "gencive",
+    "zinnen": [
+      "x158essd"
+    ]
+  },
+  {
+    "nl": "tenzij",
+    "type": "conj",
+    "tr": "-madığı sürece, meğer ki",
+    "en": "unless",
+    "ar": "إلا إذا، ما لم",
+    "fr": "à moins que",
+    "zinnen": [
+      "x158essd"
+    ]
+  },
+  {
+    "nl": "trauma",
+    "type": "noun",
+    "article": "het",
+    "tr": "travma",
+    "en": "trauma",
+    "ar": "صدمة",
+    "fr": "traumatisme",
+    "zinnen": [
+      "59htlrho"
+    ]
+  },
+  {
+    "nl": "trekken",
+    "type": "verb",
+    "perfectum": "getrokken",
+    "imperfectum": "trok",
+    "tr": "çekmek",
+    "en": "to pull, to draw",
+    "ar": "يسحب",
+    "fr": "tirer",
+    "zinnen": [
+      "z7iqmb7p"
+    ]
+  },
+  {
+    "nl": "verstandskies",
+    "type": "noun",
+    "article": "de",
+    "tr": "yirmi yaş dişi",
+    "en": "wisdom tooth",
+    "ar": "ضرس العقل",
+    "fr": "dent de sagesse",
+    "zinnen": [
+      "rbqfl3cb"
+    ]
+  },
+  {
+    "nl": "verwijsbrief",
+    "type": "noun",
+    "article": "de",
+    "tr": "sevk mektubu",
+    "en": "referral letter",
+    "ar": "خطاب إحالة",
+    "fr": "lettre de référence",
+    "zinnen": [
+      "rbqfl3cb"
+    ]
+  },
+  {
+    "nl": "atleet",
+    "type": "noun",
+    "article": "de",
+    "tr": "atlet, sporcu",
+    "en": "athlete",
+    "ar": "رياضي",
+    "fr": "athlète",
+    "zinnen": [
+      "jw9660wd"
+    ]
+  },
+  {
+    "nl": "calorie",
+    "type": "noun",
+    "article": "de",
+    "tr": "kalori",
+    "en": "calorie",
+    "ar": "سعرة حرارية",
+    "fr": "calorie",
+    "zinnen": [
+      "jw9660wd"
+    ]
+  },
+  {
+    "nl": "cruciaal",
+    "type": "adj",
+    "tr": "çok önemli, kritik",
+    "en": "crucial",
+    "ar": "بالغ الأهمية، حاسم",
+    "fr": "crucial",
+    "zinnen": [
+      "j3ok19ix"
+    ]
+  },
+  {
+    "nl": "daadwerkelijk",
+    "type": "adv",
+    "tr": "gerçekten, fiilen",
+    "en": "actually, truly",
+    "ar": "فعلياً، حقاً",
+    "fr": "réellement, effectivement",
+    "zinnen": [
+      "j3ok19ix"
+    ]
+  },
+  {
+    "nl": "dieet",
+    "type": "noun",
+    "article": "het",
+    "tr": "diyet",
+    "en": "diet",
+    "ar": "حمية، نظام غذائي",
+    "fr": "régime",
+    "zinnen": [
+      "jw9660wd"
+    ]
+  },
+  {
+    "nl": "diëtist",
+    "type": "noun",
+    "article": "de",
+    "tr": "diyetisyen",
+    "en": "dietitian",
+    "ar": "أخصائي تغذية",
+    "fr": "diététicien",
+    "zinnen": [
+      "ch7umj4m"
+    ]
+  },
+  {
+    "nl": "energiek",
+    "type": "adj",
+    "tr": "enerjik",
+    "en": "energetic",
+    "ar": "نشيط، حيوي",
+    "fr": "énergique",
+    "zinnen": [
+      "ch7umj4m"
+    ]
+  },
+  {
+    "nl": "functioneren",
+    "type": "verb",
+    "perfectum": "gefunctioneerd",
+    "imperfectum": "functioneerde",
+    "tr": "işlev görmek, çalışmak",
+    "en": "to function, to work",
+    "ar": "يعمل، يؤدي وظيفته",
+    "fr": "fonctionner",
+    "zinnen": [
+      "j3ok19ix"
+    ]
+  },
+  {
+    "nl": "geobsedeerd",
+    "type": "adj",
+    "tr": "takıntılı",
+    "en": "obsessed",
+    "ar": "مهووس",
+    "fr": "obsédé",
+    "zinnen": [
+      "y6xyg5zg"
+    ]
+  },
+  {
+    "nl": "gestrest",
+    "type": "adj",
+    "tr": "stresli",
+    "en": "stressed",
+    "ar": "متوتر",
+    "fr": "stressé",
+    "zinnen": [
+      "8kkm434e"
+    ]
+  },
+  {
+    "nl": "kwestie",
+    "type": "noun",
+    "article": "de",
+    "tr": "mesele, konu",
+    "en": "issue, matter",
+    "ar": "مسألة، أمر",
+    "fr": "question, affaire",
+    "zinnen": [
+      "y0n375j8"
+    ]
+  },
+  {
+    "nl": "meditatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "meditasyon",
+    "en": "meditation",
+    "ar": "تأمل",
+    "fr": "méditation",
+    "zinnen": [
+      "y6xyg5zg"
+    ]
+  },
+  {
+    "nl": "obsessie",
+    "type": "noun",
+    "article": "de",
+    "tr": "takıntı, saplantı",
+    "en": "obsession",
+    "ar": "هواس، وسواس",
+    "fr": "obsession",
+    "zinnen": [
+      "y6xyg5zg"
+    ]
+  },
+  {
+    "nl": "opleveren",
+    "type": "verb",
+    "perfectum": "opgeleverd",
+    "imperfectum": "leverde op",
+    "tr": "sağlamak, ortaya çıkarmak",
+    "en": "to yield, to produce",
+    "ar": "يُنتج، يُسفر عن",
+    "fr": "produire, générer",
+    "zinnen": [
+      "y0n375j8"
+    ]
+  },
+  {
+    "nl": "overgewicht",
+    "type": "noun",
+    "article": "het",
+    "tr": "fazla kilo",
+    "en": "overweight",
+    "ar": "زيادة الوزن",
+    "fr": "surpoids",
+    "zinnen": [
+      "ch7umj4m"
+    ]
+  },
+  {
+    "nl": "productief",
+    "type": "adj",
+    "tr": "üretken, verimli",
+    "en": "productive",
+    "ar": "منتج",
+    "fr": "productif",
+    "zinnen": [
+      "y0n375j8",
+      "xpox2b5w"
+    ]
+  },
+  {
+    "nl": "recept",
+    "type": "noun",
+    "article": "het",
+    "tr": "yemek tarifi / reçete",
+    "en": "recipe / prescription",
+    "ar": "وصفة (طبخ أو طبية)",
+    "fr": "recette / ordonnance",
+    "zinnen": [
+      "ryso4yt3",
+      "9e1n6qru",
+      "8l2hsh0i"
+    ]
+  },
+  {
+    "nl": "samenvatten",
+    "type": "verb",
+    "perfectum": "samengevat",
+    "imperfectum": "vatte samen",
+    "tr": "özetlemek",
+    "en": "to summarize",
+    "ar": "يلخّص",
+    "fr": "résumer",
+    "zinnen": [
+      "h83z8yta",
+      "6lq49cl5"
+    ]
+  },
+  {
+    "nl": "suf",
+    "type": "adj",
+    "tr": "uyuşuk, halsiz",
+    "en": "drowsy, sluggish",
+    "ar": "خامل، ناعس",
+    "fr": "somnolent, léthargique",
+    "zinnen": [
+      "8kkm434e"
+    ]
+  },
+  {
+    "nl": "vitamine",
+    "type": "noun",
+    "article": "de",
+    "tr": "vitamin",
+    "en": "vitamin",
+    "ar": "فيتامين",
+    "fr": "vitamine",
+    "zinnen": [
+      "ryso4yt3"
+    ]
+  },
+  {
+    "nl": "zich afvragen",
+    "type": "verb",
+    "perfectum": "zich afgevraagd",
+    "imperfectum": "vroeg zich af",
+    "tr": "merak etmek, kendi kendine sormak",
+    "en": "to wonder, to ask oneself",
+    "ar": "يتساءل",
+    "fr": "se demander",
+    "zinnen": [
+      "h83z8yta",
+      "6lq49cl5"
+    ]
+  },
+  {
+    "nl": "zich bezighouden",
+    "type": "verb",
+    "perfectum": "zich beziggehouden",
+    "imperfectum": "hield zich bezig",
+    "tr": "uğraşmak, ilgilenmek",
+    "en": "to occupy oneself, to deal with",
+    "ar": "يشتغل بـ، يهتم بـ",
+    "fr": "s'occuper de, se consacrer à",
+    "zinnen": [
+      "ax6yvlca"
+    ]
+  },
+  {
+    "nl": "zich ontspannen",
+    "type": "verb",
+    "perfectum": "zich ontspannen",
+    "imperfectum": "ontspande zich",
+    "tr": "dinlenmek, rahatlamak",
+    "en": "to relax",
+    "ar": "يسترخي",
+    "fr": "se détendre, se relaxer",
+    "zinnen": [
+      "8kkm434e"
+    ]
+  }
+]

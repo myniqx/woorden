@@ -1,0 +1,1210 @@
+[
+  {
+    "nl": "aanraken",
+    "type": "verb",
+    "perfectum": "aangeraakt",
+    "imperfectum": "raakte aan",
+    "tr": "dokunmak",
+    "en": "to touch",
+    "ar": "يلمس",
+    "fr": "toucher",
+    "zinnen": [
+      "vtxfnmba"
+    ]
+  },
+  {
+    "nl": "alternatief",
+    "type": "noun",
+    "article": "het",
+    "tr": "alternatif, seçenek",
+    "en": "alternative",
+    "ar": "بديل",
+    "fr": "alternative",
+    "zinnen": [
+      "sb7b59j2"
+    ]
+  },
+  {
+    "nl": "belangstelling",
+    "type": "noun",
+    "article": "de",
+    "tr": "merak, ilgi",
+    "en": "interest",
+    "ar": "اهتمام",
+    "fr": "intérêt",
+    "zinnen": [
+      "vtxfnmba"
+    ]
+  },
+  {
+    "nl": "bijhouden",
+    "type": "verb",
+    "perfectum": "bijgehouden",
+    "imperfectum": "hield bij",
+    "tr": "takip etmek, güncel tutmak",
+    "en": "to keep up with, to track",
+    "ar": "يتابع، يُحدّث",
+    "fr": "suivre, tenir à jour",
+    "zinnen": [
+      "97olydtl"
+    ]
+  },
+  {
+    "nl": "conservatief",
+    "type": "adj",
+    "tr": "tutucu, muhafazakâr",
+    "en": "conservative",
+    "ar": "محافظ",
+    "fr": "conservateur",
+    "zinnen": [
+      "sb7b59j2"
+    ]
+  },
+  {
+    "nl": "cynisch",
+    "type": "adj",
+    "tr": "alaycı, kuşkucu",
+    "en": "cynical",
+    "ar": "متشكك، ساخر",
+    "fr": "cynique",
+    "zinnen": [
+      "sb7b59j2"
+    ]
+  },
+  {
+    "nl": "daten",
+    "type": "verb",
+    "perfectum": "gedatet",
+    "imperfectum": "datete",
+    "tr": "flört etmek, çıkmak",
+    "en": "to date",
+    "ar": "يواعد",
+    "fr": "sortir avec quelqu'un",
+    "zinnen": [
+      "1ina64rd"
+    ]
+  },
+  {
+    "nl": "doorsturen",
+    "type": "verb",
+    "perfectum": "doorgestuurd",
+    "imperfectum": "stuurde door",
+    "tr": "iletmek, yönlendirmek",
+    "en": "to forward, to redirect",
+    "ar": "يُعيد إرسال، يُحيل",
+    "fr": "transférer, faire suivre",
+    "zinnen": [
+      "a1zrs8y2"
+    ]
+  },
+  {
+    "nl": "gebruiksvriendelijk",
+    "type": "adj",
+    "tr": "kullanıcı dostu, kullanışlı",
+    "en": "user-friendly",
+    "ar": "سهل الاستخدام",
+    "fr": "convivial, facile à utiliser",
+    "zinnen": [
+      "4fyi7ylk",
+      "q2lvw2mx"
+    ]
+  },
+  {
+    "nl": "geregeld",
+    "type": "adv",
+    "tr": "düzenli olarak, sıklıkla",
+    "en": "regularly, frequently",
+    "ar": "بانتظام، بشكل متكرر",
+    "fr": "régulièrement, souvent",
+    "zinnen": [
+      "1ina64rd"
+    ]
+  },
+  {
+    "nl": "grafiek",
+    "type": "noun",
+    "article": "de",
+    "tr": "grafik",
+    "en": "graph, chart",
+    "ar": "رسم بياني",
+    "fr": "graphique",
+    "zinnen": [
+      "97olydtl"
+    ]
+  },
+  {
+    "nl": "instellen",
+    "type": "verb",
+    "perfectum": "ingesteld",
+    "imperfectum": "stelde in",
+    "tr": "ayarlamak, kurmak",
+    "en": "to set up, to configure",
+    "ar": "يضبط، يُعدّ",
+    "fr": "configurer, régler",
+    "zinnen": [
+      "ucghurrt"
+    ]
+  },
+  {
+    "nl": "meten",
+    "type": "verb",
+    "perfectum": "gemeten",
+    "imperfectum": "mat",
+    "tr": "ölçmek",
+    "en": "to measure",
+    "ar": "يقيس",
+    "fr": "mesurer",
+    "zinnen": [
+      "97olydtl"
+    ]
+  },
+  {
+    "nl": "navigatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "navigasyon, yön bulma",
+    "en": "navigation",
+    "ar": "ملاحة، توجيه",
+    "fr": "navigation",
+    "zinnen": [
+      "4fyi7ylk"
+    ]
+  },
+  {
+    "nl": "nostalgisch",
+    "type": "adj",
+    "tr": "nostaljik",
+    "en": "nostalgic",
+    "ar": "حنيني",
+    "fr": "nostalgique",
+    "zinnen": [
+      "1ina64rd"
+    ]
+  },
+  {
+    "nl": "nut",
+    "type": "noun",
+    "article": "het",
+    "tr": "yarar, fayda",
+    "en": "use, benefit",
+    "ar": "فائدة، نفع",
+    "fr": "utilité, avantage",
+    "zinnen": [
+      "ucghurrt"
+    ]
+  },
+  {
+    "nl": "opname",
+    "type": "noun",
+    "article": "de",
+    "tr": "çekim, kayıt / hastaneye yatış",
+    "en": "recording / admission (hospital)",
+    "ar": "تسجيل / قبول (في المستشفى)",
+    "fr": "enregistrement / admission (hôpital)",
+    "zinnen": [
+      "qpo41xrj",
+      "mrrlqjam"
+    ]
+  },
+  {
+    "nl": "scherp",
+    "type": "adj",
+    "tr": "keskin, net",
+    "en": "sharp, clear",
+    "ar": "حاد، واضح",
+    "fr": "tranchant, net",
+    "zinnen": [
+      "qpo41xrj"
+    ]
+  },
+  {
+    "nl": "staren",
+    "type": "verb",
+    "perfectum": "gestaard",
+    "imperfectum": "staarde",
+    "tr": "dik dik bakmak",
+    "en": "to stare",
+    "ar": "يحدّق",
+    "fr": "fixer du regard",
+    "zinnen": [
+      "vtxfnmba"
+    ]
+  },
+  {
+    "nl": "testen",
+    "type": "verb",
+    "perfectum": "getest",
+    "imperfectum": "testte",
+    "tr": "test etmek, denemek",
+    "en": "to test",
+    "ar": "يختبر",
+    "fr": "tester",
+    "zinnen": [
+      "qpo41xrj"
+    ]
+  },
+  {
+    "nl": "toegeven",
+    "type": "verb",
+    "perfectum": "toegegeven",
+    "imperfectum": "gaf toe",
+    "tr": "itiraf etmek, kabullenmek",
+    "en": "to admit, to concede",
+    "ar": "يعترف، يُقرّ",
+    "fr": "admettre, concéder",
+    "zinnen": [
+      "x2z3pty5"
+    ]
+  },
+  {
+    "nl": "toestel",
+    "type": "noun",
+    "article": "het",
+    "tr": "cihaz, alet",
+    "en": "device, appliance",
+    "ar": "جهاز",
+    "fr": "appareil, dispositif",
+    "zinnen": [
+      "4fyi7ylk"
+    ]
+  },
+  {
+    "nl": "vernieuwing",
+    "type": "noun",
+    "article": "de",
+    "tr": "yenilik, yenileme",
+    "en": "renewal, innovation",
+    "ar": "تجديد، ابتكار",
+    "fr": "renouveau, innovation",
+    "zinnen": [
+      "q2lvw2mx"
+    ]
+  },
+  {
+    "nl": "wantrouwen",
+    "type": "noun",
+    "article": "het",
+    "tr": "güvensizlik, şüphe",
+    "en": "distrust, suspicion",
+    "ar": "عدم ثقة، شك",
+    "fr": "méfiance, suspicion",
+    "zinnen": [
+      "x2z3pty5"
+    ]
+  },
+  {
+    "nl": "afzender",
+    "type": "noun",
+    "article": "de",
+    "tr": "gönderen",
+    "en": "sender",
+    "ar": "مُرسِل",
+    "fr": "expéditeur",
+    "zinnen": [
+      "a1zrs8y2"
+    ]
+  },
+  {
+    "nl": "besmetten",
+    "type": "verb",
+    "perfectum": "besmet",
+    "imperfectum": "besmette",
+    "tr": "bulaştırmak, enfekte etmek",
+    "en": "to infect, to contaminate",
+    "ar": "يُعدي، يُلوّث",
+    "fr": "contaminer, infecter",
+    "zinnen": [
+      "ee6htw30"
+    ]
+  },
+  {
+    "nl": "bevatten",
+    "type": "verb",
+    "perfectum": "bevat",
+    "imperfectum": "bevatte",
+    "tr": "içermek, kapsamak",
+    "en": "to contain, to include",
+    "ar": "يحتوي على",
+    "fr": "contenir, inclure",
+    "zinnen": [
+      "e39ifwbt"
+    ]
+  },
+  {
+    "nl": "bijlage",
+    "type": "noun",
+    "article": "de",
+    "tr": "ek, ilişik",
+    "en": "attachment, appendix",
+    "ar": "مرفق، ملحق",
+    "fr": "pièce jointe, annexe",
+    "zinnen": [
+      "a1zrs8y2",
+      "e39ifwbt",
+      "ydjcy4sp"
+    ]
+  },
+  {
+    "nl": "filter",
+    "type": "noun",
+    "article": "de",
+    "tr": "filtre",
+    "en": "filter",
+    "ar": "فلتر، مرشّح",
+    "fr": "filtre",
+    "zinnen": [
+      "ee6htw30"
+    ]
+  },
+  {
+    "nl": "fraude",
+    "type": "noun",
+    "article": "de",
+    "tr": "dolandırıcılık, hile",
+    "en": "fraud",
+    "ar": "احتيال",
+    "fr": "fraude",
+    "zinnen": [
+      "e39ifwbt"
+    ]
+  },
+  {
+    "nl": "gebruikmaken van",
+    "type": "verb",
+    "perfectum": "gebruikgemaakt van",
+    "imperfectum": "maakte gebruik van",
+    "tr": "yararlanmak, kullanmak",
+    "en": "to make use of, to utilize",
+    "ar": "يستفيد من، يستخدم",
+    "fr": "profiter de, utiliser",
+    "zinnen": [
+      "rgzvqlch",
+      "ykzzpv1t"
+    ]
+  },
+  {
+    "nl": "gewelddadig",
+    "type": "adj",
+    "tr": "şiddet içeren",
+    "en": "violent",
+    "ar": "عنيف",
+    "fr": "violent",
+    "zinnen": [
+      "vmqkh5cq"
+    ]
+  },
+  {
+    "nl": "invoeren",
+    "type": "verb",
+    "perfectum": "ingevoerd",
+    "imperfectum": "voerde in",
+    "tr": "giriş yapmak / uygulamaya koymak",
+    "en": "to enter (data) / to introduce (a policy)",
+    "ar": "يُدخل / يُطبّق",
+    "fr": "saisir / introduire",
+    "zinnen": [
+      "iyxpnrye"
+    ]
+  },
+  {
+    "nl": "minderjarig",
+    "type": "adj",
+    "tr": "reşit olmayan, küçük",
+    "en": "underage, minor",
+    "ar": "قاصر",
+    "fr": "mineur",
+    "zinnen": [
+      "9cjoidza"
+    ]
+  },
+  {
+    "nl": "misbruiken",
+    "type": "verb",
+    "perfectum": "misbruikt",
+    "imperfectum": "misbruikte",
+    "tr": "kötüye kullanmak, istismar etmek",
+    "en": "to abuse, to misuse",
+    "ar": "يُسيء الاستخدام، يستغل",
+    "fr": "abuser de, utiliser à mauvais escient",
+    "zinnen": [
+      "9cjoidza"
+    ]
+  },
+  {
+    "nl": "nep",
+    "type": "adj",
+    "tr": "sahte, taklit",
+    "en": "fake, counterfeit",
+    "ar": "مزيف، وهمي",
+    "fr": "faux, factice",
+    "zinnen": [
+      "iyxpnrye"
+    ]
+  },
+  {
+    "nl": "ongepast",
+    "type": "adj",
+    "tr": "uygunsuz, yakışıksız",
+    "en": "inappropriate",
+    "ar": "غير لائق",
+    "fr": "inapproprié, déplacé",
+    "zinnen": [
+      "9v3f7xnr",
+      "plms1xtc"
+    ]
+  },
+  {
+    "nl": "plegen",
+    "type": "verb",
+    "perfectum": "gepleegd",
+    "imperfectum": "pleegde",
+    "tr": "işlemek (suç)",
+    "en": "to commit (a crime)",
+    "ar": "يرتكب (جريمة)",
+    "fr": "commettre (un crime)",
+    "zinnen": [
+      "vmqkh5cq"
+    ]
+  },
+  {
+    "nl": "raadplegen",
+    "type": "verb",
+    "perfectum": "geraadpleegd",
+    "imperfectum": "raadpleegde",
+    "tr": "danışmak, başvurmak",
+    "en": "to consult",
+    "ar": "يستشير، يرجع إلى",
+    "fr": "consulter",
+    "zinnen": [
+      "rgzvqlch",
+      "ykzzpv1t"
+    ]
+  },
+  {
+    "nl": "stichting",
+    "type": "noun",
+    "article": "de",
+    "tr": "vakıf, dernek",
+    "en": "foundation, charity",
+    "ar": "مؤسسة، جمعية خيرية",
+    "fr": "fondation, association",
+    "zinnen": [
+      "9cjoidza"
+    ]
+  },
+  {
+    "nl": "teken",
+    "type": "noun",
+    "article": "het",
+    "tr": "işaret, sembol",
+    "en": "sign, symbol",
+    "ar": "علامة، رمز",
+    "fr": "signe, symbole",
+    "zinnen": [
+      "9v3f7xnr"
+    ]
+  },
+  {
+    "nl": "uitloggen",
+    "type": "verb",
+    "perfectum": "uitgelogd",
+    "imperfectum": "logde uit",
+    "tr": "oturumu kapatmak",
+    "en": "to log out",
+    "ar": "يُسجّل الخروج",
+    "fr": "se déconnecter",
+    "zinnen": [
+      "p1hga06o"
+    ]
+  },
+  {
+    "nl": "vals",
+    "type": "adj",
+    "tr": "sahte, yanlış",
+    "en": "false, fake",
+    "ar": "مزيف، كاذب",
+    "fr": "faux",
+    "zinnen": [
+      "iyxpnrye",
+      "jfuqi93w"
+    ]
+  },
+  {
+    "nl": "variatie",
+    "type": "noun",
+    "article": "de",
+    "tr": "çeşitlilik, değişiklik",
+    "en": "variation, variety",
+    "ar": "تنوع، اختلاف",
+    "fr": "variation, variété",
+    "zinnen": [
+      "jfuqi93w"
+    ]
+  },
+  {
+    "nl": "vermijden",
+    "type": "verb",
+    "perfectum": "vermeden",
+    "imperfectum": "vermeed",
+    "tr": "kaçınmak",
+    "en": "to avoid",
+    "ar": "يتجنب",
+    "fr": "éviter",
+    "zinnen": [
+      "p1hga06o"
+    ]
+  },
+  {
+    "nl": "verwijderen",
+    "type": "verb",
+    "perfectum": "verwijderd",
+    "imperfectum": "verwijderde",
+    "tr": "silmek, kaldırmak",
+    "en": "to delete, to remove",
+    "ar": "يحذف، يُزيل",
+    "fr": "supprimer, retirer",
+    "zinnen": [
+      "p1hga06o"
+    ]
+  },
+  {
+    "nl": "virus",
+    "type": "noun",
+    "article": "het",
+    "tr": "virüs",
+    "en": "virus",
+    "ar": "فيروس",
+    "fr": "virus",
+    "zinnen": [
+      "ee6htw30"
+    ]
+  },
+  {
+    "nl": "voorlichting",
+    "type": "noun",
+    "article": "de",
+    "tr": "bilgilendirme, bilinçlendirme",
+    "en": "information, awareness",
+    "ar": "توعية، إعلام",
+    "fr": "information, sensibilisation",
+    "zinnen": [
+      "9v3f7xnr"
+    ]
+  },
+  {
+    "nl": "zoekmachine",
+    "type": "noun",
+    "article": "de",
+    "tr": "arama motoru",
+    "en": "search engine",
+    "ar": "محرك بحث",
+    "fr": "moteur de recherche",
+    "zinnen": [
+      "rgzvqlch",
+      "ykzzpv1t"
+    ]
+  },
+  {
+    "nl": "zolang",
+    "type": "conj",
+    "tr": "-diği sürece",
+    "en": "as long as",
+    "ar": "طالما، ما دام",
+    "fr": "tant que",
+    "zinnen": [
+      "jfuqi93w"
+    ]
+  },
+  {
+    "nl": "aangezien",
+    "type": "conj",
+    "tr": "-diğinden, zira",
+    "en": "since, because",
+    "ar": "بما أن، إذ",
+    "fr": "puisque, étant donné que",
+    "zinnen": [
+      "v0t8p7fr"
+    ]
+  },
+  {
+    "nl": "balie",
+    "type": "noun",
+    "article": "de",
+    "tr": "gişe, ön büro",
+    "en": "counter, reception desk",
+    "ar": "مكتب الاستقبال، شباك",
+    "fr": "guichet, comptoir",
+    "zinnen": [
+      "v0t8p7fr"
+    ]
+  },
+  {
+    "nl": "beleid",
+    "type": "noun",
+    "article": "het",
+    "tr": "politika, strateji",
+    "en": "policy",
+    "ar": "سياسة",
+    "fr": "politique (stratégie)",
+    "zinnen": [
+      "v0t8p7fr"
+    ]
+  },
+  {
+    "nl": "bijwonen",
+    "type": "verb",
+    "perfectum": "bijgewoond",
+    "imperfectum": "woonde bij",
+    "tr": "katılmak, hazır bulunmak",
+    "en": "to attend",
+    "ar": "يحضر",
+    "fr": "assister à",
+    "zinnen": [
+      "yg052dp6"
+    ]
+  },
+  {
+    "nl": "directie",
+    "type": "noun",
+    "article": "de",
+    "tr": "yönetim, müdüriyet",
+    "en": "management, board of directors",
+    "ar": "إدارة، مديرية",
+    "fr": "direction",
+    "zinnen": [
+      "yg052dp6"
+    ]
+  },
+  {
+    "nl": "dringend",
+    "type": "adj",
+    "tr": "acil, ivedi",
+    "en": "urgent",
+    "ar": "عاجل",
+    "fr": "urgent",
+    "zinnen": [
+      "yg052dp6"
+    ]
+  },
+  {
+    "nl": "foutmelding",
+    "type": "noun",
+    "article": "de",
+    "tr": "hata mesajı",
+    "en": "error message",
+    "ar": "رسالة خطأ",
+    "fr": "message d'erreur",
+    "zinnen": [
+      "e9o36517"
+    ]
+  },
+  {
+    "nl": "frustrerend",
+    "type": "adj",
+    "tr": "sinir bozucu, can sıkıcı",
+    "en": "frustrating",
+    "ar": "محبط، مُزعج",
+    "fr": "frustrant",
+    "zinnen": [
+      "w3yox8jz"
+    ]
+  },
+  {
+    "nl": "gezeur",
+    "type": "noun",
+    "article": "het",
+    "tr": "dırdır, sızlanma",
+    "en": "nagging, whining",
+    "ar": "تذمّر، إزعاج",
+    "fr": "pleurnicheries, jérémiades",
+    "zinnen": [
+      "w3yox8jz"
+    ]
+  },
+  {
+    "nl": "handleiding",
+    "type": "noun",
+    "article": "de",
+    "tr": "kullanım kılavuzu",
+    "en": "manual, instruction guide",
+    "ar": "دليل الاستخدام",
+    "fr": "manuel, guide d'utilisation",
+    "zinnen": [
+      "basp1ozw"
+    ]
+  },
+  {
+    "nl": "herstellen",
+    "type": "verb",
+    "perfectum": "hersteld",
+    "imperfectum": "herstelde",
+    "tr": "onarmak, iyileşmek",
+    "en": "to repair, to recover",
+    "ar": "يُصلح، يتعافى",
+    "fr": "réparer, se rétablir",
+    "zinnen": [
+      "e9o36517"
+    ]
+  },
+  {
+    "nl": "onjuist",
+    "type": "adj",
+    "tr": "yanlış, hatalı",
+    "en": "incorrect, wrong",
+    "ar": "خاطئ، غير صحيح",
+    "fr": "incorrect, faux",
+    "zinnen": [
+      "w3yox8jz"
+    ]
+  },
+  {
+    "nl": "ontbreken",
+    "type": "verb",
+    "perfectum": "ontbroken",
+    "imperfectum": "ontbrak",
+    "tr": "eksik olmak",
+    "en": "to be missing, to lack",
+    "ar": "يغيب، ينقص",
+    "fr": "manquer, faire défaut",
+    "zinnen": [
+      "basp1ozw"
+    ]
+  },
+  {
+    "nl": "opstarten",
+    "type": "verb",
+    "perfectum": "opgestart",
+    "imperfectum": "startte op",
+    "tr": "başlatmak, açmak",
+    "en": "to start up, to boot",
+    "ar": "يُشغّل، يبدأ",
+    "fr": "démarrer, lancer",
+    "zinnen": [
+      "e9o36517"
+    ]
+  },
+  {
+    "nl": "poging",
+    "type": "noun",
+    "article": "de",
+    "tr": "deneme, girişim",
+    "en": "attempt",
+    "ar": "محاولة",
+    "fr": "tentative",
+    "zinnen": [
+      "vcvp9w12"
+    ]
+  },
+  {
+    "nl": "puur",
+    "type": "adj",
+    "tr": "saf, tam, sadece",
+    "en": "pure, purely",
+    "ar": "خالص، بحت",
+    "fr": "pur, purement",
+    "zinnen": [
+      "yaygh0o1"
+    ]
+  },
+  {
+    "nl": "recent",
+    "type": "adj",
+    "tr": "yakın zamana ait, son",
+    "en": "recent",
+    "ar": "حديث، أخير",
+    "fr": "récent",
+    "zinnen": [
+      "yaygh0o1"
+    ]
+  },
+  {
+    "nl": "sessie",
+    "type": "noun",
+    "article": "de",
+    "tr": "oturum, seans",
+    "en": "session",
+    "ar": "جلسة",
+    "fr": "session, séance",
+    "zinnen": [
+      "vcvp9w12"
+    ]
+  },
+  {
+    "nl": "standaard",
+    "type": "adv",
+    "tr": "standart olarak, varsayılan",
+    "en": "by default, standard",
+    "ar": "افتراضياً، بشكل قياسي",
+    "fr": "par défaut, standard",
+    "zinnen": [
+      "vcvp9w12"
+    ]
+  },
+  {
+    "nl": "uitleg",
+    "type": "noun",
+    "article": "de",
+    "tr": "açıklama, izah",
+    "en": "explanation",
+    "ar": "شرح، توضيح",
+    "fr": "explication",
+    "zinnen": [
+      "basp1ozw"
+    ]
+  },
+  {
+    "nl": "vereist",
+    "type": "adj",
+    "tr": "gerekli, zorunlu",
+    "en": "required, necessary",
+    "ar": "مطلوب، ضروري",
+    "fr": "requis, nécessaire",
+    "zinnen": [
+      "yaygh0o1"
+    ]
+  },
+  {
+    "nl": "verschijnen",
+    "type": "verb",
+    "perfectum": "verschenen",
+    "imperfectum": "verscheen",
+    "tr": "görünmek, ortaya çıkmak",
+    "en": "to appear, to show up",
+    "ar": "يظهر",
+    "fr": "apparaître, paraître",
+    "zinnen": [
+      "kg2jtihc"
+    ]
+  },
+  {
+    "nl": "verspilling",
+    "type": "noun",
+    "article": "de",
+    "tr": "israf, savurganlık",
+    "en": "waste",
+    "ar": "هدر، تبذير",
+    "fr": "gaspillage",
+    "zinnen": [
+      "kg2jtihc"
+    ]
+  },
+  {
+    "nl": "vlug",
+    "type": "adj",
+    "tr": "çabuk, hızlı",
+    "en": "quick, fast",
+    "ar": "سريع",
+    "fr": "rapide, vite",
+    "zinnen": [
+      "kg2jtihc"
+    ]
+  },
+  {
+    "nl": "vooruit",
+    "type": "adv",
+    "tr": "ileri, öne",
+    "en": "forward, ahead",
+    "ar": "للأمام",
+    "fr": "en avant",
+    "zinnen": [
+      "thxghz9o"
+    ]
+  },
+  {
+    "nl": "afname",
+    "type": "noun",
+    "article": "de",
+    "tr": "azalma, düşüş",
+    "en": "decrease, decline",
+    "ar": "انخفاض، تراجع",
+    "fr": "diminution, baisse",
+    "zinnen": [
+      "w1mcyqei"
+    ]
+  },
+  {
+    "nl": "arm",
+    "type": "adj",
+    "tr": "fakir, yoksul",
+    "en": "poor",
+    "ar": "فقير",
+    "fr": "pauvre",
+    "zinnen": [
+      "w1mcyqei",
+      "7x1bszrd"
+    ]
+  },
+  {
+    "nl": "armoede",
+    "type": "noun",
+    "article": "de",
+    "tr": "yoksulluk, fakirlik",
+    "en": "poverty",
+    "ar": "فقر",
+    "fr": "pauvreté",
+    "zinnen": [
+      "w1mcyqei"
+    ]
+  },
+  {
+    "nl": "bedreiging",
+    "type": "noun",
+    "article": "de",
+    "tr": "tehdit",
+    "en": "threat",
+    "ar": "تهديد",
+    "fr": "menace",
+    "zinnen": [
+      "3a3vjsvg"
+    ]
+  },
+  {
+    "nl": "beïnvloeden",
+    "type": "verb",
+    "perfectum": "beïnvloed",
+    "imperfectum": "beïnvloedde",
+    "tr": "etkilemek",
+    "en": "to influence, to affect",
+    "ar": "يُؤثّر على",
+    "fr": "influencer, affecter",
+    "zinnen": [
+      "3a3vjsvg"
+    ]
+  },
+  {
+    "nl": "conclusie",
+    "type": "noun",
+    "article": "de",
+    "tr": "sonuç, vardığımız nokta",
+    "en": "conclusion",
+    "ar": "استنتاج",
+    "fr": "conclusion",
+    "zinnen": [
+      "o725fi2v"
+    ]
+  },
+  {
+    "nl": "eigenschap",
+    "type": "noun",
+    "article": "de",
+    "tr": "özellik, nitelik",
+    "en": "characteristic, property",
+    "ar": "خاصية، صفة",
+    "fr": "propriété, caractéristique",
+    "zinnen": [
+      "o725fi2v"
+    ]
+  },
+  {
+    "nl": "fabriek",
+    "type": "noun",
+    "article": "de",
+    "tr": "fabrika",
+    "en": "factory",
+    "ar": "مصنع",
+    "fr": "usine, fabrique",
+    "zinnen": [
+      "b5kzul1i"
+    ]
+  },
+  {
+    "nl": "intelligent",
+    "type": "adj",
+    "tr": "zeki, akıllı",
+    "en": "intelligent",
+    "ar": "ذكي",
+    "fr": "intelligent",
+    "zinnen": [
+      "o725fi2v"
+    ]
+  },
+  {
+    "nl": "kunstmatig",
+    "type": "adj",
+    "tr": "yapay, suni",
+    "en": "artificial",
+    "ar": "اصطناعي",
+    "fr": "artificiel",
+    "zinnen": [
+      "iiymsvg8"
+    ]
+  },
+  {
+    "nl": "landbouw",
+    "type": "noun",
+    "article": "de",
+    "tr": "tarım, ziraat",
+    "en": "agriculture, farming",
+    "ar": "زراعة",
+    "fr": "agriculture",
+    "zinnen": [
+      "34b9gx08"
+    ]
+  },
+  {
+    "nl": "lever",
+    "type": "noun",
+    "article": "de",
+    "tr": "karaciğer",
+    "en": "liver",
+    "ar": "كبد",
+    "fr": "foie",
+    "zinnen": [
+      "c53atpuv"
+    ]
+  },
+  {
+    "nl": "menselijk",
+    "type": "adj",
+    "tr": "insani, insan",
+    "en": "human",
+    "ar": "إنساني، بشري",
+    "fr": "humain",
+    "zinnen": [
+      "aekplacj"
+    ]
+  },
+  {
+    "nl": "nier",
+    "type": "noun",
+    "article": "de",
+    "tr": "böbrek",
+    "en": "kidney",
+    "ar": "كلية",
+    "fr": "rein",
+    "zinnen": [
+      "c53atpuv"
+    ]
+  },
+  {
+    "nl": "orgaan",
+    "type": "noun",
+    "article": "het",
+    "tr": "organ",
+    "en": "organ",
+    "ar": "عضو",
+    "fr": "organe",
+    "zinnen": [
+      "c53atpuv"
+    ]
+  },
+  {
+    "nl": "produceren",
+    "type": "verb",
+    "perfectum": "geproduceerd",
+    "imperfectum": "produceerde",
+    "tr": "üretmek",
+    "en": "to produce",
+    "ar": "ينتج",
+    "fr": "produire",
+    "zinnen": [
+      "b5kzul1i"
+    ]
+  },
+  {
+    "nl": "productie",
+    "type": "noun",
+    "article": "de",
+    "tr": "üretim",
+    "en": "production",
+    "ar": "إنتاج",
+    "fr": "production",
+    "zinnen": [
+      "b5kzul1i"
+    ]
+  },
+  {
+    "nl": "robot",
+    "type": "noun",
+    "article": "de",
+    "tr": "robot",
+    "en": "robot",
+    "ar": "روبوت",
+    "fr": "robot",
+    "zinnen": [
+      "iiymsvg8"
+    ]
+  },
+  {
+    "nl": "solidariteit",
+    "type": "noun",
+    "article": "de",
+    "tr": "dayanışma",
+    "en": "solidarity",
+    "ar": "تضامن",
+    "fr": "solidarité",
+    "zinnen": [
+      "3a3vjsvg"
+    ]
+  },
+  {
+    "nl": "technologisch",
+    "type": "adj",
+    "tr": "teknolojik",
+    "en": "technological",
+    "ar": "تكنولوجي",
+    "fr": "technologique",
+    "zinnen": [
+      "iiymsvg8"
+    ]
+  },
+  {
+    "nl": "tekort",
+    "type": "noun",
+    "article": "het",
+    "tr": "kıtlık, eksiklik",
+    "en": "shortage, deficit",
+    "ar": "نقص، عجز",
+    "fr": "pénurie, manque",
+    "zinnen": [
+      "34b9gx08"
+    ]
+  },
+  {
+    "nl": "toekomstig",
+    "type": "adj",
+    "tr": "gelecekteki",
+    "en": "future",
+    "ar": "مستقبلي",
+    "fr": "futur",
+    "zinnen": [
+      "34b9gx08"
+    ]
+  },
+  {
+    "nl": "tolerantie",
+    "type": "noun",
+    "article": "de",
+    "tr": "hoşgörü, tolerans",
+    "en": "tolerance",
+    "ar": "تسامح",
+    "fr": "tolérance",
+    "zinnen": [
+      "aekplacj"
+    ]
+  },
+  {
+    "nl": "uitvinding",
+    "type": "noun",
+    "article": "de",
+    "tr": "icat, buluş",
+    "en": "invention",
+    "ar": "اختراع",
+    "fr": "invention",
+    "zinnen": [
+      "56h7j2rl"
+    ]
+  },
+  {
+    "nl": "voedsel",
+    "type": "noun",
+    "article": "het",
+    "tr": "gıda, yiyecek",
+    "en": "food",
+    "ar": "غذاء، طعام",
+    "fr": "nourriture, aliment",
+    "zinnen": [
+      "56h7j2rl"
+    ]
+  }
+]

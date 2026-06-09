@@ -53,6 +53,16 @@ import a2pData5 from '../data/a2p-005.json';
 import a2pData6 from '../data/a2p-006.json';
 import a2pData7 from '../data/a2p-007.json';
 
+// B1 level words
+import b1Data1 from '../data/b1-001.json';
+import b1Data2 from '../data/b1-002.json';
+import b1Data3 from '../data/b1-003.json';
+import b1Data4 from '../data/b1-004.json';
+import b1Data5 from '../data/b1-005.json';
+import b1Data6 from '../data/b1-006.json';
+import b1Data7 from '../data/b1-007.json';
+import b1Data8 from '../data/b1-008.json';
+
 // Keep a1 words in chunks
 const a1Chunks: WordEntry[][] = [
   a1Data1,
@@ -89,6 +99,18 @@ const a2pChunks: WordEntry[][] = [
   a2pData7,
 ] as WordEntry[][];
 
+// B1 chunks
+const b1Chunks: WordEntry[][] = [
+  b1Data1,
+  b1Data2,
+  b1Data3,
+  b1Data4,
+  b1Data5,
+  b1Data6,
+  b1Data7,
+  b1Data8,
+] as WordEntry[][];
+
 // Word pack structure: level -> subpacks
 export interface WordPackLevel {
   chunks: WordEntry[][];
@@ -98,6 +120,7 @@ export const wordPackLevels: Record<string, WordPackLevel> = {
   A1: { chunks: a1Chunks },
   A2: { chunks: a2Chunks },
   'A2+': { chunks: a2pChunks },
+  B1: { chunks: b1Chunks },
 };
 
 // Get all available level names

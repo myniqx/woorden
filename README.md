@@ -10,7 +10,7 @@ A spaced repetition PWA for learning Dutch vocabulary.
 
 - **5 quiz types** — translate to Dutch, translate to native, article (de/het), writing test, verb forms
 - **Spaced repetition** — word selection prioritizes unseen words, then last-wrong, then last-correct
-- **Example sentences** — Dutch → Native quiz shows a contextual sentence with the target word highlighted (~2700 sentences)
+- **Example sentences** — Dutch → Native quiz shows a contextual sentence with the target word highlighted (~3200 sentences across all packs)
 - **Pin system** — mark difficult words and practice them in a dedicated quiz (unlocks at 10 pins)
 - **Word packs** — enable or disable CEFR levels independently in settings
 - **Multi-language UI** — Turkish, English, Arabic, French
@@ -25,7 +25,8 @@ A spaced repetition PWA for learning Dutch vocabulary.
 | A1    | 976   |
 | A2    | 981   |
 | A2+   | 687   |
-| **Total** | **2644** |
+| B1    | 795   |
+| **Total** | **3439** |
 
 ## Tech Stack
 
