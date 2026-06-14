@@ -157,7 +157,8 @@ export async function fetchLeaderboard(): Promise<LeaderboardEntry[]> {
     .eq('key', 'leaderboard')
     .single();
 
-  if (error || !data?.value) return [];
+  if (error) throw new Error(error.message);
+  if (!data?.value) return [];
 
   return data.value
     .split('\n')
