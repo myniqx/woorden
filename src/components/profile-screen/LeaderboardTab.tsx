@@ -11,6 +11,7 @@ type ScoreTab = 'daily' | 'last7' | 'last30';
 
 interface LeaderboardTabProps extends Pick<ProfileSharedProps, 'user' | 'onSignIn'> {
   leaderboard: LeaderboardEntry[] | null;
+  fetchedAt: Date | null;
 }
 
 const RankIcon = ({ rank }: { rank: number }) => {
@@ -20,7 +21,7 @@ const RankIcon = ({ rank }: { rank: number }) => {
   return <Badge variant="outline" color="muted" size="sm">{rank + 1}</Badge>;
 };
 
-export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabProps) {
+export function LeaderboardTab({ user, onSignIn, leaderboard, fetchedAt }: LeaderboardTabProps) {
   const { t, merge } = useLanguage();
   const { language } = useLanguage();
   const [scoreTab, setScoreTab] = useState<ScoreTab>('daily');
@@ -37,13 +38,10 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
   const meInTop20 = myRank === -1 || myRank < 20;
   const sorted = meInTop20 ? top20 : [...top20.slice(0, 19), allSorted[myRank]];
 
-  const nextUpdateStr = (() => {
-    const d = new Date();
-    d.setMinutes(5, 0, 0);
-    if (d.getTime() <= Date.now()) d.setHours(d.getHours() + 1);
-    const localeMap: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', ar: 'ar-SA', fr: 'fr-FR' };
-    return d.toLocaleTimeString(localeMap[language] ?? 'en-GB', { hour: '2-digit', minute: '2-digit' });
-  })();
+  const localeMap: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', ar: 'ar-SA', fr: 'fr-FR' };
+  const fetchedAtStr = fetchedAt
+    ? fetchedAt.toLocaleTimeString(localeMap[language] ?? 'en-GB', { hour: '2-digit', minute: '2-digit' })
+    : null;
 
   const tabLabel = (tab: ScoreTab) => ({
     daily: t.leaderboard.today,
@@ -97,9 +95,14 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
           })}
         </div>
       )}
-      <p class="mt-4 m-0 text-xs text-text-muted text-center">
-        {merge(t.leaderboard.updateNote, { time: nextUpdateStr })}
-      </p>
+      <div class="mt-4 flex flex-col items-center gap-1">
+        <p class="m-0 text-xs text-text-muted text-center">{t.leaderboard.updateNote}</p>
+        {fetchedAtStr && (
+          <p class="m-0 text-xs text-text-muted text-center">
+            {merge(t.leaderboard.lastFetched, { time: fetchedAtStr })}
+          </p>
+        )}
+      </div>
     </div>
   );
 

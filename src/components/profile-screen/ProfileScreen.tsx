@@ -22,7 +22,8 @@ interface ProfileScreenProps {
 const SYNC_COOLDOWN_MS = 15 * 60 * 1000;
 const LAST_SYNC_KEY = 'woorden_last_sync';
 const LEADERBOARD_CACHE_KEY = 'woorden_leaderboard_cache';
-const LEADERBOARD_CACHE_TS_KEY = 'woorden_leaderboard_ts';
+const LEADERBOARD_SERVER_UPDATED_AT_KEY = 'woorden_leaderboard_server_updated_at';
+const LEADERBOARD_FETCHED_AT_KEY = 'woorden_leaderboard_fetched_at';
 
 export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataImported }: ProfileScreenProps) {
   const { t } = useLanguage();
@@ -34,6 +35,10 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
   const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved' | 'error' | 'conflict'>('idle');
   const [syncState, setSyncState] = useState<SyncState>({ state: 'idle', cooldown: 0, lastSync: null });
   const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[] | null>(null);
+  const [leaderboardFetchedAt, setLeaderboardFetchedAt] = useState<Date | null>(() => {
+    const stored = localStorage.getItem(LEADERBOARD_FETCHED_AT_KEY);
+    return stored ? new Date(Number(stored)) : null;
+  });
 
   const leaderboardFetched = useRef(false);
   const leaderboardTabOpened = useRef(false);
@@ -85,24 +90,35 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
     leaderboardFetched.current = true;
 
     const cached = localStorage.getItem(LEADERBOARD_CACHE_KEY);
-    const cachedTs = Number(localStorage.getItem(LEADERBOARD_CACHE_TS_KEY) ?? 0);
-    const now = Date.now();
-    const nextUpdate = (() => {
-      const d = new Date();
-      d.setMinutes(5, 0, 0);
-      if (d.getTime() <= now) d.setHours(d.getHours() + 1);
-      return d.getTime();
+    const serverUpdatedAt = localStorage.getItem(LEADERBOARD_SERVER_UPDATED_AT_KEY);
+
+    // Cache geçerli mi? sunucunun son güncelleme saati (UTC) ile şu anki UTC saati aynıysa
+    // ve dakika >= 5'ten önce fetch edilmişse — bu saatin verisine sahibiz demektir.
+    const cacheIsValid = (() => {
+      if (!cached || !serverUpdatedAt) return false;
+      const serverHourUTC = new Date(serverUpdatedAt).getUTCHours();
+      const nowUTC = new Date();
+      const nowHourUTC = nowUTC.getUTCHours();
+      const nowMinUTC = nowUTC.getUTCMinutes();
+      // Sunucu bu saat güncellendiyse ve biz de bu saat >= 5. dakikada fetch ettik → geçerli
+      return serverHourUTC === nowHourUTC && nowMinUTC >= 5;
     })();
 
-    if (cached && cachedTs > 0 && now < nextUpdate) {
-      try { setLeaderboard(JSON.parse(cached)); return; } catch { /* fall through */ }
+    if (cacheIsValid) {
+      try { setLeaderboard(JSON.parse(cached!)); return; } catch { /* fall through */ }
     }
 
-    fetchLeaderboard().then((data) => {
-      setLeaderboard(data);
-      localStorage.setItem(LEADERBOARD_CACHE_KEY, JSON.stringify(data));
-      localStorage.setItem(LEADERBOARD_CACHE_TS_KEY, String(Date.now()));
-    }).catch(() => setLeaderboard([]));
+    fetchLeaderboard().then(({ entries, serverUpdatedAt: sat }) => {
+      const now = Date.now();
+      setLeaderboard(entries);
+      setLeaderboardFetchedAt(new Date(now));
+      localStorage.setItem(LEADERBOARD_CACHE_KEY, JSON.stringify(entries));
+      localStorage.setItem(LEADERBOARD_SERVER_UPDATED_AT_KEY, sat);
+      localStorage.setItem(LEADERBOARD_FETCHED_AT_KEY, String(now));
+    }).catch(() => {
+      // Fetch başarısız: serverUpdatedAt güncellenmez → bir sonraki açılışta tekrar dener
+      setLeaderboard([]);
+    });
   };
 
   useEffect(() => {
@@ -179,7 +195,7 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
 
       <div class="flex-1 overflow-y-auto p-6">
         {activeTab === 'leaderboard' && (
-          <LeaderboardTab user={user} onSignIn={onSignIn} leaderboard={leaderboard} />
+          <LeaderboardTab user={user} onSignIn={onSignIn} leaderboard={leaderboard} fetchedAt={leaderboardFetchedAt} />
         )}
 
         {activeTab === 'profile' && (
