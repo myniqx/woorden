@@ -68,9 +68,9 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
   };
 
   return (
-    <div class="flex-1 flex flex-col gap-[var(--spacing-md)] py-[var(--spacing-lg)] fade-in">
+    <div class="flex-1 flex flex-col gap-4 py-6 fade-in">
       <button
-        class="flex items-center gap-[var(--spacing-md)] px-[var(--spacing-lg)] py-[var(--spacing-md)] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-lg)] cursor-pointer text-left text-[var(--color-primary)] transition-all duration-[var(--transition-normal)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primary-light)]"
+        class="flex items-center gap-4 px-6 py-4 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-lg)] cursor-pointer text-left text-[var(--color-primary)] transition-all duration-[var(--transition-normal)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primary-light)]"
         onClick={() => setShowWordPool(true)}
       >
         <Layers size={20} />
@@ -79,7 +79,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
           <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)]">
             {merge(t.wordPool.desc, { count: selectedCount })}
           </span>
-          <div class="flex flex-wrap gap-[var(--spacing-xs)] mt-[var(--spacing-xs)]">
+          <div class="flex flex-wrap gap-1 mt-1">
             {levelBadges.map(({ level, selected, total }) => {
               const muted = selected === 0;
               return (
@@ -93,7 +93,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
         </div>
       </button>
 
-      <div class="flex flex-col gap-[var(--spacing-md)]">
+      <div class="flex flex-col gap-4">
         {quizTypes.map(({ type, icon: Icon, color }) => {
           const canHavePin = canPinInQuizType(type);
           const pinCount = canHavePin ? getPinnedWordCount(type) : 0;
@@ -101,9 +101,9 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
           const pinsNeeded = MIN_PINS_FOR_QUIZ - pinCount;
 
           return (
-            <div key={type} class="flex flex-col gap-[var(--spacing-xs)]">
+            <div key={type} class="flex flex-col gap-1">
               <button
-                class="group flex items-center gap-[var(--spacing-lg)] p-[var(--spacing-lg)] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-xl)] cursor-pointer text-left transition-all duration-[var(--transition-normal)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 active:translate-y-0"
+                class="group flex items-center gap-6 p-6 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-xl)] cursor-pointer text-left transition-all duration-[var(--transition-normal)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 active:translate-y-0"
                 style={{ '--card-color': color } as any}
                 onClick={() => onStartQuiz(type, 'normal')}
               >
@@ -111,14 +111,14 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
                   <Icon size={32} />
                 </div>
                 <div class="flex-1 min-w-0">
-                  <h2 class="text-[length:var(--text-lg)] font-semibold text-[var(--color-text-primary)] mb-[var(--spacing-xs)]">{quizTitle(t, type)}</h2>
+                  <h2 class="text-[length:var(--text-lg)] font-semibold text-[var(--color-text-primary)] mb-1">{quizTitle(t, type)}</h2>
                   <p class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] leading-snug">{quizDesc(t, type)}</p>
                 </div>
               </button>
 
               {canHavePin && (
                 <button
-                  class={`flex items-center gap-[var(--spacing-sm)] px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-sm)_var(--radius-sm)_var(--radius-xl)_var(--radius-xl)] cursor-pointer text-left text-[var(--card-color,var(--color-primary))] transition-all duration-[var(--transition-normal)] hover:not-disabled:border-[var(--card-color,var(--color-primary))] hover:not-disabled:bg-[var(--color-surface-elevated)] disabled:opacity-60 disabled:cursor-not-allowed disabled:text-[var(--color-text-secondary)]`}
+                  class={`flex items-center gap-2 px-4 py-2 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-sm)_var(--radius-sm)_var(--radius-xl)_var(--radius-xl)] cursor-pointer text-left text-[var(--card-color,var(--color-primary))] transition-all duration-[var(--transition-normal)] hover:not-disabled:border-[var(--card-color,var(--color-primary))] hover:not-disabled:bg-[var(--color-surface-elevated)] disabled:opacity-60 disabled:cursor-not-allowed disabled:text-[var(--color-text-secondary)]`}
                   onClick={() => canStartPinnedQuiz && onStartQuiz(type, 'pinned')}
                   disabled={!canStartPinnedQuiz}
                   style={{ '--card-color': color } as any}
@@ -142,7 +142,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
       <SupportButton />
 
       <button
-        class={`flex items-center justify-center gap-[var(--spacing-xs)] w-full px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-none border rounded-[var(--radius-md)] text-[length:var(--text-sm)] cursor-pointer transition-[color,border-color] duration-[var(--transition-fast)] ${hasNewChangelog ? 'border-[var(--color-primary)] text-[var(--color-primary)] changelog-glow' : 'border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)] hover:border-[var(--color-text-muted)]'}`}
+        class={`flex items-center justify-center gap-1 w-full px-4 py-2 bg-none border rounded-[var(--radius-md)] text-[length:var(--text-sm)] cursor-pointer transition-[color,border-color] duration-[var(--transition-fast)] ${hasNewChangelog ? 'border-[var(--color-primary)] text-[var(--color-primary)] changelog-glow' : 'border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)] hover:border-[var(--color-text-muted)]'}`}
         onClick={onOpenChangelog}
       >
         <span>Changelog</span>

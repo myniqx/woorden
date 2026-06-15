@@ -196,7 +196,7 @@ export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: 
   };
 
   return (
-    <div class="flex-1 flex flex-col gap-[var(--spacing-lg)] py-[var(--spacing-md)] fade-in">
+    <div class="flex-1 flex flex-col gap-6 py-4 fade-in">
       <QuizCard
         wordType={wordTypeLabel[quiz.word.type] ?? quiz.word.type}
         questionText={quiz.question.text}

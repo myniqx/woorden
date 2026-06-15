@@ -261,7 +261,7 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
       : 'border-[var(--color-error)] bg-[var(--color-error-light)]';
 
   return (
-    <div class="flex-1 flex flex-col gap-(--spacing-lg) py-(--spacing-md) fade-in">
+    <div class="flex-1 flex flex-col gap-6 py-4 fade-in">
       <QuizCard
         wordType={wordTypeLabel[quiz.wordType] ?? quiz.wordType}
         questionText={quiz.questionText}
@@ -275,7 +275,7 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
         <input
           ref={inputRef}
           type="text"
-          class={`w-full px-(--spacing-lg) py-(--spacing-md) text-(length:--text-lg) border-2 rounded-lg bg-(--color-surface) text-text-primary text-center outline-none transition-all duration-(--transition-fast) ${inputStateClass}`}
+          class={`w-full px-6 py-4 text-(length:--text-lg) border-2 rounded-lg bg-(--color-surface) text-text-primary text-center outline-none transition-all duration-(--transition-fast) ${inputStateClass}`}
           value={inputValue}
           onInput={(e) => setInputValue((e.target as HTMLInputElement).value)}
           disabled={showResult}

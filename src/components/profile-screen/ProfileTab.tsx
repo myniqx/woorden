@@ -5,9 +5,9 @@ import { Button } from '../commons';
 import type { ProfileSharedProps, SyncState } from './types';
 import { useLanguage } from '@/hooks';
 
-const sectionH3 = 'flex items-center gap-[var(--spacing-xs)] m-0 mb-[var(--spacing-md)] text-[length:var(--text-xs)] font-semibold text-[var(--color-text-secondary)] uppercase tracking-[0.05em]';
-const sectionList = 'flex flex-col gap-[var(--spacing-xl)]';
-const actionDesc = 'm-0 mb-[var(--spacing-sm)] text-[length:var(--text-sm)] text-[var(--color-text-secondary)] leading-relaxed';
+const sectionH3 = 'flex items-center gap-1 m-0 mb-4 text-[length:var(--text-xs)] font-semibold text-[var(--color-text-secondary)] uppercase tracking-[0.05em]';
+const sectionList = 'flex flex-col gap-8';
+const actionDesc = 'm-0 mb-2 text-[length:var(--text-sm)] text-[var(--color-text-secondary)] leading-relaxed';
 
 function Section({ children }: { children: ComponentChildren }) {
   return <section class="profile-section">{children}</section>;
@@ -62,8 +62,8 @@ export function ProfileTab({
       <div class={sectionList}>
         <Section>
           <h3 class={sectionH3}><User size={16} />{t.profileScreen.profile.account}</h3>
-          <div class="flex flex-col gap-[var(--spacing-md)]">
-            <ul class="m-0 pl-[var(--spacing-md)] flex flex-col gap-[var(--spacing-xs)] text-[var(--color-text-secondary)] text-[length:var(--text-sm)] leading-relaxed">
+          <div class="flex flex-col gap-4">
+            <ul class="m-0 pl-4 flex flex-col gap-1 text-[var(--color-text-secondary)] text-[length:var(--text-sm)] leading-relaxed">
               <li>{t.profileScreen.profile.signinReason1}</li>
               <li>{t.profileScreen.profile.signinReason2}</li>
             </ul>
@@ -79,16 +79,16 @@ export function ProfileTab({
   const saveColor = saveState === 'error' || saveState === 'conflict' ? 'danger' : 'primary';
   const syncColor = state === 'error' ? 'danger' : 'default';
 
-  const inputBase = 'w-full px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-bg)] border border-[var(--color-border)] rounded-[var(--radius-md)] text-[var(--color-text-primary)] text-[length:var(--text-sm)] transition-[border-color] duration-[var(--transition-fast)] outline-none focus:border-[var(--color-primary)] placeholder:text-[var(--color-text-muted)] box-border';
+  const inputBase = 'w-full px-4 py-2 bg-[var(--color-bg)] border border-[var(--color-border)] rounded-[var(--radius-md)] text-[var(--color-text-primary)] text-[length:var(--text-sm)] transition-[border-color] duration-[var(--transition-fast)] outline-none focus:border-[var(--color-primary)] placeholder:text-[var(--color-text-muted)] box-border';
 
   return (
     <div class={sectionList}>
       <Section>
-        <div class="flex items-center gap-[var(--spacing-md)]">
+        <div class="flex items-center gap-4">
           <div class="shrink-0 w-[72px] h-[72px] rounded-full bg-[var(--color-bg)] border-2 border-[var(--color-border)] flex items-center justify-center overflow-hidden">
             <Avatar index={avatarIndex} size={72} />
           </div>
-          <div class="flex flex-col gap-[var(--spacing-xs)] min-w-0">
+          <div class="flex flex-col gap-1 min-w-0">
             <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] truncate">{user.email}</span>
             <Button variant="outline" size="sm" onClick={onAvatarPickerToggle}>
               {showAvatarPicker ? t.common.close : t.common.change}
@@ -96,7 +96,7 @@ export function ProfileTab({
           </div>
         </div>
         {showAvatarPicker && (
-          <div class="mt-[var(--spacing-md)]">
+          <div class="mt-4">
             <AvatarPicker selectedIndex={avatarIndex} onSelect={onAvatarSelect} />
           </div>
         )}
@@ -104,7 +104,7 @@ export function ProfileTab({
 
       <Section>
         <h3 class={sectionH3}>{t.profileScreen.profile.username}</h3>
-        <div class="flex gap-[var(--spacing-sm)] items-center">
+        <div class="flex gap-2 items-center">
           <input
             class={`${inputBase} flex-1 ${saveState === 'conflict' ? 'border-[var(--color-error)] focus:border-[var(--color-error)]' : ''}`}
             type="text"
@@ -117,7 +117,7 @@ export function ProfileTab({
           <Button variant="ghost" size="sm" icon={Shuffle} onClick={onRandomUsername} title="Rastgele kullanıcı adı üret" />
         </div>
         {saveState === 'conflict' && (
-          <p class="mt-[var(--spacing-xs)] m-0 text-[length:var(--text-xs)] text-[var(--color-error)]">{t.profileScreen.profile.usernameTaken}</p>
+          <p class="mt-1 m-0 text-[length:var(--text-xs)] text-[var(--color-error)]">{t.profileScreen.profile.usernameTaken}</p>
         )}
       </Section>
 
@@ -131,13 +131,13 @@ export function ProfileTab({
       </Section>
 
       {lastSync && (
-        <p class="m-0 mb-[var(--spacing-md)] text-[length:var(--text-xs)] text-[var(--color-text-muted)]">
+        <p class="m-0 mb-4 text-[length:var(--text-xs)] text-[var(--color-text-muted)]">
           {merge(t.profileScreen.profile.lastSync, { date: new Date(lastSync).toLocaleString() })}
         </p>
       )}
 
       {cooldown > 0 && (
-        <p class="m-0 mb-[var(--spacing-md)] text-[length:var(--text-xs)] text-[var(--color-text-muted)] tabular-nums">
+        <p class="m-0 mb-4 text-[length:var(--text-xs)] text-[var(--color-text-muted)] tabular-nums">
           {merge(t.profileScreen.profile.nextAction, { time: `${Math.floor(cooldown / 60)}:${String(cooldown % 60).padStart(2, '0')}` })}
         </p>
       )}

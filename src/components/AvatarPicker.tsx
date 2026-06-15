@@ -60,7 +60,7 @@ interface AvatarPickerProps {
 
 export function AvatarPicker({ selectedIndex, onSelect }: AvatarPickerProps) {
   return (
-    <div class="flex flex-wrap gap-[var(--spacing-sm)]">
+    <div class="flex flex-wrap gap-2">
       {AVATAR_COORDS.map((_, i) => (
         <button
           key={i}

@@ -238,7 +238,7 @@ rounded-sm   rounded-md   rounded-lg   rounded-xl   rounded-full
 
 **Spacing / transition / shadow → NO alias, use CSS variable shorthand:**
 ```tsx
-px-(--spacing-md)          py-(--spacing-sm)        gap-(--spacing-xs)
+px-4          py-2        gap-1
 duration-(--transition-fast)                         duration-(--transition-normal)
 shadow-(--shadow-sm)
 ```
@@ -246,10 +246,10 @@ shadow-(--shadow-sm)
 **Never use `[var(--...)]` bracket syntax:**
 ```tsx
 // WRONG
-<div class="bg-[var(--color-primary)] text-[length:var(--text-sm)] px-[var(--spacing-md)]">
+<div class="bg-[var(--color-primary)] text-[length:var(--text-sm)] px-4">
 
 // CORRECT
-<div class="bg-primary text-sm px-(--spacing-md)">
+<div class="bg-primary text-sm px-4">
 ```
 
 ### Common Mistakes to Avoid
@@ -498,7 +498,7 @@ Export from: `src/components/commons/index.ts`
 
 Rules:
 - **All styles in Tailwind** — no separate CSS file
-- Use Tailwind aliases for theme tokens: `bg-primary`, `text-sm`, `rounded-md`; shorthand for spacing: `px-(--spacing-md)`
+- Use Tailwind aliases for theme tokens: `bg-primary`, `text-sm`, `rounded-md`; shorthand for spacing: `px-4`
 - Build variant maps as `Record<Variant, Record<Color, string>>` — never use conditionals for style selection
 - Always accept `class?: string` prop for one-off overrides
 - Accept `icon?: LucideIcon` and `iconRight?: LucideIcon` for icon slots
@@ -512,9 +512,9 @@ const variantColor: Record<Variant, Record<Color, string>> = {
 };
 
 const sizeMap: Record<Size, string> = {
-  sm:   'text-xs px-(--spacing-sm) ...',
-  md:   'text-sm px-(--spacing-md) ...',
-  icon: 'p-(--spacing-sm) aspect-square',
+  sm:   'text-xs px-2 ...',
+  md:   'text-sm px-4 ...',
+  icon: 'p-2 aspect-square',
 };
 ```
 

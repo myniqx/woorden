@@ -59,11 +59,11 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
 
   const listContent = (
     <div>
-      <div class="flex gap-(--spacing-xs) mb-(--spacing-md)">
+      <div class="flex gap-1 mb-4">
         {(['daily', 'last7', 'last30'] as const).map((tab) => (
           <button
             key={tab}
-            class={`flex-1 px-(--spacing-sm) py-(--spacing-xs) border rounded-md text-(length:--text-xs) font-medium cursor-pointer transition-[border-color,background,color] duration-(--transition-fast) ${scoreTab === tab ? 'bg-primary-light border-primary text-primary' : 'bg-bg border-border text-text-secondary'}`}
+            class={`flex-1 px-2 py-1 border rounded-md text-(length:--text-xs) font-medium cursor-pointer transition-[border-color,background,color] duration-(--transition-fast) ${scoreTab === tab ? 'bg-primary-light border-primary text-primary' : 'bg-bg border-border text-text-secondary'}`}
             onClick={() => setScoreTab(tab)}
           >
             {tabLabel(tab)}
@@ -72,11 +72,11 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
       </div>
 
       {leaderboard === null ? (
-        <p class="text-center py-(--spacing-xl) text-text-muted text-(length:--text-sm)">{t.leaderboard.loading}</p>
+        <p class="text-center py-8 text-text-muted text-(length:--text-sm)">{t.leaderboard.loading}</p>
       ) : sorted.length === 0 ? (
-        <p class="text-center py-(--spacing-xl) text-text-muted text-(length:--text-sm)">{t.leaderboard.empty}</p>
+        <p class="text-center py-8 text-text-muted text-(length:--text-sm)">{t.leaderboard.empty}</p>
       ) : (
-        <div class="flex flex-col gap-(--spacing-xs)">
+        <div class="flex flex-col gap-1">
           {sorted.map((entry, i) => {
             const realRank = allSorted.findIndex((e) => e.username === entry.username);
             const score = entry[scoreKey];
@@ -84,7 +84,7 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
             const pct = score > 0 ? Math.round((correct / score) * 100) : 0;
             const isMe = entry.username === myUsername;
             return (
-              <div key={entry.username} class={`flex items-center gap-(--spacing-sm) px-(--spacing-md) py-(--spacing-sm) bg-(--color-surface-elevated) rounded-md ${rowAccent[realRank] ?? ''}`}>
+              <div key={entry.username} class={`flex items-center gap-2 px-4 py-2 bg-(--color-surface-elevated) rounded-md ${rowAccent[realRank] ?? ''}`}>
                 <span class="w-6 flex items-center justify-center shrink-0"><RankIcon rank={realRank} /></span>
                 <span class="shrink-0"><Avatar index={entry.avatarIndex} size={i < 3 ? 36 : 30} /></span>
                 <span class={`flex-1 text-(length:--text-sm) font-medium truncate ${isMe ? 'text-primary' : 'text-text-primary'}`}>{entry.username}</span>
@@ -97,7 +97,7 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
           })}
         </div>
       )}
-      <p class="mt-(--spacing-md) m-0 text-(length:--text-xs) text-text-muted text-center">
+      <p class="mt-4 m-0 text-(length:--text-xs) text-text-muted text-center">
         {merge(t.leaderboard.updateNote, { time: nextUpdateStr })}
       </p>
     </div>
@@ -107,7 +107,7 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
     return (
       <div class="relative min-h-80">
         <div class="blur-xs pointer-events-none select-none">{listContent}</div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center gap-(--spacing-lg) px-(--spacing-xl)">
+        <div class="absolute inset-0 flex flex-col items-center justify-center gap-6 px-8">
           <p class="m-0 text-(length:--text-sm) text-text-secondary text-center">{t.leaderboard.gateText}</p>
           <Button variant="soft" color="primary" icon={LogIn} onClick={onSignIn}>
             {t.leaderboard.signInGoogle}

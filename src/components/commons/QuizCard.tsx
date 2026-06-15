@@ -16,7 +16,7 @@ interface QuizCardProps {
 }
 
 const actionBtnBase =
-  'flex items-center justify-center p-[var(--spacing-xs)] bg-transparent border border-[var(--color-border)] rounded-[var(--radius-sm)] cursor-pointer text-[var(--color-text-secondary)] transition-all duration-[var(--transition-fast)] hover:bg-[var(--color-surface-elevated)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]';
+  'flex items-center justify-center p-1 bg-transparent border border-[var(--color-border)] rounded-[var(--radius-sm)] cursor-pointer text-[var(--color-text-secondary)] transition-all duration-[var(--transition-fast)] hover:bg-[var(--color-surface-elevated)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]';
 
 export function QuizCard({
   wordType,
@@ -32,12 +32,12 @@ export function QuizCard({
 }: QuizCardProps) {
   return (
     <div class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-xl)] overflow-hidden">
-      <div class="relative px-[var(--spacing-xl)] pt-[var(--spacing-xl)] pb-[var(--spacing-xl)] text-center border-b border-[var(--color-border)]">
-        <span class="absolute top-[var(--spacing-sm)] left-[var(--spacing-sm)] px-[var(--spacing-sm)] py-[var(--spacing-xs)] bg-[var(--color-primary-light)] text-[var(--color-primary)] text-[length:var(--text-xs)] font-semibold uppercase tracking-[0.5px] rounded-[var(--radius-sm)]">
+      <div class="relative px-8 pt-8 pb-8 text-center border-b border-[var(--color-border)]">
+        <span class="absolute top-2 left-2 px-2 py-1 bg-[var(--color-primary-light)] text-[var(--color-primary)] text-[length:var(--text-xs)] font-semibold uppercase tracking-[0.5px] rounded-[var(--radius-sm)]">
           {wordType}
         </span>
 
-        <div class="absolute top-[var(--spacing-sm)] right-[var(--spacing-sm)] flex gap-[var(--spacing-xs)]">
+        <div class="absolute top-2 right-2 flex gap-1">
           {canPin && (
             <button
               class={`${actionBtnBase} ${pinned ? 'bg-[var(--color-primary)] border-[var(--color-primary)] text-white hover:bg-[var(--color-primary-hover)] hover:border-[var(--color-primary-hover)] hover:text-white' : ''}`}
@@ -52,7 +52,7 @@ export function QuizCard({
           )}
         </div>
 
-        <p class="text-[length:var(--text-2xl)] font-semibold text-[var(--color-text-primary)] mb-[var(--spacing-sm)]">
+        <p class="text-[length:var(--text-2xl)] font-semibold text-[var(--color-text-primary)] mb-2">
           {questionText}
         </p>
         {subtext && (
@@ -61,7 +61,7 @@ export function QuizCard({
         {below}
       </div>
 
-      <div class="flex flex-col gap-[var(--spacing-sm)] p-[var(--spacing-md)]">
+      <div class="flex flex-col gap-2 p-4">
         {children}
       </div>
     </div>

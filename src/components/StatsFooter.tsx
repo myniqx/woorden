@@ -81,10 +81,10 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
       <footer class="bg-[var(--color-surface)] border-t border-[var(--color-border)] sticky bottom-0 z-[100]">
         <div class="flex items-center">
           <button
-            class="flex-1 flex items-center justify-between px-[var(--spacing-lg)] py-[var(--spacing-md)] bg-transparent border-none cursor-pointer text-[var(--color-text-primary)] hover:bg-[var(--color-primary-light)]"
+            class="flex-1 flex items-center justify-between px-6 py-4 bg-transparent border-none cursor-pointer text-[var(--color-text-primary)] hover:bg-[var(--color-primary-light)]"
             onClick={() => setExpanded(!expanded)}
           >
-            <div class="flex items-center gap-[var(--spacing-sm)]">
+            <div class="flex items-center gap-2">
               <Badge variant="soft" color="surface" size="sm" icon={BarChart3}>
                 {stats.seen} / {stats.total} ({progressPercent}%)
               </Badge>
@@ -102,7 +102,7 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
             <Button
               variant="solid" color="success" icon={RefreshCw} size="sm"
               onClick={onUpdate} title={t.stats.updateAvailable}
-              class="mr-[var(--spacing-md)] pulse-glow"
+              class="mr-4 pulse-glow"
             >
               {t.common.update}
             </Button>
@@ -110,8 +110,8 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
         </div>
 
         {expanded && (
-          <div class="px-[var(--spacing-lg)] pb-[var(--spacing-lg)] fade-in">
-            <div class="grid grid-cols-2 gap-[var(--spacing-md)] mb-[var(--spacing-md)]">
+          <div class="px-6 pb-6 fade-in">
+            <div class="grid grid-cols-2 gap-4 mb-4">
               {(
                 [
                   { cat: 'unseen' as Category, icon: Eye, value: stats.unseen },
@@ -122,7 +122,7 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
               ).map(({ cat, icon: Icon, value }) => (
                 <button
                   key={cat}
-                  class="flex items-center gap-[var(--spacing-sm)] p-[var(--spacing-sm)] bg-[var(--color-bg)] rounded-[var(--radius-md)] border-none cursor-pointer text-left transition-all duration-[var(--transition-fast)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-sm)] active:translate-y-0"
+                  class="flex items-center gap-2 p-2 bg-[var(--color-bg)] rounded-[var(--radius-md)] border-none cursor-pointer text-left transition-all duration-[var(--transition-fast)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-sm)] active:translate-y-0"
                   onClick={() => setSelectedCategory(cat)}
                 >
                   <div class={`flex items-center justify-center w-8 h-8 rounded-[var(--radius-md)] ${statIconClass[cat]}`}>

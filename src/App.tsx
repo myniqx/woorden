@@ -21,7 +21,6 @@ import type { AlertAction } from './components/AlertBanner';
 const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
 import type { QuizType, QuizMode, Screen } from './types';
 import './styles/theme.css';
-import './styles/app.css';
 
 export function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -88,7 +87,7 @@ export function App() {
       fetch(`${COUNTER_API}/get/${COUNTER_KEY}`)
         .then(r => r.json())
         .then(data => setVisitorCount(data.value))
-        .catch(() => {});
+        .catch(() => { });
     } else {
       fetch(`${COUNTER_API}/hit/${COUNTER_KEY}`)
         .then(r => r.json())
@@ -96,7 +95,7 @@ export function App() {
           localStorage.setItem('visitor_counted', '1');
           setVisitorCount(data.value);
         })
-        .catch(() => {});
+        .catch(() => { });
     }
   }, []);
 
@@ -120,7 +119,7 @@ export function App() {
   };
 
   const exitQuiz = () => {
-    if (user) pushStats(user).catch(() => {});
+    if (user) pushStats(user).catch(() => { });
     history.back();
   };
 

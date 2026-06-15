@@ -27,13 +27,13 @@ export function WordListModal({ category, words, onClose }: WordListModalProps) 
       <Modal.Header title={`${titles[category]} (${words.length})`} onClose={onClose} />
       <Modal.Body>
         {words.length === 0 ? (
-          <p class="text-center text-[var(--color-text-secondary)] py-[var(--spacing-xl)]">
+          <p class="text-center text-[var(--color-text-secondary)] py-8">
             {t.wordList.emptyCategory}
           </p>
         ) : (
-          <div class="flex flex-col gap-[var(--spacing-xs)]">
+          <div class="flex flex-col gap-1">
             {words.map((word) => (
-              <div key={word.id} class="flex items-center justify-between px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-bg)] rounded-[var(--radius-md)] gap-[var(--spacing-md)]">
+              <div key={word.id} class="flex items-center justify-between px-4 py-2 bg-[var(--color-bg)] rounded-[var(--radius-md)] gap-4">
                 <div class="flex flex-col gap-0.5 min-w-0 flex-1">
                   <span class="font-medium text-[var(--color-text-primary)]">
                     {'article' in word && word.article && (
@@ -43,7 +43,7 @@ export function WordListModal({ category, words, onClose }: WordListModalProps) 
                   </span>
                 </div>
                 {category !== 'unseen' && (
-                  <div class="flex gap-[var(--spacing-sm)] shrink-0">
+                  <div class="flex gap-2 shrink-0">
                     <span class="text-[var(--color-success)] text-[length:var(--text-sm)] font-medium">✓ {word.stats.correct}</span>
                     <span class="text-[var(--color-error)] text-[length:var(--text-sm)] font-medium">✗ {word.stats.wrong}</span>
                   </div>

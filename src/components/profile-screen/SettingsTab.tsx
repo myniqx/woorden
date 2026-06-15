@@ -47,16 +47,16 @@ export function SettingsTab({ visitorCount, onDataImported }: SettingsTabProps) 
     target.value = '';
   };
 
-  const sectionH3 = 'flex items-center gap-[var(--spacing-xs)] m-0 mb-[var(--spacing-md)] text-[length:var(--text-xs)] font-semibold text-[var(--color-text-secondary)] uppercase tracking-[0.05em]';
+  const sectionH3 = 'flex items-center gap-1 m-0 mb-4 text-[length:var(--text-xs)] font-semibold text-[var(--color-text-secondary)] uppercase tracking-[0.05em]';
 
   return (
-    <div class="flex flex-col gap-(--spacing-xl)">
+    <div class="flex flex-col gap-8">
       <section>
         <h3 class={sectionH3}>
           {theme === 'dark' ? <Moon size={16} /> : <Sun size={16} />}
           {t.profileScreen.settings.theme}
         </h3>
-        <div class="flex gap-(--spacing-sm)">
+        <div class="flex gap-2">
           <Button variant={theme === 'light' ? 'soft' : 'outline'} color={theme === 'light' ? 'primary' : 'default'} icon={Sun} fullWidth onClick={() => theme === 'dark' && toggleTheme()}>
             {t.profileScreen.settings.light}
           </Button>
@@ -68,13 +68,13 @@ export function SettingsTab({ visitorCount, onDataImported }: SettingsTabProps) 
 
       <section>
         <h3 class={sectionH3}><Download size={16} />{t.profileScreen.settings.data}</h3>
-        <div class="flex gap-(--spacing-sm)">
+        <div class="flex gap-2">
           <Button variant="outline" icon={Download} fullWidth onClick={handleExport}>{t.common.export}</Button>
           <Button variant="outline" icon={Upload} fullWidth onClick={() => fileInputRef.current?.click()}>{t.common.import}</Button>
         </div>
       </section>
 
-      <div class="flex items-center justify-center gap-1.5 pt-(--spacing-md) border-t border-border text-(length:--text-xs) text-text-muted">
+      <div class="flex items-center justify-center gap-1.5 pt-4 border-t border-border text-(length:--text-xs) text-text-muted">
         <Users size={13} />
         {visitorCount !== null
           ? <span>{visitorCount.toLocaleString()} {visitorCount === 1 ? t.profileScreen.settings.visitor : t.profileScreen.settings.visitors}</span>
@@ -82,7 +82,7 @@ export function SettingsTab({ visitorCount, onDataImported }: SettingsTabProps) 
         }
       </div>
 
-      <div class="flex items-center justify-center gap-(--spacing-sm) pt-(--spacing-sm) text-(length:--text-xs)">
+      <div class="flex items-center justify-center gap-2 pt-2 text-(length:--text-xs)">
         <a class="text-text-muted no-underline hover:text-primary" href="/privacy" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/privacy'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Privacy Policy</a>
         <span class="text-border">·</span>
         <a class="text-text-muted no-underline hover:text-primary" href="/terms" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/terms'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Terms of Service</a>

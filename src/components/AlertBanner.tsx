@@ -56,8 +56,8 @@ export function AlertBanner({ onAction }: AlertBannerProps) {
   };
 
   return (
-    <div class="mx-(--spacing-md) mt-(--spacing-sm) border-l-[3px] border-l-primary rounded-r-sm px-(--spacing-md) py-[var(--spacing-sm)] bg-transparent">
-      <ul class="m-0 p-0 list-none flex flex-col gap-(--spacing-sm)">
+    <div class="mx-4 mt-2 border-l-[3px] border-l-primary rounded-r-sm px-4 py-2 bg-transparent">
+      <ul class="m-0 p-0 list-none flex flex-col gap-2">
         {visible.map((a) => (
           <li key={a.id} class="flex flex-col gap-1">
             <span class="text-(length:--text-sm) text-text-secondary leading-relaxed">
@@ -73,7 +73,7 @@ export function AlertBanner({ onAction }: AlertBannerProps) {
           </li>
         ))}
       </ul>
-      <div class="mt-(--spacing-sm) pt-(--spacing-sm) border-t border-t-border flex justify-start">
+      <div class="mt-2 pt-2 border-t border-t-border flex justify-start">
         <Button variant="outline" color="muted" size="sm" onClick={handleDismiss}>
           {t.common.dismiss}
         </Button>

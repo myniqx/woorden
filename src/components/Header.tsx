@@ -56,22 +56,22 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
     }
   }, [isLevelUp]);
 
-  const headerBtnClass = 'flex items-center justify-center p-[var(--spacing-sm)] bg-transparent border-none rounded-[var(--radius-md)] text-[var(--color-text-secondary)] cursor-pointer transition-all duration-[var(--transition-fast)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary)]';
+  const headerBtnClass = 'flex items-center justify-center p-2 bg-transparent border-none rounded-[var(--radius-md)] text-[var(--color-text-secondary)] cursor-pointer transition-all duration-[var(--transition-fast)] hover:bg-[var(--color-primary-light)] hover:text-[var(--color-primary)]';
 
   return (
-    <header class="flex justify-between items-center px-[var(--spacing-lg)] py-[var(--spacing-md)] bg-[var(--color-surface)] border-b border-[var(--color-border)] sticky top-0 z-[100]">
-      <div class="flex items-center gap-[var(--spacing-sm)]">
+    <header class="flex justify-between items-center px-6 py-4 bg-[var(--color-surface)] border-b border-[var(--color-border)] sticky top-0 z-[100]">
+      <div class="flex items-center gap-2">
         {showBackButton ? (
-          <Button variant="ghost" icon={ChevronLeft} size="icon" onClick={onBack} aria-label="Go back" class="-ml-[var(--spacing-sm)]" />
+          <Button variant="ghost" icon={ChevronLeft} size="icon" onClick={onBack} aria-label="Go back" class="-ml-2" />
         ) : (
-          <div class="flex items-center gap-[var(--spacing-xs)] font-semibold text-[length:var(--text-xl)]">
+          <div class="flex items-center gap-1 font-semibold text-[length:var(--text-xl)]">
             <span class="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-hover)] text-white rounded-[var(--radius-md)] font-bold">W</span>
             <span class="text-[var(--color-text-primary)] hidden sm:inline">oorden</span>
           </div>
         )}
       </div>
 
-      <div class="flex items-center gap-[var(--spacing-md)]">
+      <div class="flex items-center gap-4">
         <div
           class={`flex items-center gap-1.5 py-1 pr-2.5 pl-1 rounded-full font-semibold text-[length:var(--text-sm)] transition-[background-color,color] duration-400 ${levelColor[level] ?? levelColor[1]} ${levelUpAnim ? 'level-up' : ''}`}
           title={`${dailyStats.practiced} / ${goal}`}
@@ -100,17 +100,17 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
         </div>
       </div>
 
-      <div class="flex items-center gap-[var(--spacing-sm)]">
+      <div class="flex items-center gap-2">
         {/* CSS-only dropdown: group hover + focus-within gösterir */}
         <div class="relative group">
-          <button class={`${headerBtnClass} gap-[var(--spacing-xs)]`} aria-label="Select language">
+          <button class={`${headerBtnClass} gap-1`} aria-label="Select language">
             <span class="text-[length:var(--text-lg)]">{currentLang?.flag}</span>
           </button>
-          <div class="absolute top-full right-0 mt-[var(--spacing-xs)] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-lg)] shadow-[var(--shadow-lg)] min-w-[150px] overflow-hidden z-[200] opacity-0 invisible -translate-y-2.5 transition-all duration-[var(--transition-fast)] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0">
+          <div class="absolute top-full right-0 mt-1 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-lg)] shadow-[var(--shadow-lg)] min-w-[150px] overflow-hidden z-[200] opacity-0 invisible -translate-y-2.5 transition-all duration-[var(--transition-fast)] group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0">
             {languages.map(lang => (
               <button
                 key={lang.code}
-                class={`flex items-center gap-[var(--spacing-sm)] w-full px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-transparent border-none text-[var(--color-text-primary)] cursor-pointer text-left transition-colors duration-[var(--transition-fast)] hover:bg-[var(--color-primary-light)] ${lang.code === language ? 'bg-[var(--color-primary-light)] text-[var(--color-primary)]' : ''}`}
+                class={`flex items-center gap-2 w-full px-4 py-2 bg-transparent border-none text-[var(--color-text-primary)] cursor-pointer text-left transition-colors duration-[var(--transition-fast)] hover:bg-[var(--color-primary-light)] ${lang.code === language ? 'bg-[var(--color-primary-light)] text-[var(--color-primary)]' : ''}`}
                 onClick={() => setLanguage(lang.code)}
               >
                 <span class="text-[length:var(--text-lg)]">{lang.flag}</span>

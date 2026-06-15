@@ -84,7 +84,7 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
 
   const totalSelected = getSelectedWordCount();
 
-  const iconBtnClass = 'flex items-center justify-center p-[var(--spacing-xs)] bg-none border-none cursor-pointer text-[var(--color-text-secondary)] rounded-[var(--radius-sm)] transition-all duration-[var(--transition-fast)]';
+  const iconBtnClass = 'flex items-center justify-center p-1 bg-none border-none cursor-pointer text-[var(--color-text-secondary)] rounded-[var(--radius-sm)] transition-all duration-[var(--transition-fast)]';
 
   return (
     <>
@@ -96,12 +96,12 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
           <Button variant="ghost" icon={HelpCircle} size="icon" onClick={() => setShowHelp(true)} aria-label="Help" />
         </Modal.Header>
 
-        <div class="block text-[length:var(--text-sm)] text-[var(--color-text-secondary)] px-[var(--spacing-lg)] py-[var(--spacing-sm)] border-b border-[var(--color-border)]">
+        <div class="block text-[length:var(--text-sm)] text-[var(--color-text-secondary)] px-6 py-2 border-b border-[var(--color-border)]">
           {merge(t.wordPool.desc, { count: totalSelected })}
         </div>
 
         <Modal.Body>
-          <div class="flex flex-col gap-[var(--spacing-sm)]">
+          <div class="flex flex-col gap-2">
             {levels.map(level => {
               const chunkCount = getChunkCount(level);
               const levelWordCount = getLevelWordCount(level);
@@ -110,7 +110,7 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
 
               return (
                 <div key={level}>
-                  <div class="flex items-center gap-[var(--spacing-xs)] p-[var(--spacing-sm)] bg-[var(--color-surface-elevated)] rounded-[var(--radius-md)]">
+                  <div class="flex items-center gap-1 p-2 bg-[var(--color-surface-elevated)] rounded-[var(--radius-md)]">
                     <button
                       class={`${iconBtnClass} hover:bg-[var(--color-border)] hover:text-[var(--color-text-primary)]`}
                       onClick={() => toggleExpand(level)}
@@ -118,7 +118,7 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
                       {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
                     </button>
 
-                    <label class="flex items-center gap-[var(--spacing-sm)] flex-1 cursor-pointer">
+                    <label class="flex items-center gap-2 flex-1 cursor-pointer">
                       <input
                         type="checkbox"
                         class="w-[18px] h-[18px] cursor-pointer accent-[var(--color-primary)]"
@@ -134,13 +134,13 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
                   </div>
 
                   {isExpanded && (
-                    <div class="ml-[calc(var(--spacing-lg)+var(--spacing-md))] mt-[var(--spacing-xs)] flex flex-col gap-[var(--spacing-xs)]">
+                    <div class="ml-[calc(var6+var4)] mt-1 flex flex-col gap-1">
                       {Array.from({ length: chunkCount }, (_, i) => {
                         const wordCount = getChunkWordCount(level, i);
                         const enabled = isChunkEnabled(level, i);
 
                         return (
-                          <label key={i} class="flex items-center gap-[var(--spacing-sm)] px-[var(--spacing-md)] py-[var(--spacing-sm)] cursor-pointer rounded-[var(--radius-sm)] transition-all duration-[var(--transition-fast)] hover:bg-[var(--color-surface-elevated)]">
+                          <label key={i} class="flex items-center gap-2 px-4 py-2 cursor-pointer rounded-[var(--radius-sm)] transition-all duration-[var(--transition-fast)] hover:bg-[var(--color-surface-elevated)]">
                             <input
                               type="checkbox"
                               class="w-[16px] h-[16px] cursor-pointer accent-[var(--color-primary)]"

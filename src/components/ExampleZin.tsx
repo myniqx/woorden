@@ -15,7 +15,7 @@ export function ExampleZin({ word }: Props) {
   if (!tokens) return null;
 
   return (
-    <p class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] italic mt-[var(--spacing-xs)] mb-0 leading-relaxed">
+    <p class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] italic mt-1 mb-0 leading-relaxed">
       {tokens.map((token, i) => (
         <span key={i}>
           {i > 0 ? ' ' : ''}
