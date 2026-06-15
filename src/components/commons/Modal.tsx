@@ -29,10 +29,10 @@ interface ModalBodyProps {
 
 function ModalHeader({ title, onClose, children }: ModalHeaderProps) {
   return (
-    <div class="flex items-center justify-between px-6 py-4 border-b border-[var(--color-border)]">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-border">
       <div class="flex-1 min-w-0">
         {typeof title === 'string'
-          ? <h2 class="m-0 text-[length:var(--text-lg)] font-semibold text-[var(--color-text-primary)]">{title}</h2>
+          ? <h2 class="m-0 text-lg font-semibold text-text-primary">{title}</h2>
           : title}
       </div>
       <div class="flex items-center gap-1">
@@ -61,7 +61,7 @@ export function Modal({ onClose, maxWidth = 'md', children }: ModalProps) {
       class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-[1000]"
       onClick={handleOverlayClick}
     >
-      <div class={`bg-[var(--color-surface)] rounded-[var(--radius-lg)] w-full ${maxWidthMap[maxWidth]} max-h-[80vh] flex flex-col overflow-hidden shadow-[var(--shadow-lg)] scale-in`}>
+      <div class={`bg-surface rounded-lg w-full ${maxWidthMap[maxWidth]} max-h-[80vh] flex flex-col overflow-hidden shadow-lg scale-in`}>
         {children}
       </div>
     </div>

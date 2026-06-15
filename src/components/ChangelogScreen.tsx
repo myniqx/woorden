@@ -20,8 +20,8 @@ export function ChangelogScreen() {
     <div class="flex flex-col min-h-full p-4 max-w-[600px] mx-auto fade-in">
       <div class="flex flex-col gap-6">
         {changelog.map((entry) => (
-          <div key={entry.date} class="border-l-[3px] border-l-[var(--color-primary)] pl-4">
-            <div class="text-[length:var(--text-sm)] font-semibold text-[var(--color-primary)] mb-1">
+          <div key={entry.date} class="border-l-[3px] border-l-primary pl-4">
+            <div class="text-sm font-semibold text-primary mb-1">
               {new Date(entry.date).toLocaleDateString('nl-NL', {
                 day: '2-digit',
                 month: 'long',
@@ -30,7 +30,7 @@ export function ChangelogScreen() {
             </div>
             <ul class="m-0 p-0 list-none flex flex-col gap-1">
               {entry.items.map((item, i) => (
-                <li key={i} class="relative text-[length:var(--text-sm)] text-[var(--color-text-secondary)] pl-2 before:content-['–'] before:absolute before:left-0 before:text-[var(--color-text-muted)]">
+                <li key={i} class="relative text-sm text-text-secondary pl-2 before:content-['–'] before:absolute before:left-0 before:text-text-muted">
                   {item}
                 </li>
               ))}

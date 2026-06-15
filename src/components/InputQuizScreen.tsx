@@ -97,7 +97,6 @@ Si votre réponse est **correcte**, vous passez automatiquement. Appuyez sur **"
 interface InputQuizScreenProps {
   quizType: QuizType;
   quizMode?: QuizMode;
-  onExit: () => void;
   onAnswer?: () => void;
 }
 
@@ -111,13 +110,12 @@ interface QuizState {
   imperfectum?: string;
 }
 
-export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: InputQuizScreenProps) {
+export function InputQuizScreen({ quizType, quizMode = 'normal', onAnswer }: InputQuizScreenProps) {
   const { language, t, merge } = useLanguage();
   const [quiz, setQuiz] = useState<QuizState | null>(null);
   const [inputValue, setInputValue] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-  const [skipped, setSkipped] = useState(false);
   const [pinned, setPinned] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -187,8 +185,6 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
     setInputValue('');
     setShowResult(false);
     setIsCorrect(false);
-    setSkipped(false);
-
     if (canPinInQuizType(quizType)) {
       setPinned(isPinned(quizType, word.nl));
     }
@@ -222,7 +218,6 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
   const handleSkip = () => {
     if (!quiz || showResult) return;
 
-    setSkipped(true);
     setIsCorrect(false);
     setShowResult(true);
 
@@ -255,10 +250,10 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
   };
 
   const inputStateClass = !showResult
-    ? 'border-[var(--color-border)] focus:border-[var(--color-primary)] focus:shadow-[0_0_0_3px_var(--color-primary-light)]'
+    ? 'border-border focus:border-primary focus:shadow-[0_0_0_3px_var(--color-primary-light)]'
     : isCorrect
-      ? 'border-[var(--color-success)] bg-[var(--color-success-light)]'
-      : 'border-[var(--color-error)] bg-[var(--color-error-light)]';
+      ? 'border-success bg-success-light'
+      : 'border-error bg-error-light';
 
   return (
     <div class="flex-1 flex flex-col gap-6 py-4 fade-in">
@@ -275,14 +270,14 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
         <input
           ref={inputRef}
           type="text"
-          class={`w-full px-6 py-4 text-(length:--text-lg) border-2 rounded-lg bg-(--color-surface) text-text-primary text-center outline-none transition-all duration-(--transition-fast) ${inputStateClass}`}
+          class={`w-full px-6 py-4 text-lg border-2 rounded-lg bg-(--color-surface) text-text-primary text-center outline-none transition-all duration-(--transition-fast) ${inputStateClass}`}
           value={inputValue}
           onInput={(e) => setInputValue((e.target as HTMLInputElement).value)}
           disabled={showResult}
           autoComplete="off"
           autoCapitalize="off"
           autoCorrect="off"
-          spellCheck={false}
+          spellcheck={false}
         />
         {!showResult && (
           <Button variant="soft" color="default" onClick={handleSkip} class="self-center">

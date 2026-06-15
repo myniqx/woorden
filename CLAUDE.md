@@ -163,7 +163,7 @@ npm run preview  # Preview production build
 - Components: PascalCase `.tsx` — **no separate CSS files**, all styling via Tailwind
 - Services: camelCase functions, no classes
 - Types: PascalCase interfaces, camelCase type aliases
-- Styling: Tailwind v4 canonical syntax; theme tokens via CSS variable shorthand (e.g. `bg-(--color-primary)`, `text-(length:--text-sm)`)
+- Styling: Tailwind v4 canonical syntax; use direct aliases for color/radius/text tokens (e.g. `bg-primary`, `text-sm`, `rounded-md`); CSS variable shorthand only for transition/shadow (e.g. `duration-(--transition-fast)`, `shadow-(--shadow-md)`)
 - No emojis in code/UI unless explicitly requested
 
 ## Theme Tokens (IMPORTANT)
@@ -195,9 +195,6 @@ All styling uses Tailwind with CSS variable references from `src/styles/theme.cs
 --color-error           /* Error red */
 --color-error-light     /* Error background */
 
-/* Spacing */
---spacing-xs, --spacing-sm, --spacing-md, --spacing-lg, --spacing-xl
-
 /* Typography */
 --text-xs, --text-sm, --text-base, --text-lg, --text-xl, --text-2xl
 
@@ -219,37 +216,48 @@ direct aliases. Use them — never write `var(--...)` wrappers in class strings.
 **Color tokens → direct alias:**
 ```
 bg-primary        bg-primary-light    bg-primary-hover
-bg-surface        bg-bg               bg-border
-bg-success-light  bg-error-light
-text-primary      text-text-primary   text-text-secondary   text-text-muted
-text-success      text-error
-border-border     border-primary
+bg-surface        bg-surface-elevated bg-bg               bg-border
+bg-success-light  bg-error-light      bg-text-muted
+text-primary      text-text-primary   text-text-secondary  text-text-muted
+text-success      text-error          text-surface
+border-border     border-primary      border-primary-hover
+from-primary      to-primary-hover
+accent-primary
 ```
 
-**Text size tokens → Tailwind's own scale (values are identical):**
+**Text size tokens → direct alias:**
 ```
-text-xs   text-sm   text-base   text-lg   text-xl   text-2xl
+text-xs   text-sm   text-base   text-lg   text-xl   text-2xl   text-3xl
 ```
 
-**Radius tokens → Tailwind's own scale (values are identical):**
+**Radius tokens → direct alias:**
 ```
 rounded-sm   rounded-md   rounded-lg   rounded-xl   rounded-full
 ```
 
-**Spacing / transition / shadow → NO alias, use CSS variable shorthand:**
+**Gradient direction:**
+```
+bg-linear-to-r   bg-linear-to-br   (NOT bg-gradient-to-*)
+```
+
+**Transition / shadow → NO alias, use CSS variable shorthand:**
 ```tsx
-px-4          py-2        gap-1
-duration-(--transition-fast)                         duration-(--transition-normal)
-shadow-(--shadow-sm)
+duration-(--transition-fast)    duration-(--transition-normal)    duration-(--transition-slow)
+shadow-(--shadow-sm)            shadow-(--shadow-md)              shadow-(--shadow-lg)
+```
+
+**Spacing → standard Tailwind scale (px-4 = 1rem, px-2 = 0.5rem, etc.):**
+```tsx
+px-4   py-2   gap-2   mx-auto
 ```
 
 **Never use `[var(--...)]` bracket syntax:**
 ```tsx
 // WRONG
-<div class="bg-[var(--color-primary)] text-[length:var(--text-sm)] px-4">
+<div class="bg-[var(--color-primary)] text-[length:var(--text-sm)] bg-gradient-to-r">
 
 // CORRECT
-<div class="bg-primary text-sm px-4">
+<div class="bg-primary text-sm bg-linear-to-r">
 ```
 
 ### Common Mistakes to Avoid
@@ -463,7 +471,7 @@ Since all styling is Tailwind inline, search for repeated JSX patterns:
 
 ```bash
 # Find repeated structural patterns (button shapes, card layouts, etc.)
-grep -rn "flex items-center\|rounded-\[var\|border-\[var" ./src/components --include="*.tsx" | grep -v commons
+grep -rn "flex items-center\|rounded-md\|border-border" ./src/components --include="*.tsx" | grep -v commons
 
 # Find components that render the same sub-structure in multiple places
 grep -rn "class=\".*pattern.*\"" ./src/components --include="*.tsx"

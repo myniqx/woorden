@@ -1,4 +1,4 @@
-import type { Quiz, QuizType, QuizMode, QuizOption, Language, Word } from '../types';
+import type { Quiz, QuizType, QuizMode, QuizOption, Language } from '../types';
 import { selectWord, generateOptions } from './wordSelector';
 import { updateWordProgress, getSkillForQuizType } from './storage';
 import { locales } from '../locales';

@@ -63,7 +63,7 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
         {(['daily', 'last7', 'last30'] as const).map((tab) => (
           <button
             key={tab}
-            class={`flex-1 px-2 py-1 border rounded-md text-(length:--text-xs) font-medium cursor-pointer transition-[border-color,background,color] duration-(--transition-fast) ${scoreTab === tab ? 'bg-primary-light border-primary text-primary' : 'bg-bg border-border text-text-secondary'}`}
+            class={`flex-1 px-2 py-1 border rounded-md text-xs font-medium cursor-pointer transition-[border-color,background,color] duration-(--transition-fast) ${scoreTab === tab ? 'bg-primary-light border-primary text-primary' : 'bg-bg border-border text-text-secondary'}`}
             onClick={() => setScoreTab(tab)}
           >
             {tabLabel(tab)}
@@ -72,9 +72,9 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
       </div>
 
       {leaderboard === null ? (
-        <p class="text-center py-8 text-text-muted text-(length:--text-sm)">{t.leaderboard.loading}</p>
+        <p class="text-center py-8 text-text-muted text-sm">{t.leaderboard.loading}</p>
       ) : sorted.length === 0 ? (
-        <p class="text-center py-8 text-text-muted text-(length:--text-sm)">{t.leaderboard.empty}</p>
+        <p class="text-center py-8 text-text-muted text-sm">{t.leaderboard.empty}</p>
       ) : (
         <div class="flex flex-col gap-1">
           {sorted.map((entry, i) => {
@@ -87,17 +87,17 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
               <div key={entry.username} class={`flex items-center gap-2 px-4 py-2 bg-(--color-surface-elevated) rounded-md ${rowAccent[realRank] ?? ''}`}>
                 <span class="w-6 flex items-center justify-center shrink-0"><RankIcon rank={realRank} /></span>
                 <span class="shrink-0"><Avatar index={entry.avatarIndex} size={i < 3 ? 36 : 30} /></span>
-                <span class={`flex-1 text-(length:--text-sm) font-medium truncate ${isMe ? 'text-primary' : 'text-text-primary'}`}>{entry.username}</span>
+                <span class={`flex-1 text-sm font-medium truncate ${isMe ? 'text-primary' : 'text-text-primary'}`}>{entry.username}</span>
                 <span class="flex flex-col items-end shrink-0 gap-px">
-                  <span class="text-(length:--text-sm) font-bold text-text-primary">{score}</span>
-                  <span class="text-(length:--text-xs) text-success">{correct} <span class="text-text-muted">%{pct}</span></span>
+                  <span class="text-sm font-bold text-text-primary">{score}</span>
+                  <span class="text-xs text-success">{correct} <span class="text-text-muted">%{pct}</span></span>
                 </span>
               </div>
             );
           })}
         </div>
       )}
-      <p class="mt-4 m-0 text-(length:--text-xs) text-text-muted text-center">
+      <p class="mt-4 m-0 text-xs text-text-muted text-center">
         {merge(t.leaderboard.updateNote, { time: nextUpdateStr })}
       </p>
     </div>
@@ -108,7 +108,7 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
       <div class="relative min-h-80">
         <div class="blur-xs pointer-events-none select-none">{listContent}</div>
         <div class="absolute inset-0 flex flex-col items-center justify-center gap-6 px-8">
-          <p class="m-0 text-(length:--text-sm) text-text-secondary text-center">{t.leaderboard.gateText}</p>
+          <p class="m-0 text-sm text-text-secondary text-center">{t.leaderboard.gateText}</p>
           <Button variant="soft" color="primary" icon={LogIn} onClick={onSignIn}>
             {t.leaderboard.signInGoogle}
           </Button>

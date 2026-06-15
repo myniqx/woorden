@@ -10,16 +10,16 @@ interface OptionButtonProps {
 
 const base =
   'flex items-center justify-between w-full px-6 py-4 ' +
-  'bg-[var(--color-bg)] border-2 border-[var(--color-border)] rounded-[var(--radius-lg)] ' +
-  'cursor-pointer text-left text-[length:var(--text-base)] text-[var(--color-text-primary)] ' +
-  'transition-[border-color,background-color,color,opacity,transform] duration-[var(--transition-fast)] ' +
-  'hover:not-disabled:border-[var(--color-primary)] hover:not-disabled:bg-[var(--color-primary-light)] ' +
+  'bg-bg border-2 border-border rounded-lg ' +
+  'cursor-pointer text-left text-base text-text-primary ' +
+  'transition-[border-color,background-color,color,opacity,transform] duration-(--transition-fast) ' +
+  'hover:not-disabled:border-primary hover:not-disabled:bg-primary-light ' +
   'active:not-disabled:scale-[0.98] disabled:cursor-default';
 
 const stateMap = {
-  selected: 'border-[var(--color-primary)] bg-[var(--color-primary-light)]',
-  correct: 'border-[var(--color-success)] bg-[var(--color-success-light)] text-[var(--color-success)]',
-  incorrect: 'border-[var(--color-error)] bg-[var(--color-error-light)] text-[var(--color-error)] shake',
+  selected: 'border-primary bg-primary-light',
+  correct: 'border-success bg-success-light text-success',
+  incorrect: 'border-error bg-error-light text-error shake',
   dimmed: 'opacity-50',
   none: '',
 };
@@ -41,12 +41,12 @@ export function OptionButton({ option, selected, showResult, onClick }: OptionBu
     >
       <span class="flex-1">{option.text}</span>
       {showResult && option.isCorrect && (
-        <span class="flex items-center justify-center w-6 h-6 rounded-full bg-[var(--color-success)] text-white">
+        <span class="flex items-center justify-center w-6 h-6 rounded-full bg-success text-white">
           <Check size={18} />
         </span>
       )}
       {showResult && selected && !option.isCorrect && (
-        <span class="flex items-center justify-center w-6 h-6 rounded-full bg-[var(--color-error)] text-white">
+        <span class="flex items-center justify-center w-6 h-6 rounded-full bg-error text-white">
           <X size={18} />
         </span>
       )}

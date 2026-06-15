@@ -64,7 +64,7 @@ export function AvatarPicker({ selectedIndex, onSelect }: AvatarPickerProps) {
       {AVATAR_COORDS.map((_, i) => (
         <button
           key={i}
-          class={`bg-[var(--color-bg)] border-2 rounded-[var(--radius-md)] cursor-pointer flex items-center justify-center transition-[border-color,background] duration-[var(--transition-fast)] p-0.5 overflow-hidden w-fit ${selectedIndex === i ? 'border-[var(--color-primary)] bg-[var(--color-primary-light)]' : 'border-[var(--color-border)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primary-light)]'}`}
+          class={`bg-bg border-2 rounded-md cursor-pointer flex items-center justify-center transition-[border-color,background] duration-(--transition-fast) p-0.5 overflow-hidden w-fit ${selectedIndex === i ? 'border-primary bg-primary-light' : 'border-border hover:border-primary hover:bg-primary-light'}`}
           onClick={() => onSelect(i)}
           aria-label={`Avatar ${i + 1}`}
         >

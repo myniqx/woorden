@@ -47,7 +47,7 @@ export function SettingsTab({ visitorCount, onDataImported }: SettingsTabProps) 
     target.value = '';
   };
 
-  const sectionH3 = 'flex items-center gap-1 m-0 mb-4 text-[length:var(--text-xs)] font-semibold text-[var(--color-text-secondary)] uppercase tracking-[0.05em]';
+  const sectionH3 = 'flex items-center gap-1 m-0 mb-4 text-xs font-semibold text-text-secondary uppercase tracking-[0.05em]';
 
   return (
     <div class="flex flex-col gap-8">
@@ -74,7 +74,7 @@ export function SettingsTab({ visitorCount, onDataImported }: SettingsTabProps) 
         </div>
       </section>
 
-      <div class="flex items-center justify-center gap-1.5 pt-4 border-t border-border text-(length:--text-xs) text-text-muted">
+      <div class="flex items-center justify-center gap-1.5 pt-4 border-t border-border text-xs text-text-muted">
         <Users size={13} />
         {visitorCount !== null
           ? <span>{visitorCount.toLocaleString()} {visitorCount === 1 ? t.profileScreen.settings.visitor : t.profileScreen.settings.visitors}</span>
@@ -82,7 +82,7 @@ export function SettingsTab({ visitorCount, onDataImported }: SettingsTabProps) 
         }
       </div>
 
-      <div class="flex items-center justify-center gap-2 pt-2 text-(length:--text-xs)">
+      <div class="flex items-center justify-center gap-2 pt-2 text-xs">
         <a class="text-text-muted no-underline hover:text-primary" href="/privacy" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/privacy'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Privacy Policy</a>
         <span class="text-border">·</span>
         <a class="text-text-muted no-underline hover:text-primary" href="/terms" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/terms'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Terms of Service</a>

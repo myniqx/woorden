@@ -16,7 +16,7 @@ interface QuizCardProps {
 }
 
 const actionBtnBase =
-  'flex items-center justify-center p-1 bg-transparent border border-[var(--color-border)] rounded-[var(--radius-sm)] cursor-pointer text-[var(--color-text-secondary)] transition-all duration-[var(--transition-fast)] hover:bg-[var(--color-surface-elevated)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]';
+  'flex items-center justify-center p-1 bg-transparent border border-border rounded-sm cursor-pointer text-text-secondary transition-all duration-(--transition-fast) hover:bg-surface-elevated hover:border-primary hover:text-primary';
 
 export function QuizCard({
   wordType,
@@ -31,16 +31,16 @@ export function QuizCard({
   below,
 }: QuizCardProps) {
   return (
-    <div class="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-xl)] overflow-hidden">
-      <div class="relative px-8 pt-8 pb-8 text-center border-b border-[var(--color-border)]">
-        <span class="absolute top-2 left-2 px-2 py-1 bg-[var(--color-primary-light)] text-[var(--color-primary)] text-[length:var(--text-xs)] font-semibold uppercase tracking-[0.5px] rounded-[var(--radius-sm)]">
+    <div class="bg-surface border border-border rounded-xl overflow-hidden">
+      <div class="relative px-8 pt-8 pb-8 text-center border-b border-border">
+        <span class="absolute top-2 left-2 px-2 py-1 bg-primary-light text-primary text-xs font-semibold uppercase tracking-[0.5px] rounded-sm">
           {wordType}
         </span>
 
         <div class="absolute top-2 right-2 flex gap-1">
           {canPin && (
             <button
-              class={`${actionBtnBase} ${pinned ? 'bg-[var(--color-primary)] border-[var(--color-primary)] text-white hover:bg-[var(--color-primary-hover)] hover:border-[var(--color-primary-hover)] hover:text-white' : ''}`}
+              class={`${actionBtnBase} ${pinned ? 'bg-primary border-primary text-white hover:bg-primary-hover hover:border-primary-hover hover:text-white' : ''}`}
               onClick={onPinToggle}
               aria-label={pinned ? 'Unpin word' : 'Pin word'}
             >
@@ -52,11 +52,11 @@ export function QuizCard({
           )}
         </div>
 
-        <p class="text-[length:var(--text-2xl)] font-semibold text-[var(--color-text-primary)] mb-2">
+        <p class="text-2xl font-semibold text-text-primary mb-2">
           {questionText}
         </p>
         {subtext && (
-          <p class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)]">{subtext}</p>
+          <p class="text-sm text-text-secondary">{subtext}</p>
         )}
         {below}
       </div>

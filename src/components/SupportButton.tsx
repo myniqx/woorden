@@ -15,13 +15,13 @@ export function SupportButton() {
 
   return (
     <button
-      class="flex items-center gap-4 px-6 py-4 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-lg)] cursor-pointer text-left text-[#6F4E37] transition-all duration-[var(--transition-normal)] hover:border-[#6F4E37] hover:bg-[rgba(111,78,55,0.1)]"
+      class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-lg cursor-pointer text-left text-[#6F4E37] transition-all duration-(--transition-normal) hover:border-[#6F4E37] hover:bg-[rgba(111,78,55,0.1)]"
       onClick={() => window.open('https://ko-fi.com/myniqx', '_blank', 'noopener,noreferrer')}
     >
       <Coffee size={20} />
       <div class="flex flex-col gap-0.5">
-        <span class="text-[length:var(--text-base)] font-semibold text-[var(--color-text-primary)]">{text.title}</span>
-        <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)]">{text.subtitle}</span>
+        <span class="text-base font-semibold text-text-primary">{text.title}</span>
+        <span class="text-sm text-text-secondary">{text.subtitle}</span>
       </div>
     </button>
   );

@@ -60,7 +60,7 @@ export function AlertBanner({ onAction }: AlertBannerProps) {
       <ul class="m-0 p-0 list-none flex flex-col gap-2">
         {visible.map((a) => (
           <li key={a.id} class="flex flex-col gap-1">
-            <span class="text-(length:--text-sm) text-text-secondary leading-relaxed">
+            <span class="text-sm text-text-secondary leading-relaxed">
               {t.alert.leaderboardPromo}
             </span>
             {a.action && (

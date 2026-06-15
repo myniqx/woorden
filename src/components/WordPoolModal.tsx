@@ -84,7 +84,7 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
 
   const totalSelected = getSelectedWordCount();
 
-  const iconBtnClass = 'flex items-center justify-center p-1 bg-none border-none cursor-pointer text-[var(--color-text-secondary)] rounded-[var(--radius-sm)] transition-all duration-[var(--transition-fast)]';
+  const iconBtnClass = 'flex items-center justify-center p-1 bg-none border-none cursor-pointer text-text-secondary rounded-sm transition-all duration-(--transition-fast)';
 
   return (
     <>
@@ -96,7 +96,7 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
           <Button variant="ghost" icon={HelpCircle} size="icon" onClick={() => setShowHelp(true)} aria-label="Help" />
         </Modal.Header>
 
-        <div class="block text-[length:var(--text-sm)] text-[var(--color-text-secondary)] px-6 py-2 border-b border-[var(--color-border)]">
+        <div class="block text-sm text-text-secondary px-6 py-2 border-b border-border">
           {merge(t.wordPool.desc, { count: totalSelected })}
         </div>
 
@@ -110,9 +110,9 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
 
               return (
                 <div key={level}>
-                  <div class="flex items-center gap-1 p-2 bg-[var(--color-surface-elevated)] rounded-[var(--radius-md)]">
+                  <div class="flex items-center gap-1 p-2 bg-surface-elevated rounded-md">
                     <button
-                      class={`${iconBtnClass} hover:bg-[var(--color-border)] hover:text-[var(--color-text-primary)]`}
+                      class={`${iconBtnClass} hover:bg-border hover:text-text-primary`}
                       onClick={() => toggleExpand(level)}
                     >
                       {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
@@ -121,13 +121,13 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
                     <label class="flex items-center gap-2 flex-1 cursor-pointer">
                       <input
                         type="checkbox"
-                        class="w-[18px] h-[18px] cursor-pointer accent-[var(--color-primary)]"
+                        class="w-[18px] h-[18px] cursor-pointer accent-primary"
                         checked={checkState === 'all'}
                         ref={(el) => { if (el) el.indeterminate = checkState === 'partial'; }}
                         onChange={() => handleLevelToggle(level)}
                       />
-                      <span class="font-semibold text-[length:var(--text-base)] text-[var(--color-text-primary)]">{level}</span>
-                      <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] ml-auto">
+                      <span class="font-semibold text-base text-text-primary">{level}</span>
+                      <span class="text-sm text-text-secondary ml-auto">
                         {merge(t.wordPool.wordsSelected, { count: levelWordCount })}
                       </span>
                     </label>
@@ -140,17 +140,17 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
                         const enabled = isChunkEnabled(level, i);
 
                         return (
-                          <label key={i} class="flex items-center gap-2 px-4 py-2 cursor-pointer rounded-[var(--radius-sm)] transition-all duration-[var(--transition-fast)] hover:bg-[var(--color-surface-elevated)]">
+                          <label key={i} class="flex items-center gap-2 px-4 py-2 cursor-pointer rounded-sm transition-all duration-(--transition-fast) hover:bg-surface-elevated">
                             <input
                               type="checkbox"
-                              class="w-[16px] h-[16px] cursor-pointer accent-[var(--color-primary)]"
+                              class="w-[16px] h-[16px] cursor-pointer accent-primary"
                               checked={enabled}
                               onChange={() => handleChunkToggle(level, i)}
                             />
-                            <span class="text-[length:var(--text-sm)] text-[var(--color-text-primary)]">
+                            <span class="text-sm text-text-primary">
                               {merge(t.wordPool.pack, { num: i + 1 })}
                             </span>
-                            <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] ml-auto">
+                            <span class="text-sm text-text-secondary ml-auto">
                               {merge(t.wordPool.wordsSelected, { count: wordCount })}
                             </span>
                           </label>

@@ -78,10 +78,10 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
 
   return (
     <>
-      <footer class="bg-[var(--color-surface)] border-t border-[var(--color-border)] sticky bottom-0 z-[100]">
+      <footer class="bg-surface border-t border-border sticky bottom-0 z-[100]">
         <div class="flex items-center">
           <button
-            class="flex-1 flex items-center justify-between px-6 py-4 bg-transparent border-none cursor-pointer text-[var(--color-text-primary)] hover:bg-[var(--color-primary-light)]"
+            class="flex-1 flex items-center justify-between px-6 py-4 bg-transparent border-none cursor-pointer text-text-primary hover:bg-primary-light"
             onClick={() => setExpanded(!expanded)}
           >
             <div class="flex items-center gap-2">
@@ -94,7 +94,7 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
             </div>
             <ChevronUp
               size={20}
-              class={`text-[var(--color-text-secondary)] transition-transform duration-[var(--transition-fast)] ${expanded ? 'rotate-180' : ''}`}
+              class={`text-text-secondary transition-transform duration-(--transition-fast) ${expanded ? 'rotate-180' : ''}`}
             />
           </button>
 
@@ -122,23 +122,23 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
               ).map(({ cat, icon: Icon, value }) => (
                 <button
                   key={cat}
-                  class="flex items-center gap-2 p-2 bg-[var(--color-bg)] rounded-[var(--radius-md)] border-none cursor-pointer text-left transition-all duration-[var(--transition-fast)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-sm)] active:translate-y-0"
+                  class="flex items-center gap-2 p-2 bg-bg rounded-md border-none cursor-pointer text-left transition-all duration-(--transition-fast) hover:-translate-y-0.5 hover:shadow-sm active:translate-y-0"
                   onClick={() => setSelectedCategory(cat)}
                 >
-                  <div class={`flex items-center justify-center w-8 h-8 rounded-[var(--radius-md)] ${statIconClass[cat]}`}>
+                  <div class={`flex items-center justify-center w-8 h-8 rounded-md ${statIconClass[cat]}`}>
                     <Icon size={16} />
                   </div>
                   <div class="flex flex-col">
-                    <span class="text-[length:var(--text-lg)] font-semibold text-[var(--color-text-primary)] leading-none">{value}</span>
-                    <span class="text-[length:var(--text-xs)] text-[var(--color-text-secondary)]">{categoryLabel[cat]}</span>
+                    <span class="text-lg font-semibold text-text-primary leading-none">{value}</span>
+                    <span class="text-xs text-text-secondary">{categoryLabel[cat]}</span>
                   </div>
                 </button>
               ))}
             </div>
 
-            <div class="h-1.5 bg-[var(--color-border)] rounded-full overflow-hidden">
+            <div class="h-1.5 bg-border rounded-full overflow-hidden">
               <div
-                class="h-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-hover)] rounded-full transition-[width] duration-[var(--transition-slow)]"
+                class="h-full bg-linear-to-r from-primary to-primary-hover rounded-full transition-[width] duration-(--transition-slow)"
                 style={{ width: `${progressPercent}%` }}
               />
             </div>

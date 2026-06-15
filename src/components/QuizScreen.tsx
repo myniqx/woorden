@@ -132,11 +132,10 @@ Dans ce test, on vous montre un nom et on vous demande de choisir le **bon artic
 interface QuizScreenProps {
   quizType: QuizType;
   quizMode?: QuizMode;
-  onExit: () => void;
   onAnswer?: () => void;
 }
 
-export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: QuizScreenProps) {
+export function QuizScreen({ quizType, quizMode = 'normal', onAnswer }: QuizScreenProps) {
   const { language } = useLanguage();
   const { t } = useLanguage();
   const [quiz, setQuiz] = useState<Quiz | null>(null);
@@ -182,7 +181,7 @@ export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: 
   };
 
   if (!quiz) {
-    return <div class="flex flex-1 items-center justify-center text-[var(--color-text-secondary)]">Loading...</div>;
+    return <div class="flex flex-1 items-center justify-center text-text-secondary">Loading...</div>;
   }
 
   const skill = getSkillForQuizType(quizType);

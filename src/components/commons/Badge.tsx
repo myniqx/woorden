@@ -17,35 +17,35 @@ interface BadgeProps {
 
 const colorMap: Record<Color, Record<Variant, string>> = {
   primary: {
-    solid:   'bg-[var(--color-primary)] text-white border-[var(--color-primary)]',
-    soft:    'bg-[var(--color-primary-light)] text-[var(--color-primary)] border-[var(--color-primary)]',
-    outline: 'bg-transparent text-[var(--color-primary)] border-[var(--color-primary)]',
+    solid:   'bg-primary text-white border-primary',
+    soft:    'bg-primary-light text-primary border-primary',
+    outline: 'bg-transparent text-primary border-primary',
   },
   success: {
-    solid:   'bg-[var(--color-success)] text-white border-[var(--color-success)]',
-    soft:    'bg-[var(--color-success-light)] text-[var(--color-success)] border-[var(--color-success)]',
-    outline: 'bg-transparent text-[var(--color-success)] border-[var(--color-success)]',
+    solid:   'bg-success text-white border-success',
+    soft:    'bg-success-light text-success border-success',
+    outline: 'bg-transparent text-success border-success',
   },
   error: {
-    solid:   'bg-[var(--color-error)] text-white border-[var(--color-error)]',
-    soft:    'bg-[var(--color-error-light)] text-[var(--color-error)] border-[var(--color-error)]',
-    outline: 'bg-transparent text-[var(--color-error)] border-[var(--color-error)]',
+    solid:   'bg-error text-white border-error',
+    soft:    'bg-error-light text-error border-error',
+    outline: 'bg-transparent text-error border-error',
   },
   muted: {
-    solid:   'bg-[var(--color-text-muted)] text-[var(--color-surface)] border-[var(--color-text-muted)]',
-    soft:    'bg-[var(--color-surface-elevated)] text-[var(--color-text-muted)] border-[var(--color-border)]',
-    outline: 'bg-transparent text-[var(--color-text-muted)] border-[var(--color-border)]',
+    solid:   'bg-text-muted text-surface border-text-muted',
+    soft:    'bg-surface-elevated text-text-muted border-border',
+    outline: 'bg-transparent text-text-muted border-border',
   },
   surface: {
-    solid:   'bg-[var(--color-surface-elevated)] text-[var(--color-text-primary)] border-[var(--color-border)]',
-    soft:    'bg-[var(--color-surface-elevated)] text-[var(--color-text-secondary)] border-[var(--color-border)]',
-    outline: 'bg-transparent text-[var(--color-text-secondary)] border-[var(--color-border)]',
+    solid:   'bg-surface-elevated text-text-primary border-border',
+    soft:    'bg-surface-elevated text-text-secondary border-border',
+    outline: 'bg-transparent text-text-secondary border-border',
   },
 };
 
 const sizeMap: Record<Size, string> = {
-  sm: 'text-[length:var(--text-xs)] px-2 py-0.5 gap-1',
-  md: 'text-[length:var(--text-sm)] px-2.5 py-1 gap-1.5',
+  sm: 'text-xs px-2 py-0.5 gap-1',
+  md: 'text-sm px-2.5 py-1 gap-1.5',
 };
 
 const iconSizeMap: Record<Size, number> = { sm: 12, md: 14 };
@@ -61,7 +61,7 @@ export function Badge({
 }: BadgeProps) {
   if (dot) {
     return (
-      <span class={`inline-block w-2 h-2 rounded-full flex-shrink-0 bg-[var(--color-primary)] ${className}`} />
+      <span class={`inline-block w-2 h-2 rounded-full flex-shrink-0 bg-primary ${className}`} />
     );
   }
 

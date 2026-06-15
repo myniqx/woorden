@@ -168,7 +168,7 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
         {tabs.map(({ id, icon: Icon, label }) => (
           <button
             key={id}
-            class={`flex-1 flex items-center justify-center gap-1 px-2 py-4 bg-transparent border-none border-b-2 -mb-px text-(length:--text-sm) font-medium cursor-pointer transition-[color,border-color] duration-(--transition-fast) ${activeTab === id ? 'text-primary border-b-primary' : 'text-text-secondary border-b-transparent hover:text-text-primary'}`}
+            class={`flex-1 flex items-center justify-center gap-1 px-2 py-4 bg-transparent border-none border-b-2 -mb-px text-sm font-medium cursor-pointer transition-[color,border-color] duration-(--transition-fast) ${activeTab === id ? 'text-primary border-b-primary' : 'text-text-secondary border-b-transparent hover:text-text-primary'}`}
             onClick={() => setActiveTab(id)}
           >
             <Icon size={18} />

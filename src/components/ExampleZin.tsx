@@ -15,12 +15,12 @@ export function ExampleZin({ word }: Props) {
   if (!tokens) return null;
 
   return (
-    <p class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] italic mt-1 mb-0 leading-relaxed">
+    <p class="text-sm text-text-secondary italic mt-1 mb-0 leading-relaxed">
       {tokens.map((token, i) => (
         <span key={i}>
           {i > 0 ? ' ' : ''}
           {token.highlighted
-            ? <mark class="bg-transparent text-[var(--color-primary)] font-semibold not-italic">{token.text}</mark>
+            ? <mark class="bg-transparent text-primary font-semibold not-italic">{token.text}</mark>
             : token.text}
         </span>
       ))}

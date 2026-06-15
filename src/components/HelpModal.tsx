@@ -16,7 +16,7 @@ function formatContent(text: string): preact.JSX.Element[] {
       return part;
     });
     return (
-      <p key={i} class="m-0 mb-4 last:mb-0 text-(length:--text-sm) text-text-secondary leading-relaxed">
+      <p key={i} class="m-0 mb-4 last:mb-0 text-sm text-text-secondary leading-relaxed">
         {formatted}
       </p>
     );

@@ -183,14 +183,12 @@ export function App() {
                 <InputQuizScreen
                   quizType={currentQuizType}
                   quizMode={currentQuizMode}
-                  onExit={exitQuiz}
                   onAnswer={onStatsUpdate}
                 />
               ) : (
                 <QuizScreen
                   quizType={currentQuizType}
                   quizMode={currentQuizMode}
-                  onExit={exitQuiz}
                   onAnswer={onStatsUpdate}
                 />
               )
