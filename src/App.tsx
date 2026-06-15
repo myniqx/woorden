@@ -14,7 +14,7 @@ import { latestDate } from './data/changelog';
 import { signInWithGoogle, signOut, onAuthStateChange } from './services/auth';
 import type { User } from './services/auth';
 import { pushStats } from './services/sync';
-import { ProfileScreen } from './components/ProfileScreen';
+import { ProfileScreen } from './components/profile-screen';
 import { AlertBanner } from './components/AlertBanner';
 import type { AlertAction } from './components/AlertBanner';
 
