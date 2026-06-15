@@ -1,12 +1,11 @@
-import type { Quiz, QuizType, QuizMode, QuizOption, Language, Word } from '../types';
+import type { Quiz, QuizType, QuizMode, QuizOption, Language } from '../types';
 import { selectWord, generateOptions } from './wordSelector';
 import { updateWordProgress, getSkillForQuizType } from './storage';
-import { t } from '../data/translations';
+import { locales } from '../locales';
 
 export function createQuiz(quizType: QuizType, language: Language, mode: QuizMode = 'normal'): Quiz {
-  // Pass the actual quizType for pinned word lookup, not the pool type
   const word = selectWord(quizType, mode);
-  const tr = (key: string) => t(key, language);
+  const t = locales[language];
 
   let question: Quiz['question'];
   let options: QuizOption[];
@@ -16,7 +15,7 @@ export function createQuiz(quizType: QuizType, language: Language, mode: QuizMod
     case 'nativeToDutch':
       question = {
         text: word[language],
-        subtext: tr('whatIsDutch'),
+        subtext: t.quiz.nativeToDutch.prompt,
       };
       options = generateOptions(word, 'translation', language).map((w) => ({
         id: w.id,
@@ -42,7 +41,7 @@ export function createQuiz(quizType: QuizType, language: Language, mode: QuizMod
     case 'article':
       question = {
         text: word.word,
-        subtext: tr('whatIsArticle'),
+        subtext: t.quiz.article.prompt,
       };
       const wordArticle = 'article' in word ? word.article : null;
       options = [

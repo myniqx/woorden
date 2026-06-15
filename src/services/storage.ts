@@ -310,7 +310,6 @@ export function getWordStats(wordId: number): WordStats {
   // Aggregate all skills for this word
   const wordProgress = getWordProgress(word.nl);
   let totalSeen = 0, totalCorrect = 0, totalWrong = 0;
-  let lastSeen: number | null = null;
 
   for (const skill of Object.values(wordProgress.skills)) {
     if (skill) {

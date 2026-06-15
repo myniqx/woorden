@@ -1,7 +1,6 @@
-import { X } from 'lucide-preact';
-import type { Language, Word, WordStats } from '../types';
-import { t } from '../data/translations';
-import './WordListModal.css';
+import type { Word, WordStats } from '../types';
+import { useLanguage } from '../hooks';
+import { Modal } from './commons';
 
 interface WordWithStats extends Word {
   stats: WordStats;
@@ -10,64 +9,50 @@ interface WordWithStats extends Word {
 interface WordListModalProps {
   category: 'unseen' | 'learning' | 'mastered' | 'difficult';
   words: WordWithStats[];
-  language: Language;
   onClose: () => void;
 }
 
-export function WordListModal({ category, words, language, onClose }: WordListModalProps) {
-  const tr = (key: string) => t(key, language);
+export function WordListModal({ category, words, onClose }: WordListModalProps) {
+  const { t } = useLanguage();
 
   const titles: Record<string, string> = {
-    unseen: tr('unseenWords'),
-    learning: tr('learningWords'),
-    mastered: tr('masteredWords'),
-    difficult: tr('difficultWords'),
-  };
-
-  const handleOverlayClick = (e: MouseEvent) => {
-    if ((e.target as HTMLElement).classList.contains('modal-overlay')) {
-      onClose();
-    }
+    unseen: t.wordList.unseenWords,
+    learning: t.wordList.learningWords,
+    mastered: t.wordList.masteredWords,
+    difficult: t.wordList.difficultWords,
   };
 
   return (
-    <div class="modal-overlay" onClick={handleOverlayClick}>
-      <div class="modal-content scale-in">
-        <div class="modal-header">
-          <h2 class="modal-title">{titles[category]} ({words.length})</h2>
-          <button class="modal-close" onClick={onClose} aria-label="Close">
-            <X size={20} />
-          </button>
-        </div>
-
-        <div class="modal-body">
-          {words.length === 0 ? (
-            <p class="empty-message">{tr('emptyCategory')}</p>
-          ) : (
-            <div class="word-list">
-              {words.map((word) => (
-                <div key={word.id} class="word-list-item">
-                  <div class="word-info">
-                    <span class="word-dutch">
-                      {'article' in word && word.article && (
-                        <span class="word-article">{word.article} </span>
-                      )}
-                      {word.nl}
-                    </span>
-                    <span class="word-translation">{word[language]}</span>
-                  </div>
-                  {category !== 'unseen' && (
-                    <div class="word-stats">
-                      <span class="stat-correct">✓ {word.stats.correct}</span>
-                      <span class="stat-wrong">✗ {word.stats.wrong}</span>
-                    </div>
-                  )}
+    <Modal onClose={onClose} maxWidth="lg">
+      <Modal.Header title={`${titles[category]} (${words.length})`} onClose={onClose} />
+      <Modal.Body>
+        {words.length === 0 ? (
+          <p class="text-center text-text-secondary py-8">
+            {t.wordList.emptyCategory}
+          </p>
+        ) : (
+          <div class="flex flex-col gap-1">
+            {words.map((word) => (
+              <div key={word.id} class="flex items-center justify-between px-4 py-2 bg-bg rounded-md gap-4">
+                <div class="flex flex-col gap-0.5 min-w-0 flex-1">
+                  <span class="font-medium text-text-primary">
+                    {'article' in word && word.article && (
+                      <span class="text-primary font-semibold">{word.article} </span>
+                    )}
+                    {word.nl}
+                  </span>
                 </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
+                {category !== 'unseen' && (
+                  <div class="flex gap-2 shrink-0">
+                    <span class="text-success text-sm font-medium">✓ {word.stats.correct}</span>
+                    <span class="text-error text-sm font-medium">✗ {word.stats.wrong}</span>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </Modal.Body>
+    </Modal>
   );
 }

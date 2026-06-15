@@ -1,5 +1,4 @@
 import avatarsSvgUrl from '../assets/avatars.svg?url';
-import './AvatarPicker.css';
 
 // Her avatarın SVG içindeki merkez koordinatları (viewBox 0 0 430 430)
 const AVATAR_COORDS: [number, number][] = [
@@ -61,11 +60,11 @@ interface AvatarPickerProps {
 
 export function AvatarPicker({ selectedIndex, onSelect }: AvatarPickerProps) {
   return (
-    <div class="avatar-picker-grid">
+    <div class="flex flex-wrap gap-2">
       {AVATAR_COORDS.map((_, i) => (
         <button
           key={i}
-          class={`avatar-picker-item ${selectedIndex === i ? 'active' : ''}`}
+          class={`bg-bg border-2 rounded-md cursor-pointer flex items-center justify-center transition-[border-color,background] duration-(--transition-fast) p-0.5 overflow-hidden w-fit ${selectedIndex === i ? 'border-primary bg-primary-light' : 'border-border hover:border-primary hover:bg-primary-light'}`}
           onClick={() => onSelect(i)}
           aria-label={`Avatar ${i + 1}`}
         >

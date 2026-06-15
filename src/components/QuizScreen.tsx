@@ -1,13 +1,12 @@
 import { useState, useEffect, useCallback } from 'preact/hooks';
-import { Pin, Eye, Check, X, Flame, HelpCircle } from 'lucide-preact';
 import type { QuizType, QuizMode, Language, Quiz } from '../types';
 import { createQuiz, submitAnswer } from '../services/quiz';
-import { t } from '../data/translations';
 import { canPinInQuizType, isPinned, togglePin, getSkillProgress, getSkillForQuizType } from '../services/storage';
 import { OptionButton } from './OptionButton';
 import { HelpModal } from './HelpModal';
 import { ExampleZin } from './ExampleZin';
-import './QuizScreen.css';
+import { useLanguage } from '../hooks';
+import { QuizCard, ResultBanner } from './commons';
 
 const helpTexts: Record<QuizType, Record<Language, { title: string; content: string }>> = {
   nativeToDutch: {
@@ -133,19 +132,18 @@ Dans ce test, on vous montre un nom et on vous demande de choisir le **bon artic
 interface QuizScreenProps {
   quizType: QuizType;
   quizMode?: QuizMode;
-  language: Language;
-  onExit: () => void;
   onAnswer?: () => void;
 }
 
-export function QuizScreen({ quizType, quizMode = 'normal', language, onExit, onAnswer }: QuizScreenProps) {
+export function QuizScreen({ quizType, quizMode = 'normal', onAnswer }: QuizScreenProps) {
+  const { language } = useLanguage();
+  const { t } = useLanguage();
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [selectedId, setSelectedId] = useState<string | number | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [pinned, setPinned] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
 
-  const tr = (key: string) => t(key, language);
   const canPin = canPinInQuizType(quizType);
   const help = helpTexts[quizType]?.[language] || helpTexts[quizType]?.en;
 
@@ -154,7 +152,6 @@ export function QuizScreen({ quizType, quizMode = 'normal', language, onExit, on
     setQuiz(newQuiz);
     setSelectedId(null);
     setShowResult(false);
-    // Check if this word is pinned
     if (canPinInQuizType(quizType)) {
       setPinned(isPinned(quizType, newQuiz.word.nl));
     }
@@ -168,11 +165,10 @@ export function QuizScreen({ quizType, quizMode = 'normal', language, onExit, on
     if (showResult || !quiz) return;
 
     setSelectedId(optionId);
-    const result = submitAnswer(quiz, optionId);
+    submitAnswer(quiz, optionId);
     setShowResult(true);
     onAnswer?.();
 
-    // Auto-advance after delay
     setTimeout(() => {
       loadNewQuestion();
     }, 1500);
@@ -185,82 +181,53 @@ export function QuizScreen({ quizType, quizMode = 'normal', language, onExit, on
   };
 
   if (!quiz) {
-    return <div class="quiz-loading">Loading...</div>;
+    return <div class="flex flex-1 items-center justify-center text-text-secondary">Loading...</div>;
   }
 
+  const skill = getSkillForQuizType(quizType);
+  const progress = showResult ? getSkillProgress(quiz.word.nl, skill) : null;
+  const isCorrect = showResult ? quiz.options.find(o => o.id === selectedId)?.isCorrect : null;
+
+  const wordTypeLabel: Record<string, string> = {
+    noun: t.wordType.noun, verb: t.wordType.verb, adj: t.wordType.adj,
+    adv: t.wordType.adv, prep: t.wordType.prep, conj: t.wordType.conj,
+    phrase: t.wordType.phrase, num: t.wordType.num, pron: t.wordType.pron,
+  };
+
   return (
-    <div class="quiz-screen fade-in">
-      <div class="quiz-card">
-        <div class="question-section">
-          <span class="question-type">{t(`type_${quiz.word.type}`, language)}</span>
-          <div class="question-actions">
-            {canPin && (
-              <button
-                class={`pin-button ${pinned ? 'pinned' : ''}`}
-                onClick={handlePinToggle}
-                aria-label={pinned ? 'Unpin word' : 'Pin word'}
-              >
-                <Pin size={18} />
-              </button>
-            )}
-            {help?.content && (
-              <button
-                class="help-button"
-                onClick={() => setShowHelp(true)}
-                aria-label="Help"
-              >
-                <HelpCircle size={18} />
-              </button>
-            )}
-          </div>
-          <p class="question-text">{quiz.question.text}</p>
-          {quiz.question.subtext && (
-            <p class="question-subtext">{quiz.question.subtext}</p>
-          )}
-          {quiz.type === 'dutchToNative' && (
-            <ExampleZin word={quiz.word} />
-          )}
-        </div>
+    <div class="flex-1 flex flex-col gap-6 py-4 fade-in">
+      <QuizCard
+        wordType={wordTypeLabel[quiz.word.type] ?? quiz.word.type}
+        questionText={quiz.question.text}
+        subtext={quiz.question.subtext}
+        pinned={pinned}
+        canPin={canPin}
+        hasHelp={!!help?.content}
+        onPinToggle={handlePinToggle}
+        onHelpOpen={() => setShowHelp(true)}
+        below={quiz.type === 'dutchToNative' ? <ExampleZin word={quiz.word} /> : undefined}
+      >
+        {quiz.options.map((option) => (
+          <OptionButton
+            key={`${quiz.word.nl}-${option.id}`}
+            option={option}
+            selected={selectedId === option.id}
+            showResult={showResult}
+            onClick={() => handleOptionSelect(option.id)}
+          />
+        ))}
+      </QuizCard>
 
-        <div class="options-section">
-          {quiz.options.map((option) => (
-            <OptionButton
-              key={`${quiz.word.nl}-${option.id}`}
-              option={option}
-              selected={selectedId === option.id}
-              showResult={showResult}
-              onClick={() => handleOptionSelect(option.id)}
-            />
-          ))}
-        </div>
-      </div>
-
-      {showResult && (() => {
-        const isCorrect = quiz.options.find(o => o.id === selectedId)?.isCorrect;
-        const skill = getSkillForQuizType(quizType);
-        const progress = getSkillProgress(quiz.word.nl, skill);
-
-        return (
-          <div class={`result-banner ${isCorrect ? 'correct' : 'incorrect'}`}>
-            <div class="result-text">
-              {isCorrect ? tr('correct') : `${tr('incorrect')} - ${quiz.word[language]}`}
-            </div>
-            <div class="result-stats">
-              <span class="stat-item"><Eye size={14} /> {progress.seen}</span>
-              <span class="stat-item correct"><Check size={14} /> {progress.correct}</span>
-              <span class="stat-item incorrect"><X size={14} /> {progress.wrong}</span>
-              <span class="stat-item streak"><Flame size={14} /> {progress.streak}</span>
-            </div>
-          </div>
-        );
-      })()}
+      {showResult && progress && (
+        <ResultBanner
+          isCorrect={!!isCorrect}
+          text={isCorrect ? t.quiz.correct : `${t.quiz.incorrect} - ${quiz.word[language]}`}
+          progress={progress}
+        />
+      )}
 
       {showHelp && help?.content && (
-        <HelpModal
-          title={help.title}
-          content={help.content}
-          onClose={() => setShowHelp(false)}
-        />
+        <HelpModal title={help.title} content={help.content} onClose={() => setShowHelp(false)} />
       )}
     </div>
   );

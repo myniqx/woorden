@@ -1,17 +1,17 @@
 import { useState } from 'preact/hooks';
 import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch } from 'lucide-preact';
-import type { QuizType, QuizMode, Language } from '../types';
-import { t } from '../data/translations';
+import type { QuizType, QuizMode } from '../types';
+import { useLanguage } from '../hooks';
 import { getSelectedWordCount, getAvailableLevels, getChunkCount, getChunkWordCount, getLevelWordCount, isChunkEnabled } from '../services/words';
 import { getPinnedWordCount, MIN_PINS_FOR_QUIZ, canPinInQuizType } from '../services/storage';
 import { WordPoolModal } from './WordPoolModal';
 import { SupportButton } from './SupportButton';
-import './MainMenu.css';
+import { Badge } from './commons';
+import { LanguageKeys } from '@/locales';
 
 interface MainMenuProps {
   onStartQuiz: (quizType: QuizType, mode?: QuizMode) => void;
   onOpenChangelog: () => void;
-  language: Language;
   hasNewChangelog: boolean;
 }
 
@@ -29,11 +29,27 @@ const quizTypes: QuizTypeCard[] = [
   { type: 'verbForms', icon: GitBranch, color: '#00bcd4' },
 ];
 
-export function MainMenu({ onStartQuiz, onOpenChangelog, language, hasNewChangelog }: MainMenuProps) {
+const quizTitle = (t: LanguageKeys, type: QuizType): string => ({
+  nativeToDutch: t.quiz.nativeToDutch.title,
+  dutchToNative: t.quiz.dutchToNative.title,
+  article: t.quiz.article.title,
+  nativeToDutch_write: t.quiz.write.title,
+  verbForms: t.quiz.verbForms.title,
+}[type]);
+
+const quizDesc = (t: LanguageKeys, type: QuizType): string => ({
+  nativeToDutch: t.quiz.nativeToDutch.desc,
+  dutchToNative: t.quiz.dutchToNative.desc,
+  article: t.quiz.article.desc,
+  nativeToDutch_write: t.quiz.write.desc,
+  verbForms: t.quiz.verbForms.desc,
+}[type]);
+
+export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: MainMenuProps) {
+  const { t, merge } = useLanguage();
   const [showWordPool, setShowWordPool] = useState(false);
   const [, forceUpdate] = useState(0);
 
-  const tr = (key: string) => t(key, language);
   const selectedCount = getSelectedWordCount();
 
   const levelBadges = getAvailableLevels().map(level => {
@@ -52,29 +68,32 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, language, hasNewChangel
   };
 
   return (
-    <div class="main-menu fade-in">
-      <button class="word-pool-button" onClick={() => setShowWordPool(true)}>
+    <div class="flex-1 flex flex-col gap-4 py-6 fade-in">
+      <button
+        class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-lg cursor-pointer text-left text-primary transition-all duration-(--transition-normal) hover:border-primary hover:bg-primary-light"
+        onClick={() => setShowWordPool(true)}
+      >
         <Layers size={20} />
-        <div class="word-pool-button-content">
-          <span class="word-pool-button-title">{tr('wordPool')}</span>
-          <span class="word-pool-button-count">
-            {t('wordPoolDesc', language, { count: selectedCount })}
+        <div class="flex flex-col gap-0.5">
+          <span class="text-base font-semibold text-text-primary">{t.wordPool.title}</span>
+          <span class="text-sm text-text-secondary">
+            {merge(t.wordPool.desc, { count: selectedCount })}
           </span>
-          <div class="word-pool-badges">
-            {levelBadges.map(({ level, selected, total }) => (
-              <span
-                key={level}
-                class={`word-pool-badge ${selected === 0 ? 'muted' : ''}`}
-              >
-                <span class="word-pool-badge-level">{level}</span>
-                <span class="word-pool-badge-count">{selected}/{total}</span>
-              </span>
-            ))}
+          <div class="flex flex-wrap gap-1 mt-1">
+            {levelBadges.map(({ level, selected, total }) => {
+              const muted = selected === 0;
+              return (
+                <span key={level} class={`inline-flex items-center text-xs rounded-full overflow-hidden border ${muted ? 'border-border' : 'border-[color-mix(in_srgb,var(--color-primary)_30%,transparent)]'}`}>
+                  <span class={`font-bold w-8 text-right px-1.5 py-0.5 ${muted ? 'bg-text-muted text-surface' : 'bg-primary text-white'}`}>{level}</span>
+                  <span class={`px-[7px] py-0.5 ${muted ? 'bg-surface-elevated text-text-muted' : 'bg-primary-light text-primary'}`}>{selected}/{total}</span>
+                </span>
+              );
+            })}
           </div>
         </div>
       </button>
 
-      <div class="quiz-type-grid">
+      <div class="flex flex-col gap-4">
         {quizTypes.map(({ type, icon: Icon, color }) => {
           const canHavePin = canPinInQuizType(type);
           const pinCount = canHavePin ? getPinnedWordCount(type) : 0;
@@ -82,35 +101,35 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, language, hasNewChangel
           const pinsNeeded = MIN_PINS_FOR_QUIZ - pinCount;
 
           return (
-            <div key={type} class={`quiz-type-group ${canHavePin ? 'has-pin' : ''}`}>
+            <div key={type} class="flex flex-col gap-1">
               <button
-                class="quiz-type-card"
-                onClick={() => onStartQuiz(type, 'normal')}
+                class="group flex items-center gap-6 p-6 bg-surface border border-border rounded-xl cursor-pointer text-left transition-all duration-(--transition-normal) hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
                 style={{ '--card-color': color } as any}
+                onClick={() => onStartQuiz(type, 'normal')}
               >
-                <div class="card-icon">
+                <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-[var(--card-color,var(--color-primary))] shrink-0 transition-colors duration-(--transition-normal) group-hover:bg-[var(--card-color,var(--color-primary))] group-hover:text-white">
                   <Icon size={32} />
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title">{tr(`quiz_${type}`)}</h2>
-                  <p class="card-description">{tr(`quiz_${type}_desc`)}</p>
+                <div class="flex-1 min-w-0">
+                  <h2 class="text-lg font-semibold text-text-primary mb-1">{quizTitle(t, type)}</h2>
+                  <p class="text-sm text-text-secondary leading-snug">{quizDesc(t, type)}</p>
                 </div>
               </button>
 
               {canHavePin && (
                 <button
-                  class={`pinned-quiz-card ${!canStartPinnedQuiz ? 'disabled' : ''}`}
+                  class={`flex items-center gap-2 px-4 py-2 bg-surface border border-border rounded-[var(--radius-sm)_var(--radius-sm)_var(--radius-xl)_var(--radius-xl)] cursor-pointer text-left text-[var(--card-color,var(--color-primary))] transition-all duration-(--transition-normal) hover:not-disabled:border-[var(--card-color,var(--color-primary))] hover:not-disabled:bg-surface-elevated disabled:opacity-60 disabled:cursor-not-allowed disabled:text-text-secondary`}
                   onClick={() => canStartPinnedQuiz && onStartQuiz(type, 'pinned')}
                   disabled={!canStartPinnedQuiz}
                   style={{ '--card-color': color } as any}
                 >
                   <Pin size={18} />
-                  <div class="pinned-quiz-content">
-                    <span class="pinned-quiz-title">{tr('pinnedWords')}</span>
-                    <span class="pinned-quiz-desc">
+                  <div class="flex flex-col gap-0.5 flex-1">
+                    <span class="text-sm font-semibold text-text-primary">{t.wordList.pinnedWords}</span>
+                    <span class="text-xs text-text-secondary">
                       {canStartPinnedQuiz
-                        ? t('pinnedWordsDesc', language, { count: pinCount })
-                        : t('pinnedWordsDisabled', language, { count: pinsNeeded })}
+                        ? merge(t.wordList.pinnedWordsDesc, { count: pinCount })
+                        : merge(t.wordList.pinnedWordsDisabled, { count: pinsNeeded })}
                     </span>
                   </div>
                 </button>
@@ -120,18 +139,18 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, language, hasNewChangel
         })}
       </div>
 
-      <SupportButton language={language} />
+      <SupportButton />
 
       <button
-        class={`changelog-button ${hasNewChangelog ? 'changelog-button--new' : ''}`}
+        class={`flex items-center justify-center gap-1 w-full px-4 py-2 bg-none border rounded-md text-sm cursor-pointer transition-[color,border-color] duration-(--transition-fast) ${hasNewChangelog ? 'border-primary text-primary changelog-glow' : 'border-border text-text-muted hover:text-text-secondary hover:border-text-muted'}`}
         onClick={onOpenChangelog}
       >
         <span>Changelog</span>
-        {hasNewChangelog && <span class="changelog-button__badge" />}
+        {hasNewChangelog && <Badge dot />}
       </button>
 
       {showWordPool && (
-        <WordPoolModal language={language} onClose={handleWordPoolClose} />
+        <WordPoolModal onClose={handleWordPoolClose} />
       )}
     </div>
   );

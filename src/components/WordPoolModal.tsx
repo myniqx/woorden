@@ -1,7 +1,6 @@
 import { useState } from 'preact/hooks';
-import { ChevronDown, ChevronRight, X, HelpCircle } from 'lucide-preact';
-import type { Language } from '../types';
-import { t } from '../data/translations';
+import { ChevronDown, ChevronRight, HelpCircle } from 'lucide-preact';
+import { useLanguage } from '../hooks';
 import {
   getAvailableLevels,
   getChunkCount,
@@ -11,14 +10,14 @@ import {
   refreshWords,
 } from '../services/words';
 import {
-  isLevelEnabled,
   isChunkEnabled,
   setChunkEnabled,
   areAllChunksEnabled,
   areNoChunksEnabled,
 } from '../services/storage';
 import { HelpModal } from './HelpModal';
-import './WordPoolModal.css';
+import { Button, Modal } from './commons';
+import type { Language } from '../types';
 
 const helpTexts: Record<Language, { title: string; content: string }> = {
   tr: {
@@ -40,17 +39,17 @@ const helpTexts: Record<Language, { title: string; content: string }> = {
 };
 
 interface WordPoolModalProps {
-  language: Language;
   onClose: () => void;
 }
 
-export function WordPoolModal({ language, onClose }: WordPoolModalProps) {
+export function WordPoolModal({ onClose }: WordPoolModalProps) {
+  const { t, merge } = useLanguage();
+  const { language } = useLanguage();
   const [expandedLevels, setExpandedLevels] = useState<Record<string, boolean>>({});
   const [showHelp, setShowHelp] = useState(false);
   const [, forceUpdate] = useState(0);
 
   const levels = getAvailableLevels();
-  const help = helpTexts[language] || helpTexts.en;
 
   const toggleExpand = (level: string) => {
     setExpandedLevels(prev => ({
@@ -69,7 +68,6 @@ export function WordPoolModal({ language, onClose }: WordPoolModalProps) {
     const chunkCount = getChunkCount(level);
     const allEnabled = areAllChunksEnabled(level, chunkCount);
 
-    // If all enabled, disable all. Otherwise enable all.
     for (let i = 0; i < chunkCount; i++) {
       setChunkEnabled(level, i, !allEnabled);
     }
@@ -86,96 +84,94 @@ export function WordPoolModal({ language, onClose }: WordPoolModalProps) {
 
   const totalSelected = getSelectedWordCount();
 
+  const iconBtnClass = 'flex items-center justify-center p-1 bg-none border-none cursor-pointer text-text-secondary rounded-sm transition-all duration-(--transition-fast)';
+
   return (
-    <div class="word-pool-overlay" onClick={onClose}>
-      <div class="word-pool-modal" onClick={(e) => e.stopPropagation()}>
-        <div class="word-pool-header">
-          <div class="word-pool-title">
-            <h2>{t('wordPool', language)}</h2>
-            <span class="word-pool-count">
-              {t('wordPoolDesc', language, { count: totalSelected })}
-            </span>
-          </div>
-          <div class="word-pool-header-actions">
-            <button class="word-pool-help" onClick={() => setShowHelp(true)}>
-              <HelpCircle size={20} />
-            </button>
-            <button class="word-pool-close" onClick={onClose}>
-              <X size={20} />
-            </button>
-          </div>
+    <>
+      <Modal onClose={onClose} maxWidth="md">
+        <Modal.Header
+          title={t.wordPool.title}
+          onClose={onClose}
+        >
+          <Button variant="ghost" icon={HelpCircle} size="icon" onClick={() => setShowHelp(true)} aria-label="Help" />
+        </Modal.Header>
+
+        <div class="block text-sm text-text-secondary px-6 py-2 border-b border-border">
+          {merge(t.wordPool.desc, { count: totalSelected })}
         </div>
 
-        <div class="word-pool-content">
-          {levels.map(level => {
-            const chunkCount = getChunkCount(level);
-            const levelWordCount = getLevelWordCount(level);
-            const isExpanded = expandedLevels[level];
-            const checkState = getLevelCheckState(level);
+        <Modal.Body>
+          <div class="flex flex-col gap-2">
+            {levels.map(level => {
+              const chunkCount = getChunkCount(level);
+              const levelWordCount = getLevelWordCount(level);
+              const isExpanded = expandedLevels[level];
+              const checkState = getLevelCheckState(level);
 
-            return (
-              <div key={level} class="word-pool-level">
-                <div class="word-pool-level-header">
-                  <button
-                    class="word-pool-expand-btn"
-                    onClick={() => toggleExpand(level)}
-                  >
-                    {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
-                  </button>
+              return (
+                <div key={level}>
+                  <div class="flex items-center gap-1 p-2 bg-surface-elevated rounded-md">
+                    <button
+                      class={`${iconBtnClass} hover:bg-border hover:text-text-primary`}
+                      onClick={() => toggleExpand(level)}
+                    >
+                      {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
+                    </button>
 
-                  <label class="word-pool-level-label">
-                    <input
-                      type="checkbox"
-                      checked={checkState === 'all'}
-                      ref={(el) => {
-                        if (el) el.indeterminate = checkState === 'partial';
-                      }}
-                      onChange={() => handleLevelToggle(level)}
-                    />
-                    <span class="word-pool-level-name">{level}</span>
-                    <span class="word-pool-level-count">
-                      {t('wordsSelected', language, { count: levelWordCount })}
-                    </span>
-                  </label>
-                </div>
-
-                {isExpanded && (
-                  <div class="word-pool-chunks">
-                    {Array.from({ length: chunkCount }, (_, i) => {
-                      const wordCount = getChunkWordCount(level, i);
-                      const enabled = isChunkEnabled(level, i);
-
-                      return (
-                        <label key={i} class="word-pool-chunk">
-                          <input
-                            type="checkbox"
-                            checked={enabled}
-                            onChange={() => handleChunkToggle(level, i)}
-                          />
-                          <span class="word-pool-chunk-name">
-                            {t('pack', language, { num: i + 1 })}
-                          </span>
-                          <span class="word-pool-chunk-count">
-                            {t('wordsSelected', language, { count: wordCount })}
-                          </span>
-                        </label>
-                      );
-                    })}
+                    <label class="flex items-center gap-2 flex-1 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        class="w-[18px] h-[18px] cursor-pointer accent-primary"
+                        checked={checkState === 'all'}
+                        ref={(el) => { if (el) el.indeterminate = checkState === 'partial'; }}
+                        onChange={() => handleLevelToggle(level)}
+                      />
+                      <span class="font-semibold text-base text-text-primary">{level}</span>
+                      <span class="text-sm text-text-secondary ml-auto">
+                        {merge(t.wordPool.wordsSelected, { count: levelWordCount })}
+                      </span>
+                    </label>
                   </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </div>
+
+                  {isExpanded && (
+                    <div class="ml-[calc(var6+var4)] mt-1 flex flex-col gap-1">
+                      {Array.from({ length: chunkCount }, (_, i) => {
+                        const wordCount = getChunkWordCount(level, i);
+                        const enabled = isChunkEnabled(level, i);
+
+                        return (
+                          <label key={i} class="flex items-center gap-2 px-4 py-2 cursor-pointer rounded-sm transition-all duration-(--transition-fast) hover:bg-surface-elevated">
+                            <input
+                              type="checkbox"
+                              class="w-[16px] h-[16px] cursor-pointer accent-primary"
+                              checked={enabled}
+                              onChange={() => handleChunkToggle(level, i)}
+                            />
+                            <span class="text-sm text-text-primary">
+                              {merge(t.wordPool.pack, { num: i + 1 })}
+                            </span>
+                            <span class="text-sm text-text-secondary ml-auto">
+                              {merge(t.wordPool.wordsSelected, { count: wordCount })}
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </Modal.Body>
+      </Modal>
 
       {showHelp && (
         <HelpModal
-          title={help.title}
-          content={help.content}
+          title={(helpTexts[language] || helpTexts.en).title}
+          content={(helpTexts[language] || helpTexts.en).content}
           onClose={() => setShowHelp(false)}
         />
       )}
-    </div>
+    </>
   );
 }

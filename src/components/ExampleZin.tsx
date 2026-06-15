@@ -1,7 +1,6 @@
 import { useMemo } from 'preact/hooks';
 import type { WordEntry } from '../types';
 import { getZin } from '../services/zinnen';
-import './ExampleZin.css';
 
 interface Props {
   word: WordEntry;
@@ -16,12 +15,12 @@ export function ExampleZin({ word }: Props) {
   if (!tokens) return null;
 
   return (
-    <p class="example-zin">
+    <p class="text-sm text-text-secondary italic mt-1 mb-0 leading-relaxed">
       {tokens.map((token, i) => (
         <span key={i}>
           {i > 0 ? ' ' : ''}
           {token.highlighted
-            ? <mark class="example-zin__highlight">{token.text}</mark>
+            ? <mark class="bg-transparent text-primary font-semibold not-italic">{token.text}</mark>
             : token.text}
         </span>
       ))}

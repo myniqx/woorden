@@ -150,16 +150,22 @@ export interface LeaderboardEntry {
   last30Correct: number;
 }
 
-export async function fetchLeaderboard(): Promise<LeaderboardEntry[]> {
+export interface LeaderboardResult {
+  entries: LeaderboardEntry[];
+  serverUpdatedAt: string;
+}
+
+export async function fetchLeaderboard(): Promise<LeaderboardResult> {
   const { data, error } = await supabase
     .from('cache')
-    .select('value')
+    .select('value, updated_at')
     .eq('key', 'leaderboard')
     .single();
 
-  if (error || !data?.value) return [];
+  if (error) throw new Error(error.message);
+  if (!data?.value) return { entries: [], serverUpdatedAt: '' };
 
-  return data.value
+  const entries = data.value
     .split('\n')
     .filter((line: string) => line.trim())
     .map((line: string) => {
@@ -175,6 +181,8 @@ export async function fetchLeaderboard(): Promise<LeaderboardEntry[]> {
         last30Correct: Number(last30Correct),
       };
     });
+
+  return { entries, serverUpdatedAt: data.updated_at ?? '' };
 }
 
 // Remote → Local: Supabase'den çek, local'e yaz

@@ -1,15 +1,14 @@
 import { useState } from 'preact/hooks';
 import { BarChart3, Eye, BookOpen, AlertCircle, ChevronUp, RefreshCw, Flame } from 'lucide-preact';
-import type { Language, Word, WordStats, QuizType } from '../types';
+import { Badge, Button } from './commons';
+import type { Word, WordStats, QuizType } from '../types';
 import { words } from '../services/words';
 import { getAllWordStats, getStreak } from '../services/storage';
 import { getStatsSummary } from '../services/wordSelector';
-import { t } from '../data/translations';
+import { useLanguage } from '../hooks';
 import { WordListModal } from './WordListModal';
-import './StatsFooter.css';
 
 interface StatsFooterProps {
-  language: Language;
   quizType?: QuizType | null;
   needRefresh?: boolean;
   onUpdate?: () => void;
@@ -21,7 +20,7 @@ interface WordWithStats extends Word {
   stats: WordStats;
 }
 
-function getCategorizedWords(language: Language): Record<Category, WordWithStats[]> {
+function getCategorizedWords(): Record<Category, WordWithStats[]> {
   const allStats = getAllWordStats();
 
   const unseen: WordWithStats[] = [];
@@ -44,106 +43,104 @@ function getCategorizedWords(language: Language): Record<Category, WordWithStats
     }
   });
 
-  // Sort unseen alphabetically
   unseen.sort((a, b) => a.nl.localeCompare(b.nl, 'nl'));
-
-  // Sort learning/difficult by most errors first
   learning.sort((a, b) => b.stats.wrong - b.stats.correct - (a.stats.wrong - a.stats.correct));
   difficult.sort((a, b) => b.stats.wrong - a.stats.wrong);
-
-  // Sort mastered by most correct first
   mastered.sort((a, b) => b.stats.correct - a.stats.correct);
 
   return { unseen, learning, mastered, difficult };
 }
 
-export function StatsFooter({ language, quizType, needRefresh, onUpdate }: StatsFooterProps) {
+const statIconClass: Record<Category, string> = {
+  unseen: 'bg-[rgba(158,158,158,0.1)] text-[#9e9e9e]',
+  learning: 'bg-[rgba(255,107,53,0.1)] text-[#ff6b35]',
+  mastered: 'bg-[rgba(76,175,80,0.1)] text-[#4caf50]',
+  difficult: 'bg-[rgba(244,67,54,0.1)] text-[#f44336]',
+};
+
+export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProps) {
+  const { t } = useLanguage();
   const [expanded, setExpanded] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
   const stats = getStatsSummary(quizType || undefined);
   const streak = getStreak();
-  const tr = (key: string) => t(key, language);
   const progressPercent = stats.total > 0 ? Math.round((stats.seen / stats.total) * 100) : 0;
 
-  const handleCategoryClick = (category: Category) => {
-    setSelectedCategory(category);
-  };
+  const categorizedWords = selectedCategory ? getCategorizedWords() : null;
 
-  const categorizedWords = selectedCategory ? getCategorizedWords(language) : null;
+  const categoryLabel: Record<Category, string> = {
+    unseen: t.wordList.unseen,
+    learning: t.wordList.learning,
+    mastered: t.wordList.mastered,
+    difficult: t.wordList.difficult,
+  };
 
   return (
     <>
-      <footer class={`stats-footer ${expanded ? 'expanded' : ''}`}>
-        <div class="stats-footer-row">
-          <button class="stats-toggle" onClick={() => setExpanded(!expanded)}>
-            <div class="stats-summary">
-              <div class="stats-progress-badge">
-                <BarChart3 size={14} />
-                <span>{stats.seen} / {stats.total} ({progressPercent}%)</span>
-              </div>
-              <div class="stats-streak">
-                <Flame size={14} />
-                <span>{streak}</span>
-              </div>
+      <footer class="bg-surface border-t border-border sticky bottom-0 z-[100]">
+        <div class="flex items-center">
+          <button
+            class="flex-1 flex items-center justify-between px-6 py-4 bg-transparent border-none cursor-pointer text-text-primary hover:bg-primary-light"
+            onClick={() => setExpanded(!expanded)}
+          >
+            <div class="flex items-center gap-2">
+              <Badge variant="soft" color="surface" size="sm" icon={BarChart3}>
+                {stats.seen} / {stats.total} ({progressPercent}%)
+              </Badge>
+              <Badge variant="soft" color="surface" size="sm" icon={Flame}>
+                {streak}
+              </Badge>
             </div>
-            <ChevronUp size={20} class={`toggle-icon ${expanded ? 'rotated' : ''}`} />
+            <ChevronUp
+              size={20}
+              class={`text-text-secondary transition-transform duration-(--transition-fast) ${expanded ? 'rotate-180' : ''}`}
+            />
           </button>
 
           {needRefresh && (
-            <button class="update-btn" onClick={onUpdate} title={t('updateAvailable', language)}>
-              <RefreshCw size={16} />
-              <span>{t('update', language)}</span>
-            </button>
+            <Button
+              variant="solid" color="success" icon={RefreshCw} size="sm"
+              onClick={onUpdate} title={t.stats.updateAvailable}
+              class="mr-4 pulse-glow"
+            >
+              {t.common.update}
+            </Button>
           )}
         </div>
 
         {expanded && (
-          <div class="stats-details fade-in">
-            <div class="stats-grid">
-              <button class="stat-item clickable" onClick={() => handleCategoryClick('unseen')}>
-                <div class="stat-icon unseen">
-                  <Eye size={16} />
-                </div>
-                <div class="stat-content">
-                  <span class="stat-value">{stats.unseen}</span>
-                  <span class="stat-label">{tr('unseen')}</span>
-                </div>
-              </button>
-
-              <button class="stat-item clickable" onClick={() => handleCategoryClick('learning')}>
-                <div class="stat-icon learning">
-                  <BookOpen size={16} />
-                </div>
-                <div class="stat-content">
-                  <span class="stat-value">{stats.learning}</span>
-                  <span class="stat-label">{tr('learning')}</span>
-                </div>
-              </button>
-
-              <button class="stat-item clickable" onClick={() => handleCategoryClick('mastered')}>
-                <div class="stat-icon mastered">
-                  <BarChart3 size={16} />
-                </div>
-                <div class="stat-content">
-                  <span class="stat-value">{stats.mastered}</span>
-                  <span class="stat-label">{tr('mastered')}</span>
-                </div>
-              </button>
-
-              <button class="stat-item clickable" onClick={() => handleCategoryClick('difficult')}>
-                <div class="stat-icon difficult">
-                  <AlertCircle size={16} />
-                </div>
-                <div class="stat-content">
-                  <span class="stat-value">{stats.difficult}</span>
-                  <span class="stat-label">{tr('difficult')}</span>
-                </div>
-              </button>
+          <div class="px-6 pb-6 fade-in">
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              {(
+                [
+                  { cat: 'unseen' as Category, icon: Eye, value: stats.unseen },
+                  { cat: 'learning' as Category, icon: BookOpen, value: stats.learning },
+                  { cat: 'mastered' as Category, icon: BarChart3, value: stats.mastered },
+                  { cat: 'difficult' as Category, icon: AlertCircle, value: stats.difficult },
+                ] as const
+              ).map(({ cat, icon: Icon, value }) => (
+                <button
+                  key={cat}
+                  class="flex items-center gap-2 p-2 bg-bg rounded-md border-none cursor-pointer text-left transition-all duration-(--transition-fast) hover:-translate-y-0.5 hover:shadow-sm active:translate-y-0"
+                  onClick={() => setSelectedCategory(cat)}
+                >
+                  <div class={`flex items-center justify-center w-8 h-8 rounded-md ${statIconClass[cat]}`}>
+                    <Icon size={16} />
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-lg font-semibold text-text-primary leading-none">{value}</span>
+                    <span class="text-xs text-text-secondary">{categoryLabel[cat]}</span>
+                  </div>
+                </button>
+              ))}
             </div>
 
-            <div class="progress-bar">
-              <div class="progress-fill" style={{ width: `${progressPercent}%` }} />
+            <div class="h-1.5 bg-border rounded-full overflow-hidden">
+              <div
+                class="h-full bg-linear-to-r from-primary to-primary-hover rounded-full transition-[width] duration-(--transition-slow)"
+                style={{ width: `${progressPercent}%` }}
+              />
             </div>
           </div>
         )}
@@ -153,7 +150,6 @@ export function StatsFooter({ language, quizType, needRefresh, onUpdate }: Stats
         <WordListModal
           category={selectedCategory}
           words={categorizedWords[selectedCategory]}
-          language={language}
           onClose={() => setSelectedCategory(null)}
         />
       )}
