@@ -5,7 +5,7 @@ import type { Word, WordStats, QuizType } from '../types';
 import { words } from '../services/words';
 import { getAllWordStats, getStreak } from '../services/storage';
 import { getStatsSummary } from '../services/wordSelector';
-import { useLanguage, useTrans } from '../hooks';
+import { useLanguage } from '../hooks';
 import { WordListModal } from './WordListModal';
 
 interface StatsFooterProps {

@@ -1,12 +1,13 @@
 import { useState } from 'preact/hooks';
 import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch } from 'lucide-preact';
 import type { QuizType, QuizMode } from '../types';
-import { useTrans, merge, useLanguage } from '../hooks';
+import { useLanguage } from '../hooks';
 import { getSelectedWordCount, getAvailableLevels, getChunkCount, getChunkWordCount, getLevelWordCount, isChunkEnabled } from '../services/words';
 import { getPinnedWordCount, MIN_PINS_FOR_QUIZ, canPinInQuizType } from '../services/storage';
 import { WordPoolModal } from './WordPoolModal';
 import { SupportButton } from './SupportButton';
 import { Badge } from './commons';
+import { LanguageKeys } from '@/locales';
 
 interface MainMenuProps {
   onStartQuiz: (quizType: QuizType, mode?: QuizMode) => void;
@@ -28,7 +29,7 @@ const quizTypes: QuizTypeCard[] = [
   { type: 'verbForms', icon: GitBranch, color: '#00bcd4' },
 ];
 
-const quizTitle = (t: ReturnType<typeof useTrans>, type: QuizType): string => ({
+const quizTitle = (t: LanguageKeys, type: QuizType): string => ({
   nativeToDutch: t.quiz.nativeToDutch.title,
   dutchToNative: t.quiz.dutchToNative.title,
   article: t.quiz.article.title,
@@ -36,7 +37,7 @@ const quizTitle = (t: ReturnType<typeof useTrans>, type: QuizType): string => ({
   verbForms: t.quiz.verbForms.title,
 }[type]);
 
-const quizDesc = (t: ReturnType<typeof useTrans>, type: QuizType): string => ({
+const quizDesc = (t: LanguageKeys, type: QuizType): string => ({
   nativeToDutch: t.quiz.nativeToDutch.desc,
   dutchToNative: t.quiz.dutchToNative.desc,
   article: t.quiz.article.desc,
@@ -45,7 +46,7 @@ const quizDesc = (t: ReturnType<typeof useTrans>, type: QuizType): string => ({
 }[type]);
 
 export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: MainMenuProps) {
-  const { t } = useLanguage();
+  const { t, merge } = useLanguage();
   const [showWordPool, setShowWordPool] = useState(false);
   const [, forceUpdate] = useState(0);
 

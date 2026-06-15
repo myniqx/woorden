@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'preact/hooks';
 import type { QuizType, QuizMode, Language, Quiz } from '../types';
 import { createQuiz, submitAnswer } from '../services/quiz';
-import { useTrans } from '../hooks';
 import { canPinInQuizType, isPinned, togglePin, getSkillProgress, getSkillForQuizType } from '../services/storage';
 import { OptionButton } from './OptionButton';
 import { HelpModal } from './HelpModal';

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'preact/hooks';
 import type { QuizType, QuizMode, Language } from '../types';
-import { useTrans, merge, useLanguage } from '../hooks';
+import { useLanguage } from '../hooks';
 import {
   canPinInQuizType,
   isPinned,
@@ -112,7 +112,7 @@ interface QuizState {
 }
 
 export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: InputQuizScreenProps) {
-  const { language, t } = useLanguage();
+  const { language, t, merge } = useLanguage();
   const [quiz, setQuiz] = useState<QuizState | null>(null);
   const [inputValue, setInputValue] = useState('');
   const [showResult, setShowResult] = useState(false);

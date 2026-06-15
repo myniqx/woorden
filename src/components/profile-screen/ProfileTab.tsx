@@ -1,9 +1,9 @@
 import { User, LogIn, LogOut, RefreshCw, CloudDownload, CloudUpload, Save, Trash2, Shuffle } from 'lucide-preact';
 import type { ComponentChildren } from 'preact';
 import { Avatar, AvatarPicker } from '../AvatarPicker';
-import { merge } from '../../hooks';
 import { Button } from '../commons';
 import type { ProfileSharedProps, SyncState } from './types';
+import { useLanguage } from '@/hooks';
 
 const sectionH3 = 'flex items-center gap-[var(--spacing-xs)] m-0 mb-[var(--spacing-md)] text-[length:var(--text-xs)] font-semibold text-[var(--color-text-secondary)] uppercase tracking-[0.05em]';
 const sectionList = 'flex flex-col gap-[var(--spacing-xl)]';
@@ -47,7 +47,7 @@ export function ProfileTab({
   onSyncAction,
   onResetData,
 }: ProfileTabProps) {
-  const { t } = useLanguage();
+  const { t, merge } = useLanguage();
   const { state, cooldown, lastSync } = syncState;
   const isBusy = state === 'busy' || cooldown > 0;
 

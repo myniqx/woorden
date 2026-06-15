@@ -1,5 +1,5 @@
 import type { Word, WordStats } from '../types';
-import { useLanguage, useTrans } from '../hooks';
+import { useLanguage } from '../hooks';
 import { Modal } from './commons';
 
 interface WordWithStats extends Word {

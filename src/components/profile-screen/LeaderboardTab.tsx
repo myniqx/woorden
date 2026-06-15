@@ -2,7 +2,7 @@ import { useState } from 'preact/hooks';
 import { Crown, Star, Zap, LogIn } from 'lucide-preact';
 import { Avatar } from '../AvatarPicker';
 import { getUsername } from '../../services/storage';
-import { useTrans, merge, useLanguage } from '../../hooks';
+import { useLanguage } from '../../hooks';
 import type { LeaderboardEntry } from '../../services/sync';
 import type { ProfileSharedProps } from './types';
 import { Badge, Button } from '../commons';
@@ -21,7 +21,7 @@ const RankIcon = ({ rank }: { rank: number }) => {
 };
 
 export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabProps) {
-  const { t } = useLanguage();
+  const { t, merge } = useLanguage();
   const { language } = useLanguage();
   const [scoreTab, setScoreTab] = useState<ScoreTab>('daily');
 
