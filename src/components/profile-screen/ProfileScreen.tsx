@@ -11,7 +11,6 @@ import { LeaderboardTab } from './LeaderboardTab';
 import { ProfileTab } from './ProfileTab';
 import { SettingsTab } from './SettingsTab';
 import type { Tab, SyncState } from './types';
-import '../ProfileScreen.css';
 
 interface ProfileScreenProps {
   visitorCount: number | null;
@@ -166,12 +165,12 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
   ];
 
   return (
-    <div class="profile-screen">
-      <div class="profile-tabs">
+    <div class="flex flex-col flex-1 min-h-0">
+      <div class="flex border-b border-[var(--color-border)] bg-[var(--color-surface)] shrink-0">
         {tabs.map(({ id, icon: Icon, label }) => (
           <button
             key={id}
-            class={`profile-tab ${activeTab === id ? 'active' : ''}`}
+            class={`flex-1 flex items-center justify-center gap-[var(--spacing-xs)] px-[var(--spacing-sm)] py-[var(--spacing-md)] bg-transparent border-none border-b-2 -mb-px text-[length:var(--text-sm)] font-medium cursor-pointer transition-[color,border-color] duration-[var(--transition-fast)] ${activeTab === id ? 'text-[var(--color-primary)] border-b-[var(--color-primary)]' : 'text-[var(--color-text-secondary)] border-b-transparent hover:text-[var(--color-text-primary)]'}`}
             onClick={() => setActiveTab(id)}
           >
             <Icon size={18} />
@@ -180,7 +179,7 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
         ))}
       </div>
 
-      <div class="profile-tab-content">
+      <div class="flex-1 overflow-y-auto p-[var(--spacing-lg)]">
         {activeTab === 'leaderboard' && (
           <LeaderboardTab user={user} onSignIn={onSignIn} leaderboard={leaderboard} />
         )}

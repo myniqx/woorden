@@ -176,6 +176,26 @@ body {
   40%, 80%  { transform: translateX(5px); }
 }
 
-.fade-in  { animation: fadeIn  var(--transition-normal) ease-out; }
-.scale-in { animation: scaleIn var(--transition-normal) ease-out; }
-.shake    { animation: shake 0.4s ease-out; }
+@keyframes level-up {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.25); }
+  70%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(76, 175, 80, 0); }
+}
+
+@keyframes changelog-glow {
+  0%, 100% { box-shadow: 0 0 0 0 transparent; }
+  50%       { box-shadow: 0 0 8px 1px color-mix(in srgb, var(--color-primary) 30%, transparent); }
+}
+
+.fade-in        { animation: fadeIn        var(--transition-normal) ease-out; }
+.scale-in       { animation: scaleIn       var(--transition-normal) ease-out; }
+.shake          { animation: shake         0.4s ease-out; }
+.level-up       { animation: level-up      0.5s ease; }
+.pulse-glow     { animation: pulse-glow    2s infinite; }
+.changelog-glow { animation: changelog-glow 2s ease-in-out infinite; }

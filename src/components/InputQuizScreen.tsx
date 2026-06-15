@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback, useRef } from 'preact/hooks';
-import { Pin, Eye, Check, X, Flame, HelpCircle } from 'lucide-preact';
 import type { QuizType, QuizMode, Language } from '../types';
 import { t } from '../data/translations';
 import {
@@ -14,8 +13,7 @@ import { selectWord } from '../services/wordSelector';
 import { compareIgnoringAccents } from '../utils/textUtils';
 import { HelpModal } from './HelpModal';
 import { useLanguage } from '../hooks';
-import { Button } from './commons';
-import './InputQuizScreen.css';
+import { Button, QuizCard, ResultBanner } from './commons';
 
 const helpTexts: Record<string, Record<Language, { title: string; content: string }>> = {
   nativeToDutch_write: {
@@ -253,87 +251,61 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
   };
 
   if (!quiz) {
-    return <div class="quiz-loading">Loading...</div>;
+    return <div class="flex flex-1 items-center justify-center text-[var(--color-text-secondary)]">Loading...</div>;
   }
 
   const skill = getSkillForQuizType(quizType);
   const progress = getSkillProgress(quiz.wordNl, skill);
 
+  const inputStateClass = !showResult
+    ? 'border-[var(--color-border)] focus:border-[var(--color-primary)] focus:shadow-[0_0_0_3px_var(--color-primary-light)]'
+    : isCorrect
+      ? 'border-[var(--color-success)] bg-[var(--color-success-light)]'
+      : 'border-[var(--color-error)] bg-[var(--color-error-light)]';
+
   return (
-    <div class="input-quiz-screen fade-in">
-      <div class="quiz-card">
-        <div class="question-section">
-          <span class="question-type">{t(`type_${quiz.wordType}`, language)}</span>
-          <div class="question-actions">
-            {canPin && (
-              <button
-                class={`pin-button ${pinned ? 'pinned' : ''}`}
-                onClick={handlePinToggle}
-                aria-label={pinned ? 'Unpin word' : 'Pin word'}
-              >
-                <Pin size={18} />
-              </button>
-            )}
-            {help?.content && (
-              <Button variant="ghost" size="icon" icon={HelpCircle} onClick={() => setShowHelp(true)} aria-label="Help" />
-            )}
-          </div>
-          <p class="question-text">{quiz.questionText}</p>
-          {quiz.subtext && <p class="question-subtext">{quiz.subtext}</p>}
-        </div>
-
-        <div class="input-section">
-          <input
-            ref={inputRef}
-            type="text"
-            class={`answer-input ${showResult ? (isCorrect ? 'correct' : 'incorrect') : ''}`}
-            value={inputValue}
-            onInput={(e) => setInputValue((e.target as HTMLInputElement).value)}
-            disabled={showResult}
-            autoComplete="off"
-            autoCapitalize="off"
-            autoCorrect="off"
-            spellCheck={false}
-          />
-
-          {!showResult && (
-            <Button variant="soft" color="default" onClick={handleSkip}>
-              {t('skip', language)}
-            </Button>
-          )}
-        </div>
-      </div>
+    <div class="flex-1 flex flex-col gap-[var(--spacing-lg)] py-[var(--spacing-md)] fade-in">
+      <QuizCard
+        wordType={t(`type_${quiz.wordType}`, language)}
+        questionText={quiz.questionText}
+        subtext={quiz.subtext}
+        pinned={pinned}
+        canPin={canPin}
+        hasHelp={!!help?.content}
+        onPinToggle={handlePinToggle}
+        onHelpOpen={() => setShowHelp(true)}
+      >
+        <input
+          ref={inputRef}
+          type="text"
+          class={`w-full px-[var(--spacing-lg)] py-[var(--spacing-md)] text-[length:var(--text-lg)] border-2 rounded-[var(--radius-lg)] bg-[var(--color-surface)] text-[var(--color-text-primary)] text-center outline-none transition-all duration-[var(--transition-fast)] ${inputStateClass}`}
+          value={inputValue}
+          onInput={(e) => setInputValue((e.target as HTMLInputElement).value)}
+          disabled={showResult}
+          autoComplete="off"
+          autoCapitalize="off"
+          autoCorrect="off"
+          spellCheck={false}
+        />
+        {!showResult && (
+          <Button variant="soft" color="default" onClick={handleSkip} class="self-center">
+            {t('skip', language)}
+          </Button>
+        )}
+      </QuizCard>
 
       {showResult && (
-        <div class={`result-banner ${isCorrect ? 'correct' : 'incorrect'}`}>
-          <div class="result-text">
-            {isCorrect
-              ? t('correct', language)
-              : t('correctAnswer', language, { answer: quiz.correctAnswer })}
-          </div>
-          <div class="result-stats">
-            <span class="stat-item">
-              <Eye size={14} /> {progress.seen}
-            </span>
-            <span class="stat-item correct">
-              <Check size={14} /> {progress.correct}
-            </span>
-            <span class="stat-item incorrect">
-              <X size={14} /> {progress.wrong}
-            </span>
-            <span class="stat-item streak">
-              <Flame size={14} /> {progress.streak}
-            </span>
-          </div>
-        </div>
+        <ResultBanner
+          isCorrect={isCorrect}
+          text={isCorrect
+            ? t('correct', language)
+            : t('correctAnswer', language, { answer: quiz.correctAnswer })}
+          progress={progress}
+        />
       )}
 
       {showHelp && help?.content && (
-        <HelpModal
-          title={help.title}
-          content={help.content}
-          onClose={() => setShowHelp(false)}
-        />
+        <HelpModal title={help.title} content={help.content} onClose={() => setShowHelp(false)} />
       )}
     </div>
   );

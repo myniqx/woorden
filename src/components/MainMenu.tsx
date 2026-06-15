@@ -8,7 +8,6 @@ import { WordPoolModal } from './WordPoolModal';
 import { SupportButton } from './SupportButton';
 import { useLanguage } from '../hooks';
 import { Badge } from './commons';
-import './MainMenu.css';
 
 interface MainMenuProps {
   onStartQuiz: (quizType: QuizType, mode?: QuizMode) => void;
@@ -54,29 +53,32 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
   };
 
   return (
-    <div class="main-menu fade-in">
-      <button class="word-pool-button" onClick={() => setShowWordPool(true)}>
+    <div class="flex-1 flex flex-col gap-[var(--spacing-md)] py-[var(--spacing-lg)] fade-in">
+      <button
+        class="flex items-center gap-[var(--spacing-md)] px-[var(--spacing-lg)] py-[var(--spacing-md)] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-lg)] cursor-pointer text-left text-[var(--color-primary)] transition-all duration-[var(--transition-normal)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primary-light)]"
+        onClick={() => setShowWordPool(true)}
+      >
         <Layers size={20} />
-        <div class="word-pool-button-content">
-          <span class="word-pool-button-title">{tr('wordPool')}</span>
-          <span class="word-pool-button-count">
+        <div class="flex flex-col gap-0.5">
+          <span class="text-[length:var(--text-base)] font-semibold text-[var(--color-text-primary)]">{tr('wordPool')}</span>
+          <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)]">
             {t('wordPoolDesc', language, { count: selectedCount })}
           </span>
-          <div class="word-pool-badges">
-            {levelBadges.map(({ level, selected, total }) => (
-              <span
-                key={level}
-                class={`word-pool-badge ${selected === 0 ? 'muted' : ''}`}
-              >
-                <span class="word-pool-badge-level">{level}</span>
-                <span class="word-pool-badge-count">{selected}/{total}</span>
-              </span>
-            ))}
+          <div class="flex flex-wrap gap-[var(--spacing-xs)] mt-[var(--spacing-xs)]">
+            {levelBadges.map(({ level, selected, total }) => {
+              const muted = selected === 0;
+              return (
+                <span key={level} class={`inline-flex items-center text-[length:var(--text-xs)] rounded-full overflow-hidden border ${muted ? 'border-[var(--color-border)]' : 'border-[color-mix(in_srgb,var(--color-primary)_30%,transparent)]'}`}>
+                  <span class={`font-bold w-8 text-right px-1.5 py-0.5 ${muted ? 'bg-[var(--color-text-muted)] text-[var(--color-surface)]' : 'bg-[var(--color-primary)] text-white'}`}>{level}</span>
+                  <span class={`px-[7px] py-0.5 ${muted ? 'bg-[var(--color-surface-elevated)] text-[var(--color-text-muted)]' : 'bg-[var(--color-primary-light)] text-[var(--color-primary)]'}`}>{selected}/{total}</span>
+                </span>
+              );
+            })}
           </div>
         </div>
       </button>
 
-      <div class="quiz-type-grid">
+      <div class="flex flex-col gap-[var(--spacing-md)]">
         {quizTypes.map(({ type, icon: Icon, color }) => {
           const canHavePin = canPinInQuizType(type);
           const pinCount = canHavePin ? getPinnedWordCount(type) : 0;
@@ -84,32 +86,32 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
           const pinsNeeded = MIN_PINS_FOR_QUIZ - pinCount;
 
           return (
-            <div key={type} class={`quiz-type-group ${canHavePin ? 'has-pin' : ''}`}>
+            <div key={type} class="flex flex-col gap-[var(--spacing-xs)]">
               <button
-                class="quiz-type-card"
-                onClick={() => onStartQuiz(type, 'normal')}
+                class="group flex items-center gap-[var(--spacing-lg)] p-[var(--spacing-lg)] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-xl)] cursor-pointer text-left transition-all duration-[var(--transition-normal)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 active:translate-y-0"
                 style={{ '--card-color': color } as any}
+                onClick={() => onStartQuiz(type, 'normal')}
               >
-                <div class="card-icon">
+                <div class="flex items-center justify-center w-14 h-14 rounded-[var(--radius-lg)] bg-[var(--color-primary-light)] text-[var(--card-color,var(--color-primary))] shrink-0 transition-colors duration-[var(--transition-normal)] group-hover:bg-[var(--card-color,var(--color-primary))] group-hover:text-white">
                   <Icon size={32} />
                 </div>
-                <div class="card-content">
-                  <h2 class="card-title">{tr(`quiz_${type}`)}</h2>
-                  <p class="card-description">{tr(`quiz_${type}_desc`)}</p>
+                <div class="flex-1 min-w-0">
+                  <h2 class="text-[length:var(--text-lg)] font-semibold text-[var(--color-text-primary)] mb-[var(--spacing-xs)]">{tr(`quiz_${type}`)}</h2>
+                  <p class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] leading-snug">{tr(`quiz_${type}_desc`)}</p>
                 </div>
               </button>
 
               {canHavePin && (
                 <button
-                  class={`pinned-quiz-card ${!canStartPinnedQuiz ? 'disabled' : ''}`}
+                  class={`flex items-center gap-[var(--spacing-sm)] px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-surface)] border border-[var(--color-border)] rounded-[var(--radius-sm)_var(--radius-sm)_var(--radius-xl)_var(--radius-xl)] cursor-pointer text-left text-[var(--card-color,var(--color-primary))] transition-all duration-[var(--transition-normal)] hover:not-disabled:border-[var(--card-color,var(--color-primary))] hover:not-disabled:bg-[var(--color-surface-elevated)] disabled:opacity-60 disabled:cursor-not-allowed disabled:text-[var(--color-text-secondary)]`}
                   onClick={() => canStartPinnedQuiz && onStartQuiz(type, 'pinned')}
                   disabled={!canStartPinnedQuiz}
                   style={{ '--card-color': color } as any}
                 >
                   <Pin size={18} />
-                  <div class="pinned-quiz-content">
-                    <span class="pinned-quiz-title">{tr('pinnedWords')}</span>
-                    <span class="pinned-quiz-desc">
+                  <div class="flex flex-col gap-0.5 flex-1">
+                    <span class="text-[length:var(--text-sm)] font-semibold text-[var(--color-text-primary)]">{tr('pinnedWords')}</span>
+                    <span class="text-[length:var(--text-xs)] text-[var(--color-text-secondary)]">
                       {canStartPinnedQuiz
                         ? t('pinnedWordsDesc', language, { count: pinCount })
                         : t('pinnedWordsDisabled', language, { count: pinsNeeded })}
@@ -125,7 +127,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
       <SupportButton />
 
       <button
-        class={`changelog-button ${hasNewChangelog ? 'changelog-button--new' : ''}`}
+        class={`flex items-center justify-center gap-[var(--spacing-xs)] w-full px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-none border rounded-[var(--radius-md)] text-[length:var(--text-sm)] cursor-pointer transition-[color,border-color] duration-[var(--transition-fast)] ${hasNewChangelog ? 'border-[var(--color-primary)] text-[var(--color-primary)] changelog-glow' : 'border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)] hover:border-[var(--color-text-muted)]'}`}
         onClick={onOpenChangelog}
       >
         <span>Changelog</span>

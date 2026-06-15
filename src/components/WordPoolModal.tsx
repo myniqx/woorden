@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { ChevronDown, ChevronRight, X, HelpCircle } from 'lucide-preact';
+import { ChevronDown, ChevronRight, HelpCircle } from 'lucide-preact';
 import type { Language } from '../types';
 import { t } from '../data/translations';
 import { useLanguage } from '../hooks';
@@ -12,14 +12,13 @@ import {
   refreshWords,
 } from '../services/words';
 import {
-  isLevelEnabled,
   isChunkEnabled,
   setChunkEnabled,
   areAllChunksEnabled,
   areNoChunksEnabled,
 } from '../services/storage';
 import { HelpModal } from './HelpModal';
-import './WordPoolModal.css';
+import { Button, Modal } from './commons';
 
 const helpTexts: Record<Language, { title: string; content: string }> = {
   tr: {
@@ -87,88 +86,86 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
 
   const totalSelected = getSelectedWordCount();
 
+  const iconBtnClass = 'flex items-center justify-center p-[var(--spacing-xs)] bg-none border-none cursor-pointer text-[var(--color-text-secondary)] rounded-[var(--radius-sm)] transition-all duration-[var(--transition-fast)]';
+
   return (
-    <div class="word-pool-overlay" onClick={onClose}>
-      <div class="word-pool-modal" onClick={(e) => e.stopPropagation()}>
-        <div class="word-pool-header">
-          <div class="word-pool-title">
-            <h2>{t('wordPool', language)}</h2>
-            <span class="word-pool-count">
-              {t('wordPoolDesc', language, { count: totalSelected })}
-            </span>
-          </div>
-          <div class="word-pool-header-actions">
-            <button class="word-pool-help" onClick={() => setShowHelp(true)}>
-              <HelpCircle size={20} />
-            </button>
-            <button class="word-pool-close" onClick={onClose}>
-              <X size={20} />
-            </button>
-          </div>
+    <>
+      <Modal onClose={onClose} maxWidth="md">
+        <Modal.Header
+          title={t('wordPool', language)}
+          onClose={onClose}
+        >
+          <Button variant="ghost" icon={HelpCircle} size="icon" onClick={() => setShowHelp(true)} aria-label="Help" />
+        </Modal.Header>
+
+        <div class="block text-[length:var(--text-sm)] text-[var(--color-text-secondary)] px-[var(--spacing-lg)] py-[var(--spacing-sm)] border-b border-[var(--color-border)]">
+          {t('wordPoolDesc', language, { count: totalSelected })}
         </div>
 
-        <div class="word-pool-content">
-          {levels.map(level => {
-            const chunkCount = getChunkCount(level);
-            const levelWordCount = getLevelWordCount(level);
-            const isExpanded = expandedLevels[level];
-            const checkState = getLevelCheckState(level);
+        <Modal.Body>
+          <div class="flex flex-col gap-[var(--spacing-sm)]">
+            {levels.map(level => {
+              const chunkCount = getChunkCount(level);
+              const levelWordCount = getLevelWordCount(level);
+              const isExpanded = expandedLevels[level];
+              const checkState = getLevelCheckState(level);
 
-            return (
-              <div key={level} class="word-pool-level">
-                <div class="word-pool-level-header">
-                  <button
-                    class="word-pool-expand-btn"
-                    onClick={() => toggleExpand(level)}
-                  >
-                    {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
-                  </button>
+              return (
+                <div key={level}>
+                  <div class="flex items-center gap-[var(--spacing-xs)] p-[var(--spacing-sm)] bg-[var(--color-surface-elevated)] rounded-[var(--radius-md)]">
+                    <button
+                      class={`${iconBtnClass} hover:bg-[var(--color-border)] hover:text-[var(--color-text-primary)]`}
+                      onClick={() => toggleExpand(level)}
+                    >
+                      {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
+                    </button>
 
-                  <label class="word-pool-level-label">
-                    <input
-                      type="checkbox"
-                      checked={checkState === 'all'}
-                      ref={(el) => {
-                        if (el) el.indeterminate = checkState === 'partial';
-                      }}
-                      onChange={() => handleLevelToggle(level)}
-                    />
-                    <span class="word-pool-level-name">{level}</span>
-                    <span class="word-pool-level-count">
-                      {t('wordsSelected', language, { count: levelWordCount })}
-                    </span>
-                  </label>
-                </div>
-
-                {isExpanded && (
-                  <div class="word-pool-chunks">
-                    {Array.from({ length: chunkCount }, (_, i) => {
-                      const wordCount = getChunkWordCount(level, i);
-                      const enabled = isChunkEnabled(level, i);
-
-                      return (
-                        <label key={i} class="word-pool-chunk">
-                          <input
-                            type="checkbox"
-                            checked={enabled}
-                            onChange={() => handleChunkToggle(level, i)}
-                          />
-                          <span class="word-pool-chunk-name">
-                            {t('pack', language, { num: i + 1 })}
-                          </span>
-                          <span class="word-pool-chunk-count">
-                            {t('wordsSelected', language, { count: wordCount })}
-                          </span>
-                        </label>
-                      );
-                    })}
+                    <label class="flex items-center gap-[var(--spacing-sm)] flex-1 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        class="w-[18px] h-[18px] cursor-pointer accent-[var(--color-primary)]"
+                        checked={checkState === 'all'}
+                        ref={(el) => { if (el) el.indeterminate = checkState === 'partial'; }}
+                        onChange={() => handleLevelToggle(level)}
+                      />
+                      <span class="font-semibold text-[length:var(--text-base)] text-[var(--color-text-primary)]">{level}</span>
+                      <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] ml-auto">
+                        {t('wordsSelected', language, { count: levelWordCount })}
+                      </span>
+                    </label>
                   </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </div>
+
+                  {isExpanded && (
+                    <div class="ml-[calc(var(--spacing-lg)+var(--spacing-md))] mt-[var(--spacing-xs)] flex flex-col gap-[var(--spacing-xs)]">
+                      {Array.from({ length: chunkCount }, (_, i) => {
+                        const wordCount = getChunkWordCount(level, i);
+                        const enabled = isChunkEnabled(level, i);
+
+                        return (
+                          <label key={i} class="flex items-center gap-[var(--spacing-sm)] px-[var(--spacing-md)] py-[var(--spacing-sm)] cursor-pointer rounded-[var(--radius-sm)] transition-all duration-[var(--transition-fast)] hover:bg-[var(--color-surface-elevated)]">
+                            <input
+                              type="checkbox"
+                              class="w-[16px] h-[16px] cursor-pointer accent-[var(--color-primary)]"
+                              checked={enabled}
+                              onChange={() => handleChunkToggle(level, i)}
+                            />
+                            <span class="text-[length:var(--text-sm)] text-[var(--color-text-primary)]">
+                              {t('pack', language, { num: i + 1 })}
+                            </span>
+                            <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] ml-auto">
+                              {t('wordsSelected', language, { count: wordCount })}
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </Modal.Body>
+      </Modal>
 
       {showHelp && (
         <HelpModal
@@ -177,6 +174,6 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
           onClose={() => setShowHelp(false)}
         />
       )}
-    </div>
+    </>
   );
 }

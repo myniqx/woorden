@@ -1,7 +1,6 @@
 import { t } from '../data/translations';
 import { useLanguage } from '../hooks';
 import { Button } from './commons';
-import './AlertBanner.css';
 
 export type AlertAction = 'signIn' | 'goToProfile' | null;
 
@@ -52,13 +51,15 @@ export function AlertBanner({ onAction }: AlertBannerProps) {
   };
 
   return (
-    <div class="alert-banner">
-      <ul class="alert-banner-list">
+    <div class="mx-(--spacing-md) mt-(--spacing-sm) border-l-[3px] border-l-primary rounded-r-sm px-(--spacing-md) py-(--spacing-sm) bg-transparent">
+      <ul class="m-0 p-0 list-none flex flex-col gap-(--spacing-sm)">
         {visible.map((a) => (
-          <li key={a.key} class="alert-banner-item">
-            <span class="alert-banner-text">{t(a.key, language)}</span>
+          <li key={a.key} class="flex flex-col gap-1">
+            <span class="text-(length:--text-sm) text-text-secondary leading-relaxed">
+              {t(a.key, language)}
+            </span>
             {a.action && (
-              <div class="alert-banner-item-action">
+              <div class="flex justify-end">
                 <Button variant="outline" color="primary" size="sm" onClick={() => handleAction(a)}>
                   {t(`alert_action_${a.action}`, language)}
                 </Button>
@@ -67,7 +68,7 @@ export function AlertBanner({ onAction }: AlertBannerProps) {
           </li>
         ))}
       </ul>
-      <div class="alert-banner-footer">
+      <div class="mt-(--spacing-sm) pt-(--spacing-sm) border-t border-t-border flex justify-start">
         <Button variant="outline" color="muted" size="sm" onClick={handleDismiss}>
           {t('alert_dismiss', language)}
         </Button>

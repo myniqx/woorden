@@ -8,7 +8,6 @@ import { getStatsSummary } from '../services/wordSelector';
 import { t } from '../data/translations';
 import { WordListModal } from './WordListModal';
 import { useLanguage } from '../hooks';
-import './StatsFooter.css';
 
 interface StatsFooterProps {
   quizType?: QuizType | null;
@@ -53,6 +52,13 @@ function getCategorizedWords(): Record<Category, WordWithStats[]> {
   return { unseen, learning, mastered, difficult };
 }
 
+const statIconClass: Record<Category, string> = {
+  unseen:    'bg-[rgba(158,158,158,0.1)] text-[#9e9e9e]',
+  learning:  'bg-[rgba(255,107,53,0.1)] text-[#ff6b35]',
+  mastered:  'bg-[rgba(76,175,80,0.1)] text-[#4caf50]',
+  difficult: 'bg-[rgba(244,67,54,0.1)] text-[#f44336]',
+};
+
 export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProps) {
   const { language } = useLanguage();
   const [expanded, setExpanded] = useState(false);
@@ -67,10 +73,13 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
 
   return (
     <>
-      <footer class={`stats-footer ${expanded ? 'expanded' : ''}`}>
-        <div class="stats-footer-row">
-          <button class="stats-toggle" onClick={() => setExpanded(!expanded)}>
-            <div class="stats-summary">
+      <footer class="bg-[var(--color-surface)] border-t border-[var(--color-border)] sticky bottom-0 z-[100]">
+        <div class="flex items-center">
+          <button
+            class="flex-1 flex items-center justify-between px-[var(--spacing-lg)] py-[var(--spacing-md)] bg-transparent border-none cursor-pointer text-[var(--color-text-primary)] hover:bg-[var(--color-primary-light)]"
+            onClick={() => setExpanded(!expanded)}
+          >
+            <div class="flex items-center gap-[var(--spacing-sm)]">
               <Badge variant="soft" color="surface" size="sm" icon={BarChart3}>
                 {stats.seen} / {stats.total} ({progressPercent}%)
               </Badge>
@@ -78,54 +87,55 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
                 {streak}
               </Badge>
             </div>
-            <ChevronUp size={20} class={`toggle-icon ${expanded ? 'rotated' : ''}`} />
+            <ChevronUp
+              size={20}
+              class={`text-[var(--color-text-secondary)] transition-transform duration-[var(--transition-fast)] ${expanded ? 'rotate-180' : ''}`}
+            />
           </button>
 
           {needRefresh && (
-            <Button variant="solid" color="success" icon={RefreshCw} size="sm" onClick={onUpdate} title={t('updateAvailable', language)}>
+            <Button
+              variant="solid" color="success" icon={RefreshCw} size="sm"
+              onClick={onUpdate} title={t('updateAvailable', language)}
+              class="mr-[var(--spacing-md)] pulse-glow"
+            >
               {t('update', language)}
             </Button>
           )}
         </div>
 
         {expanded && (
-          <div class="stats-details fade-in">
-            <div class="stats-grid">
-              <button class="stat-item clickable" onClick={() => setSelectedCategory('unseen')}>
-                <div class="stat-icon unseen"><Eye size={16} /></div>
-                <div class="stat-content">
-                  <span class="stat-value">{stats.unseen}</span>
-                  <span class="stat-label">{tr('unseen')}</span>
-                </div>
-              </button>
-
-              <button class="stat-item clickable" onClick={() => setSelectedCategory('learning')}>
-                <div class="stat-icon learning"><BookOpen size={16} /></div>
-                <div class="stat-content">
-                  <span class="stat-value">{stats.learning}</span>
-                  <span class="stat-label">{tr('learning')}</span>
-                </div>
-              </button>
-
-              <button class="stat-item clickable" onClick={() => setSelectedCategory('mastered')}>
-                <div class="stat-icon mastered"><BarChart3 size={16} /></div>
-                <div class="stat-content">
-                  <span class="stat-value">{stats.mastered}</span>
-                  <span class="stat-label">{tr('mastered')}</span>
-                </div>
-              </button>
-
-              <button class="stat-item clickable" onClick={() => setSelectedCategory('difficult')}>
-                <div class="stat-icon difficult"><AlertCircle size={16} /></div>
-                <div class="stat-content">
-                  <span class="stat-value">{stats.difficult}</span>
-                  <span class="stat-label">{tr('difficult')}</span>
-                </div>
-              </button>
+          <div class="px-[var(--spacing-lg)] pb-[var(--spacing-lg)] fade-in">
+            <div class="grid grid-cols-2 gap-[var(--spacing-md)] mb-[var(--spacing-md)]">
+              {(
+                [
+                  { cat: 'unseen' as Category,    icon: Eye,         value: stats.unseen },
+                  { cat: 'learning' as Category,  icon: BookOpen,    value: stats.learning },
+                  { cat: 'mastered' as Category,  icon: BarChart3,   value: stats.mastered },
+                  { cat: 'difficult' as Category, icon: AlertCircle, value: stats.difficult },
+                ] as const
+              ).map(({ cat, icon: Icon, value }) => (
+                <button
+                  key={cat}
+                  class="flex items-center gap-[var(--spacing-sm)] p-[var(--spacing-sm)] bg-[var(--color-bg)] rounded-[var(--radius-md)] border-none cursor-pointer text-left transition-all duration-[var(--transition-fast)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-sm)] active:translate-y-0"
+                  onClick={() => setSelectedCategory(cat)}
+                >
+                  <div class={`flex items-center justify-center w-8 h-8 rounded-[var(--radius-md)] ${statIconClass[cat]}`}>
+                    <Icon size={16} />
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-[length:var(--text-lg)] font-semibold text-[var(--color-text-primary)] leading-none">{value}</span>
+                    <span class="text-[length:var(--text-xs)] text-[var(--color-text-secondary)]">{tr(cat)}</span>
+                  </div>
+                </button>
+              ))}
             </div>
 
-            <div class="progress-bar">
-              <div class="progress-fill" style={{ width: `${progressPercent}%` }} />
+            <div class="h-1.5 bg-[var(--color-border)] rounded-full overflow-hidden">
+              <div
+                class="h-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-hover)] rounded-full transition-[width] duration-[var(--transition-slow)]"
+                style={{ width: `${progressPercent}%` }}
+              />
             </div>
           </div>
         )}

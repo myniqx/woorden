@@ -1,9 +1,7 @@
-import { X } from 'lucide-preact';
 import type { Word, WordStats } from '../types';
 import { t } from '../data/translations';
 import { useLanguage } from '../hooks';
-import { Button } from './commons';
-import './WordListModal.css';
+import { Modal } from './commons';
 
 interface WordWithStats extends Word {
   stats: WordStats;
@@ -26,48 +24,40 @@ export function WordListModal({ category, words, onClose }: WordListModalProps) 
     difficult: tr('difficultWords'),
   };
 
-  const handleOverlayClick = (e: MouseEvent) => {
-    if ((e.target as HTMLElement).classList.contains('modal-overlay')) {
-      onClose();
-    }
-  };
-
   return (
-    <div class="modal-overlay" onClick={handleOverlayClick}>
-      <div class="modal-content scale-in">
-        <div class="modal-header">
-          <h2 class="modal-title">{titles[category]} ({words.length})</h2>
-          <Button variant="ghost" icon={X} size="icon" onClick={onClose} aria-label="Close" />
-        </div>
-
-        <div class="modal-body">
-          {words.length === 0 ? (
-            <p class="empty-message">{tr('emptyCategory')}</p>
-          ) : (
-            <div class="word-list">
-              {words.map((word) => (
-                <div key={word.id} class="word-list-item">
-                  <div class="word-info">
-                    <span class="word-dutch">
-                      {'article' in word && word.article && (
-                        <span class="word-article">{word.article} </span>
-                      )}
-                      {word.nl}
-                    </span>
-                    <span class="word-translation">{word[language]}</span>
-                  </div>
-                  {category !== 'unseen' && (
-                    <div class="word-stats">
-                      <span class="stat-correct">✓ {word.stats.correct}</span>
-                      <span class="stat-wrong">✗ {word.stats.wrong}</span>
-                    </div>
-                  )}
+    <Modal onClose={onClose} maxWidth="lg">
+      <Modal.Header title={`${titles[category]} (${words.length})`} onClose={onClose} />
+      <Modal.Body>
+        {words.length === 0 ? (
+          <p class="text-center text-[var(--color-text-secondary)] py-[var(--spacing-xl)]">
+            {tr('emptyCategory')}
+          </p>
+        ) : (
+          <div class="flex flex-col gap-[var(--spacing-xs)]">
+            {words.map((word) => (
+              <div key={word.id} class="flex items-center justify-between px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--color-bg)] rounded-[var(--radius-md)] gap-[var(--spacing-md)]">
+                <div class="flex flex-col gap-0.5 min-w-0 flex-1">
+                  <span class="font-medium text-[var(--color-text-primary)]">
+                    {'article' in word && word.article && (
+                      <span class="text-[var(--color-primary)] font-semibold">{word.article} </span>
+                    )}
+                    {word.nl}
+                  </span>
+                  <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] truncate">
+                    {word[language]}
+                  </span>
                 </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
+                {category !== 'unseen' && (
+                  <div class="flex gap-[var(--spacing-sm)] shrink-0">
+                    <span class="text-[var(--color-success)] text-[length:var(--text-sm)] font-medium">✓ {word.stats.correct}</span>
+                    <span class="text-[var(--color-error)] text-[length:var(--text-sm)] font-medium">✗ {word.stats.wrong}</span>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </Modal.Body>
+    </Modal>
   );
 }

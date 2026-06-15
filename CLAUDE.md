@@ -11,21 +11,41 @@ A Progressive Web App (PWA) for learning Dutch vocabulary with spaced repetition
 - **Build:** Vite
 - **Icons:** Lucide
 - **PWA:** vite-plugin-pwa + Workbox
-- **Styling:** CSS Variables (custom theme system)
+- **Styling:** Tailwind CSS v4 + CSS Variables (theme tokens in `src/styles/theme.css`)
 
 ## Project Structure
 
 ```
 src/
-├── components/       # Preact components (.tsx + .css)
-│   ├── Header.tsx       # Logo, streak, progress, language selector, settings
-│   ├── MainMenu.tsx     # Quiz type selection cards
-│   ├── QuizScreen.tsx   # Multiple choice quiz interface
+├── components/       # Preact components (.tsx, Tailwind-only — no CSS files)
+│   ├── commons/         # Shared UI primitives (no business logic)
+│   │   ├── Badge.tsx       # Status/label badge
+│   │   ├── Button.tsx      # Multi-variant button
+│   │   ├── Modal.tsx       # Overlay + Modal.Header + Modal.Body
+│   │   ├── QuizCard.tsx    # Quiz question card (type label, pin, help, question)
+│   │   ├── ResultBanner.tsx # Correct/incorrect result with skill stats
+│   │   └── index.ts        # Re-exports all commons
+│   ├── profile-screen/  # Complex multi-tab screen (own folder)
+│   │   ├── index.ts
+│   │   ├── ProfileScreen.tsx
+│   │   ├── LeaderboardTab.tsx
+│   │   ├── ProfileTab.tsx
+│   │   ├── SettingsTab.tsx
+│   │   └── types.ts
+│   ├── Header.tsx          # Logo, daily progress, language selector, profile button
+│   ├── MainMenu.tsx        # Quiz type selection cards, word pool button
+│   ├── QuizScreen.tsx      # Multiple choice quiz interface
 │   ├── InputQuizScreen.tsx # Input-based quiz (writing, verb forms)
-│   ├── OptionButton.tsx # Multiple choice button
-│   ├── StatsFooter.tsx  # Expandable stats panel, PWA update button
-│   ├── SettingsModal.tsx # Theme toggle, data export/import
-│   └── WordListModal.tsx # Word list by category
+│   ├── OptionButton.tsx    # Multiple choice button
+│   ├── StatsFooter.tsx     # Expandable stats panel, PWA update button
+│   ├── AlertBanner.tsx     # Dismissible info banners
+│   ├── AvatarPicker.tsx    # Avatar grid + Avatar component
+│   ├── ChangelogScreen.tsx # Version history screen
+│   ├── ExampleZin.tsx      # Highlighted example sentence
+│   ├── HelpModal.tsx       # Help overlay (uses Modal)
+│   ├── SupportButton.tsx   # Ko-fi support button
+│   ├── WordListModal.tsx   # Word list by category (uses Modal)
+│   └── WordPoolModal.tsx   # Word pack selection (uses Modal)
 ├── data/
 │   ├── a2-*.json        # Word data files
 │   ├── translations.ts  # UI translations (tr/en/ar/fr)
@@ -39,8 +59,8 @@ src/
 │   ├── wordSelector.ts  # Spaced repetition algorithm
 │   └── quiz.ts          # Quiz creation & answer handling
 ├── styles/
-│   ├── theme.css        # CSS variables, base styles
-│   └── app.css          # App layout, animations
+│   ├── theme.css        # CSS variables, keyframe animations, utility classes
+│   └── app.css          # App layout
 ├── types/
 │   ├── word.ts          # Word, WordProgress, SkillProgress types
 │   └── quiz.ts          # Quiz, QuizType types
@@ -140,15 +160,15 @@ npm run preview  # Preview production build
 
 ## Conventions
 
-- Components: PascalCase (.tsx + matching .css)
+- Components: PascalCase `.tsx` — **no separate CSS files**, all styling via Tailwind
 - Services: camelCase functions, no classes
 - Types: PascalCase interfaces, camelCase type aliases
-- CSS: BEM-like naming, CSS variables for theming
+- Styling: Tailwind utility classes; theme tokens via `var(--...)` references (e.g. `bg-[var(--color-primary)]`)
 - No emojis in code/UI unless explicitly requested
 
-## CSS Variables (IMPORTANT)
+## Theme Tokens (IMPORTANT)
 
-All CSS must use the variables defined in `src/styles/theme.css`. Do NOT invent new variable names.
+All styling uses Tailwind with CSS variable references from `src/styles/theme.css`. Do NOT invent new variable names.
 
 ### Available Variables
 
@@ -182,29 +202,53 @@ All CSS must use the variables defined in `src/styles/theme.css`. Do NOT invent 
 --text-xs, --text-sm, --text-base, --text-lg, --text-xl, --text-2xl
 
 /* Borders */
---radius-sm, --radius-md, --radius-lg, --radius-full
+--radius-sm, --radius-md, --radius-lg, --radius-xl, --radius-full
 
 /* Shadows */
 --shadow-sm, --shadow-md, --shadow-lg
 
 /* Transitions */
---transition-fast, --transition-normal
+--transition-fast, --transition-normal, --transition-slow
+```
+
+### Tailwind Usage Pattern
+
+```tsx
+// WRONG — bare CSS variable without var()
+<div class="bg-color-primary text-text-sm">
+
+// CORRECT — always wrap in var()
+<div class="bg-[var(--color-primary)] text-[length:var(--text-sm)]">
+
+// CORRECT — spacing, radius, shadow
+<div class="px-[var(--spacing-md)] rounded-[var(--radius-lg)] shadow-[var(--shadow-sm)]">
 ```
 
 ### Common Mistakes to Avoid
 
-```css
-/* WRONG */
-background: var(--bg-secondary);
-color: var(--text-primary);
-border-color: var(--border-color);
-background: var(--accent-color);
+```tsx
+// WRONG — old CSS variable names
+bg-[var(--bg-secondary)]
+text-[var(--text-primary)]
+border-[var(--border-color)]
 
-/* CORRECT */
-background: var(--color-surface);
-color: var(--color-text-primary);
-border-color: var(--color-border);
-background: var(--color-primary);
+// CORRECT
+bg-[var(--color-surface)]
+text-[var(--color-text-primary)]
+border-[var(--color-border)]
+```
+
+### Global Utility Classes (theme.css)
+
+These animation classes are defined in `theme.css` and can be used directly:
+
+```
+fade-in        — fadeIn animation
+scale-in       — scaleIn animation (modals)
+shake          — horizontal shake (wrong answer)
+level-up       — scale bounce (daily level up)
+pulse-glow     — green glow pulse (update button)
+changelog-glow — orange glow pulse (new changelog)
 ```
 
 ## Word Packs System
@@ -385,6 +429,90 @@ Word entries get a `zinnen` array referencing sentence IDs:
   "zinnen": ["ab3k9x2m"]
 }
 ```
+
+## Common Component Extraction Workflow
+
+When the user says "let's extract common components" or "create a shared component", follow this exact process:
+
+### Step 1 — Discovery (always do this first, never skip)
+
+Since all styling is Tailwind inline, search for repeated JSX patterns:
+
+```bash
+# Find repeated structural patterns (button shapes, card layouts, etc.)
+grep -rn "flex items-center\|rounded-\[var\|border-\[var" ./src/components --include="*.tsx" | grep -v commons
+
+# Find components that render the same sub-structure in multiple places
+grep -rn "class=\".*pattern.*\"" ./src/components --include="*.tsx"
+```
+
+Read the full TSX for every file that seems to share a pattern before deciding anything.
+
+### Step 2 — Classification (decide what to extract)
+
+After reading all usages, classify each variant into one of three buckets:
+
+**Extract → commons**: Used in 3+ places, or 2+ places with clear variant pattern (size, color, state). Pure presentational, no business logic.
+
+**Extract → own component**: Structurally unique (e.g. two-part pill badge, animated ring) — give it a dedicated file like `WordBadge.tsx`, not a generic prop on `Badge`.
+
+**Leave alone**: Toggle/state-heavy buttons (pin, option), highly context-specific layouts. Extracting would add complexity without reducing repetition.
+
+Write out the variant table explicitly before coding:
+```
+| Usage location     | variant  | color   | size | notes          |
+|--------------------|----------|---------|------|----------------|
+| profile-btn        | outline  | default | md   |                |
+| profile-btn--primary | soft   | primary | md   | hover→solid    |
+| alert-banner-btn   | outline  | primary | sm   |                |
+| update-btn         | solid    | success | md   | pulse animation|
+```
+
+### Step 3 — Write the common component
+
+Location: `src/components/commons/<ComponentName>.tsx`  
+Export from: `src/components/commons/index.ts`
+
+Rules:
+- **All styles in Tailwind** — no separate CSS file
+- Use CSS variable references for theme tokens: `bg-[var(--color-primary)]`, `text-[length:var(--text-sm)]`
+- Build variant maps as `Record<Variant, Record<Color, string>>` — never use conditionals for style selection
+- Always accept `class?: string` prop for one-off overrides
+- Accept `icon?: LucideIcon` and `iconRight?: LucideIcon` for icon slots
+- `size="icon"` variant = square aspect-ratio, no children, just the icon
+
+Example structure:
+```tsx
+const variantColor: Record<Variant, Record<Color, string>> = {
+  solid:   { primary: 'bg-[var(--color-primary)] text-white ...', ... },
+  outline: { primary: 'bg-transparent border-[var(--color-primary)] ...', ... },
+};
+
+const sizeMap: Record<Size, string> = {
+  sm:   'text-[length:var(--text-xs)] px-[var(--spacing-sm)] ...',
+  md:   'text-[length:var(--text-sm)] px-[var(--spacing-md)] ...',
+  icon: 'p-[var(--spacing-sm)] aspect-square',
+};
+```
+
+### Step 4 — Replace all usages immediately
+
+**Never write a component and leave old usages in place.** After writing, immediately update every location found in Step 1.
+
+For each file:
+1. Add import from `'../commons'` (or `'../../components/commons'` from subfolders)
+2. Replace the inline Tailwind block with the new component
+3. Map repeated class strings to props: `fullWidth`, `color="danger"`, `size="sm"`
+
+### Step 5 — Build check
+
+```bash
+npm run build
+```
+
+Must pass with zero errors before committing.
+
+---
 
 ## Component Structure Convention
 
