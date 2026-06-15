@@ -1,17 +1,17 @@
 import { useState } from 'preact/hooks';
 import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch } from 'lucide-preact';
-import type { QuizType, QuizMode, Language } from '../types';
+import type { QuizType, QuizMode } from '../types';
 import { t } from '../data/translations';
 import { getSelectedWordCount, getAvailableLevels, getChunkCount, getChunkWordCount, getLevelWordCount, isChunkEnabled } from '../services/words';
 import { getPinnedWordCount, MIN_PINS_FOR_QUIZ, canPinInQuizType } from '../services/storage';
 import { WordPoolModal } from './WordPoolModal';
 import { SupportButton } from './SupportButton';
+import { useLanguage } from '../hooks';
 import './MainMenu.css';
 
 interface MainMenuProps {
   onStartQuiz: (quizType: QuizType, mode?: QuizMode) => void;
   onOpenChangelog: () => void;
-  language: Language;
   hasNewChangelog: boolean;
 }
 
@@ -29,7 +29,8 @@ const quizTypes: QuizTypeCard[] = [
   { type: 'verbForms', icon: GitBranch, color: '#00bcd4' },
 ];
 
-export function MainMenu({ onStartQuiz, onOpenChangelog, language, hasNewChangelog }: MainMenuProps) {
+export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: MainMenuProps) {
+  const { language } = useLanguage();
   const [showWordPool, setShowWordPool] = useState(false);
   const [, forceUpdate] = useState(0);
 
@@ -120,7 +121,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, language, hasNewChangel
         })}
       </div>
 
-      <SupportButton language={language} />
+      <SupportButton />
 
       <button
         class={`changelog-button ${hasNewChangelog ? 'changelog-button--new' : ''}`}
@@ -131,7 +132,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, language, hasNewChangel
       </button>
 
       {showWordPool && (
-        <WordPoolModal language={language} onClose={handleWordPoolClose} />
+        <WordPoolModal onClose={handleWordPoolClose} />
       )}
     </div>
   );

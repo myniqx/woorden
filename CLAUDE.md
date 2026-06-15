@@ -385,3 +385,23 @@ Word entries get a `zinnen` array referencing sentence IDs:
   "zinnen": ["ab3k9x2m"]
 }
 ```
+
+## Component Structure Convention
+
+Complex components (with tabs, sub-screens, or multiple logical sections) live in their own folder:
+
+```
+src/components/profile-screen/
+├── index.ts                  # Re-exports the main component only
+├── ProfileScreen.tsx          # Root component — renders tabs, owns top-level state
+├── LeaderboardTab.tsx         # Child component
+├── ProfileTab.tsx             # Child component
+├── SettingsTab.tsx            # Child component
+└── types.ts                  # Types shared between child components (not exported outside folder)
+```
+
+Rules:
+- `index.ts` exports ONLY the root component — never child components or internal types
+- `types.ts` contains types used by 2+ files within the folder; single-use types stay inline
+- Child component files are PascalCase (e.g. `LeaderboardTab.tsx`), not `child-components.tsx`
+- Simple components (single responsibility, <200 lines) stay as a flat file in `src/components/`

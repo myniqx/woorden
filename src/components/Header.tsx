@@ -1,34 +1,26 @@
 import { useState, useEffect } from 'preact/hooks';
 import { ChevronLeft, Flame, Zap, Star, Crown, User } from 'lucide-preact';
-import type { Language } from '../types';
 import { getDailyStats, getDailyLevel } from '../services/storage';
 import type { User as AuthUser } from '../services/auth';
+import { useLanguage } from '../hooks';
 import './Header.css';
 
 interface HeaderProps {
-  language: Language;
-  onLanguageChange: (lang: Language) => void;
   showBackButton?: boolean;
   onBack?: () => void;
   onProfileClick?: () => void;
   user: AuthUser | null;
 }
 
-const languages: { code: Language; name: string; flag: string }[] = [
-  { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
-  { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'ar', name: 'العربية', flag: '🇸🇦' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+const languages = [
+  { code: 'tr' as const, name: 'Türkçe', flag: '🇹🇷' },
+  { code: 'en' as const, name: 'English', flag: '🇬🇧' },
+  { code: 'ar' as const, name: 'العربية', flag: '🇸🇦' },
+  { code: 'fr' as const, name: 'Français', flag: '🇫🇷' },
 ];
 
-export function Header({
-  language,
-  onLanguageChange,
-  showBackButton = false,
-  onBack,
-  onProfileClick,
-  user,
-}: HeaderProps) {
+export function Header({ showBackButton = false, onBack, onProfileClick, user }: HeaderProps) {
+  const { language, setLanguage } = useLanguage();
   const currentLang = languages.find(l => l.code === language);
   const dailyStats = getDailyStats();
   const { level, goal } = getDailyLevel();
@@ -119,7 +111,7 @@ export function Header({
               <button
                 key={lang.code}
                 class={`language-option ${lang.code === language ? 'active' : ''}`}
-                onClick={() => onLanguageChange(lang.code)}
+                onClick={() => setLanguage(lang.code)}
               >
                 <span class="lang-flag">{lang.flag}</span>
                 <span>{lang.name}</span>

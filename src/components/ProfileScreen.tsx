@@ -8,33 +8,22 @@ import type { LeaderboardEntry } from '../services/sync';
 import { Avatar, AvatarPicker } from './AvatarPicker';
 import { APP_URL } from '../data/constants';
 import { t } from '../data/translations';
-import type { Language } from '../types';
+import { useLanguage, useTheme } from '../hooks';
 import './ProfileScreen.css';
 
 interface ProfileScreenProps {
-  theme: 'light' | 'dark';
-  onToggleTheme: () => void;
   visitorCount: number | null;
   user: AuthUser | null;
   onSignIn: () => void;
   onSignOut: () => void;
   onDataImported?: () => void;
-  onPacksChanged?: () => void;
-  language: Language;
 }
 
 type Tab = 'leaderboard' | 'profile' | 'settings';
 
-export function ProfileScreen({
-  theme,
-  onToggleTheme,
-  visitorCount,
-  user,
-  onSignIn,
-  onSignOut,
-  onDataImported,
-  language,
-}: ProfileScreenProps) {
+export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataImported }: ProfileScreenProps) {
+  const { language } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const tr = (key: string, replacements?: Record<string, string | number>) => t(key, language, replacements);
   const [activeTab, setActiveTab] = useState<Tab>(user ? 'leaderboard' : 'profile');
   const [username, setUsernameState] = useState(getUsername);
@@ -516,14 +505,14 @@ export function ProfileScreen({
               <div class="profile-theme-toggle">
                 <button
                   class={`profile-theme-option ${theme === 'light' ? 'active' : ''}`}
-                  onClick={() => theme === 'dark' && onToggleTheme()}
+                  onClick={() => theme === 'dark' && toggleTheme()}
                 >
                   <Sun size={16} />
                   {tr('settings_light')}
                 </button>
                 <button
                   class={`profile-theme-option ${theme === 'dark' ? 'active' : ''}`}
-                  onClick={() => theme === 'light' && onToggleTheme()}
+                  onClick={() => theme === 'light' && toggleTheme()}
                 >
                   <Moon size={16} />
                   {tr('settings_dark')}

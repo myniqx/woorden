@@ -1,15 +1,15 @@
 import { useState } from 'preact/hooks';
 import { BarChart3, Eye, BookOpen, AlertCircle, ChevronUp, RefreshCw, Flame } from 'lucide-preact';
-import type { Language, Word, WordStats, QuizType } from '../types';
+import type { Word, WordStats, QuizType } from '../types';
 import { words } from '../services/words';
 import { getAllWordStats, getStreak } from '../services/storage';
 import { getStatsSummary } from '../services/wordSelector';
 import { t } from '../data/translations';
 import { WordListModal } from './WordListModal';
+import { useLanguage } from '../hooks';
 import './StatsFooter.css';
 
 interface StatsFooterProps {
-  language: Language;
   quizType?: QuizType | null;
   needRefresh?: boolean;
   onUpdate?: () => void;
@@ -21,7 +21,7 @@ interface WordWithStats extends Word {
   stats: WordStats;
 }
 
-function getCategorizedWords(language: Language): Record<Category, WordWithStats[]> {
+function getCategorizedWords(): Record<Category, WordWithStats[]> {
   const allStats = getAllWordStats();
 
   const unseen: WordWithStats[] = [];
@@ -44,20 +44,16 @@ function getCategorizedWords(language: Language): Record<Category, WordWithStats
     }
   });
 
-  // Sort unseen alphabetically
   unseen.sort((a, b) => a.nl.localeCompare(b.nl, 'nl'));
-
-  // Sort learning/difficult by most errors first
   learning.sort((a, b) => b.stats.wrong - b.stats.correct - (a.stats.wrong - a.stats.correct));
   difficult.sort((a, b) => b.stats.wrong - a.stats.wrong);
-
-  // Sort mastered by most correct first
   mastered.sort((a, b) => b.stats.correct - a.stats.correct);
 
   return { unseen, learning, mastered, difficult };
 }
 
-export function StatsFooter({ language, quizType, needRefresh, onUpdate }: StatsFooterProps) {
+export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProps) {
+  const { language } = useLanguage();
   const [expanded, setExpanded] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
@@ -66,11 +62,7 @@ export function StatsFooter({ language, quizType, needRefresh, onUpdate }: Stats
   const tr = (key: string) => t(key, language);
   const progressPercent = stats.total > 0 ? Math.round((stats.seen / stats.total) * 100) : 0;
 
-  const handleCategoryClick = (category: Category) => {
-    setSelectedCategory(category);
-  };
-
-  const categorizedWords = selectedCategory ? getCategorizedWords(language) : null;
+  const categorizedWords = selectedCategory ? getCategorizedWords() : null;
 
   return (
     <>
@@ -101,40 +93,32 @@ export function StatsFooter({ language, quizType, needRefresh, onUpdate }: Stats
         {expanded && (
           <div class="stats-details fade-in">
             <div class="stats-grid">
-              <button class="stat-item clickable" onClick={() => handleCategoryClick('unseen')}>
-                <div class="stat-icon unseen">
-                  <Eye size={16} />
-                </div>
+              <button class="stat-item clickable" onClick={() => setSelectedCategory('unseen')}>
+                <div class="stat-icon unseen"><Eye size={16} /></div>
                 <div class="stat-content">
                   <span class="stat-value">{stats.unseen}</span>
                   <span class="stat-label">{tr('unseen')}</span>
                 </div>
               </button>
 
-              <button class="stat-item clickable" onClick={() => handleCategoryClick('learning')}>
-                <div class="stat-icon learning">
-                  <BookOpen size={16} />
-                </div>
+              <button class="stat-item clickable" onClick={() => setSelectedCategory('learning')}>
+                <div class="stat-icon learning"><BookOpen size={16} /></div>
                 <div class="stat-content">
                   <span class="stat-value">{stats.learning}</span>
                   <span class="stat-label">{tr('learning')}</span>
                 </div>
               </button>
 
-              <button class="stat-item clickable" onClick={() => handleCategoryClick('mastered')}>
-                <div class="stat-icon mastered">
-                  <BarChart3 size={16} />
-                </div>
+              <button class="stat-item clickable" onClick={() => setSelectedCategory('mastered')}>
+                <div class="stat-icon mastered"><BarChart3 size={16} /></div>
                 <div class="stat-content">
                   <span class="stat-value">{stats.mastered}</span>
                   <span class="stat-label">{tr('mastered')}</span>
                 </div>
               </button>
 
-              <button class="stat-item clickable" onClick={() => handleCategoryClick('difficult')}>
-                <div class="stat-icon difficult">
-                  <AlertCircle size={16} />
-                </div>
+              <button class="stat-item clickable" onClick={() => setSelectedCategory('difficult')}>
+                <div class="stat-icon difficult"><AlertCircle size={16} /></div>
                 <div class="stat-content">
                   <span class="stat-value">{stats.difficult}</span>
                   <span class="stat-label">{tr('difficult')}</span>
@@ -153,7 +137,6 @@ export function StatsFooter({ language, quizType, needRefresh, onUpdate }: Stats
         <WordListModal
           category={selectedCategory}
           words={categorizedWords[selectedCategory]}
-          language={language}
           onClose={() => setSelectedCategory(null)}
         />
       )}

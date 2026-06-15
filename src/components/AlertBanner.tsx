@@ -1,5 +1,5 @@
 import { t } from '../data/translations';
-import type { Language } from '../types';
+import { useLanguage } from '../hooks';
 import './AlertBanner.css';
 
 export type AlertAction = 'signIn' | 'goToProfile' | null;
@@ -9,7 +9,6 @@ export interface AlertDef {
   action?: AlertAction;
 }
 
-// Add new alerts here. Order determines display order.
 export const ALERTS: AlertDef[] = [
   { key: 'alert_leaderboard_promo', action: 'goToProfile' },
 ];
@@ -31,11 +30,11 @@ function markAllSeen(keys: string[]): void {
 }
 
 interface AlertBannerProps {
-  language: Language;
   onAction: (action: AlertAction) => void;
 }
 
-export function AlertBanner({ language, onAction }: AlertBannerProps) {
+export function AlertBanner({ onAction }: AlertBannerProps) {
+  const { language } = useLanguage();
   const seen = getSeenAlerts();
   const visible = ALERTS.filter((a) => !seen[a.key]);
 

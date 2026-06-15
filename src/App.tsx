@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'preact/hooks';
 import { useRegisterSW } from 'virtual:pwa-register/preact';
-import { useTheme, useLanguage } from './hooks';
+import { useThemeState, useLanguageState, ThemeContext, LanguageContext } from './hooks';
 import { Header } from './components/Header';
 import { MainMenu } from './components/MainMenu';
 import { QuizScreen } from './components/QuizScreen';
@@ -52,8 +52,8 @@ export function App() {
     );
   }
 
-  const { theme, toggleTheme } = useTheme();
-  const { language, setLanguage } = useLanguage();
+  const themeValue = useThemeState();
+  const languageValue = useLanguageState();
 
   const {
     needRefresh: [needRefresh],
@@ -129,90 +129,83 @@ export function App() {
   };
 
   return (
-    <div class="app">
-      <Header
-        key={`header-${statsVersion}`}
-        language={language}
-        onLanguageChange={setLanguage}
-        showBackButton={screen === 'quiz' || screen === 'changelog' || screen === 'profile'}
-        onBack={screen === 'changelog' || screen === 'profile' ? () => setScreen('menu') : exitQuiz}
-        onProfileClick={() => { history.pushState({ screen: 'profile' }, ''); setScreen('profile'); }}
-        user={user}
-      />
-
-      <main class="main">
-        {screen === 'menu' && (
-          <AlertBanner
-            key={alertKey}
-            language={language}
-            onAction={(action: AlertAction) => {
-              setAlertKey(k => k + 1);
-              if (action === 'goToProfile' || action === 'signIn') {
-                history.pushState({ screen: 'profile' }, '');
-                setScreen('profile');
-              }
-            }}
-          />
-        )}
-
-        {screen === 'menu' && (
-          <MainMenu
-            onStartQuiz={startQuiz}
-            onOpenChangelog={() => {
-              history.pushState({ screen: 'changelog' }, '');
-              setScreen('changelog');
-            }}
-            language={language}
-            hasNewChangelog={hasNewChangelog}
-          />
-        )}
-
-        {screen === 'changelog' && (
-          <ChangelogScreen />
-        )}
-
-        {screen === 'profile' && (
-          <ProfileScreen
-            theme={theme}
-            onToggleTheme={toggleTheme}
-            visitorCount={visitorCount}
+    <ThemeContext.Provider value={themeValue}>
+      <LanguageContext.Provider value={languageValue}>
+        <div class="app">
+          <Header
+            key={`header-${statsVersion}`}
+            showBackButton={screen === 'quiz' || screen === 'changelog' || screen === 'profile'}
+            onBack={screen === 'changelog' || screen === 'profile' ? () => setScreen('menu') : exitQuiz}
+            onProfileClick={() => { history.pushState({ screen: 'profile' }, ''); setScreen('profile'); }}
             user={user}
-            onSignIn={signInWithGoogle}
-            onSignOut={signOut}
-            onDataImported={onStatsUpdate}
-            language={language}
           />
-        )}
 
-        {screen === 'quiz' && currentQuizType && (
-          INPUT_QUIZ_TYPES.includes(currentQuizType) ? (
-            <InputQuizScreen
-              quizType={currentQuizType}
-              quizMode={currentQuizMode}
-              language={language}
-              onExit={exitQuiz}
-              onAnswer={onStatsUpdate}
-            />
-          ) : (
-            <QuizScreen
-              quizType={currentQuizType}
-              quizMode={currentQuizMode}
-              language={language}
-              onExit={exitQuiz}
-              onAnswer={onStatsUpdate}
-            />
-          )
-        )}
-      </main>
+          <main class="main">
+            {screen === 'menu' && (
+              <AlertBanner
+                key={alertKey}
+                onAction={(action: AlertAction) => {
+                  setAlertKey(k => k + 1);
+                  if (action === 'goToProfile' || action === 'signIn') {
+                    history.pushState({ screen: 'profile' }, '');
+                    setScreen('profile');
+                  }
+                }}
+              />
+            )}
 
-      <StatsFooter
-        key={`footer-${statsVersion}`}
-        language={language}
-        quizType={currentQuizType}
-        needRefresh={needRefresh}
-        onUpdate={() => updateServiceWorker(true)}
-      />
+            {screen === 'menu' && (
+              <MainMenu
+                onStartQuiz={startQuiz}
+                onOpenChangelog={() => {
+                  history.pushState({ screen: 'changelog' }, '');
+                  setScreen('changelog');
+                }}
+                hasNewChangelog={hasNewChangelog}
+              />
+            )}
 
-    </div>
+            {screen === 'changelog' && (
+              <ChangelogScreen />
+            )}
+
+            {screen === 'profile' && (
+              <ProfileScreen
+                visitorCount={visitorCount}
+                user={user}
+                onSignIn={signInWithGoogle}
+                onSignOut={signOut}
+                onDataImported={onStatsUpdate}
+              />
+            )}
+
+            {screen === 'quiz' && currentQuizType && (
+              INPUT_QUIZ_TYPES.includes(currentQuizType) ? (
+                <InputQuizScreen
+                  quizType={currentQuizType}
+                  quizMode={currentQuizMode}
+                  onExit={exitQuiz}
+                  onAnswer={onStatsUpdate}
+                />
+              ) : (
+                <QuizScreen
+                  quizType={currentQuizType}
+                  quizMode={currentQuizMode}
+                  onExit={exitQuiz}
+                  onAnswer={onStatsUpdate}
+                />
+              )
+            )}
+          </main>
+
+          <StatsFooter
+            key={`footer-${statsVersion}`}
+            quizType={currentQuizType}
+            needRefresh={needRefresh}
+            onUpdate={() => updateServiceWorker(true)}
+          />
+        </div>
+      </LanguageContext.Provider>
+    </ThemeContext.Provider>
   );
 }

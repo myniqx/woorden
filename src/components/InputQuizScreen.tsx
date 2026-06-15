@@ -11,9 +11,9 @@ import {
   updateWordProgress,
 } from '../services/storage';
 import { selectWord } from '../services/wordSelector';
-import { words } from '../services/words';
 import { compareIgnoringAccents } from '../utils/textUtils';
 import { HelpModal } from './HelpModal';
+import { useLanguage } from '../hooks';
 import './InputQuizScreen.css';
 
 const helpTexts: Record<string, Record<Language, { title: string; content: string }>> = {
@@ -98,7 +98,6 @@ Si votre réponse est **correcte**, vous passez automatiquement. Appuyez sur **"
 interface InputQuizScreenProps {
   quizType: QuizType;
   quizMode?: QuizMode;
-  language: Language;
   onExit: () => void;
   onAnswer?: () => void;
 }
@@ -113,13 +112,8 @@ interface QuizState {
   imperfectum?: string;
 }
 
-export function InputQuizScreen({
-  quizType,
-  quizMode = 'normal',
-  language,
-  onExit,
-  onAnswer,
-}: InputQuizScreenProps) {
+export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: InputQuizScreenProps) {
+  const { language } = useLanguage();
   const [quiz, setQuiz] = useState<QuizState | null>(null);
   const [inputValue, setInputValue] = useState('');
   const [showResult, setShowResult] = useState(false);
@@ -148,18 +142,24 @@ export function InputQuizScreen({
 
       // All 3 forms with their display and possible questions
       const forms = [
-        { show: infinitief, label: 'infinitief', askOptions: [
-          { answer: perfectum, key: 'writeThePerfectum' },
-          { answer: imperfectum, key: 'writeTheImperfectum' },
-        ]},
-        { show: perfectum, label: 'perfectum', askOptions: [
-          { answer: infinitief, key: 'writeTheInfinitief' },
-          { answer: imperfectum, key: 'writeTheImperfectum' },
-        ]},
-        { show: imperfectum, label: 'imperfectum', askOptions: [
-          { answer: infinitief, key: 'writeTheInfinitief' },
-          { answer: perfectum, key: 'writeThePerfectum' },
-        ]},
+        {
+          show: infinitief, label: 'infinitief', askOptions: [
+            { answer: perfectum, key: 'writeThePerfectum' },
+            { answer: imperfectum, key: 'writeTheImperfectum' },
+          ]
+        },
+        {
+          show: perfectum, label: 'perfectum', askOptions: [
+            { answer: infinitief, key: 'writeTheInfinitief' },
+            { answer: imperfectum, key: 'writeTheImperfectum' },
+          ]
+        },
+        {
+          show: imperfectum, label: 'imperfectum', askOptions: [
+            { answer: infinitief, key: 'writeTheInfinitief' },
+            { answer: perfectum, key: 'writeThePerfectum' },
+          ]
+        },
       ].filter(f => f.show); // Filter out empty forms
 
       // Pick a random form to show

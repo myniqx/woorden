@@ -1,6 +1,7 @@
 import { X } from 'lucide-preact';
-import type { Language, Word, WordStats } from '../types';
+import type { Word, WordStats } from '../types';
 import { t } from '../data/translations';
+import { useLanguage } from '../hooks';
 import './WordListModal.css';
 
 interface WordWithStats extends Word {
@@ -10,11 +11,11 @@ interface WordWithStats extends Word {
 interface WordListModalProps {
   category: 'unseen' | 'learning' | 'mastered' | 'difficult';
   words: WordWithStats[];
-  language: Language;
   onClose: () => void;
 }
 
-export function WordListModal({ category, words, language, onClose }: WordListModalProps) {
+export function WordListModal({ category, words, onClose }: WordListModalProps) {
+  const { language } = useLanguage();
   const tr = (key: string) => t(key, language);
 
   const titles: Record<string, string> = {

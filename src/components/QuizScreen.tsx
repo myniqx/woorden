@@ -7,6 +7,7 @@ import { canPinInQuizType, isPinned, togglePin, getSkillProgress, getSkillForQui
 import { OptionButton } from './OptionButton';
 import { HelpModal } from './HelpModal';
 import { ExampleZin } from './ExampleZin';
+import { useLanguage } from '../hooks';
 import './QuizScreen.css';
 
 const helpTexts: Record<QuizType, Record<Language, { title: string; content: string }>> = {
@@ -133,12 +134,12 @@ Dans ce test, on vous montre un nom et on vous demande de choisir le **bon artic
 interface QuizScreenProps {
   quizType: QuizType;
   quizMode?: QuizMode;
-  language: Language;
   onExit: () => void;
   onAnswer?: () => void;
 }
 
-export function QuizScreen({ quizType, quizMode = 'normal', language, onExit, onAnswer }: QuizScreenProps) {
+export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: QuizScreenProps) {
+  const { language } = useLanguage();
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [selectedId, setSelectedId] = useState<string | number | null>(null);
   const [showResult, setShowResult] = useState(false);

@@ -2,6 +2,7 @@ import { useState } from 'preact/hooks';
 import { ChevronDown, ChevronRight, X, HelpCircle } from 'lucide-preact';
 import type { Language } from '../types';
 import { t } from '../data/translations';
+import { useLanguage } from '../hooks';
 import {
   getAvailableLevels,
   getChunkCount,
@@ -40,11 +41,11 @@ const helpTexts: Record<Language, { title: string; content: string }> = {
 };
 
 interface WordPoolModalProps {
-  language: Language;
   onClose: () => void;
 }
 
-export function WordPoolModal({ language, onClose }: WordPoolModalProps) {
+export function WordPoolModal({ onClose }: WordPoolModalProps) {
+  const { language } = useLanguage();
   const [expandedLevels, setExpandedLevels] = useState<Record<string, boolean>>({});
   const [showHelp, setShowHelp] = useState(false);
   const [, forceUpdate] = useState(0);

@@ -1,2 +1,2 @@
-export { useTheme } from './useTheme';
-export { useLanguage } from './useLanguage';
+export { useTheme, useThemeState, ThemeContext } from './useTheme';
+export { useLanguage, useLanguageState, LanguageContext } from './useLanguage';
