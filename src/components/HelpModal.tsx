@@ -1,4 +1,5 @@
 import { X } from 'lucide-preact';
+import { Button } from './commons';
 import './HelpModal.css';
 
 interface HelpModalProps {
@@ -8,10 +9,7 @@ interface HelpModalProps {
 }
 
 function formatContent(text: string): preact.JSX.Element[] {
-  const paragraphs = text.split('\n').filter(p => p.trim());
-
-  return paragraphs.map((paragraph, i) => {
-    // Parse **bold** markers
+  return text.split('\n').filter(p => p.trim()).map((paragraph, i) => {
     const parts = paragraph.split(/(\*\*.*?\*\*)/g);
     const formatted = parts.map((part, j) => {
       if (part.startsWith('**') && part.endsWith('**')) {
@@ -19,7 +17,6 @@ function formatContent(text: string): preact.JSX.Element[] {
       }
       return part;
     });
-
     return <p key={i}>{formatted}</p>;
   });
 }
@@ -30,9 +27,7 @@ export function HelpModal({ title, content, onClose }: HelpModalProps) {
       <div class="help-modal" onClick={(e) => e.stopPropagation()}>
         <div class="help-modal-header">
           <h3>{title}</h3>
-          <button class="help-modal-close" onClick={onClose}>
-            <X size={18} />
-          </button>
+          <Button variant="ghost" icon={X} size="icon" onClick={onClose} aria-label="Close" />
         </div>
         <div class="help-modal-content">
           {formatContent(content)}

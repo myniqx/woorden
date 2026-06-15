@@ -6,6 +6,7 @@ import { t } from '../../data/translations';
 import { useLanguage } from '../../hooks';
 import type { LeaderboardEntry } from '../../services/sync';
 import type { ProfileSharedProps } from './types';
+import { Badge, Button } from '../commons';
 
 type ScoreTab = 'daily' | 'last7' | 'last30';
 
@@ -17,7 +18,7 @@ const RankIcon = ({ rank }: { rank: number }) => {
   if (rank === 0) return <Crown size={18} style="color:#f5a623" />;
   if (rank === 1) return <Star size={16} style="color:#9c27b0" />;
   if (rank === 2) return <Zap size={15} style="color:#2196f3" />;
-  return <span class="leaderboard-rank-num">{rank + 1}</span>;
+  return <Badge variant="outline" color="muted" size="sm">{rank + 1}</Badge>;
 };
 
 export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabProps) {
@@ -97,10 +98,9 @@ export function LeaderboardTab({ user, onSignIn, leaderboard }: LeaderboardTabPr
         <div class="leaderboard-blur">{listContent}</div>
         <div class="leaderboard-gate">
           <p>{tr('lb_gate_text')}</p>
-          <button class="profile-btn profile-btn--primary" onClick={onSignIn}>
-            <LogIn size={16} />
+          <Button variant="soft" color="primary" icon={LogIn} onClick={onSignIn}>
             {tr('lb_signin_google')}
-          </button>
+          </Button>
         </div>
       </div>
     );

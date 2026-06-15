@@ -2,6 +2,7 @@ import { User, LogIn, LogOut, RefreshCw, CloudDownload, CloudUpload, Save, Trash
 import { Avatar, AvatarPicker } from '../AvatarPicker';
 import { t } from '../../data/translations';
 import { useLanguage } from '../../hooks';
+import { Button } from '../commons';
 import type { ProfileSharedProps, SyncState } from './types';
 
 interface ProfileTabProps extends ProfileSharedProps {
@@ -59,15 +60,17 @@ export function ProfileTab({
               <li>{tr('profile_signin_reason1')}</li>
               <li>{tr('profile_signin_reason2')}</li>
             </ul>
-            <button class="profile-btn profile-btn--full" onClick={onSignIn}>
-              <LogIn size={16} />
+            <Button variant="outline" color="primary" icon={LogIn} fullWidth onClick={onSignIn}>
               {tr('lb_signin_google')}
-            </button>
+            </Button>
           </div>
         </section>
       </div>
     );
   }
+
+  const saveColor = saveState === 'error' || saveState === 'conflict' ? 'danger' : 'primary';
+  const syncColor = state === 'error' ? 'danger' : 'default';
 
   return (
     <div class="profile-section-list">
@@ -78,9 +81,9 @@ export function ProfileTab({
           </div>
           <div class="profile-avatar-meta">
             <span class="profile-email">{user.email}</span>
-            <button class="profile-btn profile-btn--sm" onClick={onAvatarPickerToggle}>
+            <Button variant="outline" size="sm" onClick={onAvatarPickerToggle}>
               {showAvatarPicker ? tr('profile_avatar_close') : tr('profile_avatar_change')}
-            </button>
+            </Button>
           </div>
         </div>
         {showAvatarPicker && (
@@ -102,9 +105,7 @@ export function ProfileTab({
             onBlur={onUsernameBlur}
             maxLength={24}
           />
-          <button class="profile-btn profile-btn--sm" onClick={onRandomUsername} title="Rastgele kullanıcı adı üret">
-            <Shuffle size={14} />
-          </button>
+          <Button variant="ghost" size="sm" icon={Shuffle} onClick={onRandomUsername} title="Rastgele kullanıcı adı üret" />
         </div>
         {saveState === 'conflict' && (
           <p class="profile-input-error">{tr('profile_username_taken')}</p>
@@ -112,17 +113,19 @@ export function ProfileTab({
       </section>
 
       <section class="profile-section">
-        <button
-          class={`profile-btn profile-btn--full profile-btn--primary${saveState === 'error' || saveState === 'conflict' ? ' profile-btn--danger' : ''}`}
+        <Button
+          variant="soft"
+          color={saveColor}
+          icon={Save}
+          fullWidth
           onClick={onSave}
           disabled={saveState === 'saving' || !username.trim()}
         >
-          <Save size={16} />
           {saveState === 'saving' ? tr('profile_saving') :
            saveState === 'saved' ? tr('profile_saved') :
            saveState === 'error' ? tr('profile_error') :
            tr('profile_save')}
-        </button>
+        </Button>
       </section>
 
       {lastSync && (
@@ -140,59 +143,39 @@ export function ProfileTab({
       <section class="profile-section">
         <h3><RefreshCw size={16} />{tr('profile_sync_data')}</h3>
         <p class="profile-action-desc">{tr('profile_sync_desc')}</p>
-        <button
-          class={`profile-btn profile-btn--full${state === 'error' ? ' profile-btn--danger' : ''}`}
-          onClick={() => onSyncAction('merge')}
-          disabled={isBusy}
-        >
-          <RefreshCw size={16} />
+        <Button variant="outline" color={syncColor} icon={RefreshCw} fullWidth disabled={isBusy} onClick={() => onSyncAction('merge')}>
           {syncLabel('profile_sync_data')}
-        </button>
+        </Button>
       </section>
 
       <section class="profile-section">
         <h3><CloudDownload size={16} />{tr('profile_get_data')}</h3>
         <p class="profile-action-desc">{tr('profile_get_desc')}</p>
-        <button
-          class={`profile-btn profile-btn--full${state === 'error' ? ' profile-btn--danger' : ''}`}
-          onClick={() => onSyncAction('download')}
-          disabled={isBusy}
-        >
-          <CloudDownload size={16} />
+        <Button variant="outline" color={syncColor} icon={CloudDownload} fullWidth disabled={isBusy} onClick={() => onSyncAction('download')}>
           {syncLabel('profile_get_data')}
-        </button>
+        </Button>
       </section>
 
       <section class="profile-section">
         <h3><CloudUpload size={16} />{tr('profile_upload_data')}</h3>
         <p class="profile-action-desc">{tr('profile_upload_desc')}</p>
-        <button
-          class={`profile-btn profile-btn--full${state === 'error' ? ' profile-btn--danger' : ''}`}
-          onClick={() => onSyncAction('upload')}
-          disabled={isBusy}
-        >
-          <CloudUpload size={16} />
+        <Button variant="outline" color={syncColor} icon={CloudUpload} fullWidth disabled={isBusy} onClick={() => onSyncAction('upload')}>
           {syncLabel('profile_upload_data')}
-        </button>
+        </Button>
       </section>
 
       <section class="profile-section">
         <h3><Trash2 size={16} />{tr('profile_delete_all')}</h3>
         <p class="profile-action-desc">{tr('profile_delete_desc')}</p>
-        <button
-          class="profile-btn profile-btn--full profile-btn--danger"
-          onClick={onResetData}
-        >
-          <Trash2 size={16} />
+        <Button variant="outline" color="danger" icon={Trash2} fullWidth onClick={onResetData}>
           {tr('profile_delete_all')}
-        </button>
+        </Button>
       </section>
 
       <section class="profile-section">
-        <button class="profile-btn profile-btn--full profile-btn--danger" onClick={onSignOut}>
-          <LogOut size={16} />
+        <Button variant="outline" color="danger" icon={LogOut} fullWidth onClick={onSignOut}>
           {tr('profile_signout')}
-        </button>
+        </Button>
       </section>
     </div>
   );

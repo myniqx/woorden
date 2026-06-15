@@ -14,6 +14,7 @@ import { selectWord } from '../services/wordSelector';
 import { compareIgnoringAccents } from '../utils/textUtils';
 import { HelpModal } from './HelpModal';
 import { useLanguage } from '../hooks';
+import { Button } from './commons';
 import './InputQuizScreen.css';
 
 const helpTexts: Record<string, Record<Language, { title: string; content: string }>> = {
@@ -274,13 +275,7 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
               </button>
             )}
             {help?.content && (
-              <button
-                class="help-button"
-                onClick={() => setShowHelp(true)}
-                aria-label="Help"
-              >
-                <HelpCircle size={18} />
-              </button>
+              <Button variant="ghost" size="icon" icon={HelpCircle} onClick={() => setShowHelp(true)} aria-label="Help" />
             )}
           </div>
           <p class="question-text">{quiz.questionText}</p>
@@ -302,9 +297,9 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
           />
 
           {!showResult && (
-            <button class="skip-button" onClick={handleSkip}>
+            <Button variant="soft" color="default" onClick={handleSkip}>
               {t('skip', language)}
-            </button>
+            </Button>
           )}
         </div>
       </div>

@@ -1,5 +1,7 @@
-:root {
-  /* Colors - Light Mode */
+@import "tailwindcss";
+
+@theme {
+  /* Colors - Light Mode defaults */
   --color-bg: #fafafa;
   --color-surface: #ffffff;
   --color-surface-elevated: #ffffff;
@@ -56,6 +58,7 @@
   --text-3xl: 2rem;
 }
 
+/* Dark mode overrides */
 [data-theme="dark"] {
   --color-bg: #1a1a1a;
   --color-surface: #2d2d2d;
@@ -71,7 +74,7 @@
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Base Styles */
+/* Base */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -99,19 +102,16 @@ body {
   flex-direction: column;
 }
 
-/* Focus Styles */
 :focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 
-/* Selection */
 ::selection {
   background-color: var(--color-primary-light);
   color: var(--color-primary);
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -130,7 +130,6 @@ body {
   background: var(--color-text-muted);
 }
 
-/* Utility Classes */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -142,3 +141,41 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
+/* App layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-md);
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60%  { transform: translateX(-5px); }
+  40%, 80%  { transform: translateX(5px); }
+}
+
+.fade-in  { animation: fadeIn  var(--transition-normal) ease-out; }
+.scale-in { animation: scaleIn var(--transition-normal) ease-out; }
+.shake    { animation: shake 0.4s ease-out; }

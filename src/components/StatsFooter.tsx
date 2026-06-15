@@ -1,5 +1,6 @@
 import { useState } from 'preact/hooks';
 import { BarChart3, Eye, BookOpen, AlertCircle, ChevronUp, RefreshCw, Flame } from 'lucide-preact';
+import { Badge, Button } from './commons';
 import type { Word, WordStats, QuizType } from '../types';
 import { words } from '../services/words';
 import { getAllWordStats, getStreak } from '../services/storage';
@@ -70,23 +71,20 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
         <div class="stats-footer-row">
           <button class="stats-toggle" onClick={() => setExpanded(!expanded)}>
             <div class="stats-summary">
-              <div class="stats-progress-badge">
-                <BarChart3 size={14} />
-                <span>{stats.seen} / {stats.total} ({progressPercent}%)</span>
-              </div>
-              <div class="stats-streak">
-                <Flame size={14} />
-                <span>{streak}</span>
-              </div>
+              <Badge variant="soft" color="surface" size="sm" icon={BarChart3}>
+                {stats.seen} / {stats.total} ({progressPercent}%)
+              </Badge>
+              <Badge variant="soft" color="surface" size="sm" icon={Flame}>
+                {streak}
+              </Badge>
             </div>
             <ChevronUp size={20} class={`toggle-icon ${expanded ? 'rotated' : ''}`} />
           </button>
 
           {needRefresh && (
-            <button class="update-btn" onClick={onUpdate} title={t('updateAvailable', language)}>
-              <RefreshCw size={16} />
-              <span>{t('update', language)}</span>
-            </button>
+            <Button variant="solid" color="success" icon={RefreshCw} size="sm" onClick={onUpdate} title={t('updateAvailable', language)}>
+              {t('update', language)}
+            </Button>
           )}
         </div>
 

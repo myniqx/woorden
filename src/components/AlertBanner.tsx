@@ -1,5 +1,6 @@
 import { t } from '../data/translations';
 import { useLanguage } from '../hooks';
+import { Button } from './commons';
 import './AlertBanner.css';
 
 export type AlertAction = 'signIn' | 'goToProfile' | null;
@@ -58,21 +59,18 @@ export function AlertBanner({ onAction }: AlertBannerProps) {
             <span class="alert-banner-text">{t(a.key, language)}</span>
             {a.action && (
               <div class="alert-banner-item-action">
-                <button
-                  class="alert-banner-btn alert-banner-btn--action"
-                  onClick={() => handleAction(a)}
-                >
+                <Button variant="outline" color="primary" size="sm" onClick={() => handleAction(a)}>
                   {t(`alert_action_${a.action}`, language)}
-                </button>
+                </Button>
               </div>
             )}
           </li>
         ))}
       </ul>
       <div class="alert-banner-footer">
-        <button class="alert-banner-btn alert-banner-btn--dismiss" onClick={handleDismiss}>
+        <Button variant="outline" color="muted" size="sm" onClick={handleDismiss}>
           {t('alert_dismiss', language)}
-        </button>
+        </Button>
       </div>
     </div>
   );

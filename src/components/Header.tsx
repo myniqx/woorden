@@ -3,6 +3,7 @@ import { ChevronLeft, Flame, Zap, Star, Crown, User } from 'lucide-preact';
 import { getDailyStats, getDailyLevel } from '../services/storage';
 import type { User as AuthUser } from '../services/auth';
 import { useLanguage } from '../hooks';
+import { Button } from './commons';
 import './Header.css';
 
 interface HeaderProps {
@@ -53,9 +54,7 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
     <header class="header">
       <div class="header-left">
         {showBackButton ? (
-          <button class="header-btn back-btn" onClick={onBack} aria-label="Go back">
-            <ChevronLeft size={24} />
-          </button>
+          <Button variant="ghost" icon={ChevronLeft} size="icon" onClick={onBack} aria-label="Go back" class="back-btn" />
         ) : (
           <div class="logo">
             <span class="logo-icon">W</span>
@@ -120,16 +119,18 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
           </div>
         </div>
 
-        <button
-          class={`header-btn profile-btn ${user ? 'profile-btn--logged-in' : ''}`}
+        <Button
+          variant="ghost"
+          size="icon"
           onClick={onProfileClick}
           aria-label="Profile"
+          class={user ? 'profile-btn--logged-in' : ''}
         >
           {user?.user_metadata?.avatar_url
             ? <img src={user.user_metadata.avatar_url} class="profile-btn-avatar" alt="avatar" />
             : <User size={20} />
           }
-        </button>
+        </Button>
       </div>
     </header>
   );

@@ -2,6 +2,7 @@ import { X } from 'lucide-preact';
 import type { Word, WordStats } from '../types';
 import { t } from '../data/translations';
 import { useLanguage } from '../hooks';
+import { Button } from './commons';
 import './WordListModal.css';
 
 interface WordWithStats extends Word {
@@ -36,9 +37,7 @@ export function WordListModal({ category, words, onClose }: WordListModalProps) 
       <div class="modal-content scale-in">
         <div class="modal-header">
           <h2 class="modal-title">{titles[category]} ({words.length})</h2>
-          <button class="modal-close" onClick={onClose} aria-label="Close">
-            <X size={20} />
-          </button>
+          <Button variant="ghost" icon={X} size="icon" onClick={onClose} aria-label="Close" />
         </div>
 
         <div class="modal-body">

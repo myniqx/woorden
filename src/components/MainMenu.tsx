@@ -7,6 +7,7 @@ import { getPinnedWordCount, MIN_PINS_FOR_QUIZ, canPinInQuizType } from '../serv
 import { WordPoolModal } from './WordPoolModal';
 import { SupportButton } from './SupportButton';
 import { useLanguage } from '../hooks';
+import { Badge } from './commons';
 import './MainMenu.css';
 
 interface MainMenuProps {
@@ -128,7 +129,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
         onClick={onOpenChangelog}
       >
         <span>Changelog</span>
-        {hasNewChangelog && <span class="changelog-button__badge" />}
+        {hasNewChangelog && <Badge dot />}
       </button>
 
       {showWordPool && (

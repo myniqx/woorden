@@ -4,6 +4,7 @@ import { exportData, importData } from '../../services/storage';
 import { APP_URL } from '../../data/constants';
 import { t } from '../../data/translations';
 import { useLanguage, useTheme } from '../../hooks';
+import { Button } from '../commons';
 
 interface SettingsTabProps {
   visitorCount: number | null;
@@ -56,34 +57,36 @@ export function SettingsTab({ visitorCount, onDataImported }: SettingsTabProps) 
           {tr('settings_theme')}
         </h3>
         <div class="profile-theme-toggle">
-          <button
-            class={`profile-theme-option ${theme === 'light' ? 'active' : ''}`}
+          <Button
+            variant={theme === 'light' ? 'soft' : 'outline'}
+            color={theme === 'light' ? 'primary' : 'default'}
+            icon={Sun}
+            fullWidth
             onClick={() => theme === 'dark' && toggleTheme()}
           >
-            <Sun size={16} />
             {tr('settings_light')}
-          </button>
-          <button
-            class={`profile-theme-option ${theme === 'dark' ? 'active' : ''}`}
+          </Button>
+          <Button
+            variant={theme === 'dark' ? 'soft' : 'outline'}
+            color={theme === 'dark' ? 'primary' : 'default'}
+            icon={Moon}
+            fullWidth
             onClick={() => theme === 'light' && toggleTheme()}
           >
-            <Moon size={16} />
             {tr('settings_dark')}
-          </button>
+          </Button>
         </div>
       </section>
 
       <section class="profile-section">
         <h3><Download size={16} />{tr('settings_data')}</h3>
         <div class="profile-data-actions">
-          <button class="profile-btn" onClick={handleExport}>
-            <Download size={16} />
+          <Button variant="outline" icon={Download} fullWidth onClick={handleExport}>
             {tr('settings_export')}
-          </button>
-          <button class="profile-btn" onClick={() => fileInputRef.current?.click()}>
-            <Upload size={16} />
+          </Button>
+          <Button variant="outline" icon={Upload} fullWidth onClick={() => fileInputRef.current?.click()}>
             {tr('settings_import')}
-          </button>
+          </Button>
         </div>
       </section>
 

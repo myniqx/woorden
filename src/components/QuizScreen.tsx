@@ -8,6 +8,7 @@ import { OptionButton } from './OptionButton';
 import { HelpModal } from './HelpModal';
 import { ExampleZin } from './ExampleZin';
 import { useLanguage } from '../hooks';
+import { Button } from './commons';
 import './QuizScreen.css';
 
 const helpTexts: Record<QuizType, Record<Language, { title: string; content: string }>> = {
@@ -205,13 +206,7 @@ export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: 
               </button>
             )}
             {help?.content && (
-              <button
-                class="help-button"
-                onClick={() => setShowHelp(true)}
-                aria-label="Help"
-              >
-                <HelpCircle size={18} />
-              </button>
+              <Button variant="ghost" size="icon" icon={HelpCircle} onClick={() => setShowHelp(true)} aria-label="Help" />
             )}
           </div>
           <p class="question-text">{quiz.question.text}</p>
