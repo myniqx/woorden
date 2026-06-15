@@ -5,9 +5,8 @@ import type { Word, WordStats, QuizType } from '../types';
 import { words } from '../services/words';
 import { getAllWordStats, getStreak } from '../services/storage';
 import { getStatsSummary } from '../services/wordSelector';
-import { t } from '../data/translations';
+import { useLanguage, useTrans } from '../hooks';
 import { WordListModal } from './WordListModal';
-import { useLanguage } from '../hooks';
 
 interface StatsFooterProps {
   quizType?: QuizType | null;
@@ -53,23 +52,29 @@ function getCategorizedWords(): Record<Category, WordWithStats[]> {
 }
 
 const statIconClass: Record<Category, string> = {
-  unseen:    'bg-[rgba(158,158,158,0.1)] text-[#9e9e9e]',
-  learning:  'bg-[rgba(255,107,53,0.1)] text-[#ff6b35]',
-  mastered:  'bg-[rgba(76,175,80,0.1)] text-[#4caf50]',
+  unseen: 'bg-[rgba(158,158,158,0.1)] text-[#9e9e9e]',
+  learning: 'bg-[rgba(255,107,53,0.1)] text-[#ff6b35]',
+  mastered: 'bg-[rgba(76,175,80,0.1)] text-[#4caf50]',
   difficult: 'bg-[rgba(244,67,54,0.1)] text-[#f44336]',
 };
 
 export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProps) {
-  const { language } = useLanguage();
+  const { t } = useLanguage();
   const [expanded, setExpanded] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
   const stats = getStatsSummary(quizType || undefined);
   const streak = getStreak();
-  const tr = (key: string) => t(key, language);
   const progressPercent = stats.total > 0 ? Math.round((stats.seen / stats.total) * 100) : 0;
 
   const categorizedWords = selectedCategory ? getCategorizedWords() : null;
+
+  const categoryLabel: Record<Category, string> = {
+    unseen: t.wordList.unseen,
+    learning: t.wordList.learning,
+    mastered: t.wordList.mastered,
+    difficult: t.wordList.difficult,
+  };
 
   return (
     <>
@@ -96,10 +101,10 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
           {needRefresh && (
             <Button
               variant="solid" color="success" icon={RefreshCw} size="sm"
-              onClick={onUpdate} title={t('updateAvailable', language)}
+              onClick={onUpdate} title={t.stats.updateAvailable}
               class="mr-[var(--spacing-md)] pulse-glow"
             >
-              {t('update', language)}
+              {t.common.update}
             </Button>
           )}
         </div>
@@ -109,9 +114,9 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
             <div class="grid grid-cols-2 gap-[var(--spacing-md)] mb-[var(--spacing-md)]">
               {(
                 [
-                  { cat: 'unseen' as Category,    icon: Eye,         value: stats.unseen },
-                  { cat: 'learning' as Category,  icon: BookOpen,    value: stats.learning },
-                  { cat: 'mastered' as Category,  icon: BarChart3,   value: stats.mastered },
+                  { cat: 'unseen' as Category, icon: Eye, value: stats.unseen },
+                  { cat: 'learning' as Category, icon: BookOpen, value: stats.learning },
+                  { cat: 'mastered' as Category, icon: BarChart3, value: stats.mastered },
                   { cat: 'difficult' as Category, icon: AlertCircle, value: stats.difficult },
                 ] as const
               ).map(({ cat, icon: Icon, value }) => (
@@ -125,7 +130,7 @@ export function StatsFooter({ quizType, needRefresh, onUpdate }: StatsFooterProp
                   </div>
                   <div class="flex flex-col">
                     <span class="text-[length:var(--text-lg)] font-semibold text-[var(--color-text-primary)] leading-none">{value}</span>
-                    <span class="text-[length:var(--text-xs)] text-[var(--color-text-secondary)]">{tr(cat)}</span>
+                    <span class="text-[length:var(--text-xs)] text-[var(--color-text-secondary)]">{categoryLabel[cat]}</span>
                   </div>
                 </button>
               ))}

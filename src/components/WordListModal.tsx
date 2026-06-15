@@ -1,6 +1,5 @@
 import type { Word, WordStats } from '../types';
-import { t } from '../data/translations';
-import { useLanguage } from '../hooks';
+import { useLanguage, useTrans } from '../hooks';
 import { Modal } from './commons';
 
 interface WordWithStats extends Word {
@@ -14,14 +13,13 @@ interface WordListModalProps {
 }
 
 export function WordListModal({ category, words, onClose }: WordListModalProps) {
-  const { language } = useLanguage();
-  const tr = (key: string) => t(key, language);
+  const { t } = useLanguage();
 
   const titles: Record<string, string> = {
-    unseen: tr('unseenWords'),
-    learning: tr('learningWords'),
-    mastered: tr('masteredWords'),
-    difficult: tr('difficultWords'),
+    unseen: t.wordList.unseenWords,
+    learning: t.wordList.learningWords,
+    mastered: t.wordList.masteredWords,
+    difficult: t.wordList.difficultWords,
   };
 
   return (
@@ -30,7 +28,7 @@ export function WordListModal({ category, words, onClose }: WordListModalProps) 
       <Modal.Body>
         {words.length === 0 ? (
           <p class="text-center text-[var(--color-text-secondary)] py-[var(--spacing-xl)]">
-            {tr('emptyCategory')}
+            {t.wordList.emptyCategory}
           </p>
         ) : (
           <div class="flex flex-col gap-[var(--spacing-xs)]">
@@ -42,9 +40,6 @@ export function WordListModal({ category, words, onClose }: WordListModalProps) 
                       <span class="text-[var(--color-primary)] font-semibold">{word.article} </span>
                     )}
                     {word.nl}
-                  </span>
-                  <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] truncate">
-                    {word[language]}
                   </span>
                 </div>
                 {category !== 'unseen' && (

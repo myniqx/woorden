@@ -1,8 +1,7 @@
 import { User, LogIn, LogOut, RefreshCw, CloudDownload, CloudUpload, Save, Trash2, Shuffle } from 'lucide-preact';
 import type { ComponentChildren } from 'preact';
 import { Avatar, AvatarPicker } from '../AvatarPicker';
-import { t } from '../../data/translations';
-import { useLanguage } from '../../hooks';
+import { merge } from '../../hooks';
 import { Button } from '../commons';
 import type { ProfileSharedProps, SyncState } from './types';
 
@@ -48,29 +47,28 @@ export function ProfileTab({
   onSyncAction,
   onResetData,
 }: ProfileTabProps) {
-  const { language } = useLanguage();
-  const tr = (key: string, replacements?: Record<string, string | number>) => t(key, language, replacements);
-
+  const { t } = useLanguage();
   const { state, cooldown, lastSync } = syncState;
   const isBusy = state === 'busy' || cooldown > 0;
+
   const syncLabel = (fallback: string) =>
-    state === 'busy' ? tr('profile_processing') :
-    state === 'done' ? tr('profile_done') :
-    state === 'error' ? tr('profile_action_error') :
-    tr(fallback);
+    state === 'busy' ? t.common.processing :
+      state === 'done' ? t.common.done :
+        state === 'error' ? t.common.error :
+          fallback;
 
   if (!user) {
     return (
       <div class={sectionList}>
         <Section>
-          <h3 class={sectionH3}><User size={16} />{tr('profile_account')}</h3>
+          <h3 class={sectionH3}><User size={16} />{t.profileScreen.profile.account}</h3>
           <div class="flex flex-col gap-[var(--spacing-md)]">
             <ul class="m-0 pl-[var(--spacing-md)] flex flex-col gap-[var(--spacing-xs)] text-[var(--color-text-secondary)] text-[length:var(--text-sm)] leading-relaxed">
-              <li>{tr('profile_signin_reason1')}</li>
-              <li>{tr('profile_signin_reason2')}</li>
+              <li>{t.profileScreen.profile.signinReason1}</li>
+              <li>{t.profileScreen.profile.signinReason2}</li>
             </ul>
             <Button variant="outline" color="primary" icon={LogIn} fullWidth onClick={onSignIn}>
-              {tr('lb_signin_google')}
+              {t.leaderboard.signInGoogle}
             </Button>
           </div>
         </Section>
@@ -93,7 +91,7 @@ export function ProfileTab({
           <div class="flex flex-col gap-[var(--spacing-xs)] min-w-0">
             <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] truncate">{user.email}</span>
             <Button variant="outline" size="sm" onClick={onAvatarPickerToggle}>
-              {showAvatarPicker ? tr('profile_avatar_close') : tr('profile_avatar_change')}
+              {showAvatarPicker ? t.common.close : t.common.change}
             </Button>
           </div>
         </div>
@@ -105,12 +103,12 @@ export function ProfileTab({
       </Section>
 
       <Section>
-        <h3 class={sectionH3}>{tr('profile_username')}</h3>
+        <h3 class={sectionH3}>{t.profileScreen.profile.username}</h3>
         <div class="flex gap-[var(--spacing-sm)] items-center">
           <input
             class={`${inputBase} flex-1 ${saveState === 'conflict' ? 'border-[var(--color-error)] focus:border-[var(--color-error)]' : ''}`}
             type="text"
-            placeholder={tr('profile_username_placeholder')}
+            placeholder={t.profileScreen.profile.usernamePlaceholder}
             value={username}
             onInput={(e) => onUsernameInput((e.target as HTMLInputElement).value)}
             onBlur={onUsernameBlur}
@@ -119,66 +117,66 @@ export function ProfileTab({
           <Button variant="ghost" size="sm" icon={Shuffle} onClick={onRandomUsername} title="Rastgele kullanıcı adı üret" />
         </div>
         {saveState === 'conflict' && (
-          <p class="mt-[var(--spacing-xs)] m-0 text-[length:var(--text-xs)] text-[var(--color-error)]">{tr('profile_username_taken')}</p>
+          <p class="mt-[var(--spacing-xs)] m-0 text-[length:var(--text-xs)] text-[var(--color-error)]">{t.profileScreen.profile.usernameTaken}</p>
         )}
       </Section>
 
       <Section>
         <Button variant="soft" color={saveColor} icon={Save} fullWidth onClick={onSave} disabled={saveState === 'saving' || !username.trim()}>
-          {saveState === 'saving' ? tr('profile_saving') :
-           saveState === 'saved'  ? tr('profile_saved')  :
-           saveState === 'error'  ? tr('profile_error')  :
-           tr('profile_save')}
+          {saveState === 'saving' ? t.common.saving :
+            saveState === 'saved' ? t.common.saved :
+              saveState === 'error' ? t.common.error :
+                t.common.save}
         </Button>
       </Section>
 
       {lastSync && (
         <p class="m-0 mb-[var(--spacing-md)] text-[length:var(--text-xs)] text-[var(--color-text-muted)]">
-          {tr('profile_last_sync', { date: new Date(lastSync).toLocaleString() })}
+          {merge(t.profileScreen.profile.lastSync, { date: new Date(lastSync).toLocaleString() })}
         </p>
       )}
 
       {cooldown > 0 && (
         <p class="m-0 mb-[var(--spacing-md)] text-[length:var(--text-xs)] text-[var(--color-text-muted)] tabular-nums">
-          {tr('profile_next_action', { time: `${Math.floor(cooldown / 60)}:${String(cooldown % 60).padStart(2, '0')}` })}
+          {merge(t.profileScreen.profile.nextAction, { time: `${Math.floor(cooldown / 60)}:${String(cooldown % 60).padStart(2, '0')}` })}
         </p>
       )}
 
       <Section>
-        <h3 class={sectionH3}><RefreshCw size={16} />{tr('profile_sync_data')}</h3>
-        <p class={actionDesc}>{tr('profile_sync_desc')}</p>
+        <h3 class={sectionH3}><RefreshCw size={16} />{t.profileScreen.profile.syncData}</h3>
+        <p class={actionDesc}>{t.profileScreen.profile.syncDesc}</p>
         <Button variant="outline" color={syncColor} icon={RefreshCw} fullWidth disabled={isBusy} onClick={() => onSyncAction('merge')}>
-          {syncLabel('profile_sync_data')}
+          {syncLabel(t.profileScreen.profile.syncData)}
         </Button>
       </Section>
 
       <Section>
-        <h3 class={sectionH3}><CloudDownload size={16} />{tr('profile_get_data')}</h3>
-        <p class={actionDesc}>{tr('profile_get_desc')}</p>
+        <h3 class={sectionH3}><CloudDownload size={16} />{t.profileScreen.profile.getData}</h3>
+        <p class={actionDesc}>{t.profileScreen.profile.getDesc}</p>
         <Button variant="outline" color={syncColor} icon={CloudDownload} fullWidth disabled={isBusy} onClick={() => onSyncAction('download')}>
-          {syncLabel('profile_get_data')}
+          {syncLabel(t.profileScreen.profile.getData)}
         </Button>
       </Section>
 
       <Section>
-        <h3 class={sectionH3}><CloudUpload size={16} />{tr('profile_upload_data')}</h3>
-        <p class={actionDesc}>{tr('profile_upload_desc')}</p>
+        <h3 class={sectionH3}><CloudUpload size={16} />{t.profileScreen.profile.uploadData}</h3>
+        <p class={actionDesc}>{t.profileScreen.profile.uploadDesc}</p>
         <Button variant="outline" color={syncColor} icon={CloudUpload} fullWidth disabled={isBusy} onClick={() => onSyncAction('upload')}>
-          {syncLabel('profile_upload_data')}
+          {syncLabel(t.profileScreen.profile.uploadData)}
         </Button>
       </Section>
 
       <Section>
-        <h3 class={sectionH3}><Trash2 size={16} />{tr('profile_delete_all')}</h3>
-        <p class={actionDesc}>{tr('profile_delete_desc')}</p>
+        <h3 class={sectionH3}><Trash2 size={16} />{t.profileScreen.profile.deleteAll}</h3>
+        <p class={actionDesc}>{t.profileScreen.profile.deleteDesc}</p>
         <Button variant="outline" color="danger" icon={Trash2} fullWidth onClick={onResetData}>
-          {tr('profile_delete_all')}
+          {t.profileScreen.profile.deleteAll}
         </Button>
       </Section>
 
       <Section>
         <Button variant="outline" color="danger" icon={LogOut} fullWidth onClick={onSignOut}>
-          {tr('profile_signout')}
+          {t.common.signOut}
         </Button>
       </Section>
     </div>

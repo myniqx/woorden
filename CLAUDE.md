@@ -163,7 +163,7 @@ npm run preview  # Preview production build
 - Components: PascalCase `.tsx` — **no separate CSS files**, all styling via Tailwind
 - Services: camelCase functions, no classes
 - Types: PascalCase interfaces, camelCase type aliases
-- Styling: Tailwind utility classes; theme tokens via `var(--...)` references (e.g. `bg-[var(--color-primary)]`)
+- Styling: Tailwind v4 canonical syntax; theme tokens via CSS variable shorthand (e.g. `bg-(--color-primary)`, `text-(length:--text-sm)`)
 - No emojis in code/UI unless explicitly requested
 
 ## Theme Tokens (IMPORTANT)
@@ -213,29 +213,52 @@ All styling uses Tailwind with CSS variable references from `src/styles/theme.cs
 
 ### Tailwind Usage Pattern
 
+All `--color-*`, `--radius-*`, `--text-*` tokens are inside `@theme {}` so Tailwind generates
+direct aliases. Use them — never write `var(--...)` wrappers in class strings.
+
+**Color tokens → direct alias:**
+```
+bg-primary        bg-primary-light    bg-primary-hover
+bg-surface        bg-bg               bg-border
+bg-success-light  bg-error-light
+text-primary      text-text-primary   text-text-secondary   text-text-muted
+text-success      text-error
+border-border     border-primary
+```
+
+**Text size tokens → Tailwind's own scale (values are identical):**
+```
+text-xs   text-sm   text-base   text-lg   text-xl   text-2xl
+```
+
+**Radius tokens → Tailwind's own scale (values are identical):**
+```
+rounded-sm   rounded-md   rounded-lg   rounded-xl   rounded-full
+```
+
+**Spacing / transition / shadow → NO alias, use CSS variable shorthand:**
 ```tsx
-// WRONG — bare CSS variable without var()
-<div class="bg-color-primary text-text-sm">
+px-(--spacing-md)          py-(--spacing-sm)        gap-(--spacing-xs)
+duration-(--transition-fast)                         duration-(--transition-normal)
+shadow-(--shadow-sm)
+```
 
-// CORRECT — always wrap in var()
-<div class="bg-[var(--color-primary)] text-[length:var(--text-sm)]">
+**Never use `[var(--...)]` bracket syntax:**
+```tsx
+// WRONG
+<div class="bg-[var(--color-primary)] text-[length:var(--text-sm)] px-[var(--spacing-md)]">
 
-// CORRECT — spacing, radius, shadow
-<div class="px-[var(--spacing-md)] rounded-[var(--radius-lg)] shadow-[var(--shadow-sm)]">
+// CORRECT
+<div class="bg-primary text-sm px-(--spacing-md)">
 ```
 
 ### Common Mistakes to Avoid
 
 ```tsx
-// WRONG — old CSS variable names
-bg-[var(--bg-secondary)]
-text-[var(--text-primary)]
-border-[var(--border-color)]
-
-// CORRECT
-bg-[var(--color-surface)]
-text-[var(--color-text-primary)]
-border-[var(--color-border)]
+// WRONG — old variable names (renamed)
+bg-[var(--bg-secondary)]     →  bg-surface
+text-[var(--text-primary)]   →  text-text-primary
+border-[var(--border-color)] →  border-border
 ```
 
 ### Global Utility Classes (theme.css)
@@ -475,7 +498,7 @@ Export from: `src/components/commons/index.ts`
 
 Rules:
 - **All styles in Tailwind** — no separate CSS file
-- Use CSS variable references for theme tokens: `bg-[var(--color-primary)]`, `text-[length:var(--text-sm)]`
+- Use Tailwind aliases for theme tokens: `bg-primary`, `text-sm`, `rounded-md`; shorthand for spacing: `px-(--spacing-md)`
 - Build variant maps as `Record<Variant, Record<Color, string>>` — never use conditionals for style selection
 - Always accept `class?: string` prop for one-off overrides
 - Accept `icon?: LucideIcon` and `iconRight?: LucideIcon` for icon slots
@@ -484,14 +507,14 @@ Rules:
 Example structure:
 ```tsx
 const variantColor: Record<Variant, Record<Color, string>> = {
-  solid:   { primary: 'bg-[var(--color-primary)] text-white ...', ... },
-  outline: { primary: 'bg-transparent border-[var(--color-primary)] ...', ... },
+  solid:   { primary: 'bg-primary text-white ...', ... },
+  outline: { primary: 'bg-transparent border-primary ...', ... },
 };
 
 const sizeMap: Record<Size, string> = {
-  sm:   'text-[length:var(--text-xs)] px-[var(--spacing-sm)] ...',
-  md:   'text-[length:var(--text-sm)] px-[var(--spacing-md)] ...',
-  icon: 'p-[var(--spacing-sm)] aspect-square',
+  sm:   'text-xs px-(--spacing-sm) ...',
+  md:   'text-sm px-(--spacing-md) ...',
+  icon: 'p-(--spacing-sm) aspect-square',
 };
 ```
 

@@ -1,8 +1,6 @@
 import { useState } from 'preact/hooks';
 import { ChevronDown, ChevronRight, HelpCircle } from 'lucide-preact';
-import type { Language } from '../types';
-import { t } from '../data/translations';
-import { useLanguage } from '../hooks';
+import { useTrans, merge, useLanguage } from '../hooks';
 import {
   getAvailableLevels,
   getChunkCount,
@@ -19,6 +17,7 @@ import {
 } from '../services/storage';
 import { HelpModal } from './HelpModal';
 import { Button, Modal } from './commons';
+import type { Language } from '../types';
 
 const helpTexts: Record<Language, { title: string; content: string }> = {
   tr: {
@@ -44,13 +43,13 @@ interface WordPoolModalProps {
 }
 
 export function WordPoolModal({ onClose }: WordPoolModalProps) {
+  const { t } = useLanguage();
   const { language } = useLanguage();
   const [expandedLevels, setExpandedLevels] = useState<Record<string, boolean>>({});
   const [showHelp, setShowHelp] = useState(false);
   const [, forceUpdate] = useState(0);
 
   const levels = getAvailableLevels();
-  const help = helpTexts[language] || helpTexts.en;
 
   const toggleExpand = (level: string) => {
     setExpandedLevels(prev => ({
@@ -69,7 +68,6 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
     const chunkCount = getChunkCount(level);
     const allEnabled = areAllChunksEnabled(level, chunkCount);
 
-    // If all enabled, disable all. Otherwise enable all.
     for (let i = 0; i < chunkCount; i++) {
       setChunkEnabled(level, i, !allEnabled);
     }
@@ -92,14 +90,14 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
     <>
       <Modal onClose={onClose} maxWidth="md">
         <Modal.Header
-          title={t('wordPool', language)}
+          title={t.wordPool.title}
           onClose={onClose}
         >
           <Button variant="ghost" icon={HelpCircle} size="icon" onClick={() => setShowHelp(true)} aria-label="Help" />
         </Modal.Header>
 
         <div class="block text-[length:var(--text-sm)] text-[var(--color-text-secondary)] px-[var(--spacing-lg)] py-[var(--spacing-sm)] border-b border-[var(--color-border)]">
-          {t('wordPoolDesc', language, { count: totalSelected })}
+          {merge(t.wordPool.desc, { count: totalSelected })}
         </div>
 
         <Modal.Body>
@@ -130,7 +128,7 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
                       />
                       <span class="font-semibold text-[length:var(--text-base)] text-[var(--color-text-primary)]">{level}</span>
                       <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] ml-auto">
-                        {t('wordsSelected', language, { count: levelWordCount })}
+                        {merge(t.wordPool.wordsSelected, { count: levelWordCount })}
                       </span>
                     </label>
                   </div>
@@ -150,10 +148,10 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
                               onChange={() => handleChunkToggle(level, i)}
                             />
                             <span class="text-[length:var(--text-sm)] text-[var(--color-text-primary)]">
-                              {t('pack', language, { num: i + 1 })}
+                              {merge(t.wordPool.pack, { num: i + 1 })}
                             </span>
                             <span class="text-[length:var(--text-sm)] text-[var(--color-text-secondary)] ml-auto">
-                              {t('wordsSelected', language, { count: wordCount })}
+                              {merge(t.wordPool.wordsSelected, { count: wordCount })}
                             </span>
                           </label>
                         );
@@ -169,8 +167,8 @@ export function WordPoolModal({ onClose }: WordPoolModalProps) {
 
       {showHelp && (
         <HelpModal
-          title={help.title}
-          content={help.content}
+          title={(helpTexts[language] || helpTexts.en).title}
+          content={(helpTexts[language] || helpTexts.en).content}
           onClose={() => setShowHelp(false)}
         />
       )}

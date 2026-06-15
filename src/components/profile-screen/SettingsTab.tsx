@@ -2,8 +2,7 @@ import { useRef } from 'preact/hooks';
 import { Sun, Moon, Download, Upload, Users } from 'lucide-preact';
 import { exportData, importData } from '../../services/storage';
 import { APP_URL } from '../../data/constants';
-import { t } from '../../data/translations';
-import { useLanguage, useTheme } from '../../hooks';
+import { useTheme, useLanguage } from '../../hooks';
 import { Button } from '../commons';
 
 interface SettingsTabProps {
@@ -12,10 +11,9 @@ interface SettingsTabProps {
 }
 
 export function SettingsTab({ visitorCount, onDataImported }: SettingsTabProps) {
-  const { language } = useLanguage();
+  const { t } = useLanguage();
   const { theme, toggleTheme } = useTheme();
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const tr = (key: string) => t(key, language);
 
   const handleExport = () => {
     const data = exportData();
@@ -52,44 +50,44 @@ export function SettingsTab({ visitorCount, onDataImported }: SettingsTabProps) 
   const sectionH3 = 'flex items-center gap-[var(--spacing-xs)] m-0 mb-[var(--spacing-md)] text-[length:var(--text-xs)] font-semibold text-[var(--color-text-secondary)] uppercase tracking-[0.05em]';
 
   return (
-    <div class="flex flex-col gap-[var(--spacing-xl)]">
+    <div class="flex flex-col gap-(--spacing-xl)">
       <section>
         <h3 class={sectionH3}>
           {theme === 'dark' ? <Moon size={16} /> : <Sun size={16} />}
-          {tr('settings_theme')}
+          {t.profileScreen.settings.theme}
         </h3>
-        <div class="flex gap-[var(--spacing-sm)]">
+        <div class="flex gap-(--spacing-sm)">
           <Button variant={theme === 'light' ? 'soft' : 'outline'} color={theme === 'light' ? 'primary' : 'default'} icon={Sun} fullWidth onClick={() => theme === 'dark' && toggleTheme()}>
-            {tr('settings_light')}
+            {t.profileScreen.settings.light}
           </Button>
           <Button variant={theme === 'dark' ? 'soft' : 'outline'} color={theme === 'dark' ? 'primary' : 'default'} icon={Moon} fullWidth onClick={() => theme === 'light' && toggleTheme()}>
-            {tr('settings_dark')}
+            {t.profileScreen.settings.dark}
           </Button>
         </div>
       </section>
 
       <section>
-        <h3 class={sectionH3}><Download size={16} />{tr('settings_data')}</h3>
-        <div class="flex gap-[var(--spacing-sm)]">
-          <Button variant="outline" icon={Download} fullWidth onClick={handleExport}>{tr('settings_export')}</Button>
-          <Button variant="outline" icon={Upload} fullWidth onClick={() => fileInputRef.current?.click()}>{tr('settings_import')}</Button>
+        <h3 class={sectionH3}><Download size={16} />{t.profileScreen.settings.data}</h3>
+        <div class="flex gap-(--spacing-sm)">
+          <Button variant="outline" icon={Download} fullWidth onClick={handleExport}>{t.common.export}</Button>
+          <Button variant="outline" icon={Upload} fullWidth onClick={() => fileInputRef.current?.click()}>{t.common.import}</Button>
         </div>
       </section>
 
-      <div class="flex items-center justify-center gap-1.5 pt-[var(--spacing-md)] border-t border-[var(--color-border)] text-[length:var(--text-xs)] text-[var(--color-text-muted)]">
+      <div class="flex items-center justify-center gap-1.5 pt-(--spacing-md) border-t border-border text-(length:--text-xs) text-text-muted">
         <Users size={13} />
         {visitorCount !== null
-          ? <span>{visitorCount.toLocaleString()} {visitorCount === 1 ? tr('settings_visitor') : tr('settings_visitors')}</span>
+          ? <span>{visitorCount.toLocaleString()} {visitorCount === 1 ? t.profileScreen.settings.visitor : t.profileScreen.settings.visitors}</span>
           : <span class="tracking-[2px]">···</span>
         }
       </div>
 
-      <div class="flex items-center justify-center gap-[var(--spacing-sm)] pt-[var(--spacing-sm)] text-[length:var(--text-xs)]">
-        <a class="text-[var(--color-text-muted)] no-underline hover:text-[var(--color-primary)]" href="/privacy" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/privacy'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Privacy Policy</a>
-        <span class="text-[var(--color-border)]">·</span>
-        <a class="text-[var(--color-text-muted)] no-underline hover:text-[var(--color-primary)]" href="/terms" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/terms'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Terms of Service</a>
-        <span class="text-[var(--color-border)]">·</span>
-        <a class="text-[var(--color-text-muted)] no-underline hover:text-[var(--color-primary)]" href={APP_URL} target="_blank" rel="noopener noreferrer">myniqx.dev</a>
+      <div class="flex items-center justify-center gap-(--spacing-sm) pt-(--spacing-sm) text-(length:--text-xs)">
+        <a class="text-text-muted no-underline hover:text-primary" href="/privacy" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/privacy'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Privacy Policy</a>
+        <span class="text-border">·</span>
+        <a class="text-text-muted no-underline hover:text-primary" href="/terms" onClick={(e) => { e.preventDefault(); history.pushState({}, '', '/terms'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Terms of Service</a>
+        <span class="text-border">·</span>
+        <a class="text-text-muted no-underline hover:text-primary" href={APP_URL} target="_blank" rel="noopener noreferrer">myniqx.dev</a>
       </div>
 
       <input ref={fileInputRef} type="file" accept=".json" onChange={handleFileChange} style={{ display: 'none' }} />

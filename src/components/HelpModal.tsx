@@ -11,12 +11,12 @@ function formatContent(text: string): preact.JSX.Element[] {
     const parts = paragraph.split(/(\*\*.*?\*\*)/g);
     const formatted = parts.map((part, j) => {
       if (part.startsWith('**') && part.endsWith('**')) {
-        return <strong key={j} class="text-[var(--color-text-primary)] font-semibold">{part.slice(2, -2)}</strong>;
+        return <strong key={j} class="text-text-primary font-semibold">{part.slice(2, -2)}</strong>;
       }
       return part;
     });
     return (
-      <p key={i} class="m-0 mb-[var(--spacing-md)] last:mb-0 text-[length:var(--text-sm)] text-[var(--color-text-secondary)] leading-relaxed">
+      <p key={i} class="m-0 mb-(--spacing-md) last:mb-0 text-(length:--text-sm) text-text-secondary leading-relaxed">
         {formatted}
       </p>
     );

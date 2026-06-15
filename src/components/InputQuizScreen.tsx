@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'preact/hooks';
 import type { QuizType, QuizMode, Language } from '../types';
-import { t } from '../data/translations';
+import { useTrans, merge, useLanguage } from '../hooks';
 import {
   canPinInQuizType,
   isPinned,
@@ -12,8 +12,8 @@ import {
 import { selectWord } from '../services/wordSelector';
 import { compareIgnoringAccents } from '../utils/textUtils';
 import { HelpModal } from './HelpModal';
-import { useLanguage } from '../hooks';
 import { Button, QuizCard, ResultBanner } from './commons';
+import { locales } from '../locales';
 
 const helpTexts: Record<string, Record<Language, { title: string; content: string }>> = {
   nativeToDutch_write: {
@@ -112,7 +112,7 @@ interface QuizState {
 }
 
 export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: InputQuizScreenProps) {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   const [quiz, setQuiz] = useState<QuizState | null>(null);
   const [inputValue, setInputValue] = useState('');
   const [showResult, setShowResult] = useState(false);
@@ -131,51 +131,47 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
     let subtext: string;
     let correctAnswer: string;
 
+    const loc = locales[language];
+
     if (quizType === 'verbForms') {
-      // Select a verb
       word = selectWord('verbForms', quizMode);
 
       const perfectum = 'perfectum' in word ? word.perfectum : '';
       const imperfectum = 'imperfectum' in word ? word.imperfectum : '';
       const infinitief = word.nl;
 
-      // All 3 forms with their display and possible questions
       const forms = [
         {
           show: infinitief, label: 'infinitief', askOptions: [
-            { answer: perfectum, key: 'writeThePerfectum' },
-            { answer: imperfectum, key: 'writeTheImperfectum' },
+            { answer: perfectum, subtext: loc.quiz.write.promptPerfectum },
+            { answer: imperfectum, subtext: loc.quiz.write.promptImperfectum },
           ]
         },
         {
           show: perfectum, label: 'perfectum', askOptions: [
-            { answer: infinitief, key: 'writeTheInfinitief' },
-            { answer: imperfectum, key: 'writeTheImperfectum' },
+            { answer: infinitief, subtext: loc.quiz.write.promptInfinitief },
+            { answer: imperfectum, subtext: loc.quiz.write.promptImperfectum },
           ]
         },
         {
           show: imperfectum, label: 'imperfectum', askOptions: [
-            { answer: infinitief, key: 'writeTheInfinitief' },
-            { answer: perfectum, key: 'writeThePerfectum' },
+            { answer: infinitief, subtext: loc.quiz.write.promptInfinitief },
+            { answer: perfectum, subtext: loc.quiz.write.promptPerfectum },
           ]
         },
-      ].filter(f => f.show); // Filter out empty forms
+      ].filter(f => f.show);
 
-      // Pick a random form to show
       const chosen = forms[Math.floor(Math.random() * forms.length)];
-
-      // Filter valid ask options and pick one
       const validOptions = chosen.askOptions.filter(opt => opt.answer);
       const askOption = validOptions[Math.floor(Math.random() * validOptions.length)];
 
       questionText = chosen.show;
-      subtext = t(askOption.key, language);
+      subtext = askOption.subtext;
       correctAnswer = askOption.answer;
     } else {
-      // nativeToDutch_write
       word = selectWord('nativeToDutch_write', quizMode);
       questionText = word[language];
-      subtext = t('writeTheDutch', language);
+      subtext = loc.quiz.write.promptDutch;
       correctAnswer = word.nl;
     }
 
@@ -197,7 +193,6 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
       setPinned(isPinned(quizType, word.nl));
     }
 
-    // Focus input after state update
     setTimeout(() => {
       inputRef.current?.focus();
     }, 50);
@@ -207,12 +202,10 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
     loadNewQuestion();
   }, [loadNewQuestion]);
 
-  // Check answer on each keystroke
   useEffect(() => {
     if (!quiz || showResult) return;
 
     if (compareIgnoringAccents(inputValue, quiz.correctAnswer)) {
-      // Correct answer!
       setIsCorrect(true);
       setShowResult(true);
 
@@ -220,7 +213,6 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
       updateWordProgress(quiz.wordNl, skill, true);
       onAnswer?.();
 
-      // Auto-advance after delay
       setTimeout(() => {
         loadNewQuestion();
       }, 1500);
@@ -238,7 +230,6 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
     updateWordProgress(quiz.wordNl, skill, false);
     onAnswer?.();
 
-    // Auto-advance after delay
     setTimeout(() => {
       loadNewQuestion();
     }, 2000);
@@ -251,11 +242,17 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
   };
 
   if (!quiz) {
-    return <div class="flex flex-1 items-center justify-center text-[var(--color-text-secondary)]">Loading...</div>;
+    return <div class="flex flex-1 items-center justify-center text-text-secondary">Loading...</div>;
   }
 
   const skill = getSkillForQuizType(quizType);
   const progress = getSkillProgress(quiz.wordNl, skill);
+
+  const wordTypeLabel: Record<string, string> = {
+    noun: t.wordType.noun, verb: t.wordType.verb, adj: t.wordType.adj,
+    adv: t.wordType.adv, prep: t.wordType.prep, conj: t.wordType.conj,
+    phrase: t.wordType.phrase, num: t.wordType.num, pron: t.wordType.pron,
+  };
 
   const inputStateClass = !showResult
     ? 'border-[var(--color-border)] focus:border-[var(--color-primary)] focus:shadow-[0_0_0_3px_var(--color-primary-light)]'
@@ -264,9 +261,9 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
       : 'border-[var(--color-error)] bg-[var(--color-error-light)]';
 
   return (
-    <div class="flex-1 flex flex-col gap-[var(--spacing-lg)] py-[var(--spacing-md)] fade-in">
+    <div class="flex-1 flex flex-col gap-(--spacing-lg) py-(--spacing-md) fade-in">
       <QuizCard
-        wordType={t(`type_${quiz.wordType}`, language)}
+        wordType={wordTypeLabel[quiz.wordType] ?? quiz.wordType}
         questionText={quiz.questionText}
         subtext={quiz.subtext}
         pinned={pinned}
@@ -278,7 +275,7 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
         <input
           ref={inputRef}
           type="text"
-          class={`w-full px-[var(--spacing-lg)] py-[var(--spacing-md)] text-[length:var(--text-lg)] border-2 rounded-[var(--radius-lg)] bg-[var(--color-surface)] text-[var(--color-text-primary)] text-center outline-none transition-all duration-[var(--transition-fast)] ${inputStateClass}`}
+          class={`w-full px-(--spacing-lg) py-(--spacing-md) text-(length:--text-lg) border-2 rounded-lg bg-(--color-surface) text-text-primary text-center outline-none transition-all duration-(--transition-fast) ${inputStateClass}`}
           value={inputValue}
           onInput={(e) => setInputValue((e.target as HTMLInputElement).value)}
           disabled={showResult}
@@ -289,7 +286,7 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
         />
         {!showResult && (
           <Button variant="soft" color="default" onClick={handleSkip} class="self-center">
-            {t('skip', language)}
+            {t.common.skip}
           </Button>
         )}
       </QuizCard>
@@ -298,8 +295,8 @@ export function InputQuizScreen({ quizType, quizMode = 'normal', onExit, onAnswe
         <ResultBanner
           isCorrect={isCorrect}
           text={isCorrect
-            ? t('correct', language)
-            : t('correctAnswer', language, { answer: quiz.correctAnswer })}
+            ? t.quiz.correct
+            : merge(t.quiz.correctAnswer, { answer: quiz.correctAnswer })}
           progress={progress}
         />
       )}

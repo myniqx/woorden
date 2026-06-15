@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'preact/hooks';
 import type { QuizType, QuizMode, Language, Quiz } from '../types';
 import { createQuiz, submitAnswer } from '../services/quiz';
-import { t } from '../data/translations';
+import { useTrans } from '../hooks';
 import { canPinInQuizType, isPinned, togglePin, getSkillProgress, getSkillForQuizType } from '../services/storage';
 import { OptionButton } from './OptionButton';
 import { HelpModal } from './HelpModal';
@@ -139,13 +139,13 @@ interface QuizScreenProps {
 
 export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: QuizScreenProps) {
   const { language } = useLanguage();
+  const { t } = useLanguage();
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [selectedId, setSelectedId] = useState<string | number | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [pinned, setPinned] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
 
-  const tr = (key: string) => t(key, language);
   const canPin = canPinInQuizType(quizType);
   const help = helpTexts[quizType]?.[language] || helpTexts[quizType]?.en;
 
@@ -154,7 +154,6 @@ export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: 
     setQuiz(newQuiz);
     setSelectedId(null);
     setShowResult(false);
-    // Check if this word is pinned
     if (canPinInQuizType(quizType)) {
       setPinned(isPinned(quizType, newQuiz.word.nl));
     }
@@ -168,11 +167,10 @@ export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: 
     if (showResult || !quiz) return;
 
     setSelectedId(optionId);
-    const result = submitAnswer(quiz, optionId);
+    submitAnswer(quiz, optionId);
     setShowResult(true);
     onAnswer?.();
 
-    // Auto-advance after delay
     setTimeout(() => {
       loadNewQuestion();
     }, 1500);
@@ -192,10 +190,16 @@ export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: 
   const progress = showResult ? getSkillProgress(quiz.word.nl, skill) : null;
   const isCorrect = showResult ? quiz.options.find(o => o.id === selectedId)?.isCorrect : null;
 
+  const wordTypeLabel: Record<string, string> = {
+    noun: t.wordType.noun, verb: t.wordType.verb, adj: t.wordType.adj,
+    adv: t.wordType.adv, prep: t.wordType.prep, conj: t.wordType.conj,
+    phrase: t.wordType.phrase, num: t.wordType.num, pron: t.wordType.pron,
+  };
+
   return (
     <div class="flex-1 flex flex-col gap-[var(--spacing-lg)] py-[var(--spacing-md)] fade-in">
       <QuizCard
-        wordType={t(`type_${quiz.word.type}`, language)}
+        wordType={wordTypeLabel[quiz.word.type] ?? quiz.word.type}
         questionText={quiz.question.text}
         subtext={quiz.question.subtext}
         pinned={pinned}
@@ -219,7 +223,7 @@ export function QuizScreen({ quizType, quizMode = 'normal', onExit, onAnswer }: 
       {showResult && progress && (
         <ResultBanner
           isCorrect={!!isCorrect}
-          text={isCorrect ? tr('correct') : `${tr('incorrect')} - ${quiz.word[language]}`}
+          text={isCorrect ? t.quiz.correct : `${t.quiz.incorrect} - ${quiz.word[language]}`}
           progress={progress}
         />
       )}

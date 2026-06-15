@@ -5,12 +5,11 @@ import { getRandomUsername } from '../../data/username-words';
 import type { User as AuthUser } from '../../services/auth';
 import { pushProfile, pullProfile, updateMyData, downloadData, fetchLeaderboard, UsernameConflictError } from '../../services/sync';
 import type { LeaderboardEntry } from '../../services/sync';
-import { t } from '../../data/translations';
-import { useLanguage } from '../../hooks';
 import { LeaderboardTab } from './LeaderboardTab';
 import { ProfileTab } from './ProfileTab';
 import { SettingsTab } from './SettingsTab';
 import type { Tab, SyncState } from './types';
+import { useLanguage } from '@/hooks';
 
 interface ProfileScreenProps {
   visitorCount: number | null;
@@ -26,8 +25,7 @@ const LEADERBOARD_CACHE_KEY = 'woorden_leaderboard_cache';
 const LEADERBOARD_CACHE_TS_KEY = 'woorden_leaderboard_ts';
 
 export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataImported }: ProfileScreenProps) {
-  const { language } = useLanguage();
-  const tr = (key: string) => t(key, language);
+  const { t } = useLanguage();
 
   const [activeTab, setActiveTab] = useState<Tab>(user ? 'leaderboard' : 'profile');
   const [username, setUsernameState] = useState(getUsername);
@@ -125,13 +123,13 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
         setUsername(name);
         setAvatarIndexState(avatar);
         setAvatarIndex(avatar);
-        pushProfile(user, name, avatar).catch(() => {});
+        pushProfile(user, name, avatar).catch(() => { });
         return;
       }
       if (remote.username) { setUsernameState(remote.username); setUsername(remote.username); }
       if (remote.avatarIndex) { setAvatarIndexState(remote.avatarIndex); setAvatarIndex(remote.avatarIndex); }
       setSyncState(s => ({ ...s, lastSync: remote.lastSync }));
-    }).catch(() => {});
+    }).catch(() => { });
   }, [user]);
 
   const handleSave = async () => {
@@ -152,25 +150,25 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
   };
 
   const handleResetData = () => {
-    if (confirm(tr('profile_delete_confirm'))) {
+    if (confirm(t.profileScreen.profile.deleteConfirm)) {
       resetData();
       onDataImported?.();
     }
   };
 
   const tabs: { id: Tab; icon: typeof Trophy; label: string }[] = [
-    { id: 'leaderboard', icon: Trophy, label: tr('tab_leaderboard') },
-    { id: 'profile', icon: User, label: tr('tab_profile') },
-    { id: 'settings', icon: Settings, label: tr('tab_settings') },
+    { id: 'leaderboard', icon: Trophy, label: t.profileScreen.tabs.leaderboard },
+    { id: 'profile', icon: User, label: t.profileScreen.tabs.profile },
+    { id: 'settings', icon: Settings, label: t.profileScreen.tabs.settings },
   ];
 
   return (
     <div class="flex flex-col flex-1 min-h-0">
-      <div class="flex border-b border-[var(--color-border)] bg-[var(--color-surface)] shrink-0">
+      <div class="flex border-b border-border bg-(--color-surface) shrink-0">
         {tabs.map(({ id, icon: Icon, label }) => (
           <button
             key={id}
-            class={`flex-1 flex items-center justify-center gap-[var(--spacing-xs)] px-[var(--spacing-sm)] py-[var(--spacing-md)] bg-transparent border-none border-b-2 -mb-px text-[length:var(--text-sm)] font-medium cursor-pointer transition-[color,border-color] duration-[var(--transition-fast)] ${activeTab === id ? 'text-[var(--color-primary)] border-b-[var(--color-primary)]' : 'text-[var(--color-text-secondary)] border-b-transparent hover:text-[var(--color-text-primary)]'}`}
+            class={`flex-1 flex items-center justify-center gap-(--spacing-xs) px-(--spacing-sm) py-(--spacing-md) bg-transparent border-none border-b-2 -mb-px text-(length:--text-sm) font-medium cursor-pointer transition-[color,border-color] duration-(--transition-fast) ${activeTab === id ? 'text-primary border-b-primary' : 'text-text-secondary border-b-transparent hover:text-text-primary'}`}
             onClick={() => setActiveTab(id)}
           >
             <Icon size={18} />
@@ -179,7 +177,7 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
         ))}
       </div>
 
-      <div class="flex-1 overflow-y-auto p-[var(--spacing-lg)]">
+      <div class="flex-1 overflow-y-auto p-(--spacing-lg)">
         {activeTab === 'leaderboard' && (
           <LeaderboardTab user={user} onSignIn={onSignIn} leaderboard={leaderboard} />
         )}
