@@ -1,4 +1,4 @@
-import type { AIAdapter } from '../types';
+import type { AIAdapter, AIChatMessage } from '../types';
 
 export class GroqAdapter implements AIAdapter {
   private apiKey: string;
@@ -7,7 +7,7 @@ export class GroqAdapter implements AIAdapter {
     this.apiKey = apiKey;
   }
 
-  async *stream(prompt: string): AsyncIterable<string> {
+  private async *streamRaw(messages: object[], jsonMode = false): AsyncIterable<string> {
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -16,9 +16,9 @@ export class GroqAdapter implements AIAdapter {
       },
       body: JSON.stringify({
         model: 'llama-3.3-70b-versatile',
-        messages: [{ role: 'user', content: prompt }],
+        messages,
         stream: true,
-        response_format: { type: 'json_object' },
+        ...(jsonMode ? { response_format: { type: 'json_object' } } : {}),
       }),
     });
 
@@ -46,13 +46,23 @@ export class GroqAdapter implements AIAdapter {
 
         try {
           const parsed = JSON.parse(data);
-          const text: string | undefined =
-            parsed?.choices?.[0]?.delta?.content;
+          const text: string | undefined = parsed?.choices?.[0]?.delta?.content;
           if (text) yield text;
         } catch {
           // malformed SSE line — skip
         }
       }
     }
+  }
+
+  async *stream(prompt: string): AsyncIterable<string> {
+    yield* this.streamRaw([{ role: 'user', content: `Reply with a json object. ${prompt}` }], true);
+  }
+
+  async *chat(system: string, messages: AIChatMessage[]): AsyncIterable<string> {
+    yield* this.streamRaw([
+      { role: 'system', content: system },
+      ...messages.map(m => ({ role: m.role, content: m.content })),
+    ]);
   }
 }

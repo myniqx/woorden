@@ -1,4 +1,4 @@
-export type { AIProvider, AIAdapter, ProviderType } from './types';
+export type { AIProvider, AIAdapter, AIChatMessage, ProviderType } from './types';
 export { streamObject } from './manager';
 export {
   getProviders,

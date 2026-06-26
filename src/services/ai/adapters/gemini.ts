@@ -1,4 +1,4 @@
-import type { AIAdapter } from '../types';
+import type { AIAdapter, AIChatMessage } from '../types';
 
 export class GeminiAdapter implements AIAdapter {
   private apiKey: string;
@@ -7,16 +7,12 @@ export class GeminiAdapter implements AIAdapter {
     this.apiKey = apiKey;
   }
 
-  async *stream(prompt: string): AsyncIterable<string> {
+  private async *streamRaw(body: object): AsyncIterable<string> {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:streamGenerateContent?alt=sse&key=${this.apiKey}`;
-
     const response = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { responseMimeType: 'application/json' },
-      }),
+      body: JSON.stringify(body),
     });
 
     if (!response.ok) {
@@ -51,5 +47,22 @@ export class GeminiAdapter implements AIAdapter {
         }
       }
     }
+  }
+
+  async *stream(prompt: string): AsyncIterable<string> {
+    yield* this.streamRaw({
+      contents: [{ role: 'user', parts: [{ text: prompt }] }],
+      generationConfig: { responseMimeType: 'application/json' },
+    });
+  }
+
+  async *chat(system: string, messages: AIChatMessage[]): AsyncIterable<string> {
+    yield* this.streamRaw({
+      system_instruction: { parts: [{ text: system }] },
+      contents: messages.map(m => ({
+        role: m.role === 'assistant' ? 'model' : 'user',
+        parts: [{ text: m.content }],
+      })),
+    });
   }
 }

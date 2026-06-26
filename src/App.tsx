@@ -15,6 +15,7 @@ import { signInWithGoogle, signOut, onAuthStateChange } from './services/auth';
 import type { User } from './services/auth';
 import { pushStats } from './services/sync';
 import { ProfileScreen } from './components/profile-screen';
+import { AIChatScreen } from './components/ai-chat-screen';
 import { AlertBanner } from './components/AlertBanner';
 import type { AlertAction } from './components/AlertBanner';
 
@@ -133,8 +134,8 @@ export function App() {
         <div class="app">
           <Header
             key={`header-${statsVersion}`}
-            showBackButton={screen === 'quiz' || screen === 'changelog' || screen === 'profile'}
-            onBack={screen === 'changelog' || screen === 'profile' ? () => setScreen('menu') : exitQuiz}
+            showBackButton={screen === 'quiz' || screen === 'changelog' || screen === 'profile' || screen === 'ai-chat'}
+            onBack={screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' ? () => setScreen('menu') : exitQuiz}
             onProfileClick={() => { history.pushState({ screen: 'profile' }, ''); setScreen('profile'); }}
             user={user}
           />
@@ -160,6 +161,10 @@ export function App() {
                   history.pushState({ screen: 'changelog' }, '');
                   setScreen('changelog');
                 }}
+                onOpenAIChat={() => {
+                  history.pushState({ screen: 'ai-chat' }, '');
+                  setScreen('ai-chat');
+                }}
                 hasNewChangelog={hasNewChangelog}
               />
             )}
@@ -177,6 +182,8 @@ export function App() {
                 onDataImported={onStatsUpdate}
               />
             )}
+
+            {screen === 'ai-chat' && <AIChatScreen />}
 
             {screen === 'quiz' && currentQuizType && (
               INPUT_QUIZ_TYPES.includes(currentQuizType) ? (
