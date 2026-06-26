@@ -20,6 +20,7 @@ import { AlertBanner } from './components/AlertBanner';
 import type { AlertAction } from './components/AlertBanner';
 
 const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
+const FULLSCREEN_SCREENS: Screen[] = ['ai-chat'];
 import type { QuizType, QuizMode, Screen } from './types';
 import './styles/theme.css';
 
@@ -140,7 +141,7 @@ export function App() {
             user={user}
           />
 
-          <main class="main">
+          <main class={FULLSCREEN_SCREENS.includes(screen) ? 'main no-padding' : 'main'}>
             {screen === 'menu' && (
               <AlertBanner
                 key={alertKey}
@@ -202,12 +203,14 @@ export function App() {
             )}
           </main>
 
-          <StatsFooter
-            key={`footer-${statsVersion}`}
-            quizType={currentQuizType}
-            needRefresh={needRefresh}
-            onUpdate={() => updateServiceWorker(true)}
-          />
+          {!FULLSCREEN_SCREENS.includes(screen) && (
+            <StatsFooter
+              key={`footer-${statsVersion}`}
+              quizType={currentQuizType}
+              needRefresh={needRefresh}
+              onUpdate={() => updateServiceWorker(true)}
+            />
+          )}
         </div>
       </LanguageContext.Provider>
     </ThemeContext.Provider>

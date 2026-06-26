@@ -22,7 +22,7 @@ export function ChatMessage({ message }: Props) {
 
   return (
     <div class={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
-      <div class="max-w-[80%] flex flex-col">
+      <div class="max-w-[85%] flex flex-col">
         <div class={`px-4 py-2.5 text-sm leading-relaxed ${bubbleRounded} ${
           isUser
             ? 'bg-primary text-white'

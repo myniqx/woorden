@@ -58,7 +58,7 @@ function ChatScreenInner() {
   const { activeSession, setDrawerOpen, newChat } = useChatContext();
 
   return (
-    <div class="flex flex-col h-full">
+    <div class="flex flex-col" style="height: 100%">
       <div class="flex items-center justify-between px-4 py-3 border-b border-border bg-surface shrink-0">
         <button
           class="p-1.5 bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-primary rounded-md"

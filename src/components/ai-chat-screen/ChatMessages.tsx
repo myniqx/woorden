@@ -13,11 +13,13 @@ export function ChatMessages() {
   if (!activeSession) return null;
 
   return (
-    <div class="flex-1 overflow-y-auto px-4 py-4 flex flex-col gap-3">
+    <div class="flex-1 overflow-y-auto py-4 flex flex-col gap-3 items-stretch">
+      <div class="flex flex-col gap-3 w-full px-4">
       {activeSession.messages.map(msg => (
         <ChatMessage key={msg.id} message={msg} />
       ))}
-      <div ref={bottomRef} />
+        <div ref={bottomRef} />
+      </div>
     </div>
   );
 }
