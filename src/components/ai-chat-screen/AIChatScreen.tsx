@@ -1,3 +1,4 @@
+import { useEffect } from 'preact/hooks';
 import { History, Plus } from 'lucide-preact';
 import { ChatProvider, useChatContext } from './ChatProvider';
 import { ChatHistory } from './ChatHistory';
@@ -5,6 +6,7 @@ import { ChatMessages } from './ChatMessages';
 import { ChatInput } from './ChatInput';
 import type { CEFRLevel } from './types';
 import { getProviders } from '../../services/ai';
+import { useAppLayout } from '../../hooks';
 
 const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -56,31 +58,35 @@ function ChatSetup() {
 
 function ChatScreenInner() {
   const { activeSession, setDrawerOpen, newChat } = useChatContext();
+  const { setHeaderCenter, clearHeaderCenter } = useAppLayout();
 
-  return (
-    <div class="flex flex-col" style="height: 100%">
-      <div class="flex items-center justify-between px-4 py-3 border-b border-border bg-surface shrink-0">
+  useEffect(() => {
+    setHeaderCenter(
+      <div class="flex items-center justify-between w-full">
         <button
           class="p-1.5 bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-primary rounded-md"
           onClick={() => setDrawerOpen(true)}
         >
-          <History size={20} />
+          <History size={18} />
         </button>
-        <span class="text-sm font-semibold text-text-primary">
+        <span class="text-sm font-medium text-text-primary truncate px-2">
           {activeSession ? `${activeSession.level} · ${activeSession.topic}` : 'New Chat'}
         </span>
         <button
           class="p-1.5 bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-primary rounded-md"
           onClick={newChat}
         >
-          <Plus size={20} />
+          <Plus size={18} />
         </button>
       </div>
+    );
+    return () => clearHeaderCenter();
+  }, [activeSession?.id, activeSession?.topic]);
 
+  return (
+    <div class="flex flex-col" style="height: 100%">
       <ChatHistory />
-
       {activeSession ? <ChatMessages /> : <ChatSetup />}
-
       <ChatInput />
     </div>
   );

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'preact/hooks';
 import { useRegisterSW } from 'virtual:pwa-register/preact';
-import { useThemeState, useLanguageState, ThemeContext, LanguageContext } from './hooks';
+import { useThemeState, useLanguageState, ThemeContext, LanguageContext, useAppLayoutState, AppLayoutContext } from './hooks';
 import { Header } from './components/Header';
 import { MainMenu } from './components/MainMenu';
 import { QuizScreen } from './components/QuizScreen';
@@ -55,6 +55,7 @@ export function App() {
 
   const themeValue = useThemeState();
   const languageValue = useLanguageState();
+  const appLayoutValue = useAppLayoutState();
 
   const {
     needRefresh: [needRefresh],
@@ -132,6 +133,7 @@ export function App() {
   return (
     <ThemeContext.Provider value={themeValue}>
       <LanguageContext.Provider value={languageValue}>
+      <AppLayoutContext.Provider value={appLayoutValue}>
         <div class="app">
           <Header
             key={`header-${statsVersion}`}
@@ -212,6 +214,7 @@ export function App() {
             />
           )}
         </div>
+      </AppLayoutContext.Provider>
       </LanguageContext.Provider>
     </ThemeContext.Provider>
   );
