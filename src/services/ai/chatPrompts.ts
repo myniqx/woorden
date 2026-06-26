@@ -63,15 +63,29 @@ Regels:
 
 export function buildReviewPrompt(level: CEFRLevel, userMessage: string, language: Language): string {
   const langName = LANGUAGE_NAMES[language];
-  return `Je bent een vriendelijke Nederlandse taaldocent. De leerder spreekt ${langName} als moedertaal en leert Nederlands op ${level}-niveau.
+  return `You are a friendly Dutch language tutor. The learner's native language is ${langName} and they are learning Dutch at ${level} level.
 
-Evalueer deze zin: "${userMessage}"
+Evaluate this sentence: "${userMessage}"
 
-Schrijf je feedback in het ${langName}. Volg deze structuur:
-- Begin met één zin over hoe begrijpelijk de zin is.
-- Geef verbeterpunten als bullet points, elk met een korte uitleg waarom. Alleen als er fouten zijn. Als je een voorbeeld of correctie geeft, schrijf de Nederlandse zin altijd in het Nederlands (niet vertalen naar ${langName}). De uitleg eromheen mag in het ${langName}.
-- Als de leerder ${level}-niveau woorden of structuren gebruikt, benoem dat positief.
-- Als de zin correct is, zeg dat vriendelijk.
+First, detect the language situation:
 
-Wees kort en bemoedigend. Respond with a JSON object: { "review": "<feedback here>" }`;
+A) Sentence is entirely in a non-Dutch language:
+- Write a short encouraging message in ${langName}.
+- Then provide the Dutch translation of the sentence in quotes, so they can learn it.
+- Do not analyze grammar.
+
+B) Sentence is mostly Dutch but contains words from another language (e.g. "ik wil gitmek"):
+- Recognize that the learner tried but didn't know certain words.
+- In ${langName}, identify the non-Dutch word(s) and give their Dutch equivalent(s).
+- Then evaluate the rest of the Dutch parts normally.
+
+C) Sentence is fully in Dutch:
+- One sentence about how understandable it is.
+- Bullet points for improvements with short reasons. Only if there are errors. Dutch corrections in quotes, explanations in ${langName}.
+- If the learner used ${level}-level vocabulary or structures, mention it positively.
+- If correct, say so kindly.
+
+IMPORTANT for all cases: Write ALL explanations in ${langName}. Only Dutch sentences/words go in Dutch.
+
+Keep it short and encouraging. Respond with a JSON object: { "review": "<feedback in ${langName} here>" }`;
 }
