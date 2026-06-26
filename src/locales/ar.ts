@@ -22,6 +22,8 @@ export const ar: Locale = {
     signOut: 'تسجيل الخروج',
     words: 'كلمات',
     word: 'كلمة',
+    remove: 'إزالة',
+    confirmed: 'تم التأكيد',
   },
 
   wordType: {
@@ -117,6 +119,7 @@ export const ar: Locale = {
       leaderboard: 'الترتيب',
       profile: 'الملف',
       settings: 'الإعدادات',
+      ai: 'AI',
     },
     profile: {
       account: 'الحساب',

@@ -20,6 +20,8 @@ export const en = {
     signOut: 'Sign out',
     words: 'words',
     word: 'word',
+    remove: 'Remove',
+    confirmed: 'Confirmed',
   },
 
   wordType: {
@@ -115,6 +117,7 @@ export const en = {
       leaderboard: 'Leaderboard',
       profile: 'Profile',
       settings: 'Settings',
+      ai: 'AI',
     },
     profile: {
       account: 'Account',

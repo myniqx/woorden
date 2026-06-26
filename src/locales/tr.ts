@@ -22,6 +22,8 @@ export const tr: Locale = {
     signOut: 'Çıkış yap',
     words: 'kelime',
     word: 'kelime',
+    remove: 'Kaldır',
+    confirmed: 'Onaylandı',
   },
 
   wordType: {
@@ -117,6 +119,7 @@ export const tr: Locale = {
       leaderboard: 'Sıralama',
       profile: 'Profil',
       settings: 'Ayarlar',
+      ai: 'AI',
     },
     profile: {
       account: 'Hesap',

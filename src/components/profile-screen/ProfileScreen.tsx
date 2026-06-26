@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'preact/hooks';
-import { Trophy, User, Settings } from 'lucide-preact';
+import { Trophy, User, Settings, Bot } from 'lucide-preact';
 import { getUsername, setUsername, getAvatarIndex, setAvatarIndex, resetData } from '../../services/storage';
 import { getRandomUsername } from '../../data/username-words';
 import type { User as AuthUser } from '../../services/auth';
@@ -8,6 +8,7 @@ import type { LeaderboardEntry } from '../../services/sync';
 import { LeaderboardTab } from './LeaderboardTab';
 import { ProfileTab } from './ProfileTab';
 import { SettingsTab } from './SettingsTab';
+import { AITab } from './AITab';
 import type { Tab, SyncState } from './types';
 import { useLanguage } from '@/hooks';
 
@@ -176,6 +177,7 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
     { id: 'leaderboard', icon: Trophy, label: t.profileScreen.tabs.leaderboard },
     { id: 'profile', icon: User, label: t.profileScreen.tabs.profile },
     { id: 'settings', icon: Settings, label: t.profileScreen.tabs.settings },
+    { id: 'ai', icon: Bot, label: t.profileScreen.tabs.ai },
   ];
 
   return (
@@ -222,6 +224,8 @@ export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataI
         {activeTab === 'settings' && (
           <SettingsTab visitorCount={visitorCount} onDataImported={onDataImported} />
         )}
+
+        {activeTab === 'ai' && <AITab />}
       </div>
     </div>
   );

@@ -22,6 +22,8 @@ export const fr: Locale = {
     signOut: 'Se déconnecter',
     words: 'mots',
     word: 'mot',
+    remove: 'Supprimer',
+    confirmed: 'Confirmé',
   },
 
   wordType: {
@@ -117,6 +119,7 @@ export const fr: Locale = {
       leaderboard: 'Classement',
       profile: 'Profil',
       settings: 'Paramètres',
+      ai: 'AI',
     },
     profile: {
       account: 'Compte',

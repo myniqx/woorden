@@ -1,6 +1,6 @@
 import type { User as AuthUser } from '../../services/auth';
 
-export type Tab = 'leaderboard' | 'profile' | 'settings';
+export type Tab = 'leaderboard' | 'profile' | 'settings' | 'ai';
 
 export interface SyncState {
   state: 'idle' | 'busy' | 'done' | 'error';
