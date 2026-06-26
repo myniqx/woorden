@@ -31,6 +31,8 @@ src/
 │   │   ├── LeaderboardTab.tsx
 │   │   ├── ProfileTab.tsx
 │   │   ├── SettingsTab.tsx
+│   │   ├── AITab.tsx        # AI provider list tab
+│   │   ├── AIProviderCard.tsx # Per-provider key entry + confirm + save
 │   │   └── types.ts
 │   ├── Header.tsx          # Logo, daily progress, language selector, profile button
 │   ├── MainMenu.tsx        # Quiz type selection cards, word pool button
@@ -52,18 +54,31 @@ src/
 │   └── WORD_ENTRY_GUIDE.md # Word entry format guide
 ├── hooks/
 │   ├── useTheme.ts      # Dark/light mode
-│   └── useLanguage.ts   # UI language selection
+│   ├── useLanguage.ts   # UI language selection
+│   └── useAI.ts         # AI streaming hook (submit/result/isStreaming/doneStreaming/setProvider)
 ├── services/
 │   ├── storage.ts       # localStorage + migration logic
 │   ├── words.ts         # Word data loading
 │   ├── wordSelector.ts  # Spaced repetition algorithm
-│   └── quiz.ts          # Quiz creation & answer handling
+│   ├── quiz.ts          # Quiz creation & answer handling
+│   └── ai/              # Client-side AI adapter layer
+│       ├── types.ts         # AIAdapter interface, AIProvider, ProviderType
+│       ├── manager.ts       # Chunk accumulation + completeJson + JSON parse (single place)
+│       ├── providerStorage.ts # localStorage API key management
+│       ├── index.ts         # Re-exports
+│       └── adapters/
+│           ├── gemini.ts    # Google Gemini SSE streaming
+│           ├── groq.ts      # Groq SSE streaming
+│           └── server.ts    # Future server proxy
 ├── styles/
 │   ├── theme.css        # CSS variables, keyframe animations, utility classes
 │   └── app.css          # App layout
 ├── types/
 │   ├── word.ts          # Word, WordProgress, SkillProgress types
 │   └── quiz.ts          # Quiz, QuizType types
+├── utils/
+│   ├── textUtils.ts     # Text helpers
+│   └── completeJson.ts  # Repairs partial/truncated JSON (used by AI streaming)
 ├── App.tsx              # Main app component
 └── main.tsx             # Entry point
 ```
@@ -142,6 +157,7 @@ Key: `woorden_app_data`
 - PWA (offline capable, installable)
 - PWA update notification (green button in footer when new version available)
 - Mobile-optimized header (logo text hidden on small screens)
+- Client-side AI (user-provided API keys, Gemini + Groq, streaming structured JSON)
 
 ## Migration
 
@@ -460,6 +476,65 @@ Word entries get a `zinnen` array referencing sentence IDs:
   "zinnen": ["ab3k9x2m"]
 }
 ```
+
+## AI Layer
+
+Client-side AI with user-provided API keys. No server proxy — keys stored in localStorage.
+
+### Architecture
+
+```
+useAI<T>() hook
+    ↓
+streamObject() in manager.ts  ← chunk accumulation + completeJson + JSON.parse (one place)
+    ↓
+AIAdapter interface            ← stream(prompt): AsyncIterable<string>
+    ↓
+GeminiAdapter / GroqAdapter / ServerAdapter
+```
+
+### Storage
+
+Keys: `woorden_ai_providers` (provider list) and `woorden_ai_active` (selected provider type).
+
+```typescript
+interface AIProvider {
+  type: 'gemini' | 'groq' | 'server';
+  label: string;
+  apiKey: string;
+  createdAt: number;
+  confirmedAt: number | null;
+}
+```
+
+### Hook Usage
+
+```typescript
+const { submit, result, isStreaming, doneStreaming, error, currentProvider, providerList, setProvider } = useAI<MyResultType>();
+
+await submit(prompt);
+// result updates as Partial<MyResultType> with each chunk
+// doneStreaming flips true when stream ends
+```
+
+### Adding a New Provider
+
+1. Add type to `ProviderType` in `src/services/ai/types.ts`
+2. Create `src/services/ai/adapters/<name>.ts` implementing `AIAdapter`
+3. Export from `src/services/ai/index.ts`
+4. Add `case` to `createAdapter()` in `src/hooks/useAI.ts`
+5. Add entry to `PROVIDERS` array in `src/components/profile-screen/AITab.tsx`
+
+### Groq Note
+
+Groq requires the word "json" somewhere in the prompt when using `response_format: json_object`. Always include it in prompts that expect structured output.
+
+### Models
+
+- Gemini: `gemini-3.1-flash-lite`
+- Groq: `llama-3.3-70b-versatile`
+
+---
 
 ## Common Component Extraction Workflow
 
