@@ -3,8 +3,14 @@ import type { AIAdapter, AIChatMessage } from '../types';
 export class ServerAdapter implements AIAdapter {
   private endpoint: string;
 
+  preferredModel = 'server';
+
   constructor(endpoint: string) {
     this.endpoint = endpoint;
+  }
+
+  async getModels(): Promise<string[]> {
+    return ['server'];
   }
 
   async *stream(prompt: string): AsyncIterable<string> {

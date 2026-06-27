@@ -26,4 +26,5 @@ export interface ChatSession {
 export interface ChatSettings {
   lastLevel: CEFRLevel;
   lastProviderId: string;
+  lastModel?: string;
 }

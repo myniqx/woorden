@@ -12,8 +12,8 @@ import type { AIProvider, AIAdapter, ProviderType } from '../services/ai';
 
 function createAdapter(provider: AIProvider): AIAdapter {
   switch (provider.type) {
-    case 'gemini': return new GeminiAdapter(provider.apiKey);
-    case 'groq': return new GroqAdapter(provider.apiKey);
+    case 'gemini': return new GeminiAdapter(provider.apiKey, provider.model);
+    case 'groq': return new GroqAdapter(provider.apiKey, provider.model);
     case 'server': return new ServerAdapter(provider.apiKey);
   }
 }

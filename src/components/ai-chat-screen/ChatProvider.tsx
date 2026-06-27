@@ -1,7 +1,7 @@
 import { createContext } from 'preact';
 import { useState, useEffect, useContext, useCallback } from 'preact/hooks';
 import type { ComponentChildren } from 'preact';
-import type { ChatSession, ChatMessage, ChatSettings, CEFRLevel } from './types';
+import type { ChatSession, ChatMessage, CEFRLevel } from './types';
 import {
   getSessions, saveSession, deleteSession,
   getChatSettings, saveChatSettings,
@@ -12,10 +12,10 @@ import { getProviders, getActiveProviderType, GeminiAdapter, GroqAdapter, Server
 import type { AIAdapter, AIProvider } from '../../services/ai';
 import { useLanguage } from '../../hooks';
 
-function createAdapter(provider: AIProvider): AIAdapter {
+function createAdapter(provider: AIProvider, model?: string): AIAdapter {
   switch (provider.type) {
-    case 'gemini': return new GeminiAdapter(provider.apiKey);
-    case 'groq':   return new GroqAdapter(provider.apiKey);
+    case 'gemini': return new GeminiAdapter(provider.apiKey, model);
+    case 'groq':   return new GroqAdapter(provider.apiKey, model);
     case 'server': return new ServerAdapter(provider.apiKey);
   }
 }
@@ -27,10 +27,12 @@ interface ChatContextValue {
   drawerOpen: boolean;
   selectedLevel: CEFRLevel;
   selectedProviderId: string;
+  selectedModel: string;
   providerList: AIProvider[];
   setDrawerOpen: (open: boolean) => void;
   setSelectedLevel: (level: CEFRLevel) => void;
   setSelectedProviderId: (id: string) => void;
+  setSelectedModel: (model: string) => void;
   sendMessage: (text: string) => Promise<void>;
   loadSession: (id: string) => Promise<void>;
   newChat: () => void;
@@ -54,6 +56,7 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState<CEFRLevel>('A2');
   const [selectedProviderId, setSelectedProviderId] = useState<string>(fallbackProviderId);
+  const [selectedModel, setSelectedModel] = useState<string>('');
 
   useEffect(() => {
     getSessions().then(setSessions);
@@ -61,24 +64,30 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
       if (settings) {
         setSelectedLevel(settings.lastLevel);
         setSelectedProviderId(settings.lastProviderId || fallbackProviderId);
+        if (settings.lastModel) setSelectedModel(settings.lastModel);
       }
     });
   }, []);
 
-  const persistSettings = useCallback((level: CEFRLevel, providerId: string) => {
-    const s: ChatSettings = { lastLevel: level, lastProviderId: providerId };
-    saveChatSettings(s);
+  const persistSettings = useCallback((level: CEFRLevel, providerId: string, model: string) => {
+    saveChatSettings({ lastLevel: level, lastProviderId: providerId, lastModel: model });
   }, []);
 
   const handleSetLevel = useCallback((level: CEFRLevel) => {
     setSelectedLevel(level);
-    persistSettings(level, selectedProviderId);
-  }, [selectedProviderId, persistSettings]);
+    persistSettings(level, selectedProviderId, selectedModel);
+  }, [selectedProviderId, selectedModel, persistSettings]);
 
   const handleSetProvider = useCallback((id: string) => {
     setSelectedProviderId(id);
-    persistSettings(selectedLevel, id);
+    setSelectedModel('');
+    persistSettings(selectedLevel, id, '');
   }, [selectedLevel, persistSettings]);
+
+  const handleSetModel = useCallback((model: string) => {
+    setSelectedModel(model);
+    persistSettings(selectedLevel, selectedProviderId, model);
+  }, [selectedLevel, selectedProviderId, persistSettings]);
 
   const updateSession = useCallback(async (session: ChatSession) => {
     const updated = { ...session, updatedAt: Date.now() };
@@ -100,7 +109,7 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
     const provider = providerList.find(p => p.type === selectedProviderId) ?? providerList[0];
     if (!provider) return;
 
-    const adapter = createAdapter(provider);
+    const adapter = createAdapter(provider, selectedModel || undefined);
     let session = activeSession;
 
     // First message — create session
@@ -218,7 +227,7 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
     } finally {
       setIsStreaming(false);
     }
-  }, [activeSession, selectedLevel, selectedProviderId, providerList, updateSession]);
+  }, [activeSession, selectedLevel, selectedProviderId, selectedModel, providerList, updateSession]);
 
   const loadSession = useCallback(async (id: string) => {
     const s = sessions.find(x => x.id === id);
@@ -245,10 +254,12 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
       drawerOpen,
       selectedLevel,
       selectedProviderId,
+      selectedModel,
       providerList,
       setDrawerOpen,
       setSelectedLevel: handleSetLevel,
       setSelectedProviderId: handleSetProvider,
+      setSelectedModel: handleSetModel,
       sendMessage,
       loadSession,
       newChat,

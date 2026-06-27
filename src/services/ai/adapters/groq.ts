@@ -1,10 +1,25 @@
 import type { AIAdapter, AIChatMessage } from '../types';
 
+const GROQ_PREFERRED = 'llama-3.3-70b-versatile';
+
 export class GroqAdapter implements AIAdapter {
   private apiKey: string;
+  private model: string;
 
-  constructor(apiKey: string) {
+  preferredModel = GROQ_PREFERRED;
+
+  constructor(apiKey: string, model?: string) {
     this.apiKey = apiKey;
+    this.model = model ?? GROQ_PREFERRED;
+  }
+
+  async getModels(): Promise<string[]> {
+    const res = await fetch('https://api.groq.com/openai/v1/models', {
+      headers: { Authorization: `Bearer ${this.apiKey}` },
+    });
+    if (!res.ok) throw new Error(`Groq models error ${res.status}`);
+    const data = await res.json();
+    return (data.data as { id: string }[]).map(m => m.id).sort();
   }
 
   private async *streamRaw(messages: object[], jsonMode = false): AsyncIterable<string> {
@@ -15,7 +30,7 @@ export class GroqAdapter implements AIAdapter {
         Authorization: `Bearer ${this.apiKey}`,
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model: this.model,
         messages,
         stream: true,
         ...(jsonMode ? { response_format: { type: 'json_object' } } : {}),
