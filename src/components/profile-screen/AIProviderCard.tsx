@@ -164,7 +164,7 @@ export function AIProviderCard({ type, label, defaultUrl, keyGuide, existing, on
             ? '···'
             : confirmed
               ? <span class="flex items-center gap-1"><Check size={14} /> {t.common.confirmed}</span>
-              : isLocal ? 'Connect' : t.common.confirm}
+              : isLocal ? t.ai.connect : t.common.confirm}
         </Button>
         <Button
           variant="soft"
@@ -182,16 +182,26 @@ export function AIProviderCard({ type, label, defaultUrl, keyGuide, existing, on
           class="text-xs text-text-muted hover:text-primary bg-transparent border-none cursor-pointer p-0 text-left"
           onClick={() => setGuideOpen(true)}
         >
-          {isLocal ? 'How do I set this up?' : 'How do I get an API key?'}
+          {isLocal ? t.ai.getSetupHelp : t.ai.getApiKey}
         </button>
       )}
 
       {guideOpen && keyGuide && (
         <Modal onClose={() => setGuideOpen(false)} maxWidth="sm">
-          <Modal.Header title={`${label} API Key`} onClose={() => setGuideOpen(false)} />
+          <Modal.Header title={isLocal ? t.ai.setupModalTitle.replace('{label}', label) : t.ai.apiKeyModalTitle.replace('{label}', label)} onClose={() => setGuideOpen(false)} />
           <Modal.Body>
             <div
-              class="prose prose-sm text-text-primary text-sm leading-relaxed [&_a]:text-primary [&_a]:underline [&_code]:bg-surface-elevated [&_code]:px-1 [&_code]:rounded-sm [&_code]:text-xs [&_ol]:pl-4 [&_ul]:pl-4 [&_li]:mb-1 [&_blockquote]:border-l-2 [&_blockquote]:border-border [&_blockquote]:pl-3 [&_blockquote]:text-text-muted [&_h2]:text-base [&_h2]:font-semibold [&_h2]:mb-3"
+              class="text-sm text-text-primary leading-relaxed
+                [&_h2]:text-base [&_h2]:font-semibold [&_h2]:mb-4 [&_h2]:text-text-primary
+                [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:space-y-2 [&_ol]:mb-4
+                [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_ul]:mb-4
+                [&_li]:text-text-primary
+                [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-2
+                [&_code]:bg-surface-elevated [&_code]:text-text-primary [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded-sm [&_code]:text-xs [&_code]:font-mono
+                [&_pre]:bg-surface-elevated [&_pre]:rounded-md [&_pre]:p-3 [&_pre]:mb-3 [&_pre]:overflow-x-auto
+                [&_pre_code]:bg-transparent [&_pre_code]:p-0 [&_pre_code]:text-xs [&_pre_code]:font-mono
+                [&_blockquote]:border-l-2 [&_blockquote]:border-primary [&_blockquote]:pl-3 [&_blockquote]:py-1 [&_blockquote]:my-3 [&_blockquote]:text-text-secondary [&_blockquote]:text-xs
+                [&_p]:mb-3"
               dangerouslySetInnerHTML={{ __html: marked.parse(keyGuide) as string }}
             />
           </Modal.Body>

@@ -155,4 +155,25 @@ export const tr: Locale = {
     goToProfile: 'Profil',
     signIn: 'Giriş yap',
   },
+
+  ai: {
+    connect: 'Bağlan',
+    getApiKey: 'API anahtarını nasıl alırım?',
+    getSetupHelp: 'Nasıl kurulur?',
+    apiKeyModalTitle: '{label} API Anahtarı',
+    setupModalTitle: '{label} Kurulumu',
+    noProvider: 'AI sağlayıcısı yapılandırılmamış. Ayarlar → AI bölümünden ekleyin.',
+  },
+
+  chat: {
+    title: 'Hollandaca Konuşma',
+    subtitle: 'Bir AI partneriyle Hollandaca pratik yap',
+    level: 'Seviye',
+    provider: 'AI Sağlayıcısı',
+    model: 'Model',
+    settings: 'Sohbet Ayarları',
+    conversations: 'Konuşmalar',
+    newChat: 'Yeni sohbet',
+    noConversations: 'Henüz konuşma yok',
+  },
 };

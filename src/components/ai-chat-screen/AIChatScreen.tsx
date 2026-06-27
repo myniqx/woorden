@@ -8,7 +8,7 @@ import { Modal } from '../commons';
 import type { CEFRLevel } from './types';
 import { getProviders, GeminiAdapter, GroqAdapter, OllamaAdapter, LMStudioAdapter } from '../../services/ai';
 import type { AIAdapter, AIProvider } from '../../services/ai';
-import { useAppLayout } from '../../hooks';
+import { useAppLayout, useLanguage } from '../../hooks';
 
 const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -24,6 +24,7 @@ const selectClass = 'px-3 py-2 text-sm rounded-md border border-border bg-bg tex
 
 function ChatSettingsFields() {
   const { selectedLevel, setSelectedLevel, selectedProviderId, setSelectedProviderId, selectedModel, setSelectedModel } = useChatContext();
+  const { t } = useLanguage();
   const providers = getProviders();
   const [modelList, setModelList] = useState<string[]>([]);
   const [modelsLoading, setModelsLoading] = useState(false);
@@ -52,7 +53,7 @@ function ChatSettingsFields() {
   return (
     <div class="flex flex-col gap-3">
       <div class="flex flex-col gap-1.5">
-        <label class="text-xs font-medium text-text-secondary uppercase tracking-[0.05em]">Level</label>
+        <label class="text-xs font-medium text-text-secondary uppercase tracking-[0.05em]">{t.chat.level}</label>
         <select
           value={selectedLevel}
           onChange={(e) => setSelectedLevel((e.target as HTMLSelectElement).value as CEFRLevel)}
@@ -64,7 +65,7 @@ function ChatSettingsFields() {
 
       {providers.length > 0 && (
         <div class="flex flex-col gap-1.5">
-          <label class="text-xs font-medium text-text-secondary uppercase tracking-[0.05em]">AI Provider</label>
+          <label class="text-xs font-medium text-text-secondary uppercase tracking-[0.05em]">{t.chat.provider}</label>
           <select
             value={selectedProviderId}
             onChange={(e) => setSelectedProviderId((e.target as HTMLSelectElement).value)}
@@ -78,7 +79,7 @@ function ChatSettingsFields() {
       {modelList.length > 0 && (
         <div class="flex flex-col gap-1.5">
           <label class="text-xs font-medium text-text-secondary uppercase tracking-[0.05em]">
-            Model{modelsLoading ? ' ···' : ''}
+            {t.chat.model}{modelsLoading ? ' ···' : ''}
           </label>
           <select
             value={selectedModel}
@@ -92,7 +93,7 @@ function ChatSettingsFields() {
 
       {providers.length === 0 && (
         <p class="text-xs text-text-muted text-center px-2">
-          No AI provider configured. Add one in Settings → AI.
+          {t.ai.noProvider}
         </p>
       )}
     </div>
@@ -100,11 +101,12 @@ function ChatSettingsFields() {
 }
 
 function ChatSetup() {
+  const { t } = useLanguage();
   return (
     <div class="flex flex-col items-center justify-center flex-1 gap-6 px-6">
       <div class="text-center">
-        <h2 class="text-lg font-semibold text-text-primary m-0 mb-1">Dutch Conversation</h2>
-        <p class="text-sm text-text-secondary m-0">Practice speaking Dutch with an AI partner</p>
+        <h2 class="text-lg font-semibold text-text-primary m-0 mb-1">{t.chat.title}</h2>
+        <p class="text-sm text-text-secondary m-0">{t.chat.subtitle}</p>
       </div>
       <div class="w-full max-w-xs">
         <ChatSettingsFields />
@@ -116,6 +118,7 @@ function ChatSetup() {
 function ChatScreenInner() {
   const { activeSession, selectedProviderId, providerList, setDrawerOpen, newChat } = useChatContext();
   const { setHeaderCenter, clearHeaderCenter } = useAppLayout();
+  const { t } = useLanguage();
   const [settingsOpen, setSettingsOpen] = useState(false);
   const openSettings = useCallback(() => setSettingsOpen(true), []);
 
@@ -160,7 +163,7 @@ function ChatScreenInner() {
       <ChatInput />
       {settingsOpen && (
         <Modal onClose={() => setSettingsOpen(false)} maxWidth="sm">
-          <Modal.Header title="Chat Settings" onClose={() => setSettingsOpen(false)} />
+          <Modal.Header title={t.chat.settings} onClose={() => setSettingsOpen(false)} />
           <Modal.Body>
             <ChatSettingsFields />
           </Modal.Body>

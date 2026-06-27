@@ -16,7 +16,7 @@ export interface AIChatMessage {
 
 export interface AIAdapter {
   preferredModel: string;
-  getKeyGuide?: () => string;
+  getKeyGuide?: (language: string) => string;
   getModels(): Promise<string[]>;
   stream(prompt: string): AsyncIterable<string>;
   chat(system: string, messages: AIChatMessage[]): AsyncIterable<string>;

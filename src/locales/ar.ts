@@ -155,4 +155,25 @@ export const ar: Locale = {
     goToProfile: 'الملف',
     signIn: 'تسجيل الدخول',
   },
+
+  ai: {
+    connect: 'اتصال',
+    getApiKey: 'كيف أحصل على مفتاح API؟',
+    getSetupHelp: 'كيف أقوم بالإعداد؟',
+    apiKeyModalTitle: 'مفتاح API لـ {label}',
+    setupModalTitle: 'إعداد {label}',
+    noProvider: 'لم يتم تكوين أي موفر AI. أضف واحداً من الإعدادات ← AI.',
+  },
+
+  chat: {
+    title: 'محادثة هولندية',
+    subtitle: 'تدرّب على الهولندية مع شريك AI',
+    level: 'المستوى',
+    provider: 'موفر AI',
+    model: 'النموذج',
+    settings: 'إعدادات المحادثة',
+    conversations: 'المحادثات',
+    newChat: 'محادثة جديدة',
+    noConversations: 'لا توجد محادثات بعد',
+  },
 };

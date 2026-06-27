@@ -8,8 +8,9 @@ export class GeminiAdapter implements AIAdapter {
 
   preferredModel = GEMINI_PREFERRED;
 
-  getKeyGuide(): string {
-    return `## Google Gemini API Key
+  getKeyGuide(language: string): string {
+    const guides: Record<string, string> = {
+      en: `## Google Gemini API Key
 
 1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey)
 2. Sign in with your Google account
@@ -17,7 +18,39 @@ export class GeminiAdapter implements AIAdapter {
 4. Select an existing Google Cloud project or create a new one
 5. Copy the generated API key and paste it above
 
-> **Note:** Gemini offers a free tier with generous limits — no billing required to get started.`;
+> **Note:** Gemini offers a free tier with generous limits — no billing required to get started.`,
+
+      tr: `## Google Gemini API Anahtarı
+
+1. [Google AI Studio](https://aistudio.google.com/app/apikey) adresine gidin
+2. Google hesabınızla giriş yapın
+3. **Create API key** butonuna tıklayın
+4. Mevcut bir Google Cloud projesi seçin veya yeni bir tane oluşturun
+5. Oluşturulan API anahtarını kopyalayıp yukarıya yapıştırın
+
+> **Not:** Gemini ücretsiz bir katman sunar ve başlamak için fatura bilgisi gerekmez.`,
+
+      ar: `## مفتاح API لـ Google Gemini
+
+1. اذهب إلى [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. سجّل الدخول بحساب Google الخاص بك
+3. انقر على **Create API key**
+4. اختر مشروع Google Cloud موجوداً أو أنشئ مشروعاً جديداً
+5. انسخ مفتاح API الناتج والصقه أعلاه
+
+> **ملاحظة:** يوفر Gemini طبقة مجانية بحدود سخية — لا يلزم إدخال بيانات الفوترة للبدء.`,
+
+      fr: `## Clé API Google Gemini
+
+1. Rendez-vous sur [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. Connectez-vous avec votre compte Google
+3. Cliquez sur **Create API key**
+4. Sélectionnez un projet Google Cloud existant ou créez-en un nouveau
+5. Copiez la clé API générée et collez-la ci-dessus
+
+> **Remarque :** Gemini propose un niveau gratuit avec des limites généreuses — aucune facturation requise pour commencer.`,
+    };
+    return guides[language] ?? guides.en;
   }
 
   constructor(apiKey: string, model?: string) {

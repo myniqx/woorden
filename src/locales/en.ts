@@ -153,6 +153,27 @@ export const en = {
     goToProfile: 'Profile',
     signIn: 'Sign in',
   },
+
+  ai: {
+    connect: 'Connect',
+    getApiKey: 'How do I get an API key?',
+    getSetupHelp: 'How do I set this up?',
+    apiKeyModalTitle: '{label} API Key',
+    setupModalTitle: '{label} Setup',
+    noProvider: 'No AI provider configured. Add one in Settings → AI.',
+  },
+
+  chat: {
+    title: 'Dutch Conversation',
+    subtitle: 'Practice speaking Dutch with an AI partner',
+    level: 'Level',
+    provider: 'AI Provider',
+    model: 'Model',
+    settings: 'Chat Settings',
+    conversations: 'Conversations',
+    newChat: 'New chat',
+    noConversations: 'No conversations yet',
+  },
 };
 
 export type Locale = typeof en;

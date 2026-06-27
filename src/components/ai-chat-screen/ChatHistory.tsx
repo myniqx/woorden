@@ -1,5 +1,6 @@
 import { X, Trash2, Plus } from 'lucide-preact';
 import { useChatContext } from './ChatProvider';
+import { useLanguage } from '../../hooks';
 
 function formatDate(ts: number): string {
   const d = new Date(ts);
@@ -8,6 +9,7 @@ function formatDate(ts: number): string {
 
 export function ChatHistory() {
   const { sessions, activeSession, drawerOpen, setDrawerOpen, loadSession, removeSession, newChat } = useChatContext();
+  const { t } = useLanguage();
 
   if (!drawerOpen) return null;
 
@@ -19,7 +21,7 @@ export function ChatHistory() {
       />
       <div class="fixed top-14 left-0 h-[calc(100%-3.5rem)] w-72 bg-surface shadow-(--shadow-lg) z-30 flex flex-col">
         <div class="flex items-center justify-between px-4 py-3 border-b border-border shrink-0">
-          <span class="text-sm font-semibold text-text-primary">Conversations</span>
+          <span class="text-sm font-semibold text-text-primary">{t.chat.conversations}</span>
           <button
             class="p-1 bg-transparent border-none cursor-pointer text-text-muted hover:text-text-primary"
             onClick={() => setDrawerOpen(false)}
@@ -33,12 +35,12 @@ export function ChatHistory() {
           onClick={newChat}
         >
           <Plus size={15} />
-          New chat
+          {t.chat.newChat}
         </button>
 
         <div class="flex-1 overflow-y-auto py-2">
           {sessions.length === 0 && (
-            <p class="px-4 py-8 text-xs text-text-muted text-center">No conversations yet</p>
+            <p class="px-4 py-8 text-xs text-text-muted text-center">{t.chat.noConversations}</p>
           )}
           {sessions.map(session => (
             <div

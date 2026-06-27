@@ -155,4 +155,25 @@ export const fr: Locale = {
     goToProfile: 'Profil',
     signIn: 'Se connecter',
   },
+
+  ai: {
+    connect: 'Connecter',
+    getApiKey: 'Comment obtenir une clé API ?',
+    getSetupHelp: 'Comment configurer ceci ?',
+    apiKeyModalTitle: 'Clé API {label}',
+    setupModalTitle: 'Configuration {label}',
+    noProvider: "Aucun fournisseur AI configuré. Ajoutez-en un dans Paramètres → AI.",
+  },
+
+  chat: {
+    title: 'Conversation en néerlandais',
+    subtitle: 'Pratiquez le néerlandais avec un partenaire AI',
+    level: 'Niveau',
+    provider: 'Fournisseur AI',
+    model: 'Modèle',
+    settings: 'Paramètres du chat',
+    conversations: 'Conversations',
+    newChat: 'Nouvelle conversation',
+    noConversations: 'Aucune conversation pour le moment',
+  },
 };
