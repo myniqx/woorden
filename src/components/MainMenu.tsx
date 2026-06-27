@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch } from 'lucide-preact';
+import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch, MessageCircle } from 'lucide-preact';
 import type { QuizType, QuizMode } from '../types';
 import { useLanguage } from '../hooks';
 import { getSelectedWordCount, getAvailableLevels, getChunkCount, getChunkWordCount, getLevelWordCount, isChunkEnabled } from '../services/words';
@@ -12,6 +12,7 @@ import { LanguageKeys } from '@/locales';
 interface MainMenuProps {
   onStartQuiz: (quizType: QuizType, mode?: QuizMode) => void;
   onOpenChangelog: () => void;
+  onOpenAIChat: () => void;
   hasNewChangelog: boolean;
 }
 
@@ -45,7 +46,7 @@ const quizDesc = (t: LanguageKeys, type: QuizType): string => ({
   verbForms: t.quiz.verbForms.desc,
 }[type]);
 
-export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: MainMenuProps) {
+export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, hasNewChangelog }: MainMenuProps) {
   const { t, merge } = useLanguage();
   const [showWordPool, setShowWordPool] = useState(false);
   const [, forceUpdate] = useState(0);
@@ -138,6 +139,19 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, hasNewChangelog }: Main
           );
         })}
       </div>
+
+      <button
+        class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-xl cursor-pointer text-left transition-all duration-(--transition-normal) hover:border-primary hover:bg-primary-light"
+        onClick={onOpenAIChat}
+      >
+        <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-primary shrink-0">
+          <MessageCircle size={32} />
+        </div>
+        <div class="flex-1 min-w-0">
+          <h2 class="text-lg font-semibold text-text-primary mb-1">AI Conversation</h2>
+          <p class="text-sm text-text-secondary leading-snug">Practice Dutch in a real conversation</p>
+        </div>
+      </button>
 
       <SupportButton />
 

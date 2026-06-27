@@ -22,6 +22,8 @@ export const ar: Locale = {
     signOut: 'تسجيل الخروج',
     words: 'كلمات',
     word: 'كلمة',
+    remove: 'إزالة',
+    confirmed: 'تم التأكيد',
   },
 
   wordType: {
@@ -117,6 +119,7 @@ export const ar: Locale = {
       leaderboard: 'الترتيب',
       profile: 'الملف',
       settings: 'الإعدادات',
+      ai: 'AI',
     },
     profile: {
       account: 'الحساب',
@@ -151,5 +154,27 @@ export const ar: Locale = {
     leaderboardPromo: 'سجّل الدخول وتنافس مع المستخدمين الآخرين في قائمة المتصدرين!',
     goToProfile: 'الملف',
     signIn: 'تسجيل الدخول',
+  },
+
+  ai: {
+    connect: 'اتصال',
+    getApiKey: 'كيف أحصل على مفتاح API؟',
+    getSetupHelp: 'كيف أقوم بالإعداد؟',
+    apiKeyModalTitle: 'مفتاح API لـ {label}',
+    setupModalTitle: 'إعداد {label}',
+    noProvider: `> للحفاظ على مجانية التطبيق، لا يمكننا توفير خدمة AI مباشرةً. يمكنك إضافة مفتاح API الخاص بك لاستخدام هذه الميزة.\n\n> مزودون مجانيون مثل **Google Gemini** و**Groq** يقدمون حصصاً مجانية سخية — بدون بطاقة ائتمان.\n\n> اذهب إلى **الإعدادات ← AI** لإضافة مزود. استخدم زر *كيف أحصل على مفتاح API؟* للحصول على تعليمات خطوة بخطوة.`,
+    goToSettings: 'الذهاب إلى إعدادات AI',
+  },
+
+  chat: {
+    title: 'محادثة هولندية',
+    subtitle: 'تدرّب على الهولندية مع شريك AI',
+    level: 'المستوى',
+    provider: 'موفر AI',
+    model: 'النموذج',
+    settings: 'إعدادات المحادثة',
+    conversations: 'المحادثات',
+    newChat: 'محادثة جديدة',
+    noConversations: 'لا توجد محادثات بعد',
   },
 };

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'preact/hooks';
 import { ChevronLeft, Flame, Zap, Star, Crown, User } from 'lucide-preact';
 import { getDailyStats, getDailyLevel } from '../services/storage';
 import type { User as AuthUser } from '../services/auth';
-import { useLanguage } from '../hooks';
+import { useLanguage, useAppLayout } from '../hooks';
 import { Button } from './commons';
 
 interface HeaderProps {
@@ -28,6 +28,7 @@ const levelColor: Record<number, string> = {
 
 export function Header({ showBackButton = false, onBack, onProfileClick, user }: HeaderProps) {
   const { language, setLanguage } = useLanguage();
+  const { headerCenter } = useAppLayout();
   const currentLang = languages.find(l => l.code === language);
   const dailyStats = getDailyStats();
   const { level, goal } = getDailyLevel();
@@ -59,8 +60,8 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
   const headerBtnClass = 'flex items-center justify-center p-2 bg-transparent border-none rounded-md text-text-secondary cursor-pointer transition-all duration-(--transition-fast) hover:bg-primary-light hover:text-primary';
 
   return (
-    <header class="flex justify-between items-center px-6 py-4 bg-surface border-b border-border sticky top-0 z-[100]">
-      <div class="flex items-center gap-2">
+    <header class="flex items-center px-6 py-4 bg-surface border-b border-border sticky top-0 z-[100] gap-2 h-14">
+      <div class="flex items-center gap-2 shrink-0">
         {showBackButton ? (
           <Button variant="ghost" icon={ChevronLeft} size="icon" onClick={onBack} aria-label="Go back" class="-ml-2" />
         ) : (
@@ -71,8 +72,8 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
         )}
       </div>
 
-      <div class="flex items-center gap-4">
-        <div
+      <div class="flex items-center gap-4 flex-1 justify-center">
+        {headerCenter ? <div class="flex-1 flex items-center">{headerCenter}</div> : <div
           class={`flex items-center gap-1.5 py-1 pr-2.5 pl-1 rounded-full font-semibold text-sm transition-[background-color,color] duration-400 ${levelColor[level] ?? levelColor[1]} ${levelUpAnim ? 'level-up' : ''}`}
           title={`${dailyStats.practiced} / ${goal}`}
         >
@@ -97,10 +98,10 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
             </div>
           </div>
           <span class="leading-none">{dailyStats.practiced}/{goal}</span>
-        </div>
+        </div>}
       </div>
 
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2 shrink-0 ml-auto">
         {/* CSS-only dropdown: group hover + focus-within gösterir */}
         <div class="relative group">
           <button class={`${headerBtnClass} gap-1`} aria-label="Select language">
@@ -122,13 +123,13 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
 
         <Button
           variant="ghost"
-          size="icon"
+          size="avatar"
           onClick={onProfileClick}
           aria-label="Profile"
-          class={user ? 'rounded-full border-2 border-primary p-1 w-8 h-8' : 'rounded-full border-2 border-transparent p-1 w-8 h-8'}
+          class={`w-8 h-8 border-2 ${user ? 'border-primary' : 'border-transparent'}`}
         >
           {user?.user_metadata?.avatar_url
-            ? <img src={user.user_metadata.avatar_url} class="w-[22px] h-[22px] rounded-full block" alt="avatar" />
+            ? <img src={user.user_metadata.avatar_url} class="w-full h-full object-cover" alt="avatar" />
             : <User size={20} />
           }
         </Button>

@@ -22,6 +22,8 @@ export const tr: Locale = {
     signOut: 'Çıkış yap',
     words: 'kelime',
     word: 'kelime',
+    remove: 'Kaldır',
+    confirmed: 'Onaylandı',
   },
 
   wordType: {
@@ -117,6 +119,7 @@ export const tr: Locale = {
       leaderboard: 'Sıralama',
       profile: 'Profil',
       settings: 'Ayarlar',
+      ai: 'AI',
     },
     profile: {
       account: 'Hesap',
@@ -151,5 +154,27 @@ export const tr: Locale = {
     leaderboardPromo: 'Giriş yap ve diğer kullanıcılarla skor tablosunda yarış!',
     goToProfile: 'Profil',
     signIn: 'Giriş yap',
+  },
+
+  ai: {
+    connect: 'Bağlan',
+    getApiKey: 'API anahtarını nasıl alırım?',
+    getSetupHelp: 'Nasıl kurulur?',
+    apiKeyModalTitle: '{label} API Anahtarı',
+    setupModalTitle: '{label} Kurulumu',
+    noProvider: `> Uygulamayı ücretsiz tutabilmek için AI hizmetini biz sağlayamıyoruz. Kendi API anahtarınızı ekleyerek bu özelliği kullanabilirsiniz.\n\n> **Google Gemini** ve **Groq** gibi ücretsiz sağlayıcılar cömert ücretsiz kotalar sunuyor — kredi kartı gerekmez.\n\n> **Ayarlar → AI** bölümüne giderek bir sağlayıcı ekleyin. Oradaki *API anahtarını nasıl alırım?* butonuyla adım adım yönlendirme alabilirsiniz.`,
+    goToSettings: 'AI Ayarlarına Git',
+  },
+
+  chat: {
+    title: 'Hollandaca Konuşma',
+    subtitle: 'Bir AI partneriyle Hollandaca pratik yap',
+    level: 'Seviye',
+    provider: 'AI Sağlayıcısı',
+    model: 'Model',
+    settings: 'Sohbet Ayarları',
+    conversations: 'Konuşmalar',
+    newChat: 'Yeni sohbet',
+    noConversations: 'Henüz konuşma yok',
   },
 };

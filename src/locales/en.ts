@@ -20,6 +20,8 @@ export const en = {
     signOut: 'Sign out',
     words: 'words',
     word: 'word',
+    remove: 'Remove',
+    confirmed: 'Confirmed',
   },
 
   wordType: {
@@ -115,6 +117,7 @@ export const en = {
       leaderboard: 'Leaderboard',
       profile: 'Profile',
       settings: 'Settings',
+      ai: 'AI',
     },
     profile: {
       account: 'Account',
@@ -149,6 +152,28 @@ export const en = {
     leaderboardPromo: 'Sign in and compete with others on the leaderboard!',
     goToProfile: 'Profile',
     signIn: 'Sign in',
+  },
+
+  ai: {
+    connect: 'Connect',
+    getApiKey: 'How do I get an API key?',
+    getSetupHelp: 'How do I set this up?',
+    apiKeyModalTitle: '{label} API Key',
+    setupModalTitle: '{label} Setup',
+    noProvider: `> To keep this app free, we're unable to provide AI services directly. You can add your own API key to use this feature.\n\n> Free providers like **Google Gemini** and **Groq** offer generous free tiers — no credit card required.\n\n> Head to **Settings → AI** to add a provider. Use the *How do I get an API key?* button there for step-by-step instructions.`,
+    goToSettings: 'Go to AI Settings',
+  },
+
+  chat: {
+    title: 'Dutch Conversation',
+    subtitle: 'Practice speaking Dutch with an AI partner',
+    level: 'Level',
+    provider: 'AI Provider',
+    model: 'Model',
+    settings: 'Chat Settings',
+    conversations: 'Conversations',
+    newChat: 'New chat',
+    noConversations: 'No conversations yet',
   },
 };
 

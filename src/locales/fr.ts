@@ -22,6 +22,8 @@ export const fr: Locale = {
     signOut: 'Se déconnecter',
     words: 'mots',
     word: 'mot',
+    remove: 'Supprimer',
+    confirmed: 'Confirmé',
   },
 
   wordType: {
@@ -117,6 +119,7 @@ export const fr: Locale = {
       leaderboard: 'Classement',
       profile: 'Profil',
       settings: 'Paramètres',
+      ai: 'AI',
     },
     profile: {
       account: 'Compte',
@@ -151,5 +154,27 @@ export const fr: Locale = {
     leaderboardPromo: 'Connectez-vous et affrontez les autres dans le classement !',
     goToProfile: 'Profil',
     signIn: 'Se connecter',
+  },
+
+  ai: {
+    connect: 'Connecter',
+    getApiKey: 'Comment obtenir une clé API ?',
+    getSetupHelp: 'Comment configurer ceci ?',
+    apiKeyModalTitle: 'Clé API {label}',
+    setupModalTitle: 'Configuration {label}',
+    noProvider: `> Pour que l'application reste gratuite, nous ne pouvons pas fournir le service AI directement. Ajoutez votre propre clé API pour utiliser cette fonctionnalité.\n\n> Des fournisseurs gratuits comme **Google Gemini** et **Groq** offrent des quotas généreux — sans carte bancaire.\n\n> Rendez-vous dans **Paramètres → AI** pour ajouter un fournisseur. Utilisez le bouton *Comment obtenir une clé API ?* pour des instructions étape par étape.`,
+    goToSettings: 'Aller aux paramètres AI',
+  },
+
+  chat: {
+    title: 'Conversation en néerlandais',
+    subtitle: 'Pratiquez le néerlandais avec un partenaire AI',
+    level: 'Niveau',
+    provider: 'Fournisseur AI',
+    model: 'Modèle',
+    settings: 'Paramètres du chat',
+    conversations: 'Conversations',
+    newChat: 'Nouvelle conversation',
+    noConversations: 'Aucune conversation pour le moment',
   },
 };
