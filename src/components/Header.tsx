@@ -60,7 +60,7 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
   const headerBtnClass = 'flex items-center justify-center p-2 bg-transparent border-none rounded-md text-text-secondary cursor-pointer transition-all duration-(--transition-fast) hover:bg-primary-light hover:text-primary';
 
   return (
-    <header class="flex items-center px-6 py-4 bg-surface border-b border-border sticky top-0 z-[100] gap-2">
+    <header class="flex items-center px-6 py-4 bg-surface border-b border-border sticky top-0 z-[100] gap-2 h-14">
       <div class="flex items-center gap-2 shrink-0">
         {showBackButton ? (
           <Button variant="ghost" icon={ChevronLeft} size="icon" onClick={onBack} aria-label="Go back" class="-ml-2" />
@@ -123,13 +123,13 @@ export function Header({ showBackButton = false, onBack, onProfileClick, user }:
 
         <Button
           variant="ghost"
-          size="icon"
+          size="avatar"
           onClick={onProfileClick}
           aria-label="Profile"
-          class={user ? 'rounded-full border-2 border-primary p-1 w-8 h-8' : 'rounded-full border-2 border-transparent p-1 w-8 h-8'}
+          class={`w-8 h-8 border-2 ${user ? 'border-primary' : 'border-transparent'}`}
         >
           {user?.user_metadata?.avatar_url
-            ? <img src={user.user_metadata.avatar_url} class="w-[22px] h-[22px] rounded-full block" alt="avatar" />
+            ? <img src={user.user_metadata.avatar_url} class="w-full h-full object-cover" alt="avatar" />
             : <User size={20} />
           }
         </Button>

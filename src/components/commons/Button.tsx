@@ -3,7 +3,7 @@ import type { LucideIcon } from 'lucide-preact';
 
 type Variant = 'solid' | 'soft' | 'outline' | 'ghost';
 type Color = 'default' | 'primary' | 'success' | 'danger' | 'muted';
-type Size = 'sm' | 'md' | 'icon';
+type Size = 'sm' | 'md' | 'icon' | 'avatar';
 
 interface ButtonProps {
   variant?: Variant;
@@ -55,12 +55,13 @@ const variantColor: Record<Variant, Record<Color, string>> = {
 };
 
 const sizeMap: Record<Size, string> = {
-  sm: 'text-xs px-2 py-1 rounded-sm',
-  md: 'text-sm px-4 py-2 rounded-md',
-  icon: 'text-sm p-2 rounded-sm aspect-square',
+  sm:     'text-xs px-2 py-1 rounded-sm',
+  md:     'text-sm px-4 py-2 rounded-md',
+  icon:   'text-sm p-2 rounded-sm aspect-square',
+  avatar: 'p-0 rounded-full overflow-hidden',
 };
 
-const iconSizeMap: Record<Size, number> = { sm: 14, md: 16, icon: 18 };
+const iconSizeMap: Record<Size, number> = { sm: 14, md: 16, icon: 18, avatar: 20 };
 
 export function Button({
   variant = 'outline',

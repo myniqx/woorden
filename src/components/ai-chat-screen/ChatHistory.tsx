@@ -17,7 +17,7 @@ export function ChatHistory() {
         class="fixed inset-0 bg-black/40 z-20"
         onClick={() => setDrawerOpen(false)}
       />
-      <div class="fixed top-0 left-0 h-full w-72 bg-surface shadow-(--shadow-lg) z-30 flex flex-col">
+      <div class="fixed top-14 left-0 h-[calc(100%-3.5rem)] w-72 bg-surface shadow-(--shadow-lg) z-30 flex flex-col">
         <div class="flex items-center justify-between px-4 py-3 border-b border-border shrink-0">
           <span class="text-sm font-semibold text-text-primary">Conversations</span>
           <button
