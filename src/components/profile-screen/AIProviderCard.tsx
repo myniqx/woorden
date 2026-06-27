@@ -2,7 +2,7 @@ import { useState } from 'preact/hooks';
 import { marked } from 'marked';
 import { Eye, EyeOff, Check } from 'lucide-preact';
 import { Button, Modal } from '../commons';
-import { GeminiAdapter, GroqAdapter, OllamaAdapter, LMStudioAdapter, addProvider, removeProvider } from '../../services/ai';
+import { addProvider, removeProvider, getProviderMeta } from '../../services/ai';
 import type { AIProvider, ProviderType } from '../../services/ai';
 import { useLanguage } from '../../hooks';
 
@@ -20,13 +20,7 @@ interface Props {
 const TEST_PROMPT = 'Reply with a json object: {"ok": true}';
 
 async function testProvider(type: ProviderType, apiKey: string): Promise<void> {
-  let adapter;
-  if (type === 'gemini')        adapter = new GeminiAdapter(apiKey);
-  else if (type === 'groq')     adapter = new GroqAdapter(apiKey);
-  else if (type === 'ollama')   adapter = new OllamaAdapter(apiKey);
-  else if (type === 'lmstudio') adapter = new LMStudioAdapter(apiKey);
-  else throw new Error('Server provider cannot be tested here.');
-
+  const adapter = getProviderMeta(type).createAdapter(apiKey);
   let got = '';
   for await (const chunk of adapter.stream(TEST_PROMPT)) {
     got += chunk;

@@ -16,6 +16,7 @@ export interface AIChatMessage {
 
 export interface AIAdapter {
   preferredModel: string;
+  isLocal: boolean;
   getKeyGuide?: (language: string) => string;
   getModels(): Promise<string[]>;
   stream(prompt: string): AsyncIterable<string>;

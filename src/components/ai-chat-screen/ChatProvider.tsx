@@ -8,18 +8,12 @@ import {
   newSessionId, newMessageId,
 } from '../../services/ai/chatStorage';
 import { pickRandomTopic, buildMasterPrompt, buildReviewPrompt } from '../../services/ai/chatPrompts';
-import { getProviders, getActiveProviderType, GeminiAdapter, GroqAdapter, ServerAdapter, OllamaAdapter, LMStudioAdapter, streamObject } from '../../services/ai';
+import { getProviders, getActiveProviderType, getProviderMeta, streamObject } from '../../services/ai';
 import type { AIAdapter, AIProvider } from '../../services/ai';
 import { useLanguage } from '../../hooks';
 
 function createAdapter(provider: AIProvider, model?: string): AIAdapter {
-  switch (provider.type) {
-    case 'gemini':   return new GeminiAdapter(provider.apiKey, model);
-    case 'groq':     return new GroqAdapter(provider.apiKey, model);
-    case 'server':   return new ServerAdapter(provider.apiKey);
-    case 'ollama':   return new OllamaAdapter(provider.apiKey, model);
-    case 'lmstudio': return new LMStudioAdapter(provider.apiKey, model);
-  }
+  return getProviderMeta(provider.type).createAdapter(provider.apiKey, model);
 }
 
 interface ChatContextValue {
@@ -112,9 +106,9 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
     if (!provider) return;
 
     const adapter = createAdapter(provider, selectedModel || undefined);
+    const isLocal = getProviderMeta(provider.type).isLocal;
     let session = activeSession;
 
-    // First message — create session
     if (!session) {
       const topic = pickRandomTopic();
       const userMsg: ChatMessage = {
@@ -148,10 +142,10 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
 
     setIsStreaming(true);
 
-    // Review query (fire and forget — updates message when done)
     const userMsgId = session.messages[session.messages.length - 1].id;
     const capturedSession = session;
-    streamObject<{ review: string }>(
+
+    const runReview = () => streamObject<{ review: string }>(
       adapter,
       buildReviewPrompt(capturedSession.level, text, language),
       () => {},
@@ -179,14 +173,15 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
       });
     });
 
-    // Build chat messages for AI (no review, no system in array — prepend master prompt as system)
+    if (isLocal) await runReview();
+    else runReview();
+
     const masterPrompt = buildMasterPrompt(capturedSession.level, capturedSession.topic);
     const chatHistory = capturedSession.messages.map(m => ({
       role: m.role,
       content: m.content,
     }));
 
-    // Stream assistant reply
     const assistantMsgId = newMessageId();
     const assistantMsg: ChatMessage = {
       id: assistantMsgId,

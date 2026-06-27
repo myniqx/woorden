@@ -7,20 +7,12 @@ import { ChatInput } from './ChatInput';
 import { Modal, Button } from '../commons';
 import type { CEFRLevel } from './types';
 import { marked } from 'marked';
-import { getProviders, GeminiAdapter, GroqAdapter, OllamaAdapter, LMStudioAdapter } from '../../services/ai';
-import type { AIAdapter, AIProvider } from '../../services/ai';
+import { getProviders, getProviderMeta } from '../../services/ai';
+import type { AIProvider } from '../../services/ai';
 import { useAppLayout, useLanguage } from '../../hooks';
 import type { Screen } from '../../types';
 
 const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
-
-function adapterForProvider(provider: AIProvider): AIAdapter | null {
-  if (provider.type === 'gemini')   return new GeminiAdapter(provider.apiKey);
-  if (provider.type === 'groq')     return new GroqAdapter(provider.apiKey);
-  if (provider.type === 'ollama')   return new OllamaAdapter(provider.apiKey);
-  if (provider.type === 'lmstudio') return new LMStudioAdapter(provider.apiKey);
-  return null;
-}
 
 const selectClass = 'px-3 py-2 text-sm rounded-md border border-border bg-bg text-text-primary outline-none focus:border-primary cursor-pointer';
 
@@ -49,8 +41,7 @@ function ChatSettingsFields() {
   useEffect(() => {
     const provider = providers.find(p => p.type === selectedProviderId);
     if (!provider) return;
-    const adapter = adapterForProvider(provider);
-    if (!adapter) return;
+    const adapter = getProviderMeta(provider.type).createAdapter(provider.apiKey);
 
     setModelsLoading(true);
     adapter.getModels()
