@@ -7,14 +7,18 @@ import {
   GeminiAdapter,
   GroqAdapter,
   ServerAdapter,
+  OllamaAdapter,
+  LMStudioAdapter,
 } from '../services/ai';
 import type { AIProvider, AIAdapter, ProviderType } from '../services/ai';
 
 function createAdapter(provider: AIProvider): AIAdapter {
   switch (provider.type) {
-    case 'gemini': return new GeminiAdapter(provider.apiKey, provider.model);
-    case 'groq': return new GroqAdapter(provider.apiKey, provider.model);
-    case 'server': return new ServerAdapter(provider.apiKey);
+    case 'gemini':   return new GeminiAdapter(provider.apiKey, provider.model);
+    case 'groq':     return new GroqAdapter(provider.apiKey, provider.model);
+    case 'server':   return new ServerAdapter(provider.apiKey);
+    case 'ollama':   return new OllamaAdapter(provider.apiKey, provider.model);
+    case 'lmstudio': return new LMStudioAdapter(provider.apiKey, provider.model);
   }
 }
 

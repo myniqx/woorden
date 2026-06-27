@@ -1,13 +1,14 @@
 import { useState } from 'preact/hooks';
 import { Eye, EyeOff, Check } from 'lucide-preact';
 import { Button } from '../commons';
-import { GeminiAdapter, GroqAdapter, addProvider, removeProvider } from '../../services/ai';
+import { GeminiAdapter, GroqAdapter, OllamaAdapter, LMStudioAdapter, addProvider, removeProvider } from '../../services/ai';
 import type { AIProvider, ProviderType } from '../../services/ai';
 import { useLanguage } from '../../hooks';
 
 interface Props {
   type: ProviderType;
   label: string;
+  defaultUrl?: string;
   existing: AIProvider | null;
   onSaved: () => void;
 }
@@ -16,8 +17,10 @@ const TEST_PROMPT = 'Reply with a json object: {"ok": true}';
 
 async function testProvider(type: ProviderType, apiKey: string): Promise<void> {
   let adapter;
-  if (type === 'gemini') adapter = new GeminiAdapter(apiKey);
-  else if (type === 'groq') adapter = new GroqAdapter(apiKey);
+  if (type === 'gemini')        adapter = new GeminiAdapter(apiKey);
+  else if (type === 'groq')     adapter = new GroqAdapter(apiKey);
+  else if (type === 'ollama')   adapter = new OllamaAdapter(apiKey);
+  else if (type === 'lmstudio') adapter = new LMStudioAdapter(apiKey);
   else throw new Error('Server provider cannot be tested here.');
 
   let got = '';
@@ -28,8 +31,18 @@ async function testProvider(type: ProviderType, apiKey: string): Promise<void> {
   if (!got) throw new Error('No response received.');
 }
 
-export function AIProviderCard({ type, label, existing, onSaved }: Props) {
+function isValidUrl(value: string): boolean {
+  try {
+    new URL(value);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function AIProviderCard({ type, label, defaultUrl, existing, onSaved }: Props) {
   const { t } = useLanguage();
+  const isLocal = !!defaultUrl;
   const [apiKey, setApiKey] = useState(existing?.apiKey ?? '');
   const [showKey, setShowKey] = useState(false);
   const [confirmed, setConfirmed] = useState(existing?.confirmedAt != null);
@@ -37,14 +50,15 @@ export function AIProviderCard({ type, label, existing, onSaved }: Props) {
   const [confirmError, setConfirmError] = useState<string | null>(null);
 
   const isDirty = apiKey !== (existing?.apiKey ?? '');
+  const effectiveUrl = apiKey.trim() || defaultUrl!;
+  const localEnabled = isLocal && (apiKey.trim() === '' || isValidUrl(apiKey.trim()));
 
   const handleConfirm = async () => {
-    if (!apiKey.trim()) return;
     setConfirming(true);
     setConfirmError(null);
     setConfirmed(false);
     try {
-      await testProvider(type, apiKey.trim());
+      await testProvider(type, isLocal ? effectiveUrl : apiKey.trim());
       setConfirmed(true);
     } catch (e) {
       setConfirmError(e instanceof Error ? e.message : String(e));
@@ -57,7 +71,7 @@ export function AIProviderCard({ type, label, existing, onSaved }: Props) {
     addProvider({
       type,
       label,
-      apiKey: apiKey.trim(),
+      apiKey: isLocal ? effectiveUrl : apiKey.trim(),
       createdAt: existing?.createdAt ?? Date.now(),
       confirmedAt: Date.now(),
     });
@@ -71,6 +85,7 @@ export function AIProviderCard({ type, label, existing, onSaved }: Props) {
     onSaved();
   };
 
+  const inputClass = 'w-full px-3 py-2 text-sm rounded-md border border-border bg-bg text-text-primary placeholder:text-text-muted outline-none focus:border-primary transition-[border-color] duration-(--transition-fast)';
   const sectionH3 = 'flex items-center gap-2 m-0 mb-3 text-sm font-semibold text-text-primary';
 
   return (
@@ -94,25 +109,40 @@ export function AIProviderCard({ type, label, existing, onSaved }: Props) {
         )}
       </div>
 
-      <div class="relative flex items-center">
+      {isLocal ? (
         <input
-          type={showKey ? 'text' : 'password'}
+          type="text"
           value={apiKey}
+          disabled={!!existing}
           onInput={(e) => {
             setApiKey((e.target as HTMLInputElement).value);
             setConfirmed(false);
           }}
-          placeholder={`${label} API key`}
-          class="w-full pr-10 px-3 py-2 text-sm rounded-md border border-border bg-bg text-text-primary placeholder:text-text-muted outline-none focus:border-primary transition-[border-color] duration-(--transition-fast)"
+          placeholder={defaultUrl}
+          class={`${inputClass} disabled:opacity-50 disabled:cursor-not-allowed`}
         />
-        <button
-          class="absolute right-3 text-text-muted hover:text-text-primary bg-transparent border-none cursor-pointer p-0"
-          onClick={() => setShowKey(v => !v)}
-          type="button"
-        >
-          {showKey ? <EyeOff size={16} /> : <Eye size={16} />}
-        </button>
-      </div>
+      ) : (
+        <div class="relative flex items-center">
+          <input
+            type={showKey ? 'text' : 'password'}
+            value={apiKey}
+            disabled={!!existing}
+            onInput={(e) => {
+              setApiKey((e.target as HTMLInputElement).value);
+              setConfirmed(false);
+            }}
+            placeholder={`${label} API key`}
+            class={`${inputClass} pr-10 disabled:opacity-50 disabled:cursor-not-allowed`}
+          />
+          <button
+            class="absolute right-3 text-text-muted hover:text-text-primary bg-transparent border-none cursor-pointer p-0"
+            onClick={() => setShowKey(v => !v)}
+            type="button"
+          >
+            {showKey ? <EyeOff size={16} /> : <Eye size={16} />}
+          </button>
+        </div>
+      )}
 
       {confirmError && (
         <p class="m-0 text-xs text-error">{confirmError}</p>
@@ -123,16 +153,20 @@ export function AIProviderCard({ type, label, existing, onSaved }: Props) {
           variant="outline"
           fullWidth
           onClick={handleConfirm}
-          disabled={!apiKey.trim() || confirming}
+          disabled={isLocal ? (!localEnabled || confirming) : (!apiKey.trim() || confirming)}
         >
-          {confirming ? '···' : confirmed ? <span class="flex items-center gap-1"><Check size={14} /> {t.common.confirmed}</span> : t.common.confirm}
+          {confirming
+            ? '···'
+            : confirmed
+              ? <span class="flex items-center gap-1"><Check size={14} /> {t.common.confirmed}</span>
+              : isLocal ? 'Connect' : t.common.confirm}
         </Button>
         <Button
           variant="soft"
           color="primary"
           fullWidth
           onClick={handleSave}
-          disabled={!confirmed || (!isDirty && !!existing)}
+          disabled={!confirmed || (!isDirty && !!existing && !(isLocal && !apiKey.trim()))}
         >
           {t.common.save}
         </Button>

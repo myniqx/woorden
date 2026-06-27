@@ -6,15 +6,17 @@ import { ChatMessages } from './ChatMessages';
 import { ChatInput } from './ChatInput';
 import { Modal } from '../commons';
 import type { CEFRLevel } from './types';
-import { getProviders, GeminiAdapter, GroqAdapter } from '../../services/ai';
+import { getProviders, GeminiAdapter, GroqAdapter, OllamaAdapter, LMStudioAdapter } from '../../services/ai';
 import type { AIAdapter, AIProvider } from '../../services/ai';
 import { useAppLayout } from '../../hooks';
 
 const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
 function adapterForProvider(provider: AIProvider): AIAdapter | null {
-  if (provider.type === 'gemini') return new GeminiAdapter(provider.apiKey);
-  if (provider.type === 'groq') return new GroqAdapter(provider.apiKey);
+  if (provider.type === 'gemini')   return new GeminiAdapter(provider.apiKey);
+  if (provider.type === 'groq')     return new GroqAdapter(provider.apiKey);
+  if (provider.type === 'ollama')   return new OllamaAdapter(provider.apiKey);
+  if (provider.type === 'lmstudio') return new LMStudioAdapter(provider.apiKey);
   return null;
 }
 

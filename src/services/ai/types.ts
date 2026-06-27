@@ -1,4 +1,4 @@
-export type ProviderType = 'gemini' | 'groq' | 'server';
+export type ProviderType = 'gemini' | 'groq' | 'server' | 'ollama' | 'lmstudio';
 
 export interface AIProvider {
   type: ProviderType;

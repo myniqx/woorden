@@ -8,15 +8,17 @@ import {
   newSessionId, newMessageId,
 } from '../../services/ai/chatStorage';
 import { pickRandomTopic, buildMasterPrompt, buildReviewPrompt } from '../../services/ai/chatPrompts';
-import { getProviders, getActiveProviderType, GeminiAdapter, GroqAdapter, ServerAdapter, streamObject } from '../../services/ai';
+import { getProviders, getActiveProviderType, GeminiAdapter, GroqAdapter, ServerAdapter, OllamaAdapter, LMStudioAdapter, streamObject } from '../../services/ai';
 import type { AIAdapter, AIProvider } from '../../services/ai';
 import { useLanguage } from '../../hooks';
 
 function createAdapter(provider: AIProvider, model?: string): AIAdapter {
   switch (provider.type) {
-    case 'gemini': return new GeminiAdapter(provider.apiKey, model);
-    case 'groq':   return new GroqAdapter(provider.apiKey, model);
-    case 'server': return new ServerAdapter(provider.apiKey);
+    case 'gemini':   return new GeminiAdapter(provider.apiKey, model);
+    case 'groq':     return new GroqAdapter(provider.apiKey, model);
+    case 'server':   return new ServerAdapter(provider.apiKey);
+    case 'ollama':   return new OllamaAdapter(provider.apiKey, model);
+    case 'lmstudio': return new LMStudioAdapter(provider.apiKey, model);
   }
 }
 
