@@ -152,8 +152,10 @@ export const fr: Locale = {
 
   alert: {
     leaderboardPromo: 'Connectez-vous et affrontez les autres dans le classement !',
+    aiChatPromo: 'Nouveau : AI Chat ajouté — écrivez en néerlandais, obtenez une réponse et une correction grammaticale de l\'IA.',
     goToProfile: 'Profil',
     signIn: 'Se connecter',
+    goToAIChat: 'Aller au AI Chat',
   },
 
   ai: {

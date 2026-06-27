@@ -152,8 +152,10 @@ export const ar: Locale = {
 
   alert: {
     leaderboardPromo: 'سجّل الدخول وتنافس مع المستخدمين الآخرين في قائمة المتصدرين!',
+    aiChatPromo: 'جديد: تمت إضافة AI Chat — اكتب بالهولندية واحصل على رد وتقييم نحوي من الذكاء الاصطناعي.',
     goToProfile: 'الملف',
     signIn: 'تسجيل الدخول',
+    goToAIChat: 'الذهاب إلى AI Chat',
   },
 
   ai: {

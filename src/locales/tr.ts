@@ -152,8 +152,10 @@ export const tr: Locale = {
 
   alert: {
     leaderboardPromo: 'Giriş yap ve diğer kullanıcılarla skor tablosunda yarış!',
+    aiChatPromo: 'Yeni: AI Chat eklendi — Hollandaca yaz, AI hem yanıtlasın hem gramerini değerlendirsin.',
     goToProfile: 'Profil',
     signIn: 'Giriş yap',
+    goToAIChat: 'AI Chat\'e Git',
   },
 
   ai: {

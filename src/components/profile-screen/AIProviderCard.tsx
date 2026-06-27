@@ -99,12 +99,9 @@ export function AIProviderCard({ type, label, defaultUrl, keyGuide, existing, on
           )}
         </h4>
         {existing && (
-          <button
-            class="text-xs text-text-muted hover:text-error bg-transparent border-none cursor-pointer p-0"
-            onClick={handleRemove}
-          >
+          <Button variant="ghost" color="danger" size="sm" onClick={handleRemove}>
             {t.common.remove}
-          </button>
+          </Button>
         )}
       </div>
 
@@ -133,13 +130,14 @@ export function AIProviderCard({ type, label, defaultUrl, keyGuide, existing, on
             placeholder={`${label} API key`}
             class={`${inputClass} pr-10 disabled:opacity-50 disabled:cursor-not-allowed`}
           />
-          <button
-            class="absolute right-3 text-text-muted hover:text-text-primary bg-transparent border-none cursor-pointer p-0"
+          <Button
+            variant="ghost"
+            color="muted"
+            size="icon"
+            icon={showKey ? EyeOff : Eye}
             onClick={() => setShowKey(v => !v)}
-            type="button"
-          >
-            {showKey ? <EyeOff size={16} /> : <Eye size={16} />}
-          </button>
+            class="absolute right-1"
+          />
         </div>
       )}
 
@@ -172,12 +170,9 @@ export function AIProviderCard({ type, label, defaultUrl, keyGuide, existing, on
       </div>
 
       {keyGuide && (
-        <button
-          class="text-xs text-text-muted hover:text-primary bg-transparent border-none cursor-pointer p-0 text-left"
-          onClick={() => setGuideOpen(true)}
-        >
+        <Button variant="ghost" color="muted" size="sm" onClick={() => setGuideOpen(true)} class="self-start">
           {isLocal ? t.ai.getSetupHelp : t.ai.getApiKey}
-        </button>
+        </Button>
       )}
 
       {guideOpen && keyGuide && (

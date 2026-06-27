@@ -104,7 +104,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, hasNewCha
           return (
             <div key={type} class="flex flex-col gap-1">
               <button
-                class="group flex items-center gap-6 p-6 bg-surface border border-border rounded-xl cursor-pointer text-left transition-all duration-(--transition-normal) hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
+                class={`group flex items-center gap-6 p-6 bg-surface border border-border ${canHavePin ? 'rounded-[var(--radius-xl)_var(--radius-xl)_var(--radius-sm)_var(--radius-sm)]' : 'rounded-xl'} cursor-pointer text-left transition-all duration-(--transition-normal) hover:shadow-md hover:-translate-y-0.5 active:translate-y-0`}
                 style={{ '--card-color': color } as any}
                 onClick={() => onStartQuiz(type, 'normal')}
               >

@@ -43,8 +43,14 @@ export function useChatContext() {
 
 export function ChatProvider({ children }: { children: ComponentChildren }) {
   const { language } = useLanguage();
-  const providerList = getProviders();
+  const [providerList, setProviderList] = useState<AIProvider[]>(() => getProviders());
   const fallbackProviderId = getActiveProviderType() ?? providerList[0]?.type ?? '';
+
+  useEffect(() => {
+    const handleStorage = () => setProviderList(getProviders());
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
 
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [activeSession, setActiveSession] = useState<ChatSession | null>(null);
@@ -102,6 +108,7 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
   }, []);
 
   const sendMessage = useCallback(async (text: string) => {
+    if (isStreaming) return;
     const provider = providerList.find(p => p.type === selectedProviderId) ?? providerList[0];
     if (!provider) return;
 
@@ -159,6 +166,11 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
         );
         const updated = { ...prev, messages, updatedAt: Date.now() };
         saveSession(updated);
+        setSessions(s => {
+          const idx = s.findIndex(x => x.id === updated.id);
+          if (idx >= 0) { const n = [...s]; n[idx] = updated; return n; }
+          return s;
+        });
         return updated;
       });
     }).catch(() => {

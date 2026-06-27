@@ -3,24 +3,10 @@ import {
   getProviders,
   getActiveProviderType,
   setActiveProviderType,
+  getProviderMeta,
   streamObject,
-  GeminiAdapter,
-  GroqAdapter,
-  ServerAdapter,
-  OllamaAdapter,
-  LMStudioAdapter,
 } from '../services/ai';
-import type { AIProvider, AIAdapter, ProviderType } from '../services/ai';
-
-function createAdapter(provider: AIProvider): AIAdapter {
-  switch (provider.type) {
-    case 'gemini':   return new GeminiAdapter(provider.apiKey, provider.model);
-    case 'groq':     return new GroqAdapter(provider.apiKey, provider.model);
-    case 'server':   return new ServerAdapter(provider.apiKey);
-    case 'ollama':   return new OllamaAdapter(provider.apiKey, provider.model);
-    case 'lmstudio': return new LMStudioAdapter(provider.apiKey, provider.model);
-  }
-}
+import type { AIProvider, ProviderType } from '../services/ai';
 
 interface UseAIResult<T> {
   submit: (prompt: string) => Promise<void>;
@@ -59,7 +45,7 @@ export function useAI<T>(): UseAIResult<T> {
       return;
     }
 
-    const adapter = createAdapter(provider);
+    const adapter = getProviderMeta(provider.type).createAdapter(provider.apiKey, provider.model);
 
     setResult(null);
     setDoneStreaming(false);

@@ -150,8 +150,10 @@ export const en = {
 
   alert: {
     leaderboardPromo: 'Sign in and compete with others on the leaderboard!',
+    aiChatPromo: 'New: AI Chat added — write in Dutch, get a reply and grammar review from AI.',
     goToProfile: 'Profile',
     signIn: 'Sign in',
+    goToAIChat: 'Go to AI Chat',
   },
 
   ai: {

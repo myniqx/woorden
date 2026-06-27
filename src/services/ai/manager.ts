@@ -28,5 +28,7 @@ export async function streamObject<T>(
     }
   }
 
-  return JSON.parse(completeJson(extractJson(accumulated))) as T;
+  const finalJson = completeJson(extractJson(accumulated));
+  if (!finalJson) throw new Error('No valid JSON in AI response');
+  return JSON.parse(finalJson) as T;
 }
