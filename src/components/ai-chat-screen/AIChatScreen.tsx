@@ -8,8 +8,7 @@ import { Modal, Button } from '../commons';
 import type { CEFRLevel } from './types';
 import { marked } from 'marked';
 import { getProviders, getProviderMeta } from '../../services/ai';
-import type { AIProvider } from '../../services/ai';
-import { useAppLayout, useLanguage } from '../../hooks';
+import { useAppLayout, useHeaderCenter, useLanguage } from '../../hooks';
 import type { Screen } from '../../types';
 
 const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
@@ -48,7 +47,10 @@ function ChatSettingsFields() {
       .then(models => {
         setModelList(models);
         if (!selectedModel || !models.includes(selectedModel)) {
-          setSelectedModel(adapter.preferredModel);
+          const fallback = models.includes(adapter.preferredModel)
+            ? adapter.preferredModel
+            : (models[0] ?? adapter.preferredModel);
+          setSelectedModel(fallback);
         }
       })
       .catch(() => {
@@ -135,7 +137,6 @@ function ChatSetup() {
 
 function ChatScreenInner() {
   const { activeSession, selectedProviderId, providerList, setDrawerOpen, newChat } = useChatContext();
-  const { setHeaderCenter, clearHeaderCenter } = useAppLayout();
   const { t } = useLanguage();
   const [settingsOpen, setSettingsOpen] = useState(false);
   const openSettings = useCallback(() => setSettingsOpen(true), []);
@@ -145,34 +146,19 @@ function ChatScreenInner() {
     ? `${activeSession.level} · ${activeSession.topic}`
     : 'New Chat';
 
-  useEffect(() => {
-    setHeaderCenter(
-      <div class="flex items-center justify-between w-full">
-        <button
-          class="p-1.5 bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-primary rounded-md"
-          onClick={() => setDrawerOpen(true)}
-        >
-          <History size={18} />
-        </button>
-        <button
-          class="flex items-center gap-1.5 bg-transparent border-none cursor-pointer rounded-md px-2 py-1 hover:bg-surface-elevated"
-          onClick={openSettings}
-        >
-          <span class="text-sm font-medium text-text-primary truncate">{headerTitle}</span>
-          {providerLabel && (
-            <span class="text-xs text-text-muted shrink-0">· {providerLabel}</span>
-          )}
-        </button>
-        <button
-          class="p-1.5 bg-transparent border-none cursor-pointer text-text-secondary hover:text-text-primary rounded-md"
-          onClick={newChat}
-        >
-          <Plus size={18} />
-        </button>
-      </div>
-    );
-    return () => clearHeaderCenter();
-  }, [activeSession?.id, activeSession?.topic, selectedProviderId, openSettings]);
+  useHeaderCenter(
+    <div class="flex items-center justify-between w-full">
+      <Button variant="ghost" color="default" size="icon" icon={History} onClick={() => setDrawerOpen(true)} />
+      <Button variant="ghost" color="default" onClick={openSettings} class="flex-1 min-w-0 max-w-[60%]">
+        <span class="text-sm font-medium text-text-primary truncate">{headerTitle}</span>
+        {providerLabel && (
+          <span class="text-xs text-text-muted shrink-0">· {providerLabel}</span>
+        )}
+      </Button>
+      <Button variant="ghost" color="default" size="icon" icon={Plus} onClick={newChat} />
+    </div>,
+    [activeSession?.id, activeSession?.topic, selectedProviderId, providerLabel, openSettings, newChat, setDrawerOpen],
+  );
 
   return (
     <div class="flex flex-col" style="height: 100%">

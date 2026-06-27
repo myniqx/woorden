@@ -1,15 +1,19 @@
-import { useLanguage } from '../hooks';
+import { useState } from 'preact/hooks';
+import { useLanguage, useAppLayout } from '../hooks';
 import { Button } from './commons/Button';
+import type { Screen } from '../types';
 
-export type AlertAction = 'signIn' | 'goToProfile' | null;
+export type AlertAction = 'signIn' | 'goToProfile' | 'goToAIChat' | null;
 
 export interface AlertDef {
   id: string;
   action?: AlertAction;
+  textKey: 'leaderboardPromo' | 'aiChatPromo';
 }
 
 export const ALERTS: AlertDef[] = [
-  { id: 'leaderboard_promo', action: 'goToProfile' },
+  { id: 'leaderboard_promo', action: 'goToProfile', textKey: 'leaderboardPromo' },
+  { id: 'ai_chat_promo', action: 'goToAIChat', textKey: 'aiChatPromo' },
 ];
 
 const STORAGE_KEY = 'woorden_alerts_seen';
@@ -22,36 +26,40 @@ function getSeenAlerts(): Record<string, boolean> {
   }
 }
 
-function markAllSeen(ids: string[]): void {
+function markSeen(ids: string[]): void {
   const seen = getSeenAlerts();
   for (const id of ids) seen[id] = true;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(seen));
 }
 
-interface AlertBannerProps {
-  onAction: (action: AlertAction) => void;
-}
-
-export function AlertBanner({ onAction }: AlertBannerProps) {
+export function AlertBanner() {
   const { t } = useLanguage();
-  const seen = getSeenAlerts();
-  const visible = ALERTS.filter((a) => !seen[a.id]);
+  const { navigateTo } = useAppLayout();
+  const [seen, setSeen] = useState(getSeenAlerts);
 
+  const visible = ALERTS.filter((a) => !seen[a.id]);
   if (!visible.length) return null;
 
-  const handleDismiss = () => {
-    markAllSeen(visible.map((a) => a.id));
-    onAction(null);
+  const dismiss = (ids: string[]) => {
+    markSeen(ids);
+    setSeen(getSeenAlerts());
   };
 
   const handleAction = (alert: AlertDef) => {
-    markAllSeen([alert.id]);
-    onAction(alert.action ?? null);
+    dismiss([alert.id]);
+    if (alert.action === 'goToProfile' || alert.action === 'signIn') {
+      history.pushState({ screen: 'profile' }, '');
+      navigateTo('profile' as Screen);
+    } else if (alert.action === 'goToAIChat') {
+      history.pushState({ screen: 'ai-chat' }, '');
+      navigateTo('ai-chat' as Screen);
+    }
   };
 
   const actionLabel = (action: AlertAction) => {
     if (action === 'goToProfile') return t.alert.goToProfile;
     if (action === 'signIn') return t.alert.signIn;
+    if (action === 'goToAIChat') return t.alert.goToAIChat;
     return '';
   };
 
@@ -61,7 +69,7 @@ export function AlertBanner({ onAction }: AlertBannerProps) {
         {visible.map((a) => (
           <li key={a.id} class="flex flex-col gap-1">
             <span class="text-sm text-text-secondary leading-relaxed">
-              {t.alert.leaderboardPromo}
+              {t.alert[a.textKey]}
             </span>
             {a.action && (
               <div class="flex justify-end">
@@ -74,7 +82,7 @@ export function AlertBanner({ onAction }: AlertBannerProps) {
         ))}
       </ul>
       <div class="mt-2 pt-2 border-t border-t-border flex justify-start">
-        <Button variant="outline" color="muted" size="sm" onClick={handleDismiss}>
+        <Button variant="outline" color="muted" size="sm" onClick={() => dismiss(visible.map(a => a.id))}>
           {t.common.dismiss}
         </Button>
       </div>

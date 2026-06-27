@@ -11,6 +11,13 @@ export interface ChangelogEntry {
 
 export const changelog: ChangelogEntry[] = [
   {
+    date: '2026-06-27',
+    items: [
+      'AI Chat added: practice Dutch conversation with an AI tutor — each message is automatically reviewed for grammar and vocabulary',
+      'Supports Google Gemini, Groq, Ollama, and LM Studio (local) as AI providers',
+    ],
+  },
+  {
     date: '2026-06-09',
     items: [
       'Leaderboard added: daily, 7-day, and 30-day rankings with correct answer percentage',

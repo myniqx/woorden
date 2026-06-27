@@ -1,6 +1,7 @@
 import type { AIAdapter, AIChatMessage } from '../types';
 
 const GEMINI_PREFERRED = 'gemini-2.5-flash-lite';
+const modelCache = new Map<string, string[]>();
 
 export class GeminiAdapter implements AIAdapter {
   private apiKey: string;
@@ -59,14 +60,18 @@ export class GeminiAdapter implements AIAdapter {
   }
 
   async getModels(): Promise<string[]> {
+    const cached = modelCache.get(this.apiKey);
+    if (cached) return cached;
     const res = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models?key=${this.apiKey}`,
     );
     if (!res.ok) throw new Error(`Gemini models error ${res.status}`);
     const data = await res.json();
-    return (data.models as { name: string; supportedGenerationMethods?: string[] }[])
+    const models = (data.models as { name: string; supportedGenerationMethods?: string[] }[])
       .filter(m => m.supportedGenerationMethods?.includes('generateContent'))
       .map(m => m.name.replace('models/', ''));
+    modelCache.set(this.apiKey, models);
+    return models;
   }
 
   private async *streamRaw(body: object): AsyncIterable<string> {

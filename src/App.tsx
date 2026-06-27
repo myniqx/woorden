@@ -17,11 +17,10 @@ import { pushStats } from './services/sync';
 import { ProfileScreen } from './components/profile-screen';
 import { AIChatScreen } from './components/ai-chat-screen';
 import { AlertBanner } from './components/AlertBanner';
-import type { AlertAction } from './components/AlertBanner';
 
 import type { QuizType, QuizMode, Screen } from './types';
 const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
-const FULLSCREEN_SCREENS: Screen[] = ['ai-chat'];
+const isFullscreen = (s: Screen) => s === 'ai-chat';
 import './styles/theme.css';
 
 export function App() {
@@ -62,7 +61,6 @@ export function App() {
     needRefresh: [needRefresh],
     updateServiceWorker,
   } = useRegisterSW();
-  const [alertKey, setAlertKey] = useState(0);
   const [currentQuizType, setCurrentQuizType] = useState<QuizType | null>(null);
   const [currentQuizMode, setCurrentQuizMode] = useState<QuizMode>('normal');
   const [statsVersion, setStatsVersion] = useState(0);
@@ -144,19 +142,8 @@ export function App() {
             user={user}
           />
 
-          <main class={FULLSCREEN_SCREENS.includes(screen) ? 'main no-padding' : 'main'}>
-            {screen === 'menu' && (
-              <AlertBanner
-                key={alertKey}
-                onAction={(action: AlertAction) => {
-                  setAlertKey(k => k + 1);
-                  if (action === 'goToProfile' || action === 'signIn') {
-                    history.pushState({ screen: 'profile' }, '');
-                    navigateTo('profile');
-                  }
-                }}
-              />
-            )}
+          <main class="main" data-fullscreen={isFullscreen(screen) || undefined}>
+            {screen === 'menu' && <AlertBanner />}
 
             {screen === 'menu' && (
               <MainMenu
@@ -206,7 +193,7 @@ export function App() {
             )}
           </main>
 
-          {!FULLSCREEN_SCREENS.includes(screen) && (
+          {!isFullscreen(screen) && (
             <StatsFooter
               key={`footer-${statsVersion}`}
               quizType={currentQuizType}

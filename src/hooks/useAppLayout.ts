@@ -1,5 +1,5 @@
 import { createContext } from 'preact';
-import { useState, useContext } from 'preact/hooks';
+import { useState, useContext, useEffect, useRef } from 'preact/hooks';
 import type { ComponentChildren } from 'preact';
 import type { Screen } from '../types';
 
@@ -43,4 +43,15 @@ export function useAppLayoutState(): AppLayoutContextValue {
 
 export function useAppLayout() {
   return useContext(AppLayoutContext);
+}
+
+export function useHeaderCenter(content: ComponentChildren, deps: unknown[]) {
+  const { setHeaderCenter, clearHeaderCenter } = useContext(AppLayoutContext);
+  const contentRef = useRef(content);
+  contentRef.current = content;
+
+  useEffect(() => {
+    setHeaderCenter(contentRef.current);
+    return () => clearHeaderCenter();
+  }, deps);
 }

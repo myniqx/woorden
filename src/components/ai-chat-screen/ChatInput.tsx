@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks';
 import { Send } from 'lucide-preact';
 import { useChatContext } from './ChatProvider';
+import { Button } from '../commons';
 
 export function ChatInput() {
   const { sendMessage, isStreaming } = useChatContext();
@@ -33,13 +34,15 @@ export function ChatInput() {
           class="flex-1 resize-none px-3 py-2 text-sm rounded-lg border border-border bg-bg text-text-primary placeholder:text-text-muted outline-none focus:border-primary transition-[border-color] duration-(--transition-fast) disabled:opacity-50"
           style={{ minHeight: '40px', maxHeight: '120px' }}
         />
-        <button
+        <Button
+          variant="solid"
+          color="primary"
+          size="icon"
+          icon={Send}
           onClick={handleSend}
           disabled={!text.trim() || isStreaming}
-          class="p-2 rounded-lg bg-primary text-white border-none cursor-pointer hover:bg-primary-hover disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-(--transition-fast) shrink-0"
-        >
-          <Send size={18} />
-        </button>
+          class="shrink-0"
+        />
       </div>
     </div>
   );

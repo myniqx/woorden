@@ -155,7 +155,7 @@ body {
   width: 100%;
 }
 
-.main.no-padding {
+.main[data-fullscreen] {
   padding: 0;
   max-width: 100%;
   flex: 1 1 0;
