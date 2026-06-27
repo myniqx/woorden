@@ -1,6 +1,14 @@
 import { completeJson } from '../../utils/completeJson';
 import type { AIAdapter } from './types';
 
+function extractJson(raw: string): string {
+  const start = raw.indexOf('{');
+  if (start === -1) return raw;
+  const end = raw.lastIndexOf('}');
+  if (end === -1) return raw.slice(start);
+  return raw.slice(start, end + 1);
+}
+
 export async function streamObject<T>(
   adapter: AIAdapter,
   prompt: string,
@@ -10,7 +18,7 @@ export async function streamObject<T>(
 
   for await (const chunk of adapter.stream(prompt)) {
     accumulated += chunk;
-    const completed = completeJson(accumulated);
+    const completed = completeJson(extractJson(accumulated));
     if (completed) {
       try {
         onPartial(JSON.parse(completed) as Partial<T>);
@@ -20,5 +28,5 @@ export async function streamObject<T>(
     }
   }
 
-  return JSON.parse(completeJson(accumulated)) as T;
+  return JSON.parse(completeJson(extractJson(accumulated))) as T;
 }
