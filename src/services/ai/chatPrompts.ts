@@ -80,12 +80,12 @@ B) Sentence is mostly Dutch but contains words from another language (e.g. "ik w
 - Then evaluate the rest of the Dutch parts normally.
 
 C) Sentence is fully in Dutch:
-- One sentence about how understandable it is.
-- Bullet points for improvements with short reasons. Only if there are errors. Dutch corrections in quotes, explanations in ${langName}.
+- If there are errors: bullet points for improvements with short reasons. Dutch corrections in quotes, explanations in ${langName}.
 - If the learner used ${level}-level vocabulary or structures, mention it positively.
-- If correct, say so kindly.
+- If correct, say so kindly in one short sentence.
 
 IMPORTANT for all cases: Write ALL explanations in ${langName}. Only Dutch sentences/words go in Dutch.
 
-Keep it short and encouraging. Respond with a JSON object: { "review": "<feedback in ${langName} here>" }`;
+Keep it short and encouraging. Use markdown formatting (bullet points, **bold**) where appropriate.
+Respond with a JSON object: { "review": "<feedback in ${langName} here>" }`;
 }

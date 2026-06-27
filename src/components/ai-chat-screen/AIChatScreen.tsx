@@ -4,9 +4,8 @@ import { ChatProvider, useChatContext } from './ChatProvider';
 import { ChatHistory } from './ChatHistory';
 import { ChatMessages } from './ChatMessages';
 import { ChatInput } from './ChatInput';
-import { Modal, Button } from '../commons';
+import { Modal, Button, Markdown } from '../commons';
 import type { CEFRLevel } from './types';
-import { marked } from 'marked';
 import { getProviders, getProviderMeta } from '../../services/ai';
 import { useAppLayout, useHeaderCenter, useLanguage } from '../../hooks';
 import type { Screen } from '../../types';
@@ -105,14 +104,7 @@ function ChatSettingsFields() {
 
       {providers.length === 0 && (
         <div class="flex flex-col gap-3">
-          <div
-            class="text-sm leading-relaxed flex flex-col gap-2
-              [&_blockquote]:border-l-2 [&_blockquote]:border-primary [&_blockquote]:pl-3 [&_blockquote]:py-1 [&_blockquote]:text-text-secondary
-              [&_blockquote_p]:m-0
-              [&_strong]:text-text-primary [&_strong]:font-semibold
-              [&_em]:text-primary [&_em]:not-italic [&_em]:font-medium"
-            dangerouslySetInnerHTML={{ __html: marked.parse(t.ai.noProvider) as string }}
-          />
+          <Markdown content={t.ai.noProvider} class="text-sm text-text-primary" />
           <GoToAISettingsButton />
         </div>
       )}

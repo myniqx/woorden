@@ -1,7 +1,5 @@
-import { marked } from 'marked';
+import { Markdown } from '../commons';
 import type { ChatMessage as ChatMessageType } from './types';
-
-marked.setOptions({ breaks: true });
 
 interface Props {
   message: ChatMessageType;
@@ -37,12 +35,12 @@ export function ChatMessage({ message }: Props) {
               ? 'bg-surface-elevated text-text-muted'
               : review!.status === 'error'
                 ? 'bg-error-light text-error'
-                : 'bg-surface-elevated text-text-secondary prose-review'
+                : 'bg-surface-elevated text-text-secondary'
           }`}>
             {review!.status === 'pending' && <span class="tracking-[3px]">···</span>}
             {review!.status === 'error' && 'Review unavailable'}
             {review!.status === 'done' && (
-              <div dangerouslySetInnerHTML={{ __html: marked.parse(review!.text) as string }} />
+              <Markdown content={review!.text} class="text-xs" />
             )}
           </div>
         )}
