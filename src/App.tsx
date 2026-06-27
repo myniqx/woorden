@@ -19,9 +19,9 @@ import { AIChatScreen } from './components/ai-chat-screen';
 import { AlertBanner } from './components/AlertBanner';
 import type { AlertAction } from './components/AlertBanner';
 
+import type { QuizType, QuizMode, Screen } from './types';
 const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
 const FULLSCREEN_SCREENS: Screen[] = ['ai-chat'];
-import type { QuizType, QuizMode, Screen } from './types';
 import './styles/theme.css';
 
 export function App() {
@@ -56,12 +56,12 @@ export function App() {
   const themeValue = useThemeState();
   const languageValue = useLanguageState();
   const appLayoutValue = useAppLayoutState();
+  const { currentScreen: screen, navigateTo } = appLayoutValue;
 
   const {
     needRefresh: [needRefresh],
     updateServiceWorker,
   } = useRegisterSW();
-  const [screen, setScreen] = useState<Screen>('menu');
   const [alertKey, setAlertKey] = useState(0);
   const [currentQuizType, setCurrentQuizType] = useState<QuizType | null>(null);
   const [currentQuizMode, setCurrentQuizMode] = useState<QuizMode>('normal');
@@ -105,9 +105,10 @@ export function App() {
   useEffect(() => {
     history.replaceState({ screen: 'menu' }, '');
 
-    const handlePopState = () => {
-      setCurrentQuizType(null);
-      setScreen('menu');
+    const handlePopState = (e: PopStateEvent) => {
+      const target: Screen = e.state?.screen ?? 'menu';
+      if (target !== 'quiz') setCurrentQuizType(null);
+      navigateTo(target);
     };
 
     window.addEventListener('popstate', handlePopState);
@@ -118,7 +119,7 @@ export function App() {
     history.pushState({ screen: 'quiz' }, '');
     setCurrentQuizType(quizType);
     setCurrentQuizMode(mode);
-    setScreen('quiz');
+    navigateTo('quiz');
   };
 
   const exitQuiz = () => {
@@ -138,8 +139,8 @@ export function App() {
           <Header
             key={`header-${statsVersion}`}
             showBackButton={screen === 'quiz' || screen === 'changelog' || screen === 'profile' || screen === 'ai-chat'}
-            onBack={screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' ? () => setScreen('menu') : exitQuiz}
-            onProfileClick={() => { history.pushState({ screen: 'profile' }, ''); setScreen('profile'); }}
+            onBack={screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' ? () => history.back() : exitQuiz}
+            onProfileClick={() => { history.pushState({ screen: 'profile' }, ''); navigateTo('profile'); }}
             user={user}
           />
 
@@ -151,7 +152,7 @@ export function App() {
                   setAlertKey(k => k + 1);
                   if (action === 'goToProfile' || action === 'signIn') {
                     history.pushState({ screen: 'profile' }, '');
-                    setScreen('profile');
+                    navigateTo('profile');
                   }
                 }}
               />
@@ -162,11 +163,11 @@ export function App() {
                 onStartQuiz={startQuiz}
                 onOpenChangelog={() => {
                   history.pushState({ screen: 'changelog' }, '');
-                  setScreen('changelog');
+                  navigateTo('changelog');
                 }}
                 onOpenAIChat={() => {
                   history.pushState({ screen: 'ai-chat' }, '');
-                  setScreen('ai-chat');
+                  navigateTo('ai-chat');
                 }}
                 hasNewChangelog={hasNewChangelog}
               />

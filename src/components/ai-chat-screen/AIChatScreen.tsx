@@ -4,12 +4,13 @@ import { ChatProvider, useChatContext } from './ChatProvider';
 import { ChatHistory } from './ChatHistory';
 import { ChatMessages } from './ChatMessages';
 import { ChatInput } from './ChatInput';
-import { Modal } from '../commons';
+import { Modal, Button } from '../commons';
 import type { CEFRLevel } from './types';
 import { marked } from 'marked';
 import { getProviders, GeminiAdapter, GroqAdapter, OllamaAdapter, LMStudioAdapter } from '../../services/ai';
 import type { AIAdapter, AIProvider } from '../../services/ai';
 import { useAppLayout, useLanguage } from '../../hooks';
+import type { Screen } from '../../types';
 
 const LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -22,6 +23,21 @@ function adapterForProvider(provider: AIProvider): AIAdapter | null {
 }
 
 const selectClass = 'px-3 py-2 text-sm rounded-md border border-border bg-bg text-text-primary outline-none focus:border-primary cursor-pointer';
+
+function GoToAISettingsButton() {
+  const { navigateTo } = useAppLayout();
+  const { t } = useLanguage();
+  return (
+    <Button
+      variant="solid"
+      color="primary"
+      fullWidth
+      onClick={() => { history.pushState({ screen: 'profile' }, ''); navigateTo('profile' as Screen, 'ai'); }}
+    >
+      {t.ai.goToSettings}
+    </Button>
+  );
+}
 
 function ChatSettingsFields() {
   const { selectedLevel, setSelectedLevel, selectedProviderId, setSelectedProviderId, selectedModel, setSelectedModel } = useChatContext();
@@ -53,16 +69,18 @@ function ChatSettingsFields() {
 
   return (
     <div class="flex flex-col gap-3">
-      <div class="flex flex-col gap-1.5">
-        <label class="text-xs font-medium text-text-secondary uppercase tracking-[0.05em]">{t.chat.level}</label>
-        <select
-          value={selectedLevel}
-          onChange={(e) => setSelectedLevel((e.target as HTMLSelectElement).value as CEFRLevel)}
-          class={selectClass}
-        >
-          {LEVELS.map(l => <option key={l} value={l}>{l}</option>)}
-        </select>
-      </div>
+      {providers.length > 0 && (
+        <div class="flex flex-col gap-1.5">
+          <label class="text-xs font-medium text-text-secondary uppercase tracking-[0.05em]">{t.chat.level}</label>
+          <select
+            value={selectedLevel}
+            onChange={(e) => setSelectedLevel((e.target as HTMLSelectElement).value as CEFRLevel)}
+            class={selectClass}
+          >
+            {LEVELS.map(l => <option key={l} value={l}>{l}</option>)}
+          </select>
+        </div>
+      )}
 
       {providers.length > 0 && (
         <div class="flex flex-col gap-1.5">
@@ -93,14 +111,17 @@ function ChatSettingsFields() {
       )}
 
       {providers.length === 0 && (
-        <div
-          class="text-sm leading-relaxed flex flex-col gap-2
-            [&_blockquote]:border-l-2 [&_blockquote]:border-primary [&_blockquote]:pl-3 [&_blockquote]:py-1 [&_blockquote]:text-text-secondary
-            [&_blockquote_p]:m-0
-            [&_strong]:text-text-primary [&_strong]:font-semibold
-            [&_em]:text-primary [&_em]:not-italic [&_em]:font-medium"
-          dangerouslySetInnerHTML={{ __html: marked.parse(t.ai.noProvider) as string }}
-        />
+        <div class="flex flex-col gap-3">
+          <div
+            class="text-sm leading-relaxed flex flex-col gap-2
+              [&_blockquote]:border-l-2 [&_blockquote]:border-primary [&_blockquote]:pl-3 [&_blockquote]:py-1 [&_blockquote]:text-text-secondary
+              [&_blockquote_p]:m-0
+              [&_strong]:text-text-primary [&_strong]:font-semibold
+              [&_em]:text-primary [&_em]:not-italic [&_em]:font-medium"
+            dangerouslySetInnerHTML={{ __html: marked.parse(t.ai.noProvider) as string }}
+          />
+          <GoToAISettingsButton />
+        </div>
       )}
     </div>
   );

@@ -161,6 +161,7 @@ export const en = {
     apiKeyModalTitle: '{label} API Key',
     setupModalTitle: '{label} Setup',
     noProvider: `> To keep this app free, we're unable to provide AI services directly. You can add your own API key to use this feature.\n\n> Free providers like **Google Gemini** and **Groq** offer generous free tiers — no credit card required.\n\n> Head to **Settings → AI** to add a provider. Use the *How do I get an API key?* button there for step-by-step instructions.`,
+    goToSettings: 'Go to AI Settings',
   },
 
   chat: {

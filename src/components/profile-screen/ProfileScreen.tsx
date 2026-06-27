@@ -10,7 +10,7 @@ import { ProfileTab } from './ProfileTab';
 import { SettingsTab } from './SettingsTab';
 import { AITab } from './AITab';
 import type { Tab, SyncState } from './types';
-import { useLanguage } from '@/hooks';
+import { useLanguage, useAppLayout } from '@/hooks';
 
 interface ProfileScreenProps {
   visitorCount: number | null;
@@ -26,10 +26,17 @@ const LEADERBOARD_CACHE_KEY = 'woorden_leaderboard_cache';
 const LEADERBOARD_SERVER_UPDATED_AT_KEY = 'woorden_leaderboard_server_updated_at';
 const LEADERBOARD_FETCHED_AT_KEY = 'woorden_leaderboard_fetched_at';
 
+const VALID_TABS: Tab[] = ['leaderboard', 'profile', 'settings', 'ai'];
+
 export function ProfileScreen({ visitorCount, user, onSignIn, onSignOut, onDataImported }: ProfileScreenProps) {
   const { t } = useLanguage();
+  const { currentTab } = useAppLayout();
 
-  const [activeTab, setActiveTab] = useState<Tab>(user ? 'leaderboard' : 'profile');
+  const resolvedInitialTab: Tab = currentTab && (VALID_TABS as string[]).includes(currentTab)
+    ? currentTab as Tab
+    : user ? 'leaderboard' : 'profile';
+
+  const [activeTab, setActiveTab] = useState<Tab>(resolvedInitialTab);
   const [username, setUsernameState] = useState(getUsername);
   const [avatarIndex, setAvatarIndexState] = useState(getAvatarIndex);
   const [showAvatarPicker, setShowAvatarPicker] = useState(false);

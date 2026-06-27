@@ -18,7 +18,7 @@ A Progressive Web App (PWA) for learning Dutch vocabulary with spaced repetition
 ```
 src/
 ├── components/       # Preact components (.tsx, Tailwind-only — no CSS files)
-│   ├── commons/         # Shared UI primitives (no business logic)
+│   ├── commons/         # Shared UI primitives (no business logic, ALWAYS USE THESE COMPONENTS WHEN U NEED. NEWER WRITE CUSTOM BUTTON or etc.)
 │   │   ├── Badge.tsx       # Status/label badge
 │   │   ├── Button.tsx      # Multi-variant button
 │   │   ├── Modal.tsx       # Overlay + Modal.Header + Modal.Body
