@@ -8,6 +8,18 @@ export class GroqAdapter implements AIAdapter {
 
   preferredModel = GROQ_PREFERRED;
 
+  getKeyGuide(): string {
+    return `## Groq API Key
+
+1. Go to [Groq Console](https://console.groq.com/keys)
+2. Sign up or sign in
+3. Click **Create API Key**
+4. Give it a name and click **Submit**
+5. Copy the key — it's only shown once
+
+> **Note:** Groq is free to use with rate limits. No credit card required.`;
+  }
+
   constructor(apiKey: string, model?: string) {
     this.apiKey = apiKey;
     this.model = model ?? GROQ_PREFERRED;

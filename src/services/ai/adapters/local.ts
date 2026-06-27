@@ -75,6 +75,23 @@ export class OllamaAdapter extends LocalAdapter {
     super(baseUrl || OLLAMA_DEFAULT_URL, 'llama3.2', model);
   }
 
+  getKeyGuide(): string {
+    return `## Running Ollama
+
+> **Note:** Ollama runs on your computer (Windows, Mac, or Linux). It cannot run on a phone or tablet.
+
+1. Go to [ollama.com](https://ollama.com) and download the installer for your OS
+2. Install and launch Ollama — it runs as a background service
+3. Open a terminal and pull a model:
+   \`\`\`
+   ollama pull llama3.2
+   \`\`\`
+4. Ollama is now available at \`http://localhost:11434\`
+5. Paste that URL above and click **Connect**
+
+> You can pull other models too: \`ollama pull mistral\`, \`ollama pull gemma3\`, etc.`;
+  }
+
   async getModels(): Promise<string[]> {
     const res = await fetch(`${this.baseUrl}/api/tags`);
     if (!res.ok) throw new Error(`Ollama models error ${res.status}`);
@@ -86,6 +103,20 @@ export class OllamaAdapter extends LocalAdapter {
 export class LMStudioAdapter extends LocalAdapter {
   constructor(baseUrl: string, model?: string) {
     super(baseUrl || LMSTUDIO_DEFAULT_URL, '', model);
+  }
+
+  getKeyGuide(): string {
+    return `## Running LM Studio
+
+> **Note:** LM Studio runs on your computer (Windows, Mac, or Linux). It cannot run on a phone or tablet.
+
+1. Go to [lmstudio.ai](https://lmstudio.ai) and download the app for your OS
+2. Install and open LM Studio
+3. Search for a model in the **Discover** tab (e.g. \`gemma\`, \`llama\`, \`mistral\`) and download one
+4. Go to the **Local Server** tab (left sidebar)
+5. Select your downloaded model and click **Start Server**
+6. LM Studio is now available at \`http://localhost:1234\`
+7. Paste that URL above and click **Connect**`;
   }
 
   async getModels(): Promise<string[]> {

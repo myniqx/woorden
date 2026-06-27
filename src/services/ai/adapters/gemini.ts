@@ -8,6 +8,18 @@ export class GeminiAdapter implements AIAdapter {
 
   preferredModel = GEMINI_PREFERRED;
 
+  getKeyGuide(): string {
+    return `## Google Gemini API Key
+
+1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click **Create API key**
+4. Select an existing Google Cloud project or create a new one
+5. Copy the generated API key and paste it above
+
+> **Note:** Gemini offers a free tier with generous limits — no billing required to get started.`;
+  }
+
   constructor(apiKey: string, model?: string) {
     this.apiKey = apiKey;
     this.model = model ?? GEMINI_PREFERRED;

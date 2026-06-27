@@ -1,14 +1,18 @@
 import { useState } from 'preact/hooks';
+import { marked } from 'marked';
 import { Eye, EyeOff, Check } from 'lucide-preact';
-import { Button } from '../commons';
+import { Button, Modal } from '../commons';
 import { GeminiAdapter, GroqAdapter, OllamaAdapter, LMStudioAdapter, addProvider, removeProvider } from '../../services/ai';
 import type { AIProvider, ProviderType } from '../../services/ai';
 import { useLanguage } from '../../hooks';
+
+marked.use({ breaks: true });
 
 interface Props {
   type: ProviderType;
   label: string;
   defaultUrl?: string;
+  keyGuide?: string;
   existing: AIProvider | null;
   onSaved: () => void;
 }
@@ -40,7 +44,7 @@ function isValidUrl(value: string): boolean {
   }
 }
 
-export function AIProviderCard({ type, label, defaultUrl, existing, onSaved }: Props) {
+export function AIProviderCard({ type, label, defaultUrl, keyGuide, existing, onSaved }: Props) {
   const { t } = useLanguage();
   const isLocal = !!defaultUrl;
   const [apiKey, setApiKey] = useState(existing?.apiKey ?? '');
@@ -48,6 +52,7 @@ export function AIProviderCard({ type, label, defaultUrl, existing, onSaved }: P
   const [confirmed, setConfirmed] = useState(existing?.confirmedAt != null);
   const [confirming, setConfirming] = useState(false);
   const [confirmError, setConfirmError] = useState<string | null>(null);
+  const [guideOpen, setGuideOpen] = useState(false);
 
   const isDirty = apiKey !== (existing?.apiKey ?? '');
   const effectiveUrl = apiKey.trim() || defaultUrl!;
@@ -171,6 +176,27 @@ export function AIProviderCard({ type, label, defaultUrl, existing, onSaved }: P
           {t.common.save}
         </Button>
       </div>
+
+      {keyGuide && (
+        <button
+          class="text-xs text-text-muted hover:text-primary bg-transparent border-none cursor-pointer p-0 text-left"
+          onClick={() => setGuideOpen(true)}
+        >
+          {isLocal ? 'How do I set this up?' : 'How do I get an API key?'}
+        </button>
+      )}
+
+      {guideOpen && keyGuide && (
+        <Modal onClose={() => setGuideOpen(false)} maxWidth="sm">
+          <Modal.Header title={`${label} API Key`} onClose={() => setGuideOpen(false)} />
+          <Modal.Body>
+            <div
+              class="prose prose-sm text-text-primary text-sm leading-relaxed [&_a]:text-primary [&_a]:underline [&_code]:bg-surface-elevated [&_code]:px-1 [&_code]:rounded-sm [&_code]:text-xs [&_ol]:pl-4 [&_ul]:pl-4 [&_li]:mb-1 [&_blockquote]:border-l-2 [&_blockquote]:border-border [&_blockquote]:pl-3 [&_blockquote]:text-text-muted [&_h2]:text-base [&_h2]:font-semibold [&_h2]:mb-3"
+              dangerouslySetInnerHTML={{ __html: marked.parse(keyGuide) as string }}
+            />
+          </Modal.Body>
+        </Modal>
+      )}
     </div>
   );
 }
