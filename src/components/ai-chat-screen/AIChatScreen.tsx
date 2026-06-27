@@ -6,6 +6,7 @@ import { ChatMessages } from './ChatMessages';
 import { ChatInput } from './ChatInput';
 import { Modal } from '../commons';
 import type { CEFRLevel } from './types';
+import { marked } from 'marked';
 import { getProviders, GeminiAdapter, GroqAdapter, OllamaAdapter, LMStudioAdapter } from '../../services/ai';
 import type { AIAdapter, AIProvider } from '../../services/ai';
 import { useAppLayout, useLanguage } from '../../hooks';
@@ -92,9 +93,14 @@ function ChatSettingsFields() {
       )}
 
       {providers.length === 0 && (
-        <p class="text-xs text-text-muted text-center px-2">
-          {t.ai.noProvider}
-        </p>
+        <div
+          class="text-sm leading-relaxed flex flex-col gap-2
+            [&_blockquote]:border-l-2 [&_blockquote]:border-primary [&_blockquote]:pl-3 [&_blockquote]:py-1 [&_blockquote]:text-text-secondary
+            [&_blockquote_p]:m-0
+            [&_strong]:text-text-primary [&_strong]:font-semibold
+            [&_em]:text-primary [&_em]:not-italic [&_em]:font-medium"
+          dangerouslySetInnerHTML={{ __html: marked.parse(t.ai.noProvider) as string }}
+        />
       )}
     </div>
   );

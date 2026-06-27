@@ -162,7 +162,7 @@ export const tr: Locale = {
     getSetupHelp: 'Nasıl kurulur?',
     apiKeyModalTitle: '{label} API Anahtarı',
     setupModalTitle: '{label} Kurulumu',
-    noProvider: 'AI sağlayıcısı yapılandırılmamış. Ayarlar → AI bölümünden ekleyin.',
+    noProvider: `> Uygulamayı ücretsiz tutabilmek için AI hizmetini biz sağlayamıyoruz. Kendi API anahtarınızı ekleyerek bu özelliği kullanabilirsiniz.\n\n> **Google Gemini** ve **Groq** gibi ücretsiz sağlayıcılar cömert ücretsiz kotalar sunuyor — kredi kartı gerekmez.\n\n> **Ayarlar → AI** bölümüne giderek bir sağlayıcı ekleyin. Oradaki *API anahtarını nasıl alırım?* butonuyla adım adım yönlendirme alabilirsiniz.`,
   },
 
   chat: {

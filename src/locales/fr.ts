@@ -162,7 +162,7 @@ export const fr: Locale = {
     getSetupHelp: 'Comment configurer ceci ?',
     apiKeyModalTitle: 'Clé API {label}',
     setupModalTitle: 'Configuration {label}',
-    noProvider: "Aucun fournisseur AI configuré. Ajoutez-en un dans Paramètres → AI.",
+    noProvider: `> Pour que l'application reste gratuite, nous ne pouvons pas fournir le service AI directement. Ajoutez votre propre clé API pour utiliser cette fonctionnalité.\n\n> Des fournisseurs gratuits comme **Google Gemini** et **Groq** offrent des quotas généreux — sans carte bancaire.\n\n> Rendez-vous dans **Paramètres → AI** pour ajouter un fournisseur. Utilisez le bouton *Comment obtenir une clé API ?* pour des instructions étape par étape.`,
   },
 
   chat: {
