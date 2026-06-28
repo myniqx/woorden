@@ -1,11 +1,11 @@
 import { useState } from 'preact/hooks';
 import { BarChart3, Eye, BookOpen, AlertCircle, ChevronUp, RefreshCw, Flame } from 'lucide-preact';
-import { Badge, Button } from './commons';
-import type { Word, WordStats, QuizType } from '../types';
-import { words } from '../services/words';
-import { getAllWordStats, getStreak } from '../services/storage';
-import { getStatsSummary } from '../services/wordSelector';
-import { useLanguage } from '../hooks';
+import { Badge, Button } from '../commons';
+import type { Word, WordStats, QuizType } from '../../types';
+import { words } from '../../services/words';
+import { getAllWordStats, getStreak } from '../../services/storage';
+import { getStatsSummary } from '../../services/wordSelector';
+import { useLanguage } from '../../hooks';
 import { WordListModal } from './WordListModal';
 
 interface StatsFooterProps {
@@ -16,9 +16,7 @@ interface StatsFooterProps {
 
 type Category = 'unseen' | 'learning' | 'mastered' | 'difficult';
 
-interface WordWithStats extends Word {
-  stats: WordStats;
-}
+type WordWithStats = Word & { stats: WordStats };
 
 function getCategorizedWords(): Record<Category, WordWithStats[]> {
   const allStats = getAllWordStats();

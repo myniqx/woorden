@@ -1,10 +1,8 @@
-import type { Word, WordStats } from '../types';
-import { useLanguage } from '../hooks';
-import { Modal } from './commons';
+import type { Word, WordStats } from '../../types';
+import { useLanguage } from '../../hooks';
+import { Modal } from '../commons';
 
-interface WordWithStats extends Word {
-  stats: WordStats;
-}
+type WordWithStats = Word & { stats: WordStats };
 
 interface WordListModalProps {
   category: 'unseen' | 'learning' | 'mastered' | 'difficult';

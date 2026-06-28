@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from 'preact/hooks';
-import type { QuizType, QuizMode, Language, Quiz } from '../types';
-import { createQuiz, submitAnswer } from '../services/quiz';
-import { canPinInQuizType, isPinned, togglePin, getSkillProgress, getSkillForQuizType } from '../services/storage';
+import type { QuizType, QuizMode, Language, Quiz } from '../../types';
+import { createQuiz, submitAnswer } from '../../services/quiz';
+import { canPinInQuizType, isPinned, togglePin, getSkillProgress, getSkillForQuizType } from '../../services/storage';
 import { OptionButton } from './OptionButton';
-import { HelpModal } from './HelpModal';
+import { HelpModal } from '../HelpModal';
 import { ExampleZin } from './ExampleZin';
-import { useLanguage } from '../hooks';
-import { QuizCard, ResultBanner } from './commons';
+import { useLanguage } from '../../hooks';
+import { QuizCard, ResultBanner } from '../commons';
 
 const helpTexts: Record<QuizType, Record<Language, { title: string; content: string }>> = {
   nativeToDutch: {

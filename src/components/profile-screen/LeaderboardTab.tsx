@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 import { Crown, Star, Zap, LogIn } from 'lucide-preact';
-import { Avatar } from '../AvatarPicker';
+import { Avatar } from './AvatarPicker';
 import { getUsername } from '../../services/storage';
 import { useLanguage } from '../../hooks';
 import type { LeaderboardEntry } from '../../services/sync';

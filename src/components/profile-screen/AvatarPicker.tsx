@@ -1,6 +1,5 @@
-import avatarsSvgUrl from '../assets/avatars.svg?url';
+import avatarsSvgUrl from '../../assets/avatars.svg?url';
 
-// Her avatarın SVG içindeki merkez koordinatları (viewBox 0 0 430 430)
 const AVATAR_COORDS: [number, number][] = [
   [59, 60],
   [163, 60],
@@ -20,7 +19,6 @@ const AVATAR_COORDS: [number, number][] = [
   [370, 365],
 ];
 
-// Her avatar yaklaşık 43px yarıçaplı daire, 54px padding ile göster
 const HALF = 54;
 
 interface AvatarProps {

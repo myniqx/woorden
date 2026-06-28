@@ -1,5 +1,5 @@
 import { Check, X } from 'lucide-preact';
-import type { QuizOption } from '../types';
+import type { QuizOption } from '../../types';
 
 interface OptionButtonProps {
   option: QuizOption;

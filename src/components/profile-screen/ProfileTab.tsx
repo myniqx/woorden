@@ -1,6 +1,6 @@
 import { User, LogIn, LogOut, RefreshCw, CloudDownload, CloudUpload, Save, Trash2, Shuffle } from 'lucide-preact';
 import type { ComponentChildren } from 'preact';
-import { Avatar, AvatarPicker } from '../AvatarPicker';
+import { Avatar, AvatarPicker } from './AvatarPicker';
 import { Button } from '../commons';
 import type { ProfileSharedProps, SyncState } from './types';
 import { useLanguage } from '@/hooks';

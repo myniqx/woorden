@@ -1,12 +1,12 @@
 import { useState } from 'preact/hooks';
 import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch, MessageCircle } from 'lucide-preact';
-import type { QuizType, QuizMode } from '../types';
-import { useLanguage } from '../hooks';
-import { getSelectedWordCount, getAvailableLevels, getChunkCount, getChunkWordCount, getLevelWordCount, isChunkEnabled } from '../services/words';
-import { getPinnedWordCount, MIN_PINS_FOR_QUIZ, canPinInQuizType } from '../services/storage';
+import type { QuizType, QuizMode } from '../../types';
+import { useLanguage } from '../../hooks';
+import { getSelectedWordCount, getAvailableLevels, getChunkCount, getChunkWordCount, getLevelWordCount, isChunkEnabled } from '../../services/words';
+import { getPinnedWordCount, MIN_PINS_FOR_QUIZ, canPinInQuizType } from '../../services/storage';
 import { WordPoolModal } from './WordPoolModal';
-import { SupportButton } from './SupportButton';
-import { Badge } from './commons';
+import { SupportButton } from '../SupportButton';
+import { Badge } from '../commons';
 import { LanguageKeys } from '@/locales';
 
 interface MainMenuProps {

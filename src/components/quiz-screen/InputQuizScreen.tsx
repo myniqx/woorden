@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'preact/hooks';
-import type { QuizType, QuizMode, Language } from '../types';
-import { useLanguage } from '../hooks';
+import type { QuizType, QuizMode, Language } from '../../types';
+import { useLanguage } from '../../hooks';
 import {
   canPinInQuizType,
   isPinned,
@@ -8,12 +8,12 @@ import {
   getSkillProgress,
   getSkillForQuizType,
   updateWordProgress,
-} from '../services/storage';
-import { selectWord } from '../services/wordSelector';
-import { compareIgnoringAccents } from '../utils/textUtils';
-import { HelpModal } from './HelpModal';
-import { Button, QuizCard, ResultBanner } from './commons';
-import { locales } from '../locales';
+} from '../../services/storage';
+import { selectWord } from '../../services/wordSelector';
+import { compareIgnoringAccents } from '../../utils/textUtils';
+import { HelpModal } from '../HelpModal';
+import { Button, QuizCard, ResultBanner } from '../commons';
+import { locales } from '../../locales';
 
 const helpTexts: Record<string, Record<Language, { title: string; content: string }>> = {
   nativeToDutch_write: {

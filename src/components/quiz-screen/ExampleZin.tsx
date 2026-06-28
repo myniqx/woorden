@@ -1,6 +1,6 @@
 import { useMemo } from 'preact/hooks';
-import type { WordEntry } from '../types';
-import { getZin } from '../services/zinnen';
+import type { WordEntry } from '../../types';
+import { getZin } from '../../services/zinnen';
 
 interface Props {
   word: WordEntry;

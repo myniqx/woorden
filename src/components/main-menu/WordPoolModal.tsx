@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 import { ChevronDown, ChevronRight, HelpCircle } from 'lucide-preact';
-import { useLanguage } from '../hooks';
+import { useLanguage } from '../../hooks';
 import {
   getAvailableLevels,
   getChunkCount,
@@ -8,16 +8,16 @@ import {
   getLevelWordCount,
   getSelectedWordCount,
   refreshWords,
-} from '../services/words';
+} from '../../services/words';
 import {
   isChunkEnabled,
   setChunkEnabled,
   areAllChunksEnabled,
   areNoChunksEnabled,
-} from '../services/storage';
-import { HelpModal } from './HelpModal';
-import { Button, Modal } from './commons';
-import type { Language } from '../types';
+} from '../../services/storage';
+import { HelpModal } from '../HelpModal';
+import { Button, Modal } from '../commons';
+import type { Language } from '../../types';
 
 const helpTexts: Record<Language, { title: string; content: string }> = {
   tr: {
