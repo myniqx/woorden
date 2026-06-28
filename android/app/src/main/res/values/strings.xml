@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Woorden</string>
+    <string name="title_activity_main">Woorden</string>
+    <string name="package_name">nl.woorden.app</string>
+    <string name="custom_url_scheme">nl.woorden.app</string>
+</resources>
