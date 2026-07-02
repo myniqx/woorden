@@ -33,7 +33,7 @@ function WritingScreenInner() {
   );
 
   return (
-    <div class="flex flex-col" style="height: 100%">
+    <div class="flex flex-col mx-auto w-full max-w-md" style="height: 100%">
       <WritingHistory />
       {phase === 'setup' && <WritingSetup />}
       {(phase === 'assignment' || phase === 'reviewing') && <WritingAssignmentView />}

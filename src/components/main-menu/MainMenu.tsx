@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch, MessageCircle, MessageCircleQuestion, FileEdit } from 'lucide-preact';
+import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch, MessageCircle, MessageCircleQuestion, FileEdit, Sparkles } from 'lucide-preact';
 import type { QuizType, QuizMode } from '../../types';
 import { useLanguage } from '../../hooks';
 import { getSelectedWordCount, getAvailableLevels, getChunkCount, getChunkWordCount, getLevelWordCount, isChunkEnabled } from '../../services/words';
@@ -88,7 +88,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, onOpenQA,
               return (
                 <span key={level} class={`inline-flex items-center text-xs rounded-full overflow-hidden border ${muted ? 'border-border' : 'border-[color-mix(in_srgb,var(--color-primary)_30%,transparent)]'}`}>
                   <span class={`font-bold w-8 text-right px-1.5 py-0.5 ${muted ? 'bg-text-muted text-surface' : 'bg-primary text-white'}`}>{level}</span>
-                  <span class={`px-[7px] py-0.5 ${muted ? 'bg-surface-elevated text-text-muted' : 'bg-primary-light text-primary'}`}>{selected}/{total}</span>
+                  <span class={`px-1.75 py-0.5 ${muted ? 'bg-surface-elevated text-text-muted' : 'bg-primary-light text-primary'}`}>{selected}/{total}</span>
                 </span>
               );
             })}
@@ -110,7 +110,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, onOpenQA,
                 style={{ '--card-color': color } as any}
                 onClick={() => onStartQuiz(type, 'normal')}
               >
-                <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-[var(--card-color,var(--color-primary))] shrink-0 transition-colors duration-(--transition-normal) group-hover:bg-[var(--card-color,var(--color-primary))] group-hover:text-white">
+                <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-(--card-color,var(--color-primary)) shrink-0 transition-colors duration-(--transition-normal) group-hover:bg-(--card-color,var(--color-primary)) group-hover:text-white">
                   <Icon size={32} />
                 </div>
                 <div class="flex-1 min-w-0">
@@ -121,7 +121,7 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, onOpenQA,
 
               {canHavePin && (
                 <button
-                  class={`flex items-center gap-2 px-4 py-2 bg-surface border border-border rounded-[var(--radius-sm)_var(--radius-sm)_var(--radius-xl)_var(--radius-xl)] cursor-pointer text-left text-[var(--card-color,var(--color-primary))] transition-all duration-(--transition-normal) hover:not-disabled:border-[var(--card-color,var(--color-primary))] hover:not-disabled:bg-surface-elevated disabled:opacity-60 disabled:cursor-not-allowed disabled:text-text-secondary`}
+                  class={`flex items-center gap-2 px-4 py-2 bg-surface border border-border rounded-[var(--radius-sm)_var(--radius-sm)_var(--radius-xl)_var(--radius-xl)] cursor-pointer text-left text-(--card-color,var(--color-primary)) transition-all duration-(--transition-normal) hover:not-disabled:border-(--card-color,var(--color-primary)) hover:not-disabled:bg-surface-elevated disabled:opacity-60 disabled:cursor-not-allowed disabled:text-text-secondary`}
                   onClick={() => canStartPinnedQuiz && onStartQuiz(type, 'pinned')}
                   disabled={!canStartPinnedQuiz}
                   style={{ '--card-color': color } as any}
@@ -142,44 +142,55 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, onOpenQA,
         })}
       </div>
 
-      <button
-        class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-xl cursor-pointer text-left transition-all duration-(--transition-normal) hover:border-primary hover:bg-primary-light"
-        onClick={onOpenAIChat}
-      >
-        <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-primary shrink-0">
-          <MessageCircle size={32} />
-        </div>
-        <div class="flex-1 min-w-0">
-          <h2 class="text-lg font-semibold text-text-primary mb-1">{t.chat.title}</h2>
-          <p class="text-sm text-text-secondary leading-snug">{t.chat.subtitle}</p>
-        </div>
-      </button>
+      <div class="flex flex-col gap-1">
+        <button
+          class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-[var(--radius-xl)_var(--radius-xl)_var(--radius-sm)_var(--radius-sm)] cursor-pointer text-left transition-all duration-(--transition-normal) hover:border-primary hover:bg-primary-light"
+          onClick={onOpenAIChat}
+        >
+          <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-primary shrink-0">
+            <MessageCircle size={32} />
+          </div>
+          <div class="flex-1 min-w-0">
+            <h2 class="flex items-center gap-1.5 text-lg font-semibold text-text-primary mb-1">
+              {t.chat.title}
+              <Badge color="primary" size="sm" icon={Sparkles}>AI</Badge>
+            </h2>
+            <p class="text-sm text-text-secondary leading-snug">{t.chat.subtitle}</p>
+          </div>
+        </button>
 
-      <button
-        class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-xl cursor-pointer text-left transition-all duration-(--transition-normal) hover:border-primary hover:bg-primary-light"
-        onClick={onOpenQA}
-      >
-        <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-primary shrink-0">
-          <MessageCircleQuestion size={32} />
-        </div>
-        <div class="flex-1 min-w-0">
-          <h2 class="text-lg font-semibold text-text-primary mb-1">{t.qa.title}</h2>
-          <p class="text-sm text-text-secondary leading-snug">{t.qa.subtitle}</p>
-        </div>
-      </button>
+        <button
+          class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-sm cursor-pointer text-left transition-all duration-(--transition-normal) hover:border-primary hover:bg-primary-light"
+          onClick={onOpenQA}
+        >
+          <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-primary shrink-0">
+            <MessageCircleQuestion size={32} />
+          </div>
+          <div class="flex-1 min-w-0">
+            <h2 class="flex items-center gap-1.5 text-lg font-semibold text-text-primary mb-1">
+              {t.qa.title}
+              <Badge color="primary" size="sm" icon={Sparkles}>AI</Badge>
+            </h2>
+            <p class="text-sm text-text-secondary leading-snug">{t.qa.subtitle}</p>
+          </div>
+        </button>
 
-      <button
-        class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-xl cursor-pointer text-left transition-all duration-(--transition-normal) hover:border-primary hover:bg-primary-light"
-        onClick={onOpenWriting}
-      >
-        <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-primary shrink-0">
-          <FileEdit size={32} />
-        </div>
-        <div class="flex-1 min-w-0">
-          <h2 class="text-lg font-semibold text-text-primary mb-1">{t.writing.title}</h2>
-          <p class="text-sm text-text-secondary leading-snug">{t.writing.subtitle}</p>
-        </div>
-      </button>
+        <button
+          class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-[var(--radius-sm)_var(--radius-sm)_var(--radius-xl)_var(--radius-xl)] cursor-pointer text-left transition-all duration-(--transition-normal) hover:border-primary hover:bg-primary-light"
+          onClick={onOpenWriting}
+        >
+          <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-primary shrink-0">
+            <FileEdit size={32} />
+          </div>
+          <div class="flex-1 min-w-0">
+            <h2 class="flex items-center gap-1.5 text-lg font-semibold text-text-primary mb-1">
+              {t.writing.title}
+              <Badge color="primary" size="sm" icon={Sparkles}>AI</Badge>
+            </h2>
+            <p class="text-sm text-text-secondary leading-snug">{t.writing.subtitle}</p>
+          </div>
+        </button>
+      </div>
 
       <SupportButton />
 

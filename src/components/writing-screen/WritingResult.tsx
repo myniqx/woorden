@@ -1,7 +1,9 @@
+import { useState } from 'preact/hooks';
+import { ChevronDown, ChevronRight } from 'lucide-preact';
 import { Badge, Button } from '../commons';
 import { useLanguage } from '../../hooks';
 import { useWritingContext } from './WritingProvider';
-import type { WritingReview } from './types';
+import type { WritingAssignment, WritingReview } from './types';
 
 function scoreColor(score: number): 'success' | 'primary' | 'error' {
   if (score >= 80) return 'success';
@@ -11,9 +13,46 @@ function scoreColor(score: number): 'success' | 'primary' | 'error' {
 
 interface ReviewBodyProps {
   review: Partial<WritingReview>;
+  assignment?: Partial<WritingAssignment> | null;
+  userText?: string;
 }
 
-function ReviewBody({ review }: ReviewBodyProps) {
+function SubmissionAccordion({ assignment, userText }: { assignment?: Partial<WritingAssignment> | null; userText?: string }) {
+  const { t } = useLanguage();
+  const [open, setOpen] = useState(false);
+
+  if (!assignment?.scenario && !userText) return null;
+
+  return (
+    <div class="flex flex-col border border-border rounded-xl bg-surface">
+      <button
+        class="flex items-center gap-2 px-4 py-3 bg-transparent border-none cursor-pointer text-left text-sm font-medium text-text-primary rounded-xl"
+        onClick={() => setOpen(o => !o)}
+      >
+        {open ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+        {t.writing.submissionTitle}
+      </button>
+      {open && (
+        <div class="flex flex-col gap-3 px-4 pb-4">
+          {assignment?.scenario && (
+            <div class="flex flex-col gap-1">
+              <span class="text-xs font-medium text-text-secondary uppercase tracking-wider">{t.writing.assignmentLabel}</span>
+              <p class="text-sm text-text-primary leading-relaxed m-0">{assignment.scenario}</p>
+            </div>
+          )}
+          {userText && (
+            <div class="flex flex-col gap-1">
+              <span class="text-xs font-medium text-text-secondary uppercase tracking-wider">{t.writing.yourTextLabel}</span>
+              <p class="text-sm text-text-primary leading-relaxed whitespace-pre-wrap m-0">{userText}</p>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ReviewBody({ review, assignment, userText }: ReviewBodyProps) {
   const { t } = useLanguage();
 
   return (
@@ -79,6 +118,8 @@ function ReviewBody({ review }: ReviewBodyProps) {
         </div>
       )}
 
+      <SubmissionAccordion assignment={assignment} userText={userText} />
+
       {review.vocabulary && review.vocabulary.length > 0 && (
         <div class="flex flex-col gap-2">
           <h3 class="text-sm font-semibold text-text-primary m-0">{t.writing.vocabularyTitle}</h3>
@@ -97,12 +138,12 @@ function ReviewBody({ review }: ReviewBodyProps) {
 
 export function WritingResult() {
   const { t } = useLanguage();
-  const { review, isReviewing, tryAgain, viewingEntry, closeViewing } = useWritingContext();
+  const { review, assignment, draftText, isReviewing, tryAgain, viewingEntry, closeViewing } = useWritingContext();
 
   if (viewingEntry) {
     return (
       <div class="flex flex-col flex-1 overflow-hidden">
-        <ReviewBody review={viewingEntry.review} />
+        <ReviewBody review={viewingEntry.review} assignment={viewingEntry.assignment} userText={viewingEntry.userText} />
         <div class="p-4 border-t border-border">
           <Button variant="outline" color="default" fullWidth onClick={closeViewing}>
             {t.writing.backToSetup}
@@ -116,7 +157,7 @@ export function WritingResult() {
 
   return (
     <div class="flex flex-col flex-1 overflow-hidden">
-      <ReviewBody review={review} />
+      <ReviewBody review={review} assignment={assignment} userText={draftText} />
       <div class="p-4 border-t border-border">
         <Button variant="solid" color="primary" fullWidth disabled={isReviewing} onClick={tryAgain}>
           {t.writing.tryAgainButton}

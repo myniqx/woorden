@@ -2,7 +2,7 @@ import { useState } from 'preact/hooks';
 import { Send } from 'lucide-preact';
 import { useQASessionContext } from './QASessionProvider';
 import { Button } from '../commons';
-import { useLanguage } from '../../hooks';
+import { useLanguage, useFooterContent } from '../../hooks';
 
 export function QAInput() {
   const { sendMessage, isStreaming } = useQASessionContext();
@@ -23,8 +23,8 @@ export function QAInput() {
     }
   };
 
-  return (
-    <div class="px-4 py-3 border-t border-border bg-surface shrink-0">
+  useFooterContent(
+    <div class="mx-auto w-full max-w-md px-4 py-3">
       <div class="flex items-end gap-2">
         <textarea
           value={text}
@@ -46,6 +46,9 @@ export function QAInput() {
           class="shrink-0"
         />
       </div>
-    </div>
+    </div>,
+    [text, isStreaming, t.qa.inputPlaceholder],
   );
+
+  return null;
 }

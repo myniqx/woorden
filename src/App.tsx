@@ -56,7 +56,7 @@ export function App() {
   const themeValue = useThemeState();
   const languageValue = useLanguageState();
   const appLayoutValue = useAppLayoutState();
-  const { currentScreen: screen, navigateTo, backOverride } = appLayoutValue;
+  const { currentScreen: screen, navigateTo, backOverride, footerContent } = appLayoutValue;
 
   const {
     needRefresh: [needRefresh],
@@ -208,14 +208,16 @@ export function App() {
             )}
           </main>
 
-          {!isFullscreen(screen) && (
-            <StatsFooter
-              key={`footer-${statsVersion}`}
-              quizType={currentQuizType}
-              needRefresh={needRefresh}
-              onUpdate={() => updateServiceWorker(true)}
-            />
-          )}
+          {isFullscreen(screen)
+            ? footerContent && <div class="shrink-0 bg-surface border-t border-border">{footerContent}</div>
+            : (
+              <StatsFooter
+                key={`footer-${statsVersion}`}
+                quizType={currentQuizType}
+                needRefresh={needRefresh}
+                onUpdate={() => updateServiceWorker(true)}
+              />
+            )}
         </div>
       </AppLayoutContext.Provider>
       </LanguageContext.Provider>

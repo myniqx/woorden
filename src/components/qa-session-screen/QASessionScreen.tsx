@@ -119,7 +119,7 @@ function QASessionScreenInner() {
   );
 
   return (
-    <div class="flex flex-col" style="height: 100%">
+    <div class="flex flex-col mx-auto w-full max-w-md" style="height: 100%">
       <QASessionHistory />
       {viewMode === 'pins' && !pinsLoaded ? null : (viewMode === 'pins' ? <QAPinsView /> : <QAChatView />)}
       {settingsOpen && (

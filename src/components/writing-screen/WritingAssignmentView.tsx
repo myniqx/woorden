@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 import { Button, Badge, Modal } from '../commons';
-import { useLanguage } from '../../hooks';
+import { useLanguage, useFooterContent } from '../../hooks';
 import { useWritingContext } from './WritingProvider';
 
 const ERROR_KEYS = {
@@ -27,6 +27,52 @@ export function WritingAssignmentView() {
   } = useWritingContext();
   const [confirmingBelowMin, setConfirmingBelowMin] = useState(false);
 
+  const minWords = assignment?.minWords ?? 0;
+  const count = wordCount(draftText);
+  const belowMin = count < minWords;
+  const isEmpty = count === 0;
+  const showFooterActions = !!assignment && !!assignment.scenario && !isGeneratingAssignment;
+
+  const handleSubmit = () => {
+    if (belowMin) {
+      setConfirmingBelowMin(true);
+      return;
+    }
+    submitWriting();
+  };
+
+  const confirmSubmitAnyway = () => {
+    setConfirmingBelowMin(false);
+    submitWriting();
+  };
+
+  useFooterContent(
+    showFooterActions ? (
+      <div class="mx-auto w-full max-w-md px-4 py-3 flex flex-col gap-2">
+        {reviewError && (
+          <div class="flex flex-col gap-2 p-3 bg-error-light rounded-lg text-center">
+            <p class="text-sm text-error m-0">{t.chat.errors[ERROR_KEYS[reviewError.kind]]}</p>
+            <Button variant="solid" color="primary" onClick={retryReview}>{t.writing.tryAgainButton}</Button>
+          </div>
+        )}
+        <div class="flex items-center justify-between gap-3">
+          <span class={`text-xs ${belowMin ? 'text-error' : 'text-text-muted'}`}>
+            {merge(t.writing.wordCounter, { count, min: minWords })}
+          </span>
+          <Button
+            variant="solid"
+            color="primary"
+            disabled={isEmpty || isReviewing}
+            onClick={handleSubmit}
+          >
+            {isReviewing ? t.writing.reviewingLabel : t.writing.submitButton}
+          </Button>
+        </div>
+      </div>
+    ) : null,
+    [showFooterActions, reviewError, belowMin, count, minWords, isEmpty, isReviewing, draftText],
+  );
+
   if (assignmentError) {
     return (
       <div class="flex flex-col items-center justify-center flex-1 gap-4 px-6 text-center">
@@ -43,24 +89,6 @@ export function WritingAssignmentView() {
       </div>
     );
   }
-
-  const minWords = assignment.minWords ?? 0;
-  const count = wordCount(draftText);
-  const belowMin = count < minWords;
-  const isEmpty = count === 0;
-
-  const handleSubmit = () => {
-    if (belowMin) {
-      setConfirmingBelowMin(true);
-      return;
-    }
-    submitWriting();
-  };
-
-  const confirmSubmitAnyway = () => {
-    setConfirmingBelowMin(false);
-    submitWriting();
-  };
 
   return (
     <div class="flex-1 overflow-y-auto p-4 flex flex-col gap-4">
@@ -79,36 +107,13 @@ export function WritingAssignmentView() {
         )}
       </div>
 
-      {!isGeneratingAssignment && (
-        <div class="flex flex-col gap-3">
-          {reviewError && (
-            <div class="flex flex-col gap-2 p-3 bg-error-light rounded-lg text-center">
-              <p class="text-sm text-error m-0">{t.chat.errors[ERROR_KEYS[reviewError.kind]]}</p>
-              <Button variant="solid" color="primary" onClick={retryReview}>{t.writing.tryAgainButton}</Button>
-            </div>
-          )}
-
-          <textarea
-            value={draftText}
-            onInput={(e) => setDraftText((e.target as HTMLTextAreaElement).value)}
-            disabled={isReviewing}
-            class="min-h-40 resize-none px-3 py-2 text-sm rounded-lg border border-border bg-bg text-text-primary placeholder:text-text-muted outline-none focus:border-primary transition-[border-color] duration-(--transition-fast) disabled:opacity-50"
-          />
-
-          <div class="flex items-center justify-between gap-3">
-            <span class={`text-xs ${belowMin ? 'text-error' : 'text-text-muted'}`}>
-              {merge(t.writing.wordCounter, { count, min: minWords })}
-            </span>
-            <Button
-              variant="solid"
-              color="primary"
-              disabled={isEmpty || isReviewing}
-              onClick={handleSubmit}
-            >
-              {isReviewing ? t.writing.reviewingLabel : t.writing.submitButton}
-            </Button>
-          </div>
-        </div>
+      {showFooterActions && (
+        <textarea
+          value={draftText}
+          onInput={(e) => setDraftText((e.target as HTMLTextAreaElement).value)}
+          disabled={isReviewing}
+          class="min-h-40 resize-none px-3 py-2 text-sm rounded-lg border border-border bg-bg text-text-primary placeholder:text-text-muted outline-none focus:border-primary transition-[border-color] duration-(--transition-fast) disabled:opacity-50"
+        />
       )}
 
       {confirmingBelowMin && (

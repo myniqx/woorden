@@ -2,6 +2,7 @@ import { useState } from 'preact/hooks';
 import { Send } from 'lucide-preact';
 import { useChatContext } from './ChatProvider';
 import { Button } from '../commons';
+import { useFooterContent } from '../../hooks';
 
 export function ChatInput() {
   const { sendMessage, isStreaming } = useChatContext();
@@ -21,8 +22,8 @@ export function ChatInput() {
     }
   };
 
-  return (
-    <div class="px-4 py-3 border-t border-border bg-surface shrink-0">
+  useFooterContent(
+    <div class="mx-auto w-full max-w-md px-4 py-3">
       <div class="flex items-end gap-2">
         <textarea
           value={text}
@@ -44,6 +45,9 @@ export function ChatInput() {
           class="shrink-0"
         />
       </div>
-    </div>
+    </div>,
+    [text, isStreaming],
   );
+
+  return null;
 }

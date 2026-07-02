@@ -10,6 +10,9 @@ interface AppLayoutContextValue {
   headerCenter: ComponentChildren;
   setHeaderCenter: (content: ComponentChildren) => void;
   clearHeaderCenter: () => void;
+  footerContent: ComponentChildren;
+  setFooterContent: (content: ComponentChildren) => void;
+  clearFooterContent: () => void;
   backOverride: BackOverride | null;
   setBackOverride: (fn: BackOverride | null) => void;
   clearBackOverride: () => void;
@@ -22,6 +25,9 @@ export const AppLayoutContext = createContext<AppLayoutContextValue>({
   headerCenter: null,
   setHeaderCenter: () => {},
   clearHeaderCenter: () => {},
+  footerContent: null,
+  setFooterContent: () => {},
+  clearFooterContent: () => {},
   backOverride: null,
   setBackOverride: () => {},
   clearBackOverride: () => {},
@@ -32,6 +38,7 @@ export const AppLayoutContext = createContext<AppLayoutContextValue>({
 
 export function useAppLayoutState(): AppLayoutContextValue {
   const [headerCenter, setHeaderCenter] = useState<ComponentChildren>(null);
+  const [footerContent, setFooterContent] = useState<ComponentChildren>(null);
   const [backOverride, setBackOverrideState] = useState<BackOverride | null>(null);
   const [currentScreen, setCurrentScreen] = useState<Screen>('menu');
   const [currentTab, setCurrentTab] = useState<string | null>(null);
@@ -45,6 +52,9 @@ export function useAppLayoutState(): AppLayoutContextValue {
     headerCenter,
     setHeaderCenter,
     clearHeaderCenter: () => setHeaderCenter(null),
+    footerContent,
+    setFooterContent,
+    clearFooterContent: () => setFooterContent(null),
     backOverride,
     setBackOverride: (fn) => setBackOverrideState(() => fn),
     clearBackOverride: () => setBackOverrideState(null),
@@ -66,6 +76,18 @@ export function useHeaderCenter(content: ComponentChildren, deps: unknown[]) {
   useEffect(() => {
     setHeaderCenter(contentRef.current);
     return () => clearHeaderCenter();
+  }, deps);
+}
+
+/** Lets a screen render its own fixed footer (e.g. a chat input) instead of the default StatsFooter. */
+export function useFooterContent(content: ComponentChildren, deps: unknown[]) {
+  const { setFooterContent, clearFooterContent } = useContext(AppLayoutContext);
+  const contentRef = useRef(content);
+  contentRef.current = content;
+
+  useEffect(() => {
+    setFooterContent(contentRef.current);
+    return () => clearFooterContent();
   }, deps);
 }
 

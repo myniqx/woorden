@@ -25,7 +25,7 @@ function ChatSettingsFields() {
       onModelChange={setSelectedModel}
     >
       <div class="flex flex-col gap-1.5">
-        <label class="text-xs font-medium text-text-secondary uppercase tracking-[0.05em]">{t.chat.level}</label>
+        <label class="text-xs font-medium text-text-secondary uppercase tracking-wider">{t.chat.level}</label>
         <select
           value={selectedLevel}
           onChange={(e) => setSelectedLevel((e.target as HTMLSelectElement).value as CEFRLevel)}
@@ -79,7 +79,7 @@ function ChatScreenInner() {
   );
 
   return (
-    <div class="flex flex-col" style="height: 100%">
+    <div class="flex flex-col mx-auto w-full max-w-md" style="height: 100%">
       <ChatHistory />
       {activeSession ? <ChatMessages /> : <ChatSetup />}
       <ChatInput />
