@@ -187,4 +187,15 @@ export const tr: Locale = {
       truncated: 'Yanıt, modelin çıktı limitine takıldığı için kesildi.',
     },
   },
+
+  qa: {
+    title: 'Hollandaca Hakkında Sor',
+    subtitle: 'Hollandaca dilbilgisi, kelime veya kullanım hakkında her şeyi sor',
+    emptyPinned: 'Henüz pinlenmiş cevap yok — bir soru sor ve saklamak istediklerini pinle.',
+    newQuestion: 'Yeni Soru',
+    inputPlaceholder: 'Hollandaca hakkında sor...',
+    alreadyPinned: 'Zaten pinlendi',
+    deletePinConfirm: 'Bu pinlenmiş cevap silinsin mi?',
+    noSessions: 'Henüz soru yok',
+  },
 };

@@ -1,7 +1,7 @@
 import type { CEFRLevel } from '../../components/ai-chat-screen/types';
 import type { Language } from '../../types';
 
-const LANGUAGE_NAMES: Record<Language, string> = {
+export const LANGUAGE_NAMES: Record<Language, string> = {
   tr: 'Türkçe',
   en: 'English',
   ar: 'العربية',

@@ -185,6 +185,17 @@ export const en = {
       truncated: 'The response was cut off by the model output limit.',
     },
   },
+
+  qa: {
+    title: 'Ask about Dutch',
+    subtitle: 'Ask anything about Dutch grammar, vocabulary or usage',
+    emptyPinned: 'No pinned answers yet — ask a question and pin the ones you want to keep.',
+    newQuestion: 'New Question',
+    inputPlaceholder: 'Ask about Dutch...',
+    alreadyPinned: 'Already pinned',
+    deletePinConfirm: 'Delete this pinned answer?',
+    noSessions: 'No questions yet',
+  },
 };
 
 export type Locale = typeof en;

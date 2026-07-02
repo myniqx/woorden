@@ -187,4 +187,15 @@ export const fr: Locale = {
       truncated: 'La réponse a été coupée par la limite de sortie du modèle.',
     },
   },
+
+  qa: {
+    title: 'Demander sur le néerlandais',
+    subtitle: 'Posez toute question sur la grammaire, le vocabulaire ou l\'usage du néerlandais',
+    emptyPinned: 'Aucune réponse épinglée pour le moment — posez une question et épinglez celles que vous voulez garder.',
+    newQuestion: 'Nouvelle question',
+    inputPlaceholder: 'Posez une question sur le néerlandais...',
+    alreadyPinned: 'Déjà épinglé',
+    deletePinConfirm: 'Supprimer cette réponse épinglée ?',
+    noSessions: 'Aucune question pour le moment',
+  },
 };

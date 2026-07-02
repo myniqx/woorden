@@ -543,6 +543,32 @@ Groq requires the word "json" somewhere in the prompt when using `response_forma
 - Gemini: `gemini-3.1-flash-lite`
 - Groq: `llama-3.3-70b-versatile`
 
+### Consumers
+
+- **`src/components/ai-chat-screen/`** — "Dutch Conversation" free-talk practice.
+  `ChatProvider` owns sessions (IndexedDB `woorden_chat`, stores `sessions`+`settings`,
+  via `src/services/ai/chatStorage.ts`); `useAIChat({ historyLimit: 12 })` for the reply
+  stream, plus a parallel `streamObject` review call per user message
+  (`buildReviewPrompt` in `chatPrompts.ts`). CEFR level + provider/model selectable per
+  session.
+- **`src/components/qa-session-screen/`** — "Ask about Dutch" Q&A, single screen (route
+  `'qa'`). `QASessionProvider` mirrors `ChatProvider` (IndexedDB `woorden_qa`, stores
+  `sessions`+`pins`+`settings`, via `src/services/ai/qaStorage.ts`); `useAIChat({ historyLimit: 4 })`,
+  system prompt from `buildQASystemPrompt` in `src/services/ai/qaPrompts.ts`. No CEFR
+  level, no review call. A local `viewMode: 'pins' | 'chat'` (in `QASessionProvider`)
+  switches the same screen between two views — no separate route: `'pins'` (default) shows
+  a grid of pinned cards with a floating action button; `'chat'` shows the question/answer
+  stream. Sending the first message auto-switches to `'chat'`; the header's Pin icon
+  (`goToPins`) returns to `'pins'`; the History icon opens the session drawer from either
+  view. Every assistant answer has a pin action: `pinMessage` runs a `streamObject` call
+  (`buildPinTitlePrompt`) to generate a short title, then stores an **independent copy**
+  (title + answer only) as a `QAPin` in the `pins` store — deleting or editing the source
+  session afterwards does not affect the pin.
+- **`src/components/ai-shared/ProviderModelSelect.tsx`** — provider+model `<select>` pair
+  (fetches `adapter.getModels()`, falls back to `adapter.preferredModel`) shared by both
+  chat and Q&A screens; accepts `children` for screen-specific extra fields (chat passes
+  its CEFR level select).
+
 ---
 
 ## Common Component Extraction Workflow
