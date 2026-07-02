@@ -26,6 +26,9 @@ export function Markdown({ content, class: className }: Props) {
         [&_pre_code]:bg-transparent [&_pre_code]:p-0 [&_pre_code]:text-xs [&_pre_code]:font-mono
         [&_blockquote]:border-l-2 [&_blockquote]:border-primary [&_blockquote]:pl-3 [&_blockquote]:py-1 [&_blockquote]:my-3 [&_blockquote]:text-text-secondary [&_blockquote]:text-xs
         [&_blockquote_p]:m-0
+        [&_table]:block [&_table]:w-full [&_table]:overflow-x-auto [&_table]:mb-3 [&_table]:border-collapse [&_table]:text-xs
+        [&_th]:border [&_th]:border-border [&_th]:bg-surface-elevated [&_th]:px-2 [&_th]:py-1.5 [&_th]:text-left [&_th]:font-semibold [&_th]:text-text-primary [&_th]:whitespace-nowrap
+        [&_td]:border [&_td]:border-border [&_td]:px-2 [&_td]:py-1.5 [&_td]:text-text-primary
         ${className ?? ''}`}
       dangerouslySetInnerHTML={{ __html: marked.parse(content) as string }}
     />

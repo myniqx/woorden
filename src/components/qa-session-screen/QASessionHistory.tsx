@@ -7,7 +7,8 @@ function formatDate(ts: number): string {
   return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
 }
 
-function sessionLabel(firstMessage: string | undefined): string {
+function sessionLabel(title: string | undefined, firstMessage: string | undefined): string {
+  if (title) return title;
   if (!firstMessage) return '';
   return firstMessage.length > 60 ? `${firstMessage.slice(0, 60)}…` : firstMessage;
 }
@@ -54,7 +55,7 @@ export function QASessionHistory() {
               onClick={() => loadSession(session.id)}
             >
               <div class="flex-1 min-w-0">
-                <p class="text-xs font-medium truncate">{sessionLabel(session.messages[0]?.content)}</p>
+                <p class="text-xs font-medium truncate">{sessionLabel(session.title, session.messages[0]?.content)}</p>
                 <p class="text-xs text-text-muted">{formatDate(session.updatedAt)}</p>
               </div>
               <button

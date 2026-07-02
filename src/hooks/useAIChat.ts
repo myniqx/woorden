@@ -1,8 +1,16 @@
 import { useCallback, useRef, useState } from 'preact/hooks';
-import { streamChat, toAIError, AIError } from '../services/ai';
+import { streamChat, streamChatObject, toAIError, AIError } from '../services/ai';
 import type { AIAdapter, AIChatMessage, AIStreamOptions } from '../services/ai';
 
 export interface AIChatSendResult {
+  text: string;
+  truncated: boolean;
+  error: AIError | null;
+}
+
+export interface AIChatSendObjectResult<T> {
+  /** Parsed object, or null when the response contained no valid JSON (fall back to text). */
+  object: T | null;
   text: string;
   truncated: boolean;
   error: AIError | null;
@@ -26,6 +34,19 @@ export interface UseAIChatResult {
     onChunk: (accumulated: string) => void,
     options?: Omit<AIStreamOptions, 'signal'>,
   ) => Promise<AIChatSendResult | null>;
+  /**
+   * Streams one assistant reply expected to be JSON. onPartial receives the parsed
+   * partial object on every chunk (via completeJson repair). Resolves with the final
+   * parsed object — or object: null with the raw text when the response wasn't valid
+   * JSON. Never rejects. Returns null when another send is already in flight.
+   */
+  sendObject: <T>(
+    adapter: AIAdapter,
+    system: string,
+    messages: AIChatMessage[],
+    onPartial: (partial: Partial<T>) => void,
+    options?: Omit<AIStreamOptions, 'signal'>,
+  ) => Promise<AIChatSendObjectResult<T> | null>;
   abort: () => void;
   isStreaming: boolean;
   error: AIError | null;
@@ -40,13 +61,12 @@ export function useAIChat({ historyLimit }: UseAIChatOptions = {}): UseAIChatRes
     abortRef.current?.abort();
   }, []);
 
-  const send = useCallback(async (
-    adapter: AIAdapter,
-    system: string,
+  /** Shared single-flight guard + abort/error/streaming state around one stream call. */
+  const runStream = useCallback(async <R>(
     messages: AIChatMessage[],
-    onChunk: (accumulated: string) => void,
-    options?: Omit<AIStreamOptions, 'signal'>,
-  ): Promise<AIChatSendResult | null> => {
+    fn: (windowed: AIChatMessage[], signal: AbortSignal) => Promise<R>,
+    onError: (err: AIError) => R,
+  ): Promise<R | null> => {
     if (abortRef.current) return null;
 
     const controller = new AbortController();
@@ -56,20 +76,50 @@ export function useAIChat({ historyLimit }: UseAIChatOptions = {}): UseAIChatRes
     setError(null);
     setIsStreaming(true);
     try {
-      const result = await streamChat(adapter, system, windowed, onChunk, {
-        ...options,
-        signal: controller.signal,
-      });
-      return { ...result, error: null };
+      return await fn(windowed, controller.signal);
     } catch (e) {
       const err = toAIError(e, 'AI');
       if (err.kind !== 'aborted') setError(err);
-      return { text: '', truncated: false, error: err };
+      return onError(err);
     } finally {
       setIsStreaming(false);
       if (abortRef.current === controller) abortRef.current = null;
     }
   }, [historyLimit]);
 
-  return { send, abort, isStreaming, error };
+  const send = useCallback((
+    adapter: AIAdapter,
+    system: string,
+    messages: AIChatMessage[],
+    onChunk: (accumulated: string) => void,
+    options?: Omit<AIStreamOptions, 'signal'>,
+  ): Promise<AIChatSendResult | null> => {
+    return runStream(
+      messages,
+      async (windowed, signal): Promise<AIChatSendResult> => {
+        const result = await streamChat(adapter, system, windowed, onChunk, { ...options, signal });
+        return { ...result, error: null };
+      },
+      err => ({ text: '', truncated: false, error: err }),
+    );
+  }, [runStream]);
+
+  const sendObject = useCallback(<T,>(
+    adapter: AIAdapter,
+    system: string,
+    messages: AIChatMessage[],
+    onPartial: (partial: Partial<T>) => void,
+    options?: Omit<AIStreamOptions, 'signal'>,
+  ): Promise<AIChatSendObjectResult<T> | null> => {
+    return runStream(
+      messages,
+      async (windowed, signal): Promise<AIChatSendObjectResult<T>> => {
+        const result = await streamChatObject<T>(adapter, system, windowed, onPartial, { ...options, signal });
+        return { ...result, error: null };
+      },
+      err => ({ object: null, text: '', truncated: false, error: err }),
+    );
+  }, [runStream]);
+
+  return { send, sendObject, abort, isStreaming, error };
 }

@@ -5,6 +5,8 @@ export interface QAMessage {
   role: 'user' | 'assistant';
   content: string;
   timestamp: number;
+  /** Short title generated alongside the answer to the session's first question. */
+  title?: string;
   errorKind?: AIErrorKind;
   truncated?: boolean;
   pinned?: boolean;
@@ -12,6 +14,8 @@ export interface QAMessage {
 
 export interface QASession {
   id: string;
+  /** Set from the first answer's generated title once available; falls back to the question text until then. */
+  title?: string;
   providerId: string;
   messages: QAMessage[];
   createdAt: number;

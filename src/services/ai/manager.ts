@@ -9,6 +9,26 @@ function extractJson(raw: string): string {
   return raw.slice(start, end + 1);
 }
 
+function emitPartial<T>(accumulated: string, onPartial: (partial: Partial<T>) => void): void {
+  const completed = completeJson(extractJson(accumulated));
+  if (!completed) return;
+  try {
+    onPartial(JSON.parse(completed) as Partial<T>);
+  } catch {
+    // not yet parseable — wait for more chunks
+  }
+}
+
+function parseFinal<T>(accumulated: string): T | null {
+  const finalJson = completeJson(extractJson(accumulated));
+  if (!finalJson) return null;
+  try {
+    return JSON.parse(finalJson) as T;
+  } catch {
+    return null;
+  }
+}
+
 export async function streamObject<T>(
   adapter: AIAdapter,
   prompt: string,
@@ -19,19 +39,12 @@ export async function streamObject<T>(
 
   for await (const chunk of adapter.stream(prompt, options)) {
     accumulated += chunk;
-    const completed = completeJson(extractJson(accumulated));
-    if (completed) {
-      try {
-        onPartial(JSON.parse(completed) as Partial<T>);
-      } catch {
-        // not yet parseable — wait for more chunks
-      }
-    }
+    emitPartial(accumulated, onPartial);
   }
 
-  const finalJson = completeJson(extractJson(accumulated));
-  if (!finalJson) throw new Error('No valid JSON in AI response');
-  return JSON.parse(finalJson) as T;
+  const result = parseFinal<T>(accumulated);
+  if (result === null) throw new Error('No valid JSON in AI response');
+  return result;
 }
 
 export interface ChatStreamResult {
@@ -64,4 +77,39 @@ export async function streamChat(
   }
 
   return { text: accumulated, truncated };
+}
+
+export interface ChatObjectStreamResult<T> {
+  /** Parsed object, or null when the response contained no valid JSON (fall back to text). */
+  object: T | null;
+  /** Raw accumulated response text. */
+  text: string;
+  /** true when the model hit its output token limit and the reply is cut off */
+  truncated: boolean;
+}
+
+export async function streamChatObject<T>(
+  adapter: AIAdapter,
+  system: string,
+  messages: AIChatMessage[],
+  onPartial: (partial: Partial<T>) => void,
+  options?: AIStreamOptions,
+): Promise<ChatObjectStreamResult<T>> {
+  let accumulated = '';
+  let truncated = false;
+
+  const streamOptions: AIStreamOptions = {
+    ...options,
+    onFinish: reason => {
+      if (reason === 'length') truncated = true;
+      options?.onFinish?.(reason);
+    },
+  };
+
+  for await (const chunk of adapter.chat(system, messages, streamOptions)) {
+    accumulated += chunk;
+    emitPartial(accumulated, onPartial);
+  }
+
+  return { object: parseFinal<T>(accumulated), text: accumulated, truncated };
 }

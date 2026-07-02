@@ -484,16 +484,21 @@ Client-side AI with user-provided API keys. No server proxy — keys stored in l
 ### Architecture
 
 ```
-useAI<T>() hook (one-shot JSON)      useAIChat() hook (multi-turn text, historyLimit windowing, abort)
-    ↓                                    ↓
-streamObject() in manager.ts         streamChat() in manager.ts  ← accumulation + truncation flag
-    ↓                                    ↓
+useAI<T>() hook (one-shot JSON)      useAIChat() hook (multi-turn, historyLimit windowing, abort)
+    ↓                                    ↓                          ↓
+streamObject() in manager.ts   streamChat() (text)      streamChatObject<T>() (JSON via completeJson)
+    ↓                                    ↓                          ↓
 AIAdapter interface  ← stream(prompt, opts?) / chat(system, messages, opts?): AsyncIterable<string>
     ↓                   opts: { signal, temperature, maxTokens, onFinish }
 streamSSE() in sse.ts  ← shared fetch + SSE parsing + AIError mapping (one place)
     ↓
 GeminiAdapter / GroqAdapter / OllamaAdapter / LMStudioAdapter / ServerAdapter
 ```
+
+`useAIChat` exposes both `send` (plain text, `streamChat`) and `sendObject<T>` (structured
+JSON per turn, `streamChatObject` — partial objects arrive progressively via `completeJson`,
+same repair utility `streamObject` uses). Both share the same single-flight guard, abort
+controller and `historyLimit` windowing.
 
 ### Errors
 
@@ -553,17 +558,22 @@ Groq requires the word "json" somewhere in the prompt when using `response_forma
   session.
 - **`src/components/qa-session-screen/`** — "Ask about Dutch" Q&A, single screen (route
   `'qa'`). `QASessionProvider` mirrors `ChatProvider` (IndexedDB `woorden_qa`, stores
-  `sessions`+`pins`+`settings`, via `src/services/ai/qaStorage.ts`); `useAIChat({ historyLimit: 4 })`,
-  system prompt from `buildQASystemPrompt` in `src/services/ai/qaPrompts.ts`. No CEFR
-  level, no review call. A local `viewMode: 'pins' | 'chat'` (in `QASessionProvider`)
-  switches the same screen between two views — no separate route: `'pins'` (default) shows
-  a grid of pinned cards with a floating action button; `'chat'` shows the question/answer
-  stream. Sending the first message auto-switches to `'chat'`; the header's Pin icon
-  (`goToPins`) returns to `'pins'`; the History icon opens the session drawer from either
-  view. Every assistant answer has a pin action: `pinMessage` runs a `streamObject` call
-  (`buildPinTitlePrompt`) to generate a short title, then stores an **independent copy**
-  (title + answer only) as a `QAPin` in the `pins` store — deleting or editing the source
-  session afterwards does not affect the pin.
+  `sessions`+`pins`+`settings`, via `src/services/ai/qaStorage.ts`); `useAIChat({ historyLimit: 4 })`.
+  No CEFR level, no separate review call. A local `viewMode: 'pins' | 'chat'` (in
+  `QASessionProvider`) switches the same screen between two views — no separate route:
+  `'pins'` (default, or auto-selected on load when there are no pins yet) shows a grid of
+  pinned cards with a floating action button; `'chat'` shows the question/answer stream.
+  Sending the first message auto-switches to `'chat'`; the header's Pin icon (`goToPins`)
+  returns to `'pins'`; the History icon opens the session drawer from either view.
+  Every answer is fetched via `chat.sendObject<QAAnswer>` (system prompt from
+  `buildQASystemPrompt` in `src/services/ai/qaPrompts.ts`) requesting a single JSON object
+  `{ answer, title }` per turn — the streamed `answer` renders progressively as markdown,
+  and `title` (a short AI-generated summary of that specific question) arrives with no
+  second AI call. The first message's `title` is also saved as the session's `title`,
+  shown in the history drawer. Every assistant answer has a pin action: `pinMessage` reuses
+  the message's own `title` and stores an **independent copy** (title + answer only) as a
+  `QAPin` in the `pins` store — deleting or editing the source session afterwards does not
+  affect the pin.
 - **`src/components/ai-shared/ProviderModelSelect.tsx`** — provider+model `<select>` pair
   (fetches `adapter.getModels()`, falls back to `adapter.preferredModel`) shared by both
   chat and Q&A screens; accepts `children` for screen-specific extra fields (chat passes

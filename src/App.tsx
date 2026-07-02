@@ -55,7 +55,7 @@ export function App() {
   const themeValue = useThemeState();
   const languageValue = useLanguageState();
   const appLayoutValue = useAppLayoutState();
-  const { currentScreen: screen, navigateTo } = appLayoutValue;
+  const { currentScreen: screen, navigateTo, backOverride } = appLayoutValue;
 
   const {
     needRefresh: [needRefresh],
@@ -137,7 +137,9 @@ export function App() {
           <Header
             key={`header-${statsVersion}`}
             showBackButton={screen === 'quiz' || screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' || screen === 'qa'}
-            onBack={screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' || screen === 'qa' ? () => history.back() : exitQuiz}
+            onBack={screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' || screen === 'qa'
+              ? () => { if (!backOverride?.()) history.back(); }
+              : exitQuiz}
             onProfileClick={() => { history.pushState({ screen: 'profile' }, ''); navigateTo('profile'); }}
             user={user}
           />

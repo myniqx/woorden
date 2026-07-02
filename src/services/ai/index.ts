@@ -1,6 +1,6 @@
 export type { AIProvider, AIAdapter, AIChatMessage, ProviderType, AIStreamOptions, AIFinishReason } from './types';
-export { streamObject, streamChat } from './manager';
-export type { ChatStreamResult } from './manager';
+export { streamObject, streamChat, streamChatObject } from './manager';
+export type { ChatStreamResult, ChatObjectStreamResult } from './manager';
 export { AIError, toAIError, httpToAIError } from './errors';
 export type { AIErrorKind } from './errors';
 export {

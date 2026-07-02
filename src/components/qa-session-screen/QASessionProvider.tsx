@@ -8,9 +8,9 @@ import {
   newSessionId, newMessageId,
   getPins, savePin, deletePin, newPinId,
 } from '../../services/ai/qaStorage';
-import { buildQASystemPrompt, buildPinTitlePrompt } from '../../services/ai/qaPrompts';
-import type { PinTitleResult } from '../../services/ai/qaPrompts';
-import { getProviders, getActiveProviderType, getProviderMeta, streamObject } from '../../services/ai';
+import { buildQASystemPrompt } from '../../services/ai/qaPrompts';
+import type { QAAnswer } from '../../services/ai/qaPrompts';
+import { getProviders, getActiveProviderType, getProviderMeta } from '../../services/ai';
 import type { AIAdapter, AIProvider } from '../../services/ai';
 import { useLanguage, useAIChat, useAppLayout } from '../../hooks';
 
@@ -156,6 +156,7 @@ export function QASessionProvider({ children }: { children: ComponentChildren })
         timestamp: Date.now(),
       };
 
+      const isFirstMessage = !activeSession;
       let session = activeSession
         ? { ...activeSession, messages: [...activeSession.messages, userMsg] }
         : {
@@ -179,20 +180,20 @@ export function QASessionProvider({ children }: { children: ComponentChildren })
       };
       patchSession(sessionId, s => ({ ...s, messages: [...s.messages, assistantMsg] }));
 
-      let accumulated = '';
-      const result = await chat.send(adapter, systemPrompt, history, acc => {
-        accumulated = acc;
+      let accumulatedAnswer = '';
+      const result = await chat.sendObject<QAAnswer>(adapter, systemPrompt, history, partial => {
+        accumulatedAnswer = partial.answer ?? '';
         setActiveSession(prev => {
           if (!prev || prev.id !== sessionId) return prev;
           const messages = prev.messages.map(m =>
-            m.id === assistantMsg.id ? { ...m, content: acc } : m,
+            m.id === assistantMsg.id ? { ...m, content: accumulatedAnswer } : m,
           );
           return { ...prev, messages };
         });
       }, { temperature: 0.3 });
       if (!result) return;
 
-      if (result.error?.kind === 'aborted' && !accumulated) {
+      if (result.error?.kind === 'aborted' && !accumulatedAnswer) {
         patchSession(sessionId, s => ({
           ...s,
           messages: s.messages.filter(m => m.id !== assistantMsg.id),
@@ -200,13 +201,18 @@ export function QASessionProvider({ children }: { children: ComponentChildren })
         return;
       }
 
+      const finalAnswer = result.error ? accumulatedAnswer : (result.object?.answer ?? result.text);
+      const answerTitle = result.object?.title;
+
       patchSession(sessionId, s => ({
         ...s,
+        title: isFirstMessage && answerTitle ? answerTitle : s.title,
         messages: s.messages.map(m =>
           m.id === assistantMsg.id
             ? {
                 ...m,
-                content: result.error ? accumulated : result.text,
+                content: finalAnswer,
+                title: answerTitle,
                 truncated: result.truncated || undefined,
                 errorKind: result.error && result.error.kind !== 'aborted' ? result.error.kind : undefined,
               }
@@ -217,7 +223,7 @@ export function QASessionProvider({ children }: { children: ComponentChildren })
       sendingRef.current = false;
       setIsSending(false);
     }
-  }, [activeSession, selectedProviderId, selectedModel, providerList, language, updateSession, patchSession, chat.send]);
+  }, [activeSession, selectedProviderId, selectedModel, providerList, language, updateSession, patchSession, chat.sendObject]);
 
   const loadSession = useCallback(async (id: string) => {
     chat.abort();
@@ -255,31 +261,13 @@ export function QASessionProvider({ children }: { children: ComponentChildren })
 
   const pinMessage = useCallback(async (messageId: string) => {
     if (!activeSession) return;
-    const provider = providerList.find(p => p.type === selectedProviderId) ?? providerList[0];
-    if (!provider) return;
 
     const messages = activeSession.messages;
-    const idx = messages.findIndex(m => m.id === messageId);
-    const answerMsg = messages[idx];
+    const answerMsg = messages.find(m => m.id === messageId);
     if (!answerMsg || answerMsg.role !== 'assistant' || !answerMsg.content || answerMsg.pinned) return;
 
-    const questionMsg = [...messages.slice(0, idx)].reverse().find(m => m.role === 'user');
-    const question = questionMsg?.content ?? '';
     const sessionId = activeSession.id;
-
-    let title = answerMsg.content.slice(0, 40);
-    try {
-      const adapter = createAdapter(provider, selectedModel || undefined);
-      const result = await streamObject<PinTitleResult>(
-        adapter,
-        buildPinTitlePrompt(question, answerMsg.content, language),
-        () => {},
-        { temperature: 0.3 },
-      );
-      if (result.title) title = result.title;
-    } catch {
-      // fall back to the truncated answer as title
-    }
+    const title = answerMsg.title || answerMsg.content.slice(0, 40);
 
     const pin: QAPin = { id: newPinId(), title, answer: answerMsg.content, createdAt: Date.now() };
     await savePin(pin);
@@ -289,7 +277,7 @@ export function QASessionProvider({ children }: { children: ComponentChildren })
       ...s,
       messages: s.messages.map(m => (m.id === messageId ? { ...m, pinned: true } : m)),
     }));
-  }, [activeSession, providerList, selectedProviderId, selectedModel, language, patchSession]);
+  }, [activeSession, patchSession]);
 
   const removePin = useCallback(async (id: string) => {
     setPins(prev => prev.filter(p => p.id !== id));

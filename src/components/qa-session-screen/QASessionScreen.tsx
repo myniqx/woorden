@@ -7,7 +7,7 @@ import { QAInput } from './QAInput';
 import { QAPinCard } from './QAPinCard';
 import { Modal, Button } from '../commons';
 import { ProviderModelSelect } from '../ai-shared';
-import { useHeaderCenter, useLanguage } from '../../hooks';
+import { useHeaderCenter, useBackOverride, useLanguage } from '../../hooks';
 
 function QASettingsFields() {
   const { selectedProviderId, setSelectedProviderId, selectedModel, setSelectedModel } = useQASessionContext();
@@ -87,8 +87,16 @@ function QASessionScreenInner() {
 
   const providerLabel = providerList.find(p => p.type === selectedProviderId)?.label ?? '';
   const headerTitle = viewMode === 'chat'
-    ? (activeSession?.messages[0]?.content.slice(0, 30) || t.qa.newQuestion)
+    ? (activeSession?.title || activeSession?.messages[0]?.content.slice(0, 30) || t.qa.newQuestion)
     : t.qa.title;
+
+  useBackOverride(() => {
+    if (viewMode === 'chat') {
+      goToPins();
+      return true;
+    }
+    return false;
+  }, [viewMode, goToPins]);
 
   useHeaderCenter(
     <div class="flex items-center justify-between w-full">
@@ -107,7 +115,7 @@ function QASessionScreenInner() {
         ? <Button variant="ghost" color="default" size="icon" icon={Pin} onClick={goToPins} aria-label={t.qa.title} />
         : <span class="w-9" />}
     </div>,
-    [activeSession?.id, activeSession?.messages[0]?.content, viewMode, selectedProviderId, providerLabel, openSettings, newSession, goToPins, setDrawerOpen],
+    [activeSession?.id, activeSession?.title, activeSession?.messages[0]?.content, viewMode, selectedProviderId, providerLabel, openSettings, newSession, goToPins, setDrawerOpen],
   );
 
   return (
