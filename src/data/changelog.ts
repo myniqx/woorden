@@ -11,6 +11,14 @@ export interface ChangelogEntry {
 
 export const changelog: ChangelogEntry[] = [
   {
+    date: '2026-07-02',
+    items: [
+      'Ask about Dutch added: ask free-form questions about Dutch grammar, vocabulary, or usage and pin the answers you want to keep',
+      'Writing Test added: get an AI-generated writing assignment (email, message, or social post), submit your text, and receive a detailed graded review with corrections and useful vocabulary',
+      'Past writing tests are saved and can be reviewed from a history panel',
+    ],
+  },
+  {
     date: '2026-06-27',
     items: [
       'AI Chat added: practice Dutch conversation with an AI tutor — each message is automatically reviewed for grammar and vocabulary',
