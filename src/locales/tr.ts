@@ -178,5 +178,13 @@ export const tr: Locale = {
     conversations: 'Konuşmalar',
     newChat: 'Yeni sohbet',
     noConversations: 'Henüz konuşma yok',
+    errors: {
+      rateLimit: 'İstek limiti aşıldı — biraz bekleyip tekrar deneyin.',
+      auth: 'API anahtarı geçersiz veya süresi dolmuş. AI ayarlarını kontrol edin.',
+      contextLength: 'Konuşma bu model için çok uzun. Yeni bir sohbet başlatın.',
+      network: 'Ağ hatası — bağlantınızı kontrol edin.',
+      unknown: 'Bir şeyler ters gitti. Lütfen tekrar deneyin.',
+      truncated: 'Yanıt, modelin çıktı limitine takıldığı için kesildi.',
+    },
   },
 };

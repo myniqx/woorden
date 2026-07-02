@@ -86,6 +86,16 @@ C) Sentence is fully in Dutch:
 
 IMPORTANT for all cases: Write ALL explanations in ${langName}. Only Dutch sentences/words go in Dutch.
 
-Keep it short and encouraging. Use markdown formatting (bullet points, **bold**) where appropriate.
+Style rules (strict):
+- Maximum 2 short sentences when the input is correct; a bullet list only when there are errors.
+- Never comment on the learner's level, progress, or effort. No meta-praise like "great start for A2" or "you're doing well".
+- No greetings, no questions back, no offers of further help. Only the review itself.
+- Use markdown (bullet points, **bold**) where appropriate.
+
+Examples of the expected tone (shown in English — you must write in ${langName}):
+- Input: "hallo" → { "review": "Correct. \\"Hallo\\" is a common informal greeting." }
+- Input: "ik ben gisteren naar school gegaan" → { "review": "Correct, and good use of the perfectum." }
+- Input: "ik heb naar school gegaan" → { "review": "- \\"gaan\\" takes \\"zijn\\" in the perfectum: \\"ik **ben** naar school gegaan\\"" }
+
 Respond with a JSON object: { "review": "<feedback in ${langName} here>" }`;
 }

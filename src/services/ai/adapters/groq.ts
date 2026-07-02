@@ -1,4 +1,5 @@
-import type { AIAdapter, AIChatMessage } from '../types';
+import type { AIAdapter, AIChatMessage, AIStreamOptions } from '../types';
+import { streamSSE, extractOpenAI } from '../sse';
 
 const GROQ_PREFERRED = 'llama-3.3-70b-versatile';
 const modelCache = new Map<string, string[]>();
@@ -72,62 +73,32 @@ export class GroqAdapter implements AIAdapter {
     return models;
   }
 
-  private async *streamRaw(messages: object[], jsonMode = false): AsyncIterable<string> {
-    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${this.apiKey}`,
-      },
-      body: JSON.stringify({
-        model: this.model,
-        messages,
-        stream: true,
-        ...(jsonMode ? { response_format: { type: 'json_object' } } : {}),
-      }),
-    });
-
-    if (!response.ok) {
-      const err = await response.text();
-      throw new Error(`Groq error ${response.status}: ${err}`);
-    }
-
-    const reader = response.body!.getReader();
-    const decoder = new TextDecoder();
-    let buffer = '';
-
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-
-      buffer += decoder.decode(value, { stream: true });
-      const lines = buffer.split('\n');
-      buffer = lines.pop() ?? '';
-
-      for (const line of lines) {
-        if (!line.startsWith('data: ')) continue;
-        const data = line.slice(6).trim();
-        if (data === '[DONE]') return;
-
-        try {
-          const parsed = JSON.parse(data);
-          const text: string | undefined = parsed?.choices?.[0]?.delta?.content;
-          if (text) yield text;
-        } catch {
-          // malformed SSE line — skip
-        }
-      }
-    }
+  private streamRaw(messages: object[], jsonMode: boolean, options?: AIStreamOptions): AsyncIterable<string> {
+    const body = {
+      model: this.model,
+      messages,
+      stream: true,
+      ...(jsonMode ? { response_format: { type: 'json_object' } } : {}),
+      ...(options?.temperature !== undefined ? { temperature: options.temperature } : {}),
+      ...(options?.maxTokens !== undefined ? { max_tokens: options.maxTokens } : {}),
+    };
+    return streamSSE(
+      'Groq',
+      'https://api.groq.com/openai/v1/chat/completions',
+      { headers: { Authorization: `Bearer ${this.apiKey}` }, body },
+      extractOpenAI,
+      options,
+    );
   }
 
-  async *stream(prompt: string): AsyncIterable<string> {
-    yield* this.streamRaw([{ role: 'user', content: `Reply with a json object. ${prompt}` }], true);
+  stream(prompt: string, options?: AIStreamOptions): AsyncIterable<string> {
+    return this.streamRaw([{ role: 'user', content: `Reply with a json object. ${prompt}` }], true, options);
   }
 
-  async *chat(system: string, messages: AIChatMessage[]): AsyncIterable<string> {
-    yield* this.streamRaw([
+  chat(system: string, messages: AIChatMessage[], options?: AIStreamOptions): AsyncIterable<string> {
+    return this.streamRaw([
       { role: 'system', content: system },
       ...messages.map(m => ({ role: m.role, content: m.content })),
-    ]);
+    ], false, options);
   }
 }

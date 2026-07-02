@@ -148,8 +148,8 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, hasNewCha
           <MessageCircle size={32} />
         </div>
         <div class="flex-1 min-w-0">
-          <h2 class="text-lg font-semibold text-text-primary mb-1">AI Conversation</h2>
-          <p class="text-sm text-text-secondary leading-snug">Practice Dutch in a real conversation</p>
+          <h2 class="text-lg font-semibold text-text-primary mb-1">{t.chat.title}</h2>
+          <p class="text-sm text-text-secondary leading-snug">{t.chat.subtitle}</p>
         </div>
       </button>
 

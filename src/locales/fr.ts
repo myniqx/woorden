@@ -178,5 +178,13 @@ export const fr: Locale = {
     conversations: 'Conversations',
     newChat: 'Nouvelle conversation',
     noConversations: 'Aucune conversation pour le moment',
+    errors: {
+      rateLimit: 'Limite de requêtes atteinte — patientez un instant puis réessayez.',
+      auth: 'Clé API invalide ou expirée. Vérifiez vos paramètres AI.',
+      contextLength: 'La conversation est trop longue pour ce modèle. Démarrez une nouvelle conversation.',
+      network: 'Erreur réseau — vérifiez votre connexion.',
+      unknown: 'Une erreur est survenue. Veuillez réessayer.',
+      truncated: 'La réponse a été coupée par la limite de sortie du modèle.',
+    },
   },
 };

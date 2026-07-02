@@ -1,6 +1,24 @@
-import type { AIAdapter, AIChatMessage } from '../types';
+import type { AIAdapter, AIChatMessage, AIFinishReason, AIStreamOptions } from '../types';
+import { streamSSE, type SSEChunk } from '../sse';
 
-const GEMINI_PREFERRED = 'gemini-2.5-flash-lite';
+function mapGeminiFinish(reason: unknown): AIFinishReason | undefined {
+  if (reason === 'STOP') return 'stop';
+  if (reason === 'MAX_TOKENS') return 'length';
+  if (typeof reason === 'string') return 'unknown';
+  return undefined;
+}
+
+function extractGemini(parsed: unknown): SSEChunk {
+  const candidate = (parsed as {
+    candidates?: { content?: { parts?: { text?: string }[] }; finishReason?: unknown }[];
+  })?.candidates?.[0];
+  return {
+    text: candidate?.content?.parts?.[0]?.text,
+    finish: mapGeminiFinish(candidate?.finishReason),
+  };
+}
+
+const GEMINI_PREFERRED = 'gemini-3.1-flash-lite';
 const modelCache = new Map<string, string[]>();
 
 export class GeminiAdapter implements AIAdapter {
@@ -74,62 +92,33 @@ export class GeminiAdapter implements AIAdapter {
     return models;
   }
 
-  private async *streamRaw(body: object): AsyncIterable<string> {
+  private streamRaw(body: object, options?: AIStreamOptions): AsyncIterable<string> {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${this.model}:streamGenerateContent?alt=sse&key=${this.apiKey}`;
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-    });
-
-    if (!response.ok) {
-      const err = await response.text();
-      throw new Error(`Gemini error ${response.status}: ${err}`);
-    }
-
-    const reader = response.body!.getReader();
-    const decoder = new TextDecoder();
-    let buffer = '';
-
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-
-      buffer += decoder.decode(value, { stream: true });
-      const lines = buffer.split('\n');
-      buffer = lines.pop() ?? '';
-
-      for (const line of lines) {
-        if (!line.startsWith('data: ')) continue;
-        const data = line.slice(6).trim();
-        if (data === '[DONE]') return;
-
-        try {
-          const parsed = JSON.parse(data);
-          const text: string | undefined =
-            parsed?.candidates?.[0]?.content?.parts?.[0]?.text;
-          if (text) yield text;
-        } catch {
-          // malformed SSE line — skip
-        }
-      }
-    }
+    return streamSSE('Gemini', url, { body }, extractGemini, options);
   }
 
-  async *stream(prompt: string): AsyncIterable<string> {
-    yield* this.streamRaw({
+  private generationConfig(options?: AIStreamOptions, extra: Record<string, unknown> = {}): Record<string, unknown> {
+    const config = { ...extra };
+    if (options?.temperature !== undefined) config.temperature = options.temperature;
+    if (options?.maxTokens !== undefined) config.maxOutputTokens = options.maxTokens;
+    return config;
+  }
+
+  stream(prompt: string, options?: AIStreamOptions): AsyncIterable<string> {
+    return this.streamRaw({
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: { responseMimeType: 'application/json' },
-    });
+      generationConfig: this.generationConfig(options, { responseMimeType: 'application/json' }),
+    }, options);
   }
 
-  async *chat(system: string, messages: AIChatMessage[]): AsyncIterable<string> {
-    yield* this.streamRaw({
+  chat(system: string, messages: AIChatMessage[], options?: AIStreamOptions): AsyncIterable<string> {
+    return this.streamRaw({
       system_instruction: { parts: [{ text: system }] },
       contents: messages.map(m => ({
         role: m.role === 'assistant' ? 'model' : 'user',
         parts: [{ text: m.content }],
       })),
-    });
+      generationConfig: this.generationConfig(options),
+    }, options);
   }
 }

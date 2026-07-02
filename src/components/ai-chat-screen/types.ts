@@ -1,3 +1,5 @@
+import type { AIErrorKind } from '../../services/ai';
+
 export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1';
 
 export interface ReviewResult {
@@ -11,6 +13,8 @@ export interface ChatMessage {
   content: string;
   timestamp: number;
   review?: ReviewResult;
+  errorKind?: AIErrorKind;
+  truncated?: boolean;
 }
 
 export interface ChatSession {

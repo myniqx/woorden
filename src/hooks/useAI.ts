@@ -6,10 +6,10 @@ import {
   getProviderMeta,
   streamObject,
 } from '../services/ai';
-import type { AIProvider, ProviderType } from '../services/ai';
+import type { AIProvider, ProviderType, AIStreamOptions } from '../services/ai';
 
 interface UseAIResult<T> {
-  submit: (prompt: string) => Promise<void>;
+  submit: (prompt: string, options?: AIStreamOptions) => Promise<void>;
   result: Partial<T> | null;
   isStreaming: boolean;
   doneStreaming: boolean;
@@ -35,7 +35,7 @@ export function useAI<T>(): UseAIResult<T> {
     setCurrentProvider(type);
   }, []);
 
-  const submit = useCallback(async (prompt: string) => {
+  const submit = useCallback(async (prompt: string, options?: AIStreamOptions) => {
     const providers = getProviders();
     const activeType = currentProvider ?? providers[0]?.type ?? null;
     const provider = providers.find(p => p.type === activeType);
@@ -53,7 +53,7 @@ export function useAI<T>(): UseAIResult<T> {
     setIsStreaming(true);
 
     try {
-      await streamObject<T>(adapter, prompt, partial => setResult(partial));
+      await streamObject<T>(adapter, prompt, partial => setResult(partial), options);
       setDoneStreaming(true);
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));

@@ -1,5 +1,5 @@
 import { createContext } from 'preact';
-import { useState, useEffect, useContext, useCallback } from 'preact/hooks';
+import { useState, useEffect, useContext, useCallback, useRef } from 'preact/hooks';
 import type { ComponentChildren } from 'preact';
 import type { ChatSession, ChatMessage, CEFRLevel } from './types';
 import {
@@ -10,7 +10,9 @@ import {
 import { pickRandomTopic, buildMasterPrompt, buildReviewPrompt } from '../../services/ai/chatPrompts';
 import { getProviders, getActiveProviderType, getProviderMeta, streamObject } from '../../services/ai';
 import type { AIAdapter, AIProvider } from '../../services/ai';
-import { useLanguage } from '../../hooks';
+import { useLanguage, useAIChat } from '../../hooks';
+
+const HISTORY_LIMIT = 12;
 
 function createAdapter(provider: AIProvider, model?: string): AIAdapter {
   return getProviderMeta(provider.type).createAdapter(provider.apiKey, model);
@@ -54,11 +56,15 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
 
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [activeSession, setActiveSession] = useState<ChatSession | null>(null);
-  const [isStreaming, setIsStreaming] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState<CEFRLevel>('A2');
   const [selectedProviderId, setSelectedProviderId] = useState<string>(fallbackProviderId);
   const [selectedModel, setSelectedModel] = useState<string>('');
+
+  const chat = useAIChat({ historyLimit: HISTORY_LIMIT });
+  // covers the whole send flow (review + chat stream), not just the chat stream
+  const sendingRef = useRef(false);
+  const [isSending, setIsSending] = useState(false);
 
   useEffect(() => {
     getSessions().then(setSessions);
@@ -70,6 +76,8 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
       }
     });
   }, []);
+
+  useEffect(() => () => chat.abort(), []);
 
   const persistSettings = useCallback((level: CEFRLevel, providerId: string, model: string) => {
     saveChatSettings({ lastLevel: level, lastProviderId: providerId, lastModel: model });
@@ -107,159 +115,152 @@ export function ChatProvider({ children }: { children: ComponentChildren }) {
     return updated;
   }, []);
 
+  // Patches + persists a session by id, whether or not it is still active.
+  // Streaming chunks only touch activeSession; this is for durable updates.
+  const patchSession = useCallback((id: string, patch: (s: ChatSession) => ChatSession) => {
+    const apply = (s: ChatSession) => ({ ...patch(s), updatedAt: Date.now() });
+    setSessions(prev => {
+      const idx = prev.findIndex(s => s.id === id);
+      if (idx < 0) return prev;
+      const updated = apply(prev[idx]);
+      saveSession(updated);
+      const next = [...prev];
+      next[idx] = updated;
+      return next;
+    });
+    setActiveSession(prev => (prev && prev.id === id ? apply(prev) : prev));
+  }, []);
+
   const sendMessage = useCallback(async (text: string) => {
-    if (isStreaming) return;
+    if (sendingRef.current) return;
     const provider = providerList.find(p => p.type === selectedProviderId) ?? providerList[0];
     if (!provider) return;
 
-    const adapter = createAdapter(provider, selectedModel || undefined);
-    const isLocal = getProviderMeta(provider.type).isLocal;
-    let session = activeSession;
-
-    if (!session) {
-      const topic = pickRandomTopic();
-      const userMsg: ChatMessage = {
-        id: newMessageId(),
-        role: 'user',
-        content: text,
-        timestamp: Date.now(),
-        review: { status: 'pending', text: '' },
-      };
-      session = {
-        id: newSessionId(),
-        level: selectedLevel,
-        topic,
-        providerId: provider.type,
-        messages: [userMsg],
-        createdAt: Date.now(),
-        updatedAt: Date.now(),
-      };
-      session = await updateSession(session);
-    } else {
-      const userMsg: ChatMessage = {
-        id: newMessageId(),
-        role: 'user',
-        content: text,
-        timestamp: Date.now(),
-        review: { status: 'pending', text: '' },
-      };
-      session = { ...session, messages: [...session.messages, userMsg] };
-      session = await updateSession(session);
-    }
-
-    setIsStreaming(true);
-
-    const userMsgId = session.messages[session.messages.length - 1].id;
-    const capturedSession = session;
-
-    const runReview = () => streamObject<{ review: string }>(
-      adapter,
-      buildReviewPrompt(capturedSession.level, text, language),
-      () => {},
-    ).then(result => {
-      setActiveSession(prev => {
-        if (!prev || prev.id !== capturedSession.id) return prev;
-        const messages = prev.messages.map(m =>
-          m.id === userMsgId
-            ? { ...m, review: { status: 'done' as const, text: result.review ?? '' } }
-            : m,
-        );
-        const updated = { ...prev, messages, updatedAt: Date.now() };
-        saveSession(updated);
-        setSessions(s => {
-          const idx = s.findIndex(x => x.id === updated.id);
-          if (idx >= 0) { const n = [...s]; n[idx] = updated; return n; }
-          return s;
-        });
-        return updated;
-      });
-    }).catch(() => {
-      setActiveSession(prev => {
-        if (!prev || prev.id !== capturedSession.id) return prev;
-        const messages = prev.messages.map(m =>
-          m.id === userMsgId
-            ? { ...m, review: { status: 'error' as const, text: '' } }
-            : m,
-        );
-        return { ...prev, messages };
-      });
-    });
-
-    if (isLocal) await runReview();
-    else runReview();
-
-    const masterPrompt = buildMasterPrompt(capturedSession.level, capturedSession.topic);
-    const chatHistory = capturedSession.messages.map(m => ({
-      role: m.role,
-      content: m.content,
-    }));
-
-    const assistantMsgId = newMessageId();
-    const assistantMsg: ChatMessage = {
-      id: assistantMsgId,
-      role: 'assistant',
-      content: '',
-      timestamp: Date.now(),
-    };
-
-    setActiveSession(prev =>
-      prev ? { ...prev, messages: [...prev.messages, assistantMsg] } : prev,
-    );
-
-    let accumulated = '';
+    sendingRef.current = true;
+    setIsSending(true);
     try {
-      for await (const chunk of adapter.chat(masterPrompt, chatHistory)) {
-        accumulated += chunk;
+      const adapter = createAdapter(provider, selectedModel || undefined);
+      const isLocal = getProviderMeta(provider.type).isLocal;
+
+      const userMsg: ChatMessage = {
+        id: newMessageId(),
+        role: 'user',
+        content: text,
+        timestamp: Date.now(),
+        review: { status: 'pending', text: '' },
+      };
+
+      let session = activeSession
+        ? { ...activeSession, messages: [...activeSession.messages, userMsg] }
+        : {
+            id: newSessionId(),
+            level: selectedLevel,
+            topic: pickRandomTopic(),
+            providerId: provider.type,
+            messages: [userMsg],
+            createdAt: Date.now(),
+            updatedAt: Date.now(),
+          };
+      session = await updateSession(session);
+
+      const sessionId = session.id;
+      const userMsgId = userMsg.id;
+
+      const setReview = (review: ChatMessage['review']) => {
+        patchSession(sessionId, s => ({
+          ...s,
+          messages: s.messages.map(m => (m.id === userMsgId ? { ...m, review } : m)),
+        }));
+      };
+
+      const runReview = () => streamObject<{ review: string }>(
+        adapter,
+        buildReviewPrompt(session.level, text, language),
+        () => {},
+        { temperature: 0.3 },
+      )
+        .then(result => setReview({ status: 'done', text: result.review ?? '' }))
+        .catch(() => setReview({ status: 'error', text: '' }));
+
+      if (isLocal) await runReview();
+      else void runReview();
+
+      const masterPrompt = buildMasterPrompt(session.level, session.topic);
+      const history = session.messages.map(m => ({ role: m.role, content: m.content }));
+
+      const assistantMsg: ChatMessage = {
+        id: newMessageId(),
+        role: 'assistant',
+        content: '',
+        timestamp: Date.now(),
+      };
+      patchSession(sessionId, s => ({ ...s, messages: [...s.messages, assistantMsg] }));
+
+      let accumulated = '';
+      const result = await chat.send(adapter, masterPrompt, history, acc => {
+        accumulated = acc;
         setActiveSession(prev => {
-          if (!prev) return prev;
+          if (!prev || prev.id !== sessionId) return prev;
           const messages = prev.messages.map(m =>
-            m.id === assistantMsgId ? { ...m, content: accumulated } : m,
+            m.id === assistantMsg.id ? { ...m, content: acc } : m,
           );
           return { ...prev, messages };
         });
+      });
+      if (!result) return;
+
+      if (result.error?.kind === 'aborted' && !accumulated) {
+        patchSession(sessionId, s => ({
+          ...s,
+          messages: s.messages.filter(m => m.id !== assistantMsg.id),
+        }));
+        return;
       }
 
-      setActiveSession(prev => {
-        if (!prev) return prev;
-        const messages = prev.messages.map(m =>
-          m.id === assistantMsgId ? { ...m, content: accumulated } : m,
-        );
-        const updated = { ...prev, messages, updatedAt: Date.now() };
-        saveSession(updated);
-        setSessions(s => {
-          const idx = s.findIndex(x => x.id === updated.id);
-          if (idx >= 0) { const n = [...s]; n[idx] = updated; return n; }
-          return [updated, ...s];
-        });
-        return updated;
-      });
+      patchSession(sessionId, s => ({
+        ...s,
+        messages: s.messages.map(m =>
+          m.id === assistantMsg.id
+            ? {
+                ...m,
+                content: result.error ? accumulated : result.text,
+                truncated: result.truncated || undefined,
+                errorKind: result.error && result.error.kind !== 'aborted' ? result.error.kind : undefined,
+              }
+            : m,
+        ),
+      }));
     } finally {
-      setIsStreaming(false);
+      sendingRef.current = false;
+      setIsSending(false);
     }
-  }, [activeSession, selectedLevel, selectedProviderId, selectedModel, providerList, updateSession]);
+  }, [activeSession, selectedLevel, selectedProviderId, selectedModel, providerList, language, updateSession, patchSession, chat.send]);
 
   const loadSession = useCallback(async (id: string) => {
+    chat.abort();
     const s = sessions.find(x => x.id === id);
     if (s) setActiveSession(s);
     setDrawerOpen(false);
-  }, [sessions]);
+  }, [sessions, chat.abort]);
 
   const newChat = useCallback(() => {
+    chat.abort();
     setActiveSession(null);
     setDrawerOpen(false);
-  }, []);
+  }, [chat.abort]);
 
   const removeSession = useCallback(async (id: string) => {
+    if (activeSession?.id === id) chat.abort();
     await deleteSession(id);
     setSessions(prev => prev.filter(s => s.id !== id));
     if (activeSession?.id === id) setActiveSession(null);
-  }, [activeSession]);
+  }, [activeSession, chat.abort]);
 
   return (
     <ChatContext.Provider value={{
       sessions,
       activeSession,
-      isStreaming,
+      isStreaming: isSending,
       drawerOpen,
       selectedLevel,
       selectedProviderId,

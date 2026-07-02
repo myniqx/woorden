@@ -176,6 +176,14 @@ export const en = {
     conversations: 'Conversations',
     newChat: 'New chat',
     noConversations: 'No conversations yet',
+    errors: {
+      rateLimit: 'Rate limit reached — wait a moment and try again.',
+      auth: 'API key is invalid or expired. Check your AI settings.',
+      contextLength: 'The conversation is too long for this model. Start a new chat.',
+      network: 'Network error — check your connection.',
+      unknown: 'Something went wrong. Please try again.',
+      truncated: 'The response was cut off by the model output limit.',
+    },
   },
 };
 

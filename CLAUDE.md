@@ -484,14 +484,23 @@ Client-side AI with user-provided API keys. No server proxy — keys stored in l
 ### Architecture
 
 ```
-useAI<T>() hook
+useAI<T>() hook (one-shot JSON)      useAIChat() hook (multi-turn text, historyLimit windowing, abort)
+    ↓                                    ↓
+streamObject() in manager.ts         streamChat() in manager.ts  ← accumulation + truncation flag
+    ↓                                    ↓
+AIAdapter interface  ← stream(prompt, opts?) / chat(system, messages, opts?): AsyncIterable<string>
+    ↓                   opts: { signal, temperature, maxTokens, onFinish }
+streamSSE() in sse.ts  ← shared fetch + SSE parsing + AIError mapping (one place)
     ↓
-streamObject() in manager.ts  ← chunk accumulation + completeJson + JSON.parse (one place)
-    ↓
-AIAdapter interface            ← stream(prompt): AsyncIterable<string>
-    ↓
-GeminiAdapter / GroqAdapter / ServerAdapter
+GeminiAdapter / GroqAdapter / OllamaAdapter / LMStudioAdapter / ServerAdapter
 ```
+
+### Errors
+
+All adapter failures are thrown as `AIError` (`src/services/ai/errors.ts`) with `kind`:
+`rate_limit | auth | context_length | network | aborted | unknown`. Chat UI maps kinds to
+localized messages via `t.chat.errors`. Output cut off by token limit is reported via
+`onFinish('length')` → `streamChat` returns `truncated: true` (not an error).
 
 ### Storage
 

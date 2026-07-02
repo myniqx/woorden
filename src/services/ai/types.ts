@@ -14,10 +14,20 @@ export interface AIChatMessage {
   content: string;
 }
 
+export type AIFinishReason = 'stop' | 'length' | 'unknown';
+
+export interface AIStreamOptions {
+  signal?: AbortSignal;
+  temperature?: number;
+  maxTokens?: number;
+  /** Called once when the stream completes normally; 'length' means the output was cut off. */
+  onFinish?: (reason: AIFinishReason) => void;
+}
+
 export interface AIAdapter {
   preferredModel: string;
   getKeyGuide?: (language: string) => string;
   getModels(): Promise<string[]>;
-  stream(prompt: string): AsyncIterable<string>;
-  chat(system: string, messages: AIChatMessage[]): AsyncIterable<string>;
+  stream(prompt: string, options?: AIStreamOptions): AsyncIterable<string>;
+  chat(system: string, messages: AIChatMessage[], options?: AIStreamOptions): AsyncIterable<string>;
 }
