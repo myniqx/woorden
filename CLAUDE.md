@@ -578,6 +578,25 @@ Groq requires the word "json" somewhere in the prompt when using `response_forma
   (fetches `adapter.getModels()`, falls back to `adapter.preferredModel`) shared by both
   chat and Q&A screens; accepts `children` for screen-specific extra fields (chat passes
   its CEFR level select).
+- **`src/components/writing-screen/`** — "Writing Test" (route `'writing'`). `WritingProvider`
+  drives a `phase` state machine (`setup → assignment → writing → reviewing → result`, plus a
+  `viewing` phase for read-only history). Two one-shot `streamObject` calls (from
+  `src/services/ai/manager.ts` directly, no `useAIChat` — there's no message history):
+  `buildAssignmentPrompt` (temperature 0.9) has the AI pick a topic from `WRITING_TOPICS`,
+  decide the message format (email/SMS/WhatsApp/social post) and register itself based on the
+  topic, and set level-appropriate requirements; `buildWritingReviewPrompt` (temperature 0.3)
+  returns a structured `WritingReview` (scores, per-category analysis, numbered corrections,
+  estimated level, an improvement tip, and a short vocabulary list) — forcing this JSON shape
+  (`src/services/ai/writingPrompts.ts`) replaced an earlier free-markdown review that produced
+  inconsistent, sometimes shallow feedback. Completed assignment+review pairs are saved
+  write-once to IndexedDB `woorden_writing` (`entries`+`settings` stores, via
+  `src/services/ai/writingStorage.ts`) and browsable read-only from the history drawer
+  (`WritingHistory.tsx`) — entries can be viewed but not resumed or edited. The in-progress
+  draft (current assignment + typed text, not yet submitted) is separately persisted in
+  `localStorage` under `woorden_writing_draft` so a reload doesn't lose unsent work; it's
+  cleared on successful submit or "Try Again". Uses the same `useBackOverride`
+  (`src/hooks/useAppLayout.ts`) pattern as Q&A to step back through phases before exiting to
+  the main menu.
 
 ---
 

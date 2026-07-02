@@ -5,7 +5,7 @@ export type QuizType = 'nativeToDutch' | 'dutchToNative' | 'article' | 'nativeTo
 // Quiz mode: normal uses all enabled words, pinned uses only pinned words
 export type QuizMode = 'normal' | 'pinned';
 
-export type Screen = 'menu' | 'quiz' | 'changelog' | 'profile' | 'ai-chat' | 'qa';
+export type Screen = 'menu' | 'quiz' | 'changelog' | 'profile' | 'ai-chat' | 'qa' | 'writing';
 
 export interface QuizOption {
   id: string | number;

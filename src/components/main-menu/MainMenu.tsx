@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch, MessageCircle, MessageCircleQuestion } from 'lucide-preact';
+import { Target, BookOpen, FileText, Layers, Pin, PenLine, GitBranch, MessageCircle, MessageCircleQuestion, FileEdit } from 'lucide-preact';
 import type { QuizType, QuizMode } from '../../types';
 import { useLanguage } from '../../hooks';
 import { getSelectedWordCount, getAvailableLevels, getChunkCount, getChunkWordCount, getLevelWordCount, isChunkEnabled } from '../../services/words';
@@ -14,6 +14,7 @@ interface MainMenuProps {
   onOpenChangelog: () => void;
   onOpenAIChat: () => void;
   onOpenQA: () => void;
+  onOpenWriting: () => void;
   hasNewChangelog: boolean;
 }
 
@@ -47,7 +48,7 @@ const quizDesc = (t: LanguageKeys, type: QuizType): string => ({
   verbForms: t.quiz.verbForms.desc,
 }[type]);
 
-export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, onOpenQA, hasNewChangelog }: MainMenuProps) {
+export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, onOpenQA, onOpenWriting, hasNewChangelog }: MainMenuProps) {
   const { t, merge } = useLanguage();
   const [showWordPool, setShowWordPool] = useState(false);
   const [, forceUpdate] = useState(0);
@@ -164,6 +165,19 @@ export function MainMenu({ onStartQuiz, onOpenChangelog, onOpenAIChat, onOpenQA,
         <div class="flex-1 min-w-0">
           <h2 class="text-lg font-semibold text-text-primary mb-1">{t.qa.title}</h2>
           <p class="text-sm text-text-secondary leading-snug">{t.qa.subtitle}</p>
+        </div>
+      </button>
+
+      <button
+        class="flex items-center gap-4 px-6 py-4 bg-surface border border-border rounded-xl cursor-pointer text-left transition-all duration-(--transition-normal) hover:border-primary hover:bg-primary-light"
+        onClick={onOpenWriting}
+      >
+        <div class="flex items-center justify-center w-14 h-14 rounded-lg bg-primary-light text-primary shrink-0">
+          <FileEdit size={32} />
+        </div>
+        <div class="flex-1 min-w-0">
+          <h2 class="text-lg font-semibold text-text-primary mb-1">{t.writing.title}</h2>
+          <p class="text-sm text-text-secondary leading-snug">{t.writing.subtitle}</p>
         </div>
       </button>
 

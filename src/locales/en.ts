@@ -196,6 +196,31 @@ export const en = {
     deletePinConfirm: 'Delete this pinned answer?',
     noSessions: 'No questions yet',
   },
+
+  writing: {
+    title: 'Writing Test',
+    subtitle: 'Get an assignment, write in Dutch, receive a detailed review',
+    level: 'Level',
+    startButton: 'Start',
+    generatingAssignment: 'Generating your assignment...',
+    wordCounter: '{count} / {min} words',
+    submitButton: 'Submit',
+    submitAnyway: 'Submit anyway',
+    belowMinTitle: 'Below the minimum word count',
+    belowMinBody: 'You\'ve written {count} / {min} words. You can still submit — the review will just factor in the shorter text.',
+    reviewingLabel: 'Reviewing your text...',
+    tryAgainButton: 'Try Again',
+    scoreOverall: 'Overall',
+    scoreGrammar: 'Grammar',
+    scoreSpelling: 'Spelling',
+    scoreVocabulary: 'Vocabulary',
+    estimatedLevelLabel: 'Estimated level',
+    analysisTitle: 'Analysis',
+    correctionsTitle: 'Corrections',
+    vocabularyTitle: 'Useful words',
+    noEntries: 'No writing tests yet',
+    backToSetup: 'Back',
+  },
 };
 
 export type Locale = typeof en;

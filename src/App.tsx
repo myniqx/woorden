@@ -16,11 +16,12 @@ import { pushStats } from './services/sync';
 import { ProfileScreen } from './components/profile-screen';
 import { AIChatScreen } from './components/ai-chat-screen';
 import { QASessionScreen } from './components/qa-session-screen';
+import { WritingScreen } from './components/writing-screen';
 import { AlertBanner } from './components/AlertBanner';
 
 import type { QuizType, QuizMode, Screen } from './types';
 const INPUT_QUIZ_TYPES = ['nativeToDutch_write', 'verbForms'];
-const isFullscreen = (s: Screen) => s === 'ai-chat' || s === 'qa';
+const isFullscreen = (s: Screen) => s === 'ai-chat' || s === 'qa' || s === 'writing';
 import './styles/theme.css';
 
 export function App() {
@@ -136,8 +137,8 @@ export function App() {
         <div class="app">
           <Header
             key={`header-${statsVersion}`}
-            showBackButton={screen === 'quiz' || screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' || screen === 'qa'}
-            onBack={screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' || screen === 'qa'
+            showBackButton={screen === 'quiz' || screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' || screen === 'qa' || screen === 'writing'}
+            onBack={screen === 'changelog' || screen === 'profile' || screen === 'ai-chat' || screen === 'qa' || screen === 'writing'
               ? () => { if (!backOverride?.()) history.back(); }
               : exitQuiz}
             onProfileClick={() => { history.pushState({ screen: 'profile' }, ''); navigateTo('profile'); }}
@@ -162,6 +163,10 @@ export function App() {
                   history.pushState({ screen: 'qa' }, '');
                   navigateTo('qa');
                 }}
+                onOpenWriting={() => {
+                  history.pushState({ screen: 'writing' }, '');
+                  navigateTo('writing');
+                }}
                 hasNewChangelog={hasNewChangelog}
               />
             )}
@@ -183,6 +188,8 @@ export function App() {
             {screen === 'ai-chat' && <AIChatScreen />}
 
             {screen === 'qa' && <QASessionScreen />}
+
+            {screen === 'writing' && <WritingScreen />}
 
             {screen === 'quiz' && currentQuizType && (
               INPUT_QUIZ_TYPES.includes(currentQuizType) ? (
